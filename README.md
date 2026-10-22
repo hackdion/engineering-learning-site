@@ -40,9 +40,13 @@ npm run preview  # 本地预览构建后的产物
 
 **注意**：新增内容若来自外部素材，必须先经过人工审核（见下文素材审核流程），不得直接放入公开目录。
 
-## 部署到 GitHub Pages（自动）
+## 部署到 GitHub Pages（已启用）
+
+**当前线上地址**：https://hackdion.github.io/engineering-learning-site/
+**仓库**：https://github.com/hackdion/engineering-learning-site
 
 仓库已内置 GitHub Actions 工作流 `.github/workflows/deploy.yml`，推送到 `main` 分支即自动构建并发布。
+首次发布已执行成功（2026-10-22），Pages 的 Source 已设为 **GitHub Actions**。
 
 1. 在 GitHub 新建空仓库（例如 `engineering-learning-site`），不要勾选初始化 README。
 2. 本地初始化并推送：
