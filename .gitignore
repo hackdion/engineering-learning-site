@@ -23,3 +23,7 @@ docs/.vitepress/cache/
 **/私密文件/**
 secret*
 private*
+
+# 内部工作文档（不入公开仓库）
+.trae/specs/
+项目管理/

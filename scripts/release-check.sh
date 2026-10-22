@@ -6,9 +6,9 @@
 #   3. 单文件体积预警（>20MB 警告，>50MB 失败）
 #   4. 无「待审核素材」目录误入产物
 #
-# 已知豁免：media/**/export/course.json 为已验收互动课件的导出元数据，
-# 其中 framePrefix 字段记录课件制作时的源目录（含原项目私有路径字符串），
-# 属课件内部追溯元数据，不影响公开性，脚本对其仅输出警告而不判失败。
+# 无任何豁免：任何文件含本机路径或原项目私有路径字符串都直接判失败。
+# 历史教训：曾对 course.json 的 framePrefix 本机路径豁免为"仅警告"，
+# 导致含 240 处 /Users/ 路径的课件元数据进入公开仓库，该豁免已废除。
 
 set -u
 
@@ -16,8 +16,10 @@ DIST_DIR="docs/.vitepress/dist"
 WARN_BYTES=$((20 * 1024 * 1024))   # 20MB 预警线
 FAIL_BYTES=$((50 * 1024 * 1024))   # 50MB 失败线
 
-# 私有路径特征串（原项目目录名）
-PRIVATE_PATTERNS='注册监理工程师知识库|open MAIC|openmaic-runtime|\.openmaic-runtime'
+# 私有路径特征串：本机绝对路径、指向原项目的路径片段、运行时目录名。
+# 注意：项目名称本身（如"注册监理工程师知识库"、"OpenMAIC"）是合法正文内容，
+# 不单独作为特征串，避免误报；只拦截其出现在路径语境（工作目录/xxx）中的形态。
+PRIVATE_PATTERNS='/Users/|工作目录/(注册监理工程师知识库|open MAIC)|openmaic-runtime'
 
 FAILED=0
 WARNED=0
@@ -49,30 +51,14 @@ fi
 
 # ---------- 检查 2：私有路径字符串 ----------
 echo ""
-echo "[检查 2] 产物 html/js/json 中是否含原项目私有路径字符串"
-# 已知豁免：media/**/export/course.json 为已验收课件的追溯元数据，单独按警告处理
+echo "[检查 2] 产物 html/js/json 中是否含原项目私有路径或本机绝对路径"
 PRIVATE_HITS="$(grep -rEl "${PRIVATE_PATTERNS}" "${DIST_DIR}" \
   --include='*.html' --include='*.js' --include='*.json' 2>/dev/null)"
-EXEMPT_HITS=""
-REAL_HITS=""
 if [ -n "${PRIVATE_HITS}" ]; then
-  while IFS= read -r f; do
-    case "${f}" in
-      */media/*/export/course.json) EXEMPT_HITS="${EXEMPT_HITS}${f}\n" ;;
-      *) REAL_HITS="${REAL_HITS}${f}\n" ;;
-    esac
-  done <<< "${PRIVATE_HITS}"
-fi
-if [ -n "${REAL_HITS}" ]; then
-  fail "以下文件含私有路径字符串，必须处理后才能发布："
-  printf '%b' "${REAL_HITS}" | sed '/^$/d; s/^/         - /'
+  fail "以下文件含私有路径或本机路径字符串，必须处理后才能发布："
+  printf '%s\n' "${PRIVATE_HITS}" | sed '/^$/d; s/^/         - /'
 else
-  pass "正文产物中未发现私有路径字符串"
-fi
-if [ -n "${EXEMPT_HITS}" ]; then
-  warn "以下已验收课件的导出元数据含私有路径字符串（已知豁免，仅警告）："
-  printf '%b' "${EXEMPT_HITS}" | sed '/^$/d; s/^/         - /'
-  echo "         说明: course.json 的 framePrefix 为课件制作追溯元数据，不影响公开性"
+  pass "产物中未发现私有路径或本机路径字符串"
 fi
 
 # ---------- 检查 3：大文件 ----------
