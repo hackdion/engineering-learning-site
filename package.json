@@ -1,0 +1,17 @@
+{
+  "name": "engineering-learning-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "工程知识课程站：工程知识文章与在线课程的静态网站",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "check": "bash scripts/release-check.sh"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.44"
+  }
+}

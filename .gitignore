@@ -1,0 +1,25 @@
+# 依赖与构建产物
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# 日志与系统文件
+*.log
+.DS_Store
+
+# 待审核素材（未经人工审核不得提交/公开）
+待审核素材/
+
+# 原始教材类 PDF（未授权资料，禁止进入仓库与公开目录）
+原始教材/
+**/原始教材/**
+
+# 私有 / 内部文件
+.env
+.env.*
+*.key
+*.pem
+**/内部文件/**
+**/私密文件/**
+secret*
+private*
