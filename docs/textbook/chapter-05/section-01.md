@@ -342,31 +342,31 @@ DBB 合同结构如图 5-1 所示。
 （1）合同关系。采用合作体承包模式的工程，由几家承包单位自愿组成一个合作体，签订合作协议后，以合作体名义与建设单位签订工程承包意向协议（也称基本合同）。待与建设单位达成协议后，合作体各单位再分别与建设单位签订工程承包合同，并在合作体统一组织协调下完成承包任务。合作体承包合同结构如图 5-5 所示。
 
 <FigureZoom caption="图 5-5 合作体承包合同结构">
-<svg viewBox="0 0 900 320" role="img" aria-label="图 5-5 合作体承包合同结构" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 320" role="img" aria-label="图 5-5 合作体承包合同结构" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
-    <rect x="680" y="20" width="130" height="34"></rect>
-    <rect x="80" y="60" width="80" height="240"></rect>
-    <rect x="420" y="100" width="150" height="34"></rect>
-    <rect x="420" y="170" width="150" height="34"></rect>
-    <rect x="420" y="250" width="150" height="34"></rect>
-    <path d="M120,60 V40 H680"></path>
-    <path d="M160,117 H420"></path>
-    <path d="M160,187 H420"></path>
-    <path d="M160,267 H420"></path>
-    <path d="M745,54 V267 H570"></path>
-    <path d="M570,117 H745"></path>
-    <path d="M570,187 H745"></path>
+    <rect x="480" y="20" width="500" height="36"></rect>
+    <rect x="80" y="80" width="80" height="220"></rect>
+    <rect x="430" y="105" width="140" height="34"></rect>
+    <rect x="530" y="185" width="140" height="34"></rect>
+    <rect x="630" y="265" width="140" height="34"></rect>
+    <path d="M480,38 H120 V80"></path>
+    <path d="M160,122 H430"></path>
+    <path d="M160,202 H530"></path>
+    <path d="M160,282 H630"></path>
+    <path d="M500,56 V105"></path>
+    <path d="M600,56 V185"></path>
+    <path d="M700,56 V265"></path>
   </g>
   <g fill="currentColor" font-size="12" font-family="sans-serif">
-    <text x="745" y="42" text-anchor="middle">建设单位</text>
-    <text x="120" y="180" text-anchor="middle" transform="rotate(90 120 180)">合作体</text>
-    <text x="495" y="122" text-anchor="middle">承包单位1</text>
-    <text x="495" y="192" text-anchor="middle">承包单位2</text>
-    <text x="495" y="272" text-anchor="middle">承包单位n</text>
-    <text x="495" y="232" text-anchor="middle">……</text>
-    <text x="400" y="34" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">意向协议</text>
-    <text x="290" y="260" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">合作协议</text>
-    <text x="753" y="160" text-anchor="middle" transform="rotate(90 753 160)" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
+    <text x="730" y="42" text-anchor="middle">建设单位</text>
+    <text x="120" y="190" text-anchor="middle" transform="rotate(90 120 190)">合作体</text>
+    <text x="500" y="124" text-anchor="middle">承包单位1</text>
+    <text x="600" y="204" text-anchor="middle">承包单位2</text>
+    <text x="600" y="252" text-anchor="middle">……</text>
+    <text x="700" y="284" text-anchor="middle">承包单位n</text>
+    <text x="300" y="32" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">意向协议</text>
+    <text x="290" y="276" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">合作协议</text>
+    <text x="712" y="160" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
   </g>
 </svg>
 </FigureZoom>
@@ -436,34 +436,33 @@ DBB 合同结构如图 5-1 所示。
 建设单位委托一家工程监理单位实施监理是最常见的工程监理委托方式。这种委托方式的组织结构如图 5-6 所示。
 
 <FigureZoom caption="图 5-6 委托一家工程监理单位的组织结构">
-<svg viewBox="0 0 900 220" role="img" aria-label="图 5-6 委托一家工程监理单位的组织结构" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 900 210" role="img" aria-label="图 5-6 委托一家工程监理单位的组织结构" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="80" y="30" width="140" height="36"></rect>
     <rect x="420" y="30" width="120" height="36"></rect>
-    <rect x="230" y="140" width="120" height="36"></rect>
-    <rect x="420" y="140" width="120" height="36"></rect>
-    <rect x="610" y="140" width="120" height="36"></rect>
+    <rect x="230" y="150" width="120" height="36"></rect>
+    <rect x="420" y="150" width="120" height="36"></rect>
+    <rect x="610" y="150" width="120" height="36"></rect>
     <path d="M220,48 H420"></path>
-    <path d="M480,66 V100"></path>
-    <path d="M480,100 H290 V140"></path>
-    <path d="M480,100 V140"></path>
-    <path d="M480,100 H670 V140"></path>
+    <path d="M480,66 V105"></path>
+    <path d="M480,105 H290 V150"></path>
+    <path d="M480,105 V150"></path>
+    <path d="M480,105 H670 V150"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
-    <path d="M150,66 V120 H650"></path>
-    <path d="M290,120 V140"></path>
-    <path d="M480,120 V140"></path>
-    <path d="M650,120 V140"></path>
+    <path d="M150,66 V125 H640 V150"></path>
+    <path d="M260,125 V150"></path>
+    <path d="M450,125 V150"></path>
   </g>
   <g fill="currentColor" font-size="12" font-family="sans-serif">
     <text x="150" y="52" text-anchor="middle">工程监理单位</text>
     <text x="480" y="52" text-anchor="middle">建设单位</text>
-    <text x="290" y="162" text-anchor="middle">承包单位1</text>
-    <text x="480" y="162" text-anchor="middle">承包单位2</text>
-    <text x="670" y="162" text-anchor="middle">承包单位3</text>
+    <text x="290" y="172" text-anchor="middle">承包单位1</text>
+    <text x="480" y="172" text-anchor="middle">承包单位2</text>
+    <text x="670" y="172" text-anchor="middle">承包单位3</text>
     <text x="320" y="42" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">工程监理合同</text>
-    <text x="488" y="94" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
-    <text x="210" y="114" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
+    <text x="498" y="99" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
+    <text x="150" y="142" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
   </g>
 </svg>
 </FigureZoom>
@@ -493,37 +492,38 @@ DBB 合同结构如图 5-1 所示。
 建设单位委托多家工程监理单位实施监理的组织结构如图 5-7 所示。
 
 <FigureZoom caption="图 5-7 委托多家工程监理单位实施监理的组织结构">
-<svg viewBox="0 0 1040 220" role="img" aria-label="图 5-7 委托多家工程监理单位实施监理的组织结构" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1040 240" role="img" aria-label="图 5-7 委托多家工程监理单位实施监理的组织结构" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="60" y="20" width="150" height="36"></rect>
     <rect x="430" y="20" width="120" height="36"></rect>
     <rect x="810" y="20" width="150" height="36"></rect>
-    <rect x="260" y="135" width="120" height="36"></rect>
-    <rect x="430" y="135" width="120" height="36"></rect>
-    <rect x="600" y="135" width="120" height="36"></rect>
+    <rect x="260" y="165" width="120" height="36"></rect>
+    <rect x="430" y="165" width="120" height="36"></rect>
+    <rect x="600" y="165" width="120" height="36"></rect>
     <path d="M210,38 H430"></path>
     <path d="M550,38 H810"></path>
     <path d="M490,56 V100"></path>
-    <path d="M490,100 H320 V135"></path>
-    <path d="M490,100 V135"></path>
-    <path d="M490,100 H660 V135"></path>
+    <path d="M490,100 H320 V165"></path>
+    <path d="M490,100 V165"></path>
+    <path d="M490,100 H660 V165"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
-    <path d="M135,56 V120 H300 V135"></path>
-    <path d="M885,56 V120 H680 V135"></path>
+    <path d="M135,56 V120 H460 V165"></path>
+    <path d="M300,120 V165"></path>
+    <path d="M885,56 V120 H640 V165"></path>
   </g>
   <g fill="currentColor" font-size="12" font-family="sans-serif">
     <text x="135" y="42" text-anchor="middle">工程监理单位A</text>
     <text x="490" y="42" text-anchor="middle">建设单位</text>
     <text x="885" y="42" text-anchor="middle">工程监理单位B</text>
-    <text x="320" y="157" text-anchor="middle">承包单位1</text>
-    <text x="490" y="157" text-anchor="middle">承包单位2</text>
-    <text x="660" y="157" text-anchor="middle">承包单位3</text>
+    <text x="320" y="187" text-anchor="middle">承包单位1</text>
+    <text x="490" y="187" text-anchor="middle">承包单位2</text>
+    <text x="660" y="187" text-anchor="middle">承包单位3</text>
     <text x="342" y="32" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">工程监理合同</text>
     <text x="688" y="32" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">工程监理合同</text>
-    <text x="498" y="94" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
-    <text x="180" y="114" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
-    <text x="850" y="114" text-anchor="end" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
+    <text x="498" y="92" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
+    <text x="150" y="146" text-anchor="start" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
+    <text x="890" y="146" text-anchor="end" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
   </g>
 </svg>
 </FigureZoom>
@@ -547,46 +547,44 @@ DBB 合同结构如图 5-1 所示。
 为了克服上述不足，在某些大中型工程项目监理实践中，建设单位首先委托一家“总监理单位”，再由建设单位与“总监理单位”共同选择几家工程监理单位分别承担不同施工合同段工程监理任务；或由建设单位在已选定的几家工程监理单位中确定一家“总监理单位”。在工程监理工作中，“总监理单位”负责工程监理的总体策划和协调控制，管理其他各工程监理单位工作，可减轻建设单位的管理压力。设有“总监理单位”的委托监理组织结构如图 5-8 所示。
 
 <FigureZoom caption="图 5-8 设有“总监理单位”的委托监理组织结构">
-<svg viewBox="0 0 1040 290" role="img" aria-label="图 5-8 设有“总监理单位”的委托监理组织结构" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1180 300" role="img" aria-label="图 5-8 设有“总监理单位”的委托监理组织结构" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
-    <rect x="60" y="20" width="130" height="36"></rect>
-    <rect x="420" y="20" width="120" height="36"></rect>
-    <rect x="180" y="160" width="120" height="36"></rect>
-    <rect x="340" y="160" width="120" height="36"></rect>
-    <rect x="520" y="160" width="120" height="36"></rect>
-    <rect x="660" y="160" width="120" height="36"></rect>
-    <rect x="850" y="160" width="120" height="36"></rect>
-    <path d="M190,38 H420"></path>
-    <path d="M480,56 V95 H240 V160"></path>
-    <path d="M480,95 H400 V160"></path>
-    <path d="M540,38 H930 V115 H580"></path>
-    <path d="M580,115 V160"></path>
-    <path d="M720,115 V160"></path>
-    <path d="M910,115 V160"></path>
+    <rect x="150" y="24" width="170" height="36"></rect>
+    <rect x="600" y="24" width="130" height="36"></rect>
+    <rect x="130" y="200" width="130" height="36"></rect>
+    <rect x="330" y="200" width="130" height="36"></rect>
+    <rect x="570" y="200" width="130" height="36"></rect>
+    <rect x="730" y="200" width="130" height="36"></rect>
+    <rect x="970" y="200" width="130" height="36"></rect>
+    <path d="M320,42 H600"></path>
+    <path d="M665,60 V85 H330 V110"></path>
+    <path d="M330,110 H195 V200"></path>
+    <path d="M330,110 H395 V200"></path>
+    <path d="M730,42 H1110 V150 H635"></path>
+    <path d="M635,150 V200"></path>
+    <path d="M795,150 V200"></path>
+    <path d="M1035,150 V200"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
-    <path d="M125,56 V125 H240"></path>
-    <path d="M240,125 H400"></path>
-    <path d="M400,125 V160"></path>
-    <path d="M240,196 V250 H910"></path>
-    <path d="M580,250 V196"></path>
-    <path d="M720,250 V196"></path>
-    <path d="M910,250 V196"></path>
+    <path d="M235,60 V110"></path>
+    <path d="M395,236 V265 H795 V236"></path>
+    <path d="M635,265 V236"></path>
+    <path d="M195,236 V285 H1035 V236"></path>
   </g>
   <g fill="currentColor" font-size="12" font-family="sans-serif">
-    <text x="125" y="42" text-anchor="middle">总监理单位</text>
-    <text x="480" y="42" text-anchor="middle">建设单位</text>
-    <text x="240" y="182" text-anchor="middle">监理单位1</text>
-    <text x="400" y="182" text-anchor="middle">监理单位2</text>
-    <text x="580" y="182" text-anchor="middle">承包单位A</text>
-    <text x="720" y="182" text-anchor="middle">承包单位B</text>
-    <text x="910" y="182" text-anchor="middle">承包单位M</text>
-    <text x="785" y="182" text-anchor="middle">……</text>
-    <text x="305" y="32" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">总监理单位委托合同</text>
-    <text x="330" y="88" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">工程监理合同</text>
-    <text x="938" y="80" text-anchor="middle" transform="rotate(90 938 80)" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
-    <text x="175" y="118" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">协调管理关系</text>
-    <text x="480" y="242" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
+    <text x="235" y="42" text-anchor="middle">总监理单位</text>
+    <text x="665" y="42" text-anchor="middle">建设单位</text>
+    <text x="195" y="222" text-anchor="middle">监理单位1</text>
+    <text x="395" y="222" text-anchor="middle">监理单位2</text>
+    <text x="635" y="222" text-anchor="middle">承包单位A</text>
+    <text x="795" y="222" text-anchor="middle">承包单位B</text>
+    <text x="1035" y="222" text-anchor="middle">承包单位M</text>
+    <text x="890" y="222" text-anchor="middle">……</text>
+    <text x="460" y="34" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">总监理单位委托合同</text>
+    <text x="497" y="77" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">工程监理合同</text>
+    <text x="1070" y="104" text-anchor="end" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">承包合同</text>
+    <text x="225" y="100" text-anchor="end" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">协调管理关系</text>
+    <text x="480" y="258" text-anchor="middle" stroke="var(--vp-c-bg)" stroke-width="3" paint-order="stroke">监理与被监理关系</text>
   </g>
 </svg>
 </FigureZoom>
