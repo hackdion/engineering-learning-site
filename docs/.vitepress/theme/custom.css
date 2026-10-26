@@ -1,0 +1,12 @@
+.vp-doc .footnote {
+  margin: 6px 0 18px;
+  padding-left: 12px;
+  border-left: 3px solid var(--vp-c-divider);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc sup a {
+  text-decoration: none;
+}
