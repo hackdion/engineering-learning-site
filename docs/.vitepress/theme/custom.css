@@ -10,3 +10,10 @@
 .vp-doc sup a {
   text-decoration: none;
 }
+
+/* 窄屏表格横向滚动：表格内容超宽时在自身区域内滚动，不撑破页面 */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
