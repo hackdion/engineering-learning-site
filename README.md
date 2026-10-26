@@ -40,6 +40,20 @@ npm run build    # 构建静态产物，输出到 docs/.vitepress/dist
 npm run preview  # 本地预览构建后的产物
 ```
 
+## 本地教材阅读
+
+`local-reading/` 是 2026 版《建设工程监理概论》的**本地阅读专用**站点，与公开站 `docs/` 相互独立，不参与公开构建与部署。
+
+```bash
+npm run dev:reading      # 启动本地阅读（开发服务器）
+npm run build:reading    # 构建到 local-reading/.vitepress/dist
+npm run preview:reading  # 预览构建产物
+```
+
+- **内容边界**：教材正文放在 `local-reading/chapter-*/`，该目录及构建产物已在 `.gitignore` 中忽略，**不进入公开仓库**；`local-reading/` 只入库配置、主题组件、入口页与中文说明。
+- **推进方式**：按「完成一章、核对一章、交付一章」推进；每节只维护一份规范 Markdown，frontmatter 记录书籍版本、章节顺序、PDF 页码、印刷页码与核对状态，页末自动显示来源块。
+- **详细说明与未解决疑点**：见 [local-reading/README.md](./local-reading/README.md)。
+
 ## 如何新增课程 / 文章
 
 1. 在 `docs/knowledge/`（文章）或 `docs/courses/`（课程）下新建 Markdown 文件。
