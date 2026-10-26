@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: Hackdion
+  name: hackdion
   text: 个人知识、学习课程与项目实践
-  tagline: 记录工程管理知识整理、课程制作与个人工具项目的实践过程。公开内容经 AI 核对、自动检查并经用户确认公开发布授权后上线。
+  tagline: 一个努力学习 AI 的普通人，边学边做，也记录过程中遇到的问题和解决方法。
   actions:
     - theme: brand
       text: 浏览知识库
@@ -13,8 +13,8 @@ hero:
       text: 阅读教材
       link: /textbook/
     - theme: alt
-      text: 查看项目实践
-      link: /projects/
+      text: 关于 hackdion
+      link: /about
 
 features:
   - title: 知识库
@@ -33,8 +33,8 @@ features:
     details: 本网站、课程制作流水线与知识库整理等个人项目的真实实践记录。
     link: /projects/
     linkText: 查看项目
-  - title: 关于本站
-    details: 网站定位、技术架构与内容发布规则说明。
+  - title: 关于 hackdion
+    details: 个人介绍、正在做什么、社交平台与公开联系方式。
     link: /about
     linkText: 了解更多
 ---
