@@ -10,7 +10,7 @@ title: 项目实践
 
 ### engineering-learning-site（本站）
 
-基于 VitePress + Vue 3 的个人静态网站，托管于 GitHub Pages，推送 main 分支后由 GitHub Actions 自动构建发布。站内设有人工验收与发布边界检查机制，未经确认的素材不进入公开目录。
+基于 VitePress + Vue 3 的个人静态网站，托管于 GitHub Pages，推送 main 分支后由 GitHub Actions 自动构建发布。站内设有自动构建与发布边界检查，未经授权的内容不进入公开目录。
 
 - 技术栈：VitePress、Vue 3、GitHub Actions
 - 当前阶段：V0.2 —— 从课程站升级为个人网站信息架构
@@ -25,7 +25,7 @@ title: 项目实践
 
 将教材与习题资料整理为结构化 Markdown（含公式、表格、图片），并维护素材验收记录，为知识库文章与课程提供内容来源。
 
-- 当前阶段：持续整理中，内容仅限个人使用
+- 当前阶段：教材《建设工程监理概论》第一、二章已公开，其余章节整理中
 
 ## 说明
 

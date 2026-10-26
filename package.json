@@ -8,9 +8,6 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "dev:reading": "vitepress dev local-reading",
-    "build:reading": "vitepress build local-reading",
-    "preview:reading": "vitepress preview local-reading",
     "check": "bash scripts/release-check.sh"
   },
   "devDependencies": {

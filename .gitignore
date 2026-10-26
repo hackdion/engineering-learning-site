@@ -27,9 +27,3 @@ private*
 # 内部工作文档（不入公开仓库）
 .trae/specs/
 项目管理/
-
-# 本地教材阅读（正文与产物不入公开仓库）
-local-reading/chapter-*/
-local-reading/public/
-local-reading/.vitepress/cache/
-local-reading/.vitepress/dist/
