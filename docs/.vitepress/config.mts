@@ -91,7 +91,16 @@ export default defineConfig({
                 { text: '第二节 监理工程师', link: '/textbook/chapter-03/section-02' }
               ]
             },
-            { text: '第四章 工程监理招标投标与合同管理（后续整理）' },
+            {
+              text: '第四章 工程监理招标投标与合同管理',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/chapter-04/' },
+                { text: '第一节 工程监理招标投标程序和评标方法', link: '/textbook/chapter-04/section-01' },
+                { text: '第二节 工程监理投标工作内容和策略', link: '/textbook/chapter-04/section-02' },
+                { text: '第三节 工程监理合同管理', link: '/textbook/chapter-04/section-03' }
+              ]
+            },
             { text: '第五章 工程承包模式及项目监理组织（后续整理）' },
             { text: '第六章 工程监理规划及监理实施细则（后续整理）' },
             { text: '第七章 工程监理工作内容和方式（后续整理）' },
