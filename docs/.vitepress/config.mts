@@ -111,7 +111,15 @@ export default defineConfig({
                 { text: '第三节 项目监理机构及其人员职责', link: '/textbook/chapter-05/section-03' }
               ]
             },
-            { text: '第六章 工程监理规划及监理实施细则（后续整理）' },
+            {
+              text: '第六章 工程监理规划及监理实施细则',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/chapter-06/' },
+                { text: '第一节 监理规划', link: '/textbook/chapter-06/section-01' },
+                { text: '第二节 监理实施细则', link: '/textbook/chapter-06/section-02' }
+              ]
+            },
             { text: '第七章 工程监理工作内容和方式（后续整理）' },
             { text: '第八章 工程监理文件资料管理（后续整理）' },
             { text: '第九章 全过程工程咨询及项目管理服务（后续整理）' },
