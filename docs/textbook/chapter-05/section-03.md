@@ -738,17 +738,18 @@ sectionTitle: 第三节 项目监理机构及其人员职责
     <rect x="390" y="16" width="220" height="32"></rect>
     <rect x="170" y="90" width="130" height="32"></rect>
     <path d="M235,72 V90" marker-end="url(#arrow-513)"></path>
-    <path d="M235,122 V180"></path>
+    <path d="M235,122 V150"></path>
     <rect x="320" y="90" width="130" height="32"></rect>
     <path d="M385,72 V90" marker-end="url(#arrow-513)"></path>
-    <path d="M385,122 V180"></path>
+    <path d="M385,122 V150"></path>
     <rect x="550" y="90" width="130" height="32"></rect>
     <path d="M615,72 V90" marker-end="url(#arrow-513)"></path>
-    <path d="M615,122 V180"></path>
+    <path d="M615,122 V150"></path>
     <rect x="700" y="90" width="130" height="32"></rect>
     <path d="M765,72 V90" marker-end="url(#arrow-513)"></path>
-    <path d="M765,122 V180"></path>
+    <path d="M765,122 V150"></path>
     <path d="M235,72 H765"></path>
+    <path d="M235,150 H765"></path>
     <path d="M500,52 V180"></path>
     <rect x="150" y="200" width="170" height="32"></rect>
     <path d="M235,180 H765"></path>
@@ -813,17 +814,18 @@ sectionTitle: 第三节 项目监理机构及其人员职责
     <rect x="390" y="16" width="220" height="32"></rect>
     <rect x="170" y="90" width="130" height="32"></rect>
     <path d="M235,72 V90" marker-end="url(#arrow-514)"></path>
-    <path d="M235,122 V180"></path>
+    <path d="M235,122 V150"></path>
     <rect x="320" y="90" width="130" height="32"></rect>
     <path d="M385,72 V90" marker-end="url(#arrow-514)"></path>
-    <path d="M385,122 V180"></path>
+    <path d="M385,122 V150"></path>
     <rect x="550" y="90" width="130" height="32"></rect>
     <path d="M615,72 V90" marker-end="url(#arrow-514)"></path>
-    <path d="M615,122 V180"></path>
+    <path d="M615,122 V150"></path>
     <rect x="700" y="90" width="130" height="32"></rect>
     <path d="M765,72 V90" marker-end="url(#arrow-514)"></path>
-    <path d="M765,122 V180"></path>
+    <path d="M765,122 V150"></path>
     <path d="M235,72 H765"></path>
+    <path d="M235,150 H765"></path>
     <path d="M500,52 V180"></path>
     <rect x="150" y="200" width="170" height="32"></rect>
     <path d="M235,180 H765"></path>
@@ -857,13 +859,14 @@ sectionTitle: 第三节 项目监理机构及其人员职责
     <path d="M615,465 V480" marker-end="url(#arrow-514)"></path>
     <path d="M765,465 V480" marker-end="url(#arrow-514)"></path>
     <rect x="170" y="480" width="130" height="32"></rect>
-    <path d="M235,512 V540"></path>
+    <path d="M235,512 V520"></path>
     <rect x="320" y="480" width="130" height="32"></rect>
-    <path d="M385,512 V540"></path>
+    <path d="M385,512 V520"></path>
     <rect x="550" y="480" width="130" height="32"></rect>
-    <path d="M615,512 V540"></path>
+    <path d="M615,512 V520"></path>
     <rect x="700" y="480" width="130" height="32"></rect>
-    <path d="M765,512 V540"></path>
+    <path d="M765,512 V520"></path>
+    <path d="M235,520 H765"></path>
     <path d="M235,540 H765"></path>
     <rect x="145" y="560" width="180" height="32"></rect>
     <path d="M235,540 V560" marker-end="url(#arrow-514)"></path>
