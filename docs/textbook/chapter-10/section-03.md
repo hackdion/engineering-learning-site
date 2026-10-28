@@ -79,37 +79,46 @@ CM 模式可分为代理型 CM 和非代理型 CM 两种类型。
 代理型 CM 模式又称为纯粹 CM 模式。采用代理型 CM 模式时，CM 单位是业主的咨询单位，业主与 CM 单位签订咨询服务合同，CM 合同价就是 CM 费，其表现形式可以是百分率（以今后陆续确定的工程费用总额为基数）或固定数额的费用；业主分别与多个施工单位签订所有的工程施工合同。其合同关系和协调管理关系如图 10-2 所示。
 
 <FigureZoom caption="图 10-2 代理型 CM 模式的合同关系和协调管理关系">
-<svg viewBox="0 0 1020 290" role="img" aria-label="图 10-2 代理型 CM 模式的合同关系和协调管理关系" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1020 250" role="img" aria-label="图 10-2 代理型 CM 模式的合同关系和协调管理关系" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-102a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
-    <marker id="arrow-102b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-102" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="330" y="10" width="140" height="36"></rect>
-    <rect x="60" y="80" width="180" height="36"></rect>
-    <rect x="410" y="80" width="200" height="36"></rect>
-    <path d="M330,28 H240 V98" marker-start="url(#arrow-102b)" marker-end="url(#arrow-102a)"></path>
-    <path d="M470,28 H610 V80" marker-start="url(#arrow-102b)" marker-end="url(#arrow-102a)"></path>
-    <path d="M240,98 H410" marker-start="url(#arrow-102b)" marker-end="url(#arrow-102a)" stroke-dasharray="6 4"></path>
-    <path d="M400,46 V160"></path>
-    <path d="M85,160 H730"></path>
-    <path d="M85,160 V186 M220,160 V186 M360,160 V186 M455,160 V186 M560,160 V186 M690,160 V186" marker-end="url(#arrow-102a)"></path>
-    <path d="M510,116 V140" stroke-dasharray="6 4"></path>
-    <path d="M85,140 H730" stroke-dasharray="6 4"></path>
-    <path d="M85,140 V186 M220,140 V186 M360,140 V186 M455,140 V186 M560,140 V186 M690,140 V186" marker-end="url(#arrow-102a)" stroke-dasharray="6 4"></path>
+    <rect x="60" y="76" width="180" height="36"></rect>
+    <rect x="410" y="76" width="200" height="36"></rect>
+    <path d="M330,28 H240 V76" marker-start="url(#arrow-102)" marker-end="url(#arrow-102)"></path>
+    <path d="M470,28 H590 V76" marker-start="url(#arrow-102)" marker-end="url(#arrow-102)"></path>
+    <path d="M410,94 H240" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
+    <path d="M400,46 V152"></path>
+    <path d="M85,152 H690"></path>
+    <path d="M85,152 V186" marker-end="url(#arrow-102)"></path>
+    <path d="M220,152 V186" marker-end="url(#arrow-102)"></path>
+    <path d="M360,152 V186" marker-end="url(#arrow-102)"></path>
+    <path d="M455,152 V186" marker-end="url(#arrow-102)"></path>
+    <path d="M560,152 V186" marker-end="url(#arrow-102)"></path>
+    <path d="M690,152 V186" marker-end="url(#arrow-102)"></path>
+    <path d="M510,112 V136" stroke-dasharray="6 4"></path>
+    <path d="M85,136 H690" stroke-dasharray="6 4"></path>
+    <path d="M85,136 V186" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
+    <path d="M220,136 V186" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
+    <path d="M360,136 V186" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
+    <path d="M455,136 V186" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
+    <path d="M560,136 V186" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
+    <path d="M690,136 V186" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
     <rect x="60" y="186" width="50" height="36"></rect>
     <rect x="180" y="186" width="80" height="36"></rect>
     <rect x="330" y="186" width="60" height="36"></rect>
     <rect x="430" y="186" width="50" height="36"></rect>
     <rect x="520" y="186" width="80" height="36"></rect>
     <rect x="660" y="186" width="60" height="36"></rect>
-    <path d="M800,28 H840" marker-start="url(#arrow-102b)" marker-end="url(#arrow-102a)"></path>
-    <path d="M800,68 H840" marker-start="url(#arrow-102b)" marker-end="url(#arrow-102a)" stroke-dasharray="6 4"></path>
+    <path d="M800,28 H840" marker-start="url(#arrow-102)" marker-end="url(#arrow-102)"></path>
+    <path d="M800,68 H840" marker-end="url(#arrow-102)" stroke-dasharray="6 4"></path>
   </g>
   <g fill="currentColor" font-family="sans-serif">
     <text x="400" y="33.68" text-anchor="middle" font-size="13">业主</text>
-    <text x="150" y="103.68" text-anchor="middle" font-size="13">设计单位</text>
-    <text x="510" y="103.68" text-anchor="middle" font-size="13">CM 单位</text>
+    <text x="150" y="99.68" text-anchor="middle" font-size="13">设计单位</text>
+    <text x="510" y="99.68" text-anchor="middle" font-size="13">CM 单位</text>
     <text x="85" y="209" text-anchor="middle" font-size="12">C₁</text>
     <text x="220" y="209" text-anchor="middle" font-size="12">……</text>
     <text x="360" y="209" text-anchor="middle" font-size="12">Cₙ</text>
@@ -131,48 +140,64 @@ CM 模式可分为代理型 CM 和非代理型 CM 两种类型。
 非代理型 CM 模式又称为风险型 CM 模式（At-Risk CM），在英国则称为管理承包（Management Contracting）。采用非代理型 CM 模式，业主一般不与施工单位签订工程施工合同，但也可能在某些情况下，对某些专业性很强的工程内容和工程专用材料、设备，业主与少数施工单位和材料、设备供应单位签订合同。业主与 CM 单位所签订的合同既包括 CM 服务内容，也包括工程施工承包内容；而 CM 单位与施工单位和材料、设备供应单位签订合同。其合同关系和协调管理关系如图 10-3 所示。
 
 <FigureZoom caption="图 10-3 非代理型 CM 模式的合同关系和协调管理关系">
-<svg viewBox="0 0 1020 290" role="img" aria-label="图 10-3 非代理型 CM 模式的合同关系和协调管理关系" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1020 260" role="img" aria-label="图 10-3 非代理型 CM 模式的合同关系和协调管理关系" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-103a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
-    <marker id="arrow-103b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-103" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="300" y="10" width="140" height="36"></rect>
-    <rect x="60" y="80" width="180" height="36"></rect>
-    <rect x="380" y="80" width="200" height="36"></rect>
-    <path d="M300,28 H210 V98" marker-start="url(#arrow-103b)" marker-end="url(#arrow-103a)"></path>
-    <path d="M440,28 H600 V80" marker-start="url(#arrow-103b)" marker-end="url(#arrow-103a)"></path>
-    <path d="M240,98 H380" marker-start="url(#arrow-103b)" marker-end="url(#arrow-103a)" stroke-dasharray="6 4"></path>
-    <path d="M480,116 V150"></path>
-    <path d="M85,150 H790"></path>
-    <path d="M85,150 V186 M165,150 V186 M270,150 V186 M370,150 V186 M470,150 V186 M570,150 V186 M670,150 V186 M780,150 V186" marker-end="url(#arrow-103a)"></path>
-    <path d="M370,46 V120 H85 V186" marker-end="url(#arrow-103a)"></path>
-    <path d="M370,46 V120 H165 V186" marker-end="url(#arrow-103a)"></path>
-    <rect x="60" y="186" width="50" height="36"></rect>
-    <rect x="140" y="186" width="50" height="36"></rect>
-    <rect x="240" y="186" width="60" height="36"></rect>
-    <rect x="330" y="186" width="80" height="36"></rect>
-    <rect x="440" y="186" width="60" height="36"></rect>
-    <rect x="540" y="186" width="60" height="36"></rect>
-    <rect x="630" y="186" width="80" height="36"></rect>
-    <rect x="750" y="186" width="60" height="36"></rect>
-    <path d="M850,28 H890" marker-start="url(#arrow-103b)" marker-end="url(#arrow-103a)"></path>
-    <path d="M850,68 H890" marker-start="url(#arrow-103b)" marker-end="url(#arrow-103a)" stroke-dasharray="6 4"></path>
+    <rect x="60" y="76" width="180" height="36"></rect>
+    <rect x="380" y="76" width="200" height="36"></rect>
+    <path d="M300,28 H210 V76" marker-start="url(#arrow-103)" marker-end="url(#arrow-103)"></path>
+    <path d="M440,28 H570 V76" marker-start="url(#arrow-103)" marker-end="url(#arrow-103)"></path>
+    <path d="M380,94 H240" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M370,46 V120 H127 V150"></path>
+    <path d="M75,150 H180"></path>
+    <path d="M75,150 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M180,150 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M480,112 V170"></path>
+    <path d="M310,170 H830"></path>
+    <path d="M310,170 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M415,170 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M520,170 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M620,170 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M725,170 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M830,170 V200" marker-end="url(#arrow-103)"></path>
+    <path d="M500,112 V135" stroke-dasharray="6 4"></path>
+    <path d="M75,135 H830" stroke-dasharray="6 4"></path>
+    <path d="M75,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M180,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M310,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M415,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M520,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M620,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M725,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <path d="M830,135 V200" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
+    <rect x="50" y="200" width="50" height="36"></rect>
+    <rect x="150" y="200" width="60" height="36"></rect>
+    <rect x="280" y="200" width="60" height="36"></rect>
+    <rect x="380" y="200" width="70" height="36"></rect>
+    <rect x="490" y="200" width="60" height="36"></rect>
+    <rect x="590" y="200" width="60" height="36"></rect>
+    <rect x="690" y="200" width="70" height="36"></rect>
+    <rect x="800" y="200" width="60" height="36"></rect>
+    <path d="M860,28 H900" marker-start="url(#arrow-103)" marker-end="url(#arrow-103)"></path>
+    <path d="M860,68 H900" marker-end="url(#arrow-103)" stroke-dasharray="6 4"></path>
   </g>
   <g fill="currentColor" font-family="sans-serif">
     <text x="370" y="33.68" text-anchor="middle" font-size="13">业主</text>
-    <text x="150" y="103.68" text-anchor="middle" font-size="13">设计单位</text>
-    <text x="480" y="103.68" text-anchor="middle" font-size="13">CM 单位</text>
-    <text x="85" y="209" text-anchor="middle" font-size="12">C₁</text>
-    <text x="165" y="209" text-anchor="middle" font-size="12">S₁</text>
-    <text x="270" y="209" text-anchor="middle" font-size="12">C₂</text>
-    <text x="370" y="209" text-anchor="middle" font-size="12">……</text>
-    <text x="470" y="209" text-anchor="middle" font-size="12">Cₙ</text>
-    <text x="570" y="209" text-anchor="middle" font-size="12">S₂</text>
-    <text x="670" y="209" text-anchor="middle" font-size="12">……</text>
-    <text x="780" y="209" text-anchor="middle" font-size="12">Sₙ</text>
-    <text x="906" y="32" font-size="12">合同关系</text>
-    <text x="906" y="72" font-size="12">协调管理关系</text>
+    <text x="150" y="99.68" text-anchor="middle" font-size="13">设计单位</text>
+    <text x="480" y="99.68" text-anchor="middle" font-size="13">CM 单位</text>
+    <text x="75" y="223" text-anchor="middle" font-size="12">C₀</text>
+    <text x="180" y="223" text-anchor="middle" font-size="12">S₀</text>
+    <text x="310" y="223" text-anchor="middle" font-size="12">Cᵢ</text>
+    <text x="415" y="223" text-anchor="middle" font-size="12">……</text>
+    <text x="520" y="223" text-anchor="middle" font-size="12">Cₙ</text>
+    <text x="620" y="223" text-anchor="middle" font-size="12">Sᵢ</text>
+    <text x="725" y="223" text-anchor="middle" font-size="12">……</text>
+    <text x="830" y="223" text-anchor="middle" font-size="12">Sₙ</text>
+    <text x="916" y="32" font-size="12">合同关系</text>
+    <text x="916" y="72" font-size="12">协调管理关系</text>
   </g>
 </svg>
 </FigureZoom>
