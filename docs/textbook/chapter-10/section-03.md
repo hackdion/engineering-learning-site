@@ -255,24 +255,28 @@ Partnering 模式强调资源共享，信息作为一种重要的资源，对于
 在 Partnering 模式中，信息应在工程参建各方之间及时、准确而有效地传递、转换，才能保证及时处理和解决已经出现的争议和问题，提高整个建设工程组织的工作效率。为此，需将传统的信息传递模式转变为基于电子信息网络的现代传递模式，如图 10-4 所示。
 
 <FigureZoom caption="图 10-4 基于电子信息网络的信息传递模式">
-<svg viewBox="0 0 1020 420" role="img" aria-label="图 10-4 基于电子信息网络的信息传递模式" xmlns="http://www.w3.org/2000/svg">
-  <defs><marker id="arrow-104" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+<svg viewBox="0 0 1020 470" role="img" aria-label="图 10-4 基于电子信息网络的信息传递模式" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-104" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-104b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
+  </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
-    <ellipse cx="470" cy="200" rx="230" ry="110"></ellipse>
+    <ellipse cx="470" cy="200" rx="230" ry="110" fill="#d8dcd4"></ellipse>
     <rect x="445" y="10" width="130" height="36"></rect>
-    <rect x="700" y="50" width="190" height="36"></rect>
+    <rect x="645" y="34" width="190" height="36"></rect>
     <rect x="90" y="170" width="130" height="36"></rect>
     <rect x="760" y="170" width="130" height="36"></rect>
     <rect x="445" y="340" width="130" height="36"></rect>
-    <path d="M510,46 V90" marker-end="url(#arrow-104)"></path>
-    <path d="M700,68 H650 V131" marker-end="url(#arrow-104)"></path>
-    <path d="M220,188 H240" marker-end="url(#arrow-104)"></path>
-    <path d="M760,188 H700" marker-end="url(#arrow-104)"></path>
-    <path d="M510,340 V310" marker-end="url(#arrow-104)"></path>
+    <path d="M510,46 V91" marker-start="url(#arrow-104b)" marker-end="url(#arrow-104)"></path>
+    <path d="M650,70 L602,112" marker-start="url(#arrow-104b)" marker-end="url(#arrow-104)"></path>
+    <path d="M220,188 H241" marker-start="url(#arrow-104b)" marker-end="url(#arrow-104)"></path>
+    <path d="M760,188 H699" marker-start="url(#arrow-104b)" marker-end="url(#arrow-104)"></path>
+    <path d="M510,340 V309" marker-start="url(#arrow-104b)" marker-end="url(#arrow-104)"></path>
+    <path d="M307,122 C260,85 180,72 120,88 C60,105 45,160 48,220 C52,300 90,380 180,415 C290,455 430,458 520,432 C600,410 660,360 668,315 C672,295 660,282 640,277"></path>
   </g>
   <g fill="currentColor" font-family="sans-serif">
     <text x="510" y="33.68" text-anchor="middle" font-size="13">业主</text>
-    <text x="795" y="73.68" text-anchor="middle" font-size="13">项目管理方/OPM</text>
+    <text x="740" y="57.68" text-anchor="middle" font-size="13">项目管理方/OPM</text>
     <text x="155" y="193.68" text-anchor="middle" font-size="13">设计方</text>
     <text x="825" y="193.68" text-anchor="middle" font-size="13">供货方</text>
     <text x="510" y="363.68" text-anchor="middle" font-size="13">施工方</text>
@@ -410,24 +414,28 @@ Project Controlling 模式的出现反映了工程项目管理专业化发展的
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="330" y="10" width="170" height="40"></rect>
     <rect x="610" y="10" width="180" height="40"></rect>
-    <path d="M500,30 H610" marker-start="url(#arrow-105b)" marker-end="url(#arrow-105)" stroke-dasharray="6 4"></path>
+    <path d="M500,30 H610" marker-start="url(#arrow-105b)" stroke-dasharray="6 4"></path>
     <path d="M415,50 V100"></path>
-    <path d="M155,100 H695"></path>
-    <path d="M155,100 V130 M335,100 V130 M515,100 V130 M695,100 V130" marker-end="url(#arrow-105)"></path>
+    <path d="M155,100 H615"></path>
+    <path d="M155,100 V130" marker-end="url(#arrow-105)"></path>
+    <path d="M260,100 V130" marker-end="url(#arrow-105)"></path>
+    <path d="M395,100 V130" marker-end="url(#arrow-105)"></path>
+    <path d="M505,100 V130" marker-end="url(#arrow-105)"></path>
+    <path d="M615,100 V130" marker-end="url(#arrow-105)"></path>
     <rect x="90" y="130" width="130" height="40"></rect>
-    <rect x="270" y="130" width="130" height="40"></rect>
-    <rect x="450" y="130" width="130" height="40"></rect>
-    <rect x="630" y="130" width="130" height="40"></rect>
-    <path d="M860,150 H900" marker-start="url(#arrow-105b)" marker-end="url(#arrow-105)"></path>
-    <path d="M860,190 H900" marker-start="url(#arrow-105b)" marker-end="url(#arrow-105)" stroke-dasharray="6 4"></path>
+    <rect x="330" y="130" width="130" height="40"></rect>
+    <rect x="550" y="130" width="130" height="40"></rect>
+    <path d="M860,150 H900" marker-end="url(#arrow-105)"></path>
+    <path d="M860,190 H900" marker-end="url(#arrow-105)" stroke-dasharray="6 4"></path>
   </g>
   <g fill="currentColor" font-family="sans-serif">
     <text x="415" y="35.68" text-anchor="middle" font-size="13">项目总负责人</text>
     <text x="700" y="35.68" text-anchor="middle" font-size="13">Project Controlling</text>
     <text x="155" y="155.68" text-anchor="middle" font-size="12">子项目1</text>
-    <text x="335" y="155.68" text-anchor="middle" font-size="12">子项目2</text>
-    <text x="515" y="155.68" text-anchor="middle" font-size="12">……</text>
-    <text x="695" y="155.68" text-anchor="middle" font-size="12">子项目n</text>
+    <text x="260" y="155.68" text-anchor="middle" font-size="12">……</text>
+    <text x="395" y="155.68" text-anchor="middle" font-size="12">子项目i</text>
+    <text x="505" y="155.68" text-anchor="middle" font-size="12">……</text>
+    <text x="615" y="155.68" text-anchor="middle" font-size="12">子项目n</text>
     <text x="912" y="154" font-size="12">命令关系</text>
     <text x="912" y="194" font-size="12">决策支持关系</text>
   </g>
@@ -449,19 +457,21 @@ Project Controlling 模式的出现反映了工程项目管理专业化发展的
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="330" y="10" width="170" height="40"></rect>
     <rect x="640" y="10" width="120" height="40"></rect>
-    <path d="M500,30 H640" marker-start="url(#arrow-106b)" marker-end="url(#arrow-106)" stroke-dasharray="6 4"></path>
+    <path d="M500,30 H640" marker-start="url(#arrow-106b)" stroke-dasharray="6 4"></path>
     <path d="M415,50 V75"></path>
     <path d="M160,75 H720"></path>
-    <path d="M160,75 V90 M450,75 V90 M720,75 V90" marker-end="url(#arrow-106)"></path>
+    <path d="M160,75 V90" marker-end="url(#arrow-106)"></path>
+    <path d="M450,75 V90" marker-end="url(#arrow-106)"></path>
+    <path d="M720,75 V90" marker-end="url(#arrow-106)"></path>
     <rect x="80" y="90" width="160" height="56"></rect>
     <rect x="370" y="90" width="160" height="56"></rect>
     <rect x="640" y="90" width="160" height="56"></rect>
     <rect x="260" y="105" width="80" height="26"></rect>
     <rect x="550" y="105" width="70" height="26"></rect>
     <rect x="830" y="105" width="80" height="26"></rect>
-    <path d="M240,118 H260" marker-start="url(#arrow-106b)" marker-end="url(#arrow-106)" stroke-dasharray="5 4"></path>
-    <path d="M530,118 H550" marker-start="url(#arrow-106b)" marker-end="url(#arrow-106)" stroke-dasharray="5 4"></path>
-    <path d="M800,118 H830" marker-start="url(#arrow-106b)" marker-end="url(#arrow-106)" stroke-dasharray="5 4"></path>
+    <path d="M240,118 H260" marker-start="url(#arrow-106b)" stroke-dasharray="5 4"></path>
+    <path d="M530,118 H550" marker-start="url(#arrow-106b)" stroke-dasharray="5 4"></path>
+    <path d="M800,118 H830" marker-start="url(#arrow-106b)" stroke-dasharray="5 4"></path>
     <path d="M160,146 V200" marker-end="url(#arrow-106)"></path>
     <path d="M450,146 V200" marker-end="url(#arrow-106)"></path>
     <path d="M720,146 V200" marker-end="url(#arrow-106)"></path>
@@ -471,7 +481,7 @@ Project Controlling 模式的出现反映了工程项目管理专业化发展的
   </g>
   <g fill="currentColor" font-family="sans-serif">
     <text x="415" y="35.68" text-anchor="middle" font-size="13">项目总负责人</text>
-    <text x="700" y="35.68" text-anchor="middle" font-size="13">总 PC</text>
+    <text x="700" y="35.68" text-anchor="middle" font-size="13">总PC</text>
     <text x="160" y="112" text-anchor="middle" font-size="12">子项目1</text>
     <text x="160" y="132" text-anchor="middle" font-size="12">负责人</text>
     <text x="450" y="112" text-anchor="middle" font-size="12">子项目 i</text>
