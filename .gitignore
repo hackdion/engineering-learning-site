@@ -27,3 +27,7 @@ private*
 # 内部工作文档（不入公开仓库）
 .trae/specs/
 项目管理/
+
+# 本机工具会话产物
+.v2c/
+.video_agent/
