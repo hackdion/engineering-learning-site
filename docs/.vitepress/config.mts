@@ -160,6 +160,13 @@ export default defineConfig({
                 { text: '第二节 国际项目管理标准', link: '/textbook/chapter-10/section-02' },
                 { text: '第三节 国际工程组织实施模式', link: '/textbook/chapter-10/section-03' }
               ]
+            },
+            {
+              text: '附录',
+              collapsed: false,
+              items: [
+                { text: '参考文献', link: '/textbook/appendix-references' }
+              ]
             }
           ]
         }
