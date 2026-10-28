@@ -120,10 +120,47 @@ export default defineConfig({
                 { text: '第二节 监理实施细则', link: '/textbook/chapter-06/section-02' }
               ]
             },
-            { text: '第七章 工程监理工作内容和方式（后续整理）' },
-            { text: '第八章 工程监理文件资料管理（后续整理）' },
-            { text: '第九章 全过程工程咨询及项目管理服务（后续整理）' },
-            { text: '第十章 国际工程咨询与组织实施模式（后续整理）' }
+            {
+              text: '第七章 工程监理工作内容和方式',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/chapter-07/' },
+                { text: '第一节 工程监理主要工作内容', link: '/textbook/chapter-07/section-01' },
+                { text: '第二节 工程监理主要工作方式', link: '/textbook/chapter-07/section-02' },
+                { text: '第三节 工程监理数智化', link: '/textbook/chapter-07/section-03' }
+              ]
+            },
+            {
+              text: '第八章 工程监理文件资料管理',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/chapter-08/' },
+                { text: '第一节 工程监理基本表式及主要文件资料', link: '/textbook/chapter-08/section-01' },
+                { text: '第二节 工程监理文件资料管理职责和要求', link: '/textbook/chapter-08/section-02' }
+              ]
+            },
+            {
+              text: '第九章 全过程工程咨询及项目管理服务',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/chapter-09/' },
+                { text: '第一节 全过程工程咨询', link: '/textbook/chapter-09/section-01' },
+                { text: '第二节 工程监理与项目管理一体化', link: '/textbook/chapter-09/section-02' },
+                { text: '第三节 工程项目全过程集成化管理', link: '/textbook/chapter-09/section-03' },
+                { text: '第四节 工程风险管理', link: '/textbook/chapter-09/section-04' },
+                { text: '第五节 工程项目利益相关方管理', link: '/textbook/chapter-09/section-05' }
+              ]
+            },
+            {
+              text: '第十章 国际工程咨询与组织实施模式',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/chapter-10/' },
+                { text: '第一节 国际工程咨询', link: '/textbook/chapter-10/section-01' },
+                { text: '第二节 国际项目管理标准', link: '/textbook/chapter-10/section-02' },
+                { text: '第三节 国际工程组织实施模式', link: '/textbook/chapter-10/section-03' }
+              ]
+            }
           ]
         }
       ],
