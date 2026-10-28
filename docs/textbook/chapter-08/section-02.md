@@ -230,7 +230,7 @@ sectionTitle: 第二节 工程监理文件资料管理职责和要求
       <td>工程监理招标投标文件</td>
       <td style="text-align: center">必须</td>
       <td style="text-align: center">必须</td>
-      <td style="text-align: center">必须</td>
+      <td></td>
     </tr>
     <tr>
       <td style="text-align: center">2</td>
@@ -387,7 +387,7 @@ sectionTitle: 第二节 工程监理文件资料管理职责和要求
       <td>分包单位资质报审表</td>
       <td style="text-align: center">必须</td>
       <td style="text-align: center">必须</td>
-      <td style="text-align: center">必须</td>
+      <td></td>
     </tr>
     <tr>
       <td style="text-align: center">3</td>
