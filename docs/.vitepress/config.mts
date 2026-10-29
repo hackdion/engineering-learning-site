@@ -62,7 +62,8 @@ export default defineConfig({
         {
           text: '教材阅读',
           items: [
-            { text: '阅读说明', link: '/textbook/' },
+            { text: '教材目录', link: '/textbook/' },
+            { text: '建设工程进度控制（土木建筑工程）', link: '/textbook/schedule/' },
             {
               text: '第一章 工程监理及其相关制度',
               collapsed: false,
@@ -166,6 +167,24 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '参考文献', link: '/textbook/appendix-references' }
+              ]
+            }
+          ]
+        }
+      ],
+      '/textbook/schedule/': [
+        {
+          text: '建设工程进度控制（土木建筑工程）',
+          items: [
+            { text: '书目首页', link: '/textbook/schedule/' },
+            {
+              text: '第一章 工程进度控制概述',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/schedule/chapter-01/' },
+                { text: '第一节 工程进度影响因素及控制目标', link: '/textbook/schedule/chapter-01/section-01' },
+                { text: '第二节 工程进度计划体系及计划表示方法', link: '/textbook/schedule/chapter-01/section-02' },
+                { text: '第三节 工程进度控制任务和措施', link: '/textbook/schedule/chapter-01/section-03' }
               ]
             }
           ]
