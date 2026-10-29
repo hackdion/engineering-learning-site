@@ -268,6 +268,20 @@ export default defineConfig({
                 { text: '第一节 资金的时间价值及其计算', link: '/textbook/investment/chapter-02/section-01' },
                 { text: '第二节 价值工程及其应用', link: '/textbook/investment/chapter-02/section-02' }
               ]
+            },
+            {
+              text: '第三章 工程项目投资构成及计算',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-03/' },
+                { text: '第一节 工程项目总投资构成', link: '/textbook/investment/chapter-03/section-01' },
+                { text: '第二节 建筑安装工程费构成及计算', link: '/textbook/investment/chapter-03/section-02' },
+                { text: '第三节 设备购置费构成及计算', link: '/textbook/investment/chapter-03/section-03' },
+                { text: '第四节 工程建设其他费构成及计算', link: '/textbook/investment/chapter-03/section-04' },
+                { text: '第五节 预备费计算', link: '/textbook/investment/chapter-03/section-05' },
+                { text: '第六节 增值税计算', link: '/textbook/investment/chapter-03/section-06' },
+                { text: '第七节 建设期利息与流动资金计算', link: '/textbook/investment/chapter-03/section-07' }
+              ]
             }
           ]
         }

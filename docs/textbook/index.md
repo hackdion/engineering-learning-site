@@ -150,6 +150,17 @@ title: 教材阅读
 - [第一节 资金的时间价值及其计算](./investment/chapter-02/section-01)
 - [第二节 价值工程及其应用](./investment/chapter-02/section-02)
 
+### 第三章 工程项目投资构成及计算
+
+- [本章导读](./investment/chapter-03/)
+- [第一节 工程项目总投资构成](./investment/chapter-03/section-01)
+- [第二节 建筑安装工程费构成及计算](./investment/chapter-03/section-02)
+- [第三节 设备购置费构成及计算](./investment/chapter-03/section-03)
+- [第四节 工程建设其他费构成及计算](./investment/chapter-03/section-04)
+- [第五节 预备费计算](./investment/chapter-03/section-05)
+- [第六节 增值税计算](./investment/chapter-03/section-06)
+- [第七节 建设期利息与流动资金计算](./investment/chapter-03/section-07)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
