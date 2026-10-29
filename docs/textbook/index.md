@@ -10,6 +10,7 @@ title: 教材阅读
 
 - [建设工程监理概论](#建设工程监理概论)
 - [建设工程进度控制（土木建筑工程）](./schedule/)
+- [建设工程合同管理](./contract-management/)
 
 ## 建设工程监理概论
 
@@ -110,6 +111,62 @@ title: 教材阅读
 - [第四节 双代号时标网络计划](./schedule/chapter-03/section-04)
 - [第五节 网络计划优化](./schedule/chapter-03/section-05)
 - [第六节 单代号搭接网络计划和多级网络计划系统](./schedule/chapter-03/section-06)
+
+## 建设工程合同管理
+
+### 第一章 工程合同管理法律制度
+
+- [本章导读](./contract-management/chapter-01/)
+- [第一节 工程交易方式及合同体系](./contract-management/chapter-01/section-01)
+- [第二节 工程合同管理任务和方法](./contract-management/chapter-01/section-02)
+- [第三节 工程合同管理相关法律基础](./contract-management/chapter-01/section-03)
+- [第四节 工程合同担保](./contract-management/chapter-01/section-04)
+- [第五节 工程保险](./contract-management/chapter-01/section-05)
+
+### 第二章 工程勘察设计招标与合同管理
+
+- [本章导读](./contract-management/chapter-02/)
+- [第一节 工程勘察设计招标与设计方案竞赛](./contract-management/chapter-02/section-01)
+- [第二节 工程勘察设计合同订立](./contract-management/chapter-02/section-02)
+- [第三节 工程勘察合同履行管理](./contract-management/chapter-02/section-03)
+- [第四节 工程设计合同履行管理](./contract-management/chapter-02/section-04)
+
+### 第三章 工程施工招标与合同管理
+
+- [本章导读](./contract-management/chapter-03/)
+- [第一节 工程施工招标管理](./contract-management/chapter-03/section-01)
+- [第二节 施工合同订立](./contract-management/chapter-03/section-02)
+- [第三节 施工合同履行管理](./contract-management/chapter-03/section-03)
+- [第四节 工程施工分包管理](./contract-management/chapter-03/section-04)
+
+### 第四章 工程总承包招标与合同管理
+
+- [本章导读](./contract-management/chapter-04/)
+- [第一节 工程总承包招标](./contract-management/chapter-04/section-01)
+- [第二节 工程总承包合同订立](./contract-management/chapter-04/section-02)
+- [第三节 工程总承包合同履行管理](./contract-management/chapter-04/section-03)
+- [第四节 工程总承包分包管理](./contract-management/chapter-04/section-04)
+
+### 第五章 工程材料设备采购招标与合同管理
+
+- [本章导读](./contract-management/chapter-05/)
+- [第一节 材料设备采购招标](./contract-management/chapter-05/section-01)
+- [第二节 材料设备采购合同订立](./contract-management/chapter-05/section-02)
+- [第三节 材料采购合同履行管理](./contract-management/chapter-05/section-03)
+- [第四节 设备采购合同履行管理](./contract-management/chapter-05/section-04)
+
+### 第六章 国际工程常用合同条件
+
+- [本章导读](./contract-management/chapter-06/)
+- [第一节 FIDIC施工合同条件](./contract-management/chapter-06/section-01)
+- [第二节 FIDIC设计采购施工(EPC )/交钥匙工程合同条件](./contract-management/chapter-06/section-02)
+- [第三节 FIDIC设计施工和运营合同条件](./contract-management/chapter-06/section-03)
+- [第四节 NEC施工合同(ECC )及合作伙伴管理](./contract-management/chapter-06/section-04)
+- [第五节 AIA系列合同及CM 和IPD 合同模式](./contract-management/chapter-06/section-05)
+
+### 附录
+
+- [参考文献](./contract-management/appendix-references)
 
 ## 阅读方式
 

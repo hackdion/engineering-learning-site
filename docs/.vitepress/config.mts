@@ -213,6 +213,85 @@ export default defineConfig({
           ]
         }
       ],
+      '/textbook/contract-management/': [
+        {
+          text: '建设工程合同管理',
+          collapsed: false,
+          items: [
+            { text: '书目首页', link: '/textbook/contract-management/' },
+            { text: '前言', link: '/textbook/contract-management/preface' },
+            {
+              text: '第一章 工程合同管理法律制度',
+              collapsed: true,
+              items: [
+                { text: '本章导读', link: '/textbook/contract-management/chapter-01/' },
+                { text: '第一节 工程交易方式及合同体系', link: '/textbook/contract-management/chapter-01/section-01' },
+                { text: '第二节 工程合同管理任务和方法', link: '/textbook/contract-management/chapter-01/section-02' },
+                { text: '第三节 工程合同管理相关法律基础', link: '/textbook/contract-management/chapter-01/section-03' },
+                { text: '第四节 工程合同担保', link: '/textbook/contract-management/chapter-01/section-04' },
+                { text: '第五节 工程保险', link: '/textbook/contract-management/chapter-01/section-05' }
+              ]
+            },
+            {
+              text: '第二章 工程勘察设计招标与合同管理',
+              collapsed: true,
+              items: [
+                { text: '本章导读', link: '/textbook/contract-management/chapter-02/' },
+                { text: '第一节 工程勘察设计招标与设计方案竞赛', link: '/textbook/contract-management/chapter-02/section-01' },
+                { text: '第二节 工程勘察设计合同订立', link: '/textbook/contract-management/chapter-02/section-02' },
+                { text: '第三节 工程勘察合同履行管理', link: '/textbook/contract-management/chapter-02/section-03' },
+                { text: '第四节 工程设计合同履行管理', link: '/textbook/contract-management/chapter-02/section-04' }
+              ]
+            },
+            {
+              text: '第三章 工程施工招标与合同管理',
+              collapsed: true,
+              items: [
+                { text: '本章导读', link: '/textbook/contract-management/chapter-03/' },
+                { text: '第一节 工程施工招标管理', link: '/textbook/contract-management/chapter-03/section-01' },
+                { text: '第二节 施工合同订立', link: '/textbook/contract-management/chapter-03/section-02' },
+                { text: '第三节 施工合同履行管理', link: '/textbook/contract-management/chapter-03/section-03' },
+                { text: '第四节 工程施工分包管理', link: '/textbook/contract-management/chapter-03/section-04' }
+              ]
+            },
+            {
+              text: '第四章 工程总承包招标与合同管理',
+              collapsed: true,
+              items: [
+                { text: '本章导读', link: '/textbook/contract-management/chapter-04/' },
+                { text: '第一节 工程总承包招标', link: '/textbook/contract-management/chapter-04/section-01' },
+                { text: '第二节 工程总承包合同订立', link: '/textbook/contract-management/chapter-04/section-02' },
+                { text: '第三节 工程总承包合同履行管理', link: '/textbook/contract-management/chapter-04/section-03' },
+                { text: '第四节 工程总承包分包管理', link: '/textbook/contract-management/chapter-04/section-04' }
+              ]
+            },
+            {
+              text: '第五章 工程材料设备采购招标与合同管理',
+              collapsed: true,
+              items: [
+                { text: '本章导读', link: '/textbook/contract-management/chapter-05/' },
+                { text: '第一节 材料设备采购招标', link: '/textbook/contract-management/chapter-05/section-01' },
+                { text: '第二节 材料设备采购合同订立', link: '/textbook/contract-management/chapter-05/section-02' },
+                { text: '第三节 材料采购合同履行管理', link: '/textbook/contract-management/chapter-05/section-03' },
+                { text: '第四节 设备采购合同履行管理', link: '/textbook/contract-management/chapter-05/section-04' }
+              ]
+            },
+            {
+              text: '第六章 国际工程常用合同条件',
+              collapsed: true,
+              items: [
+                { text: '本章导读', link: '/textbook/contract-management/chapter-06/' },
+                { text: '第一节 FIDIC施工合同条件', link: '/textbook/contract-management/chapter-06/section-01' },
+                { text: '第二节 FIDIC设计采购施工(EPC )/交钥匙工程合同条件', link: '/textbook/contract-management/chapter-06/section-02' },
+                { text: '第三节 FIDIC设计施工和运营合同条件', link: '/textbook/contract-management/chapter-06/section-03' },
+                { text: '第四节 NEC施工合同(ECC )及合作伙伴管理', link: '/textbook/contract-management/chapter-06/section-04' },
+                { text: '第五节 AIA系列合同及CM 和IPD 合同模式', link: '/textbook/contract-management/chapter-06/section-05' }
+              ]
+            },
+            { text: '参考文献', link: '/textbook/contract-management/appendix-references' }
+          ]
+        }
+      ],
       '/courses/': [
         {
           text: '课程中心',
