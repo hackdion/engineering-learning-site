@@ -258,7 +258,7 @@ Partnering 模式强调资源共享，信息作为一种重要的资源，对于
 <svg viewBox="0 0 1020 470" role="img" aria-label="图 10-4 基于电子信息网络的信息传递模式" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrow-104" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
-    <marker id="arrow-104b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-104b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <ellipse cx="470" cy="200" rx="230" ry="110" fill="#d8dcd4"></ellipse>
@@ -409,7 +409,7 @@ Project Controlling 模式的出现反映了工程项目管理专业化发展的
 <svg viewBox="0 0 1020 230" role="img" aria-label="图 10-5 单平面 Project Controlling 模式的组织结构" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrow-105" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
-    <marker id="arrow-105b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-105b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="330" y="10" width="170" height="40"></rect>
@@ -452,7 +452,7 @@ Project Controlling 模式的出现反映了工程项目管理专业化发展的
 <svg viewBox="0 0 1020 300" role="img" aria-label="图 10-6 多平面 Project Controlling 模式的组织结构" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrow-106" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
-    <marker id="arrow-106b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-106b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path></marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="330" y="10" width="170" height="40"></rect>
