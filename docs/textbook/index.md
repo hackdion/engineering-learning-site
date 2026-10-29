@@ -161,6 +161,14 @@ title: 教材阅读
 - [第六节 增值税计算](./investment/chapter-03/section-06)
 - [第七节 建设期利息与流动资金计算](./investment/chapter-03/section-07)
 
+### 第四章 工程项目资金来源及项目融资
+
+- [本章导读](./investment/chapter-04/)
+- [第一节 项目资本金制度](./investment/chapter-04/section-01)
+- [第二节 项目资金筹措渠道和方式](./investment/chapter-04/section-02)
+- [第三节 资金成本计算](./investment/chapter-04/section-03)
+- [第四节 项目融资特点、程序和主要方式](./investment/chapter-04/section-04)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

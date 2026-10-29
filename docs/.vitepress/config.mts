@@ -282,6 +282,17 @@ export default defineConfig({
                 { text: '第六节 增值税计算', link: '/textbook/investment/chapter-03/section-06' },
                 { text: '第七节 建设期利息与流动资金计算', link: '/textbook/investment/chapter-03/section-07' }
               ]
+            },
+            {
+              text: '第四章 工程项目资金来源及项目融资',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-04/' },
+                { text: '第一节 项目资本金制度', link: '/textbook/investment/chapter-04/section-01' },
+                { text: '第二节 项目资金筹措渠道和方式', link: '/textbook/investment/chapter-04/section-02' },
+                { text: '第三节 资金成本计算', link: '/textbook/investment/chapter-04/section-03' },
+                { text: '第四节 项目融资特点、程序和主要方式', link: '/textbook/investment/chapter-04/section-04' }
+              ]
             }
           ]
         }
