@@ -169,6 +169,15 @@ title: 教材阅读
 - [第三节 资金成本计算](./investment/chapter-04/section-03)
 - [第四节 项目融资特点、程序和主要方式](./investment/chapter-04/section-04)
 
+### 第五章 工程决策阶段投资控制
+
+- [本章导读](./investment/chapter-05/)
+- [第一节 工程项目可行性研究报告编制和评估](./investment/chapter-05/section-01)
+- [第二节 工程项目投资估算](./investment/chapter-05/section-02)
+- [第三节 工程项目财务分析](./investment/chapter-05/section-03)
+- [第四节 工程项目经济分析](./investment/chapter-05/section-04)
+- [第五节 不确定性分析与风险分析](./investment/chapter-05/section-05)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
