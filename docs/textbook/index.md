@@ -119,6 +119,12 @@ title: 教材阅读
 - [第二节 实际进度与计划进度的比较方法](./schedule/chapter-04/section-02)
 - [第三节 进度偏差分析及计划调整方法](./schedule/chapter-04/section-03)
 
+### 第五章 工程设计进度控制
+
+- [本章导读](./schedule/chapter-05/)
+- [第一节 设计进度影响因素及控制目标体系](./schedule/chapter-05/section-01)
+- [第二节 设计进度控制工作程序和内容](./schedule/chapter-05/section-02)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

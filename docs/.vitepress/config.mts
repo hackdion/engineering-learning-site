@@ -219,6 +219,15 @@ export default defineConfig({
                 { text: '第二节 实际进度与计划进度的比较方法', link: '/textbook/schedule/chapter-04/section-02' },
                 { text: '第三节 进度偏差分析及计划调整方法', link: '/textbook/schedule/chapter-04/section-03' }
               ]
+            },
+            {
+              text: '第五章 工程设计进度控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/schedule/chapter-05/' },
+                { text: '第一节 设计进度影响因素及控制目标体系', link: '/textbook/schedule/chapter-05/section-01' },
+                { text: '第二节 设计进度控制工作程序和内容', link: '/textbook/schedule/chapter-05/section-02' }
+              ]
             }
           ]
         }
