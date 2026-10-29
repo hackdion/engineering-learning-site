@@ -186,6 +186,16 @@ export default defineConfig({
                 { text: '第二节 工程进度计划体系及计划表示方法', link: '/textbook/schedule/chapter-01/section-02' },
                 { text: '第三节 工程进度控制任务和措施', link: '/textbook/schedule/chapter-01/section-03' }
               ]
+            },
+            {
+              text: '第二章 流水施工组织方式',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/schedule/chapter-02/' },
+                { text: '第一节 流水施工参数及组织方式', link: '/textbook/schedule/chapter-02/section-01' },
+                { text: '第二节 有节奏流水施工', link: '/textbook/schedule/chapter-02/section-02' },
+                { text: '第三节 非节奏流水施工', link: '/textbook/schedule/chapter-02/section-03' }
+              ]
             }
           ]
         }

@@ -94,6 +94,13 @@ title: 教材阅读
 - [第二节 工程进度计划体系及计划表示方法](./schedule/chapter-01/section-02)
 - [第三节 工程进度控制任务和措施](./schedule/chapter-01/section-03)
 
+### 第二章 流水施工组织方式
+
+- [本章导读](./schedule/chapter-02/)
+- [第一节 流水施工参数及组织方式](./schedule/chapter-02/section-01)
+- [第二节 有节奏流水施工](./schedule/chapter-02/section-02)
+- [第三节 非节奏流水施工](./schedule/chapter-02/section-03)
+
 ## 阅读方式
 
 1. 从左侧目录进入书目首页，再按章、节阅读正文。
