@@ -125,6 +125,16 @@ title: 教材阅读
 - [第一节 设计进度影响因素及控制目标体系](./schedule/chapter-05/section-01)
 - [第二节 设计进度控制工作程序和内容](./schedule/chapter-05/section-02)
 
+### 第六章 工程施工进度控制
+
+- [本章导读](./schedule/chapter-06/)
+- [第一节 施工进度控制目标体系及确定](./schedule/chapter-06/section-01)
+- [第二节 施工进度控制工作流程和内容](./schedule/chapter-06/section-02)
+- [第三节 施工进度计划编制与审查](./schedule/chapter-06/section-03)
+- [第四节 施工进度计划实施中的检查与调整](./schedule/chapter-06/section-04)
+- [第五节 工程延期和工期延误的处理](./schedule/chapter-06/section-05)
+- [第六节 物资供应进度控制](./schedule/chapter-06/section-06)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

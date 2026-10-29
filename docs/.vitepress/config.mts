@@ -228,6 +228,19 @@ export default defineConfig({
                 { text: '第一节 设计进度影响因素及控制目标体系', link: '/textbook/schedule/chapter-05/section-01' },
                 { text: '第二节 设计进度控制工作程序和内容', link: '/textbook/schedule/chapter-05/section-02' }
               ]
+            },
+            {
+              text: '第六章 工程施工进度控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/schedule/chapter-06/' },
+                { text: '第一节 施工进度控制目标体系及确定', link: '/textbook/schedule/chapter-06/section-01' },
+                { text: '第二节 施工进度控制工作流程和内容', link: '/textbook/schedule/chapter-06/section-02' },
+                { text: '第三节 施工进度计划编制与审查', link: '/textbook/schedule/chapter-06/section-03' },
+                { text: '第四节 施工进度计划实施中的检查与调整', link: '/textbook/schedule/chapter-06/section-04' },
+                { text: '第五节 工程延期和工期延误的处理', link: '/textbook/schedule/chapter-06/section-05' },
+                { text: '第六节 物资供应进度控制', link: '/textbook/schedule/chapter-06/section-06' }
+              ]
             }
           ]
         }
