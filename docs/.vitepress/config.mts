@@ -209,6 +209,16 @@ export default defineConfig({
                 { text: '第五节 网络计划优化', link: '/textbook/schedule/chapter-03/section-05' },
                 { text: '第六节 单代号搭接网络计划和多级网络计划系统', link: '/textbook/schedule/chapter-03/section-06' }
               ]
+            },
+            {
+              text: '第四章 工程进度计划实施监测与调整',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/schedule/chapter-04/' },
+                { text: '第一节 实际进度监测与调整系统过程', link: '/textbook/schedule/chapter-04/section-01' },
+                { text: '第二节 实际进度与计划进度的比较方法', link: '/textbook/schedule/chapter-04/section-02' },
+                { text: '第三节 进度偏差分析及计划调整方法', link: '/textbook/schedule/chapter-04/section-03' }
+              ]
             }
           ]
         }

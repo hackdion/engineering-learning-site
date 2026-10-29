@@ -112,6 +112,13 @@ title: 教材阅读
 - [第五节 网络计划优化](./schedule/chapter-03/section-05)
 - [第六节 单代号搭接网络计划和多级网络计划系统](./schedule/chapter-03/section-06)
 
+### 第四章 工程进度计划实施监测与调整
+
+- [本章导读](./schedule/chapter-04/)
+- [第一节 实际进度监测与调整系统过程](./schedule/chapter-04/section-01)
+- [第二节 实际进度与计划进度的比较方法](./schedule/chapter-04/section-02)
+- [第三节 进度偏差分析及计划调整方法](./schedule/chapter-04/section-03)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
