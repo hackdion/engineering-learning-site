@@ -20,6 +20,14 @@
 
 /* 窄屏长公式横向滚动：公式超宽时在自身区域内滚动，不撑破页面 */
 @media (max-width: 768px) {
+  .vp-doc mjx-container:not([display]) {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+  }
+
   .vp-doc mjx-container[display="true"] {
     display: block !important;
     min-width: 0 !important;

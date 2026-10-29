@@ -196,6 +196,19 @@ export default defineConfig({
                 { text: '第二节 有节奏流水施工', link: '/textbook/schedule/chapter-02/section-02' },
                 { text: '第三节 非节奏流水施工', link: '/textbook/schedule/chapter-02/section-03' }
               ]
+            },
+            {
+              text: '第三章 工程网络计划技术',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/schedule/chapter-03/' },
+                { text: '第一节 基本原理', link: '/textbook/schedule/chapter-03/section-01' },
+                { text: '第二节 网络图绘制', link: '/textbook/schedule/chapter-03/section-02' },
+                { text: '第三节 网络计划时间参数计算', link: '/textbook/schedule/chapter-03/section-03' },
+                { text: '第四节 双代号时标网络计划', link: '/textbook/schedule/chapter-03/section-04' },
+                { text: '第五节 网络计划优化', link: '/textbook/schedule/chapter-03/section-05' },
+                { text: '第六节 单代号搭接网络计划和多级网络计划系统', link: '/textbook/schedule/chapter-03/section-06' }
+              ]
             }
           ]
         }

@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import { nextTick, onBeforeUnmount, ref, watch } from 'vue'
+import { withBase } from 'vitepress'
 
 const props = defineProps<{
   caption: string
+  src?: string
+  alt?: string
+  width?: number
+  height?: number
 }>()
 
 const active = ref(false)
@@ -48,7 +53,15 @@ onBeforeUnmount(() => {
         <span class="figure-zoom__caption">{{ props.caption }}</span>
         <button type="button" class="figure-zoom__close" @click="close">关闭</button>
       </div>
-      <slot />
+      <img
+        v-if="props.src"
+        :src="withBase(props.src)"
+        :alt="props.alt || props.caption"
+        :width="props.width"
+        :height="props.height"
+        class="figure-zoom__image"
+      />
+      <slot v-else />
     </div>
     <button
       v-if="!active"
@@ -72,7 +85,8 @@ onBeforeUnmount(() => {
   justify-content: center;
 }
 
-.figure-zoom__viewport :deep(svg) {
+.figure-zoom__viewport :deep(svg),
+.figure-zoom__viewport :deep(img) {
   max-width: 100%;
   height: auto;
 }
@@ -106,7 +120,8 @@ onBeforeUnmount(() => {
   -webkit-overflow-scrolling: touch;
 }
 
-.figure-zoom.is-open .figure-zoom__viewport :deep(svg) {
+.figure-zoom.is-open .figure-zoom__viewport :deep(svg),
+.figure-zoom.is-open .figure-zoom__viewport :deep(img) {
   display: block;
   width: 1040px;
   max-width: none;
