@@ -144,6 +144,12 @@ title: 教材阅读
 - [第一节 工程项目投资特点和控制原理](./investment/chapter-01/section-01)
 - [第二节 工程投资控制目标、任务和措施](./investment/chapter-01/section-02)
 
+### 第二章 资金时间价值与价值工程
+
+- [本章导读](./investment/chapter-02/)
+- [第一节 资金的时间价值及其计算](./investment/chapter-02/section-01)
+- [第二节 价值工程及其应用](./investment/chapter-02/section-02)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

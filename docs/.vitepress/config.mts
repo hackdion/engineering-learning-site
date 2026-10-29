@@ -259,6 +259,15 @@ export default defineConfig({
                 { text: '第一节 工程项目投资特点和控制原理', link: '/textbook/investment/chapter-01/section-01' },
                 { text: '第二节 工程投资控制目标、任务和措施', link: '/textbook/investment/chapter-01/section-02' }
               ]
+            },
+            {
+              text: '第二章 资金时间价值与价值工程',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-02/' },
+                { text: '第一节 资金的时间价值及其计算', link: '/textbook/investment/chapter-02/section-01' },
+                { text: '第二节 价值工程及其应用', link: '/textbook/investment/chapter-02/section-02' }
+              ]
             }
           ]
         }
