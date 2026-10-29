@@ -63,6 +63,7 @@ export default defineConfig({
           text: '教材阅读',
           items: [
             { text: '教材目录', link: '/textbook/' },
+            { text: '建设工程投资控制（土木建筑工程）', link: '/textbook/investment/' },
             { text: '建设工程进度控制（土木建筑工程）', link: '/textbook/schedule/' },
             {
               text: '第一章 工程监理及其相关制度',
@@ -240,6 +241,23 @@ export default defineConfig({
                 { text: '第四节 施工进度计划实施中的检查与调整', link: '/textbook/schedule/chapter-06/section-04' },
                 { text: '第五节 工程延期和工期延误的处理', link: '/textbook/schedule/chapter-06/section-05' },
                 { text: '第六节 物资供应进度控制', link: '/textbook/schedule/chapter-06/section-06' }
+              ]
+            }
+          ]
+        }
+      ],
+      '/textbook/investment/': [
+        {
+          text: '建设工程投资控制（土木建筑工程）',
+          items: [
+            { text: '书目首页', link: '/textbook/investment/' },
+            {
+              text: '第一章 工程投资控制概述',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-01/' },
+                { text: '第一节 工程项目投资特点和控制原理', link: '/textbook/investment/chapter-01/section-01' },
+                { text: '第二节 工程投资控制目标、任务和措施', link: '/textbook/investment/chapter-01/section-02' }
               ]
             }
           ]
