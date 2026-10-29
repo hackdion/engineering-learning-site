@@ -101,6 +101,16 @@ title: 教材阅读
 - [第二节 有节奏流水施工](./schedule/chapter-02/section-02)
 - [第三节 非节奏流水施工](./schedule/chapter-02/section-03)
 
+### 第三章 工程网络计划技术
+
+- [本章导读](./schedule/chapter-03/)
+- [第一节 基本原理](./schedule/chapter-03/section-01)
+- [第二节 网络图绘制](./schedule/chapter-03/section-02)
+- [第三节 网络计划时间参数计算](./schedule/chapter-03/section-03)
+- [第四节 双代号时标网络计划](./schedule/chapter-03/section-04)
+- [第五节 网络计划优化](./schedule/chapter-03/section-05)
+- [第六节 单代号搭接网络计划和多级网络计划系统](./schedule/chapter-03/section-06)
+
 ## 阅读方式
 
 1. 从左侧目录进入书目首页，再按章、节阅读正文。
