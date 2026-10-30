@@ -438,6 +438,16 @@ export default defineConfig({
                 { text: '第一节 工程质量缺陷及处理', link: '/textbook/quality/chapter-07/section-01' },
                 { text: '第二节 工程质量事故报告及调查处理', link: '/textbook/quality/chapter-07/section-02' }
               ]
+            },
+            {
+              text: '第八章 工程安全生产管理',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-08/' },
+                { text: '第一节 安全风险管理', link: '/textbook/quality/chapter-08/section-01' },
+                { text: '第二节 危险性较大的分部分项工程施工安全管理', link: '/textbook/quality/chapter-08/section-02' },
+                { text: '第三节 生产安全事故报告与调查处理', link: '/textbook/quality/chapter-08/section-03' }
+              ]
             }
           ]
         }

@@ -275,6 +275,13 @@ title: 教材阅读
 - [第一节 工程质量缺陷及处理](./quality/chapter-07/section-01)
 - [第二节 工程质量事故报告及调查处理](./quality/chapter-07/section-02)
 
+### 第八章 工程安全生产管理
+
+- [本章导读](./quality/chapter-08/)
+- [第一节 安全风险管理](./quality/chapter-08/section-01)
+- [第二节 危险性较大的分部分项工程施工安全管理](./quality/chapter-08/section-02)
+- [第三节 生产安全事故报告与调查处理](./quality/chapter-08/section-03)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
