@@ -186,6 +186,14 @@ title: 教材阅读
 - [第三节 设计概算编制与审查](./investment/chapter-06/section-03)
 - [第四节 施工图预算编制和审查](./investment/chapter-06/section-04)
 
+### 第七章 工程招标阶段投资控制
+
+- [本章导读](./investment/chapter-07/)
+- [第一节 招标工程量清单编制](./investment/chapter-07/section-01)
+- [第二节 工程合同计价方式及选择](./investment/chapter-07/section-02)
+- [第三节 最高投标限价编制](./investment/chapter-07/section-03)
+- [第四节 投标报价编制及审核](./investment/chapter-07/section-04)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

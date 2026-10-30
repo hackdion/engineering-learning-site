@@ -316,6 +316,17 @@ export default defineConfig({
                 { text: '第三节 设计概算编制与审查', link: '/textbook/investment/chapter-06/section-03' },
                 { text: '第四节 施工图预算编制和审查', link: '/textbook/investment/chapter-06/section-04' }
               ]
+            },
+            {
+              text: '第七章 工程招标阶段投资控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-07/' },
+                { text: '第一节 招标工程量清单编制', link: '/textbook/investment/chapter-07/section-01' },
+                { text: '第二节 工程合同计价方式及选择', link: '/textbook/investment/chapter-07/section-02' },
+                { text: '第三节 最高投标限价编制', link: '/textbook/investment/chapter-07/section-03' },
+                { text: '第四节 投标报价编制及审核', link: '/textbook/investment/chapter-07/section-04' }
+              ]
             }
           ]
         }
