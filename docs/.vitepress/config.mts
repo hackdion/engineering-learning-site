@@ -305,6 +305,17 @@ export default defineConfig({
                 { text: '第四节 工程项目经济分析', link: '/textbook/investment/chapter-05/section-04' },
                 { text: '第五节 不确定性分析与风险分析', link: '/textbook/investment/chapter-05/section-05' }
               ]
+            },
+            {
+              text: '第六章 工程设计阶段投资控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-06/' },
+                { text: '第一节 限额设计管理', link: '/textbook/investment/chapter-06/section-01' },
+                { text: '第二节 设计方案比选内容和方法', link: '/textbook/investment/chapter-06/section-02' },
+                { text: '第三节 设计概算编制与审查', link: '/textbook/investment/chapter-06/section-03' },
+                { text: '第四节 施工图预算编制和审查', link: '/textbook/investment/chapter-06/section-04' }
+              ]
             }
           ]
         }

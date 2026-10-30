@@ -178,6 +178,14 @@ title: 教材阅读
 - [第四节 工程项目经济分析](./investment/chapter-05/section-04)
 - [第五节 不确定性分析与风险分析](./investment/chapter-05/section-05)
 
+### 第六章 工程设计阶段投资控制
+
+- [本章导读](./investment/chapter-06/)
+- [第一节 限额设计管理](./investment/chapter-06/section-01)
+- [第二节 设计方案比选内容和方法](./investment/chapter-06/section-02)
+- [第三节 设计概算编制与审查](./investment/chapter-06/section-03)
+- [第四节 施工图预算编制和审查](./investment/chapter-06/section-04)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
