@@ -66,6 +66,7 @@ export default defineConfig({
             { text: '建设工程质量控制与安全生产管理（土木建筑工程）', link: '/textbook/quality/' },
             { text: '建设工程投资控制（土木建筑工程）', link: '/textbook/investment/' },
             { text: '建设工程进度控制（土木建筑工程）', link: '/textbook/schedule/' },
+            { text: '建设工程监理案例分析（土木建筑工程）', link: '/textbook/case-analysis/' },
             {
               text: '第一章 工程监理及其相关制度',
               collapsed: false,
@@ -529,6 +530,32 @@ export default defineConfig({
               ]
             },
             { text: '参考文献', link: '/textbook/contract-management/appendix-references' }
+          ]
+        }
+      ],
+      '/textbook/case-analysis/': [
+        {
+          text: '建设工程监理案例分析（土木建筑工程）',
+          collapsed: false,
+          items: [
+            { text: '书目首页', link: '/textbook/case-analysis/' },
+            {
+              text: '第一部分 法律法规与合同示范文本',
+              collapsed: false,
+              items: [
+                {
+                  text: '第一章 工程监理主要法律法规',
+                  collapsed: false,
+                  items: [
+                    { text: '本章导读', link: '/textbook/case-analysis/chapter-01/' },
+                    { text: '第一节 中华人民共和国建筑法', link: '/textbook/case-analysis/chapter-01/section-01' },
+                    { text: '第二节 中华人民共和国招标投标法', link: '/textbook/case-analysis/chapter-01/section-02' },
+                    { text: '第三节 建设工程质量管理条例', link: '/textbook/case-analysis/chapter-01/section-03' },
+                    { text: '第四节 建设工程安全生产管理条例', link: '/textbook/case-analysis/chapter-01/section-04' }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ],

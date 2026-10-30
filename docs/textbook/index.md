@@ -13,6 +13,7 @@ title: 教材阅读
 - [建设工程投资控制（土木建筑工程）](./investment/)
 - [建设工程质量控制与安全生产管理（土木建筑工程）](./quality/)
 - [建设工程合同管理](./contract-management/)
+- [建设工程监理案例分析（土木建筑工程）](./case-analysis/)
 
 ## 建设工程监理概论
 
@@ -341,6 +342,18 @@ title: 教材阅读
 ### 附录
 
 - [参考文献](./contract-management/appendix-references)
+
+## 建设工程监理案例分析（土木建筑工程）
+
+### 第一部分 法律法规与合同示范文本
+
+#### 第一章 工程监理主要法律法规
+
+- [本章导读](./case-analysis/chapter-01/)
+- [第一节 中华人民共和国建筑法](./case-analysis/chapter-01/section-01)
+- [第二节 中华人民共和国招标投标法](./case-analysis/chapter-01/section-02)
+- [第三节 建设工程质量管理条例](./case-analysis/chapter-01/section-03)
+- [第四节 建设工程安全生产管理条例](./case-analysis/chapter-01/section-04)
 
 ## 阅读方式
 
