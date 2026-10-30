@@ -385,6 +385,21 @@ export default defineConfig({
                 { text: '第三节 初步设计质量控制', link: '/textbook/quality/chapter-02/section-03' },
                 { text: '第四节 施工图设计质量控制', link: '/textbook/quality/chapter-02/section-04' }
               ]
+            },
+            {
+              text: '第三章 工程施工质量控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-03/' },
+                { text: '第一节 施工质量控制基本要求和工作内容', link: '/textbook/quality/chapter-03/section-01' },
+                { text: '第二节 地基基础工程施工质量控制', link: '/textbook/quality/chapter-03/section-02' },
+                { text: '第三节 现浇混凝土结构工程施工质量控制', link: '/textbook/quality/chapter-03/section-03' },
+                { text: '第四节 装配式建筑工程质量控制', link: '/textbook/quality/chapter-03/section-04' },
+                { text: '第五节 砌体与装饰装修工程施工质量控制', link: '/textbook/quality/chapter-03/section-05' },
+                { text: '第六节 安装工程施工质量控制', link: '/textbook/quality/chapter-03/section-06' },
+                { text: '第七节 防水与节能工程施工质量控制', link: '/textbook/quality/chapter-03/section-07' },
+                { text: '第八节 城市道路工程施工质量控制', link: '/textbook/quality/chapter-03/section-08' }
+              ]
             }
           ]
         }

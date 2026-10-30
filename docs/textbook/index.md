@@ -237,6 +237,18 @@ title: 教材阅读
 - [第三节 初步设计质量控制](./quality/chapter-02/section-03)
 - [第四节 施工图设计质量控制](./quality/chapter-02/section-04)
 
+### 第三章 工程施工质量控制
+
+- [本章导读](./quality/chapter-03/)
+- [第一节 施工质量控制基本要求和工作内容](./quality/chapter-03/section-01)
+- [第二节 地基基础工程施工质量控制](./quality/chapter-03/section-02)
+- [第三节 现浇混凝土结构工程施工质量控制](./quality/chapter-03/section-03)
+- [第四节 装配式建筑工程质量控制](./quality/chapter-03/section-04)
+- [第五节 砌体与装饰装修工程施工质量控制](./quality/chapter-03/section-05)
+- [第六节 安装工程施工质量控制](./quality/chapter-03/section-06)
+- [第七节 防水与节能工程施工质量控制](./quality/chapter-03/section-07)
+- [第八节 城市道路工程施工质量控制](./quality/chapter-03/section-08)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
