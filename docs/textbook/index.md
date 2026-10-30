@@ -11,6 +11,7 @@ title: 教材阅读
 - [建设工程监理概论](#建设工程监理概论)
 - [建设工程进度控制（土木建筑工程）](./schedule/)
 - [建设工程投资控制（土木建筑工程）](./investment/)
+- [建设工程质量控制与安全生产管理（土木建筑工程）](./quality/)
 - [建设工程合同管理](./contract-management/)
 
 ## 建设工程监理概论
@@ -216,6 +217,17 @@ title: 教材阅读
 ### 参考文献
 
 - [参考文献](./investment/appendix-references)
+
+## 建设工程质量控制与安全生产管理（土木建筑工程）
+
+### 第一章 工程质量安全生产管理体系及制度
+
+- [本章导读](./quality/chapter-01/)
+- [第一节 工程质量安全管理体系](./quality/chapter-01/section-01)
+- [第二节 工程质量管理主要制度](./quality/chapter-01/section-02)
+- [第三节 安全生产管理主要制度](./quality/chapter-01/section-03)
+- [第四节 工程质量责任主体行为准则](./quality/chapter-01/section-04)
+- [第五节 安全生产管理责任主体行为准则](./quality/chapter-01/section-05)
 
 ## 建设工程合同管理
 

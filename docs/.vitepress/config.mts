@@ -63,6 +63,7 @@ export default defineConfig({
           text: '教材阅读',
           items: [
             { text: '教材目录', link: '/textbook/' },
+            { text: '建设工程质量控制与安全生产管理（土木建筑工程）', link: '/textbook/quality/' },
             { text: '建设工程投资控制（土木建筑工程）', link: '/textbook/investment/' },
             { text: '建设工程进度控制（土木建筑工程）', link: '/textbook/schedule/' },
             {
@@ -354,6 +355,26 @@ export default defineConfig({
               ]
             },
             { text: '参考文献', link: '/textbook/investment/appendix-references' }
+          ]
+        }
+      ],
+      '/textbook/quality/': [
+        {
+          text: '建设工程质量控制与安全生产管理（土木建筑工程）',
+          items: [
+            { text: '书目首页', link: '/textbook/quality/' },
+            {
+              text: '第一章 工程质量安全生产管理体系及制度',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-01/' },
+                { text: '第一节 工程质量安全管理体系', link: '/textbook/quality/chapter-01/section-01' },
+                { text: '第二节 工程质量管理主要制度', link: '/textbook/quality/chapter-01/section-02' },
+                { text: '第三节 安全生产管理主要制度', link: '/textbook/quality/chapter-01/section-03' },
+                { text: '第四节 工程质量责任主体行为准则', link: '/textbook/quality/chapter-01/section-04' },
+                { text: '第五节 安全生产管理责任主体行为准则', link: '/textbook/quality/chapter-01/section-05' }
+              ]
+            }
           ]
         }
       ],
