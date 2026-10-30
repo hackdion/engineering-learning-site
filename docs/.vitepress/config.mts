@@ -553,6 +553,16 @@ export default defineConfig({
                     { text: '第三节 建设工程质量管理条例', link: '/textbook/case-analysis/chapter-01/section-03' },
                     { text: '第四节 建设工程安全生产管理条例', link: '/textbook/case-analysis/chapter-01/section-04' }
                   ]
+                },
+                {
+                  text: '第二章 合同示范文本',
+                  collapsed: false,
+                  items: [
+                    { text: '本章导读', link: '/textbook/case-analysis/chapter-02/' },
+                    { text: '第一节 建设工程监理合同（示范文本）', link: '/textbook/case-analysis/chapter-02/section-01' },
+                    { text: '第二节 建设工程施工合同（示范文本）', link: '/textbook/case-analysis/chapter-02/section-02' },
+                    { text: '第三节 房屋建筑和市政基础设施项目工程建设全过程咨询服务合同（示范文本）', link: '/textbook/case-analysis/chapter-02/section-03' }
+                  ]
                 }
               ]
             }

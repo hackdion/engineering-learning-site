@@ -355,6 +355,13 @@ title: 教材阅读
 - [第三节 建设工程质量管理条例](./case-analysis/chapter-01/section-03)
 - [第四节 建设工程安全生产管理条例](./case-analysis/chapter-01/section-04)
 
+#### 第二章 合同示范文本
+
+- [本章导读](./case-analysis/chapter-02/)
+- [第一节 建设工程监理合同（示范文本）](./case-analysis/chapter-02/section-01)
+- [第二节 建设工程施工合同（示范文本）](./case-analysis/chapter-02/section-02)
+- [第三节 房屋建筑和市政基础设施项目工程建设全过程咨询服务合同（示范文本）](./case-analysis/chapter-02/section-03)
+
 ## 阅读方式
 
 1. 从左侧目录进入书目首页，再按章、节阅读正文。
