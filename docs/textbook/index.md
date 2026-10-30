@@ -249,6 +249,12 @@ title: 教材阅读
 - [第七节 防水与节能工程施工质量控制](./quality/chapter-03/section-07)
 - [第八节 城市道路工程施工质量控制](./quality/chapter-03/section-08)
 
+### 第四章 设备和部品部件驻厂监造
+
+- [本章导读](./quality/chapter-04/)
+- [第一节 设备驻厂监造](./quality/chapter-04/section-01)
+- [第二节 部品部件驻厂监造](./quality/chapter-04/section-02)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

@@ -400,6 +400,15 @@ export default defineConfig({
                 { text: '第七节 防水与节能工程施工质量控制', link: '/textbook/quality/chapter-03/section-07' },
                 { text: '第八节 城市道路工程施工质量控制', link: '/textbook/quality/chapter-03/section-08' }
               ]
+            },
+            {
+              text: '第四章 设备和部品部件驻厂监造',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-04/' },
+                { text: '第一节 设备驻厂监造', link: '/textbook/quality/chapter-04/section-01' },
+                { text: '第二节 部品部件驻厂监造', link: '/textbook/quality/chapter-04/section-02' }
+              ]
             }
           ]
         }
