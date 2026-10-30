@@ -194,6 +194,18 @@ title: 教材阅读
 - [第三节 最高投标限价编制](./investment/chapter-07/section-03)
 - [第四节 投标报价编制及审核](./investment/chapter-07/section-04)
 
+### 第八章 工程施工阶段投资控制
+
+- [本章导读](./investment/chapter-08/)
+- [第一节 资金使用计划编制](./investment/chapter-08/section-01)
+- [第二节 工程计量](./investment/chapter-08/section-02)
+- [第三节 合同价款调整](./investment/chapter-08/section-03)
+- [第四节 工程变更价款确定](./investment/chapter-08/section-04)
+- [第五节 费用索赔管理](./investment/chapter-08/section-05)
+- [第六节 合同价款期中支付](./investment/chapter-08/section-06)
+- [第七节 工程结算与支付](./investment/chapter-08/section-07)
+- [第八节 投资偏差分析](./investment/chapter-08/section-08)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

@@ -327,6 +327,21 @@ export default defineConfig({
                 { text: '第三节 最高投标限价编制', link: '/textbook/investment/chapter-07/section-03' },
                 { text: '第四节 投标报价编制及审核', link: '/textbook/investment/chapter-07/section-04' }
               ]
+            },
+            {
+              text: '第八章 工程施工阶段投资控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-08/' },
+                { text: '第一节 资金使用计划编制', link: '/textbook/investment/chapter-08/section-01' },
+                { text: '第二节 工程计量', link: '/textbook/investment/chapter-08/section-02' },
+                { text: '第三节 合同价款调整', link: '/textbook/investment/chapter-08/section-03' },
+                { text: '第四节 工程变更价款确定', link: '/textbook/investment/chapter-08/section-04' },
+                { text: '第五节 费用索赔管理', link: '/textbook/investment/chapter-08/section-05' },
+                { text: '第六节 合同价款期中支付', link: '/textbook/investment/chapter-08/section-06' },
+                { text: '第七节 工程结算与支付', link: '/textbook/investment/chapter-08/section-07' },
+                { text: '第八节 投资偏差分析', link: '/textbook/investment/chapter-08/section-08' }
+              ]
             }
           ]
         }
