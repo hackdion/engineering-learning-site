@@ -374,6 +374,17 @@ export default defineConfig({
                 { text: '第四节 工程质量责任主体行为准则', link: '/textbook/quality/chapter-01/section-04' },
                 { text: '第五节 安全生产管理责任主体行为准则', link: '/textbook/quality/chapter-01/section-05' }
               ]
+            },
+            {
+              text: '第二章 工程勘察设计质量控制',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-02/' },
+                { text: '第一节 工程勘察质量控制', link: '/textbook/quality/chapter-02/section-01' },
+                { text: '第二节 设计方案竞赛组织与方案设计质量控制', link: '/textbook/quality/chapter-02/section-02' },
+                { text: '第三节 初步设计质量控制', link: '/textbook/quality/chapter-02/section-03' },
+                { text: '第四节 施工图设计质量控制', link: '/textbook/quality/chapter-02/section-04' }
+              ]
             }
           ]
         }

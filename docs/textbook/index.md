@@ -229,6 +229,14 @@ title: 教材阅读
 - [第四节 工程质量责任主体行为准则](./quality/chapter-01/section-04)
 - [第五节 安全生产管理责任主体行为准则](./quality/chapter-01/section-05)
 
+### 第二章 工程勘察设计质量控制
+
+- [本章导读](./quality/chapter-02/)
+- [第一节 工程勘察质量控制](./quality/chapter-02/section-01)
+- [第二节 设计方案竞赛组织与方案设计质量控制](./quality/chapter-02/section-02)
+- [第三节 初步设计质量控制](./quality/chapter-02/section-03)
+- [第四节 施工图设计质量控制](./quality/chapter-02/section-04)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
