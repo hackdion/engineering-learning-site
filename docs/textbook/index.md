@@ -255,6 +255,13 @@ title: 教材阅读
 - [第一节 设备驻厂监造](./quality/chapter-04/section-01)
 - [第二节 部品部件驻厂监造](./quality/chapter-04/section-02)
 
+### 第五章 工程质量数据统计分析和检验检测方法
+
+- [本章导读](./quality/chapter-05/)
+- [第一节 抽样检验及质量数据统计分析方法](./quality/chapter-05/section-01)
+- [第二节 常用工程材料性能检验方法](./quality/chapter-05/section-02)
+- [第三节 工程实体质量检测方法](./quality/chapter-05/section-03)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

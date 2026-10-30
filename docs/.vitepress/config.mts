@@ -409,6 +409,16 @@ export default defineConfig({
                 { text: '第一节 设备驻厂监造', link: '/textbook/quality/chapter-04/section-01' },
                 { text: '第二节 部品部件驻厂监造', link: '/textbook/quality/chapter-04/section-02' }
               ]
+            },
+            {
+              text: '第五章 工程质量数据统计分析和检验检测方法',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-05/' },
+                { text: '第一节 抽样检验及质量数据统计分析方法', link: '/textbook/quality/chapter-05/section-01' },
+                { text: '第二节 常用工程材料性能检验方法', link: '/textbook/quality/chapter-05/section-02' },
+                { text: '第三节 工程实体质量检测方法', link: '/textbook/quality/chapter-05/section-03' }
+              ]
             }
           ]
         }
