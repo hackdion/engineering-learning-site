@@ -206,6 +206,17 @@ title: 教材阅读
 - [第七节 工程结算与支付](./investment/chapter-08/section-07)
 - [第八节 投资偏差分析](./investment/chapter-08/section-08)
 
+### 第九章 工程投资控制数智化
+
+- [本章导读](./investment/chapter-09/)
+- [第一节 BIM在工程投资控制中的应用](./investment/chapter-09/section-01)
+- [第二节 大数据在工程投资控制中的应用](./investment/chapter-09/section-02)
+- [第三节 人工智能在工程投资控制中的应用](./investment/chapter-09/section-03)
+
+### 参考文献
+
+- [参考文献](./investment/appendix-references)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

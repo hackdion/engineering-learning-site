@@ -342,7 +342,18 @@ export default defineConfig({
                 { text: '第七节 工程结算与支付', link: '/textbook/investment/chapter-08/section-07' },
                 { text: '第八节 投资偏差分析', link: '/textbook/investment/chapter-08/section-08' }
               ]
-            }
+            },
+            {
+              text: '第九章 工程投资控制数智化',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/investment/chapter-09/' },
+                { text: '第一节 BIM在工程投资控制中的应用', link: '/textbook/investment/chapter-09/section-01' },
+                { text: '第二节 大数据在工程投资控制中的应用', link: '/textbook/investment/chapter-09/section-02' },
+                { text: '第三节 人工智能在工程投资控制中的应用', link: '/textbook/investment/chapter-09/section-03' }
+              ]
+            },
+            { text: '参考文献', link: '/textbook/investment/appendix-references' }
           ]
         }
       ],
