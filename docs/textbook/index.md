@@ -282,6 +282,10 @@ title: 教材阅读
 - [第二节 危险性较大的分部分项工程施工安全管理](./quality/chapter-08/section-02)
 - [第三节 生产安全事故报告与调查处理](./quality/chapter-08/section-03)
 
+### 参考文献
+
+- [参考文献](./quality/appendix-references)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

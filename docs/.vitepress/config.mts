@@ -448,7 +448,8 @@ export default defineConfig({
                 { text: '第二节 危险性较大的分部分项工程施工安全管理', link: '/textbook/quality/chapter-08/section-02' },
                 { text: '第三节 生产安全事故报告与调查处理', link: '/textbook/quality/chapter-08/section-03' }
               ]
-            }
+            },
+            { text: '参考文献', link: '/textbook/quality/appendix-references' }
           ]
         }
       ],
