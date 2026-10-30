@@ -419,6 +419,16 @@ export default defineConfig({
                 { text: '第二节 常用工程材料性能检验方法', link: '/textbook/quality/chapter-05/section-02' },
                 { text: '第三节 工程实体质量检测方法', link: '/textbook/quality/chapter-05/section-03' }
               ]
+            },
+            {
+              text: '第六章 工程施工质量验收和缺陷责任期管理',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-06/' },
+                { text: '第一节 建筑工程施工质量验收', link: '/textbook/quality/chapter-06/section-01' },
+                { text: '第二节 城市轨道交通工程施工质量验收', link: '/textbook/quality/chapter-06/section-02' },
+                { text: '第三节 缺陷责任期管理', link: '/textbook/quality/chapter-06/section-03' }
+              ]
             }
           ]
         }

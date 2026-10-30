@@ -262,6 +262,13 @@ title: 教材阅读
 - [第二节 常用工程材料性能检验方法](./quality/chapter-05/section-02)
 - [第三节 工程实体质量检测方法](./quality/chapter-05/section-03)
 
+### 第六章 工程施工质量验收和缺陷责任期管理
+
+- [本章导读](./quality/chapter-06/)
+- [第一节 建筑工程施工质量验收](./quality/chapter-06/section-01)
+- [第二节 城市轨道交通工程施工质量验收](./quality/chapter-06/section-02)
+- [第三节 缺陷责任期管理](./quality/chapter-06/section-03)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度
