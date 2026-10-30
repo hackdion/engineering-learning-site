@@ -269,6 +269,12 @@ title: 教材阅读
 - [第二节 城市轨道交通工程施工质量验收](./quality/chapter-06/section-02)
 - [第三节 缺陷责任期管理](./quality/chapter-06/section-03)
 
+### 第七章 工程质量缺陷及事故调查处理
+
+- [本章导读](./quality/chapter-07/)
+- [第一节 工程质量缺陷及处理](./quality/chapter-07/section-01)
+- [第二节 工程质量事故报告及调查处理](./quality/chapter-07/section-02)
+
 ## 建设工程合同管理
 
 ### 第一章 工程合同管理法律制度

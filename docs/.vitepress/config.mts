@@ -429,6 +429,15 @@ export default defineConfig({
                 { text: '第二节 城市轨道交通工程施工质量验收', link: '/textbook/quality/chapter-06/section-02' },
                 { text: '第三节 缺陷责任期管理', link: '/textbook/quality/chapter-06/section-03' }
               ]
+            },
+            {
+              text: '第七章 工程质量缺陷及事故调查处理',
+              collapsed: false,
+              items: [
+                { text: '本章导读', link: '/textbook/quality/chapter-07/' },
+                { text: '第一节 工程质量缺陷及处理', link: '/textbook/quality/chapter-07/section-01' },
+                { text: '第二节 工程质量事故报告及调查处理', link: '/textbook/quality/chapter-07/section-02' }
+              ]
             }
           ]
         }
