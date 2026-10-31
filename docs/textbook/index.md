@@ -391,6 +391,9 @@ title: 教材阅读
 - [本章导读](./case-analysis/chapter-04/)
 - [第一节 工程监理组织、工作内容与相关法规](./case-analysis/chapter-04/section-01)
 - [第二节 工程质量控制](./case-analysis/chapter-04/section-02)
+- [第三节 工程进度控制](./case-analysis/chapter-04/section-03)
+- [第四节 工程投资控制](./case-analysis/chapter-04/section-04)
+- [第五节 工程招标投标与合同管理](./case-analysis/chapter-04/section-05)
 
 ## 阅读方式
 

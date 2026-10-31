@@ -56,5 +56,8 @@ edition: 2026 年版（中国建设监理协会组织编写）
 - [本章导读](./chapter-04/)
 - [第一节 工程监理组织、工作内容与相关法规](./chapter-04/section-01)
 - [第二节 工程质量控制](./chapter-04/section-02)
+- [第三节 工程进度控制](./chapter-04/section-03)
+- [第四节 工程投资控制](./chapter-04/section-04)
+- [第五节 工程招标投标与合同管理](./chapter-04/section-05)
 
 <SourceNote />

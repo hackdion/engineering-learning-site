@@ -601,7 +601,10 @@ export default defineConfig({
                   items: [
                     { text: '本章导读', link: '/textbook/case-analysis/chapter-04/' },
                     { text: '第一节 工程监理组织、工作内容与相关法规', link: '/textbook/case-analysis/chapter-04/section-01' },
-                    { text: '第二节 工程质量控制', link: '/textbook/case-analysis/chapter-04/section-02' }
+                    { text: '第二节 工程质量控制', link: '/textbook/case-analysis/chapter-04/section-02' },
+                    { text: '第三节 工程进度控制', link: '/textbook/case-analysis/chapter-04/section-03' },
+                    { text: '第四节 工程投资控制', link: '/textbook/case-analysis/chapter-04/section-04' },
+                    { text: '第五节 工程招标投标与合同管理', link: '/textbook/case-analysis/chapter-04/section-05' }
                   ]
                 }
               ]
