@@ -362,6 +362,30 @@ title: 教材阅读
 - [第二节 建设工程施工合同（示范文本）](./case-analysis/chapter-02/section-02)
 - [第三节 房屋建筑和市政基础设施项目工程建设全过程咨询服务合同（示范文本）](./case-analysis/chapter-02/section-03)
 
+### 第二部分 工程监理实务
+
+#### 第三章 主要知识点
+
+- [本章导读](./case-analysis/chapter-03/)
+- [第一节 工程监理招标投标与合同管理](./case-analysis/chapter-03/section-01)
+- [第二节 工程监理组织](./case-analysis/chapter-03/section-02)
+- [第三节 监理规划与监理实施细则](./case-analysis/chapter-03/section-03)
+- [第四节 工程监理工作内容和主要方式](./case-analysis/chapter-03/section-04)
+- [第五节 工程监理文件资料管理](./case-analysis/chapter-03/section-05)
+- [第六节 工程风险管理](./case-analysis/chapter-03/section-06)
+- [第七节 工程施工招标投标与合同管理](./case-analysis/chapter-03/section-07)
+- [第八节 工程材料设备采购招标投标与合同管理](./case-analysis/chapter-03/section-08)
+- [第九节 工程施工质量控制与验收](./case-analysis/chapter-03/section-09)
+- [第十节 工程质量统计分析和检验检测方法](./case-analysis/chapter-03/section-10)
+- [第十一节 工程质量缺陷和事故处理](./case-analysis/chapter-03/section-11)
+- [第十二节 安全生产管理的监理工作](./case-analysis/chapter-03/section-12)
+- [第十三节 建筑安装工程费用项目组成和计算](./case-analysis/chapter-03/section-13)
+- [第十四节 施工阶段投资控制](./case-analysis/chapter-03/section-14)
+- [第十五节 流水施工计划方法](./case-analysis/chapter-03/section-15)
+- [第十六节 工程网络计划技术](./case-analysis/chapter-03/section-16)
+- [第十七节 进度计划调整方法](./case-analysis/chapter-03/section-17)
+- [第十八节 费用与工期索赔管理](./case-analysis/chapter-03/section-18)
+
 ## 阅读方式
 
 1. 从左侧目录进入书目首页，再按章、节阅读正文。

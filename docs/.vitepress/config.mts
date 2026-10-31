@@ -565,6 +565,37 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: '第二部分 工程监理实务',
+              collapsed: false,
+              items: [
+                {
+                  text: '第三章 主要知识点',
+                  collapsed: false,
+                  items: [
+                    { text: '本章导读', link: '/textbook/case-analysis/chapter-03/' },
+                    { text: '第一节 工程监理招标投标与合同管理', link: '/textbook/case-analysis/chapter-03/section-01' },
+                    { text: '第二节 工程监理组织', link: '/textbook/case-analysis/chapter-03/section-02' },
+                    { text: '第三节 监理规划与监理实施细则', link: '/textbook/case-analysis/chapter-03/section-03' },
+                    { text: '第四节 工程监理工作内容和主要方式', link: '/textbook/case-analysis/chapter-03/section-04' },
+                    { text: '第五节 工程监理文件资料管理', link: '/textbook/case-analysis/chapter-03/section-05' },
+                    { text: '第六节 工程风险管理', link: '/textbook/case-analysis/chapter-03/section-06' },
+                    { text: '第七节 工程施工招标投标与合同管理', link: '/textbook/case-analysis/chapter-03/section-07' },
+                    { text: '第八节 工程材料设备采购招标投标与合同管理', link: '/textbook/case-analysis/chapter-03/section-08' },
+                    { text: '第九节 工程施工质量控制与验收', link: '/textbook/case-analysis/chapter-03/section-09' },
+                    { text: '第十节 工程质量统计分析和检验检测方法', link: '/textbook/case-analysis/chapter-03/section-10' },
+                    { text: '第十一节 工程质量缺陷和事故处理', link: '/textbook/case-analysis/chapter-03/section-11' },
+                    { text: '第十二节 安全生产管理的监理工作', link: '/textbook/case-analysis/chapter-03/section-12' },
+                    { text: '第十三节 建筑安装工程费用项目组成和计算', link: '/textbook/case-analysis/chapter-03/section-13' },
+                    { text: '第十四节 施工阶段投资控制', link: '/textbook/case-analysis/chapter-03/section-14' },
+                    { text: '第十五节 流水施工计划方法', link: '/textbook/case-analysis/chapter-03/section-15' },
+                    { text: '第十六节 工程网络计划技术', link: '/textbook/case-analysis/chapter-03/section-16' },
+                    { text: '第十七节 进度计划调整方法', link: '/textbook/case-analysis/chapter-03/section-17' },
+                    { text: '第十八节 费用与工期索赔管理', link: '/textbook/case-analysis/chapter-03/section-18' }
+                  ]
+                }
+              ]
             }
           ]
         }
