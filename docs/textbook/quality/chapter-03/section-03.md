@@ -45,7 +45,7 @@ sectionTitle: 第三节 现浇混凝土结构工程施工质量控制
 （3）结构混凝土中水溶性氯离子最大含量不应超过表 3-1 的规定值。计算水溶性氯离子最大含量时，辅助胶凝材料的量不应大于硅酸盐水泥的量。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-1 结构混凝土中水溶性氯离子最大含量</span></caption><tbody><tr><th rowspan="2" scope="col">环境条件</th><th colspan="2" scope="colgroup">水溶性氯离子最大含量(%,按胶凝材料用量的质量百分比计)</th></tr><tr><td>钢筋混凝土</td><td>预应力混凝土</td></tr><tr><td>干燥环境</td><td>0.30</td><td rowspan="4">0.06</td></tr><tr><td>潮湿但不含氯离子的环境</td><td>0.20</td></tr><tr><td>潮湿且含有氯离子的环境</td><td>0.15</td></tr><tr><td>除冰盐等侵蚀性物质的腐蚀环境、盐渍土环境</td><td>0.10</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-1 结构混凝土中水溶性氯离子最大含量</span></caption><tbody><tr><th rowspan="2" scope="col">环境条件</th><th colspan="2" scope="colgroup">水溶性氯离子最大含量(%,按胶凝材料用量的质量百分比计)</th></tr><tr><td>钢筋混凝土</td><td>预应力混凝土</td></tr><tr><td>干燥环境</td><td>0.30</td><td rowspan="4">0.06</td></tr><tr><td>潮湿但不含氯离子的环境</td><td>0.20</td></tr><tr><td>潮湿且含有氯离子的环境</td><td>0.15</td></tr><tr><td>除冰盐等侵蚀性物质的腐蚀环境、盐渍土环境</td><td>0.10</td></tr></tbody></table>
 </div>
 
 ### （二）混凝土结构用钢筋及连接接头
@@ -53,7 +53,7 @@ sectionTitle: 第三节 现浇混凝土结构工程施工质量控制
 （1）热轧钢筋、余热处理钢筋、冷轧带肋钢筋及预应力筋的最大力总延伸率限值不应小于表3-2的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 675px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-2 热轧钢筋、余热处理钢筋、冷轧带肋钢筋及预应力筋的最大力总延伸率限值 δ<sub>Φ</sub>（%）</span></caption><tbody><tr><th rowspan="2" scope="col">牌号或种类</th><th colspan="4" scope="colgroup">热轧钢筋</th><th colspan="2" scope="colgroup">冷轧带肋钢筋</th><th colspan="2" scope="colgroup">预应力筋</th></tr><tr><td>HPB300</td><td>HRB400<br />HRBF400<br />HRB500<br />HRBF500</td><td>HRB400E<br />HRB500E</td><td>RRB400</td><td>CRB550</td><td>CRB600H</td><td>中强度预应力钢丝、预应力冷轧带肋钢筋</td><td>消除应力钢丝、钢绞线、预应力螺纹钢筋</td></tr><tr><td>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-2 热轧钢筋、余热处理钢筋、冷轧带肋钢筋及预应力筋的最大力总延伸率限值 δ<sub>Φ</sub>（%）</span></caption><tbody><tr><th rowspan="2" scope="col">牌号或种类</th><th colspan="4" scope="colgroup">热轧钢筋</th><th colspan="2" scope="colgroup">冷轧带肋钢筋</th><th colspan="2" scope="colgroup">预应力筋</th></tr><tr><td>HPB300</td><td>HRB400<br />HRBF400<br />HRB500<br />HRBF500</td><td>HRB400E<br />HRB500E</td><td>RRB400</td><td>CRB550</td><td>CRB600H</td><td>中强度预应力钢丝、预应力冷轧带肋钢筋</td><td>消除应力钢丝、钢绞线、预应力螺纹钢筋</td></tr><tr><td>
 
 $\delta_{\Phi}$
 
@@ -63,7 +63,7 @@ $\delta_{\Phi}$
 （2）钢筋机械连接接头的实测极限抗拉强度应符合表 3-3 的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-3 接头的实测极限抗拉强度</span></caption><tbody><tr><th scope="col">接头等级</th><th scope="col">I级</th><th scope="col">II级</th><th scope="col">III级</th></tr><tr><td>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-3 接头的实测极限抗拉强度</span></caption><tbody><tr><th scope="col">接头等级</th><th scope="col">I级</th><th scope="col">II级</th><th scope="col">III级</th></tr><tr><td>
 
 接头的实测极限抗拉强度$f_{\text{mst}}^{0}$
 
@@ -103,7 +103,7 @@ $f_{\text{mst}}^{0} \geqslant 1.25f_{\text{yk}}$
 （2）现浇混凝土结构模板及支架的安装质量, 应符合国家现行有关标准的规定和施工方案的要求。根据现行国家标准《施工脚手架通用规范》GB 55023, 脚手架受弯构件容许挠度应符合表 3-4 的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-4 脚手架受弯构件容许挠度</span></caption><tbody><tr><th scope="col">构件类别</th><th scope="col">容许挠度(mm)</th></tr><tr><td>脚手板、水平杆件</td><td>l/150与10取较小值</td></tr><tr><td>作业脚手架悬挑受弯杆件</td><td>l/400</td></tr><tr><td>模板支撑脚手架受弯杆件</td><td>l/400</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-4 脚手架受弯构件容许挠度</span></caption><tbody><tr><th scope="col">构件类别</th><th scope="col">容许挠度(mm)</th></tr><tr><td>脚手板、水平杆件</td><td>l/150与10取较小值</td></tr><tr><td>作业脚手架悬挑受弯杆件</td><td>l/400</td></tr><tr><td>模板支撑脚手架受弯杆件</td><td>l/400</td></tr></tbody></table>
 </div>
 
 注: $l$ 为受弯构件的计算跨度，对悬挑构件为悬伸长度的2倍。
@@ -157,7 +157,7 @@ $W_{0}$ ——钢筋理论重量（kg），取每米理论重量（kg/m）与3�
 根据现行国家标准《钢筋混凝土用钢 第1部分:热轧光圆钢筋》GB 1499.1 和《钢筋混凝土用钢 第2部分:热轧带肋钢筋》GB 1499.2，钢筋重量偏差应符合表3-5的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-5 钢筋重量偏差允许范围</span></caption><tbody><tr><th scope="col">热轧光圆钢筋、热轧带肋钢筋公称直径(mm)</th><th scope="col">实际重量与理论重量的允许偏差(%)</th></tr><tr><td>6~12</td><td>±5.5</td></tr><tr><td>14~20</td><td>±4.5</td></tr><tr><td>22~50</td><td>±3.5</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-5 钢筋重量偏差允许范围</span></caption><tbody><tr><th scope="col">热轧光圆钢筋、热轧带肋钢筋公称直径(mm)</th><th scope="col">实际重量与理论重量的允许偏差(%)</th></tr><tr><td>6~12</td><td>±5.5</td></tr><tr><td>14~20</td><td>±4.5</td></tr><tr><td>22~50</td><td>±3.5</td></tr></tbody></table>
 </div>
 
 （2）钢筋加工与安装的检查
@@ -265,7 +265,7 @@ $W_{0}$ ——钢筋理论重量（kg），取每米理论重量（kg/m）与3�
 1）底模及支架应在混凝土强度达到设计要求后再拆除；当设计无具体要求时，同条件养护的混凝土试件抗压强度应符合表3-6的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-6 底模拆除时的混凝土强度要求</span></caption><tbody><tr><th scope="col">构件类型</th><th scope="col">构件跨度(m)</th><th scope="col">达到设计混凝土强度等级值的百分率(%)</th></tr><tr><td rowspan="3">板</td><td>≤2</td><td>≥50</td></tr><tr><td>&gt;2, ≤8</td><td>≥75</td></tr><tr><td>&gt;8</td><td>≥100</td></tr><tr><td rowspan="2">梁、拱、壳</td><td>≤8</td><td>≥75</td></tr><tr><td>&gt;8</td><td>≥100</td></tr><tr><td colspan="2">悬臂结构</td><td>≥100</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-6 底模拆除时的混凝土强度要求</span></caption><tbody><tr><th scope="col">构件类型</th><th scope="col">构件跨度(m)</th><th scope="col">达到设计混凝土强度等级值的百分率(%)</th></tr><tr><td rowspan="3">板</td><td>≤2</td><td>≥50</td></tr><tr><td>&gt;2, ≤8</td><td>≥75</td></tr><tr><td>&gt;8</td><td>≥100</td></tr><tr><td rowspan="2">梁、拱、壳</td><td>≤8</td><td>≥75</td></tr><tr><td>&gt;8</td><td>≥100</td></tr><tr><td colspan="2">悬臂结构</td><td>≥100</td></tr></tbody></table>
 </div>
 
 2）多个楼层间连续支模的底层支架拆除时间，应根据连续支模的楼层间荷载分配和混凝土强度的增长情况确定。
@@ -373,7 +373,7 @@ $\lambda_{1}$ 、 $\lambda_{2}$ ——混凝土强度的合格评定系数，按
 $n$ ——本检验期内的样本容量。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-7 混凝土强度的合格评定系数</span></caption><tbody><tr><th scope="col">试件组数</th><th scope="col">10~14</th><th scope="col">15~19</th><th scope="col">≥20</th></tr><tr><td>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-7 混凝土强度的合格评定系数</span></caption><tbody><tr><th scope="col">试件组数</th><th scope="col">10~14</th><th scope="col">15~19</th><th scope="col">≥20</th></tr><tr><td>
 
 $\lambda_1$
 
@@ -399,7 +399,7 @@ $$
 式中  $\lambda_{3}$ 、 $\lambda_{4}$  ——混凝土强度的非统计法合格评定系数，应按表 3-8 取用。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-8 混凝土强度的非统计法合格评定系数</span></caption><tbody><tr><th scope="col">混凝土强度等级</th><th scope="col">＜C60</th><th scope="col">≥C60</th></tr><tr><td>λ3</td><td>1.15</td><td>1.10</td></tr><tr><td>λ4</td><td colspan="2">0.95</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-8 混凝土强度的非统计法合格评定系数</span></caption><tbody><tr><th scope="col">混凝土强度等级</th><th scope="col">＜C60</th><th scope="col">≥C60</th></tr><tr><td>λ3</td><td>1.15</td><td>1.10</td></tr><tr><td>λ4</td><td colspan="2">0.95</td></tr></tbody></table>
 </div>
 
 #### 3）混凝土强度的合格性评定

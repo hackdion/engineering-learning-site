@@ -185,7 +185,7 @@ $$
 例如:根据上述定义，暂列金额在实际履行过程中可能发生，也可能不发生。某工程招标工程量清单中给出的暂列金额及拟用项目见表8-1，投标人只需要直接将招标工程量清单中所列的暂列金额纳入投标总价，并且不需要在所列的暂列金额以外再考虑任何其他费用。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-1 暂列金额明细表</span><span style="display: block; font-weight: normal; max-width: min(624px, calc(100vw - 48px))">工程名称：××中学教学楼工程　标段：　第1页共1页</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">项目名称</th><th scope="col">计量单位</th><th scope="col">暂定金额(元)</th><th scope="col">备注</th></tr><tr><td>1</td><td>自行车车棚工程</td><td>项</td><td>100000</td><td>正在设计图纸</td></tr><tr><td>2</td><td>工程量偏差和设计变更</td><td>项</td><td>100000</td><td></td></tr><tr><td>3</td><td>政策性调整和材料价格波动</td><td>项</td><td>100000</td><td></td></tr><tr><td>4</td><td>其他</td><td>项</td><td>50000</td><td></td></tr><tr><td>5</td><td></td><td></td><td></td><td></td></tr><tr><td>6</td><td></td><td></td><td></td><td></td></tr><tr><td colspan="3">合计</td><td>350000</td><td>-</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-1 暂列金额明细表</span><span style="display: block; font-weight: normal; max-width: min(624px, calc(100vw - 48px))">工程名称：××中学教学楼工程　标段：　第1页共1页</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">项目名称</th><th scope="col">计量单位</th><th scope="col">暂定金额(元)</th><th scope="col">备注</th></tr><tr><td>1</td><td>自行车车棚工程</td><td>项</td><td>100000</td><td>正在设计图纸</td></tr><tr><td>2</td><td>工程量偏差和设计变更</td><td>项</td><td>100000</td><td></td></tr><tr><td>3</td><td>政策性调整和材料价格波动</td><td>项</td><td>100000</td><td></td></tr><tr><td>4</td><td>其他</td><td>项</td><td>50000</td><td></td></tr><tr><td>5</td><td></td><td></td><td></td><td></td></tr><tr><td>6</td><td></td><td></td><td></td><td></td></tr><tr><td colspan="3">合计</td><td>350000</td><td>-</td></tr></tbody></table>
 </div>
 
 注:此表由招标人填写，如不能详列，也可只列暂列金额总额，投标人应将上述暂列金额计入投标总价中。
@@ -337,7 +337,7 @@ $$
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 720px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-2 承包人提供材料和工程设备一览表（适用于价格指数调整方法）</span><span style="display: block; font-weight: normal; max-width: min(624px, calc(100vw - 48px))">工程名称：××工程　标段：　第1页共1页</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">名称、规格、型号</th><th scope="col">变值权重
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-2 承包人提供材料和工程设备一览表（适用于价格指数调整方法）</span><span style="display: block; font-weight: normal; max-width: min(624px, calc(100vw - 48px))">工程名称：××工程　标段：　第1页共1页</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">名称、规格、型号</th><th scope="col">变值权重
 
 $B$
 
@@ -375,7 +375,7 @@ $$
 该合同基准日期价格指数和现行价格指数见表8-3，2023年8月完成的工程价款占不含税合同价金额的10%，求2023年8月需要调整的价款差额。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-3 工资、物价指数表</span></caption><tbody><tr><th scope="col">费用名称</th><th scope="col">代号</th><th scope="col">基准日期价格指数</th><th scope="col">代号</th><th scope="col">现行价格指数</th></tr><tr><td>人工费</td><td>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-3 工资、物价指数表</span></caption><tbody><tr><th scope="col">费用名称</th><th scope="col">代号</th><th scope="col">基准日期价格指数</th><th scope="col">代号</th><th scope="col">现行价格指数</th></tr><tr><td>人工费</td><td>
 
 $F_{01}$
 
@@ -539,7 +539,7 @@ $$
 【例8-6】某工程采用的预拌混凝土由承包人提供，所需品种见表8-4，施工期间，在采购预拌混凝土时，其单价分别为C20:327元 $\mathrm{/m^3}$，C25:335元 $\mathrm{/m^3}$，C30:345元 $\mathrm{/m^3}$ 合同约定的材料单价如何调整？
 
 <div style="overflow-x: auto">
-<table style="min-width: 1080px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-4 承包人提供材料和工程设备一览表（适用于造价信息差额调整方法）</span><span style="display: block; font-weight: normal; max-width: min(624px, calc(100vw - 48px))">工程名称：××中学教学楼工程　标段：　第1页共1页</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">名称、规格、型号</th><th scope="col">单位</th><th scope="col">数量</th><th scope="col">风险系数(%)</th><th scope="col">基准单价(元)</th><th scope="col">投标单价(元)</th><th scope="col">发包人确认单价(元)</th><th scope="col">备注</th></tr><tr><td>1</td><td>预拌混凝土C20</td><td>m<sup>3</sup></td><td>25</td><td>≤5</td><td>310</td><td>308</td><td>309.50</td><td></td></tr><tr><td>2</td><td>预拌混凝土C25</td><td>m<sup>3</sup></td><td>560</td><td>≤5</td><td>323</td><td>325</td><td>325</td><td></td></tr><tr><td>3</td><td>预拌混凝土C30</td><td>m<sup>3</sup></td><td>3120</td><td>≤5</td><td>340</td><td>340</td><td>340</td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-4 承包人提供材料和工程设备一览表（适用于造价信息差额调整方法）</span><span style="display: block; font-weight: normal; max-width: min(624px, calc(100vw - 48px))">工程名称：××中学教学楼工程　标段：　第1页共1页</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">名称、规格、型号</th><th scope="col">单位</th><th scope="col">数量</th><th scope="col">风险系数(%)</th><th scope="col">基准单价(元)</th><th scope="col">投标单价(元)</th><th scope="col">发包人确认单价(元)</th><th scope="col">备注</th></tr><tr><td>1</td><td>预拌混凝土C20</td><td>m<sup>3</sup></td><td>25</td><td>≤5</td><td>310</td><td>308</td><td>309.50</td><td></td></tr><tr><td>2</td><td>预拌混凝土C25</td><td>m<sup>3</sup></td><td>560</td><td>≤5</td><td>323</td><td>325</td><td>325</td><td></td></tr><tr><td>3</td><td>预拌混凝土C30</td><td>m<sup>3</sup></td><td>3120</td><td>≤5</td><td>340</td><td>340</td><td>340</td><td></td></tr></tbody></table>
 </div>
 
 解:（1）C20: $327\div 310 - 1 = 5.48\%$

@@ -165,7 +165,7 @@ sectionTitle: 第四节 装配式建筑工程质量控制
 （3）安装采用的临时支撑应符合表 3-9 的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-9 安装临时支撑施工质量控制要求</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">类型</th><th scope="col">质量控制要求</th></tr><tr><td>1</td><td>竖向预制构件安装临时支撑</td><td>①预制构件的临时支撑不宜少于2道；②对预制柱、墙板构件的上部斜支撑，其支撑点距离板底的距离不宜小于构件高度的2/3，且不应小于构件高度的1/2；斜支撑应与构件可靠连接；③构件安装就位后，可通过临时支撑对构件的位置和垂直度进行微调</td></tr><tr><td>2</td><td>水平预制构件安装临时支撑</td><td>①首层支撑架体的地基应平整坚实，宜采取硬化措施；②临时支撑的间距及其与墙、柱、梁边的净距应经设计计算确定，竖向连续支撑层数不宜少于2层且上下层支撑宜对准；③叠合板预制底板下部支架宜选用定型独立钢支柱，竖向支撑间距应经计算确定</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-9 安装临时支撑施工质量控制要求</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">类型</th><th scope="col">质量控制要求</th></tr><tr><td>1</td><td>竖向预制构件安装临时支撑</td><td>①预制构件的临时支撑不宜少于2道；②对预制柱、墙板构件的上部斜支撑，其支撑点距离板底的距离不宜小于构件高度的2/3，且不应小于构件高度的1/2；斜支撑应与构件可靠连接；③构件安装就位后，可通过临时支撑对构件的位置和垂直度进行微调</td></tr><tr><td>2</td><td>水平预制构件安装临时支撑</td><td>①首层支撑架体的地基应平整坚实，宜采取硬化措施；②临时支撑的间距及其与墙、柱、梁边的净距应经设计计算确定，竖向连续支撑层数不宜少于2层且上下层支撑宜对准；③叠合板预制底板下部支架宜选用定型独立钢支柱，竖向支撑间距应经计算确定</td></tr></tbody></table>
 </div>
 
 ### （三）构件连接的巡视与检查

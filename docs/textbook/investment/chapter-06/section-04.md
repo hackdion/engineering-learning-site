@@ -295,7 +295,7 @@ $$
 【例6-1】某项目由两个单项工程组成，各单项工程下单位工程预算值如表6-2所示（单位:万元），工程建设其他费为工程费用的 $30\%$，基本预备费为 $5\%$，涨价预备费500万元，确定该工程的单项工程综合预算和项目总预算。（不考虑涨价预备费和流动资金）
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-2 单位工程预算数一览表</span></caption><tbody><tr><th scope="col">单项工程一</th><th scope="col">预算值(万元)</th><th scope="col">单项工程二</th><th scope="col">预算值(万元)</th></tr><tr><td>(1)单位工程1</td><td>800</td><td>(1)单位工程1</td><td>600</td></tr><tr><td>(2)单位工程2</td><td>1500</td><td>(2)单位工程2</td><td>1200</td></tr><tr><td>(3)单位工程3</td><td>1200</td><td>(3)单位工程3</td><td>1000</td></tr><tr><td>(4)单位工程4</td><td>300</td><td>(4)单位工程4</td><td>200</td></tr><tr><td>(5)单位工程5</td><td>600</td><td>(5)单位工程5</td><td>500</td></tr><tr><td>(6)单位工程6</td><td>700</td><td>(6)单位工程6</td><td>600</td></tr><tr><td>单项工程一综合预算</td><td>5100</td><td>单项工程二综合预算</td><td>4100</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-2 单位工程预算数一览表</span></caption><tbody><tr><th scope="col">单项工程一</th><th scope="col">预算值(万元)</th><th scope="col">单项工程二</th><th scope="col">预算值(万元)</th></tr><tr><td>(1)单位工程1</td><td>800</td><td>(1)单位工程1</td><td>600</td></tr><tr><td>(2)单位工程2</td><td>1500</td><td>(2)单位工程2</td><td>1200</td></tr><tr><td>(3)单位工程3</td><td>1200</td><td>(3)单位工程3</td><td>1000</td></tr><tr><td>(4)单位工程4</td><td>300</td><td>(4)单位工程4</td><td>200</td></tr><tr><td>(5)单位工程5</td><td>600</td><td>(5)单位工程5</td><td>500</td></tr><tr><td>(6)单位工程6</td><td>700</td><td>(6)单位工程6</td><td>600</td></tr><tr><td>单项工程一综合预算</td><td>5100</td><td>单项工程二综合预算</td><td>4100</td></tr></tbody></table>
 </div>
 
 解:
@@ -401,7 +401,7 @@ $$
 背景:某社区3层框架结构商业中心，建筑面积 $5000\mathrm{m}^2$，功能为商铺+配套服务用房，设计标准为普通装修（外墙涂料、室内水泥砂浆地面）。采用标准预算审查法，以当地造价管理部门发布的《3层框架商业建筑标准预算指标》（表6-3）为依据，审查施工单位报送的预算（2024年送审，送审金额980万元）。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-3 3层框架商业建筑标准预算指标</span></caption><tbody><tr><th scope="col">费用类别</th><th scope="col">标准单方造价(元/m<sup>2</sup>)</th><th scope="col">标准总造价(万元)(5000m<sup>2</sup>)</th><th scope="col">允许浮动范围</th></tr><tr><td>分部分项工程费</td><td>1800</td><td>900</td><td>±3%</td></tr><tr><td>措施项目费</td><td>80</td><td>40</td><td>±5%</td></tr><tr><td>其他项目费</td><td>20</td><td>10</td><td>固定</td></tr><tr><td>规费+税金</td><td>90</td><td>45</td><td>按政策计算</td></tr><tr><td>合计</td><td>1990</td><td>995</td><td>—</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-3 3层框架商业建筑标准预算指标</span></caption><tbody><tr><th scope="col">费用类别</th><th scope="col">标准单方造价(元/m<sup>2</sup>)</th><th scope="col">标准总造价(万元)(5000m<sup>2</sup>)</th><th scope="col">允许浮动范围</th></tr><tr><td>分部分项工程费</td><td>1800</td><td>900</td><td>±3%</td></tr><tr><td>措施项目费</td><td>80</td><td>40</td><td>±5%</td></tr><tr><td>其他项目费</td><td>20</td><td>10</td><td>固定</td></tr><tr><td>规费+税金</td><td>90</td><td>45</td><td>按政策计算</td></tr><tr><td>合计</td><td>1990</td><td>995</td><td>—</td></tr></tbody></table>
 </div>
 
 解:
@@ -421,7 +421,7 @@ $$
 （2）分项费用对比审查（表 6-4）
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-4 标准预算对比表</span></caption><tbody><tr><th scope="col">费用类别</th><th scope="col">送审金额(万元)</th><th scope="col">标准金额(万元)</th><th scope="col">差异(万元)</th><th scope="col">审查结论与问题定位</th></tr><tr><td>分部分项工程费</td><td>885</td><td>900</td><td>-15</td><td>低于标准,需查具体子目</td></tr><tr><td>措施项目费</td><td>42</td><td>40</td><td>+2</td><td>超标准5%,需核查超支项</td></tr><tr><td>其他项目费</td><td>10</td><td>10</td><td>0</td><td>符合标准,无需审查</td></tr><tr><td>规费+税金</td><td>43</td><td>45</td><td>-2</td><td>按政策核对,无问题</td></tr><tr><td>合计</td><td>980</td><td>995</td><td>-15</td><td>-</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-4 标准预算对比表</span></caption><tbody><tr><th scope="col">费用类别</th><th scope="col">送审金额(万元)</th><th scope="col">标准金额(万元)</th><th scope="col">差异(万元)</th><th scope="col">审查结论与问题定位</th></tr><tr><td>分部分项工程费</td><td>885</td><td>900</td><td>-15</td><td>低于标准,需查具体子目</td></tr><tr><td>措施项目费</td><td>42</td><td>40</td><td>+2</td><td>超标准5%,需核查超支项</td></tr><tr><td>其他项目费</td><td>10</td><td>10</td><td>0</td><td>符合标准,无需审查</td></tr><tr><td>规费+税金</td><td>43</td><td>45</td><td>-2</td><td>按政策核对,无问题</td></tr><tr><td>合计</td><td>980</td><td>995</td><td>-15</td><td>-</td></tr></tbody></table>
 </div>
 
 2）重点审查差异项
@@ -471,7 +471,7 @@ $$
 背景:某住宅小区1号住宅楼与2号住宅楼为同期开发的同户型、同结构项目，均为地上18层、地下1层的剪力墙结构，建筑面积均为 $12000m^{2}$，设计标准、材料规格及人工单价一致，仅2号楼因场地限制，基础埋深增加0.5m，需单独调整基础工程费用。现以1号楼已审定预算为基准，对比审查2号楼预算。基础数据见表6-5。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-5 预算对比差异表（单位:万元）</span></caption><tbody><tr><th scope="col">项目名称</th><th scope="col">1号楼审定预算</th><th scope="col">2号楼报审预算</th><th scope="col">差异金额</th><th scope="col">差异率</th></tr><tr><td>土建工程</td><td>1800</td><td>1850</td><td>+50</td><td>+2.78%</td></tr><tr><td>给水排水工程</td><td>120</td><td>122</td><td>+2</td><td>+1.67%</td></tr><tr><td>电气工程</td><td>150</td><td>153</td><td>+3</td><td>+2.00%</td></tr><tr><td>暖通工程</td><td>90</td><td>91</td><td>+1</td><td>+1.11%</td></tr><tr><td>总计</td><td>2160</td><td>2216</td><td>+56</td><td>+2.59%</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 6-5 预算对比差异表（单位:万元）</span></caption><tbody><tr><th scope="col">项目名称</th><th scope="col">1号楼审定预算</th><th scope="col">2号楼报审预算</th><th scope="col">差异金额</th><th scope="col">差异率</th></tr><tr><td>土建工程</td><td>1800</td><td>1850</td><td>+50</td><td>+2.78%</td></tr><tr><td>给水排水工程</td><td>120</td><td>122</td><td>+2</td><td>+1.67%</td></tr><tr><td>电气工程</td><td>150</td><td>153</td><td>+3</td><td>+2.00%</td></tr><tr><td>暖通工程</td><td>90</td><td>91</td><td>+1</td><td>+1.11%</td></tr><tr><td>总计</td><td>2160</td><td>2216</td><td>+56</td><td>+2.59%</td></tr></tbody></table>
 </div>
 
 解:

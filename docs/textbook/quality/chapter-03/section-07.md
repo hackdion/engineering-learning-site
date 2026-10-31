@@ -99,7 +99,7 @@ sectionTitle: 第七节 防水与节能工程施工质量控制
 （7）防水卷材最小搭接宽度应符合表 3-11 的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-11 防水卷材最小搭接宽度</span></caption><tbody><tr><th scope="col">防水卷材类型</th><th scope="col">搭接方式</th><th scope="col">搭接宽度(mm)</th></tr><tr><td rowspan="2">聚合物改性沥青类防水卷材</td><td>热熔法、热沥青</td><td>≥100</td></tr><tr><td>自粘搭接(含湿铺)</td><td>≥80</td></tr><tr><td rowspan="5">合成高分子类防水卷材</td><td>胶粘剂、粘结料</td><td>≥100</td></tr><tr><td>胶粘带、自粘胶</td><td>≥80</td></tr><tr><td>单缝焊</td><td>≥60,有效焊接宽度不应小于25</td></tr><tr><td>双缝焊</td><td>≥80,有效焊接宽度10×2＋空腔宽</td></tr><tr><td>塑料防水板双缝焊</td><td>≥100,有效焊接宽度10×2＋空腔宽</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-11 防水卷材最小搭接宽度</span></caption><tbody><tr><th scope="col">防水卷材类型</th><th scope="col">搭接方式</th><th scope="col">搭接宽度(mm)</th></tr><tr><td rowspan="2">聚合物改性沥青类防水卷材</td><td>热熔法、热沥青</td><td>≥100</td></tr><tr><td>自粘搭接(含湿铺)</td><td>≥80</td></tr><tr><td rowspan="5">合成高分子类防水卷材</td><td>胶粘剂、粘结料</td><td>≥100</td></tr><tr><td>胶粘带、自粘胶</td><td>≥80</td></tr><tr><td>单缝焊</td><td>≥60,有效焊接宽度不应小于25</td></tr><tr><td>双缝焊</td><td>≥80,有效焊接宽度10×2＋空腔宽</td></tr><tr><td>塑料防水板双缝焊</td><td>≥100,有效焊接宽度10×2＋空腔宽</td></tr></tbody></table>
 </div>
 
 （8）防水卷材施工应符合下列规定:

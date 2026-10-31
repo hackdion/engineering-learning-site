@@ -191,7 +191,7 @@ $$
 承包人各月实际完成并经总监理工程师签证确认的工程量如表 8-12 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-12 承包人各月实际完成并经总监理工程师签证确认的工程量（单位：m³）</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th></tr><tr><td>甲项</td><td>500</td><td>800</td><td>800</td><td>600</td></tr><tr><td>乙项</td><td>700</td><td>900</td><td>800</td><td>600</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-12 承包人各月实际完成并经总监理工程师签证确认的工程量（单位：m³）</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th></tr><tr><td>甲项</td><td>500</td><td>800</td><td>800</td><td>600</td></tr><tr><td>乙项</td><td>700</td><td>900</td><td>800</td><td>600</td></tr></tbody></table>
 </div>
 
 问题:

@@ -218,7 +218,7 @@ sectionTitle: 第二节 工程质量控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 720px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-2 隐蔽工程验收的主要项目及内容</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">项目</th><th scope="col">内容</th></tr><tr><td>1</td><td>基础工程</td><td>地质、土质情况，标高尺寸、基础断面尺寸，桩的位置、数量</td></tr><tr><td>2</td><td>钢筋混凝土工程</td><td>钢筋品种、规格、数量、位置、焊接、接头、预埋件，材料代用</td></tr><tr><td>3</td><td>防水工程</td><td>屋面、地下室、水下结构的防水材料、工艺做法、关键节点处理措施</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-2 隐蔽工程验收的主要项目及内容</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">项目</th><th scope="col">内容</th></tr><tr><td>1</td><td>基础工程</td><td>地质、土质情况，标高尺寸、基础断面尺寸，桩的位置、数量</td></tr><tr><td>2</td><td>钢筋混凝土工程</td><td>钢筋品种、规格、数量、位置、焊接、接头、预埋件，材料代用</td></tr><tr><td>3</td><td>防水工程</td><td>屋面、地下室、水下结构的防水材料、工艺做法、关键节点处理措施</td></tr></tbody></table>
 
 </div>
 
@@ -300,7 +300,7 @@ sectionTitle: 第二节 工程质量控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 520px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-3 钢筋电焊接头质量问题统计</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">质量问题</th><th scope="col">数量</th></tr><tr><td>1</td><td>裂纹</td><td>8</td></tr><tr><td>2</td><td>气孔</td><td>20</td></tr><tr><td>3</td><td>夹渣</td><td>54</td></tr><tr><td>4</td><td>咬边</td><td>104</td></tr><tr><td>5</td><td>焊瘤</td><td>14</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-3 钢筋电焊接头质量问题统计</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">质量问题</th><th scope="col">数量</th></tr><tr><td>1</td><td>裂纹</td><td>8</td></tr><tr><td>2</td><td>气孔</td><td>20</td></tr><tr><td>3</td><td>夹渣</td><td>54</td></tr><tr><td>4</td><td>咬边</td><td>104</td></tr><tr><td>5</td><td>焊瘤</td><td>14</td></tr></tbody></table>
 
 </div>
 
@@ -320,7 +320,7 @@ sectionTitle: 第二节 工程质量控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-4 质量问题的累计频率</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">存在的问题</th><th scope="col">数量</th><th scope="col">频率</th><th scope="col">累计频率（%）</th></tr><tr><td>1</td><td>咬边</td><td>104</td><td>52.0</td><td>52.0</td></tr><tr><td>2</td><td>夹渣</td><td>54</td><td>27.0</td><td>79.0</td></tr><tr><td>3</td><td>气孔</td><td>20</td><td>10.0</td><td>89.0</td></tr><tr><td>4</td><td>焊瘤</td><td>14</td><td>7.0</td><td>96.0</td></tr><tr><td>5</td><td>裂纹</td><td>8</td><td>4.0</td><td>100.0</td></tr><tr><td>合计</td><td></td><td>200</td><td>100</td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-4 质量问题的累计频率</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">存在的问题</th><th scope="col">数量</th><th scope="col">频率</th><th scope="col">累计频率（%）</th></tr><tr><td>1</td><td>咬边</td><td>104</td><td>52.0</td><td>52.0</td></tr><tr><td>2</td><td>夹渣</td><td>54</td><td>27.0</td><td>79.0</td></tr><tr><td>3</td><td>气孔</td><td>20</td><td>10.0</td><td>89.0</td></tr><tr><td>4</td><td>焊瘤</td><td>14</td><td>7.0</td><td>96.0</td></tr><tr><td>5</td><td>裂纹</td><td>8</td><td>4.0</td><td>100.0</td></tr><tr><td>合计</td><td></td><td>200</td><td>100</td><td></td></tr></tbody></table>
 
 </div>
 

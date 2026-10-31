@@ -652,7 +652,7 @@ sectionTitle: 第一节 工程监理组织、工作内容与相关法规
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-1 风险对策及控制措施表</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">风险事件</th><th scope="col">风险对策</th><th scope="col">控制措施</th></tr><tr><td>1</td><td>通货膨胀</td><td>风险转移</td><td>建设单位与承包单位签订固定总价合同</td></tr><tr><td>2</td><td>承包单位技术、管理水平低</td><td>风险回避</td><td>出现问题向承包单位索赔</td></tr><tr><td>3</td><td>承包单位违约</td><td>风险转移</td><td>要求承包单位提供第三方担保或提供履约保函</td></tr><tr><td>4</td><td>建设单位购买的昂贵设备运输过程中的意外事故</td><td>风险转移</td><td>从现金净收入中支出</td></tr><tr><td>5</td><td>第三方责任</td><td>风险自留</td><td>建立非基金储备</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-1 风险对策及控制措施表</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">风险事件</th><th scope="col">风险对策</th><th scope="col">控制措施</th></tr><tr><td>1</td><td>通货膨胀</td><td>风险转移</td><td>建设单位与承包单位签订固定总价合同</td></tr><tr><td>2</td><td>承包单位技术、管理水平低</td><td>风险回避</td><td>出现问题向承包单位索赔</td></tr><tr><td>3</td><td>承包单位违约</td><td>风险转移</td><td>要求承包单位提供第三方担保或提供履约保函</td></tr><tr><td>4</td><td>建设单位购买的昂贵设备运输过程中的意外事故</td><td>风险转移</td><td>从现金净收入中支出</td></tr><tr><td>5</td><td>第三方责任</td><td>风险自留</td><td>建立非基金储备</td></tr></tbody></table>
 
 </div>
 

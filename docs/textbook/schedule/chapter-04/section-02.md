@@ -125,7 +125,7 @@ S 曲线比较法是以横坐标表示时间，纵坐标表示累计完成任务
 （1）确定单位时间计划完成任务量。在本例中，将每月计划完成混凝土浇筑量列于表4-1中；
 
 <div style="overflow-x: auto">
-<table style="min-width: 720px"><caption style="text-align: left">表 4-1 完成工程量汇总表</caption><tr><th scope="col">时间（月）</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><th scope="row">每月完成量（m<sup>3</sup>）</th><td>80</td><td>160</td><td>240</td><td>320</td><td>400</td><td>320</td><td>240</td><td>160</td><td>80</td></tr><tr><th scope="row">累计完成量（m<sup>3</sup>）</th><td>80</td><td>240</td><td>480</td><td>800</td><td>1200</td><td>1520</td><td>1760</td><td>1920</td><td>2000</td></tr></table>
+<table>><caption style="text-align: left">表 4-1 完成工程量汇总表</caption><tr><th scope="col">时间（月）</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><th scope="row">每月完成量（m<sup>3</sup>）</th><td>80</td><td>160</td><td>240</td><td>320</td><td>400</td><td>320</td><td>240</td><td>160</td><td>80</td></tr><tr><th scope="row">累计完成量（m<sup>3</sup>）</th><td>80</td><td>240</td><td>480</td><td>800</td><td>1200</td><td>1520</td><td>1760</td><td>1920</td><td>2000</td></tr></table>
 </div>
 
 （2）计算不同时间累计完成任务量。在本例中， 依次计算每月计划累计完成的混凝土浇筑量， 结果列于表 4-1 中；
@@ -231,7 +231,7 @@ $$
 <FigureZoom caption="图 4-15 按工作最早开始时间安排的进度计划及劳动消耗量" src="/images/schedule/chapter-04/fig-4-15.png" :width="901" :height="298" />
 
 <div style="overflow-x: auto">
-<table style="min-width: 800px"><tr><th scope="row">每周劳动消耗量</th><td>27</td><td>27</td><td>27</td><td>30</td><td>30</td><td>48</td><td>30</td><td>17</td><td>35</td><td>35</td><td>15</td><td>15</td></tr><tr><th scope="row">累计劳动消耗量</th><td>27</td><td>54</td><td>81</td><td>111</td><td>141</td><td>189</td><td>219</td><td>236</td><td>271</td><td>306</td><td>321</td><td>336</td></tr></table>
+<table>><tr><th scope="row">每周劳动消耗量</th><td>27</td><td>27</td><td>27</td><td>30</td><td>30</td><td>48</td><td>30</td><td>17</td><td>35</td><td>35</td><td>15</td><td>15</td></tr><tr><th scope="row">累计劳动消耗量</th><td>27</td><td>54</td><td>81</td><td>111</td><td>141</td><td>189</td><td>219</td><td>236</td><td>271</td><td>306</td><td>321</td><td>336</td></tr></table>
 </div>
 
 <p class="figure-caption">图 4-15 按工作最早开始时间安排的进度计划及劳动消耗量</p>
@@ -241,7 +241,7 @@ $$
 <FigureZoom caption="图 4-16 按工作最迟开始时间安排的进度计划及劳动消耗量" src="/images/schedule/chapter-04/fig-4-16.png" :width="890" :height="318" />
 
 <div style="overflow-x: auto">
-<table style="min-width: 800px"><tr><th scope="row">每周劳动消耗量</th><td>12</td><td>12</td><td>27</td><td>27</td><td>27</td><td>35</td><td>35</td><td>35</td><td>28</td><td>28</td><td>35</td><td>35</td></tr><tr><th scope="row">累计劳动消耗量</th><td>12</td><td>24</td><td>51</td><td>78</td><td>105</td><td>140</td><td>175</td><td>210</td><td>238</td><td>266</td><td>301</td><td>336</td></tr></table>
+<table>><tr><th scope="row">每周劳动消耗量</th><td>12</td><td>12</td><td>27</td><td>27</td><td>27</td><td>35</td><td>35</td><td>35</td><td>28</td><td>28</td><td>35</td><td>35</td></tr><tr><th scope="row">累计劳动消耗量</th><td>12</td><td>24</td><td>51</td><td>78</td><td>105</td><td>140</td><td>175</td><td>210</td><td>238</td><td>266</td><td>301</td><td>336</td></tr></table>
 </div>
 
 <p class="figure-caption">图 4-16 按工作最迟开始时间安排的进度计划及劳动消耗量</p>
@@ -337,7 +337,7 @@ $$
 【解】根据工程项目进度计划及实际进度检查结果，可以计算出检查日期应进行工作的尚需作业时间、原有总时差及尚有总时差等，计算结果见表4-2。通过比较尚有总时差和原有总时差，即可判断目前工程实际进展状况。
 
 <div style="overflow-x: auto">
-<table style="min-width: 760px"><caption style="text-align: left">表 4-2 工程进度检查比较表</caption><tr><th scope="col">工作代号</th><th scope="col">工作名称</th><th scope="col">检查计划时尚需作业周数</th><th scope="col">到计划最迟完成时尚余周数</th><th scope="col">原有总时差</th><th scope="col">尚有总时差</th><th scope="col">情况判断</th></tr><tr><th scope="row">5-8</th><td>F</td><td>4</td><td>4</td><td>1</td><td>0</td><td>拖后1周,但不影响工期</td></tr><tr><th scope="row">6-7</th><td>G</td><td>1</td><td>0</td><td>0</td><td>-1</td><td>拖后1周,影响工期1周</td></tr><tr><th scope="row">4-8</th><td>H</td><td>3</td><td>4</td><td>2</td><td>1</td><td>拖后1周,但不影响工期</td></tr></table>
+<table>><caption style="text-align: left">表 4-2 工程进度检查比较表</caption><tr><th scope="col">工作代号</th><th scope="col">工作名称</th><th scope="col">检查计划时尚需作业周数</th><th scope="col">到计划最迟完成时尚余周数</th><th scope="col">原有总时差</th><th scope="col">尚有总时差</th><th scope="col">情况判断</th></tr><tr><th scope="row">5-8</th><td>F</td><td>4</td><td>4</td><td>1</td><td>0</td><td>拖后1周,但不影响工期</td></tr><tr><th scope="row">6-7</th><td>G</td><td>1</td><td>0</td><td>0</td><td>-1</td><td>拖后1周,影响工期1周</td></tr><tr><th scope="row">4-8</th><td>H</td><td>3</td><td>4</td><td>2</td><td>1</td><td>拖后1周,但不影响工期</td></tr></table>
 </div>
 
 <SourceNote />

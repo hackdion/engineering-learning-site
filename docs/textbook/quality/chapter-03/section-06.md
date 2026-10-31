@@ -183,7 +183,7 @@ sectionTitle: 第六节 安装工程施工质量控制
 （2）电气设备、器具和材料的额定电压区段划分应符合表 3-10 的规定。电气设备上的计量仪表、与电气保护有关的仪表应检定合格，且当投入运行时，应在检定有效期内。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-10 额定电压区段划分</span></caption><tbody><tr><th scope="col">额定电压区段</th><th scope="col">交流</th><th scope="col">直流</th></tr><tr><td>特低压</td><td>50V及以下</td><td>120V及以下</td></tr><tr><td>低压</td><td>50V~1.0kV(含1.0kV)</td><td>120V~1.5kV(含1.5kV)</td></tr><tr><td>高压</td><td>1.0kV以上</td><td>1.5kV以上</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 3-10 额定电压区段划分</span></caption><tbody><tr><th scope="col">额定电压区段</th><th scope="col">交流</th><th scope="col">直流</th></tr><tr><td>特低压</td><td>50V及以下</td><td>120V及以下</td></tr><tr><td>低压</td><td>50V~1.0kV(含1.0kV)</td><td>120V~1.5kV(含1.5kV)</td></tr><tr><td>高压</td><td>1.0kV以上</td><td>1.5kV以上</td></tr></tbody></table>
 </div>
 
 （3）电气设备或布线系统应与保护导体可靠连接, 采取间接接触防护措施除外, 这些措施分别是: ①采用Ⅱ类设备; ②已采取电气隔离措施; ③采用特低电压供电; ④将电气设备安装在非导电场所内; ⑤设置不接地的等电位联结。

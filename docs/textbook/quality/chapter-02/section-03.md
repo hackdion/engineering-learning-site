@@ -225,7 +225,7 @@ sectionTitle: 第三节 初步设计质量控制
 6）审查主要技术经济指标表，当工程项目（如城市居住区）有相应的规划设计规范时，技术经济指标的内容应按其规范执行；民用建筑主要技术经济指标如表2-1所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-1 民用建筑主要技术经济指标表</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">名称</th><th scope="col">单位</th><th scope="col">数量</th><th scope="col">备注</th></tr><tr><td>1</td><td>总用地面积</td><td>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-1 民用建筑主要技术经济指标表</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">名称</th><th scope="col">单位</th><th scope="col">数量</th><th scope="col">备注</th></tr><tr><td>1</td><td>总用地面积</td><td>
 
 $\mathrm{hm}^2$
 

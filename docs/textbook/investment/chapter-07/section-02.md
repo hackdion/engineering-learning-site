@@ -119,7 +119,7 @@ sectionTitle: 第二节 工程合同计价方式及选择
 不同合同计价方式在应用范围、发包人投资控制及承包人风险方面的比较见表 7-14。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 7-14 不同计价方式合同的比较</span></caption><tbody><tr><th rowspan="2" scope="col">合同类型</th><th rowspan="2" scope="col">总价合同</th><th rowspan="2" scope="col">单价合同</th><th colspan="3" scope="colgroup">成本加酬金合同</th></tr><tr><th scope="col">固定费用</th><th scope="col">固定比例费用</th><th scope="col">成本加奖金</th></tr><tr><td>应用范围</td><td>广泛</td><td>广泛</td><td colspan="2">有局限性</td><td>酌情</td></tr><tr><td>发包人投资控制</td><td>易</td><td>较易</td><td>难</td><td>最难</td><td>较难</td></tr><tr><td>承包人风险</td><td>大</td><td>小</td><td colspan="2">基本没有</td><td>有</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 7-14 不同计价方式合同的比较</span></caption><tbody><tr><th rowspan="2" scope="col">合同类型</th><th rowspan="2" scope="col">总价合同</th><th rowspan="2" scope="col">单价合同</th><th colspan="3" scope="colgroup">成本加酬金合同</th></tr><tr><th scope="col">固定费用</th><th scope="col">固定比例费用</th><th scope="col">成本加奖金</th></tr><tr><td>应用范围</td><td>广泛</td><td>广泛</td><td colspan="2">有局限性</td><td>酌情</td></tr><tr><td>发包人投资控制</td><td>易</td><td>较易</td><td>难</td><td>最难</td><td>较难</td></tr><tr><td>承包人风险</td><td>大</td><td>小</td><td colspan="2">基本没有</td><td>有</td></tr></tbody></table>
 </div>
 
 ### （二）不同计价方式的适用条件

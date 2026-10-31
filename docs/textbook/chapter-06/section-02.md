@@ -31,7 +31,7 @@ sectionTitle: 第二节 监理实施细则
 由于监理规划与监理实施细则的覆盖范围不同，因而在内容深度方面也存在差异。监理规划与监理实施细则的覆盖范围及内容深度比较见表 6-4。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 6-4 监理规划与监理实施细则的覆盖范围及内容深度比较</caption>
   <thead>
     <tr>

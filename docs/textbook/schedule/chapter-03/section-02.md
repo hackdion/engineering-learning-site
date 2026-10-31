@@ -17,7 +17,7 @@ sectionTitle: 第二节 网络图绘制
 （1）网络图必须按照已定逻辑关系绘制。由于网络图是有向、有序的网状图形，所以其必须严格按照工作之间的逻辑关系绘制，这同时也是为保证工程质量和资源优化配置及合理使用所必需的。例如，已知工作之间的逻辑关系如表 3-1 所示，若绘出网络图 3-4（a）则是错误的，因为工作 A 不是工作 D 的紧前工作。此时，可用虚箭线将工作 A 和工作 D 的联系断开，如图 3-4（b）所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 480px">
+<table>>
   <caption>表 3-1 逻辑关系表</caption>
   <thead>
     <tr>
@@ -107,7 +107,7 @@ sectionTitle: 第二节 网络图绘制
 【例 3-1】已知各工作之间的逻辑关系见表 3-2，则可按下述步骤绘制其双代号网络图。
 
 <div style="overflow-x: auto">
-<table style="min-width: 480px">
+<table>>
   <caption>表 3-2 工作逻辑关系</caption>
   <thead>
     <tr>
@@ -143,7 +143,7 @@ sectionTitle: 第二节 网络图绘制
 【例 3-2】已知各工作之间的逻辑关系见表 3-3，则可按下述步骤绘制其双代号网络图。
 
 <div style="overflow-x: auto">
-<table style="min-width: 620px">
+<table>>
   <caption>表 3-3 工作逻辑关系</caption>
   <thead>
     <tr>
@@ -185,7 +185,7 @@ sectionTitle: 第二节 网络图绘制
 【例 3-3】已知各工作之间的逻辑关系见表 3-4，则可按下述步骤绘制其双代号网络图。
 
 <div style="overflow-x: auto">
-<table style="min-width: 560px">
+<table>>
   <caption>表 3-4 工作逻辑关系</caption>
   <thead>
     <tr>
@@ -223,7 +223,7 @@ sectionTitle: 第二节 网络图绘制
 【例 3-4】已知各工作之间的逻辑关系见表 3-5，则可按下述步骤绘制其双代号网络图。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 3-5 工作逻辑关系</caption>
   <thead>
     <tr>
@@ -281,7 +281,7 @@ sectionTitle: 第二节 网络图绘制
 【例 3-5】已知各工作之间的逻辑关系见表 3-6，绘制单代号网络图的过程如图 3-18 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 740px">
+<table>>
   <caption>表 3-6 工作逻辑关系</caption>
   <thead>
     <tr>

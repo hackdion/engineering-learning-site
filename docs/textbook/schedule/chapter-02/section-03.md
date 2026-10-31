@@ -37,7 +37,7 @@ sectionTitle: 第三节 非节奏流水施工
 【例2-1】某工程由3个施工过程组成，分为4个施工段进行流水施工，其流水节拍（天）见表2-1，试确定流水步距。
 
 <div style="overflow-x: auto">
-<table style="min-width: 520px">
+<table>>
   <caption>表 2-1 某工程流水节拍</caption>
   <thead>
     <tr>
@@ -122,7 +122,7 @@ $\sum C$——提前插入时间之和。
 【例2-2】某工厂需要修建4台设备的基础工程，施工过程包括基础开挖、基础处理和浇筑混凝土。因设备型号与基础条件等不同，使得4台设备（施工段）的各施工过程有着不同的流水节拍（单位：周），见表2-2。
 
 <div style="overflow-x: auto">
-<table style="min-width: 560px">
+<table>>
   <caption>表 2-2 基础工程流水节拍</caption>
   <thead>
     <tr>

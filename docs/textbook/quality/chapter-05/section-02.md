@@ -17,7 +17,7 @@ sectionTitle: 第二节 常用工程材料性能检验方法
 钢筋进场时需对钢筋的质量、牌号、物理及力学性能、表面损伤、连接构件等按照相关国家标准规范抽样进行材料进场复查。钢筋进场检验项目见表 5-13。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-13 钢筋进场检验项目</span></caption><tbody><tr><th scope="col">检验项目</th><th scope="col">检验要求</th><th scope="col">检查数量</th></tr><tr><td>物理及力学性能</td><td>应按国家现行标准的规定抽取试件做屈服强度、抗拉强度、伸长率、弯曲性能和重量偏差检验,检验结果应符合相应标准的规定</td><td>按进场批次和产品的抽样检验方案确定</td></tr><tr><td>抗震钢筋伸长率</td><td>抗拉强度实测值与屈服强度实测值的比值不应小于1.25;屈服强度实测值与屈服强度标准值的比值不应大于1.30;最大力下总伸长率不应小于9%</td><td>按进场的批次和产品的抽样检验方案确定</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-13 钢筋进场检验项目</span></caption><tbody><tr><th scope="col">检验项目</th><th scope="col">检验要求</th><th scope="col">检查数量</th></tr><tr><td>物理及力学性能</td><td>应按国家现行标准的规定抽取试件做屈服强度、抗拉强度、伸长率、弯曲性能和重量偏差检验,检验结果应符合相应标准的规定</td><td>按进场批次和产品的抽样检验方案确定</td></tr><tr><td>抗震钢筋伸长率</td><td>抗拉强度实测值与屈服强度实测值的比值不应小于1.25;屈服强度实测值与屈服强度标准值的比值不应大于1.30;最大力下总伸长率不应小于9%</td><td>按进场的批次和产品的抽样检验方案确定</td></tr></tbody></table>
 </div>
 
 注:对由热轧钢筋制成的成型钢筋，当有施工单位或监理单位的代表驻厂监督生产过程，并提供原材钢筋力学性能第三方检验报告时，可仅进行重量偏差检验。
@@ -31,7 +31,7 @@ sectionTitle: 第二节 常用工程材料性能检验方法
 试样需从钢筋母材上截取，避免热影响区或弯曲部位。根据现行国家标准《金属材料拉伸试验 第1部分:室温试验方法》GB/T 228.1，试样尺寸需满足表5-14的要求。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-14 钢筋试样尺寸要求</span></caption><tbody><tr><th scope="col">钢筋直径</th><th scope="col">标距长度(L0)(mm)</th><th scope="col">平行段宽度公差(mm)</th></tr><tr><td>6~10</td><td>50</td><td>±0.1</td></tr><tr><td>12~20</td><td>100</td><td>±0.2</td></tr><tr><td>22~40</td><td>200</td><td>±0.5</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-14 钢筋试样尺寸要求</span></caption><tbody><tr><th scope="col">钢筋直径</th><th scope="col">标距长度(L0)(mm)</th><th scope="col">平行段宽度公差(mm)</th></tr><tr><td>6~10</td><td>50</td><td>±0.1</td></tr><tr><td>12~20</td><td>100</td><td>±0.2</td></tr><tr><td>22~40</td><td>200</td><td>±0.5</td></tr></tbody></table>
 </div>
 
 加工后需用砂纸去除毛刺，并用酒精清洁表面，避免杂质干扰测试结果。
@@ -291,7 +291,7 @@ $S_{0}$  ——钢筋原始截面积（mm $^{2}$ ）；
 2）试样制备要求:试验前，应将样品缩分至表5-15所规定的试样最少质量，并烘干或风干后备用。
 
 <div style="overflow-x: auto">
-<table style="min-width: 675px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-15 颗粒级配试验所需的试样最小质量</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">10.0</th><th scope="col">16.0</th><th scope="col">20.0</th><th scope="col">25.0</th><th scope="col">31.5</th><th scope="col">40.0</th><th scope="col">63.0</th><th scope="col">80.0</th></tr><tr><td>试样最少质量(kg)</td><td>2.0</td><td>3.2</td><td>4.0</td><td>5.0</td><td>6.3</td><td>8.0</td><td>12.6</td><td>16.0</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-15 颗粒级配试验所需的试样最小质量</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">10.0</th><th scope="col">16.0</th><th scope="col">20.0</th><th scope="col">25.0</th><th scope="col">31.5</th><th scope="col">40.0</th><th scope="col">63.0</th><th scope="col">80.0</th></tr><tr><td>试样最少质量(kg)</td><td>2.0</td><td>3.2</td><td>4.0</td><td>5.0</td><td>6.3</td><td>8.0</td><td>12.6</td><td>16.0</td></tr></tbody></table>
 </div>
 
 3）试验步骤:将试样按筛孔大小顺序过筛，当每只筛上的筛余层厚度大于试样的最大粒径值时，应将该筛上的筛余试样分成两份，再次进行筛分，直至各筛每分钟的通过量不超过试样总量的 $0.1\%$。称取各筛筛余的质量，精确至试样总质量的 $0.1\%$。各筛的分计筛余量和筛底剩余量的总和与筛分前测定的试样总量相比，其相差不得超过 $1\%$。
@@ -303,7 +303,7 @@ $S_{0}$  ——钢筋原始截面积（mm $^{2}$ ）；
 1）试样制备要求:将样品缩分至表5-16所规定的量（注意防止细粉丢失），并置于温度为 $(105\pm5)$ ℃的烘箱内烘干至恒重，冷却至室温后分成两份备用。
 
 <div style="overflow-x: auto">
-<table style="min-width: 675px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-16 含泥量试验所需的试样最小质量</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">10.0</th><th scope="col">16.0</th><th scope="col">20.0</th><th scope="col">25.0</th><th scope="col">31.5</th><th scope="col">40.0</th><th scope="col">63.0</th><th scope="col">80.0</th></tr><tr><td>试样最少质量(kg)</td><td>2.0</td><td>2.0</td><td>6.0</td><td>6.0</td><td>10.0</td><td>10.0</td><td>20.0</td><td>20.0</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-16 含泥量试验所需的试样最小质量</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">10.0</th><th scope="col">16.0</th><th scope="col">20.0</th><th scope="col">25.0</th><th scope="col">31.5</th><th scope="col">40.0</th><th scope="col">63.0</th><th scope="col">80.0</th></tr><tr><td>试样最少质量(kg)</td><td>2.0</td><td>2.0</td><td>6.0</td><td>6.0</td><td>10.0</td><td>10.0</td><td>20.0</td><td>20.0</td></tr></tbody></table>
 </div>
 
 2）试验步骤类似于细骨料含泥量的测定。
@@ -319,11 +319,11 @@ $S_{0}$  ——钢筋原始截面积（mm $^{2}$ ）；
 2）试样制备要求:将样品在室内风干至表面干燥，并缩分至表5-17规定的量，称量，然后筛分成表5-18所规定的粒级备用。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-17 针状和片状颗粒的总含量试验所需的试样最少质量</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">10.0</th><th scope="col">16.0</th><th scope="col">20.0</th><th scope="col">25.0</th><th scope="col">31.5</th><th scope="col">≥40.0</th></tr><tr><td>试样最少质量(kg)</td><td>0.3</td><td>1.0</td><td>2.0</td><td>3.0</td><td>5.0</td><td>10.0</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-17 针状和片状颗粒的总含量试验所需的试样最少质量</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">10.0</th><th scope="col">16.0</th><th scope="col">20.0</th><th scope="col">25.0</th><th scope="col">31.5</th><th scope="col">≥40.0</th></tr><tr><td>试样最少质量(kg)</td><td>0.3</td><td>1.0</td><td>2.0</td><td>3.0</td><td>5.0</td><td>10.0</td></tr></tbody></table>
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-18 针状和片状颗粒的总含量试验的粒级划分及其相应的规准仪孔宽或间距</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">5.00~10.0</th><th scope="col">10.0~16.0</th><th scope="col">16.0~20.0</th><th scope="col">20.0~25.0</th><th scope="col">25.0~31.5</th><th scope="col">31.5~40.0</th></tr><tr><td>片状规准仪上相对应的孔宽(mm)</td><td>2.8</td><td>5.1</td><td>7.0</td><td>9.1</td><td>11.6</td><td>13.8</td></tr><tr><td>针状规准仪相对应的间距(mm)</td><td>17.1</td><td>30.6</td><td>42.0</td><td>54.6</td><td>69.6</td><td>82.8</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-18 针状和片状颗粒的总含量试验的粒级划分及其相应的规准仪孔宽或间距</span></caption><tbody><tr><th scope="col">公称粒径(mm)</th><th scope="col">5.00~10.0</th><th scope="col">10.0~16.0</th><th scope="col">16.0~20.0</th><th scope="col">20.0~25.0</th><th scope="col">25.0~31.5</th><th scope="col">31.5~40.0</th></tr><tr><td>片状规准仪上相对应的孔宽(mm)</td><td>2.8</td><td>5.1</td><td>7.0</td><td>9.1</td><td>11.6</td><td>13.8</td></tr><tr><td>针状规准仪相对应的间距(mm)</td><td>17.1</td><td>30.6</td><td>42.0</td><td>54.6</td><td>69.6</td><td>82.8</td></tr></tbody></table>
 </div>
 
 3）试验步骤:按表5-18所规定的粒级用规准仪逐粒对试样进行鉴定，凡颗粒长度大于针状规准仪上相对应的间距的，为针状颗粒。厚度小于片状规准仪上相应孔宽的，为片状颗粒。公称粒径大于 $40\mathrm{mm}$ 的可用卡尺鉴定其针片状颗粒。称取由各粒级挑出的针状和片状颗粒的总质量。
@@ -335,11 +335,11 @@ $S_{0}$  ——钢筋原始截面积（mm $^{2}$ ）；
 外加剂进场时，同一供方，同一品种的外加剂应按规定的检验项目与检验批量进行检验与验收，检验样品应随机抽取，具体抽检数量要求见表5-19。外加剂进厂检验方法应符合现行国家标准《混凝土外加剂》GB8076的规定；膨胀剂应符合现行国家标准《混凝土膨胀剂》GB/T23439的规定；防冻剂、速凝剂、防水剂和阻锈剂应分别符合现行行业标准《混凝土防冻剂》JC475、《喷射混凝土用速凝剂》JC477、《混凝土防水剂》JC474和《钢筋阻锈剂应用技术规程》JGJ/T192的规定。外加剂批量进货应与留样一致，应经检验合格后再使用。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-19 外加剂检验试验项目及抽检数量要求</span></caption><tbody><tr><th scope="col">外加剂类别</th><th scope="col">试验项目</th><th scope="col">抽检数量</th></tr><tr><td>普通减水剂</td><td>pH、密度(或细度)、含固量(或含水率)、减水率,早强型普通减水剂还应检验1d抗压强度比,缓凝型普通减水剂还应检验凝结时间差</td><td>每50t为一检验批,不足50t时也应按一个检验批计</td></tr><tr><td>引气剂及引气减水剂</td><td>pH、密度(或细度)、含固量(或含水率)、含气量、含气量经时损失,引气减水剂还应检测减水率</td><td>每10t为一检验批,不足10t时也应按一个检验批计,引气减水剂应按每50t为一检验批,不足50t时也应按一个检验批计</td></tr><tr><td>早强剂</td><td>密度(或细度)、含固量(或含水率)、碱含量、氯离子含量和1d抗压强度比</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>缓凝剂</td><td>密度(或细度)、含固量(或含水率)和混凝土凝结时间差</td><td>每20t为一检验批,不足20t时也应按一个检验批计</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-19 外加剂检验试验项目及抽检数量要求</span></caption><tbody><tr><th scope="col">外加剂类别</th><th scope="col">试验项目</th><th scope="col">抽检数量</th></tr><tr><td>普通减水剂</td><td>pH、密度(或细度)、含固量(或含水率)、减水率,早强型普通减水剂还应检验1d抗压强度比,缓凝型普通减水剂还应检验凝结时间差</td><td>每50t为一检验批,不足50t时也应按一个检验批计</td></tr><tr><td>引气剂及引气减水剂</td><td>pH、密度(或细度)、含固量(或含水率)、含气量、含气量经时损失,引气减水剂还应检测减水率</td><td>每10t为一检验批,不足10t时也应按一个检验批计,引气减水剂应按每50t为一检验批,不足50t时也应按一个检验批计</td></tr><tr><td>早强剂</td><td>密度(或细度)、含固量(或含水率)、碱含量、氯离子含量和1d抗压强度比</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>缓凝剂</td><td>密度(或细度)、含固量(或含水率)和混凝土凝结时间差</td><td>每20t为一检验批,不足20t时也应按一个检验批计</td></tr></tbody></table>
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">续表</span></caption><tbody><tr><th scope="col">外加剂类别</th><th scope="col">试验项目</th><th scope="col">抽检数量</th></tr><tr><td>泵送剂</td><td>pH、密度(或细度)、含固量(或含水率)、减水率和坍落度1h经时变化值</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>防冻剂</td><td>氯离子含量、密度(或细度)、含固量(或含水率)、碱含量和含气量,复合类防冻剂还应检测减水率</td><td>每100t为一检验批,不足100t时也应按一个检验批计</td></tr><tr><td>速凝剂</td><td>密度(或细度)、水泥净浆初凝和终凝时间</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>膨胀剂</td><td>水中7d限制膨胀率和细度</td><td>每200t为一检验批,不足200t时也应按一个检验批计</td></tr><tr><td>防水剂</td><td>密度(或细度)、含固量(或含水率)</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>阻锈剂</td><td>pH、密度(或细度)、含固量(或含水率)</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">续表</span></caption><tbody><tr><th scope="col">外加剂类别</th><th scope="col">试验项目</th><th scope="col">抽检数量</th></tr><tr><td>泵送剂</td><td>pH、密度(或细度)、含固量(或含水率)、减水率和坍落度1h经时变化值</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>防冻剂</td><td>氯离子含量、密度(或细度)、含固量(或含水率)、碱含量和含气量,复合类防冻剂还应检测减水率</td><td>每100t为一检验批,不足100t时也应按一个检验批计</td></tr><tr><td>速凝剂</td><td>密度(或细度)、水泥净浆初凝和终凝时间</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>膨胀剂</td><td>水中7d限制膨胀率和细度</td><td>每200t为一检验批,不足200t时也应按一个检验批计</td></tr><tr><td>防水剂</td><td>密度(或细度)、含固量(或含水率)</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr><tr><td>阻锈剂</td><td>pH、密度(或细度)、含固量(或含水率)</td><td>每50t为一检验批,不足50t时应按一个检验批计</td></tr></tbody></table>
 </div>
 
 ###### 2. 主要性能检验
@@ -359,11 +359,11 @@ $S_{0}$  ——钢筋原始截面积（mm $^{2}$ ）；
 混凝土拌合物稠度是表征混凝土拌合物流动性的指标，可用坍落度、维勃稠度或扩展度表示。试验方法及内容见表 5-20。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-20 混凝土拌合物流动性主要试验方法</span></caption><tbody><tr><th scope="col">试验方法</th><th scope="col">试验范围及设备</th><th scope="col">试验步骤</th><th scope="col">试验评定</th></tr><tr><td>坍落度测定试验</td><td>试验范围:本试验主要宜用于骨料最大公称粒径不大于40mm、坍落度不小于10mm的混凝土拌合物坍落度的测定。试验设备:坍落度仪、2把钢尺、振捣棒、抹刀等</td><td>1试验设备的准备与安置;2分三层均匀将混凝土拌合物装入坍落度筒中,每次用振捣棒插捣均匀;3顶层捣完后,取下装料漏斗,将多余拌合物刮去,并沿筒口抹平;4清除底板多余的混凝土后,应垂直平稳地提起坍落度筒,并轻放于试样旁边;5当试样不再继续坍落或坍落时间达30s时,用钢尺测量出筒高与坍落后混凝土试体最高点之间的高度差,作为该混凝土拌合物的坍落度值</td><td>根据不同混凝土种类要求,坍落度应符合相应国家标准规范要求。坍落度不宜过小过大,保持适中</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-20 混凝土拌合物流动性主要试验方法</span></caption><tbody><tr><th scope="col">试验方法</th><th scope="col">试验范围及设备</th><th scope="col">试验步骤</th><th scope="col">试验评定</th></tr><tr><td>坍落度测定试验</td><td>试验范围:本试验主要宜用于骨料最大公称粒径不大于40mm、坍落度不小于10mm的混凝土拌合物坍落度的测定。试验设备:坍落度仪、2把钢尺、振捣棒、抹刀等</td><td>1试验设备的准备与安置;2分三层均匀将混凝土拌合物装入坍落度筒中,每次用振捣棒插捣均匀;3顶层捣完后,取下装料漏斗,将多余拌合物刮去,并沿筒口抹平;4清除底板多余的混凝土后,应垂直平稳地提起坍落度筒,并轻放于试样旁边;5当试样不再继续坍落或坍落时间达30s时,用钢尺测量出筒高与坍落后混凝土试体最高点之间的高度差,作为该混凝土拌合物的坍落度值</td><td>根据不同混凝土种类要求,坍落度应符合相应国家标准规范要求。坍落度不宜过小过大,保持适中</td></tr></tbody></table>
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">续表</span></caption><tbody><tr><th scope="col">试验方法</th><th scope="col">试验范围及设备</th><th scope="col">试验步骤</th><th scope="col">试验评定</th></tr><tr><td>维勃稠度测定试验</td><td>试验范围:宜用于骨料最大公称粒径不大于40mm,维勃稠度在5~30s的混凝土拌合物维勃稠度的测定;坍落度不大于50mm或干硬性混凝土和维勃稠度大于30s的特干硬性混凝土拌合物的稠度。试验设备:维勃稠度仪、振捣棒等</td><td>1试验设备的准备与安置。2分三层均匀将混凝土拌合物装入坍落度筒中,每次用振捣棒插捣均匀;3顶层插捣完应将喂料斗转离,沿坍落度筒口刮平顶面,垂直地提起坍落度筒;4将透明圆盘转到混凝土圆台体顶面,放松测杆螺钉,拧紧定位螺钉,开启振动台,同时用秒表计时,当振动到透明圆盘的整个底面与水泥浆接触时应停止计时,并关闭振动台</td><td>0.4s记录的时间应作为混凝土拌合物的维勃稠度值。根据现行国家标准《混凝土质量控制标准》GB 50164可将混凝土拌合物的维勃稠度分为V0~V4级</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">续表</span></caption><tbody><tr><th scope="col">试验方法</th><th scope="col">试验范围及设备</th><th scope="col">试验步骤</th><th scope="col">试验评定</th></tr><tr><td>维勃稠度测定试验</td><td>试验范围:宜用于骨料最大公称粒径不大于40mm,维勃稠度在5~30s的混凝土拌合物维勃稠度的测定;坍落度不大于50mm或干硬性混凝土和维勃稠度大于30s的特干硬性混凝土拌合物的稠度。试验设备:维勃稠度仪、振捣棒等</td><td>1试验设备的准备与安置。2分三层均匀将混凝土拌合物装入坍落度筒中,每次用振捣棒插捣均匀;3顶层插捣完应将喂料斗转离,沿坍落度筒口刮平顶面,垂直地提起坍落度筒;4将透明圆盘转到混凝土圆台体顶面,放松测杆螺钉,拧紧定位螺钉,开启振动台,同时用秒表计时,当振动到透明圆盘的整个底面与水泥浆接触时应停止计时,并关闭振动台</td><td>0.4s记录的时间应作为混凝土拌合物的维勃稠度值。根据现行国家标准《混凝土质量控制标准》GB 50164可将混凝土拌合物的维勃稠度分为V0~V4级</td></tr></tbody></table>
 </div>
 
 #### 2. 普通混凝土力学性能试验

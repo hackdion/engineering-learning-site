@@ -290,7 +290,7 @@ Partnering 模式强调资源共享，信息作为一种重要的资源，对于
 Partnering 模式与工程建设其他组织实施模式的比较详见表 10-1。
 
 <div style="overflow-x: auto">
-<table style="min-width: 800px">
+<table>>
   <caption>表 10-1 Partnering 模式与其他模式的比较</caption>
   <thead>
     <tr>

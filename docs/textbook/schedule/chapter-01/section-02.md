@@ -21,7 +21,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 工程项目前期工作计划是指对工程项目可行性研究、项目评估及初步设计的工作进度安排，它可使工程项目前期决策阶段各项工作的时间得到控制。工程项目前期工作计划需要在预测的基础上编制，其表式如表 1-1 所示。其中“建设性质”是指新建、改建或扩建；“建设规模”是指生产能力、使用规模或建筑面积等。
 
 <div style="overflow-x: auto">
-<table style="min-width: 820px">
+<table>>
   <caption>表 1-1 工程项目前期工作进度计划</caption>
   <thead>
     <tr>
@@ -64,7 +64,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 工程项目一览表将初步设计中确定的建设内容，按照单位工程归类并编号，明确其建设内容和投资额，以便各部门按统一的口径确定工程项目投资额，并以此为依据对其进行管理。工程项目一览表如表 1-2 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px">
+<table>>
   <caption>表 1-2 工程项目一览表</caption>
   <thead>
     <tr>
@@ -94,7 +94,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 工程项目总进度计划表是根据初步设计中确定的建设工期和工艺流程，具体安排单位工程的开工日期和竣工日期。其表式如表 1-3 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px">
+<table>>
   <caption>表 1-3 工程项目总进度计划表</caption>
   <thead>
     <tr>
@@ -130,7 +130,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 投资计划年度分配表是根据工程项目总进度计划安排各个年度的投资，以便预测各个年度的投资规模，为筹集建设资金或与银行签订借款合同及制定分年用款计划提供依据。其表式如表 1-4 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 760px">
+<table>>
   <caption>表 1-4 投资计划年度分配表</caption>
   <thead>
     <tr>
@@ -161,7 +161,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 工程项目进度平衡表用来明确各种设计文件交付日期、主要设备交货日期、施工单位进场日期、水电及道路接通日期等，以保证工程建设中各个环节相互衔接，确保工程项目按期投产或交付使用。其表式如表 1-5 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 1200px">
+<table>>
   <caption>表 1-5 工程项目进度平衡表</caption>
   <thead>
     <tr>
@@ -220,7 +220,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 年度计划项目表将确定年度施工项目的投资额和年末形象进度，并阐明建设条件（图纸、设备、材料、施工力量）的落实情况。其表式如表 1-6 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 1200px">
+<table>>
   <caption>表 1-6 年度计划项目表<br><span style="font-weight: normal; font-size: 0.9em">投资:万元；面积：m²</span></caption>
   <thead>
     <tr>
@@ -266,7 +266,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 年度竣工投产交付使用计划表将阐明各单位工程的建筑面积、投资额、新增固定资产、新增生产能力等建筑总规模及本年计划完成情况，并阐明其竣工日期。其表式如表 1-7 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px">
+<table>>
   <caption>表 1-7 年度竣工投产交付使用计划表<br><span style="font-weight: normal; font-size: 0.9em">投资:万元；面积：m²</span></caption>
   <thead>
     <tr>
@@ -298,7 +298,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 年度建设资金平衡表的格式如表 1-8 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px">
+<table>>
   <caption>表 1-8 年度建设资金平衡表<br><span style="font-weight: normal; font-size: 0.9em">单位:万元</span></caption>
   <thead>
     <tr>
@@ -329,7 +329,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 年度设备平衡表的格式如表 1-9 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 760px">
+<table>>
   <caption>表 1-9 年度设备平衡表</caption>
   <thead>
     <tr>
@@ -364,7 +364,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 在对工程项目实施全过程监理的情况下，监理总进度计划是依据工程项目可行性研究报告、工程项目前期工作计划和工程项目建设总进度计划编制的，其目的是对工程进度控制总目标进行规划，明确工程项目前期准备、设计、施工、动用前准备及项目动用等各个阶段的进度安排。其表式如表 1-10 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 1200px">
+<table>>
   <caption>表 1-10 监理总进度计划</caption>
   <thead>
     <tr>
@@ -414,7 +414,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 设计总进度计划主要用来安排自设计准备开始至施工图设计完成的总设计时间内所包含的各阶段工作的开始时间和完成时间，从而确保设计进度控制总目标的实现。该计划的表式见表 1-11。
 
 <div style="overflow-x: auto">
-<table style="min-width: 1000px">
+<table>>
   <caption>表 1-11 设计总进度计划</caption>
   <thead>
     <tr>
@@ -445,7 +445,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 设计准备工作进度计划中一般要考虑规划设计条件的确定、设计基础资料的提供及委托设计等工作的时间安排。其表式见表 1-12。表中的项目还可根据需要进一步细化。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px">
+<table>>
   <caption>表 1-12 设计准备工作进度计划</caption>
   <thead>
     <tr>
@@ -470,7 +470,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 初步设计（技术设计）工作进度计划要考虑方案设计、初步设计、技术设计、设计的分析评审、概算的编制、修正概算的编制以及设计文件审批等工作的时间安排，一般按单位工程编制。其表式见表 1-13。
 
 <div style="overflow-x: auto">
-<table style="min-width: 1000px">
+<table>>
   <caption>表 1-13 ××单位工程初步设计（技术设计）工作进度计划</caption>
   <thead>
     <tr>
@@ -499,7 +499,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 施工图设计工作进度计划主要考虑各单位工程的设计进度及其搭接关系。其表式见表 1-14。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px">
+<table>>
   <caption>表 1-14 ××工程施工图设计工作进度计划</caption>
   <thead>
     <tr>
@@ -528,7 +528,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 为了控制各专业的设计进度，并作为设计人员承担设计任务的依据，应根据施工图设计工作进度计划、单位工程设计工日定额及所投入的设计人员数，编制设计作业进度计划。其表式见表 1-15。
 
 <div style="overflow-x: auto">
-<table style="min-width: 1000px">
+<table>>
   <caption>表 1-15 ××工程设计作业进度计划表</caption>
   <thead>
     <tr>
@@ -563,7 +563,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 施工准备工作的主要任务是为工程项目的施工创造必要的技术和物资条件，统筹安排施工力量和施工现场。施工准备的工作内容通常包括:技术准备、物资准备、劳动组织准备、施工现场准备和施工场外准备。为落实各项施工准备工作，加强检查和监督，应根据各项施工准备工作的内容、时间和人员，编制施工准备工作计划。其表式见表 1-16。
 
 <div style="overflow-x: auto">
-<table style="min-width: 760px">
+<table>>
   <caption>表 1-16 施工准备工作计划</caption>
   <thead>
     <tr>
@@ -886,7 +886,7 @@ sectionTitle: 第二节 工程进度计划体系及计划表示方法
 当应用网络计划技术编制工程进度计划时，其编制程序一般包括四个阶段 10 个步骤，见表 1-17。
 
 <div style="overflow-x: auto">
-<table style="min-width: 760px">
+<table>>
   <caption>表 1-17 工程进度计划编制程序</caption>
   <thead>
     <tr>

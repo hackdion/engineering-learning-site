@@ -75,7 +75,7 @@ sectionTitle: 第一节 监理规划
 （2）项目监理机构人员配备及进退场计划。首先，项目监理机构配备的监理人员应与监理投标文件或监理项目建议书（非投标项目）相一致，并注明所配备监理人员的职称及专业等。其次，应根据工程进展计划、施工组织设计及各专业工程监理需求，明确项目监理机构每一位监理人员的进场时间及退场时间安排。这不仅是工程监理精细化的重要体现，更是工程监理尽职履责的实际需求。换言之，项目监理机构监理人员进退场计划既是工程监理单位是否尽职履责的判别依据，同时也是政府主管部门、建设单位监管、检查工程监理人员是否到位的判别依据。项目监理机构人员配备及进退场计划可参考表 6-1 格式。
 
 <div style="overflow-x: auto">
-<table style="min-width: 800px">
+<table>>
   <caption>表 6-1 项目监理机构人员配备及进退场计划</caption>
   <thead>
     <tr>
@@ -135,7 +135,7 @@ sectionTitle: 第一节 监理规划
 为便于了解掌握或监督检查项目监理机构人员到位情况，项目监理机构人员配备计划还可用表 6-2 或表 6-3 等形式表示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 620px">
+<table>>
   <caption>表 6-2 项目监理机构人员年度配备计划</caption>
   <thead>
     <tr>
@@ -185,7 +185,7 @@ sectionTitle: 第一节 监理规划
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 760px">
+<table>>
   <caption>表 6-3 项目监理机构人员配备及年度工作时间计划</caption>
   <thead>
     <tr>

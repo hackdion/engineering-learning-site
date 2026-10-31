@@ -16,7 +16,7 @@ sectionTitle: 第四节 工程投资控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 480px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-12 A、B方案主要投入、产出数据（万元）</span></caption><tbody><tr><th scope="col">名称</th><th scope="col">A方案</th><th scope="col">B方案</th></tr><tr><td>建设投资</td><td>40000</td><td>60000</td></tr><tr><td>年销售收入</td><td>12000</td><td>36000</td></tr><tr><td>年经营成本</td><td>4100</td><td>24000</td></tr><tr><td>年总成本</td><td>8100</td><td>30000</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-12 A、B方案主要投入、产出数据（万元）</span></caption><tbody><tr><th scope="col">名称</th><th scope="col">A方案</th><th scope="col">B方案</th></tr><tr><td>建设投资</td><td>40000</td><td>60000</td></tr><tr><td>年销售收入</td><td>12000</td><td>36000</td></tr><tr><td>年经营成本</td><td>4100</td><td>24000</td></tr><tr><td>年总成本</td><td>8100</td><td>30000</td></tr></tbody></table>
 
 </div>
 
@@ -24,7 +24,7 @@ A、B方案流动资金按年经营成本的15%计取，资金投入均为自有
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 560px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-13 复利系数表</span></caption><tbody><tr><th scope="row">i</th><th scope="col" colspan="3">12%</th></tr><tr><th scope="row">n</th><td>2</td><td>9</td><td>10</td></tr><tr><th scope="row">(P/A, i, n)</th><td>1.6091</td><td>5.3282</td><td>5.6502</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-13 复利系数表</span></caption><tbody><tr><th scope="row">i</th><th scope="col" colspan="3">12%</th></tr><tr><th scope="row">n</th><td>2</td><td>9</td><td>10</td></tr><tr><th scope="row">(P/A, i, n)</th><td>1.6091</td><td>5.3282</td><td>5.6502</td></tr></tbody></table>
 
 </div>
 
@@ -265,7 +265,7 @@ $A=P\times i\times(1+i)^{n}/[(1+i)^{n}-1]=1767.19\times 6\%\times(1+6\%)^{4}/[(1
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 760px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-14 第Ⅲ标段各月完成产值（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">单位</th><th scope="col" colspan="6">月份</th></tr><tr><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><td>C公司</td><td>480</td><td>685</td><td>560</td><td>430</td><td>620</td><td>580</td></tr><tr><td>构件厂</td><td>—</td><td>—</td><td>275</td><td>340</td><td>180</td><td>—</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-14 第Ⅲ标段各月完成产值（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">单位</th><th scope="col" colspan="6">月份</th></tr><tr><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><td>C公司</td><td>480</td><td>685</td><td>560</td><td>430</td><td>620</td><td>580</td></tr><tr><td>构件厂</td><td>—</td><td>—</td><td>275</td><td>340</td><td>180</td><td>—</td></tr></tbody></table>
 
 </div>
 
@@ -333,7 +333,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 820px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-15 每月计划完成的投资（部分）</span></caption><tbody><tr><th scope="col">工作</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">J</th></tr><tr><td>计划完成投资（万元/月）</td><td>60</td><td>70</td><td>90</td><td>120</td><td>60</td><td>150</td><td>30</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-15 每月计划完成的投资（部分）</span></caption><tbody><tr><th scope="col">工作</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">J</th></tr><tr><td>计划完成投资（万元/月）</td><td>60</td><td>70</td><td>90</td><td>120</td><td>60</td><td>150</td><td>30</td></tr></tbody></table>
 
 </div>
 
@@ -353,7 +353,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 880px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-16 1～7月投资情况（万元）</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th><th scope="col">第5月</th><th scope="col">第6月</th><th scope="col">第7月</th><th scope="col">合计</th></tr><tr><td>拟完工程计划投资</td><td>130</td><td>130</td><td>130</td><td>300</td><td>330</td><td>210</td><td>210</td><td>1440</td></tr><tr><td>已完工程计划投资</td><td></td><td>130</td><td>130</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>已完工程实际投资</td><td></td><td>130</td><td>130</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-16 1～7月投资情况（万元）</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th><th scope="col">第5月</th><th scope="col">第6月</th><th scope="col">第7月</th><th scope="col">合计</th></tr><tr><td>拟完工程计划投资</td><td>130</td><td>130</td><td>130</td><td>300</td><td>330</td><td>210</td><td>210</td><td>1440</td></tr><tr><td>已完工程计划投资</td><td></td><td>130</td><td>130</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>已完工程实际投资</td><td></td><td>130</td><td>130</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 </div>
 
@@ -389,7 +389,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 880px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-17 1～7月投资情况表（万元）</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">1月</th><th scope="col">2月</th><th scope="col">3月</th><th scope="col">4月</th><th scope="col">5月</th><th scope="col">6月</th><th scope="col">7月</th><th scope="col">合计</th></tr><tr><td>拟完工程计划投资</td><td>130</td><td>130</td><td>130</td><td>300</td><td>330</td><td>210</td><td>210</td><td>1440</td></tr><tr><td>已完工程计划投资</td><td>70</td><td>130</td><td>130</td><td>300</td><td>210</td><td>210</td><td>204</td><td>1254</td></tr><tr><td>已完工程实际投资</td><td>70</td><td>130</td><td>130</td><td>310</td><td>210</td><td>228</td><td>222</td><td>1300</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-17 1～7月投资情况表（万元）</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">1月</th><th scope="col">2月</th><th scope="col">3月</th><th scope="col">4月</th><th scope="col">5月</th><th scope="col">6月</th><th scope="col">7月</th><th scope="col">合计</th></tr><tr><td>拟完工程计划投资</td><td>130</td><td>130</td><td>130</td><td>300</td><td>330</td><td>210</td><td>210</td><td>1440</td></tr><tr><td>已完工程计划投资</td><td>70</td><td>130</td><td>130</td><td>300</td><td>210</td><td>210</td><td>204</td><td>1254</td></tr><tr><td>已完工程实际投资</td><td>70</td><td>130</td><td>130</td><td>310</td><td>210</td><td>228</td><td>222</td><td>1300</td></tr></tbody></table>
 
 </div>
 
@@ -449,7 +449,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-18 变更工程的相关信息</span></caption><tbody><tr><th scope="col">项目名称</th><th scope="col">单位</th><th scope="col">消耗量（m²）</th><th scope="col">市场价（元）</th></tr><tr><td>综合工日</td><td>工日</td><td>0.56</td><td>60.00</td></tr><tr><td>白水泥</td><td>kg</td><td>0.155</td><td>0.80</td></tr><tr><td>花岗石</td><td>m²</td><td>1.06</td><td>530.00</td></tr><tr><td>水泥砂浆</td><td>m³</td><td>0.0299</td><td>240.00</td></tr><tr><td>其他材料费</td><td>元</td><td>—</td><td>6.40</td></tr><tr><td>搅拌机</td><td>台班</td><td>0.0052</td><td>49.18</td></tr><tr><td>切割机</td><td>台班</td><td>0.0969</td><td>52.00</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-18 变更工程的相关信息</span></caption><tbody><tr><th scope="col">项目名称</th><th scope="col">单位</th><th scope="col">消耗量（m²）</th><th scope="col">市场价（元）</th></tr><tr><td>综合工日</td><td>工日</td><td>0.56</td><td>60.00</td></tr><tr><td>白水泥</td><td>kg</td><td>0.155</td><td>0.80</td></tr><tr><td>花岗石</td><td>m²</td><td>1.06</td><td>530.00</td></tr><tr><td>水泥砂浆</td><td>m³</td><td>0.0299</td><td>240.00</td></tr><tr><td>其他材料费</td><td>元</td><td>—</td><td>6.40</td></tr><tr><td>搅拌机</td><td>台班</td><td>0.0052</td><td>49.18</td></tr><tr><td>切割机</td><td>台班</td><td>0.0969</td><td>52.00</td></tr></tbody></table>
 
 </div>
 
@@ -689,7 +689,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-19 承包商实际完成工程量</span></caption><tbody><tr><th scope="row" rowspan="2">子项工程</th><th scope="col" colspan="4">时间</th></tr><tr><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th></tr><tr><td>甲项（万元）</td><td>500</td><td>800</td><td>800</td><td>600</td></tr><tr><td>乙项（万元）</td><td>700</td><td>900</td><td>800</td><td>600</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-19 承包商实际完成工程量</span></caption><tbody><tr><th scope="row" rowspan="2">子项工程</th><th scope="col" colspan="4">时间</th></tr><tr><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th></tr><tr><td>甲项（万元）</td><td>500</td><td>800</td><td>800</td><td>600</td></tr><tr><td>乙项（万元）</td><td>700</td><td>900</td><td>800</td><td>600</td></tr></tbody></table>
 
 </div>
 
@@ -769,7 +769,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-20 承包商实际完成产值</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th></tr><tr><td>完成产值（万元）</td><td>50</td><td>100</td><td>150</td><td>200</td><td>100</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-20 承包商实际完成产值</span></caption><tbody><tr><th scope="col">月份</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th></tr><tr><td>完成产值（万元）</td><td>50</td><td>100</td><td>150</td><td>200</td><td>100</td></tr></tbody></table>
 
 </div>
 
@@ -823,7 +823,7 @@ $$
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 800px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-21 相关信息检查记录</span></caption><tbody><tr><th scope="col">工作代号</th><th scope="col">计划工作预算成本BCWS（万元）</th><th scope="col">已完工作量（%）</th><th scope="col">已完工作实际成本ACWP（万元）</th><th scope="col">净值BCWP（万元）</th></tr><tr><td>A</td><td>2000</td><td>120</td><td>2500</td><td></td></tr><tr><td>B</td><td>2200</td><td>50</td><td>1300</td><td></td></tr><tr><td>C</td><td>4000</td><td>0</td><td>0</td><td></td></tr><tr><td>D</td><td>—</td><td>—</td><td>2600</td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-21 相关信息检查记录</span></caption><tbody><tr><th scope="col">工作代号</th><th scope="col">计划工作预算成本BCWS（万元）</th><th scope="col">已完工作量（%）</th><th scope="col">已完工作实际成本ACWP（万元）</th><th scope="col">净值BCWP（万元）</th></tr><tr><td>A</td><td>2000</td><td>120</td><td>2500</td><td></td></tr><tr><td>B</td><td>2200</td><td>50</td><td>1300</td><td></td></tr><tr><td>C</td><td>4000</td><td>0</td><td>0</td><td></td></tr><tr><td>D</td><td>—</td><td>—</td><td>2600</td><td></td></tr></tbody></table>
 
 </div>
 
@@ -861,7 +861,7 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-22 相关变更数据</span></caption><tbody><tr><th scope="col">项目</th><th scope="col">单位</th><th scope="col">计划</th><th scope="col">实际</th></tr><tr><td>混凝土分项工程量</td><td>m³</td><td>10000</td><td>15000</td></tr><tr><td>单价</td><td>元/m³</td><td>500</td><td>600</td></tr><tr><td>索赔</td><td>%</td><td>4</td><td>3</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-22 相关变更数据</span></caption><tbody><tr><th scope="col">项目</th><th scope="col">单位</th><th scope="col">计划</th><th scope="col">实际</th></tr><tr><td>混凝土分项工程量</td><td>m³</td><td>10000</td><td>15000</td></tr><tr><td>单价</td><td>元/m³</td><td>500</td><td>600</td></tr><tr><td>索赔</td><td>%</td><td>4</td><td>3</td></tr></tbody></table>
 
 </div>
 
@@ -929,13 +929,13 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 900px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-23 各工作计划工程量和实际工程量</span></caption><tbody><tr><th scope="col">工作</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th></tr><tr><td>计划工程量（m³）</td><td>8600</td><td>9000</td><td>5400</td><td>10000</td><td>5200</td><td>6200</td><td>1000</td><td>3600</td></tr><tr><td>实际工程量（m³）</td><td>8600</td><td>9000</td><td>5400</td><td>9200</td><td>5000</td><td>5800</td><td>1000</td><td>5000</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-23 各工作计划工程量和实际工程量</span></caption><tbody><tr><th scope="col">工作</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th></tr><tr><td>计划工程量（m³）</td><td>8600</td><td>9000</td><td>5400</td><td>10000</td><td>5200</td><td>6200</td><td>1000</td><td>3600</td></tr><tr><td>实际工程量（m³）</td><td>8600</td><td>9000</td><td>5400</td><td>9200</td><td>5000</td><td>5800</td><td>1000</td><td>5000</td></tr></tbody></table>
 
 </div>
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 980px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-24 各月混凝土结构工程价格指数</span></caption><tbody><tr><th scope="row" rowspan="2">时间</th><th scope="col">2024年</th><th scope="col" colspan="9">2025年</th></tr><tr><td>12月</td><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td></tr><tr><td>混凝土结构工程价格指数（%）</td><td>100</td><td>115</td><td>105</td><td>110</td><td>115</td><td>110</td><td>110</td><td>120</td><td>110</td><td>110</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-24 各月混凝土结构工程价格指数</span></caption><tbody><tr><th scope="row" rowspan="2">时间</th><th scope="col">2024年</th><th scope="col" colspan="9">2025年</th></tr><tr><td>12月</td><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td></tr><tr><td>混凝土结构工程价格指数（%）</td><td>100</td><td>115</td><td>105</td><td>110</td><td>115</td><td>110</td><td>110</td><td>120</td><td>110</td><td>110</td></tr></tbody></table>
 
 </div>
 
@@ -951,7 +951,7 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 960px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-25 投资数据（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">项目</th><th scope="col" colspan="9">月份</th></tr><tr><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><td>每月拟完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>累计拟完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>每月已完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>累计已完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>每月已完工程实际投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>累计已完工程实际投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-25 投资数据（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">项目</th><th scope="col" colspan="9">月份</th></tr><tr><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><td>每月拟完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>累计拟完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>每月已完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>累计已完工程计划投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>每月已完工程实际投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>累计已完工程实际投资</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 </div>
 
@@ -979,7 +979,7 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 960px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-26 资金数据（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">项目</th><th scope="col" colspan="9">月份</th></tr><tr><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><td>每月拟完工程计划投资</td><td>800</td><td>880</td><td>690</td><td>690</td><td>550</td><td>370</td><td>530</td><td>310</td><td></td></tr><tr><td>累计拟完工程计划投资</td><td>880</td><td>1760</td><td>2450</td><td>3140</td><td>3690</td><td>4060</td><td>4590</td><td>4900</td><td></td></tr><tr><td>每月已完工程计划投资</td><td>880</td><td>880</td><td>660</td><td>660</td><td>410</td><td>355</td><td>515</td><td>415</td><td>125</td></tr><tr><td>累计已完工程计划投资</td><td>880</td><td>1760</td><td>2420</td><td>3080</td><td>3490</td><td>3845</td><td>4360</td><td>4775</td><td>4900</td></tr><tr><td>每月已完工程实际投资</td><td>1012</td><td>924</td><td>726</td><td>759</td><td>451</td><td>390.5</td><td>618</td><td>456.5</td><td>137.5</td></tr><tr><td>累计已完工程实际投资</td><td>1012</td><td>1936</td><td>2662</td><td>3421</td><td>3872</td><td>4262.5</td><td>4880.5</td><td>5337</td><td>5474.5</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-26 资金数据（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">项目</th><th scope="col" colspan="9">月份</th></tr><tr><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th></tr><tr><td>每月拟完工程计划投资</td><td>800</td><td>880</td><td>690</td><td>690</td><td>550</td><td>370</td><td>530</td><td>310</td><td></td></tr><tr><td>累计拟完工程计划投资</td><td>880</td><td>1760</td><td>2450</td><td>3140</td><td>3690</td><td>4060</td><td>4590</td><td>4900</td><td></td></tr><tr><td>每月已完工程计划投资</td><td>880</td><td>880</td><td>660</td><td>660</td><td>410</td><td>355</td><td>515</td><td>415</td><td>125</td></tr><tr><td>累计已完工程计划投资</td><td>880</td><td>1760</td><td>2420</td><td>3080</td><td>3490</td><td>3845</td><td>4360</td><td>4775</td><td>4900</td></tr><tr><td>每月已完工程实际投资</td><td>1012</td><td>924</td><td>726</td><td>759</td><td>451</td><td>390.5</td><td>618</td><td>456.5</td><td>137.5</td></tr><tr><td>累计已完工程实际投资</td><td>1012</td><td>1936</td><td>2662</td><td>3421</td><td>3872</td><td>4262.5</td><td>4880.5</td><td>5337</td><td>5474.5</td></tr></tbody></table>
 
 </div>
 
@@ -1003,7 +1003,7 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 680px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-27 工程量清单报价表</span></caption><tbody><tr><th scope="col">工作</th><th scope="col">估计工程量（m³）</th><th scope="col">综合单价（元/m³）</th><th scope="col">合计（万元）</th></tr><tr><td>A</td><td>3000</td><td>300</td><td>90</td></tr><tr><td>B</td><td>1250</td><td>200</td><td>25</td></tr><tr><td>C</td><td>4000</td><td>500</td><td>200</td></tr><tr><td>D</td><td>4000</td><td>600</td><td>240</td></tr><tr><td>E</td><td>3800</td><td>1000</td><td>380</td></tr><tr><td>F</td><td>8000</td><td>400</td><td>320</td></tr><tr><td>G</td><td>5000</td><td>200</td><td>100</td></tr><tr><td>H</td><td>3000</td><td>800</td><td>240</td></tr><tr><td>I</td><td>2000</td><td>700</td><td>140</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-27 工程量清单报价表</span></caption><tbody><tr><th scope="col">工作</th><th scope="col">估计工程量（m³）</th><th scope="col">综合单价（元/m³）</th><th scope="col">合计（万元）</th></tr><tr><td>A</td><td>3000</td><td>300</td><td>90</td></tr><tr><td>B</td><td>1250</td><td>200</td><td>25</td></tr><tr><td>C</td><td>4000</td><td>500</td><td>200</td></tr><tr><td>D</td><td>4000</td><td>600</td><td>240</td></tr><tr><td>E</td><td>3800</td><td>1000</td><td>380</td></tr><tr><td>F</td><td>8000</td><td>400</td><td>320</td></tr><tr><td>G</td><td>5000</td><td>200</td><td>100</td></tr><tr><td>H</td><td>3000</td><td>800</td><td>240</td></tr><tr><td>I</td><td>2000</td><td>700</td><td>140</td></tr></tbody></table>
 
 </div>
 
@@ -1019,7 +1019,7 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 960px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-28 分月的分部分项工程费用（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">工作</th><th scope="col" colspan="7">时间</th><th scope="row" rowspan="2">合计</th></tr><tr><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th><th scope="col">第5月</th><th scope="col">第6月</th><th scope="col">第7月</th></tr><tr><td>A</td><td>45</td><td>45</td><td></td><td></td><td></td><td></td><td></td><td>90</td></tr><tr><td>B</td><td>25</td><td></td><td></td><td></td><td></td><td></td><td></td><td>25</td></tr><tr><td>C</td><td>100</td><td>100</td><td></td><td></td><td></td><td></td><td></td><td>200</td></tr><tr><td>D</td><td></td><td></td><td>240</td><td></td><td></td><td></td><td></td><td>240</td></tr><tr><td>E</td><td></td><td></td><td>190</td><td>190</td><td></td><td></td><td></td><td>380</td></tr><tr><td>F</td><td></td><td></td><td>320</td><td></td><td></td><td></td><td></td><td>320</td></tr><tr><td>G</td><td></td><td></td><td></td><td>100</td><td></td><td></td><td></td><td>100</td></tr><tr><td>H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>I</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>N</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>合计</td><td>170</td><td>145</td><td>750</td><td>290</td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-28 分月的分部分项工程费用（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">工作</th><th scope="col" colspan="7">时间</th><th scope="row" rowspan="2">合计</th></tr><tr><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th><th scope="col">第5月</th><th scope="col">第6月</th><th scope="col">第7月</th></tr><tr><td>A</td><td>45</td><td>45</td><td></td><td></td><td></td><td></td><td></td><td>90</td></tr><tr><td>B</td><td>25</td><td></td><td></td><td></td><td></td><td></td><td></td><td>25</td></tr><tr><td>C</td><td>100</td><td>100</td><td></td><td></td><td></td><td></td><td></td><td>200</td></tr><tr><td>D</td><td></td><td></td><td>240</td><td></td><td></td><td></td><td></td><td>240</td></tr><tr><td>E</td><td></td><td></td><td>190</td><td>190</td><td></td><td></td><td></td><td>380</td></tr><tr><td>F</td><td></td><td></td><td>320</td><td></td><td></td><td></td><td></td><td>320</td></tr><tr><td>G</td><td></td><td></td><td></td><td>100</td><td></td><td></td><td></td><td>100</td></tr><tr><td>H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>I</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>N</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>合计</td><td>170</td><td>145</td><td>750</td><td>290</td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 </div>
 
@@ -1055,7 +1055,7 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 960px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-29 分月的分部分项工程费用（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">工作</th><th scope="col" colspan="7">时间</th><th scope="row" rowspan="2">合计</th></tr><tr><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th><th scope="col">第5月</th><th scope="col">第6月</th><th scope="col">第7月</th></tr><tr><td>A</td><td>45</td><td>45</td><td></td><td></td><td></td><td></td><td></td><td>90</td></tr><tr><td>B</td><td>25</td><td></td><td></td><td></td><td></td><td></td><td></td><td>25</td></tr><tr><td>C</td><td>100</td><td>100</td><td></td><td></td><td></td><td></td><td></td><td>200</td></tr><tr><td>D</td><td></td><td></td><td>240</td><td></td><td></td><td></td><td></td><td>240</td></tr><tr><td>E</td><td></td><td></td><td>190</td><td>190</td><td></td><td></td><td></td><td>380</td></tr><tr><td>F</td><td></td><td></td><td>320</td><td></td><td></td><td></td><td></td><td>320</td></tr><tr><td>G</td><td></td><td></td><td></td><td>100</td><td></td><td></td><td></td><td>100</td></tr><tr><td>H</td><td></td><td></td><td></td><td></td><td></td><td>240</td><td></td><td></td></tr><tr><td>I</td><td></td><td></td><td></td><td></td><td></td><td></td><td>140</td><td></td></tr><tr><td>N</td><td></td><td></td><td></td><td></td><td>143.33</td><td></td><td></td><td></td></tr><tr><td>合计</td><td>170</td><td>145</td><td>750</td><td>290</td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-29 分月的分部分项工程费用（万元）</span></caption><tbody><tr><th scope="row" rowspan="2">工作</th><th scope="col" colspan="7">时间</th><th scope="row" rowspan="2">合计</th></tr><tr><th scope="col">第1月</th><th scope="col">第2月</th><th scope="col">第3月</th><th scope="col">第4月</th><th scope="col">第5月</th><th scope="col">第6月</th><th scope="col">第7月</th></tr><tr><td>A</td><td>45</td><td>45</td><td></td><td></td><td></td><td></td><td></td><td>90</td></tr><tr><td>B</td><td>25</td><td></td><td></td><td></td><td></td><td></td><td></td><td>25</td></tr><tr><td>C</td><td>100</td><td>100</td><td></td><td></td><td></td><td></td><td></td><td>200</td></tr><tr><td>D</td><td></td><td></td><td>240</td><td></td><td></td><td></td><td></td><td>240</td></tr><tr><td>E</td><td></td><td></td><td>190</td><td>190</td><td></td><td></td><td></td><td>380</td></tr><tr><td>F</td><td></td><td></td><td>320</td><td></td><td></td><td></td><td></td><td>320</td></tr><tr><td>G</td><td></td><td></td><td></td><td>100</td><td></td><td></td><td></td><td>100</td></tr><tr><td>H</td><td></td><td></td><td></td><td></td><td></td><td>240</td><td></td><td></td></tr><tr><td>I</td><td></td><td></td><td></td><td></td><td></td><td></td><td>140</td><td></td></tr><tr><td>N</td><td></td><td></td><td></td><td></td><td>143.33</td><td></td><td></td><td></td></tr><tr><td>合计</td><td>170</td><td>145</td><td>750</td><td>290</td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 </div>
 

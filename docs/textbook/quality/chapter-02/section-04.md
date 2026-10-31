@@ -401,7 +401,7 @@ sectionTitle: 第四节 施工图设计质量控制
 2）抗震设防的建筑工程，其多遇地震动、设防地震动和罕遇地震动的超越概率水准不应低于表2-2的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-2 建筑与市政工程各级地震动超越概率水准</span></caption><tbody><tr><th scope="col">工程类别</th><th scope="col">多遇地震动</th><th scope="col">设防地震动</th><th scope="col">罕遇地震动</th></tr><tr><td>居住建筑与公共建筑</td><td>63.2%/50年</td><td>10%/50年</td><td>2%/50年</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-2 建筑与市政工程各级地震动超越概率水准</span></caption><tbody><tr><th scope="col">工程类别</th><th scope="col">多遇地震动</th><th scope="col">设防地震动</th><th scope="col">罕遇地震动</th></tr><tr><td>居住建筑与公共建筑</td><td>63.2%/50年</td><td>10%/50年</td><td>2%/50年</td></tr></tbody></table>
 </div>
 
 （2）抗震设防烈度
@@ -413,13 +413,13 @@ sectionTitle: 第四节 施工图设计质量控制
 ① 各地区抗震设防烈度与设计基本地震加速度取值的对应关系应符合表2-3的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-3 抗震设防烈度和Ⅱ类场地设计基本地震加速度值的对应关系</span></caption><tbody><tr><th scope="col">抗震设防烈度</th><th scope="col">6度</th><th colspan="2" scope="colgroup">7度</th><th colspan="2" scope="colgroup">8度</th><th scope="col">9度</th></tr><tr><td>Ⅱ类场地设计基本地震加速度值</td><td>0.05g</td><td>0.10g</td><td>0.15g</td><td>0.20g</td><td>0.30g</td><td>0.40g</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-3 抗震设防烈度和Ⅱ类场地设计基本地震加速度值的对应关系</span></caption><tbody><tr><th scope="col">抗震设防烈度</th><th scope="col">6度</th><th colspan="2" scope="colgroup">7度</th><th colspan="2" scope="colgroup">8度</th><th scope="col">9度</th></tr><tr><td>Ⅱ类场地设计基本地震加速度值</td><td>0.05g</td><td>0.10g</td><td>0.15g</td><td>0.20g</td><td>0.30g</td><td>0.40g</td></tr></tbody></table>
 </div>
 
 ② 特征周期应根据工程所在地的设计地震分组和场地类别按《建筑与市政工程抗震通用规范》GB 55002—2021 第 4.2.2 条的规定确定。设计地震分组应根据现行国家标准现行国家标准《中国地震动参数区划图》GB 18306 Ⅱ类场地条件下的基本地震动加速度反应谱特征周期值，按表2-4的规定确定。工程场地类别应按《建筑与市政工程抗震通用规范》GB 55002—2021第3.1.3条的规定确定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-4 设计地震分组与Ⅱ类场地地震动加速度反应谱特征周期的对应关系</span></caption><tbody><tr><th scope="col">设计地震分组</th><th scope="col">第一组</th><th scope="col">第二组</th><th scope="col">第三组</th></tr><tr><td>Ⅱ类场地基本地震动加速度反应谱特征周期</td><td>0.35s</td><td>0.40s</td><td>0.45s</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-4 设计地震分组与Ⅱ类场地地震动加速度反应谱特征周期的对应关系</span></caption><tbody><tr><th scope="col">设计地震分组</th><th scope="col">第一组</th><th scope="col">第二组</th><th scope="col">第三组</th></tr><tr><td>Ⅱ类场地基本地震动加速度反应谱特征周期</td><td>0.35s</td><td>0.40s</td><td>0.45s</td></tr></tbody></table>
 </div>
 
 （3）抗震设防分类和设防标准

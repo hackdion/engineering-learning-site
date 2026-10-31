@@ -131,7 +131,7 @@ sectionTitle: 第二节 工程监理文件资料管理职责和要求
 电子文件归档应包括在线归档和离线归档两种方式，可根据实际情况选择其中一种或两种方式进行归档。电子文件资料离线归档的存储媒体可采用移动硬盘、闪存盘、光盘、磁带等。归档的电子文件应采用或转换为表 8-1 所列文件格式。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 8-1 工程电子文件归档格式</caption>
   <thead>
     <tr>
@@ -207,7 +207,7 @@ sectionTitle: 第二节 工程监理文件资料管理职责和要求
 （1）归档范围。《建设工程文件归档规范》GB/T 50328—2014（2019 年版）规定的监理文件资料归档范围，分为必须归档保存和选择性归档保存两类。其中，建筑工程文件归档范围见表 8-2。
 
 <div style="overflow-x: auto">
-<table style="min-width: 820px">
+<table>>
   <caption>表 8-2 建筑工程文件归档范围</caption>
   <thead>
     <tr>

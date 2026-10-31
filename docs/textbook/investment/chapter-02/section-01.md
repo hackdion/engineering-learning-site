@@ -283,7 +283,7 @@ $$
 单利计息计算过程见表2-1。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-1 单利利息计算表 单位:万元</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">年初本利和</th><th scope="col">当年利息</th><th scope="col">年末本利和</th><th scope="col">年末还款金额</th></tr><tr><td>1</td><td>2000.00</td><td>87.00</td><td>2087.00</td><td>0</td></tr><tr><td>2</td><td>2087.00</td><td>87.00</td><td>2174.00</td><td>0</td></tr><tr><td>3</td><td>2174.00</td><td>87.00</td><td>2261.00</td><td>0</td></tr><tr><td>4</td><td>2261.00</td><td>87.00</td><td>2348.00</td><td>0</td></tr><tr><td>5</td><td>2348.00</td><td>87.00</td><td>2435.00</td><td>2435.00</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-1 单利利息计算表 单位:万元</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">年初本利和</th><th scope="col">当年利息</th><th scope="col">年末本利和</th><th scope="col">年末还款金额</th></tr><tr><td>1</td><td>2000.00</td><td>87.00</td><td>2087.00</td><td>0</td></tr><tr><td>2</td><td>2087.00</td><td>87.00</td><td>2174.00</td><td>0</td></tr><tr><td>3</td><td>2174.00</td><td>87.00</td><td>2261.00</td><td>0</td></tr><tr><td>4</td><td>2261.00</td><td>87.00</td><td>2348.00</td><td>0</td></tr><tr><td>5</td><td>2348.00</td><td>87.00</td><td>2435.00</td><td>2435.00</td></tr></tbody></table>
 </div>
 
 （2）复利计息
@@ -291,7 +291,7 @@ $$
 复利计息计算过程见表2-2。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-2 复利利息计算表 单位:万元</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">年初本利和</th><th scope="col">当年利息</th><th scope="col">年末本利和</th><th scope="col">年末还款金额</th></tr><tr><td>1</td><td>2000.00</td><td>87.00</td><td>2087.00</td><td>0</td></tr><tr><td>2</td><td>2087.00</td><td>90.79</td><td>2177.79</td><td>0</td></tr><tr><td>3</td><td>2177.79</td><td>94.73</td><td>2272.52</td><td>0</td></tr><tr><td>4</td><td>2272.52</td><td>98.86</td><td>2371.37</td><td>0</td></tr><tr><td>5</td><td>2371.37</td><td>103.16</td><td>2474.53</td><td>2474.53</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-2 复利利息计算表 单位:万元</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">年初本利和</th><th scope="col">当年利息</th><th scope="col">年末本利和</th><th scope="col">年末还款金额</th></tr><tr><td>1</td><td>2000.00</td><td>87.00</td><td>2087.00</td><td>0</td></tr><tr><td>2</td><td>2087.00</td><td>90.79</td><td>2177.79</td><td>0</td></tr><tr><td>3</td><td>2177.79</td><td>94.73</td><td>2272.52</td><td>0</td></tr><tr><td>4</td><td>2272.52</td><td>98.86</td><td>2371.37</td><td>0</td></tr><tr><td>5</td><td>2371.37</td><td>103.16</td><td>2474.53</td><td>2474.53</td></tr></tbody></table>
 </div>
 
 （3）不同计息方式利息差异
@@ -299,7 +299,7 @@ $$
 单利、复利计息方式下，各年利息额差异见表2-3。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-3 不同计息方式利息额差异 单位:万元</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">单利利息额</th><th scope="col">复利利息额</th><th scope="col">利息差额</th></tr><tr><td>1</td><td>87.00</td><td>87.00</td><td>0</td></tr><tr><td>2</td><td>87.00</td><td>90.79</td><td>3.79</td></tr><tr><td>3</td><td>87.00</td><td>94.73</td><td>7.73</td></tr><tr><td>4</td><td>87.00</td><td>98.86</td><td>11.86</td></tr><tr><td>5</td><td>87.00</td><td>103.16</td><td>16.16</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-3 不同计息方式利息额差异 单位:万元</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">单利利息额</th><th scope="col">复利利息额</th><th scope="col">利息差额</th></tr><tr><td>1</td><td>87.00</td><td>87.00</td><td>0</td></tr><tr><td>2</td><td>87.00</td><td>90.79</td><td>3.79</td></tr><tr><td>3</td><td>87.00</td><td>94.73</td><td>7.73</td></tr><tr><td>4</td><td>87.00</td><td>98.86</td><td>11.86</td></tr><tr><td>5</td><td>87.00</td><td>103.16</td><td>16.16</td></tr></tbody></table>
 </div>
 
 从表2-3可以看出，同一笔资金，在利率和计息周期均相同的情况下，用复利计算出的利息金额与用单利计算出的利息金额相比有如下特点:除第1个计息周期外，同一计息周期中，用复利计算出的利息金额比用单利计算出的利息金额多，因此，计息周期数超过1时，就应当考虑单利计息和复利计息的差别；计息周期越多时，两者差距就越大。这是由于单利计息时，利息和本金之间存在线性关系，而复利计息时，利息和本金之间存在$(1 + i)^n$ 的指数关系，而在工程经济中，假定 $i$ 大于零。$(1 + i)^n$ 具有大于1的放大效应，因此，本金越大，利率越高，计息周期数越多，用复利计算出的利息金额与用单利计算出的利息金额差距越大。
@@ -381,7 +381,7 @@ $$
 解:分别确定不同计息周期下每年的计息周期数 m 和计息周期利率 i，按照年有效利率计算公式计算，得到不同计息周期下年有效利率。见表 2-4。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-4 有效利率计算表</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">计息周期</th><th scope="col">年计息次数(m)</th><th scope="col">计息周期利率(r/m)</th><th scope="col">年有效利率</th></tr><tr><td>1</td><td>年</td><td>1</td><td>4.80%</td><td>4.80%</td></tr><tr><td>2</td><td>半年</td><td>2</td><td>2.40%</td><td>4.86%</td></tr><tr><td>3</td><td>季</td><td>4</td><td>1.20%</td><td>4.89%</td></tr><tr><td>4</td><td>月</td><td>12</td><td>0.40%</td><td>4.91%</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-4 有效利率计算表</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">计息周期</th><th scope="col">年计息次数(m)</th><th scope="col">计息周期利率(r/m)</th><th scope="col">年有效利率</th></tr><tr><td>1</td><td>年</td><td>1</td><td>4.80%</td><td>4.80%</td></tr><tr><td>2</td><td>半年</td><td>2</td><td>2.40%</td><td>4.86%</td></tr><tr><td>3</td><td>季</td><td>4</td><td>1.20%</td><td>4.89%</td></tr><tr><td>4</td><td>月</td><td>12</td><td>0.40%</td><td>4.91%</td></tr></tbody></table>
 </div>
 
 从有效利率计算公式（2-15）可知，当 $m = 1$ 时，实际利率 $i$ 等于名义利率 $r$；当 $m$ 大于1时，实际利率 $i$ 将大于名义利率 $r$；从【例2-3】可进一步得知，$m$ 越大，二者相差也越大。
@@ -449,7 +449,7 @@ $$
 资金收付发生在不同时间（资金流动发生时间，简称资金发生时间），价值不同。为计算资金时间价值，需要对资金发生时间加以描述，在资金时间价值计算中，将资金流动称为现金流量。相关概念及基本内容如表 2-5 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-5 现金流量相关概念</span></caption><tbody><tr><th scope="col">相关概念</th><th scope="col">基本内容</th></tr><tr><td>现金流量</td><td>把某一研究对象作为一个独立系统,一定时期各时点上实际发生的资金流出或流入</td></tr><tr><td>现金流入</td><td>流入考察系统的资金。如销售收入、提供劳务收入、出租收入</td></tr><tr><td>现金流出</td><td>流出考察系统的资金。如获取土地的费用、建造费用、还本付息、运营费用支出、税金支付</td></tr><tr><td>净现金流量</td><td>考察系统同一时期(时间点)现金流入与现金流出之差</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-5 现金流量相关概念</span></caption><tbody><tr><th scope="col">相关概念</th><th scope="col">基本内容</th></tr><tr><td>现金流量</td><td>把某一研究对象作为一个独立系统,一定时期各时点上实际发生的资金流出或流入</td></tr><tr><td>现金流入</td><td>流入考察系统的资金。如销售收入、提供劳务收入、出租收入</td></tr><tr><td>现金流出</td><td>流出考察系统的资金。如获取土地的费用、建造费用、还本付息、运营费用支出、税金支付</td></tr><tr><td>净现金流量</td><td>考察系统同一时期(时间点)现金流入与现金流出之差</td></tr></tbody></table>
 </div>
 
 现金流量图是一种直观表达考察系统现金流量的工具，如图 2-1 所示。现金流量图除了合理划分时间单位外，还应反映现金流量的三要素，即:现金流量的大小（现金流量数额）、方向（现金流入或现金流出）和作用点（现金流量发生的时点）。
@@ -471,7 +471,7 @@ $$
 反映工程经济分析对象现金流量的工具还有现金流量表，如表 2-6 所示。现金流量表中，时间单位数值表示该时间单位期末，如1表示第1期期末，记在某一时间单位的现金流量视为发生在该期期末；分析需要时，可增加0期，表示第1期期初；现金流量表中分列现金流入和现金流出时，直接填写现金流量数据，不分列现金流入和现金流出而统称为现金流量时，现金流出用负数表示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-6 现金流量表</span></caption><tbody><tr><th scope="col">时间单位</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">...</th><th scope="col">n-1</th><th scope="col">n</th></tr><tr><td>现金流入</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>现金流出</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 2-6 现金流量表</span></caption><tbody><tr><th scope="col">时间单位</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">...</th><th scope="col">n-1</th><th scope="col">n</th></tr><tr><td>现金流入</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>现金流出</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 </div>
 
 #### 2. 资金等值计算公式
@@ -727,7 +727,7 @@ $$
 工程经济分析中，资金等值计算常用复利系数、计算公式和用途汇总如表 2-7 所示。
 
 <div style="overflow-x: auto">
-<table style="min-width: 900px"><caption style="text-align: left">表 2-7 资金等值计算公式汇总表</caption><tbody>
+<table>><caption style="text-align: left">表 2-7 资金等值计算公式汇总表</caption><tbody>
 <tr><th scope="col">符号</th><th scope="col">复利系数</th><th scope="col">公式编号</th><th scope="col">用途</th><th scope="col">计算公式</th></tr>
 <tr><td>(F/P,i,n)</td><td>
 

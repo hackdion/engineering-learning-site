@@ -208,7 +208,7 @@ DBB 合同结构如图 5-1 所示。
 表 5-1 专业分包与劳务分包的主要差异
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <thead>
     <tr>
       <th style="width: 110px">对比维度</th>
@@ -388,7 +388,7 @@ DBB 合同结构如图 5-1 所示。
 表 5-2 “项目融资+工程承包”与单纯“工程承包”模式的比较
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <thead>
     <tr>
       <th style="width: 110px">比较维度</th>

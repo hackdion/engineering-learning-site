@@ -134,7 +134,7 @@ sectionTitle: 第三节 工程进度控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 1100px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-5 各工作可以缩短的时间及其增加的赶工费</span></caption><tbody><tr><th scope="col">分部工程名称</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th><th scope="col">I</th><th scope="col">J</th><th scope="col">K</th><th scope="col">L</th><th scope="col">M</th><th scope="col">N</th></tr><tr><td>可缩短的时间（周）</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>3</td></tr><tr><td>增加的赶工费（万元/周）</td><td>—</td><td>0.7</td><td>1.2</td><td>1.1</td><td>1.8</td><td>0.5</td><td>0.4</td><td>—</td><td>3.0</td><td>2.0</td><td>1.0</td><td>—</td><td>0.8</td><td>1.5</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-5 各工作可以缩短的时间及其增加的赶工费</span></caption><tbody><tr><th scope="col">分部工程名称</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th><th scope="col">I</th><th scope="col">J</th><th scope="col">K</th><th scope="col">L</th><th scope="col">M</th><th scope="col">N</th></tr><tr><td>可缩短的时间（周）</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>2</td><td>1</td><td>1</td><td>0</td><td>1</td><td>3</td></tr><tr><td>增加的赶工费（万元/周）</td><td>—</td><td>0.7</td><td>1.2</td><td>1.1</td><td>1.8</td><td>0.5</td><td>0.4</td><td>—</td><td>3.0</td><td>2.0</td><td>1.0</td><td>—</td><td>0.8</td><td>1.5</td></tr></tbody></table>
 
 </div>
 
@@ -202,7 +202,7 @@ sectionTitle: 第三节 工程进度控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-6 施工段及流水节拍</span></caption><tbody><tr><th scope="col" rowspan="2">工作</th><th scope="col" colspan="2">流水节拍（月）</th></tr><tr><th scope="col">施工段①</th><th scope="col">施工段②</th></tr><tr><td>G</td><td>2</td><td>3</td></tr><tr><td>H</td><td>2</td><td>2</td></tr><tr><td>L</td><td>2</td><td>3</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-6 施工段及流水节拍</span></caption><tbody><tr><th scope="col" rowspan="2">工作</th><th scope="col" colspan="2">流水节拍（月）</th></tr><tr><th scope="col">施工段①</th><th scope="col">施工段②</th></tr><tr><td>G</td><td>2</td><td>3</td></tr><tr><td>H</td><td>2</td><td>2</td></tr><tr><td>L</td><td>2</td><td>3</td></tr></tbody></table>
 
 </div>
 
@@ -224,7 +224,7 @@ sectionTitle: 第三节 工程进度控制
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 420px; border-collapse: collapse"><tbody><tr><td style="padding: 2px 36px 2px 0">G与H间</td><td style="padding: 2px 0 2px 36px">H与L间</td></tr><tr><td style="padding: 2px 36px 2px 0">2，5</td><td style="padding: 2px 0 2px 36px">2，4</td></tr><tr><td style="padding: 2px 36px 2px 0; border-bottom: 1px solid #444">－　2，4</td><td style="padding: 2px 0 2px 36px; border-bottom: 1px solid #444">－　2，5</td></tr><tr><td style="padding: 2px 36px 2px 0">2，3，－4</td><td style="padding: 2px 0 2px 36px">2，2，－5</td></tr></tbody></table>
+<table style="border-collapse: collapse">><tbody><tr><td style="padding: 2px 36px 2px 0">G与H间</td><td style="padding: 2px 0 2px 36px">H与L间</td></tr><tr><td style="padding: 2px 36px 2px 0">2，5</td><td style="padding: 2px 0 2px 36px">2，4</td></tr><tr><td style="padding: 2px 36px 2px 0; border-bottom: 1px solid #444">－　2，4</td><td style="padding: 2px 0 2px 36px; border-bottom: 1px solid #444">－　2，5</td></tr><tr><td style="padding: 2px 36px 2px 0">2，3，－4</td><td style="padding: 2px 0 2px 36px">2，2，－5</td></tr></tbody></table>
 
 </div>
 
@@ -262,7 +262,7 @@ G、H、L三项工作的流水施工工期为：（3＋2）＋（2＋3）＝10�
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 960px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-7 风险分析表</span></caption><tbody><tr><th scope="col">分部工程名称</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th></tr><tr><td>持续时间预计延长值（月）</td><td>0.5</td><td>1</td><td>05</td><td>I</td><td>1</td><td>1</td><td>1</td><td>0.5</td></tr><tr><td>持续时间延长的可能性（%）</td><td>10</td><td>8</td><td>3</td><td>20</td><td>2</td><td>12</td><td>18</td><td>4</td></tr><tr><td>持续时间延长后的损失量（万元）</td><td>5</td><td>110</td><td>25</td><td>120</td><td>150</td><td>40</td><td>30</td><td>50</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-7 风险分析表</span></caption><tbody><tr><th scope="col">分部工程名称</th><th scope="col">A</th><th scope="col">B</th><th scope="col">C</th><th scope="col">D</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th></tr><tr><td>持续时间预计延长值（月）</td><td>0.5</td><td>1</td><td>05</td><td>I</td><td>1</td><td>1</td><td>1</td><td>0.5</td></tr><tr><td>持续时间延长的可能性（%）</td><td>10</td><td>8</td><td>3</td><td>20</td><td>2</td><td>12</td><td>18</td><td>4</td></tr><tr><td>持续时间延长后的损失量（万元）</td><td>5</td><td>110</td><td>25</td><td>120</td><td>150</td><td>40</td><td>30</td><td>50</td></tr></tbody></table>
 
 </div>
 
@@ -376,7 +376,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 760px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-8 施工单位报价单</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">工作名称</th><th scope="col">估算工程量</th><th scope="col">全费用综合单价（元/m³）</th><th scope="col">合价（万元）</th></tr><tr><td>1</td><td>A</td><td>800m³</td><td>300</td><td>24.0</td></tr><tr><td>2</td><td>B</td><td>1200m³</td><td>320</td><td>38.4</td></tr><tr><td>3</td><td>C</td><td>20次</td><td>—</td><td>—</td></tr><tr><td>4</td><td>D</td><td>1600m³</td><td>280</td><td>44.8</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-8 施工单位报价单</span></caption><tbody><tr><th scope="col">序号</th><th scope="col">工作名称</th><th scope="col">估算工程量</th><th scope="col">全费用综合单价（元/m³）</th><th scope="col">合价（万元）</th></tr><tr><td>1</td><td>A</td><td>800m³</td><td>300</td><td>24.0</td></tr><tr><td>2</td><td>B</td><td>1200m³</td><td>320</td><td>38.4</td></tr><tr><td>3</td><td>C</td><td>20次</td><td>—</td><td>—</td></tr><tr><td>4</td><td>D</td><td>1600m³</td><td>280</td><td>44.8</td></tr></tbody></table>
 
 </div>
 
@@ -490,7 +490,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-9 施工过程的流水节拍表</span></caption><tbody><tr><th scope="col" rowspan="2">施工过程</th><th scope="col" colspan="3">流水段</th></tr><tr><th scope="col">①</th><th scope="col">②</th><th scope="col">③</th></tr><tr><td>A4</td><td>20</td><td>20</td><td>20</td></tr><tr><td>A7</td><td>20</td><td>20</td><td>20</td></tr><tr><td>A8</td><td>10</td><td>10</td><td>10</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-9 施工过程的流水节拍表</span></caption><tbody><tr><th scope="col" rowspan="2">施工过程</th><th scope="col" colspan="3">流水段</th></tr><tr><th scope="col">①</th><th scope="col">②</th><th scope="col">③</th></tr><tr><td>A4</td><td>20</td><td>20</td><td>20</td></tr><tr><td>A7</td><td>20</td><td>20</td><td>20</td></tr><tr><td>A8</td><td>10</td><td>10</td><td>10</td></tr></tbody></table>
 
 </div>
 
@@ -700,7 +700,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 900px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-10 后续工作可缩短的时间与赶工费率</span></caption><tbody><tr><th scope="col">工作名称</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th><th scope="col">I</th><th scope="col">J</th><th scope="col">K</th><th scope="col">L</th><th scope="col">N</th></tr><tr><td>可缩短的时间（周）</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>2</td><td>1</td><td>0</td></tr><tr><td>赶工费率（万元/周）</td><td>0.5</td><td>04</td><td>—</td><td>3.0</td><td>2.0</td><td>1.0</td><td>1.5</td><td>—</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-10 后续工作可缩短的时间与赶工费率</span></caption><tbody><tr><th scope="col">工作名称</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th><th scope="col">I</th><th scope="col">J</th><th scope="col">K</th><th scope="col">L</th><th scope="col">N</th></tr><tr><td>可缩短的时间（周）</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>2</td><td>1</td><td>0</td></tr><tr><td>赶工费率（万元/周）</td><td>0.5</td><td>04</td><td>—</td><td>3.0</td><td>2.0</td><td>1.0</td><td>1.5</td><td>—</td></tr></tbody></table>
 
 </div>
 
@@ -760,7 +760,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 <div style="overflow-x: auto">
 
-<table style="min-width: 820px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-11 相关数据表</span></caption><tbody><tr><th scope="col">工作名称</th><th scope="col">C</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th><th scope="col">I</th></tr><tr><td>尚需作业时间（月）</td><td>1</td><td>3</td><td>1</td><td>4</td><td>3</td><td>2</td></tr><tr><td>可缩短的待续时间（月）</td><td>0.5</td><td>1.5</td><td>0.5</td><td>2</td><td>1.5</td><td>1</td></tr><tr><td>缩短待续时间所增加的费用（万元/月）</td><td>28</td><td>18</td><td>30</td><td>26</td><td>10</td><td>14</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 4-11 相关数据表</span></caption><tbody><tr><th scope="col">工作名称</th><th scope="col">C</th><th scope="col">E</th><th scope="col">F</th><th scope="col">G</th><th scope="col">H</th><th scope="col">I</th></tr><tr><td>尚需作业时间（月）</td><td>1</td><td>3</td><td>1</td><td>4</td><td>3</td><td>2</td></tr><tr><td>可缩短的待续时间（月）</td><td>0.5</td><td>1.5</td><td>0.5</td><td>2</td><td>1.5</td><td>1</td></tr><tr><td>缩短待续时间所增加的费用（万元/月）</td><td>28</td><td>18</td><td>30</td><td>26</td><td>10</td><td>14</td></tr></tbody></table>
 
 </div>
 

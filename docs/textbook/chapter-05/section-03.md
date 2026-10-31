@@ -67,7 +67,7 @@ sectionTitle: 第三节 项目监理机构及其人员职责
 （4）制定岗位职责及考核标准。岗位职务及职责的确定要有明确的目的性，不可因人设事。根据权责一致原则，应进行适当授权，以承担相应职责；并应确定考核标准，对监理人员的工作进行定期考核，包括考核内容、考核标准及考核时间。表 5-3 和表 5-4 分别为总监理工程师和专业监理工程师岗位职责考核标准。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 5-3 总监理工程师岗位职责标准</caption>
   <thead>
     <tr>
@@ -133,7 +133,7 @@ sectionTitle: 第三节 项目监理机构及其人员职责
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 5-4 专业监理工程师岗位职责标准</caption>
   <thead>
     <tr>
@@ -1054,7 +1054,7 @@ sectionTitle: 第三节 项目监理机构及其人员职责
 这里所称的初级职称是指助理工程师、助理经济师、技术员等，也可包括具有相应能力的实践经验丰富的工人（应能看懂图纸、正确填报有关原始凭证）。项目监理机构监理人员应具有的技术职称结构见表 5-5。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 5-5 项目监理机构监理人员应具有的技术职称结构</caption>
   <thead>
     <tr>
@@ -1130,7 +1130,7 @@ sectionTitle: 第三节 项目监理机构及其人员职责
 1）项目监理机构人员需要量定额。根据监理工作内容和工程复杂程度等级，测定、编制项目监理机构监理人员需要量定额，见表 5-6。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 5-6 监理人员需要量定额（人·年/千万元）</caption>
   <thead>
     <tr>
@@ -1182,7 +1182,7 @@ sectionTitle: 第三节 项目监理机构及其人员职责
 3）确定工程复杂程度。按构成工程复杂程度的 10 个因素考虑，根据工程实际情况分别按 10 分制打分。具体结果见表 5-7。
 
 <div style="overflow-x: auto">
-<table style="min-width: 660px">
+<table>>
   <caption>表 5-7 工程复杂程度等级评定表</caption>
   <thead>
     <tr>

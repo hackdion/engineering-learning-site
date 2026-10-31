@@ -233,7 +233,7 @@ sectionTitle: 第一节 安全风险管理
 ① 可忽略风险。不采取措施，风险管理文件可不做记录。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-1 危险事件风险分级表</span></caption><tbody><tr><th rowspan="2" scope="col">可能性</th><th colspan="3" scope="colgroup">严重程度</th></tr><tr><td>轻微伤害</td><td>一般伤害</td><td>严重伤害</td></tr><tr><td>极不可能</td><td>可忽略风险</td><td>可容许风险</td><td>中度风险</td></tr><tr><td>不可能</td><td>可容许风险</td><td>中度风险</td><td>重大风险</td></tr><tr><td>可能</td><td>中度风险</td><td>重大风险</td><td>不可容许风险</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-1 危险事件风险分级表</span></caption><tbody><tr><th rowspan="2" scope="col">可能性</th><th colspan="3" scope="colgroup">严重程度</th></tr><tr><td>轻微伤害</td><td>一般伤害</td><td>严重伤害</td></tr><tr><td>极不可能</td><td>可忽略风险</td><td>可容许风险</td><td>中度风险</td></tr><tr><td>不可能</td><td>可容许风险</td><td>中度风险</td><td>重大风险</td></tr><tr><td>可能</td><td>中度风险</td><td>重大风险</td><td>不可容许风险</td></tr></tbody></table>
 </div>
 
 ② 可容许风险。不增加额外控制设施，需要监视，以保证控制措施的维持；或应考虑改进，但不增加额外成本。
@@ -249,7 +249,7 @@ sectionTitle: 第一节 安全风险管理
 在预先危险性分析法中，安全管理的分级常按危险或有害因素导致的事故的危险（危害）程度，将危险或有害因素划分为四个危险等级，见表8-2。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-2 危险性等级划分</span></caption><tbody><tr><th scope="col">级别</th><th scope="col">危险程度</th><th scope="col">可能导致的后果</th></tr><tr><td>I级</td><td>安全的</td><td>可以忽略</td></tr><tr><td>II级</td><td>临界的</td><td>处于事故边缘状态,暂时尚不能造成人员伤亡和财产损失,应予排除或采取控制措施</td></tr><tr><td>III级</td><td>危险的</td><td>会造成人员伤亡和系统损坏,应立即采取措施</td></tr><tr><td>IV级</td><td>破坏性的</td><td>会造成灾难性事故,必须立即排除</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-2 危险性等级划分</span></caption><tbody><tr><th scope="col">级别</th><th scope="col">危险程度</th><th scope="col">可能导致的后果</th></tr><tr><td>I级</td><td>安全的</td><td>可以忽略</td></tr><tr><td>II级</td><td>临界的</td><td>处于事故边缘状态,暂时尚不能造成人员伤亡和财产损失,应予排除或采取控制措施</td></tr><tr><td>III级</td><td>危险的</td><td>会造成人员伤亡和系统损坏,应立即采取措施</td></tr><tr><td>IV级</td><td>破坏性的</td><td>会造成灾难性事故,必须立即排除</td></tr></tbody></table>
 </div>
 
 3）安全措施
@@ -257,7 +257,7 @@ sectionTitle: 第一节 安全风险管理
 预先危险性分析一般按照表 8-3 样式进行，并提交分析结果，其中对系统存在的潜在事故提出相应安全措施是安全管理的重点。安全管理应尽可能消除不可接受的危险性等级风险（Ⅲ级、Ⅳ级），如果不可能消除，应采取措施努力降低风险。在各种改进措施都不能完全保证安全的情况下，应考虑使用个人防护用品，并制定应急预案，甚至终止工作。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-3 危险性预先分析表</span></caption><tbody><tr><th scope="col">潜在事故</th><th scope="col">危险、危害因素</th><th scope="col">触发事件</th><th scope="col">现象</th><th scope="col">现象事故原因事件</th><th scope="col">事故后果</th><th scope="col">危险等级</th><th scope="col">措施</th></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-3 危险性预先分析表</span></caption><tbody><tr><th scope="col">潜在事故</th><th scope="col">危险、危害因素</th><th scope="col">触发事件</th><th scope="col">现象</th><th scope="col">现象事故原因事件</th><th scope="col">事故后果</th><th scope="col">危险等级</th><th scope="col">措施</th></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 </div>
 
 在建筑与市政工程中，施工现场潜在事故危险性事件的主要类型是:高处坠落、物体打击、起重伤害、坍塌、机械伤害、冒顶片帮、车辆伤害、中毒和窒息、触电、爆炸、透水、淹溺、灼烫等。基于危险性预先分析，现行国家标准《建筑与市政施工现场安全卫生与职业健康通用规范》GB 55034 对上述施工现场潜在事故危险性事件的控制措施明确了最基本要求。
@@ -819,7 +819,7 @@ $V$ ——排水沟的排水能力 $(\mathrm{m}^{3}/\mathrm{d})$。
 （3）根据现行行业标准《施工现场临时用电安全技术规范》JGJ 46；起重机严禁越过无防护设施的外电架空线路作业。在外电架空线路附近吊装时，起重机的任何部位或被吊物边缘在最大偏斜时与架空线路边线的最小安全距离应符合表8-4的规定。
 
 <div style="overflow-x: auto">
-<table style="min-width: 675px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-4 起重机与架空线路边线的最小安全距离</span></caption><tbody><tr><th scope="col"></th><th scope="col">电压(kV)</th><th scope="col">&lt;1</th><th scope="col">10</th><th scope="col">35</th><th scope="col">110</th><th scope="col">220</th><th scope="col">330</th><th scope="col">500</th></tr><tr><td rowspan="2">安全距离(m)</td><td>沿垂直方向</td><td>1.5</td><td>3.0</td><td>4.0</td><td>5.0</td><td>6.0</td><td>7.0</td><td>8.5</td></tr><tr><td>沿水平方向</td><td>1.5</td><td>2.0</td><td>3.5</td><td>4.0</td><td>6.0</td><td>7.0</td><td>8.5</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-4 起重机与架空线路边线的最小安全距离</span></caption><tbody><tr><th scope="col"></th><th scope="col">电压(kV)</th><th scope="col">&lt;1</th><th scope="col">10</th><th scope="col">35</th><th scope="col">110</th><th scope="col">220</th><th scope="col">330</th><th scope="col">500</th></tr><tr><td rowspan="2">安全距离(m)</td><td>沿垂直方向</td><td>1.5</td><td>3.0</td><td>4.0</td><td>5.0</td><td>6.0</td><td>7.0</td><td>8.5</td></tr><tr><td>沿水平方向</td><td>1.5</td><td>2.0</td><td>3.5</td><td>4.0</td><td>6.0</td><td>7.0</td><td>8.5</td></tr></tbody></table>
 </div>
 
 施工现场配电系统，配电设备、线路防护设施设置，漏电保护器参数均应符合现行行业标准《施工现场临时用电安全技术规范》JGJ 46 相关要求。

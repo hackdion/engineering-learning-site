@@ -19,7 +19,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 根据现行国家标准《建筑地基基础设计规范》GB 50007，应对地基土的含水率、密度、压实度及各种力学性能进行试验测定。根据现行国家标准《土工试验方法标准》GB/T 50123，含水率、干密度及压实度的试验检验方法见表 5-21。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-21 地基土性能试验方法及依据</span></caption><tbody><tr><th scope="col">试验项目</th><th scope="col">检验方法</th></tr><tr><td>土的含水率试验</td><td>以烘干法为室内试验的标准方法。在工地如无标准设备或要求快速测定含水率时,可依土的性质和工程情况分别采用酒精燃烧法、红外线照射法、炒干法、容积法、微波加热法、碳化钙气压法等</td></tr><tr><td>地基土最佳含水量时的最大干密度测定试验</td><td>击实试验:轻型击实法和重型击实法</td></tr><tr><td>压实度试验</td><td>施工现场测定土料、无机结合料、砂砾混合料及沥青混合料等的压实度,一般有环刀法、灌砂法、直接称量法、蜡封称量法、取土器法和水袋法等</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-21 地基土性能试验方法及依据</span></caption><tbody><tr><th scope="col">试验项目</th><th scope="col">检验方法</th></tr><tr><td>土的含水率试验</td><td>以烘干法为室内试验的标准方法。在工地如无标准设备或要求快速测定含水率时,可依土的性质和工程情况分别采用酒精燃烧法、红外线照射法、炒干法、容积法、微波加热法、碳化钙气压法等</td></tr><tr><td>地基土最佳含水量时的最大干密度测定试验</td><td>击实试验:轻型击实法和重型击实法</td></tr><tr><td>压实度试验</td><td>施工现场测定土料、无机结合料、砂砾混合料及沥青混合料等的压实度,一般有环刀法、灌砂法、直接称量法、蜡封称量法、取土器法和水袋法等</td></tr></tbody></table>
 </div>
 
 #### 2. 地基土承载力试验
@@ -53,7 +53,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 根据现行国家标准《建筑地基基础设计规范》GB 50007 和《建筑地基基础工程施工质量验收标准》GB 50202，桩的静承载力试验包括单桩静承载力试验和单桩动测试验，试验方法见表 5-22。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-22 桩基承载力试验方法</span></caption><tbody><tr><th colspan="2" scope="colgroup">试验项目</th><th scope="col">试验方法</th></tr><tr><td rowspan="3">单桩静承载力试验</td><td>单桩垂直静承载力试验</td><td rowspan="3">试验数量:在同一条件下,试桩数不宜少于总桩数的1%,并不应少于3根,工程总桩数50根以下不少于2根。试验步骤:结合实际条件和试验内容,选定试验设备;规定承载力试验条件,一般应通过试桩进行验证后再修订试验条件;加载与卸载;资料整理:试验原始记录表、试验概况、绘制荷载变形曲线等;检测数据分析与应用</td></tr><tr><td>单桩抗拔承载力试验</td></tr><tr><td>单桩水平静承载力试验</td></tr><tr><td rowspan="2">单桩动测试验</td><td>高应变动测法</td><td>检测数量:在地质条件相近、桩型和施工条件相同时,不宜少于总桩数5%,且不应少于5根。试验步骤:处理桩顶强度较低混凝土,接桩于地坪以上1.5~2倍桩处,所有主筋均接至桩顶保护层以下并加强保护,锤与桩顶设置有效垫层。桩身两侧安装传感器,准备就绪后,进行锤击,实时记录试验数据</td></tr><tr><td>低应变动测法</td><td>检测数量:采用随机采样的方式抽检。抽检比例按照现行相关国家规范规定。检测方法:主要采用弹性波反射法,对各类混凝土桩进行质量普查。检查桩身是否有断桩、夹泥、离析、缩颈等缺陷的存在,确定缺陷位置,对桩身完整性做出分类判别</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-22 桩基承载力试验方法</span></caption><tbody><tr><th colspan="2" scope="colgroup">试验项目</th><th scope="col">试验方法</th></tr><tr><td rowspan="3">单桩静承载力试验</td><td>单桩垂直静承载力试验</td><td rowspan="3">试验数量:在同一条件下,试桩数不宜少于总桩数的1%,并不应少于3根,工程总桩数50根以下不少于2根。试验步骤:结合实际条件和试验内容,选定试验设备;规定承载力试验条件,一般应通过试桩进行验证后再修订试验条件;加载与卸载;资料整理:试验原始记录表、试验概况、绘制荷载变形曲线等;检测数据分析与应用</td></tr><tr><td>单桩抗拔承载力试验</td></tr><tr><td>单桩水平静承载力试验</td></tr><tr><td rowspan="2">单桩动测试验</td><td>高应变动测法</td><td>检测数量:在地质条件相近、桩型和施工条件相同时,不宜少于总桩数5%,且不应少于5根。试验步骤:处理桩顶强度较低混凝土,接桩于地坪以上1.5~2倍桩处,所有主筋均接至桩顶保护层以下并加强保护,锤与桩顶设置有效垫层。桩身两侧安装传感器,准备就绪后,进行锤击,实时记录试验数据</td></tr><tr><td>低应变动测法</td><td>检测数量:采用随机采样的方式抽检。抽检比例按照现行相关国家规范规定。检测方法:主要采用弹性波反射法,对各类混凝土桩进行质量普查。检查桩身是否有断桩、夹泥、离析、缩颈等缺陷的存在,确定缺陷位置,对桩身完整性做出分类判别</td></tr></tbody></table>
 </div>
 
 ### （二）地基基础实体检测
@@ -63,7 +63,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 既有实体建筑物的地基检测项目一般包括地基土的分类、分布与工程特性。根据现行行业标准《既有建筑地基基础检测技术标准》JGJ/T 422，需对达到设计使用年限仍继续使用的建筑，发生事故的既有建筑，拟改建、加固、增层、增载、接建、邻近大面积堆载、邻近基坑开挖、邻近地下工程施工或邻近地下水抽降等的既有建筑，拟移位的既有建筑，进行地基承载力、沉降和变形的检测。检测方法和依据见表5-23。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-23 地基检测方法</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th></tr><tr><td>地基土层分类、分布及工程特性</td><td>勘探法(标准贯入试验、静/动力触探试验、旁压试验等)、物探法(瞬态面波测试、地质雷达测试)</td></tr><tr><td>地基承载力</td><td>静荷载试验、原型静荷载试验等</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-23 地基检测方法</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th></tr><tr><td>地基土层分类、分布及工程特性</td><td>勘探法(标准贯入试验、静/动力触探试验、旁压试验等)、物探法(瞬态面波测试、地质雷达测试)</td></tr><tr><td>地基承载力</td><td>静荷载试验、原型静荷载试验等</td></tr></tbody></table>
 </div>
 
 #### 2. 基础检测与变形监测
@@ -71,7 +71,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 基础检测的内容包括基础的形式、尺寸与埋深，基础材料强度，钢筋配置与锈蚀，基础损伤，基础沉降与变形。基础检验批构件数量应符合现行相关国家标准要求，对于受到环境侵蚀和灾害破坏的基础检测位置应分布在影响部位，基础变形监测点应根据工程特点、监测内容与目的、周边环境选择。基础检测与变形监测的方法和依据见表5-24。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-24 基础检测与变形监测方法及依据</span></caption><tbody><tr><th colspan="2" scope="colgroup">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td colspan="2">基础的形式、尺寸与埋深</td><td>现场开挖法</td><td rowspan="6">《既有建筑地基基础检测技术标准》JGJ/T 422《混凝土结构现场检测技术标准》GB/T 50784《建筑变形测量规范》JGJ 8</td></tr><tr><td colspan="2">基础材料强度</td><td>钻芯法、回弹法、超声回弹综合法和后装拔出法</td></tr><tr><td colspan="2">钢筋配置与锈蚀</td><td>雷达法、电磁感应法、钻孔和剔凿法等</td></tr><tr><td colspan="2">基础损伤</td><td>现场开挖,尺量检查;裂缝观察与分析、超声波测深度法等</td></tr><tr><td rowspan="2">基础沉降与变形监测</td><td>沉降监测</td><td>水准测量方法或静力水准测量法</td></tr><tr><td>水平位移监测</td><td>视准法、极坐标法、测小角法、激光准直法、位移计自动测计法、全球定位系统、三维激光扫描、近景摄影测量法等</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-24 基础检测与变形监测方法及依据</span></caption><tbody><tr><th colspan="2" scope="colgroup">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td colspan="2">基础的形式、尺寸与埋深</td><td>现场开挖法</td><td rowspan="6">《既有建筑地基基础检测技术标准》JGJ/T 422《混凝土结构现场检测技术标准》GB/T 50784《建筑变形测量规范》JGJ 8</td></tr><tr><td colspan="2">基础材料强度</td><td>钻芯法、回弹法、超声回弹综合法和后装拔出法</td></tr><tr><td colspan="2">钢筋配置与锈蚀</td><td>雷达法、电磁感应法、钻孔和剔凿法等</td></tr><tr><td colspan="2">基础损伤</td><td>现场开挖,尺量检查;裂缝观察与分析、超声波测深度法等</td></tr><tr><td rowspan="2">基础沉降与变形监测</td><td>沉降监测</td><td>水准测量方法或静力水准测量法</td></tr><tr><td>水平位移监测</td><td>视准法、极坐标法、测小角法、激光准直法、位移计自动测计法、全球定位系统、三维激光扫描、近景摄影测量法等</td></tr></tbody></table>
 </div>
 
 #### 3. 基桩检测
@@ -79,7 +79,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 根据工程需要，基桩检测项目可分为基桩承载力、桩身完整性、桩长、钢筋笼长度、桩身混凝土强度、桩端持力层和桩底沉渣厚度。检测方法及依据见表5-25。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-25 基桩检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>基桩承载力</td><td>静载荷试验法、原位静荷载试验法等</td><td rowspan="5">《既有建筑地基基础检测技术标准》JGJ/T 422《建筑基桩检测技术规范》JGJ 106</td></tr><tr><td>桩身完整性</td><td>低应变法、钻芯法</td></tr><tr><td>桩长</td><td>旁孔投射法、钻芯法</td></tr><tr><td>钢筋笼长度</td><td>磁测桩法</td></tr><tr><td>桩身混凝土强度、桩端持力层和桩底沉渣厚度</td><td>钻芯法</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-25 基桩检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>基桩承载力</td><td>静载荷试验法、原位静荷载试验法等</td><td rowspan="5">《既有建筑地基基础检测技术标准》JGJ/T 422《建筑基桩检测技术规范》JGJ 106</td></tr><tr><td>桩身完整性</td><td>低应变法、钻芯法</td></tr><tr><td>桩长</td><td>旁孔投射法、钻芯法</td></tr><tr><td>钢筋笼长度</td><td>磁测桩法</td></tr><tr><td>桩身混凝土强度、桩端持力层和桩底沉渣厚度</td><td>钻芯法</td></tr></tbody></table>
 </div>
 
 ## 二、混凝土结构工程
@@ -109,7 +109,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 混凝土结构或构件变形的检测可分为构件的挠度、构件或结构的倾斜和基础不均匀沉降等项目。各项目的相关检测方法见表 5-26。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-26 混凝土结构或构件变形检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>构件的挠度</td><td>可采用激光测距仪、水准仪或拉线等方法</td><td rowspan="3">《建筑结构检测技术标准》GB/T 50344《建筑变形测量规范》JGJ 8</td></tr><tr><td>构件或结构的倾斜</td><td>可采用经纬仪、激光定位仪、三轴定位仪或吊坠的方法</td></tr><tr><td>基础不均匀沉降</td><td>可用水准仪检测</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-26 混凝土结构或构件变形检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>构件的挠度</td><td>可采用激光测距仪、水准仪或拉线等方法</td><td rowspan="3">《建筑结构检测技术标准》GB/T 50344《建筑变形测量规范》JGJ 8</td></tr><tr><td>构件或结构的倾斜</td><td>可采用经纬仪、激光定位仪、三轴定位仪或吊坠的方法</td></tr><tr><td>基础不均匀沉降</td><td>可用水准仪检测</td></tr></tbody></table>
 </div>
 
 ### （三）钢筋配置检测
@@ -157,11 +157,11 @@ sectionTitle: 第三节 工程实体质量检测方法
 （3）栓钉焊接接头的焊缝外观质量应符合表5-27或表5-28的要求。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-27 栓钉焊接接头及焊缝外观检验合格标准</span></caption><tbody><tr><th scope="col">外观检验项目</th><th scope="col">合格标准</th><th scope="col">检验方法</th></tr><tr><td>焊缝外形尺寸</td><td>360°范围内焊缝饱满拉弧式栓钉焊:焊缝高K1≥1mm;焊缝宽K2≥0.5m电弧焊:最小焊脚尺寸应符合表5-28的规定</td><td>目测、钢尺、焊缝量规</td></tr><tr><td>焊缝缺欠</td><td>无气孔、夹渣、裂纹等缺欠</td><td>目测、放大镜(5倍)</td></tr><tr><td>焊缝咬边</td><td>咬边深度≤0.5mm,且最大长度不得大于1倍的栓钉直径</td><td>钢尺、焊缝量规</td></tr><tr><td>栓钉焊后高度</td><td>高度偏差±2mm</td><td>钢尺</td></tr><tr><td>栓钉焊后倾斜角度</td><td>倾斜角度偏差0≤5°</td><td>钢尺、量角器</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-27 栓钉焊接接头及焊缝外观检验合格标准</span></caption><tbody><tr><th scope="col">外观检验项目</th><th scope="col">合格标准</th><th scope="col">检验方法</th></tr><tr><td>焊缝外形尺寸</td><td>360°范围内焊缝饱满拉弧式栓钉焊:焊缝高K1≥1mm;焊缝宽K2≥0.5m电弧焊:最小焊脚尺寸应符合表5-28的规定</td><td>目测、钢尺、焊缝量规</td></tr><tr><td>焊缝缺欠</td><td>无气孔、夹渣、裂纹等缺欠</td><td>目测、放大镜(5倍)</td></tr><tr><td>焊缝咬边</td><td>咬边深度≤0.5mm,且最大长度不得大于1倍的栓钉直径</td><td>钢尺、焊缝量规</td></tr><tr><td>栓钉焊后高度</td><td>高度偏差±2mm</td><td>钢尺</td></tr><tr><td>栓钉焊后倾斜角度</td><td>倾斜角度偏差0≤5°</td><td>钢尺、量角器</td></tr></tbody></table>
 </div>
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-28 采用电弧焊方法的栓钉焊接接头最小焊脚尺寸</span></caption><tbody><tr><th scope="col">栓钉直径(mm)</th><th scope="col">角焊缝最小焊脚尺寸(mm)</th></tr><tr><td>10,13</td><td>6</td></tr><tr><td>16,19,22</td><td>8</td></tr><tr><td>25</td><td>20</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-28 采用电弧焊方法的栓钉焊接接头最小焊脚尺寸</span></caption><tbody><tr><th scope="col">栓钉直径(mm)</th><th scope="col">角焊缝最小焊脚尺寸(mm)</th></tr><tr><td>10,13</td><td>6</td></tr><tr><td>16,19,22</td><td>8</td></tr><tr><td>25</td><td>20</td></tr></tbody></table>
 </div>
 
 #### 2. 焊缝质量检测
@@ -233,7 +233,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 砌体结构的强度检测可分为砌筑块材强度、砌筑砂浆强度、砌体强度等项目，各项目的检测方法操作应遵守相关检测技术标准。检测方法及依据见表5-29。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-29 砌体结构材料强度、砌体强度检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>砌筑块材</td><td>取样法、回弹法、取样结合回弹的方法和钻芯的方法等</td><td rowspan="3">《建筑结构检测技术标准》GB/T 50344《砌体工程现场检测技术标准》GB/T 50315</td></tr><tr><td>砌筑砂浆</td><td>推出法、筒压法、砂浆片剪切法、点荷法和回弹法等</td></tr><tr><td>砌体强度</td><td>原位轴压法、扁顶法、切制抗压试件法和原位单剪法等</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-29 砌体结构材料强度、砌体强度检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>砌筑块材</td><td>取样法、回弹法、取样结合回弹的方法和钻芯的方法等</td><td rowspan="3">《建筑结构检测技术标准》GB/T 50344《砌体工程现场检测技术标准》GB/T 50315</td></tr><tr><td>砌筑砂浆</td><td>推出法、筒压法、砂浆片剪切法、点荷法和回弹法等</td></tr><tr><td>砌体强度</td><td>原位轴压法、扁顶法、切制抗压试件法和原位单剪法等</td></tr></tbody></table>
 </div>
 
 ### （二）变形检测
@@ -245,7 +245,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 砌体结构的构造检测可分为砌筑构件的高厚比、梁垫、壁柱、预制构件的搁置长度、大型构件端部的锚固措施、圈梁、构造柱或芯柱、砌体局部尺寸及钢筋网片和拉结筋等。各项目的检测方法及依据见表5-30。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-30 砌体结构构造检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>砌体中钢筋</td><td>非破损的雷达法或电磁感应法</td><td rowspan="6">《建筑结构检测技术标准》GB/T 50344</td></tr><tr><td>屋架和梁支承的垫块和锚固措施</td><td>剔除表面抹灰的方法</td></tr><tr><td>预制钢筋混凝土板支承长度</td><td>剔凿楼面面层及垫层的方法</td></tr><tr><td>跨度较大门窗洞口混凝土过梁的设置</td><td>测定过梁钢筋状况判定或剔凿表面抹灰的方法</td></tr><tr><td>砌体墙梁的构造</td><td>剔凿表面抹灰和用尺量测的方法</td></tr><tr><td>圈梁、构造柱或芯柱的设置</td><td>测定钢筋状况判定</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-30 砌体结构构造检测方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>砌体中钢筋</td><td>非破损的雷达法或电磁感应法</td><td rowspan="6">《建筑结构检测技术标准》GB/T 50344</td></tr><tr><td>屋架和梁支承的垫块和锚固措施</td><td>剔除表面抹灰的方法</td></tr><tr><td>预制钢筋混凝土板支承长度</td><td>剔凿楼面面层及垫层的方法</td></tr><tr><td>跨度较大门窗洞口混凝土过梁的设置</td><td>测定过梁钢筋状况判定或剔凿表面抹灰的方法</td></tr><tr><td>砌体墙梁的构造</td><td>剔凿表面抹灰和用尺量测的方法</td></tr><tr><td>圈梁、构造柱或芯柱的设置</td><td>测定钢筋状况判定</td></tr></tbody></table>
 </div>
 
 ## 五、给水排水工程
@@ -253,7 +253,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 建筑给水排水工程的实体检测主要包括各类管道的检验，管道的检验可分为承压（给水、供热）管道和排水、雨水管道的检验。检验方法及依据见表5-31。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-31 管道检验方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>承压(给水、供热)管道</td><td>水压试验,试验压力为工作压力的1.5倍,但不得小于0.6MPa</td><td rowspan="5">《建筑给水排水及采暖工程施工质量验收规范》GB 50242</td></tr><tr><td>室内雨水管道</td><td>灌水试验,灌水试验持续1h</td></tr><tr><td>室内排水管道</td><td>灌水试验,满水15min水面下降后,再灌满观察5min</td></tr><tr><td>室外排水管道</td><td>灌水试验和通水试验,时间不少于30min,逐段观察</td></tr><tr><td>砌体</td><td>原位轴压法、扁顶法、切制抗压试件法和原位单剪法等</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-31 管道检验方法及依据</span></caption><tbody><tr><th scope="col">检测项目</th><th scope="col">方法</th><th scope="col">依据</th></tr><tr><td>承压(给水、供热)管道</td><td>水压试验,试验压力为工作压力的1.5倍,但不得小于0.6MPa</td><td rowspan="5">《建筑给水排水及采暖工程施工质量验收规范》GB 50242</td></tr><tr><td>室内雨水管道</td><td>灌水试验,灌水试验持续1h</td></tr><tr><td>室内排水管道</td><td>灌水试验,满水15min水面下降后,再灌满观察5min</td></tr><tr><td>室外排水管道</td><td>灌水试验和通水试验,时间不少于30min,逐段观察</td></tr><tr><td>砌体</td><td>原位轴压法、扁顶法、切制抗压试件法和原位单剪法等</td></tr></tbody></table>
 </div>
 
 ## 六、防水与节能工程
@@ -305,7 +305,7 @@ sectionTitle: 第三节 工程实体质量检测方法
 装饰装修工程应对门窗、饰面板、饰面砖、幕墙等子分部工程有关安全和功能的项目进行检验，并出具检测项目的合格报告。具体检测内容见表5-32。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-32 装饰装修工程实体检测内容</span></caption><tbody><tr><th scope="col">工程类别</th><th scope="col">检测内容</th></tr><tr><td>门窗工程</td><td>建筑外窗的气密性能、水密性能、抗风压性能</td></tr><tr><td>饰面板工程</td><td>饰面板后置埋件现场拉拔力</td></tr><tr><td>饰面砖工程</td><td>外墙饰面砖样板及工程饰面砖粘结强度</td></tr><tr><td>幕墙工程</td><td>1)硅酮结构胶的相容性和剥离粘结性;2)幕墙后置埋件和槽式埋件的现场拉拔力;3)幕墙的气密性、水密性、耐风压性能及层间变形性能</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-32 装饰装修工程实体检测内容</span></caption><tbody><tr><th scope="col">工程类别</th><th scope="col">检测内容</th></tr><tr><td>门窗工程</td><td>建筑外窗的气密性能、水密性能、抗风压性能</td></tr><tr><td>饰面板工程</td><td>饰面板后置埋件现场拉拔力</td></tr><tr><td>饰面砖工程</td><td>外墙饰面砖样板及工程饰面砖粘结强度</td></tr><tr><td>幕墙工程</td><td>1)硅酮结构胶的相容性和剥离粘结性;2)幕墙后置埋件和槽式埋件的现场拉拔力;3)幕墙的气密性、水密性、耐风压性能及层间变形性能</td></tr></tbody></table>
 </div>
 
 ### （二）室内环境污染检测

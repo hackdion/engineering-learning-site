@@ -49,7 +49,7 @@ sectionTitle: 第三节 工程项目财务分析
 （1）净现值的计算。净现值（Net Present Value，NPV）是指按设定的折现率分别将投资项目计算期内各年的净现金流量折现到投资起点的现值之和。计算净现值所使用的折现率体现了投资项目必须达到的最低收益率标准，称为基准收益率。按照工程经济原理，项目投资起点一般会设定在计算期第1年初，也即第0年末，因此通常要从第0年开始计算折现值。净现值计算公式为:
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-2 工程项目财务分析指标分类</span></caption><tbody><tr><th scope="col">指标名称\分类标准</th><th scope="col">表达形式</th><th scope="col">评价内容</th><th scope="col">是否考虑资金时间价值</th></tr><tr><td>净现值(NPV)</td><td>价值性</td><td rowspan="8">盈利能力分析</td><td rowspan="5">动态指标</td></tr><tr><td>内部收益率(IRR)</td><td>比率性</td></tr><tr><td>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-2 工程项目财务分析指标分类</span></caption><tbody><tr><th scope="col">指标名称\分类标准</th><th scope="col">表达形式</th><th scope="col">评价内容</th><th scope="col">是否考虑资金时间价值</th></tr><tr><td>净现值(NPV)</td><td>价值性</td><td rowspan="8">盈利能力分析</td><td rowspan="5">动态指标</td></tr><tr><td>内部收益率(IRR)</td><td>比率性</td></tr><tr><td>
 
 动态投资回收期($P_{t}^{\prime}$)
 
@@ -97,7 +97,7 @@ $$
 【例5-2】某项目各年现金流量如表5-3所示，基准折现率 $i_{\mathrm{c}}$ 为 $5\%$，试计算该项目的财务净现值（FNPV）。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-3 项目各年末净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr><tr><td>净现金流量</td><td>-4200</td><td>-4700</td><td>2000</td><td>2500</td><td>2500</td><td>2500</td><td>3000</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-3 项目各年末净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr><tr><td>净现金流量</td><td>-4200</td><td>-4700</td><td>2000</td><td>2500</td><td>2500</td><td>2500</td><td>3000</td></tr></tbody></table>
 </div>
 
 解:根据公式（5-5）可得:
@@ -169,7 +169,7 @@ $$
 【例 5-3】某项目各年末净现金流量如表 5-4 所示。试采用试算法求解财务内部收益率 (FIRR)。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-4 项目各年末净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr><tr><td>净现金流量</td><td>-1200</td><td>-1000</td><td>500</td><td>500</td><td>500</td><td>500</td><td>600</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-4 项目各年末净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr><tr><td>净现金流量</td><td>-1200</td><td>-1000</td><td>500</td><td>500</td><td>500</td><td>500</td><td>600</td></tr></tbody></table>
 </div>
 
 解:先取 $3\%$ 作为折现率，计算此时的财务净现值。
@@ -263,7 +263,7 @@ $$
 【例5-4】某项目现金流量表相关数据如表5-5所示，计算该项目的静态投资回收期。
 
 <div style="overflow-x: auto">
-<table style="min-width: 675px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-5 某项目各年末净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr><tr><td>净现金流量</td><td>-600</td><td>-900</td><td>300</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td></tr><tr><td>累计净现金流量</td><td>-600</td><td>-1500</td><td>-1200</td><td>-700</td><td>-200</td><td>300</td><td>800</td><td>1300</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-5 某项目各年末净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th></tr><tr><td>净现金流量</td><td>-600</td><td>-900</td><td>300</td><td>500</td><td>500</td><td>500</td><td>500</td><td>500</td></tr><tr><td>累计净现金流量</td><td>-600</td><td>-1500</td><td>-1200</td><td>-700</td><td>-200</td><td>300</td><td>800</td><td>1300</td></tr></tbody></table>
 </div>
 
 解:从表 5-5 可以看出，累计净现金流量开始出现正值的年份是第 5 年。根据（5-12）式，可计算出静态投资回收期为:
@@ -367,7 +367,7 @@ EC ——项目资本金。
 【例 5-5】某投资项目总投资（TI）为 4400 万元，其中资本金（EC）为 1840 万元。项目在第 3 年开始投产，经营期为 8 年。经营期各年利息和利润相关数据如表 5-6 所示。试计算该项目总投资利润率和资本金净利润率。
 
 <div style="overflow-x: auto">
-<table style="min-width: 825px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-6 经营期各年利息和利润相关数据（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th><th scope="col">10</th></tr><tr><td>息税前利润(EBIT)</td><td></td><td></td><td>77.6</td><td>662.7</td><td>671.8</td><td>670.9</td><td>670</td><td>670</td><td>670</td><td>670</td></tr><tr><td>计入总成本费用的利息费用</td><td></td><td></td><td>127.6</td><td>112.7</td><td>81.8</td><td>50.9</td><td>20</td><td>20</td><td>20</td><td>20</td></tr><tr><td>利润总额</td><td></td><td></td><td>-50</td><td>550</td><td>590</td><td>620</td><td>650</td><td>650</td><td>650</td><td>650</td></tr><tr><td>所得税(税率25%)</td><td></td><td></td><td>0</td><td>125</td><td>147.5</td><td>155</td><td>162.5</td><td>162.5</td><td>162.5</td><td>162.5</td></tr><tr><td>净利润</td><td></td><td></td><td>-50</td><td>425</td><td>442.5</td><td>465</td><td>487.5</td><td>487.5</td><td>487.5</td><td>487.5</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-6 经营期各年利息和利润相关数据（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th><th scope="col">6</th><th scope="col">7</th><th scope="col">8</th><th scope="col">9</th><th scope="col">10</th></tr><tr><td>息税前利润(EBIT)</td><td></td><td></td><td>77.6</td><td>662.7</td><td>671.8</td><td>670.9</td><td>670</td><td>670</td><td>670</td><td>670</td></tr><tr><td>计入总成本费用的利息费用</td><td></td><td></td><td>127.6</td><td>112.7</td><td>81.8</td><td>50.9</td><td>20</td><td>20</td><td>20</td><td>20</td></tr><tr><td>利润总额</td><td></td><td></td><td>-50</td><td>550</td><td>590</td><td>620</td><td>650</td><td>650</td><td>650</td><td>650</td></tr><tr><td>所得税(税率25%)</td><td></td><td></td><td>0</td><td>125</td><td>147.5</td><td>155</td><td>162.5</td><td>162.5</td><td>162.5</td><td>162.5</td></tr><tr><td>净利润</td><td></td><td></td><td>-50</td><td>425</td><td>442.5</td><td>465</td><td>487.5</td><td>487.5</td><td>487.5</td><td>487.5</td></tr></tbody></table>
 </div>
 
 解:① 计算总投资收益率（ROI）
@@ -489,7 +489,7 @@ $$
 【例 5-6】已知 A、B、C 为三个互斥的投资方案，寿命期均为 5 年。各方案的净现金流量见表 5-7。基准收益率为 5%。试采用净现值法、增量投资净现值法和增量投资内部收益率法进行方案比选。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-7 各方案净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr><tr><td>A方案</td><td>-1180</td><td>280</td><td>280</td><td>280</td><td>280</td><td>300</td></tr><tr><td>B方案</td><td>-1480</td><td>350</td><td>350</td><td>350</td><td>350</td><td>400</td></tr><tr><td>C方案</td><td>-1760</td><td>380</td><td>400</td><td>400</td><td>435</td><td>510</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-7 各方案净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr><tr><td>A方案</td><td>-1180</td><td>280</td><td>280</td><td>280</td><td>280</td><td>300</td></tr><tr><td>B方案</td><td>-1480</td><td>350</td><td>350</td><td>350</td><td>350</td><td>400</td></tr><tr><td>C方案</td><td>-1760</td><td>380</td><td>400</td><td>400</td><td>435</td><td>510</td></tr></tbody></table>
 </div>
 
 解:（1）采用净现值法进行互斥方案比选。根据公式（5-4）分别计算A、B、C三个方案的净现值（NPV），结果分别为47.92万元、74.49万元和67.73万元。可以看出:三个方案净现值均大于0，按照净现值准则判断，应该从中选择NPV最大的方案，即B方案为最优方案。
@@ -511,7 +511,7 @@ $$
 故 B 方案优于 A 方案。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px"><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-8 方案间增量投资净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr><tr><td>增量投资净现金流量(B-A)</td><td>-300</td><td>70</td><td>70</td><td>70</td><td>70</td><td>100</td></tr><tr><td>增量投资净现金流量(C-B)</td><td>-280</td><td>30</td><td>50</td><td>50</td><td>85</td><td>110</td></tr></tbody></table>
+<table>><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 5-8 方案间增量投资净现金流量（单位:万元）</span></caption><tbody><tr><th scope="col">年份</th><th scope="col">0</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5</th></tr><tr><td>增量投资净现金流量(B-A)</td><td>-300</td><td>70</td><td>70</td><td>70</td><td>70</td><td>100</td></tr><tr><td>增量投资净现金流量(C-B)</td><td>-280</td><td>30</td><td>50</td><td>50</td><td>85</td><td>110</td></tr></tbody></table>
 </div>
 
 ③ 以 B 方案为临时最优方案，计算 B 方案与 C 方案之间的增量投资净现金流量（表 5-8）。C 方案对 B 方案的增量投资净现值  $\Delta NPV_{C-B}$  为:

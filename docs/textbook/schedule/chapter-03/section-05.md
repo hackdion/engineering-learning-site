@@ -285,7 +285,7 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
 ③ 工程总费用：$C_{\mathrm{t0}} = C_{\mathrm{d0}} + C_{i0} = 63.5 + 12.8 = 76.3$（万元）。
 
 <div style="overflow-x: auto">
-<table style="min-width: 720px">
+<table>>
   <caption>表 3-10 优化表</caption>
   <thead>
     <tr>
@@ -549,7 +549,7 @@ $$
 常用的平行法优先准则见表 3-11。
 
 <div style="overflow-x: auto">
-<table style="min-width: 640px">
+<table>>
   <caption>表 3-11 常用的平行法优先准则</caption>
   <thead>
     <tr>
