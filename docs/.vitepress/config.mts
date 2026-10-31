@@ -594,6 +594,15 @@ export default defineConfig({
                     { text: '第十七节 进度计划调整方法', link: '/textbook/case-analysis/chapter-03/section-17' },
                     { text: '第十八节 费用与工期索赔管理', link: '/textbook/case-analysis/chapter-03/section-18' }
                   ]
+                },
+                {
+                  text: '第四章 案例分析示例',
+                  collapsed: false,
+                  items: [
+                    { text: '本章导读', link: '/textbook/case-analysis/chapter-04/' },
+                    { text: '第一节 工程监理组织、工作内容与相关法规', link: '/textbook/case-analysis/chapter-04/section-01' },
+                    { text: '第二节 工程质量控制', link: '/textbook/case-analysis/chapter-04/section-02' }
+                  ]
                 }
               ]
             }

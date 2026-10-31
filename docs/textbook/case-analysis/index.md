@@ -51,4 +51,10 @@ edition: 2026 年版（中国建设监理协会组织编写）
 - [第十七节 进度计划调整方法](./chapter-03/section-17)
 - [第十八节 费用与工期索赔管理](./chapter-03/section-18)
 
+### 第四章 案例分析示例
+
+- [本章导读](./chapter-04/)
+- [第一节 工程监理组织、工作内容与相关法规](./chapter-04/section-01)
+- [第二节 工程质量控制](./chapter-04/section-02)
+
 <SourceNote />

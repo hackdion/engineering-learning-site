@@ -386,6 +386,12 @@ title: 教材阅读
 - [第十七节 进度计划调整方法](./case-analysis/chapter-03/section-17)
 - [第十八节 费用与工期索赔管理](./case-analysis/chapter-03/section-18)
 
+#### 第四章 案例分析示例
+
+- [本章导读](./case-analysis/chapter-04/)
+- [第一节 工程监理组织、工作内容与相关法规](./case-analysis/chapter-04/section-01)
+- [第二节 工程质量控制](./case-analysis/chapter-04/section-02)
+
 ## 阅读方式
 
 1. 从左侧目录进入书目首页，再按章、节阅读正文。
