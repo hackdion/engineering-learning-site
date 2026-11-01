@@ -617,6 +617,7 @@ export default defineConfig({
           text: '课程中心',
           items: [
             { text: '课程目录', link: '/courses/' },
+            { text: '建设工程监理规范 · 第二章第二节', link: '/courses/gl-2-2' },
             { text: '建设工程监理概论 · 第3课（待发布）', link: '/courses/lesson3' }
           ]
         }
