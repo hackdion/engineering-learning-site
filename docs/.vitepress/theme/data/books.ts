@@ -36,7 +36,7 @@ export const BOOKS: BookMeta[] = [
   },
   {
     key: 'zhiliang', dir: 'quality', order: '04 / ZHILIANG', shortName: '质量与安全',
-    fullName: '建设工程质量控制与安全生产管理（土木建筑工程）', coverLines: ['质量控制与', '安全生产管理'], coverSize: 22,
+    fullName: '建设工程质量控制与安全生产管理（土木建筑工程）', coverLines: ['质量控制与', '安全生产管理'], coverSize: 20,
     edition: '2026 版 · 土木建筑', color: '#8C4A32', inkSoft: '#F3DDD3',
     link: '/textbook/quality/'
   },
@@ -48,7 +48,7 @@ export const BOOKS: BookMeta[] = [
   },
   {
     key: 'anli', dir: 'case-analysis', order: '06 / ANLI', shortName: '案例分析',
-    fullName: '建设工程监理案例分析（土木建筑工程）', coverLines: ['建设工程', '监理案例分析'], coverSize: 21,
+    fullName: '建设工程监理案例分析（土木建筑工程）', coverLines: ['建设工程', '监理案例分析'], coverSize: 20,
     edition: '2026 版 · 土木建筑', color: '#3A3F45', inkSoft: '#D9DCE0',
     link: '/textbook/case-analysis/'
   }

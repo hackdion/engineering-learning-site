@@ -43,9 +43,9 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
+      { text: '教材书架', link: '/textbook/' },
+      { text: '课程', link: '/courses/' },
       { text: '知识库', link: '/knowledge/' },
-      { text: '教材阅读', link: '/textbook/' },
-      { text: '课程中心', link: '/courses/' },
       { text: '项目实践', link: '/projects/' },
       { text: '关于', link: '/about' }
     ],
