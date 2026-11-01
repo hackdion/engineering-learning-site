@@ -5,6 +5,8 @@ import DefaultTheme from 'vitepress/theme'
 import { useData, useRoute, inBrowser } from 'vitepress'
 import { watch } from 'vue'
 import NotFound from './components/NotFound.vue'
+import FollowButton from './components/FollowButton.vue'
+import FollowDialog from './components/FollowDialog.vue'
 
 const { site } = useData()
 const route = useRoute()
@@ -42,5 +44,8 @@ watch(() => route.path, apply, { immediate: true })
 <template>
   <DefaultTheme.Layout>
     <template #not-found><NotFound /></template>
+    <template #nav-bar-content-after><FollowButton /></template>
+    <template #nav-screen-content-after><FollowButton block /></template>
+    <template #layout-bottom><FollowDialog /></template>
   </DefaultTheme.Layout>
 </template>

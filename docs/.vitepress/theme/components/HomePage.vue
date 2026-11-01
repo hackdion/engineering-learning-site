@@ -20,6 +20,9 @@ const cnNo = (no: string) => {
   return `第${d[c]}章第${d[s]}节`
 }
 const latest = [...COURSES].sort((a, b) => b.date.localeCompare(a.date))
+function openFollow(e: MouseEvent) {
+  window.dispatchEvent(new CustomEvent('hd:follow', { detail: e.currentTarget }))
+}
 const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 </script>
 
@@ -159,7 +162,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           <a v-for="p in banner" :key="p.key" :class="`hd-plat hd-plat--${p.key}`" :href="p.url" target="_blank" rel="noopener">
             <span class="hd-plat__plus" aria-hidden="true">+</span>{{ p.action }}
           </a>
-          <a class="home__more-plat" :href="withBase('/about')">YouTube · GitHub · 更多</a>
+          <button type="button" class="home__more-plat" aria-haspopup="dialog" @click="openFollow">YouTube · GitHub · 更多</button>
         </div>
       </div>
     </section>
@@ -271,6 +274,7 @@ a.home__way:hover { border-color: var(--hd-accent); }
 .home__more-plat {
   display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; box-sizing: border-box;
   border: 1.5px solid rgba(255, 255, 255, .7); border-radius: 999px; color: #fff !important; text-decoration: none; font-size: 16px;
+  background: transparent; font-family: inherit; cursor: pointer;
 }
 .home__more-plat:hover { background: rgba(255, 255, 255, .1); }
 
