@@ -223,6 +223,12 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__bar:hover > span:first-child { text-decoration: underline; }
 .home__track { height: 6px; background: #E8E6DF; border-radius: 3px; }
 .home__track span { display: block; height: 6px; border-radius: 3px; }
+/* 安全帽进度条：条头顶一顶小安全帽 */
+.home__track span { position: relative; }
+.home__track span::after {
+  content: ""; position: absolute; right: -7px; top: -10px; width: 14px; height: 9px;
+  background: var(--hd-helmet); border: 1.5px solid var(--hd-ink); border-radius: 8px 8px 2px 2px;
+}
 .home__num { font-family: var(--hd-font-mono); color: var(--hd-ink-3); text-align: right; font-size: 13px; }
 .home__more { font-size: 14px; padding-top: 4px; align-self: flex-start; }
 

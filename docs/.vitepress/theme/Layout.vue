@@ -3,10 +3,12 @@
 // 不读取页面 frontmatter，因此不需要改动任何教材 Markdown。
 import DefaultTheme from 'vitepress/theme'
 import { useData, useRoute, inBrowser } from 'vitepress'
-import { watch } from 'vue'
+import { computed, watch } from 'vue'
 import NotFound from './components/NotFound.vue'
 import FollowButton from './components/FollowButton.vue'
 import FollowDialog from './components/FollowDialog.vue'
+import LearnedStamp from './components/LearnedStamp.vue'
+import CraneTop from './components/CraneTop.vue'
 
 const { site } = useData()
 const route = useRoute()
@@ -39,6 +41,9 @@ function apply(p: string) {
 }
 
 watch(() => route.path, apply, { immediate: true })
+
+// 只在教材的「节」页面末尾放学完盖章
+const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?$/.test(relPath(route.path)))
 </script>
 
 <template>
@@ -46,6 +51,7 @@ watch(() => route.path, apply, { immediate: true })
     <template #not-found><NotFound /></template>
     <template #nav-bar-content-after><FollowButton /></template>
     <template #nav-screen-content-after><FollowButton block /></template>
-    <template #layout-bottom><FollowDialog /></template>
+    <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
+    <template #layout-bottom><FollowDialog /><CraneTop /></template>
   </DefaultTheme.Layout>
 </template>

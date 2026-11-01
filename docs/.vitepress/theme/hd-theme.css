@@ -143,3 +143,6 @@ html[data-book] .vp-doc h1 { padding-bottom: 10px; border-bottom: 3px solid var(
   .hd-btn, .hd-plat { transition: none; }
   .hd-btn:hover, .hd-btn:active, .hd-plat:hover { transform: none; }
 }
+
+/* 塔吊回顶部：图片放大时让位，不挡关闭键 */
+body:has(.figure-zoom.is-open) .ct { display: none !important; }
