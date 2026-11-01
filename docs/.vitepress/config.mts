@@ -53,8 +53,7 @@ export default defineConfig({
         {
           text: '知识库',
           items: [
-            { text: '文章目录', link: '/knowledge/' },
-            { text: '工程合同管理相关法律基础（待验收）', link: '/knowledge/contract-law-basics' }
+            { text: '文章目录', link: '/knowledge/' }
           ]
         }
       ],
@@ -617,8 +616,7 @@ export default defineConfig({
           text: '课程中心',
           items: [
             { text: '课程目录', link: '/courses/' },
-            { text: '建设工程监理规范 · 第二章第二节', link: '/courses/gl-2-2' },
-            { text: '建设工程监理概论 · 第3课（待发布）', link: '/courses/lesson3' }
+            { text: '建设工程监理规范 · 第二章第二节', link: '/courses/gl-2-2' }
           ]
         }
       ],

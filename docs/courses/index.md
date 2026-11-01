@@ -4,20 +4,30 @@ title: 课程中心
 
 # 课程中心
 
-基于 OpenMAIC 制作的系统化课程。每门课程可按以下四种模式学习（以实际已发布素材为准）：
+## 课程视频
 
-| 模式 | 说明 |
-| --- | --- |
-| 文章阅读 | 课程配套文字内容，适合快速浏览与查阅 |
-| 音频 + 文本阅读 | 课程音频配合文本同步学习 |
-| OpenMAIC 互动课件 | 可交互的离线课件，支持翻页与练习 |
-| 完整课程视频 | 完整录播视频，沉浸式学习 |
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV1Zoap65EKb&amp;autoplay=0"
+    title="课程视频 BV1Zoap65EKb"
+    loading="lazy"
+    allowfullscreen
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+  ></iframe>
+</div>
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;">
+  <iframe
+    src="https://player.bilibili.com/player.html?bvid=BV1TqHi6gESR&amp;autoplay=0"
+    title="课程视频 BV1TqHi6gESR"
+    loading="lazy"
+    allowfullscreen
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+  ></iframe>
+</div>
+
+课程内容持续更新中。
 
 ## 课程列表
 
-- [建设工程监理规范 · 第二章第二节](./gl-2-2) — OpenMAIC 互动课件，约 13 分钟，含 9 道练习。
-- [建设工程监理概论 · 第3课](./lesson3) — 内容质量已验收，公开发布授权待确认，**暂未发布**。
-
-## 发布规则
-
-课程（含音视频与互动课件）上线需同时满足两个条件：**内容人工验收通过** + **公开发布授权确认**。缺任一条件时，课程页将如实标注状态，不以提示文字代替实际的素材隔离。教材正文的发布规则见「教材阅读」栏目说明。
+- [建设工程监理规范 · 第二章第二节](./gl-2-2)
