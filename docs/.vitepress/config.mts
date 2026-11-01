@@ -36,6 +36,7 @@ export default defineConfig({
   lang: 'zh-CN',
   base,
   cleanUrls: true,
+  appearance: false,
   markdown: {
     math: true
   },

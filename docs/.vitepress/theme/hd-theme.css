@@ -1,0 +1,145 @@
+/* hackdion 主题层（P1）——主品牌变量 + 学科/书目子主题 + 工地手账按钮 + 平台按钮
+   放置位置：docs/.vitepress/theme/hd-theme.css，在 index.ts 中于 custom.css 之前 import */
+
+:root {
+  /* 主品牌（全站固定） */
+  --hd-paper: #F5F4EF;
+  --hd-paper-2: #EFEDE6;
+  --hd-card: #FFFFFF;
+  --hd-ink: #1B1F24;
+  --hd-ink-2: #4A4F57;
+  --hd-ink-3: #5A5F66;
+  --hd-line: #DDDAD0;
+  --hd-helmet: #FFD54A;   /* 安全帽黄：只配墨色字，每屏最多一处 */
+  --hd-stamp: #C8452D;    /* 印章红 */
+
+  /* 学科与书目（由 Layout.vue 写入 html[data-subject] / html[data-book] 切换） */
+  --hd-accent: #1F3A5F;
+  --hd-book: var(--hd-accent);
+
+  /* 平台色（只用于跳转外部平台的按钮） */
+  --hd-bili: #EB4F84;
+  --hd-xhs: #FF2442;
+  --hd-douyin: #161823;
+  --hd-yt: #E00000;
+  --hd-gh: #24292F;
+
+  /* 字体：只用系统字体回退，不加载外部字体 */
+  --hd-font-serif: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
+  --hd-font-sans: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --hd-font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  /* 映射到 VitePress 默认主题变量 */
+  --vp-c-bg: var(--hd-paper);
+  --vp-c-bg-alt: var(--hd-paper-2);
+  --vp-c-bg-soft: var(--hd-paper-2);
+  --vp-c-bg-elv: var(--hd-card);
+  --vp-c-text-1: var(--hd-ink);
+  --vp-c-text-2: var(--hd-ink-2);
+  --vp-c-text-3: var(--hd-ink-3);
+  --vp-c-divider: var(--hd-line);
+  --vp-c-gutter: var(--hd-line);
+  --vp-c-brand-1: var(--hd-accent);
+  --vp-c-brand-2: #2E4E6F;
+  --vp-c-brand-3: var(--hd-accent);
+  --vp-c-brand-soft: rgba(31, 58, 95, .10);
+  --vp-font-family-base: var(--hd-font-sans);
+  --vp-font-family-mono: var(--hd-font-mono);
+}
+
+html[data-subject="engineering"] { --hd-accent: #1F3A5F; }
+html[data-subject="economics"]   { --hd-accent: #2F5D50; }  /* 预留 */
+
+html[data-book="gailun"]   { --hd-book: #1F3A5F; }
+html[data-book="jindu"]    { --hd-book: #2B5A63; }
+html[data-book="touzi"]    { --hd-book: #8A6A2F; }
+html[data-book="zhiliang"] { --hd-book: #8C4A32; }
+html[data-book="hetong"]   { --hd-book: #2E4E6F; }
+html[data-book="anli"]     { --hd-book: #3A3F45; }
+
+/* 标题用宋体 */
+.vp-doc h1, .vp-doc h2, .VPHero .name, .VPHero .text { font-family: var(--hd-font-serif); }
+
+/* 书目页：H1 下方一条书目色细线，提示当前在哪本书 */
+html[data-book] .vp-doc h1 { padding-bottom: 10px; border-bottom: 3px solid var(--hd-book); }
+
+/* 纹样 */
+.hd-grid-bp {
+  background-image:
+    linear-gradient(rgba(255,255,255,.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.09) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+.hd-grid-paper {
+  background-image:
+    linear-gradient(rgba(31,58,95,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,58,95,.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* A 类：自家按钮（工地手账风） */
+.hd-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 20px; box-sizing: border-box;
+  border: 2px solid var(--hd-ink); border-radius: 12px;
+  background: var(--hd-accent); color: #fff !important;
+  font-weight: 700; text-decoration: none !important;
+  box-shadow: 4px 4px 0 var(--hd-ink);
+  transition: transform .12s, box-shadow .12s;
+}
+.hd-btn:hover  { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--hd-ink); }
+.hd-btn:active { transform: translate(2px, 2px);   box-shadow: 1px 1px 0 var(--hd-ink); }
+.hd-btn--helmet { background: var(--hd-helmet); color: var(--hd-ink) !important; }
+.hd-btn--paper  { background: var(--hd-card);   color: var(--hd-ink) !important; }
+
+/* 卷尺下划线链接 */
+.hd-ruler {
+  color: var(--hd-accent); text-decoration: none; padding-bottom: 6px;
+  background-image: repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 6px);
+  background-size: 100% 4px; background-repeat: no-repeat; background-position: 0 100%;
+}
+
+/* B 类：平台按钮（只用于跳去外部平台；不画平台 logo） */
+.hd-plat {
+  display: inline-flex; align-items: center; gap: 10px;
+  min-height: 48px; padding: 0 22px; box-sizing: border-box;
+  border-radius: 999px; color: #fff !important;
+  font-size: 19px; font-weight: 700; text-decoration: none !important;
+  transition: transform .12s, filter .12s;
+}
+.hd-plat:hover { transform: scale(1.04); filter: brightness(1.05); }
+.hd-plat__plus {
+  width: 22px; height: 22px; border-radius: 50%; background: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 17px; line-height: 1; text-shadow: none;
+}
+.hd-plat--bili   { background: var(--hd-bili); }   .hd-plat--bili   .hd-plat__plus { color: var(--hd-bili); }
+.hd-plat--xhs    { background: var(--hd-xhs); }    .hd-plat--xhs    .hd-plat__plus { color: var(--hd-xhs); }
+.hd-plat--douyin { background: var(--hd-douyin); text-shadow: -1.5px -1px 0 #25F4EE, 1.5px 1px 0 #FE2C55; }
+.hd-plat--douyin .hd-plat__plus { background: #FE2C55; color: #fff; }
+.hd-plat--yt     { background: var(--hd-yt); }     .hd-plat--yt     .hd-plat__plus { color: var(--hd-yt); }
+.hd-plat--gh     { background: var(--hd-gh); font-size: 17px; }
+.hd-chip-bili {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 14px;
+  border-radius: 999px; background: #FFE6EE; color: #B8285A !important;
+  font-size: 14px; font-weight: 700; text-decoration: none !important;
+}
+
+/* 形式角标与「施工中」 */
+.hd-badge {
+  display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 4px;
+  background: #E6EEF6; color: #1F3A5F; font-size: 12px; line-height: 1.5;
+}
+.hd-wip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px 2px 4px; border-radius: 4px;
+  background: #FFF6D6; color: #5A4A10; font-size: 12px; line-height: 1.5;
+}
+.hd-wip::before {
+  content: ""; width: 14px; height: 14px; border-radius: 2px;
+  background: repeating-linear-gradient(-45deg, var(--hd-helmet) 0 3px, var(--hd-ink) 3px 6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd-btn, .hd-plat { transition: none; }
+  .hd-btn:hover, .hd-btn:active, .hd-plat:hover { transform: none; }
+}
