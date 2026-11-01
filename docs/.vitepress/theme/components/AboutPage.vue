@@ -16,7 +16,7 @@ function openFollow(e: MouseEvent) {
       <span>站长手记 / 关于</span>
     </header>
 
-    <article class="ab__sheet" aria-labelledby="ab-name">
+    <article id="个人介绍" class="ab__sheet" aria-labelledby="ab-name">
       <div class="ab__figure" aria-hidden="true">
         <img :src="withBase('/images/brand/avatar-navy.webp')" alt="" width="512" height="512" />
         <small>HD / FIELD NOTES</small>
@@ -45,7 +45,7 @@ function openFollow(e: MouseEvent) {
       </div>
     </article>
 
-    <section class="ab__section">
+    <section id="正在做什么" class="ab__section">
       <h2>正在做什么</h2>
       <ul class="ab__doing">
         <li><b>工程教材整理</b>：按原书「章 → 节」整理六册注册监理工程师教材，保留原书层级、表格与公式，支持全文搜索与连续阅读。见 <a :href="withBase('/textbook/')">教材书架</a>。</li>
@@ -60,11 +60,12 @@ function openFollow(e: MouseEvent) {
     </section>
 
     <section id="follow" class="ab__section">
-      <h2>关注与联系</h2>
+      <h2 id="社交平台">关注与联系</h2>
       <div class="ab__plats">
         <a
           v-for="p in PLATFORMS"
           :key="p.key"
+          :id="p.key === 'bili' ? '哔哩哔哩' : p.key === 'xhs' ? '小红书' : undefined"
           class="ab__plat"
           :href="p.url"
           :target="p.key === 'mail' ? undefined : '_blank'"
@@ -75,7 +76,7 @@ function openFollow(e: MouseEvent) {
           <small v-if="p.note">{{ p.note }}</small>
         </a>
       </div>
-      <p class="ab__note">发现内容有误，欢迎写信告诉我，附上页面链接、原文位置和修改建议，我核实后修正。</p>
+      <p id="联系与纠错" class="ab__note">发现内容有误，欢迎写信告诉我，附上页面链接、原文位置和修改建议，我核实后修正。</p>
       <button type="button" class="hd-btn hd-btn--helmet ab__follow" aria-haspopup="dialog" @click="openFollow">关注更新</button>
     </section>
   </div>

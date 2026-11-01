@@ -87,11 +87,11 @@ const visibleChapters = (key: string) => {
 
     <main class="cc__main">
       <div class="cc__head">
-        <h1>课程中心</h1>
+        <h1 id="课程中心">课程中心</h1>
         <p>每节课最多四种学法：文、音、课件、视频。先上线的先放出来，没做好的标「制作中」。</p>
       </div>
 
-      <section ref="playerEl" class="cc__player" aria-label="正在播放">
+      <section id="课程视频" ref="playerEl" class="cc__player" aria-label="正在播放">
         <template v-if="current">
           <div class="cc__screen hd-grid-bp">
             <iframe
@@ -156,7 +156,8 @@ const visibleChapters = (key: string) => {
       </section>
 
       <section
-        v-for="b in BOOKS"
+        v-for="(b, i) in BOOKS"
+        :id="i === 0 ? '课程列表' : undefined"
         :key="b.key"
         class="cc__book"
         :class="{ 'is-selected': selected === b.key }"

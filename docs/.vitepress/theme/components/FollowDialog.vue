@@ -115,7 +115,7 @@ onBeforeUnmount(() => window.removeEventListener('hd:follow', open))
 .fd__main .hd-plat__plus { width: 26px; height: 26px; color: var(--hd-bili); font-size: 20px; }
 .fd__main:hover { transform: scale(1.02); }
 .fd__pills { display: grid; gap: 10px; }
-.fd__pill { justify-content: center; padding: 0 12px; font-size: 17px; }
+.fd__pill { justify-content: center; padding: 0 12px; }
 .fd__minor { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; font-size: 14px; }
 .fd__minor a { color: var(--hd-accent); display: inline-flex; align-items: center; min-height: 36px; }
 .fd :is(a, button):focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 2px; }

@@ -35,7 +35,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
             <span>HACKDION</span><b>边学边做</b><span>★ 已开工 ★</span>
           </span>
           <span class="home__eyebrow">ENGINEERING · 边学边做 · 公开记录</span>
-          <h1>一个普通人的<br />注册监理工程师备考档案</h1>
+          <h1 id="home-title">一个普通人的<br />注册监理工程师备考档案</h1>
           <p class="home__lead">我不是老师，也不是监理出身。用 AI 把教材整理成文字、音频、课件和视频，把自己的备考过程完整公开出来。</p>
           <div class="home__actions">
             <a class="hd-btn home__btn" href="#shelf">
@@ -69,7 +69,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           <span class="home__exam">考试日期：预计 2027 年 5 月，以官方公布为准</span>
         </div>
         <div class="home__progress">
-          <div class="home__progress-head"><span>六科整理进度</span><span>已上线节数</span></div>
+          <div class="home__progress-head"><span>各册已上线节数</span><span>条形长度表示节数</span></div>
           <div class="home__bars">
             <a v-for="b in BOOKS" :key="b.key" class="home__bar" :href="withBase(b.link)">
               <span>{{ b.shortName }}</span>

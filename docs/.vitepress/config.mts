@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { SEARCH_PAGES } from './searchPages'
 
 // 部署在子路径（如 GitHub Pages 的 /仓库名/）时，通过 VITEPRESS_BASE 指定
 const rawBase = process.env.VITEPRESS_BASE || '/'
@@ -652,6 +653,13 @@ export default defineConfig({
           options: {
             tokenize: cjkFriendlyTokenize
           }
+        },
+        // 组件页没有 Markdown 正文，追加 searchPages.ts 里的摘要进入索引
+        _render(src, env, md) {
+          const html = md.render(src, env)
+          if (env.frontmatter?.search === false) return ''
+          const extra = SEARCH_PAGES[env.relativePath]
+          return extra ? html + md.render(extra, { ...env }) : html
         }
       }
     },
