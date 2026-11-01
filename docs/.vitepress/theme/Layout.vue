@@ -9,6 +9,7 @@ import FollowButton from './components/FollowButton.vue'
 import FollowDialog from './components/FollowDialog.vue'
 import LearnedStamp from './components/LearnedStamp.vue'
 import CraneTop from './components/CraneTop.vue'
+import SiteFooter from './components/SiteFooter.vue'
 
 const { site } = useData()
 const route = useRoute()
@@ -52,6 +53,6 @@ const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?$/.test(relP
     <template #nav-bar-content-after><FollowButton /></template>
     <template #nav-screen-content-after><FollowButton block /></template>
     <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
-    <template #layout-bottom><FollowDialog /><CraneTop /></template>
+    <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /></template>
   </DefaultTheme.Layout>
 </template>

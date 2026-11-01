@@ -35,8 +35,8 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
             <span>HACKDION</span><b>边学边做</b><span>★ 已开工 ★</span>
           </span>
           <span class="home__eyebrow">ENGINEERING · 边学边做 · 公开记录</span>
-          <h1 id="home-title">一个普通人的<br />注册监理工程师备考档案</h1>
-          <p class="home__lead">我不是老师，也不是监理出身。用 AI 把教材整理成文字、音频、课件和视频，把自己的备考过程完整公开出来。</p>
+          <h1 id="home-title">注册监理工程师学习手记</h1>
+          <p class="home__lead">六册教材按章节查阅，课程视频与互动课件从已上线的内容开始学习。由 {{ AUTHOR.name }} 边学边整理。</p>
           <div class="home__actions">
             <a class="hd-btn home__btn" href="#shelf">
               <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h6a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H4z" /><path d="M20 5h-6a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h6z" /></svg>
@@ -50,7 +50,10 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
               <small>试学一节课：《建设工程监理规范》互动课件，约 13 分钟</small>
             </span>
           </div>
-          <p class="home__byline">— {{ AUTHOR.name }} · {{ AUTHOR.tagline }} · <a :href="withBase('/about')">关于我</a></p>
+          <p class="home__byline">
+            <img :src="withBase('/images/brand/avatar-navy.webp')" alt="" aria-hidden="true" width="512" height="512" />
+            <span>— {{ AUTHOR.name }} · {{ AUTHOR.tagline }} · <a :href="withBase('/about')">关于本站</a></span>
+          </p>
         </div>
         <div class="home__art">
           <img :src="withBase('/images/brand/hero-crane-navy.webp')" alt="" aria-hidden="true" width="1536" height="1024" />
@@ -139,8 +142,8 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
         <p>按原书章节整理的正文、表格与公式，适合查阅。</p>
       </a>
       <div class="home__way">
-        <span class="home__way-icon">音</span><b>听读 <span class="hd-wip">施工中</span></b>
-        <p>我自己录的音频，配同步文本，通勤可听。</p>
+        <span class="home__way-icon">音</span><b>独立音频 <span class="hd-wip">筹备中</span></b>
+        <p>独立音频尚未上线；互动课件自带旁白，不计作单独音频。</p>
       </div>
       <a class="home__way" :href="withBase('/courses/gl-2-2')">
         <span class="home__way-icon">课</span><b>互动课件</b>
@@ -167,10 +170,6 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
       </div>
     </section>
 
-    <footer class="home__wrap home__footer">
-      <span>{{ AUTHOR.name }} · {{ AUTHOR.tagline }} · <a :href="withBase('/about')">关于</a> · <a :href="withBase('/projects/')">项目实践</a> · <a :href="withBase('/knowledge/')">知识库</a></span>
-      <span>教材内容仅供个人学习交流 · 以官方教材为准</span>
-    </footer>
   </div>
 </template>
 
@@ -198,7 +197,8 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__btn { min-height: 52px; padding: 0 24px; gap: 10px; }
 .home__try { display: flex; flex-direction: column; gap: 8px; }
 .home__try small { font-size: 13px; color: var(--hd-ink-3); max-width: 260px; line-height: 1.5; }
-.home__byline { margin: 0; font-size: 14px; color: var(--hd-ink-3); }
+.home__byline { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--hd-ink-3); }
+.home__byline img { width: 30px; height: 30px; object-fit: contain; }
 .home__art { flex: 1 1 420px; min-width: 0; display: flex; justify-content: center; }
 .home__art img { width: 100%; max-width: 560px; height: auto; display: block; }
 
@@ -284,7 +284,6 @@ a.home__way:hover { border-color: var(--hd-accent); }
 }
 .home__more-plat:hover { background: rgba(255, 255, 255, .1); }
 
-.home__footer { padding-top: 24px; padding-bottom: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 13px; color: var(--hd-ink-3); }
 .home :is(a, button):focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 3px; }
 
 @media (max-width: 720px) {

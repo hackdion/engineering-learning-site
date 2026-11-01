@@ -11,6 +11,12 @@
   text-decoration: none;
 }
 
+@media (max-width: 767px) {
+  .VPNavBar .content {
+    min-width: 0;
+  }
+}
+
 /* 窄屏表格横向滚动：表格内容超宽时在自身区域内滚动，不撑破页面 */
 .vp-doc table {
   display: block;

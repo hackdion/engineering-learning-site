@@ -32,8 +32,8 @@ const cjkFriendlyTokenize = (text: string): string[] => {
 }
 
 export default defineConfig({
-  title: 'Hackdion',
-  description: '个人知识、学习课程与项目实践',
+  title: '工程学习手记',
+  description: '六册注册监理工程师教材按章节查阅，课程视频与互动课件从已上线内容开始学习。',
   lang: 'zh-CN',
   base,
   cleanUrls: true,
@@ -42,13 +42,11 @@ export default defineConfig({
     math: true
   },
   themeConfig: {
+    siteTitle: '工程学习手记',
     nav: [
       { text: '首页', link: '/' },
       { text: '教材书架', link: '/textbook/' },
-      { text: '课程', link: '/courses/' },
-      { text: '知识库', link: '/knowledge/' },
-      { text: '项目实践', link: '/projects/' },
-      { text: '关于', link: '/about' }
+      { text: '课程', link: '/courses/' }
     ],
     sidebar: {
       '/knowledge/': [
@@ -624,9 +622,9 @@ export default defineConfig({
       ],
       '/projects/': [
         {
-          text: '项目实践',
+          text: '本站制作说明',
           items: [
-            { text: '项目列表', link: '/projects/' }
+            { text: '制作说明', link: '/projects/' }
           ]
         }
       ]

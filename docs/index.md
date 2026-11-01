@@ -1,5 +1,5 @@
 ---
-title: 一个普通人的注册监理工程师备考档案
+title: 注册监理工程师学习手记
 layout: page
 sidebar: false
 ---

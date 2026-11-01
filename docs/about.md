@@ -1,5 +1,5 @@
 ---
-title: 关于 hackdion
+title: 关于本站
 layout: page
 sidebar: false
 ---
