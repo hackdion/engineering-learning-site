@@ -2,6 +2,8 @@ import DefaultTheme from 'vitepress/theme'
 import FigureZoom from './FigureZoom.vue'
 import Layout from './Layout.vue'
 import SourceNote from './SourceNote.vue'
+import BookShelf from './components/BookShelf.vue'
+import CourseCenter from './components/CourseCenter.vue'
 import './hd-theme.css'
 import './custom.css'
 
@@ -11,5 +13,7 @@ export default {
   enhanceApp({ app }) {
     app.component('FigureZoom', FigureZoom)
     app.component('SourceNote', SourceNote)
+    app.component('BookShelf', BookShelf)
+    app.component('CourseCenter', CourseCenter)
   }
 }

@@ -4,6 +4,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { useData, useRoute, inBrowser } from 'vitepress'
 import { watch } from 'vue'
+import NotFound from './components/NotFound.vue'
 
 const { site } = useData()
 const route = useRoute()
@@ -39,5 +40,7 @@ watch(() => route.path, apply, { immediate: true })
 </script>
 
 <template>
-  <DefaultTheme.Layout />
+  <DefaultTheme.Layout>
+    <template #not-found><NotFound /></template>
+  </DefaultTheme.Layout>
 </template>
