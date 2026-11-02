@@ -9,6 +9,10 @@
     "build": "vitepress build docs",
     "postbuild": "node scripts/fix-search-index.mjs",
     "preview": "vitepress preview docs",
+    "dev:personal": "vitepress dev sites/personal",
+    "build:personal": "vitepress build sites/personal",
+    "build:sites": "node scripts/build-sites.mjs",
+    "preview:sites": "node scripts/preview-sites.mjs",
     "check": "bash scripts/release-check.sh"
   },
   "devDependencies": {

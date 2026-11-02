@@ -38,6 +38,9 @@ export default defineConfig({
   base,
   cleanUrls: true,
   appearance: false,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }]
+  ],
   markdown: {
     math: true
   },

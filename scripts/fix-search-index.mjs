@@ -6,7 +6,8 @@ import path from 'node:path'
  * 导致线上搜索返回 404。构建后把该文件改为普通文件名，
  * 并同步更新 JS 中的动态 import 引用。
  */
-const dist = path.resolve('docs/.vitepress/dist')
+// 默认为学习站构建目录；build:sites 与回归测试可用 LEARNING_DIST_DIR 覆盖。
+const dist = path.resolve(process.env.LEARNING_DIST_DIR || 'docs/.vitepress/dist')
 const assets = path.join(dist, 'assets')
 
 function walk(dir) {

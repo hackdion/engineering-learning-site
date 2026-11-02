@@ -38,6 +38,7 @@ import { AUTHOR, PLATFORMS } from '../data/author'
           <a :href="withBase('/textbook/')">浏览教材书架</a>
           <a :href="withBase('/courses/')">查看课程中心</a>
           <a :href="withBase('/projects/')">本站制作说明</a>
+          <a :href="withBase('/personal/')" target="_self" rel="noopener">看看我的个人站</a>
         </div>
       </div>
     </section>

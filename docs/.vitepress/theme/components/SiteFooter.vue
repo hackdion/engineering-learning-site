@@ -11,6 +11,7 @@ import { AUTHOR } from '../data/author'
         <span>整理 · 工程学习手记</span>
       </p>
       <nav aria-label="页脚导航">
+        <a :href="withBase('/personal/')" target="_self" rel="noopener">hackdion 个人站</a>
         <a :href="withBase('/about')">关于本站</a>
         <a :href="withBase('/about#联系与纠错')">联系纠错</a>
         <a :href="withBase('/projects/')">本站制作说明</a>

@@ -4,7 +4,7 @@ title: 本站制作说明
 
 # 本站制作说明
 
-这里说明工程学习手记如何整理教材、制作课程和维护页面。个人的其他作品会在个人总站中集中展示。
+这里说明工程学习手记如何整理教材、制作课程和维护页面。个人的其他作品会在<a href="https://hackdion.github.io/engineering-learning-site/personal/" target="_self" rel="noopener">个人站</a>中集中展示。
 
 ## 教材整理
 

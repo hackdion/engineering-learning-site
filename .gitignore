@@ -2,6 +2,9 @@
 node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+sites/personal/.vitepress/dist/
+sites/personal/.vitepress/cache/
+site-dist/
 
 # 日志与系统文件
 *.log
