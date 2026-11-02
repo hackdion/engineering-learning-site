@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type DefaultTheme } from 'vitepress'
 import { SEARCH_PAGES } from './searchPages'
 
 // 部署在子路径（如 GitHub Pages 的 /仓库名/）时，通过 VITEPRESS_BASE 指定
@@ -31,6 +31,126 @@ const cjkFriendlyTokenize = (text: string): string[] => {
   return tokens
 }
 
+/**
+ * 《建设工程监理概论》侧边栏。
+ * 该册没有独立书目目录，章节直接位于 /textbook/chapter-01/～chapter-10/，
+ * 附录位于 /textbook/appendix-references（不属于 chapter- 前缀）。
+ * sidebar 中 '/textbook/chapter-' 与 '/textbook/appendix-references' 两个键共用本配置。
+ */
+const gailunSidebar: DefaultTheme.SidebarItem[] = [
+  {
+    text: '建设工程监理概论',
+    items: [
+      { text: '书目首页', link: '/textbook/#建设工程监理概论' },
+      {
+        text: '第一章 工程监理及其相关制度',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-01/' },
+          { text: '第一节 工程监理的性质及法律地位', link: '/textbook/chapter-01/section-01' },
+          { text: '第二节 工程建设程序', link: '/textbook/chapter-01/section-02' },
+          { text: '第三节 工程监理相关制度', link: '/textbook/chapter-01/section-03' }
+        ]
+      },
+      {
+        text: '第二章 工程监理相关法律法规及标准',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-02/' },
+          { text: '第一节 工程监理相关法律及行政法规', link: '/textbook/chapter-02/section-01' },
+          { text: '第二节 建设工程监理规范', link: '/textbook/chapter-02/section-02' }
+        ]
+      },
+      {
+        text: '第三章 工程监理企业与监理工程师',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-03/' },
+          { text: '第一节 工程监理企业', link: '/textbook/chapter-03/section-01' },
+          { text: '第二节 监理工程师', link: '/textbook/chapter-03/section-02' }
+        ]
+      },
+      {
+        text: '第四章 工程监理招标投标与合同管理',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-04/' },
+          { text: '第一节 工程监理招标投标程序和评标方法', link: '/textbook/chapter-04/section-01' },
+          { text: '第二节 工程监理投标工作内容和策略', link: '/textbook/chapter-04/section-02' },
+          { text: '第三节 工程监理合同管理', link: '/textbook/chapter-04/section-03' }
+        ]
+      },
+      {
+        text: '第五章 工程承包模式及项目监理组织',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-05/' },
+          { text: '第一节 工程承包模式及监理委托方式', link: '/textbook/chapter-05/section-01' },
+          { text: '第二节 工程监理实施程序和原则', link: '/textbook/chapter-05/section-02' },
+          { text: '第三节 项目监理机构及其人员职责', link: '/textbook/chapter-05/section-03' }
+        ]
+      },
+      {
+        text: '第六章 工程监理规划及监理实施细则',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-06/' },
+          { text: '第一节 监理规划', link: '/textbook/chapter-06/section-01' },
+          { text: '第二节 监理实施细则', link: '/textbook/chapter-06/section-02' }
+        ]
+      },
+      {
+        text: '第七章 工程监理工作内容和方式',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-07/' },
+          { text: '第一节 工程监理主要工作内容', link: '/textbook/chapter-07/section-01' },
+          { text: '第二节 工程监理主要工作方式', link: '/textbook/chapter-07/section-02' },
+          { text: '第三节 工程监理数智化', link: '/textbook/chapter-07/section-03' }
+        ]
+      },
+      {
+        text: '第八章 工程监理文件资料管理',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-08/' },
+          { text: '第一节 工程监理基本表式及主要文件资料', link: '/textbook/chapter-08/section-01' },
+          { text: '第二节 工程监理文件资料管理职责和要求', link: '/textbook/chapter-08/section-02' }
+        ]
+      },
+      {
+        text: '第九章 全过程工程咨询及项目管理服务',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-09/' },
+          { text: '第一节 全过程工程咨询', link: '/textbook/chapter-09/section-01' },
+          { text: '第二节 工程监理与项目管理一体化', link: '/textbook/chapter-09/section-02' },
+          { text: '第三节 工程项目全过程集成化管理', link: '/textbook/chapter-09/section-03' },
+          { text: '第四节 工程风险管理', link: '/textbook/chapter-09/section-04' },
+          { text: '第五节 工程项目利益相关方管理', link: '/textbook/chapter-09/section-05' }
+        ]
+      },
+      {
+        text: '第十章 国际工程咨询与组织实施模式',
+        collapsed: false,
+        items: [
+          { text: '本章导读', link: '/textbook/chapter-10/' },
+          { text: '第一节 国际工程咨询', link: '/textbook/chapter-10/section-01' },
+          { text: '第二节 国际项目管理标准', link: '/textbook/chapter-10/section-02' },
+          { text: '第三节 国际工程组织实施模式', link: '/textbook/chapter-10/section-03' }
+        ]
+      },
+      {
+        text: '附录',
+        collapsed: false,
+        items: [
+          { text: '参考文献', link: '/textbook/appendix-references' }
+        ]
+      }
+    ]
+  }
+]
+
 export default defineConfig({
   title: '工程学习手记',
   description: '六册注册监理工程师教材按章节查阅，课程视频与互动课件从已上线内容开始学习。',
@@ -60,120 +180,23 @@ export default defineConfig({
           ]
         }
       ],
+      // VitePress 按路径段数从多到少匹配侧边栏键，同段数按键的书写顺序取首个命中。
+      // 监理概论章节约在 /textbook/chapter-xx/、附录在 /textbook/appendix-references，
+      // 这两个键必须排在通用的 '/textbook/'（书架页只列书目、不展开章节）之前；
+      // 其余各册路径段数更多（/textbook/<书>/），天然优先于上述三个键。
+      '/textbook/chapter-': gailunSidebar,
+      '/textbook/appendix-references': gailunSidebar,
       '/textbook/': [
         {
           text: '教材阅读',
           items: [
             { text: '教材目录', link: '/textbook/' },
-            { text: '建设工程质量控制与安全生产管理（土木建筑工程）', link: '/textbook/quality/' },
-            { text: '建设工程投资控制（土木建筑工程）', link: '/textbook/investment/' },
+            { text: '建设工程监理概论', link: '/textbook/#建设工程监理概论' },
             { text: '建设工程进度控制（土木建筑工程）', link: '/textbook/schedule/' },
-            { text: '建设工程监理案例分析（土木建筑工程）', link: '/textbook/case-analysis/' },
-            {
-              text: '第一章 工程监理及其相关制度',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-01/' },
-                { text: '第一节 工程监理的性质及法律地位', link: '/textbook/chapter-01/section-01' },
-                { text: '第二节 工程建设程序', link: '/textbook/chapter-01/section-02' },
-                { text: '第三节 工程监理相关制度', link: '/textbook/chapter-01/section-03' }
-              ]
-            },
-            {
-              text: '第二章 工程监理相关法律法规及标准',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-02/' },
-                { text: '第一节 工程监理相关法律及行政法规', link: '/textbook/chapter-02/section-01' },
-                { text: '第二节 建设工程监理规范', link: '/textbook/chapter-02/section-02' }
-              ]
-            },
-            {
-              text: '第三章 工程监理企业与监理工程师',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-03/' },
-                { text: '第一节 工程监理企业', link: '/textbook/chapter-03/section-01' },
-                { text: '第二节 监理工程师', link: '/textbook/chapter-03/section-02' }
-              ]
-            },
-            {
-              text: '第四章 工程监理招标投标与合同管理',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-04/' },
-                { text: '第一节 工程监理招标投标程序和评标方法', link: '/textbook/chapter-04/section-01' },
-                { text: '第二节 工程监理投标工作内容和策略', link: '/textbook/chapter-04/section-02' },
-                { text: '第三节 工程监理合同管理', link: '/textbook/chapter-04/section-03' }
-              ]
-            },
-            {
-              text: '第五章 工程承包模式及项目监理组织',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-05/' },
-                { text: '第一节 工程承包模式及监理委托方式', link: '/textbook/chapter-05/section-01' },
-                { text: '第二节 工程监理实施程序和原则', link: '/textbook/chapter-05/section-02' },
-                { text: '第三节 项目监理机构及其人员职责', link: '/textbook/chapter-05/section-03' }
-              ]
-            },
-            {
-              text: '第六章 工程监理规划及监理实施细则',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-06/' },
-                { text: '第一节 监理规划', link: '/textbook/chapter-06/section-01' },
-                { text: '第二节 监理实施细则', link: '/textbook/chapter-06/section-02' }
-              ]
-            },
-            {
-              text: '第七章 工程监理工作内容和方式',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-07/' },
-                { text: '第一节 工程监理主要工作内容', link: '/textbook/chapter-07/section-01' },
-                { text: '第二节 工程监理主要工作方式', link: '/textbook/chapter-07/section-02' },
-                { text: '第三节 工程监理数智化', link: '/textbook/chapter-07/section-03' }
-              ]
-            },
-            {
-              text: '第八章 工程监理文件资料管理',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-08/' },
-                { text: '第一节 工程监理基本表式及主要文件资料', link: '/textbook/chapter-08/section-01' },
-                { text: '第二节 工程监理文件资料管理职责和要求', link: '/textbook/chapter-08/section-02' }
-              ]
-            },
-            {
-              text: '第九章 全过程工程咨询及项目管理服务',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-09/' },
-                { text: '第一节 全过程工程咨询', link: '/textbook/chapter-09/section-01' },
-                { text: '第二节 工程监理与项目管理一体化', link: '/textbook/chapter-09/section-02' },
-                { text: '第三节 工程项目全过程集成化管理', link: '/textbook/chapter-09/section-03' },
-                { text: '第四节 工程风险管理', link: '/textbook/chapter-09/section-04' },
-                { text: '第五节 工程项目利益相关方管理', link: '/textbook/chapter-09/section-05' }
-              ]
-            },
-            {
-              text: '第十章 国际工程咨询与组织实施模式',
-              collapsed: false,
-              items: [
-                { text: '本章导读', link: '/textbook/chapter-10/' },
-                { text: '第一节 国际工程咨询', link: '/textbook/chapter-10/section-01' },
-                { text: '第二节 国际项目管理标准', link: '/textbook/chapter-10/section-02' },
-                { text: '第三节 国际工程组织实施模式', link: '/textbook/chapter-10/section-03' }
-              ]
-            },
-            {
-              text: '附录',
-              collapsed: false,
-              items: [
-                { text: '参考文献', link: '/textbook/appendix-references' }
-              ]
-            }
+            { text: '建设工程投资控制（土木建筑工程）', link: '/textbook/investment/' },
+            { text: '建设工程质量控制与安全生产管理（土木建筑工程）', link: '/textbook/quality/' },
+            { text: '建设工程合同管理', link: '/textbook/contract-management/' },
+            { text: '建设工程监理案例分析（土木建筑工程）', link: '/textbook/case-analysis/' }
           ]
         }
       ],
