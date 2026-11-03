@@ -1,8 +1,8 @@
 <script setup lang="ts">
 // 课程中心：六科选择 → 当前课程播放器与说明 → 按书和章节展开。
 // 课程形式只来自 data/courses.ts 的真实入口，缺的形式标「制作中」。
-import { computed, nextTick, reactive, ref } from 'vue'
-import { withBase } from 'vitepress'
+import { computed, nextTick, onMounted, reactive, ref } from 'vue'
+import { inBrowser, withBase } from 'vitepress'
 import { BOOKS } from '../data/books'
 import { COURSES, BILIBILI_SPACE, type CourseItem } from '../data/courses'
 import { data as textbook } from '../data/textbook.data'
@@ -14,6 +14,7 @@ const expanded = reactive<Record<string, 'none' | 'preview' | 'all'>>(
   Object.fromEntries(BOOKS.map((b, i) => [b.key, i === 0 ? 'preview' : 'none']))
 )
 const playerEl = ref<HTMLElement | null>(null)
+const subjectListEl = ref<HTMLElement | null>(null)
 
 const defaultCourse = (key: string) =>
   COURSES.find((c) => c.book === key && c.video) || COURSES.find((c) => c.book === key) || null
@@ -21,7 +22,30 @@ const defaultCourse = (key: string) =>
 const current = ref<CourseItem | null>(defaultCourse(selected.value))
 const tab = ref<Tab>(current.value?.video ? 'video' : 'courseware')
 
+// 直链入口（教材节页「本节配套视频」等）带 ?book=<册>&section=<章.节>。
+// 只在客户端读取：静态渲染仍按默认监理概论输出，避免与首屏水合结果不一致。
+function applyQuery() {
+  if (!inBrowser) return
+  const params = new URLSearchParams(window.location.search)
+  const bookKey = params.get('book')
+  if (!bookKey || !BOOKS.some((b) => b.key === bookKey)) return
+  const section = params.get('section')
+  if (expanded[bookKey] === 'none') expanded[bookKey] = 'preview'
+  const at = section ? COURSES.filter((c) => c.book === bookKey && c.section === section) : []
+  const course = at.find((c) => c.video) || at[0] || defaultCourse(bookKey)
+  selected.value = bookKey
+  current.value = course
+  tab.value = course?.video ? 'video' : 'courseware'
+  void revealSelectedSubject()
+}
+onMounted(applyQuery)
+
 const book = computed(() => BOOKS.find((b) => b.key === selected.value)!)
+// 选中的册排到第一个目录位，切换科目后首屏/首个目录与所选科目一致。
+const orderedBooks = computed(() => {
+  const first = BOOKS.find((b) => b.key === selected.value)
+  return first ? [first, ...BOOKS.filter((b) => b.key !== first.key)] : BOOKS
+})
 const currentBook = computed(() => BOOKS.find((b) => b.key === current.value?.book) || book.value)
 const sectionOf = (c: CourseItem) =>
   textbook[c.book].chapters.flatMap((ch) => ch.sections).find((s) => s.no === c.section)
@@ -36,6 +60,23 @@ function selectBook(key: string) {
   const c = defaultCourse(key)
   if (c) play(c, false)
   else current.value = null
+  void revealSelectedSubject()
+}
+
+// 手机端科目是一行横滑：切换后把当前科目滚进可见范围，避免“选中了却看不见”。
+async function revealSelectedSubject() {
+  await nextTick()
+  const list = subjectListEl.value
+  const el = list?.querySelector<HTMLElement>(`.cc__subject[data-book="${selected.value}"]`)
+  if (!list || !el) return
+  const listRect = list.getBoundingClientRect()
+  const elRect = el.getBoundingClientRect()
+  if (elRect.left < listRect.left || elRect.right > listRect.right) {
+    list.scrollTo({
+      left: list.scrollLeft + elRect.left - listRect.left - (listRect.width - elRect.width) / 2,
+      behavior: 'smooth'
+    })
+  }
 }
 
 async function play(c: CourseItem, scroll = true, prefer?: Tab) {
@@ -63,12 +104,13 @@ const visibleChapters = (key: string) => {
     <aside class="cc__aside" aria-label="科目筛选">
       <div class="cc__subjects">
         <span class="cc__eyebrow">SUBJECT</span>
-        <div class="cc__subject-list">
+        <div ref="subjectListEl" class="cc__subject-list">
           <button
             v-for="b in BOOKS"
             :key="b.key"
             type="button"
             class="cc__subject"
+            :data-book="b.key"
             :class="{ 'is-active': selected === b.key }"
             :aria-pressed="selected === b.key"
             @click="selectBook(b.key)"
@@ -156,7 +198,7 @@ const visibleChapters = (key: string) => {
       </section>
 
       <section
-        v-for="(b, i) in BOOKS"
+        v-for="(b, i) in orderedBooks"
         :id="i === 0 ? '课程列表' : undefined"
         :key="b.key"
         class="cc__book"

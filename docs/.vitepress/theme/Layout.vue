@@ -8,6 +8,7 @@ import NotFound from './components/NotFound.vue'
 import FollowButton from './components/FollowButton.vue'
 import FollowDialog from './components/FollowDialog.vue'
 import LearnedStamp from './components/LearnedStamp.vue'
+import SectionCourse from './components/SectionCourse.vue'
 import CraneTop from './components/CraneTop.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
@@ -50,6 +51,7 @@ const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?$/.test(relP
 <template>
   <DefaultTheme.Layout>
     <template #not-found><NotFound /></template>
+    <template #doc-before><SectionCourse v-if="isSection" /></template>
     <template #nav-bar-content-after><FollowButton /></template>
     <template #nav-screen-content-after><FollowButton block /></template>
     <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
