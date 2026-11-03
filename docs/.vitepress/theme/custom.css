@@ -42,3 +42,8 @@
     overflow-y: hidden;
   }
 }
+
+/* 监理用表页顶部 25 张表索引 */
+.forms-index { margin: 16px 0 8px; padding: 12px 16px; border: 1px solid var(--vp-c-divider); border-radius: 8px; font-size: 14px; line-height: 2; }
+.forms-index p { margin: 4px 0; }
+.forms-index a { white-space: nowrap; }

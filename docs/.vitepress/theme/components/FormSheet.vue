@@ -18,9 +18,25 @@ function inlineHtml(root: HTMLElement) {
     const align = el.classList.contains('c') ? 'text-align:center;vertical-align:middle;' : 'text-align:left;vertical-align:top;'
     el.setAttribute('style', `border:1px solid #000;padding:4px 6px;${align}${h}`)
   })
-  box.querySelectorAll('.fs-sign').forEach((s) => s.setAttribute('style', `text-align:right;margin:${(s as HTMLElement).style.marginTop || '0'} 0 0;`))
-  box.querySelectorAll('.fs-head').forEach((s) => s.setAttribute('style', 'display:flex;justify-content:space-between;'))
-  box.querySelectorAll('.fs-title').forEach((s) => s.setAttribute('style', 'text-align:center;font-weight:bold;'))
+  const set = (sel: string, style: string) => box.querySelectorAll(sel).forEach((e) => e.setAttribute('style', style))
+  set('.fs-title', 'text-align:center;font-weight:bold;margin:0 0 8px;')
+  set('.fs-p', 'margin:0;line-height:1.8;')
+  set('.fs-ind', 'margin:0;line-height:1.8;text-indent:2em;')
+  set('.fs-line', 'margin:0;height:1.6em;border-bottom:1px solid #000;')
+  set('.fs-sign', 'margin:0 0 0 52%;')
+  set('.fs-sign--l', 'margin:0;')
+  set('.fs-sign p', 'margin:0;line-height:1.8;')
+  set('.fs-date', 'margin:0;text-align:right;padding-right:1em;')
+  set('.fs-note', 'margin:4px 0 0;')
+  // Word 不认 flex 与空 div 高度：表头改成一行文字，留白改成空段落
+  box.querySelectorAll('.fs-head').forEach((h) => {
+    const [a, b] = [...h.children].map((c) => c.textContent)
+    h.outerHTML = `<p style="margin:0 0 4px;">${a}${'&emsp;'.repeat(26)}${b}</p>`
+  })
+  box.querySelectorAll('.fs-gap').forEach((g) => {
+    const n = Math.max(1, Math.round(parseInt((g as HTMLElement).style.height || '24') / 26))
+    g.outerHTML = '<p style="margin:0;">&nbsp;</p>'.repeat(n)
+  })
   return box.innerHTML
 }
 
@@ -98,6 +114,13 @@ async function copy() {
 .fs-sheet :deep(td.c.nw) { white-space: nowrap; }
 .fs-hint { display: none; font-size: 13px; color: var(--hd-ink-3); }
 @media (max-width: 767px) { .fs-hint { display: inline; } }
-.fs-sheet :deep(.fs-sign) { margin: 0; text-align: right; }
+.fs-sheet :deep(.fs-p) { margin: 0; line-height: 1.8; }
+.fs-sheet :deep(.fs-ind) { text-indent: 2em; }
+.fs-sheet :deep(.fs-line) { margin: 0; height: 1.6em; border-bottom: 1px solid #111; }
+.fs-sheet :deep(u) { text-underline-offset: 4px; word-break: break-all; white-space: break-spaces; }
+.fs-sheet :deep(.fs-sign) { margin: 0 0 0 52%; }
+.fs-sheet :deep(.fs-sign--l) { margin: 0; }
+.fs-sheet :deep(.fs-sign p) { margin: 0; line-height: 1.8; }
+.fs-sheet :deep(.fs-date) { margin: 0; text-align: right; padding-right: 1em; }
 .fs-sheet :deep(.fs-note) { margin: 6px 0 0; font-size: 14px; }
 </style>

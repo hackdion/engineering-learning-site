@@ -169,7 +169,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '教材书架', link: '/textbook/' },
-      { text: '课程', link: '/courses/' }
+      { text: '课程', link: '/courses/' },
+      { text: '监理用表', link: '/forms/' }
     ],
     sidebar: {
       '/knowledge/': [
