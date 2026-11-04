@@ -70,6 +70,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：六个实施环节、监理规划与实施细则对照、八项实施原则和总监理工程师负责制，配排序和 8 道自测题。'
   },
   {
+    id: 'ppt-gl-6-1', book: 'gailun', section: '6.1', title: '工程监理规划',
+    date: '2026-11-04', deck: '/courses/ppt-gl-6-1',
+    summary: '互动 PPT：监理大纲与规划的四个区别、规划十项内容、编制依据与要求、内部审核和人员配备，配报审排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-6-2', book: 'gailun', section: '6.2', title: '工程监理实施细则',
+    date: '2026-11-04', deck: '/courses/ppt-gl-6-2',
+    summary: '互动 PPT：规划与细则对照、细则四项内容、管桩监理要点与流程、编制报审，配工序排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-7-1', book: 'gailun', section: '7.1', title: '工程监理主要工作内容',
+    date: '2026-11-04', deck: '/courses/ppt-gl-7-1',
+    summary: '互动 PPT：三控两管一协调一履行、三大目标关系与动态控制、暂停复工变更索赔、信息管理和组织协调、安全生产管理，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-7-2', book: 'gailun', section: '7.2', title: '工程监理主要工作方式',
+    date: '2026-11-04', deck: '/courses/ppt-gl-7-2',
+    summary: '互动 PPT：审查核验、巡视、平行检验、旁站、见证五种方式，开工前与施工过程核验清单、见证取样送检六步，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-7-3', book: 'gailun', section: '7.3', title: '工程监理数智化',
+    date: '2026-11-04', deck: '/courses/ppt-gl-7-3',
+    summary: '互动 PPT：监理信息平台作用与功能、BIM 核心功能特征及四类应用、智能建造四项特征与对五种方式的影响、数智化三项策略，配排序和 8 道自测题。'
+  },
+  {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-01', courseware: '/courses/gl-2-2',
     summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
