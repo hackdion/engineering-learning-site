@@ -20,9 +20,29 @@ export interface CourseItem {
 
 export const COURSES: CourseItem[] = [
   {
+    id: 'ppt-gl-1-1', book: 'gailun', section: '1.1', title: '工程监理的性质及法律地位',
+    date: '2026-11-04', deck: '/courses/ppt-gl-1-1',
+    summary: '互动 PPT：从涵义、四项性质讲到强制监理范围、签字权和法律责任，配流程步进、对比自测和 8 道自测题。'
+  },
+  {
     id: 'ppt-gl-1-2', book: 'gailun', section: '1.2', title: '工程建设程序',
     date: '2026-11-04', deck: '/courses/ppt-gl-1-2',
     summary: '互动 PPT：一条主线串起投资决策、建设实施和后评价，配流程步进、排序、对比和 8 道自测题；电脑上翻页演示，手机上按卡片往下读。'
+  },
+  {
+    id: 'ppt-gl-1-3', book: 'gailun', section: '1.3', title: '工程监理相关制度',
+    date: '2026-11-04', deck: '/courses/ppt-gl-1-3',
+    summary: '互动 PPT：项目法人责任制、招标投标制、合同管理制与工程监理制的关系，配董事会职权对比、资本金比例表、排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
+    date: '2026-11-04', deck: '/courses/ppt-gl-2-2',
+    summary: '互动 PPT：GB/T 50319—2013 的 9 章 3 附录骨架、四类人员资格、监理规划与细则、三控与安全管理、文件归档和附录表，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-3-2', book: 'gailun', section: '3.2', title: '监理工程师',
+    date: '2026-11-04', deck: '/courses/ppt-gl-3-2',
+    summary: '互动 PPT：从考试四科、成绩滚动、报考条件，到注册、执业禁止行为和三类法律责任，配时间线排序和 8 道自测题。'
   },
   {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
