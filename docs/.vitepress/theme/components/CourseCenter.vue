@@ -1,13 +1,31 @@
 <script setup lang="ts">
 // 课程中心：六科选择 → 当前课程播放器与说明 → 按书和章节展开。
-// 课程形式只来自 data/courses.ts 的真实入口，缺的形式标「制作中」。
+// 课程形式只来自 data/courses.ts（讲解视频、互动课件 / PPT）和 data/readalong.ts（全文朗读分集）的真实入口，
+// 缺的形式标「制作中」。
 import { computed, nextTick, onMounted, reactive, ref } from 'vue'
 import { inBrowser, withBase } from 'vitepress'
 import { BOOKS } from '../data/books'
-import { COURSES, BILIBILI_SPACE, type CourseItem } from '../data/courses'
+import { SECTION_COURSES as COURSES, BILIBILI_SPACE, type CourseItem } from '../data/courses'
+import { readAlongAt } from '../data/readalong'
 import { data as textbook } from '../data/textbook.data'
 
-type Tab = 'video' | 'courseware'
+type Tab = 'video' | 'courseware' | 'listen'
+
+// 只有全文朗读的节：临时拼成一条课程，标题取教材节名
+function listenItem(key: string, no: string): CourseItem | null {
+  const r = readAlongAt(key, no)
+  if (!r) return null
+  const mins = Math.round(r.parts.reduce((a, p) => a + p.sec, 0) / 60)
+  return {
+    id: `ra-${key}-${no}`, book: key, section: no, title: r.title.replace(/^第.+?节\s*/, ''), date: '',
+    summary: `本节全文朗读${r.parts.length > 1 ? `，分 ${r.parts.length} 集` : ''}，约 ${mins} 分钟。来自 B 站合集「${r.series}」，适合通勤时听；朗读不是讲解，重点请配合原文和互动课件。`
+  }
+}
+const firstListen = (key: string) => {
+  const s = textbook[key].chapters.flatMap((ch) => ch.sections).find((x) => readAlongAt(key, x.no))
+  return s ? listenItem(key, s.no) : null
+}
+const defaultTab = (c: CourseItem | null): Tab => (c?.video ? 'video' : c?.courseware || c?.deck ? 'courseware' : 'listen')
 
 const selected = ref(BOOKS[0].key)
 const expanded = reactive<Record<string, 'none' | 'preview' | 'all'>>(
@@ -17,10 +35,12 @@ const playerEl = ref<HTMLElement | null>(null)
 const subjectListEl = ref<HTMLElement | null>(null)
 
 const defaultCourse = (key: string) =>
-  COURSES.find((c) => c.book === key && c.video) || COURSES.find((c) => c.book === key) || null
+  COURSES.find((c) => c.book === key && c.video) || COURSES.find((c) => c.book === key) || firstListen(key)
 
 const current = ref<CourseItem | null>(defaultCourse(selected.value))
-const tab = ref<Tab>(current.value?.video ? 'video' : 'courseware')
+const tab = ref<Tab>(defaultTab(current.value))
+const listenPart = ref(0)
+const currentListen = computed(() => (current.value ? readAlongAt(current.value.book, current.value.section) : null))
 
 // 直链入口（教材节页「本节配套视频」等）带 ?book=<册>&section=<章.节>。
 // 只在客户端读取：静态渲染仍按默认监理概论输出，避免与首屏水合结果不一致。
@@ -32,10 +52,11 @@ function applyQuery() {
   const section = params.get('section')
   if (expanded[bookKey] === 'none') expanded[bookKey] = 'preview'
   const at = section ? COURSES.filter((c) => c.book === bookKey && c.section === section) : []
-  const course = at.find((c) => c.video) || at[0] || defaultCourse(bookKey)
+  const course = at.find((c) => c.video) || at[0] || (section && listenItem(bookKey, section)) || defaultCourse(bookKey)
   selected.value = bookKey
   current.value = course
-  tab.value = course?.video ? 'video' : 'courseware'
+  tab.value = defaultTab(course)
+  listenPart.value = 0
   void revealSelectedSubject()
 }
 onMounted(applyQuery)
@@ -52,7 +73,10 @@ const sectionOf = (c: CourseItem) =>
 
 const courseAt = (key: string, no: string) => COURSES.filter((c) => c.book === key && c.section === no)
 const videoAt = (key: string, no: string) => courseAt(key, no).find((c) => c.video)
-const coursewareAt = (key: string, no: string) => courseAt(key, no).find((c) => c.courseware)
+const coursewareAt = (key: string, no: string) => courseAt(key, no).find((c) => c.courseware || c.deck)
+const listenAt = (key: string, no: string) => readAlongAt(key, no)
+// 点「音」：该节已有课程就在它上面切到朗读，否则单独拼一条
+const playListen = (key: string, no: string) => play(courseAt(key, no)[0] || listenItem(key, no)!, true, 'listen')
 
 function selectBook(key: string) {
   selected.value = key
@@ -82,7 +106,8 @@ async function revealSelectedSubject() {
 async function play(c: CourseItem, scroll = true, prefer?: Tab) {
   current.value = c
   selected.value = c.book
-  tab.value = prefer || (c.video ? 'video' : 'courseware')
+  tab.value = prefer || defaultTab(c)
+  listenPart.value = 0
   if (scroll) {
     await nextTick()
     playerEl.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -123,14 +148,14 @@ const visibleChapters = (key: string) => {
         <b>形式角标</b>
         <span><span class="cc-badge is-on">文</span>已上线</span>
         <span><span class="cc-badge">文</span>制作中</span>
-        <span class="cc__legend-note">文 · 音 · 课件 · 播（视频）</span>
+        <span class="cc__legend-note">文 · 音（全文朗读）· 课（课件 / PPT）· 播（讲解视频）</span>
       </div>
     </aside>
 
     <main class="cc__main">
       <div class="cc__head">
         <h1 id="课程中心">课程中心</h1>
-        <p>每节课最多四种学法：文、音、课件、视频。先上线的先放出来，没做好的标「制作中」。</p>
+        <p>每节最多四种学法：读原文、听全文朗读、做互动课件、看讲解视频。先上线的先放出来，没做好的标「制作中」。</p>
       </div>
 
       <section id="课程视频" ref="playerEl" class="cc__player" aria-label="正在播放">
@@ -152,6 +177,20 @@ const visibleChapters = (key: string) => {
               loading="lazy"
               allowfullscreen
             ></iframe>
+            <a v-else-if="tab === 'courseware' && current.deck" class="cc__deck" :href="withBase(current.deck)">
+              <span class="cc__deck-kicker">互动 PPT</span>
+              <b>{{ current.title }}</b>
+              <span>电脑上翻页演示，手机上按卡片往下读</span>
+              <span class="cc__deck-go">打开互动 PPT →</span>
+            </a>
+            <iframe
+              v-else-if="tab === 'listen' && currentListen"
+              :key="`${currentListen.bvid}-${currentListen.parts[listenPart].p}`"
+              :src="`https://player.bilibili.com/player.html?bvid=${currentListen.bvid}&p=${currentListen.parts[listenPart].p}&autoplay=0`"
+              :title="`全文朗读：${current.title}`"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="cc__info">
             <span class="cc__kicker">{{ currentBook.shortName }} · {{ current.section }}</span>
@@ -164,24 +203,45 @@ const visibleChapters = (key: string) => {
                 :class="{ 'is-active': tab === 'video' }"
                 :aria-pressed="tab === 'video'"
                 @click="tab = 'video'"
-              >视频</button>
+              >讲解视频</button>
               <button
-                v-if="current.courseware"
+                v-if="current.courseware || current.deck"
                 type="button"
                 class="cc__tab"
                 :class="{ 'is-active': tab === 'courseware' }"
                 :aria-pressed="tab === 'courseware'"
                 @click="tab = 'courseware'"
-              >课件</button>
+              >{{ current.deck ? '互动 PPT' : '课件' }}</button>
+              <button
+                v-if="currentListen"
+                type="button"
+                class="cc__tab"
+                :class="{ 'is-active': tab === 'listen' }"
+                :aria-pressed="tab === 'listen'"
+                @click="tab = 'listen'"
+              >全文朗读</button>
               <a v-if="sectionOf(current)" class="cc__tab" :href="withBase(sectionOf(current)!.link)">文章</a>
-              <span class="cc__tab is-wip"><span class="hd-wip-mark"></span>听读 · 施工中</span>
-              <span v-if="!current.video" class="cc__tab is-wip"><span class="hd-wip-mark"></span>视频 · 施工中</span>
-              <span v-if="!current.courseware" class="cc__tab is-wip"><span class="hd-wip-mark"></span>课件 · 施工中</span>
+              <span v-if="!currentListen" class="cc__tab is-wip"><span class="hd-wip-mark"></span>朗读 · 施工中</span>
+              <span v-if="!current.video" class="cc__tab is-wip"><span class="hd-wip-mark"></span>讲解视频 · 施工中</span>
+              <span v-if="!current.courseware && !current.deck" class="cc__tab is-wip"><span class="hd-wip-mark"></span>课件 · 施工中</span>
             </div>
-            <p class="cc__summary">{{ current.summary }}</p>
+            <div v-if="tab === 'listen' && currentListen && currentListen.parts.length > 1" class="cc__parts" role="group" aria-label="本节分集">
+              <button
+                v-for="(p, i) in currentListen.parts"
+                :key="p.p"
+                type="button"
+                class="cc__part"
+                :class="{ 'is-active': listenPart === i }"
+                :aria-pressed="listenPart === i"
+                @click="listenPart = i"
+              >第 {{ p.p }} 集 · {{ p.title }}</button>
+            </div>
+            <p class="cc__summary">{{ tab === 'listen' && (current.video || current.courseware || current.deck) ? listenItem(current.book, current.section)?.summary : current.summary }}</p>
             <div class="cc__links">
               <a v-if="current.video" class="hd-chip-bili" :href="current.video.url" target="_blank" rel="noopener">▶ 去 B 站看 · 顺手点个关注</a>
+              <a v-if="tab === 'listen' && currentListen" class="hd-chip-bili" :href="`https://www.bilibili.com/video/${currentListen.bvid}/?p=${currentListen.parts[listenPart].p}`" target="_blank" rel="noopener">▶ 去 B 站听 · 顺手点个关注</a>
               <a v-if="current.courseware" class="cc__ruler" :href="withBase(current.courseware)">打开课件页（可全屏）→</a>
+              <a v-if="current.deck" class="cc__ruler" :href="withBase(current.deck)">打开互动 PPT →</a>
             </div>
           </div>
         </template>
@@ -225,12 +285,19 @@ const visibleChapters = (key: string) => {
               <a class="cc__title" :href="withBase(s.link)">{{ s.title }}</a>
               <span class="cc__badges">
                 <a class="cc-badge is-on" :href="withBase(s.link)" :aria-label="`${s.title}：文章`">文</a>
-                <span class="cc-badge" aria-label="听读制作中">音</span>
+                <button
+                  v-if="listenAt(b.key, s.no)"
+                  type="button"
+                  class="cc-badge is-on"
+                  :aria-label="`${s.title}：在上方播放全文朗读`"
+                  @click="playListen(b.key, s.no)"
+                >音</button>
+                <span v-else class="cc-badge" aria-label="朗读制作中">音</span>
                 <button
                   v-if="coursewareAt(b.key, s.no)"
                   type="button"
                   class="cc-badge is-on"
-                  :aria-label="`${s.title}：在上方打开课件`"
+                  :aria-label="`${s.title}：在上方打开课件或互动 PPT`"
                   @click="play(coursewareAt(b.key, s.no)!, true, 'courseware')"
                 >课</button>
                 <span v-else class="cc-badge" aria-label="课件制作中">课</span>
@@ -238,10 +305,10 @@ const visibleChapters = (key: string) => {
                   v-if="videoAt(b.key, s.no)"
                   type="button"
                   class="cc-badge is-on"
-                  :aria-label="`${s.title}：在上方播放视频`"
+                  :aria-label="`${s.title}：在上方播放讲解视频`"
                   @click="play(videoAt(b.key, s.no)!, true, 'video')"
                 >播</button>
-                <span v-else class="cc-badge" aria-label="视频制作中">播</span>
+                <span v-else class="cc-badge" aria-label="讲解视频制作中">播</span>
               </span>
             </li>
           </ul>
@@ -292,6 +359,25 @@ const visibleChapters = (key: string) => {
 }
 .cc__screen { flex: 999 1 420px; min-width: 0; aspect-ratio: 16 / 9; background-color: var(--hd-accent); position: relative; }
 .cc__screen iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.cc__deck {
+  position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; gap: 8px; padding: 24px 28px;
+  color: #fff !important; text-decoration: none !important;
+}
+.cc__deck-kicker { font: 12px var(--hd-font-mono); letter-spacing: .12em; color: #C9D6E6; }
+.cc__deck b { font: 900 clamp(22px, 3vw, 34px)/1.25 var(--hd-font-serif); }
+.cc__deck span { font-size: 14px; color: #E3EAF3; }
+.cc__deck-go {
+  align-self: flex-start; margin-top: 6px; padding: 8px 16px; border: 2px solid var(--hd-ink); border-radius: 10px;
+  background: var(--hd-helmet); color: var(--hd-ink) !important; font-weight: 700; box-shadow: 3px 3px 0 var(--hd-ink);
+}
+.cc__deck:focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: -6px; }
+.cc__parts { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 2px; }
+.cc__part {
+  min-height: 36px; padding: 4px 10px; border: 1px solid var(--hd-line); border-radius: 8px; background: var(--hd-card);
+  color: var(--hd-ink-2); font: inherit; font-size: 13px; text-align: left; cursor: pointer;
+}
+.cc__part.is-active { border-color: var(--hd-accent); color: var(--hd-accent); font-weight: 700; }
+.cc__part:focus-visible { outline: 3px solid var(--hd-accent); outline-offset: 2px; }
 .cc__info { flex: 1 1 260px; min-width: 0; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
 .cc__kicker { font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-accent); }
 .cc__info h2, .cc__empty h2 { margin: 0; font-size: 22px; line-height: 1.4; border: 0; padding: 0; font-family: var(--hd-font-sans); font-weight: 700; }
