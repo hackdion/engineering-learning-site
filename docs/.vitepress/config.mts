@@ -1,5 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import { SEARCH_PAGES } from './searchPages'
+import { BOOKS } from './theme/data/books'
 
 // 部署在子路径（如 GitHub Pages 的 /仓库名/）时，通过 VITEPRESS_BASE 指定
 const rawBase = process.env.VITEPRESS_BASE || '/'
@@ -29,6 +30,57 @@ const cjkFriendlyTokenize = (text: string): string[] => {
     }
   }
   return tokens
+}
+
+/**
+ * 本地搜索书名前缀：教材节的结果在标题层级前加「某册 · 教材」，
+ * 便于在手机搜索结果里分清六册。路径前缀与 Layout.vue 的 BOOKS 一致；
+ * 监理用表、互动 PPT、课程页不在 /textbook/ 下，保持原样。
+ */
+const TEXTBOOK_SEARCH_BOOKS: [string, string][] = [
+  ...BOOKS.filter((book) => book.dir).map((book): [string, string] => [`${book.dir}/`, book.shortName]),
+  ['chapter-', '监理概论'],
+  ['appendix-', '监理概论']
+]
+
+function searchBookLabel(file: string) {
+  const norm = file.replace(/\\/g, '/')
+  const at = norm.indexOf('/textbook/')
+  if (at === -1) return ''
+  const rel = norm.slice(at + '/textbook/'.length)
+  const hit = TEXTBOOK_SEARCH_BOOKS.find(([prefix]) => rel.startsWith(prefix))
+  return hit ? `${hit[1]} · 教材` : ''
+}
+
+// 与 VitePress 默认分段规则一致（按带锚点的标题切段），另外给教材页加书名前缀。
+const SEARCH_HEADING = /<h(\d*).*?>(.*?<a.*? href="#.*?".*?>.*?<\/a>)<\/h\1>/gi
+const SEARCH_HEADING_CONTENT = /(.*?)<a.*? href="#(.*?)".*?>.*?<\/a>/i
+
+function splitSearchSections(file: string, html: string) {
+  const label = searchBookLabel(file)
+  const out: { anchor: string; titles: string[]; text: string }[] = []
+  const parts = html.split(SEARCH_HEADING)
+  parts.shift()
+  let parentTitles: string[] = []
+  for (let i = 0; i < parts.length; i += 3) {
+    const level = parseInt(parts[i]) - 1
+    const heading = SEARCH_HEADING_CONTENT.exec(parts[i + 1] ?? '')
+    const title = (heading?.[1] ?? '').replace(/<[^>]*>/g, '').trim()
+    const anchor = heading?.[2] ?? ''
+    const content = parts[i + 2] ?? ''
+    if (!title || !content) continue
+    let titles = parentTitles.slice(0, level)
+    titles[level] = title
+    titles = titles.filter(Boolean)
+    out.push({
+      anchor,
+      titles: label ? [label, ...titles] : titles,
+      text: content.replace(/<[^>]*>/g, '')
+    })
+    if (level === 0) parentTitles = [title]
+    else parentTitles[level] = title
+  }
+  return out
 }
 
 /**
@@ -677,7 +729,8 @@ export default defineConfig({
         miniSearch: {
           options: {
             tokenize: cjkFriendlyTokenize
-          }
+          },
+          _splitIntoSections: splitSearchSections
         },
         // 组件页没有 Markdown 正文，追加 searchPages.ts 里的摘要进入索引
         _render(src, env, md) {

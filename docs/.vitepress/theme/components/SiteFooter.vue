@@ -30,6 +30,15 @@ import { AUTHOR } from '../data/author'
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-left: auto; }
 .site-footer__notice { width: 100%; }
 .site-footer :is(a, button):focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 3px; }
+/* 有侧栏的页面，页脚位于 VitePress 内容区之外，会被左侧固定目录盖住；
+   在侧栏显示的断点（≥960px）让出目录宽度，保证作者链接可点、可聚焦。 */
+@media (min-width: 960px) {
+  body:has(.VPSidebar) .site-footer__inner {
+    width: min(calc(100% - var(--vp-sidebar-width, 272px) - 48px), 1200px);
+    margin-left: calc(var(--vp-sidebar-width, 272px) + 24px);
+    margin-right: 24px;
+  }
+}
 @media (max-width: 600px) {
   .site-footer__inner { width: calc(100% - 32px); }
   .site-footer nav { margin-left: 0; }

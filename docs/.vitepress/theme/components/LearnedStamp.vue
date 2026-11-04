@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // 学完盖章：教材每节末尾的「我学完了」，状态按节存在读者本机，不上传。
-import { computed, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, inBrowser } from 'vitepress'
 
 const route = useRoute()
@@ -22,7 +22,10 @@ function toggle() {
   } catch { /* 无痕模式等无法存储时只在本页生效 */ }
 }
 
-watch(key, read, { immediate: true })
+// 水合完成后再读本机记录：setup 阶段读 localStorage 会与服务端渲染结果不一致，
+// 生产模式下水合不会补上 is-done 等差异。路由切换时 key 变化仍会重新读。
+watch(key, read)
+onMounted(read)
 </script>
 
 <template>
