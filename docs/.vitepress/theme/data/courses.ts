@@ -45,6 +45,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：从考试四科、成绩滚动、报考条件，到注册、执业禁止行为和三类法律责任，配时间线排序和 8 道自测题。'
   },
   {
+    id: 'ppt-gl-4-1', book: 'gailun', section: '4.1', title: '工程监理招标投标程序和评标方法',
+    date: '2026-11-04', deck: '/courses/ppt-gl-4-1',
+    summary: '互动 PPT：招标投标八个环节和各环节的时限，公开招标与邀请招标对照，初步评审与综合评估法，配排序、对比自测和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-4-2', book: 'gailun', section: '4.2', title: '工程监理投标工作内容和策略',
+    date: '2026-11-04', deck: '/courses/ppt-gl-4-2',
+    summary: '互动 PPT：投标决策原则、综合评价法与决策树示例，监理大纲、投标策略和四种计费方法，配决策树画法排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-4-3', book: 'gailun', section: '4.3', title: '工程监理合同管理',
+    date: '2026-11-04', deck: '/courses/ppt-gl-4-3',
+    summary: '互动 PPT：合同组成与优先解释顺序、委托人与总监理工程师的时限对照、支付三个 28 天、不可抗力与违约，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-5-1', book: 'gailun', section: '5.1', title: '工程承包模式及监理委托方式',
+    date: '2026-11-04', deck: '/courses/ppt-gl-5-1',
+    summary: '互动 PPT：DBB 与 EPC/DB、专业与劳务分包、联合体与合作体、PPP，以及三种承包模式下的监理委托方式，配四张对比卡和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-5-2', book: 'gailun', section: '5.2', title: '工程监理实施程序和原则',
+    date: '2026-11-04', deck: '/courses/ppt-gl-5-2',
+    summary: '互动 PPT：六个实施环节、监理规划与实施细则对照、八项实施原则和总监理工程师负责制，配排序和 8 道自测题。'
+  },
+  {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-01', courseware: '/courses/gl-2-2',
     summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
