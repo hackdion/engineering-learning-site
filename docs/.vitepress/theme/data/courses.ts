@@ -120,6 +120,11 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：独立式/融合式/植入式三种模式、八项服务内容、集成的系统工程含义与四个重点难点，配时间线排序和 8 道自测题。'
   },
   {
+    id: 'ppt-gl-9-5', book: 'gailun', section: '9.5', title: '工程项目利益相关方管理',
+    date: '2026-11-06', deck: '/courses/ppt-gl-9-5',
+    summary: '互动 PPT：利益相关方管理的重要性、有效参与五步骤、四种分类角度、识别方法及管理策略，配排序和 8 道自测题。'
+  },
+  {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-01', courseware: '/courses/gl-2-2',
     summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
