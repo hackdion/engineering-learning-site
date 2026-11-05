@@ -2,7 +2,7 @@
 // 选择题 / 判断题：单选点一下就判；多选选好后点「提交」。作答记在本机，刷新后保留。
 import { computed, inject, ref, watch } from 'vue'
 import { withBase } from 'vitepress'
-import { deckKey } from './deck'
+import { deckKey, seededShuffle } from './deck'
 
 const props = defineProps<{
   id: string
@@ -20,6 +20,11 @@ const picked = ref<number[]>([])
 const done = ref(false)
 const right = computed(() => done.value && picked.value.length === correct.value.size && picked.value.every((i) => correct.value.has(i)))
 const L = 'ABCDEFGH'
+// 选项按题目 id 固定打乱（判断题不打乱）：避免正确答案总排在前面，服务端与浏览器结果一致。
+// picked 与本机记录仍存原始下标，打乱只影响显示顺序和字母。
+const judge = props.options.length === 2
+const order = judge ? props.options.map((_, i) => i) : seededShuffle(props.options.map((_, i) => i), props.id)
+const letter = (i: number) => (judge ? (i === 0 ? '√' : '×') : L[order.indexOf(i)])
 
 // 等 SlideDeck 读完本机记录再恢复，不在水合前改动页面
 watch(deck.loaded, (ok) => {
@@ -51,11 +56,11 @@ function state(i: number) {
 
 <template>
   <div class="qz" role="group" :aria-label="`练习：${q}`">
-    <p class="qz-q"><span class="qz-type">{{ multi ? '多选' : options.length === 2 ? '判断' : '单选' }}</span>{{ q }}</p>
+    <p class="qz-q"><span class="qz-type">{{ multi ? '多选' : judge ? '判断' : '单选' }}</span>{{ q }}</p>
     <ul class="qz-opts">
-      <li v-for="(o, i) in options" :key="i">
+      <li v-for="i in order" :key="i">
         <button type="button" class="qz-opt" :class="state(i)" :aria-pressed="picked.includes(i)" :disabled="done" @click="choose(i)">
-          <b>{{ options.length === 2 ? (i === 0 ? '√' : '×') : L[i] }}</b><span>{{ o }}</span>
+          <b>{{ letter(i) }}</b><span>{{ options[i] }}</span>
         </button>
       </li>
     </ul>
@@ -65,7 +70,7 @@ function state(i: number) {
     </div>
     <div v-if="done" class="qz-result" :class="right ? 'ok' : 'no'" role="status">
       <b>{{ right ? '答对了' : '再看看' }}</b>
-      正确答案：{{ [...correct].map((i) => (options.length === 2 ? (i === 0 ? '√' : '×') : L[i])).join('、') }}。{{ explain }}
+      正确答案：{{ [...correct].map(letter).sort().join('、') }}。{{ explain }}
       <a v-if="cite" :href="withBase(cite)">回到教材原文 →</a>
     </div>
   </div>

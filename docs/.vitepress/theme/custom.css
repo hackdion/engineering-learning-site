@@ -22,14 +22,18 @@
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  max-width: 100%;
 }
 
-/* 窄屏强制按内容宽度撑开，让多列表自然滚动 */
+/* 窄屏多列表：单元格保底宽度（约 7 个字），列多时表格横向滚动，不再挤成每行三四个字 */
 @media (max-width: 768px) {
-  .vp-doc table {
-    width: max-content;
-    min-width: 100%;
+  .vp-doc table:not([class]) th,
+  .vp-doc table:not([class]) td {
+    min-width: 7em;
+  }
+  /* 监理用表（.vp-raw）按原表排版，不加保底宽度 */
+  .vp-doc .vp-raw table th,
+  .vp-doc .vp-raw table td {
+    min-width: 0;
   }
 }
 
