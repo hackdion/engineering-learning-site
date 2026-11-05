@@ -95,6 +95,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：监理信息平台作用与功能、BIM 核心功能特征及四类应用、智能建造四项特征与对五种方式的影响、数智化三项策略，配排序和 8 道自测题。'
   },
   {
+    id: 'ppt-gl-8-1', book: 'gailun', section: '8.1', title: '工程监理基本表式及主要文件资料',
+    date: '2026-11-05', deck: '/courses/ppt-gl-8-1',
+    summary: '互动 PPT：A/B/C 三类共 32 张表、十张总监签章表、建设单位审批与 18 类监理文件资料、五种文件编制要求，配复工排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-8-2', book: 'gailun', section: '8.2', title: '工程监理文件资料管理职责和要求',
+    date: '2026-11-05', deck: '/courses/ppt-gl-8-2',
+    summary: '互动 PPT：资料管理六环节、收文传阅发文、分类存放与组卷厚度、归档范围与保管期限、验收移交，配流程排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-9-1', book: 'gailun', section: '9.1', title: '全过程工程咨询',
+    date: '2026-11-05', deck: '/courses/ppt-gl-9-1',
+    summary: '互动 PPT：全过程工程咨询含义与三大特点、与制度/项目管理/全寿命期的区别、三部分服务内容和五项实施策略，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-9-2', book: 'gailun', section: '9.2', title: '工程监理与项目管理一体化',
+    date: '2026-11-05', deck: '/courses/ppt-gl-9-2',
+    summary: '互动 PPT：监理与项目管理的性质、范围、侧重点区别，一体化实施三条件、总监负责制下的四部门职责，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-9-3', book: 'gailun', section: '9.3', title: '工程项目全过程集成化管理',
+    date: '2026-11-05', deck: '/courses/ppt-gl-9-3',
+    summary: '互动 PPT：独立式/融合式/植入式三种模式、八项服务内容、集成的系统工程含义与四个重点难点，配时间线排序和 8 道自测题。'
+  },
+  {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-01', courseware: '/courses/gl-2-2',
     summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
