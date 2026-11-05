@@ -22,6 +22,15 @@
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* 窄屏强制按内容宽度撑开，让多列表自然滚动 */
+@media (max-width: 768px) {
+  .vp-doc table {
+    width: max-content;
+    min-width: 100%;
+  }
 }
 
 /* 窄屏长公式横向滚动：公式超宽时在自身区域内滚动，不撑破页面 */
