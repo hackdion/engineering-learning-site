@@ -125,6 +125,21 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：利益相关方管理的重要性、有效参与五步骤、四种分类角度、识别方法及管理策略，配排序和 8 道自测题。'
   },
   {
+    id: 'ppt-gl-9-4', book: 'gailun', section: '9.4', title: '工程风险管理',
+    date: '2026-11-06', deck: '/courses/ppt-gl-9-4',
+    summary: '互动 PPT：风险管理原则与流程、工程风险识别和评价、四类风险应对策略及监控，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-10-1', book: 'gailun', section: '10.1', title: '国际工程咨询',
+    date: '2026-11-06', deck: '/courses/ppt-gl-10-1',
+    summary: '互动 PPT：咨询工程师素质与职业道德、FIDIC 白皮书特点和合同条款、咨询公司四类服务对象，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-10-2', book: 'gailun', section: '10.2', title: '国际项目管理标准',
+    date: '2026-11-06', deck: '/courses/ppt-gl-10-2',
+    summary: '互动 PPT：PMI 的 PMBOK、IPMA 的个人与组织能力基准、ISO 系列标准，以及价值交付系统和价值驱动型项目管理，配排序和 8 道自测题。'
+  },
+  {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-01', courseware: '/courses/gl-2-2',
     summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
