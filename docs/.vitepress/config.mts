@@ -1,36 +1,11 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import { SEARCH_PAGES } from './searchPages'
+import { cjkFriendlyTokenize } from './searchTokenize'
 import { BOOKS } from './theme/data/books'
 
 // 部署在子路径（如 GitHub Pages 的 /仓库名/）时，通过 VITEPRESS_BASE 指定
 const rawBase = process.env.VITEPRESS_BASE || '/'
 const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`
-
-/**
- * 中文分词：汉字连续串切成「单字 + 相邻二字组合」，英文与数字按整段切分。
- * MiniSearch 默认按空白与标点切词，中文整句会变成一个超长词条，
- * 导致「最低资本金比例」这类出现在句中的词无法命中。
- * 该函数只依赖标准 JS 能力，VitePress 会把它序列化到客户端，
- * 保证建索引与查询使用同一套切词规则。
- */
-const cjkFriendlyTokenize = (text: string): string[] => {
-  const tokens: string[] = []
-  const pattern = /[\p{Script=Han}]+|[a-z0-9]+/giu
-  let match: RegExpExecArray | null
-  while ((match = pattern.exec(text)) !== null) {
-    const chunk = match[0]
-    if (/^\p{Script=Han}+$/u.test(chunk)) {
-      const chars = Array.from(chunk)
-      for (let i = 0; i < chars.length; i++) {
-        tokens.push(chars[i])
-        if (i + 1 < chars.length) tokens.push(chars[i] + chars[i + 1])
-      }
-    } else {
-      tokens.push(chunk.toLowerCase())
-    }
-  }
-  return tokens
-}
 
 /**
  * 本地搜索书名前缀：教材节的结果在标题层级前加「某册 · 教材」，
@@ -737,7 +712,10 @@ export default defineConfig({
           const html = md.render(src, env)
           if (env.frontmatter?.search === false) return ''
           const extra = SEARCH_PAGES[env.relativePath]
-          return extra ? html + md.render(extra, { ...env }) : html
+          const indexed = (extra ? html + md.render(extra, { ...env }) : html)
+            // 互动 PPT 的讲稿只用于演示模式口播，不需要被搜到，不进索引。
+            .replace(/<template #notes>[\s\S]*?<\/template>/g, '')
+          return indexed
         }
       }
     },
