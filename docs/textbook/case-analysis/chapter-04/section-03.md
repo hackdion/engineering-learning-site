@@ -425,7 +425,75 @@ sectionTitle: 第三节 工程进度控制
 
 某工程项目合同工期为20个月，建设单位委托某监理公司承担施工阶段监理任务。经总监理工程师审核批准的施工进度计划如图4-11所示（时间单位：月），各项工作均匀速施工。
 
-<FigureZoom caption="图 4-11 施工进度计划" src="/images/case-analysis/chapter-04/fig-4-11.png" :width="760" :height="283" />
+<FigureZoom caption="图 4-11 施工进度计划">
+<svg viewBox="0 0 760 283" role="img" aria-label="图 4-11 施工进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M36,56 H700"></path>
+    <path d="M36.5,46 V56 M68.5,46 V56 M99.5,46 V56 M132.5,46 V56 M165.5,46 V56 M203.5,46 V56 M229.5,46 V56 M266.5,46 V56 M301.5,46 V56 M333,46 V56 M371,46 V56 M401.5,46 V56 M436.5,46 V56 M467,46 V56 M498.5,46 V56 M535.5,46 V56 M565.5,46 V56 M600.5,46 V56 M630.5,46 V56 M666.5,46 V56 M698.5,46 V56"></path>
+  </g>
+  <g fill="currentColor" font-size="16" text-anchor="middle">
+    <text x="36.5" y="39">0</text><text x="68.5" y="39">1</text><text x="99.5" y="39">2</text><text x="132.5" y="39">3</text><text x="165.5" y="39">4</text><text x="203.5" y="39">5</text><text x="229.5" y="39">6</text><text x="266.5" y="39">7</text><text x="301.5" y="39">8</text><text x="333" y="39">9</text><text x="371" y="39">10</text><text x="401.5" y="39">11</text><text x="436.5" y="39">12</text><text x="467" y="39">13</text><text x="498.5" y="39">14</text><text x="535.5" y="39">15</text><text x="565.5" y="39">16</text><text x="600.5" y="39">17</text><text x="630.5" y="39">18</text><text x="666.5" y="39">19</text><text x="698.5" y="39">20</text>
+  </g>
+  <text x="712" y="54" fill="currentColor" font-size="14" text-anchor="start">(月)</text>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M31,164 V98 H152" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M44,177 H110 q8,-12 16,0 q8,12 16,0 q5,-12 10,0" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M31,190 V255 H129 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q1,-12 2,0" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M178,98 H255" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M178,177 H222" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M281,98 H497 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 H698 V164" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M248,177 H386" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M412,177 H520" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M546,177 H685" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M412,255 H481 q8,-12 16,0 q7,12 14,0 q4.5,-12 9,0" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M546,255 H610 q8,-12 16,0 q8,12 16,0 q8,-12 16,0 q8,12 16,0 q8,-12 16,0 H698 V190" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M235,164 V150 q5.5,-10 11,0 q5.5,10 11,0 q5.5,-10 11,0 V111" marker-end="url(#arrow-case-4-11)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 4">
+    <path d="M165,111 V164" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M399,190 V242" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M533,190 V242" marker-end="url(#arrow-case-4-11)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <circle cx="31" cy="177" r="13"></circle>
+    <circle cx="165" cy="98" r="13"></circle>
+    <circle cx="165" cy="177" r="13"></circle>
+    <circle cx="235" cy="177" r="13"></circle>
+    <circle cx="268" cy="98" r="13"></circle>
+    <circle cx="399" cy="177" r="13"></circle>
+    <circle cx="399" cy="255" r="13"></circle>
+    <circle cx="533" cy="177" r="13"></circle>
+    <circle cx="533" cy="255" r="13"></circle>
+    <circle cx="698" cy="177" r="13"></circle>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="31" y="181.8">1</text>
+    <text x="165" y="102.8">2</text>
+    <text x="165" y="181.8">3</text>
+    <text x="235" y="181.8">4</text>
+    <text x="268" y="102.8">5</text>
+    <text x="399" y="181.8">6</text>
+    <text x="399" y="259.8">7</text>
+    <text x="533" y="181.8">8</text>
+    <text x="533" y="259.8">9</text>
+    <text x="698" y="181.8">10</text>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="81" y="93">A</text>
+    <text x="202" y="93">D</text>
+    <text x="368" y="93">F</text>
+    <text x="81" y="172">B</text>
+    <text x="199" y="172">E</text>
+    <text x="296" y="172">G</text>
+    <text x="468" y="172">H</text>
+    <text x="604" y="172">L</text>
+    <text x="81" y="251">C</text>
+    <text x="446" y="251">K</text>
+    <text x="574" y="250">M</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-11 施工进度计划</p>
 
