@@ -61,9 +61,9 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
     <text x="155" y="444" dy="0.35em" font-size="17">采取进度计划调整措施</text>
     <text x="155" y="511" dy="0.35em" font-size="17">实施新的进度计划</text>
     <text x="427" y="511" dy="0.35em" font-size="17">返回进度监测系统</text>
-    <text x="252" y="90" dy="0.35em" font-size="15">是</text>
-    <text x="247" y="190" dy="0.35em" font-size="15">是</text>
-    <text x="245" y="292" dy="0.35em" font-size="15">是</text>
+    <text x="252" y="70" dy="0.35em" font-size="15">是</text>
+    <text x="247" y="167" dy="0.35em" font-size="15">是</text>
+    <text x="245" y="262" dy="0.35em" font-size="15">是</text>
     <text x="490" y="133" dy="0.35em" font-size="15" text-anchor="start">否</text>
     <text x="490" y="230" dy="0.35em" font-size="15" text-anchor="start">否</text>
     <text x="463" y="334" dy="0.35em" font-size="15">否</text>

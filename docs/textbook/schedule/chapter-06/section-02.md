@@ -33,7 +33,7 @@ sectionTitle: 第二节 施工进度控制工作流程和内容
     <rect x="407" y="906" width="135" height="42"></rect>
     <rect x="14" y="223" width="223" height="37"></rect>
     <rect x="14" y="336" width="223" height="37"></rect>
-    <polygon points="289,140 433,192 289,244 145,192"></polygon>
+    <polygon points="289,157 433,190 289,223 145,190"></polygon>
     <polygon points="476,320 559,370 476,420 393,370"></polygon>
     <polygon points="701,323 754,345 701,367 648,345"></polygon>
     <polygon points="476,430 568,465 476,500 384,465"></polygon>
@@ -41,28 +41,30 @@ sectionTitle: 第二节 施工进度控制工作流程和内容
     <polygon points="476,658 567,694 476,730 385,694"></polygon>
     <path d="M485,44 V73 H299 V98" marker-end="url(#arrow-6-2)"></path>
     <path d="M485,73 H710 V98" marker-end="url(#arrow-6-2)"></path>
-    <path d="M289,135 V140" marker-end="url(#arrow-6-2)"></path>
-    <path d="M433,192 H501 V119 H401" marker-end="url(#arrow-6-2)"></path>
-    <path d="M289,244 V272" marker-end="url(#arrow-6-2)"></path>
+    <path d="M289,135 V157" marker-end="url(#arrow-6-2)"></path>
+    <path d="M433,190 H501 V119 H401" marker-end="url(#arrow-6-2)"></path>
+    <path d="M289,223 V272" marker-end="url(#arrow-6-2)"></path>
     <path d="M754,135 V231 H558" marker-end="url(#arrow-6-2)"></path>
     <path d="M394,231 H324 V272" marker-end="url(#arrow-6-2)"></path>
     <path d="M476,249 V272" marker-end="url(#arrow-6-2)"></path>
     <path d="M371,290 H394" marker-end="url(#arrow-6-2)"></path>
     <path d="M476,309 V320" marker-end="url(#arrow-6-2)"></path>
-    <path d="M559,370 H640 V296 H558" marker-end="url(#arrow-6-2)"></path>
+    <path d="M640,742 V296 H558" marker-end="url(#arrow-6-2)"></path>
+    <path d="M559,370 H640"></path>
     <path d="M393,370 H291 V309" marker-end="url(#arrow-6-2)"></path>
     <path d="M476,420 V430" marker-end="url(#arrow-6-2)"></path>
     <path d="M384,465 H216" marker-end="url(#arrow-6-2)"></path>
     <path d="M133,430 V373" marker-end="url(#arrow-6-2)"></path>
-    <path d="M133,500 V742 H470 V779" marker-end="url(#arrow-6-2)"></path>
+    <path d="M133,500 V742 H640"></path>
     <path d="M476,500 V528" marker-end="url(#arrow-6-2)"></path>
     <path d="M476,565 V596" marker-end="url(#arrow-6-2)"></path>
     <path d="M476,633 V658" marker-end="url(#arrow-6-2)"></path>
     <path d="M385,694 H305 V616 H371" marker-end="url(#arrow-6-2)"></path>
-    <path d="M567,694 H637 V742"></path>
+    <path d="M567,694 H640"></path>
     <path d="M558,289 H701 V323" marker-end="url(#arrow-6-2)"></path>
     <path d="M754,345 V282 H558" marker-end="url(#arrow-6-2)"></path>
     <path d="M701,367 V754 H470"></path>
+    <path d="M470,754 V779" marker-end="url(#arrow-6-2)"></path>
     <path d="M475,816 V844" marker-end="url(#arrow-6-2)"></path>
     <path d="M475,882 V906" marker-end="url(#arrow-6-2)"></path>
     <path d="M125,223 V116 H180" marker-end="url(#arrow-6-2)"></path>
@@ -89,10 +91,11 @@ sectionTitle: 第二节 施工进度控制工作流程和内容
     <text x="133" y="465" dy="0.35em" font-size="16">影响工期?</text>
     <text x="476" y="694" dy="0.35em" font-size="16">监理工程师审核</text>
     <text x="418" y="172" dy="0.35em" font-size="15">要求整改</text>
-    <text x="279" y="214" dy="0.35em" font-size="15">同</text>
-    <text x="279" y="232" dy="0.35em" font-size="15">意</text>
+    <text x="272" y="238" dy="0.35em" font-size="15">同</text>
+    <text x="272" y="256" dy="0.35em" font-size="15">意</text>
     <text x="336" y="358" dy="0.35em" font-size="15">有干扰</text>
     <text x="598" y="358" dy="0.35em" font-size="15">正常</text>
+    <text x="600" y="676" dy="0.35em" font-size="15">同意</text>
     <text x="500" y="430" dy="0.35em" font-size="15" text-anchor="start">有拖延</text>
     <text x="500" y="518" dy="0.35em" font-size="15" text-anchor="start">是</text>
     <text x="330" y="454" dy="0.35em" font-size="15">否</text>

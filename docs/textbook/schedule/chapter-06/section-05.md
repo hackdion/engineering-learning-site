@@ -55,9 +55,10 @@ sectionTitle: 第五节 工程延期和工期延误的处理
     <path d="M268,132 H474 V146" marker-end="url(#arrow-6-7)"></path>
     <path d="M348,157 H261" marker-end="url(#arrow-6-7)"></path>
     <path d="M261,172 H348" marker-end="url(#arrow-6-7)"></path>
+    <path d="M135,183 V210" marker-end="url(#arrow-6-7)"></path>
     <path d="M242,244 H428 V278" marker-end="url(#arrow-6-7)"></path>
     <path d="M136,280 V342" marker-end="url(#arrow-6-7)"></path>
-    <path d="M299,296 H280 V360 H262" marker-end="url(#arrow-6-7)"></path>
+    <path d="M426,315 V360 H262" marker-end="url(#arrow-6-7)"></path>
     <path d="M136,379 V442" marker-end="url(#arrow-6-7)"></path>
   </g>
   <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
