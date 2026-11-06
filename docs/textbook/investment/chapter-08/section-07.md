@@ -292,7 +292,80 @@ sectionTitle: 第七节 工程结算与支付
 
 《工程保修与结清结算支付申请（核准）表》示例见表8-15。
 
-<FigureZoom caption="图 8-9 最终结清款支付流程" src="/images/investment/chapter-08/fig-8-09.png" :width="1068" :height="267" />
+<FigureZoom caption="图 8-9 最终结清款支付流程">
+<svg viewBox="0 0 1068 270" role="img" aria-label="图 8-9 最终结清款支付流程" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-8-9" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="8" y="65" width="103" height="77" rx="10"></rect>
+    <path d="M196,62 L256,103 L196,144 L136,103 Z"></path>
+    <path d="M357,62 L425,103 L357,144 L289,103 Z"></path>
+    <rect x="454" y="66" width="96" height="75"></rect>
+    <path d="M651,60 L721,103 L651,146 L581,103 Z"></path>
+    <path d="M809,62 L875,103 L809,144 L743,103 Z"></path>
+    <rect x="939" y="71" width="122" height="65" rx="10"></rect>
+    <path d="M812,178 L881,211 L812,245 L743,211 Z"></path>
+    <rect x="589" y="196" width="90" height="48" rx="10"></rect>
+    <rect x="939" y="188" width="122" height="65" rx="10"></rect>
+    <path d="M111,103 H136" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M256,103 H289" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M425,103 H454" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M550,103 H581" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M721,103 H743" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M875,103 H939" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M809,144 V178" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M743,211 H679" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M881,211 H939" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M196,62 V35 H812 V62" marker-end="url(#arrow-inv-8-9)"></path>
+    <path d="M357,62 V35"></path>
+    <path d="M651,60 V35"></path>
+  </g>
+  <g fill="currentColor" font-size="12" text-anchor="middle">
+    <text x="504" y="20">发包人在规定时间内不予审核，又未提出修改意见的，视为发包人同意，且视为已签发证书</text>
+    <text x="204" y="56" font-size="11.5">否</text>
+    <text x="366" y="56" font-size="11.5">否</text>
+    <text x="660" y="56" font-size="11.5">否</text>
+    <text x="272" y="97" font-size="11.5">是</text>
+    <text x="439" y="97" font-size="11.5">是</text>
+    <text x="727" y="97" font-size="11.5">是</text>
+    <text x="822" y="166" font-size="11.5">是</text>
+    <text x="711" y="204" font-size="11.5">无异议</text>
+    <text x="910" y="204" font-size="11.5">有异议</text>
+    <text x="907" y="84" font-size="11.5">未按约</text>
+    <text x="907" y="97" font-size="11.5">定支付</text>
+    <text x="59" y="84">承包人</text>
+    <text x="59" y="100">在约定时间</text>
+    <text x="59" y="116">内提交最终</text>
+    <text x="59" y="132">结清申请</text>
+    <text x="196" y="91">发包人</text>
+    <text x="196" y="107">在约定时间内</text>
+    <text x="196" y="123">予以审核</text>
+    <text x="357" y="91">发包人</text>
+    <text x="357" y="107">在约定时间内提出</text>
+    <text x="357" y="123">核实意见</text>
+    <text x="502" y="84">承包人</text>
+    <text x="502" y="100">在约定时间内</text>
+    <text x="502" y="116">补充资料</text>
+    <text x="502" y="132">修改提交</text>
+    <text x="651" y="87">发包人</text>
+    <text x="651" y="103">在约定时间内核对并</text>
+    <text x="651" y="119">签发证书</text>
+    <text x="809" y="91">发包人</text>
+    <text x="809" y="107">在约定时间内</text>
+    <text x="809" y="123">进行支付</text>
+    <text x="1000" y="91">按合同约定或</text>
+    <text x="1000" y="107">法律规定承担</text>
+    <text x="1000" y="123">违约责任</text>
+    <text x="812" y="199">承包人在</text>
+    <text x="812" y="215">约定时间对支</text>
+    <text x="812" y="231">付款确认</text>
+    <text x="634" y="216">最终结清</text>
+    <text x="634" y="232">支付结束</text>
+    <text x="1000" y="208">协商或按合同</text>
+    <text x="1000" y="224">价款争议的解</text>
+    <text x="1000" y="240">决方式处理</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-9 最终结清款支付流程</p>
 

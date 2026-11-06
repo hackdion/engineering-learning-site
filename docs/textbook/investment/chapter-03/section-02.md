@@ -18,7 +18,95 @@ sectionTitle: 第二节 建筑安装工程费构成及计算
 
 人工费是指按工资总额构成规定，支付给从事建筑安装工程施工的生产工人和附属生产单位工人的各项费用，由计时工资或计件工资、奖金、津贴补贴、加班加点工资和特殊情况下支付的工资构成。
 
-<FigureZoom caption="图 3-1 按费用构成要素划分的建筑安装工程费用项目组成" src="/images/investment/chapter-03/fig-3-01.png" :width="908" :height="1088" />
+<FigureZoom caption="图 3-1 按费用构成要素划分的建筑安装工程费用项目组成">
+<svg viewBox="0 0 800 1120" role="img" aria-label="图 3-1 按费用构成要素划分的建筑安装工程费用项目组成" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="2" y="447" width="62" height="260"></rect>
+    <path d="M72,64 V1090"></path>
+    <path d="M72,64 H92 M72,200 H92 M72,340 H92 M72,700 H92 M72,930 H92 M72,1010 H92 M72,1090 H92"></path>
+    <rect x="92" y="47" width="120" height="34"></rect>
+    <rect x="92" y="183" width="120" height="34"></rect>
+    <rect x="92" y="323" width="120" height="34"></rect>
+    <rect x="92" y="683" width="120" height="34"></rect>
+    <rect x="92" y="913" width="120" height="34"></rect>
+    <rect x="92" y="993" width="120" height="34"></rect>
+    <rect x="92" y="1073" width="120" height="34"></rect>
+    <path d="M212,64 H226 M226,9 V119 M226,20 H238 M226,108 H238"></path>
+    <path d="M212,200 H226 M226,156 V244 M226,167 H238 M226,233 H238"></path>
+    <path d="M212,340 H226 M226,315 V363 M226,326 H238 M226,352 H238"></path>
+    <path d="M342,326 H350 M350,326 V502 M350,370 H362 M350,392 H362 M350,414 H362 M350,436 H362 M350,458 H362 M350,480 H362 M350,502 H362"></path>
+    <path d="M212,700 H226 M226,513 V887 M226,524 H238 M226,876 H238"></path>
+    <path d="M212,1010 H226 M226,986 V1034 M226,997 H238 M226,1023 H238"></path>
+    <path d="M324,997 H338 M338,953 V1041 M338,953 H350 M338,975 H350 M338,997 H350 M338,1019 H350 M338,1041 H350"></path>
+    <rect x="640" y="47" width="150" height="34"></rect>
+    <rect x="640" y="503" width="150" height="34"></rect>
+    <rect x="640" y="913" width="150" height="34"></rect>
+    <path d="M380,64 H640"></path>
+    <path d="M328,200 H620"></path>
+    <path d="M478,340 H620"></path>
+    <path d="M380,700 H620"></path>
+    <path d="M212,930 H640"></path>
+    <path d="M620,64 V930"></path>
+    <path d="M620,520 H640"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="18" y="532" text-anchor="middle" font-size="11.5"><tspan>建</tspan><tspan x="18" dy="15">筑</tspan><tspan x="18" dy="15">安</tspan><tspan x="18" dy="15">装</tspan><tspan x="18" dy="15">工</tspan><tspan x="18" dy="15">程</tspan><tspan x="18" dy="15">费</tspan></text>
+    <text x="47" y="502" text-anchor="middle" font-size="11.5"><tspan>（</tspan><tspan x="47" dy="15">按</tspan><tspan x="47" dy="15">费</tspan><tspan x="47" dy="15">用</tspan><tspan x="47" dy="15">构</tspan><tspan x="47" dy="15">成</tspan><tspan x="47" dy="15">要</tspan><tspan x="47" dy="15">素</tspan><tspan x="47" dy="15">划</tspan><tspan x="47" dy="15">分</tspan><tspan x="47" dy="15">）</tspan></text>
+    <text x="152" y="69" text-anchor="middle" font-size="14">人工费</text>
+    <text x="152" y="205" text-anchor="middle" font-size="14">材料费</text>
+    <text x="152" y="345" text-anchor="middle" font-size="14">施工机具使用费</text>
+    <text x="152" y="705" text-anchor="middle" font-size="14">企业管理费</text>
+    <text x="152" y="935" text-anchor="middle" font-size="14">利润</text>
+    <text x="152" y="1015" text-anchor="middle" font-size="14">规费</text>
+    <text x="152" y="1095" text-anchor="middle" font-size="14">税金</text>
+    <text x="715" y="69" text-anchor="middle" font-size="14">分部分项工程费</text>
+    <text x="715" y="525" text-anchor="middle" font-size="14">措施项目费</text>
+    <text x="715" y="935" text-anchor="middle" font-size="14">其他项目费</text>
+    <text x="244" y="24">计时工资或计件工资</text>
+    <text x="244" y="46">奖金</text>
+    <text x="244" y="68">津贴、补贴</text>
+    <text x="244" y="90">加班加点工资</text>
+    <text x="244" y="112">特殊情况下支付的工资</text>
+    <text x="244" y="171">材料原价</text>
+    <text x="244" y="193">运杂费</text>
+    <text x="244" y="215">运输损耗费</text>
+    <text x="244" y="237">采购及保管费</text>
+    <text x="244" y="330">施工机械使用费</text>
+    <text x="244" y="356">仪器仪表使用费</text>
+    <text x="368" y="374">折旧费</text>
+    <text x="368" y="396">检修费</text>
+    <text x="368" y="418">维护费</text>
+    <text x="368" y="440">安拆费及场外运费</text>
+    <text x="368" y="462">人工费</text>
+    <text x="368" y="484">燃料动力费</text>
+    <text x="368" y="506">其他费用</text>
+    <text x="244" y="528">管理人员工资</text>
+    <text x="244" y="550">办公费</text>
+    <text x="244" y="572">差旅交通费</text>
+    <text x="244" y="594">固定资产使用费</text>
+    <text x="244" y="616">工具用具使用费</text>
+    <text x="244" y="638">劳动保险和职工福利费</text>
+    <text x="244" y="660">劳动保护费</text>
+    <text x="244" y="682">检验试验费</text>
+    <text x="244" y="704">工会经费</text>
+    <text x="244" y="726">职工教育经费</text>
+    <text x="244" y="748">财产保险费</text>
+    <text x="244" y="770">财务费</text>
+    <text x="244" y="792">税金</text>
+    <text x="244" y="814">城市维护建设税</text>
+    <text x="244" y="836">教育费附加</text>
+    <text x="244" y="858">地方教育附加</text>
+    <text x="244" y="880">其他</text>
+    <text x="244" y="1001">社会保险费</text>
+    <text x="244" y="1027">住房公积金</text>
+    <text x="356" y="957">养老保险费</text>
+    <text x="356" y="979">失业保险费</text>
+    <text x="356" y="1001">医疗保险费</text>
+    <text x="356" y="1023">生育保险费</text>
+    <text x="356" y="1045">工伤保险费</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 3-1 按费用构成要素划分的建筑安装工程费用项目组成</p>
 
