@@ -238,7 +238,39 @@ G、H、L三项工作的流水施工工期为：（3＋2）＋（2＋3）＝10�
 
 注：此题也可直接应用图4-12分析得出流水施工工期。
 
-<FigureZoom caption="图 4-12 流水工期分析过程" src="/images/case-analysis/chapter-04/fig-4-12.png" :width="610" :height="265" />
+<FigureZoom caption="图 4-12 流水工期分析过程">
+<svg viewBox="0 0 800 320" role="img" aria-label="图 4-12 流水工期分析过程" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M80,80 H390"></path>
+    <path d="M266,170 H514"></path>
+    <path d="M390,260 H700"></path>
+    <path d="M390,80 V130" stroke-dasharray="7 6"></path>
+    <path d="M390,170 V260" stroke-dasharray="7 6"></path>
+  </g>
+  <g fill="currentColor">
+    <circle cx="80" cy="80" r="4.5"></circle>
+    <circle cx="204" cy="80" r="4.5"></circle>
+    <circle cx="390" cy="80" r="4.5"></circle>
+    <circle cx="266" cy="170" r="4.5"></circle>
+    <circle cx="390" cy="170" r="4.5"></circle>
+    <circle cx="514" cy="170" r="4.5"></circle>
+    <circle cx="390" cy="260" r="4.5"></circle>
+    <circle cx="514" cy="260" r="4.5"></circle>
+    <circle cx="700" cy="260" r="4.5"></circle>
+  </g>
+  <g fill="currentColor" font-size="28" text-anchor="middle">
+    <text x="142" y="68">2</text>
+    <text x="204" y="68">G</text>
+    <text x="297" y="68">3</text>
+    <text x="328" y="158">2</text>
+    <text x="390" y="158">H</text>
+    <text x="452" y="158">2</text>
+    <text x="452" y="248">2</text>
+    <text x="514" y="248">L</text>
+    <text x="607" y="248">3</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-12 流水工期分析过程</p>
 
@@ -268,7 +300,72 @@ G、H、L三项工作的流水施工工期为：（3＋2）＋（2＋3）＝10�
 
 施工单位为了保证工期，决定对B分部工程施工进度计划横道图（图4-15）进行调整，组织加快的成倍节拍流水施工。
 
-<FigureZoom caption="图 4-15 B分部工程施工进度计划横道图" src="/images/case-analysis/chapter-04/fig-4-15.png" :width="790" :height="425" />
+<FigureZoom caption="图 4-15 B分部工程施工进度计划横道图">
+<svg viewBox="0 0 780 480" role="img" aria-label="图 4-15 B分部工程施工进度计划横道图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <rect x="20" y="20" width="731" height="444"></rect>
+    <path d="M190,20 V464"></path>
+    <path d="M190,74 H751"></path>
+    <path d="M20,128 H751"></path>
+    <path d="M20,240 H751"></path>
+    <path d="M20,352 H751"></path>
+    <path d="M241,74 V464 M292,74 V464 M343,74 V464 M394,74 V464 M445,74 V464 M496,74 V464 M547,74 V464 M598,74 V464 M649,74 V464 M700,74 V464"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="2.2">
+    <path d="M190,166 H292"></path>
+    <path d="M292,202 H394"></path>
+    <path d="M394,166 H496"></path>
+    <path d="M394,278 H445"></path>
+    <path d="M445,314 H496"></path>
+    <path d="M496,278 H547"></path>
+    <path d="M445,390 H547"></path>
+    <path d="M547,426 H649"></path>
+    <path d="M649,390 H751"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <circle cx="222" cy="149" r="12"></circle>
+    <circle cx="324" cy="185" r="12"></circle>
+    <circle cx="426" cy="149" r="12"></circle>
+    <circle cx="426" cy="261" r="12"></circle>
+    <circle cx="477" cy="297" r="12"></circle>
+    <circle cx="528" cy="261" r="12"></circle>
+    <circle cx="477" cy="373" r="12"></circle>
+    <circle cx="579" cy="409" r="12"></circle>
+    <circle cx="681" cy="373" r="12"></circle>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="222" y="154">①</text>
+    <text x="324" y="190">②</text>
+    <text x="426" y="154">③</text>
+    <text x="426" y="266">①</text>
+    <text x="477" y="302">②</text>
+    <text x="528" y="266">③</text>
+    <text x="477" y="378">①</text>
+    <text x="579" y="414">②</text>
+    <text x="681" y="378">③</text>
+  </g>
+  <g fill="currentColor" font-size="16" text-anchor="middle">
+    <text x="215" y="110">1</text>
+    <text x="266" y="110">2</text>
+    <text x="317" y="110">3</text>
+    <text x="368" y="110">4</text>
+    <text x="419" y="110">5</text>
+    <text x="470" y="110">6</text>
+    <text x="521" y="110">7</text>
+    <text x="572" y="110">8</text>
+    <text x="623" y="110">9</text>
+    <text x="674" y="110">10</text>
+    <text x="725" y="110">11</text>
+    <text x="470" y="55">施工进度（月）</text>
+    <text x="105" y="80">施工过程</text>
+  </g>
+  <g fill="currentColor" font-size="18" text-anchor="middle">
+    <text x="105" y="190">甲</text>
+    <text x="105" y="302">乙</text>
+    <text x="105" y="414">丙</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-15 B分部工程施工进度计划横道图</p>
 
@@ -308,7 +405,76 @@ G、H、L三项工作的流水施工工期为：（3＋2）＋（2＋3）＝10�
 
 （2）B分部工程调整后流水施工进度计划横道图如图4-17所示。
 
-<FigureZoom caption="图 4-17 横道图" src="/images/case-analysis/chapter-04/fig-4-17.png" :width="860" :height="485" />
+<FigureZoom caption="图 4-17 横道图">
+<svg viewBox="0 0 800 450" role="img" aria-label="图 4-17 横道图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <rect x="22" y="8" width="756" height="438"></rect>
+    <path d="M120,8 V446"></path>
+    <path d="M68,72 V446"></path>
+    <path d="M120,40 H778"></path>
+    <path d="M22,72 H778"></path>
+    <path d="M22,226 H778"></path>
+    <path d="M22,318 H778"></path>
+    <path d="M214,40 V446 M308,40 V446 M402,40 V446 M496,40 V446 M590,40 V446 M684,40 V446"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="2.2">
+    <path d="M308,100 H496"></path>
+    <path d="M120,130 H308"></path>
+    <path d="M214,192 H402"></path>
+    <path d="M308,253 H402"></path>
+    <path d="M402,284 H496"></path>
+    <path d="M496,253 H590"></path>
+    <path d="M402,362 H590"></path>
+    <path d="M496,407 H684"></path>
+    <path d="M590,347 H778"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <circle cx="358" cy="84" r="11"></circle>
+    <circle cx="170" cy="114" r="11"></circle>
+    <circle cx="264" cy="176" r="11"></circle>
+    <circle cx="358" cy="238" r="11"></circle>
+    <circle cx="452" cy="268" r="11"></circle>
+    <circle cx="546" cy="238" r="11"></circle>
+    <circle cx="452" cy="346" r="11"></circle>
+    <circle cx="546" cy="391" r="11"></circle>
+    <circle cx="640" cy="331" r="11"></circle>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="middle">
+    <text x="358" y="89">③</text>
+    <text x="170" y="119">①</text>
+    <text x="264" y="181">②</text>
+    <text x="358" y="243">①</text>
+    <text x="452" y="273">②</text>
+    <text x="546" y="243">③</text>
+    <text x="452" y="351">①</text>
+    <text x="546" y="396">②</text>
+    <text x="640" y="336">③</text>
+  </g>
+  <g fill="currentColor" font-size="16" text-anchor="middle">
+    <text x="167" y="62">1</text>
+    <text x="261" y="62">2</text>
+    <text x="355" y="62">3</text>
+    <text x="449" y="62">4</text>
+    <text x="543" y="62">5</text>
+    <text x="637" y="62">6</text>
+    <text x="731" y="62">7</text>
+    <text x="449" y="30">施工进度（月）</text>
+    <text x="71" y="45">施工过程</text>
+  </g>
+  <g fill="currentColor" font-size="18" text-anchor="middle">
+    <text x="45" y="156">甲</text>
+    <text x="45" y="278">乙</text>
+    <text x="45" y="388">丙</text>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="middle">
+    <text x="94" y="136">B11</text>
+    <text x="94" y="198">B12</text>
+    <text x="94" y="278">B2</text>
+    <text x="94" y="368">B31</text>
+    <text x="94" y="412">B32</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-17 横道图</p>
 
