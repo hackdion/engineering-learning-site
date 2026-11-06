@@ -30,15 +30,89 @@ sectionTitle: 第三节 设计概算编制与审查
 
 （2）相应工程造价管理机构发布的概算定额（或指标）；
 
-<FigureZoom caption="图 6-1 设计概算的内容和组成" src="/images/investment/chapter-06/fig-6-01.png" :width="577" :height="183" />
+<FigureZoom caption="图 6-1 设计概算的内容和组成">
+<svg viewBox="0 0 440 180" role="img" aria-label="图 6-1 设计概算的内容和组成" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M34,40 V150"></path>
+    <path d="M34,40 H48 M34,95 H48 M34,150 H48"></path>
+    <path d="M166,45 H180 M180,18 V72 M180,22 H192 M180,68 H192"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="16" y="44" text-anchor="middle" font-size="12"><tspan>建</tspan><tspan x="16" dy="17">设</tspan><tspan x="16" dy="17">工</tspan><tspan x="16" dy="17">程</tspan><tspan x="16" dy="17">总</tspan><tspan x="16" dy="17">概</tspan><tspan x="16" dy="17">算</tspan></text>
+    <text x="52" y="45">单项工程综合概算</text>
+    <text x="52" y="100">工程建设其他费用概算</text>
+    <text x="52" y="155">预备费、建设期利息、经营性项目铺底流动资金</text>
+    <text x="196" y="27">各单位建筑工程概算</text>
+    <text x="196" y="73">各单位设备及安装工程概算</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-1 设计概算的内容和组成</p>
 
-<FigureZoom caption="图 6-2 单项工程综合概算的组成" src="/images/investment/chapter-06/fig-6-02.png" :width="674" :height="440" />
+<FigureZoom caption="图 6-2 单项工程综合概算的组成">
+<svg viewBox="0 0 440 390" role="img" aria-label="图 6-2 单项工程综合概算的组成" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M42,105 V330"></path>
+    <path d="M42,105 H56 M42,330 H56"></path>
+    <path d="M185,105 H199 M199,50 V160 M199,50 H211 M199,72 H211 M199,94 H211 M199,116 H211 M199,138 H211 M199,160 H211"></path>
+    <path d="M185,330 H199 M199,290 V370 M199,290 H211 M199,330 H211 M199,370 H211"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="16" y="153" text-anchor="middle" font-size="12"><tspan>单</tspan><tspan x="16" dy="19">项</tspan><tspan x="16" dy="19">工</tspan><tspan x="16" dy="19">程</tspan><tspan x="16" dy="19">综</tspan><tspan x="16" dy="19">合</tspan><tspan x="16" dy="19">概</tspan><tspan x="16" dy="19">算</tspan></text>
+    <text x="60" y="109">各单位建筑工程概算</text>
+    <text x="60" y="334">设备及安装工程概算</text>
+    <text x="215" y="55">一般土建工程概算</text>
+    <text x="215" y="77">给水排水工程概算</text>
+    <text x="215" y="99">采暖工程概算</text>
+    <text x="215" y="121">通风工程概算</text>
+    <text x="215" y="143">电气照明工程概算</text>
+    <text x="215" y="165">特殊构筑物工程概算</text>
+    <text x="215" y="295">机械设备及安装工程概算</text>
+    <text x="215" y="335">电气设备及安装工程概算</text>
+    <text x="215" y="375">器具、工具及生产家具购置费概算</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-2 单项工程综合概算的组成</p>
 
-<FigureZoom caption="图 6-3 建设工程总概算的组成" src="/images/investment/chapter-06/fig-6-03.png" :width="779" :height="760" />
+<FigureZoom caption="图 6-3 建设工程总概算的组成">
+<svg viewBox="0 0 560 780" role="img" aria-label="图 6-3 建设工程总概算的组成" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M38,94 V720"></path>
+    <path d="M38,94 H52 M38,392 H52 M38,720 H52"></path>
+    <path d="M180,94 H194 M194,42 V146 M194,42 H208 M194,68 H208 M194,94 H208 M194,120 H208 M194,146 H208"></path>
+    <path d="M232,392 H246 M246,210 V574 M246,210 H260 M246,236 H260 M246,262 H260 M246,288 H260 M246,314 H260 M246,340 H260 M246,366 H260 M246,392 H260 M246,418 H260 M246,444 H260 M246,470 H260 M246,496 H260 M246,522 H260 M246,548 H260 M246,574 H260"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="16" y="347" text-anchor="middle" font-size="12"><tspan>建</tspan><tspan x="16" dy="19">设</tspan><tspan x="16" dy="19">工</tspan><tspan x="16" dy="19">程</tspan><tspan x="16" dy="19">总</tspan><tspan x="16" dy="19">概</tspan><tspan x="16" dy="19">算</tspan></text>
+    <text x="56" y="99">第一部分　工程费用</text>
+    <text x="56" y="397">第二部分　工程建设其他费用</text>
+    <text x="56" y="725">第三部分　预备费、建设期利息、经营性项目铺底流动资金</text>
+    <text x="208" y="47">主要工程项目综合概算</text>
+    <text x="208" y="73">辅助和服务性项目综合概算</text>
+    <text x="208" y="99">住宅、宿舍、文化福利和公共建筑项目综合概算</text>
+    <text x="208" y="125">室外工程项目综合概算</text>
+    <text x="208" y="151">场外工程项目综合概算</text>
+    <text x="260" y="215">建设用地费</text>
+    <text x="260" y="241">建设单位管理费</text>
+    <text x="260" y="267">可行性研究费</text>
+    <text x="260" y="293">研究试验费</text>
+    <text x="260" y="319">勘察设计费</text>
+    <text x="260" y="345">专项评价费</text>
+    <text x="260" y="371">临时设施费</text>
+    <text x="260" y="397">建设工程监理费</text>
+    <text x="260" y="423">工程保险费</text>
+    <text x="260" y="449">引进技术和进口设备其他费</text>
+    <text x="260" y="475">特殊设备安全监督检验费</text>
+    <text x="260" y="501">市政公用设施费</text>
+    <text x="260" y="527">联合试运转费</text>
+    <text x="260" y="553">生产准备费</text>
+    <text x="260" y="579">办公和生活家具购置费</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-3 建设工程总概算的组成</p>
 

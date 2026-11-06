@@ -64,7 +64,37 @@ sectionTitle: 第四节 施工图预算编制和审查
 
 施工图预算的构成如图 6-4 所示。
 
-<FigureZoom caption="图 6-4 施工图预算构成" src="/images/investment/chapter-06/fig-6-04.png" :width="745" :height="378" />
+<FigureZoom caption="图 6-4 施工图预算构成">
+<svg viewBox="0 0 720 400" role="img" aria-label="图 6-4 施工图预算构成" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-6-4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="18" y="130" width="44" height="140"></rect>
+    <rect x="150" y="40" width="210" height="60"></rect>
+    <rect x="150" y="170" width="210" height="60"></rect>
+    <rect x="150" y="300" width="210" height="60"></rect>
+    <path d="M62,200 H100 M100,70 V330"></path>
+    <path d="M100,70 H146" marker-end="url(#arrow-inv-6-4)"></path>
+    <path d="M100,200 H146" marker-end="url(#arrow-inv-6-4)"></path>
+    <path d="M100,330 H146" marker-end="url(#arrow-inv-6-4)"></path>
+    <path d="M360,318 H430 V200 H364" marker-end="url(#arrow-inv-6-4)"></path>
+    <path d="M360,185 H430 V70"></path>
+    <path d="M360,345 H560 V70 H364" marker-end="url(#arrow-inv-6-4)"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="40" y="168" text-anchor="middle" font-size="12"><tspan>施</tspan><tspan x="40" dy="17">工</tspan><tspan x="40" dy="17">图</tspan><tspan x="40" dy="17">预</tspan><tspan x="40" dy="17">算</tspan></text>
+    <text x="255" y="75" text-anchor="middle" font-size="14">建设项目总预算</text>
+    <text x="255" y="205" text-anchor="middle" font-size="14">单项工程综合预算</text>
+    <text x="255" y="335" text-anchor="middle" font-size="14">单位工程预算</text>
+    <text x="390" y="22" text-anchor="middle">三级预算</text>
+    <text x="590" y="22" text-anchor="middle">二级预算</text>
+    <text x="495" y="120" text-anchor="middle">汇总单项工程综合</text>
+    <text x="495" y="138" text-anchor="middle">预算及其他费用</text>
+    <text x="495" y="250" text-anchor="middle">汇总单位工程预算</text>
+    <text x="572" y="170">汇总单位工程预算</text>
+    <text x="572" y="188">及其他费用</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-4 施工图预算构成</p>
 
@@ -118,7 +148,27 @@ sectionTitle: 第四节 施工图预算编制和审查
 
 单位工程施工图预算的编制方法分为单价法和实物量法。如图6-5所示。
 
-<FigureZoom caption="图 6-5 施工图预算编制方法" src="/images/investment/chapter-06/fig-6-05.png" :width="589" :height="167" />
+<FigureZoom caption="图 6-5 施工图预算编制方法">
+<svg viewBox="0 0 580 170" role="img" aria-label="图 6-5 施工图预算编制方法" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="8" y="50" width="150" height="64"></rect>
+    <rect x="218" y="20" width="105" height="40"></rect>
+    <rect x="218" y="115" width="105" height="40"></rect>
+    <rect x="374" y="4" width="190" height="36"></rect>
+    <rect x="374" y="58" width="190" height="36"></rect>
+    <path d="M158,82 H192 M192,40 V135 M192,40 H214 M192,135 H214"></path>
+    <path d="M323,40 H348 M348,22 V76 M348,22 H370 M348,76 H370"></path>
+  </g>
+  <g fill="currentColor" font-size="14">
+    <text x="83" y="76" text-anchor="middle">施工图预算</text>
+    <text x="83" y="98" text-anchor="middle">编制方法</text>
+    <text x="270" y="45" text-anchor="middle">单价法</text>
+    <text x="270" y="140" text-anchor="middle">实物量法</text>
+    <text x="469" y="27" text-anchor="middle">定额单价法</text>
+    <text x="469" y="81" text-anchor="middle">工程量清单单价法</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-5 施工图预算编制方法</p>
 
@@ -220,7 +270,65 @@ d. 对计算结果的计量单位进行调整，使之与定额中相应的分�
 
 （2）两者的单价不同。定额单价法的单价由人工费、材料费、施工机具使用费构成；
 
-<FigureZoom caption="图 6-6 清单费用构成及计量费用计算程序" src="/images/investment/chapter-06/fig-6-06.png" :width="565" :height="579" />
+<FigureZoom caption="图 6-6 清单费用构成及计量费用计算程序">
+<svg viewBox="0 0 720 620" role="img" aria-label="图 6-6 清单费用构成及计量费用计算程序" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-6-6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="10" y="10" width="300" height="560" stroke-dasharray="6 4"></rect>
+    <rect x="380" y="10" width="330" height="560" stroke-dasharray="6 4"></rect>
+    <rect x="45" y="70" width="230" height="34"></rect>
+    <rect x="60" y="136" width="48" height="95"></rect>
+    <rect x="212" y="136" width="48" height="95"></rect>
+    <rect x="45" y="255" width="230" height="34"></rect>
+    <rect x="60" y="323" width="48" height="95"></rect>
+    <rect x="212" y="323" width="48" height="95"></rect>
+    <rect x="45" y="445" width="230" height="34"></rect>
+    <rect x="45" y="505" width="230" height="34"></rect>
+    <path d="M160,104 V118 M84,118 H236"></path>
+    <path d="M84,118 V136" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M236,118 V136" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M160,289 V305 M84,305 H236"></path>
+    <path d="M84,305 V323" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M236,305 V323" marker-end="url(#arrow-inv-6-6)"></path>
+    <rect x="420" y="55" width="250" height="38"></rect>
+    <rect x="420" y="115" width="250" height="38"></rect>
+    <rect x="420" y="175" width="250" height="38"></rect>
+    <rect x="420" y="235" width="250" height="52"></rect>
+    <rect x="420" y="309" width="250" height="38"></rect>
+    <rect x="420" y="369" width="250" height="38"></rect>
+    <rect x="420" y="429" width="250" height="52"></rect>
+    <path d="M545,93 V115" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M545,153 V175" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M545,213 V235" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M545,287 V309" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M545,347 V369" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M545,407 V429" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M260,164 H377" marker-end="url(#arrow-inv-6-6)"></path>
+    <path d="M260,335 H377" marker-end="url(#arrow-inv-6-6)"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="160" y="92" text-anchor="middle">分部分项工程费</text>
+    <text x="84" y="154" text-anchor="middle" font-size="12"><tspan>总</tspan><tspan x="84" dy="20">价</tspan><tspan x="84" dy="20">项</tspan><tspan x="84" dy="20">目</tspan></text>
+    <text x="236" y="154" text-anchor="middle" font-size="12"><tspan>单</tspan><tspan x="236" dy="20">价</tspan><tspan x="236" dy="20">项</tspan><tspan x="236" dy="20">目</tspan></text>
+    <text x="160" y="277" text-anchor="middle">措施项目费</text>
+    <text x="84" y="341" text-anchor="middle" font-size="12"><tspan>总</tspan><tspan x="84" dy="20">价</tspan><tspan x="84" dy="20">项</tspan><tspan x="84" dy="20">目</tspan></text>
+    <text x="236" y="341" text-anchor="middle" font-size="12"><tspan>单</tspan><tspan x="236" dy="20">价</tspan><tspan x="236" dy="20">项</tspan><tspan x="236" dy="20">目</tspan></text>
+    <text x="160" y="467" text-anchor="middle">其他项目费</text>
+    <text x="160" y="527" text-anchor="middle">税金</text>
+    <text x="545" y="79" text-anchor="middle">计算工程量</text>
+    <text x="545" y="139" text-anchor="middle">工、料、机数量测算</text>
+    <text x="545" y="199" text-anchor="middle">市场调查与询价</text>
+    <text x="545" y="255" text-anchor="middle">计算人工费、材料费、</text>
+    <text x="545" y="275" text-anchor="middle">施工机具使用费</text>
+    <text x="545" y="333" text-anchor="middle">计算企业管理费</text>
+    <text x="545" y="393" text-anchor="middle">计算利润</text>
+    <text x="545" y="449" text-anchor="middle">包含在单价项目费用</text>
+    <text x="545" y="469" text-anchor="middle">中的风险费</text>
+    <text x="160" y="595" text-anchor="middle">清单单价法计价构成</text>
+    <text x="545" y="595" text-anchor="middle">单价费用项目计算程序</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-6 清单费用构成及计量费用计算程序</p>
 
