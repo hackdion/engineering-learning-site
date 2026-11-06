@@ -433,14 +433,19 @@ $$
     <rect x="130" y="774" width="150" height="40"></rect>
     <rect x="130" y="835" width="150" height="40"></rect>
     <path d="M95,158 H130 M95,395 H130 M95,640 H130 M95,794 H130 M95,855 H130"></path>
-    <path d="M280,158 H290 M290,145 V370 M290,145 H305 M290,170 H305 M290,195 H305 M290,220 H305 M290,245 H305 M290,270 H305 M290,295 H305 M290,320 H305 M290,345 H305 M290,370 H305"></path>
+    <path d="M280,158 H290 M290,145 V321 M290,145 H305 M290,167 H305 M290,189 H305 M290,211 H305 M290,233 H305 M290,255 H305 M290,277 H305 M290,299 H305 M290,321 H305"></path>
     <path d="M430,145 H505 M505,145 V195 M505,145 H520 M505,170 H520 M505,195 H520"></path>
     <path d="M280,395 H290 M290,382 V607 M290,382 H305 M290,407 H305 M290,432 H305 M290,457 H305 M290,482 H305 M290,507 H305 M290,532 H305 M290,557 H305 M290,582 H305 M290,607 H305"></path>
     <path d="M280,640 H290 M290,627 V702 M290,627 H305 M290,652 H305 M290,677 H305 M290,702 H305"></path>
     <path d="M280,794 H290 M290,794 V838 M290,794 H305 M290,838 H305"></path>
     <path d="M378,794 H400 M400,750 V838 M400,750 H410 M400,772 H410 M400,794 H410 M400,816 H410 M400,838 H410"></path>
-    <path d="M745,148 V677 M745,148 H790 M745,235 H790 M745,335 H790 M745,450 H790 M745,565 H790"></path>
-    <path d="M505,245 H745 M430,507 H745 M430,677 H745"></path>
+    <rect x="790" y="140" width="110" height="36"></rect>
+    <rect x="790" y="217" width="110" height="36"></rect>
+    <rect x="790" y="317" width="110" height="36"></rect>
+    <rect x="790" y="432" width="110" height="36"></rect>
+    <rect x="790" y="622" width="110" height="36"></rect>
+    <path d="M745,158 V640 M745,158 H790 M745,235 H790 M745,335 H790 M745,450 H790 M745,640 H790"></path>
+    <path d="M600,158 H745 M480,395 H745 M430,640 H745"></path>
   </g>
   <g fill="currentColor" font-size="13">
     <text x="22" y="395" text-anchor="middle" font-size="11.5"><tspan>建</tspan><tspan x="22" dy="15">筑</tspan><tspan x="22" dy="15">安</tspan><tspan x="22" dy="15">装</tspan><tspan x="22" dy="15">工</tspan><tspan x="22" dy="15">程</tspan><tspan x="22" dy="15">费</tspan></text>
@@ -451,15 +456,15 @@ $$
     <text x="205" y="800" text-anchor="middle" font-size="14">规费</text>
     <text x="205" y="861" text-anchor="middle" font-size="14">税金</text>
     <text x="310" y="150">房屋建筑与装饰工程</text>
-    <text x="310" y="175">仿古建筑工程</text>
-    <text x="310" y="200">通用安装工程</text>
-    <text x="310" y="225">市政工程</text>
-    <text x="310" y="250">园林绿化工程</text>
-    <text x="310" y="275">矿山工程</text>
-    <text x="310" y="300">构筑物工程</text>
-    <text x="310" y="325">城市轨道交通工程</text>
-    <text x="310" y="350">爆破工程</text>
-    <text x="310" y="375">……</text>
+    <text x="310" y="172">仿古建筑工程</text>
+    <text x="310" y="194">通用安装工程</text>
+    <text x="310" y="216">市政工程</text>
+    <text x="310" y="238">园林绿化工程</text>
+    <text x="310" y="260">矿山工程</text>
+    <text x="310" y="282">构筑物工程</text>
+    <text x="310" y="304">城市轨道交通工程</text>
+    <text x="310" y="326">爆破工程</text>
+    <text x="310" y="348">……</text>
     <text x="520" y="150">土石方工程</text>
     <text x="520" y="175">桩基工程</text>
     <text x="520" y="200">……</text>
@@ -484,11 +489,11 @@ $$
     <text x="415" y="799">医疗保险费</text>
     <text x="415" y="821">生育保险费</text>
     <text x="415" y="843">工伤保险费</text>
-    <text x="845" y="154" text-anchor="middle" font-size="14">人工费</text>
+    <text x="845" y="164" text-anchor="middle" font-size="14">人工费</text>
     <text x="845" y="241" text-anchor="middle" font-size="14">材料费</text>
     <text x="845" y="341" text-anchor="middle" font-size="14">施工机具使用费</text>
     <text x="845" y="456" text-anchor="middle" font-size="14">企业管理费</text>
-    <text x="845" y="571" text-anchor="middle" font-size="14">利润</text>
+    <text x="845" y="646" text-anchor="middle" font-size="14">利润</text>
   </g>
 </svg>
 </FigureZoom>

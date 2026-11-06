@@ -77,12 +77,12 @@ $$
     <path d="M165,90 H178" marker-end="url(#arrow-inv-8-7)"></path>
     <path d="M640,90 H688" marker-end="url(#arrow-inv-8-7)"></path>
     <rect x="690" y="55" width="165" height="55"></rect>
-    <path d="M772,110 V152" marker-end="url(#arrow-inv-8-7)"></path>
-    <path d="M772,198 L852,150 L932,198 L852,246 Z"></path>
+    <path d="M772,110 V148" marker-end="url(#arrow-inv-8-7)"></path>
+    <path d="M692,198 L772,150 L852,198 L772,246 Z"></path>
     <path d="M692,198 H642" marker-end="url(#arrow-inv-8-7)"></path>
     <rect x="490" y="172" width="150" height="52" rx="14"></rect>
     <path d="M545,138 V170" marker-end="url(#arrow-inv-8-7)"></path>
-    <path d="M932,198 H960 M960,170 V240"></path>
+    <path d="M852,198 H960 M960,170 V240"></path>
     <path d="M960,170 H972" marker-end="url(#arrow-inv-8-7)"></path>
     <path d="M960,240 H972" marker-end="url(#arrow-inv-8-7)"></path>
     <rect x="972" y="145" width="138" height="50" rx="14"></rect>

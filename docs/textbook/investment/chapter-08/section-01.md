@@ -35,24 +35,24 @@ sectionTitle: 第一节 资金使用计划编制
 <p class="figure-caption">图 8-1 施工阶段投资控制的工作流程</p>
 
 <FigureZoom caption="图 8-2 按投资构成分解目标">
-<svg viewBox="0 0 720 277" role="img" aria-label="图 8-2 按投资构成分解目标" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 745 277" role="img" aria-label="图 8-2 按投资构成分解目标" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <rect x="300" y="8" width="180" height="40"></rect>
     <rect x="35" y="86" width="130" height="40"></rect>
     <rect x="175" y="86" width="130" height="40"></rect>
     <rect x="315" y="86" width="130" height="40"></rect>
     <rect x="455" y="86" width="130" height="40"></rect>
-    <rect x="585" y="86" width="130" height="40"></rect>
-    <path d="M390,48 V70 M100,70 H650"></path>
-    <path d="M100,70 V86 M240,70 V86 M380,70 V86 M520,70 V86 M650,70 V86"></path>
+    <rect x="595" y="86" width="130" height="40"></rect>
+    <path d="M390,48 V70 M100,70 H660"></path>
+    <path d="M100,70 V86 M240,70 V86 M380,70 V86 M520,70 V86 M660,70 V86"></path>
     <path d="M100,126 V150 M55,150 H145 M60,150 V170 M100,150 V170 M140,150 V170"></path>
     <path d="M240,126 V150 M195,150 H285 M200,150 V170 M240,150 V170 M280,150 V170"></path>
     <path d="M380,126 V150 M335,150 H425 M340,150 V170 M380,150 V170 M420,150 V170"></path>
     <path d="M520,126 V150 M475,150 H565 M480,150 V170 M520,150 V170 M560,150 V170"></path>
-    <path d="M650,126 V150 M600,150 H700 M605,150 V168 M650,150 V168 M695,150 V168"></path>
-    <rect x="588" y="170" width="34" height="102"></rect>
-    <rect x="633" y="170" width="34" height="102"></rect>
-    <rect x="678" y="170" width="34" height="102"></rect>
+    <path d="M660,126 V150 M610,150 H710 M615,150 V168 M660,150 V168 M705,150 V168"></path>
+    <rect x="598" y="170" width="34" height="102"></rect>
+    <rect x="643" y="170" width="34" height="102"></rect>
+    <rect x="688" y="170" width="34" height="102"></rect>
   </g>
   <g fill="currentColor" font-size="14">
     <text x="390" y="33" text-anchor="middle">××项目总投资</text>
@@ -60,7 +60,7 @@ sectionTitle: 第一节 资金使用计划编制
     <text x="240" y="111" text-anchor="middle">安装工程投资</text>
     <text x="380" y="111" text-anchor="middle">设备购置投资</text>
     <text x="520" y="111" text-anchor="middle">预备费</text>
-    <text x="650" y="111" text-anchor="middle">其他投资</text>
+    <text x="660" y="111" text-anchor="middle">其他投资</text>
     <text x="60" y="190" text-anchor="middle">……</text>
     <text x="100" y="190" text-anchor="middle">……</text>
     <text x="140" y="190" text-anchor="middle">……</text>
@@ -73,9 +73,9 @@ sectionTitle: 第一节 资金使用计划编制
     <text x="480" y="190" text-anchor="middle">……</text>
     <text x="520" y="190" text-anchor="middle">……</text>
     <text x="560" y="190" text-anchor="middle">……</text>
-    <text x="605" y="187" text-anchor="middle" font-size="13"><tspan>土</tspan><tspan x="605" dy="14">地</tspan><tspan x="605" dy="14">使</tspan><tspan x="605" dy="14">用</tspan><tspan x="605" dy="14">费</tspan></text>
-    <text x="650" y="187" text-anchor="middle" font-size="13"><tspan>建</tspan><tspan x="650" dy="14">设</tspan><tspan x="650" dy="14">单</tspan><tspan x="650" dy="14">位</tspan><tspan x="650" dy="14">管</tspan><tspan x="650" dy="14">理</tspan><tspan x="650" dy="14">费</tspan></text>
-    <text x="695" y="187" text-anchor="middle" font-size="13"><tspan>勘</tspan><tspan x="695" dy="14">察</tspan><tspan x="695" dy="14">设</tspan><tspan x="695" dy="14">计</tspan><tspan x="695" dy="14">费</tspan><tspan x="695" dy="14">等</tspan></text>
+    <text x="615" y="187" text-anchor="middle" font-size="13"><tspan>土</tspan><tspan x="615" dy="14">地</tspan><tspan x="615" dy="14">使</tspan><tspan x="615" dy="14">用</tspan><tspan x="615" dy="14">费</tspan></text>
+    <text x="660" y="187" text-anchor="middle" font-size="13"><tspan>建</tspan><tspan x="660" dy="14">设</tspan><tspan x="660" dy="14">单</tspan><tspan x="660" dy="14">位</tspan><tspan x="660" dy="14">管</tspan><tspan x="660" dy="14">理</tspan><tspan x="660" dy="14">费</tspan></text>
+    <text x="705" y="187" text-anchor="middle" font-size="13"><tspan>勘</tspan><tspan x="705" dy="14">察</tspan><tspan x="705" dy="14">设</tspan><tspan x="705" dy="14">计</tspan><tspan x="705" dy="14">费</tspan><tspan x="705" dy="14">等</tspan></text>
   </g>
 </svg>
 </FigureZoom>
@@ -97,7 +97,7 @@ sectionTitle: 第一节 资金使用计划编制
     <rect x="350" y="166" width="110" height="48"></rect>
     <path d="M320,46 V70 M100,70 H650 M650,70 V92"></path>
     <path d="M100,70 V86 M320,70 V86 M540,70 V86"></path>
-    <path d="M320,126 V150 M240,150 H440 M270,150 V166 M370,150 V166"></path>
+    <path d="M320,126 V150 M285,150 H490 M285,150 V166 M405,150 V166 M490,150 V182"></path>
   </g>
   <g fill="currentColor" font-size="14">
     <text x="320" y="31" text-anchor="middle">××项目总投资</text>

@@ -93,9 +93,9 @@ sectionTitle: 第一节 工程项目投资特点和控制原理
     <path d="M385,44 V54" marker-end="url(#arrow-inv-1-2)"></path>
     <path d="M250,72 H94 V134" marker-end="url(#arrow-inv-1-2)"></path>
     <path d="M172,164 H333 V176" marker-end="url(#arrow-inv-1-2)"></path>
-    <path d="M94,194 V284 H330" marker-end="url(#arrow-inv-1-2)"></path>
-    <path d="M270,236 V272 H330" marker-end="url(#arrow-inv-1-2)"></path>
-    <path d="M262,298 H330" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M94,194 V280 H330" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M270,236 V268 H330" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M158,292 H330" marker-end="url(#arrow-inv-1-2)"></path>
     <path d="M480,280 H675 V236" marker-end="url(#arrow-inv-1-2)"></path>
     <path d="M675,176 V72 H630" marker-end="url(#arrow-inv-1-2)"></path>
     <path d="M302,386 H370" marker-end="url(#arrow-inv-1-2)"></path>
@@ -116,7 +116,7 @@ sectionTitle: 第一节 工程项目投资特点和控制原理
     <text x="210" y="380" text-anchor="middle">事先分析各种产</text>
     <text x="210" y="402" text-anchor="middle">生偏差的原因</text>
     <text x="480" y="390" text-anchor="middle">决策，采取预防措施</text>
-    <text x="20" y="292">人力、财力、物力投入</text>
+    <text x="20" y="296">人力、财力、物力投入</text>
     <text x="250" y="352">干扰</text>
     <text x="655" y="64">实际值</text>
   </g>

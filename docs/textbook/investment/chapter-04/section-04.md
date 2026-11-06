@@ -71,10 +71,11 @@ sectionTitle: 第四节 项目融资特点、程序和主要方式
     <path d="M226,300 V313" marker-end="url(#arrow-inv-4-1)"></path>
     <path d="M226,425 V438" marker-end="url(#arrow-inv-4-1)"></path>
     <path d="M226,580 V593" marker-end="url(#arrow-inv-4-1)"></path>
-    <path d="M440,225 H467 V345"></path>
-    <path d="M440,330 H467"></path>
-    <path d="M440,445 H467"></path>
-    <path d="M467,425 V650 H440"></path>
+    <path d="M467,146 V345 M467,425 V586"></path>
+    <path d="M467,146 H228" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M467,306 H228" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M467,431 H228" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M467,586 H228" marker-end="url(#arrow-inv-4-1)"></path>
     <rect x="443" y="345" width="50" height="80"></rect>
   </g>
   <g fill="currentColor" font-size="13">
