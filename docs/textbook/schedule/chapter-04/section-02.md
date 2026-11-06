@@ -40,7 +40,28 @@ sectionTitle: 第二节 实际进度与计划进度的比较方法
 
 （3）将检查收集到的实际进度数据经加工整理后按比例用涂黑的粗线标于计划进度的下方，如图4-5所示；
 
-<FigureZoom caption="图 4-5 匀速进展横道图比较图" src="/images/schedule/chapter-04/fig-4-05.png" :width="606" :height="183" />
+<FigureZoom caption="图 4-5 匀速进展横道图比较图">
+<svg viewBox="0 0 606 183" role="img" aria-label="图 4-5 匀速进展横道图比较图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M14,34 C8,38 7,47 9,53 C17,66 30,79 40,90 C46,97 49,103 51,110 H598 C596,106 593,100 588,94 C581,84 575,76 568,70 C562,62 561,45 567,34 Z"></path>
+    <path d="M85,27 V34 M157,27 V34 M229,27 V34 M300,27 V34 M372,27 V34 M443,27 V34 M515,27 V34"></path>
+    <path d="M85,110 V120 M157,110 V120 M229,110 V120 M300,110 V120 M372,110 V120 M443,110 V120 M515,110 V120"></path>
+    <rect x="86" y="63" width="429" height="19"></rect>
+  </g>
+  <rect x="86" y="63" width="249" height="19" fill="currentColor" fill-opacity="0.65"></rect>
+  <path d="M372,132 L380,148 H364 Z" fill="currentColor"></path>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="121" y="29" font-size="16">1</text>
+    <text x="193" y="29" font-size="16">2</text>
+    <text x="265" y="29" font-size="16">3</text>
+    <text x="336" y="29" font-size="16">4</text>
+    <text x="408" y="29" font-size="16">5</text>
+    <text x="479" y="29" font-size="16">6</text>
+    <text x="556" y="27" font-size="18">(周)</text>
+    <text x="372" y="174" font-size="16">检查日期</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-5 匀速进展横道图比较图</p>
 
@@ -92,7 +113,47 @@ sectionTitle: 第二节 实际进度与计划进度的比较方法
 
 （4）用涂黑粗线标出实际投入的时间。图 4-7 表明，该工作实际开始时间晚于计划开始时间，在开始后连续工作，没有中断；
 
-<FigureZoom caption="图 4-7 非匀速进展横道图比较图" src="/images/schedule/chapter-04/fig-4-07.png" :width="724" :height="262" />
+<FigureZoom caption="图 4-7 非匀速进展横道图比较图">
+<svg viewBox="0 0 724 262" role="img" aria-label="图 4-7 非匀速进展横道图比较图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M11,41 H483"></path>
+    <path d="M30,33 V41 M94,33 V41 M159,33 V41 M224,33 V41 M288,33 V41 M353,33 V41 M417,33 V41 M482,33 V41"></path>
+    <path d="M11,197 H483"></path>
+    <path d="M30,189 V197 M94,189 V197 M159,189 V197 M224,189 V197 M288,189 V197 M353,189 V197 M417,189 V197 M482,189 V197"></path>
+    <rect x="33" y="110" width="448" height="17"></rect>
+  </g>
+  <rect x="61" y="110" width="230" height="17" fill="currentColor" fill-opacity="0.65"></rect>
+  <path d="M290,208 L299,228 H281 Z" fill="currentColor"></path>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="62" y="28" font-size="16">1</text>
+    <text x="127" y="28" font-size="16">2</text>
+    <text x="192" y="28" font-size="16">3</text>
+    <text x="256" y="28" font-size="16">4</text>
+    <text x="320" y="28" font-size="16">5</text>
+    <text x="385" y="28" font-size="16">6</text>
+    <text x="450" y="28" font-size="16">7</text>
+    <text x="556" y="26" font-size="18">(周)</text>
+    <text x="30" y="60" font-size="16">0</text>
+    <text x="94" y="60" font-size="16">10</text>
+    <text x="159" y="60" font-size="16">25</text>
+    <text x="224" y="60" font-size="16">45</text>
+    <text x="288" y="60" font-size="16">65</text>
+    <text x="353" y="60" font-size="16">80</text>
+    <text x="417" y="60" font-size="16">90</text>
+    <text x="482" y="60" font-size="16">100</text>
+    <text x="30" y="187" font-size="16">0</text>
+    <text x="94" y="187" font-size="16">8</text>
+    <text x="159" y="187" font-size="16">22</text>
+    <text x="224" y="187" font-size="16">42</text>
+    <text x="288" y="187" font-size="16">60</text>
+    <text x="289" y="251" font-size="16">检查日期</text>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="19">
+    <text x="495" y="63">(%) 计划累计完成百分比</text>
+    <text x="506" y="177">(%) 实际累计完成百分比</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-7 非匀速进展横道图比较图</p>
 
