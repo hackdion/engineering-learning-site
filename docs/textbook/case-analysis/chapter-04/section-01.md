@@ -64,7 +64,33 @@ sectionTitle: 第一节 工程监理组织、工作内容与相关法规
 
 （5）技术措施。
 
-<FigureZoom caption="图 4-1 直线制监理组织机构" src="/images/case-analysis/chapter-04/fig-4-01.png" :width="582" :height="365" />
+<FigureZoom caption="图 4-1 直线制监理组织机构">
+<svg viewBox="0 0 600 280" role="img" aria-label="图 4-1 直线制监理组织机构" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="205" y="20" width="190" height="38"></rect>
+    <path d="M300,58 V85 M152,85 H448 M152,85 V110 M448,85 V110"></path>
+    <rect x="57" y="110" width="190" height="62"></rect>
+    <rect x="353" y="110" width="190" height="62"></rect>
+    <path d="M152,172 V195 M89,195 H215 M89,195 V220 M215,195 V220"></path>
+    <path d="M448,172 V195 M385,195 H511 M385,195 V220 M511,195 V220"></path>
+    <rect x="39" y="220" width="100" height="34"></rect>
+    <rect x="165" y="220" width="100" height="34"></rect>
+    <rect x="335" y="220" width="100" height="34"></rect>
+    <rect x="461" y="220" width="100" height="34"></rect>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="300" y="44">总监理工程师</text>
+    <text x="152" y="134" font-size="13">下部结构子项目</text>
+    <text x="152" y="156" font-size="13">专业监理工程师</text>
+    <text x="448" y="134" font-size="13">上部结构子项目</text>
+    <text x="448" y="156" font-size="13">专业监理工程师</text>
+    <text x="89" y="242">监理员</text>
+    <text x="215" y="242">监理员</text>
+    <text x="385" y="242">监理员</text>
+    <text x="511" y="242">监理员</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-1 直线制监理组织机构</p>
 

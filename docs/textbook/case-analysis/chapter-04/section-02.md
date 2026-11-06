@@ -402,7 +402,48 @@ sectionTitle: 第二节 工程质量控制
 
 1. 事件1中，钢筋混凝土质量问题因果分析图见图4-6。
 
-<FigureZoom caption="图 4-6 钢筋混凝土质量问题因果分析图" src="/images/case-analysis/chapter-04/fig-4-06.png" :width="900" :height="375" />
+<FigureZoom caption="图 4-6 钢筋混凝土质量问题因果分析图">
+<svg viewBox="0 0 900 310" role="img" aria-label="图 4-6 钢筋混凝土质量问题因果分析图" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M110,170 H745" marker-end="url(#arrow-case-4-6)"></path>
+    <rect x="755" y="70" width="34" height="200"></rect>
+    <rect x="180" y="55" width="88" height="33"></rect>
+    <rect x="372" y="55" width="88" height="33"></rect>
+    <rect x="546" y="55" width="88" height="33"></rect>
+    <path d="M254,88 L300,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M446,88 L492,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M620,88 L666,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M165,135 H280" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M360,135 H472" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M530,135 H646" marker-end="url(#arrow-case-4-6)"></path>
+    <rect x="240" y="265" width="90" height="35"></rect>
+    <rect x="470" y="265" width="90" height="35"></rect>
+    <path d="M285,265 L350,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M240,225 H312" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M420,252 H294" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M505,265 L480,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M545,265 L600,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M440,235 H497" marker-end="url(#arrow-case-4-6)"></path>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="224" y="78">材料</text>
+    <text x="416" y="78">机械</text>
+    <text x="590" y="78">人员</text>
+    <text x="285" y="288">环境</text>
+    <text x="515" y="288">方法</text>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <text x="772" y="108"><tspan>钢</tspan><tspan x="772" dy="19">筋</tspan><tspan x="772" dy="19">混</tspan><tspan x="772" dy="19">凝</tspan><tspan x="772" dy="19">土</tspan><tspan x="772" dy="19">质</tspan><tspan x="772" dy="19">量</tspan><tspan x="772" dy="19">问</tspan><tspan x="772" dy="19">题</tspan></text>
+    <text x="180" y="130">⑥</text>
+    <text x="374" y="130">③</text>
+    <text x="545" y="130">①</text>
+    <text x="230" y="220">④</text>
+    <text x="400" y="247">⑤</text>
+    <text x="452" y="230">②</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-6 钢筋混凝土质量问题因果分析图</p>
 
