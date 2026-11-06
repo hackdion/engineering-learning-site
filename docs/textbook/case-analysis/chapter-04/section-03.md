@@ -1453,7 +1453,81 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 事件1：工程总承包单位A将两个专业工程暂估价工程经招标分别发包给具有相应资质的分包单位B和C。分包合同约定发生索赔事件应在28天内提出。分包单位B完成B1、B2两项工作。分包单位C完成C1、C2两项工作。分包招标后，总承包单位A要求建设单位支付组织专业工程发包过程中发生的招标相关费用8万元。经总承包单位A与专业分包单位B、C协商工程网络进度计划如图4-22所示。
 
-<FigureZoom caption="图 4-22 工程网络进度计划" src="/images/case-analysis/chapter-04/fig-4-22.png" :width="920" :height="265" />
+<FigureZoom caption="图 4-22 工程网络进度计划">
+  <svg viewBox="0 0 920 265" role="img" aria-label="图 4-22 工程网络进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-22" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M55,123 H170" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M183,111 V29 H344" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M196,123 H344" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M183,135 V216 H344" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M369,117 L519,36" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M369,29 H516" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M541,29 H703 V110" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M369,123 H516" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M541,123 H690" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M715,123 H863" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M369,216 H516" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M541,216 H703 V135" marker-end="url(#arrow-case-4-22)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M357,41 V110" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M357,204 V135" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M529,41 V110" marker-end="url(#arrow-case-4-22)"></path>
+    <path d="M529,135 V203" marker-end="url(#arrow-case-4-22)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="43" cy="123" r="12"></circle>
+    <circle cx="183" cy="123" r="12"></circle>
+    <circle cx="357" cy="29" r="12"></circle>
+    <circle cx="357" cy="216" r="12"></circle>
+    <circle cx="357" cy="123" r="12"></circle>
+    <circle cx="529" cy="29" r="12"></circle>
+    <circle cx="529" cy="123" r="12"></circle>
+    <circle cx="529" cy="216" r="12"></circle>
+    <circle cx="703" cy="123" r="12"></circle>
+    <circle cx="876" cy="123" r="12"></circle>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="17" text-anchor="middle">
+    <text x="112" y="110">A1</text>
+    <text x="112" y="148">25</text>
+    <text x="252" y="16">C1</text>
+    <text x="252" y="53">35</text>
+    <text x="262" y="110">A2</text>
+    <text x="262" y="148">15</text>
+    <text x="252" y="203">A3</text>
+    <text x="252" y="241">25</text>
+    <text x="442" y="16">B1</text>
+    <text x="442" y="53">20</text>
+    <text x="480" y="44">C2</text>
+    <text x="494" y="76">10</text>
+    <text x="622" y="16">B2</text>
+    <text x="622" y="53">40</text>
+    <text x="450" y="110">A4</text>
+    <text x="450" y="148">60</text>
+    <text x="615" y="110">A6</text>
+    <text x="615" y="148">20</text>
+    <text x="445" y="203">A5</text>
+    <text x="445" y="241">25</text>
+    <text x="622" y="203">A7</text>
+    <text x="622" y="241">60</text>
+    <text x="790" y="110">A8</text>
+    <text x="790" y="148">30</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16.5" text-anchor="middle">
+    <text x="43" y="129">1</text>
+    <text x="183" y="129">2</text>
+    <text x="357" y="35">3</text>
+    <text x="357" y="222">4</text>
+    <text x="357" y="129">5</text>
+    <text x="529" y="35">6</text>
+    <text x="529" y="129">7</text>
+    <text x="529" y="222">8</text>
+    <text x="703" y="129">9</text>
+    <text x="876" y="129">10</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-22 工程网络进度计划</p>
 
@@ -1517,7 +1591,84 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 某实行监理的工程，施工合同采用《建设工程施工合同（示范文本）》GF-2017-0201，合同约定，吊装机械闲置补偿费600元/台班，单独计算，不进入直接费。经项目监理机构审核批准的施工总进度计划如图4-23所示（时间单位：月）。
 
-<FigureZoom caption="图 4-23 施工总进度计划（初始计划）" src="/images/case-analysis/chapter-04/fig-4-23.png" :width="790" :height="245" />
+<FigureZoom caption="图 4-23 施工总进度计划（初始计划）">
+  <svg viewBox="0 -6 790 251" role="img" aria-label="图 4-23 施工总进度计划（初始计划）" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-23" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <path d="M64,104.5 V18 H196.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M75,115.5 H196.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M64,126.5 V208 H341.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M218.5,18 H341.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M218.5,115.5 H341.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M363.5,18 H487.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M363.5,115.5 H487.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M363.5,208 H640 V126.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M498.5,29 V104.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M509.5,18 H629" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M509.5,115.5 H629" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M640,29 V104.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M651,115.5 H767" marker-end="url(#arrow-case-4-23)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M207.5,29 V104.5" marker-end="url(#arrow-case-4-23)"></path>
+    <path d="M352.5,197 V126.5" marker-end="url(#arrow-case-4-23)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="64" cy="115.5" r="11"></circle>
+    <circle cx="207.5" cy="18" r="11"></circle>
+    <circle cx="207.5" cy="115.5" r="11"></circle>
+    <circle cx="352.5" cy="208" r="11"></circle>
+    <circle cx="352.5" cy="18" r="11"></circle>
+    <circle cx="352.5" cy="115.5" r="11"></circle>
+    <circle cx="498.5" cy="18" r="11"></circle>
+    <circle cx="498.5" cy="115.5" r="11"></circle>
+    <circle cx="640" cy="18" r="11"></circle>
+    <circle cx="640" cy="115.5" r="11"></circle>
+    <circle cx="778" cy="115.5" r="11"></circle>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="15" text-anchor="middle">
+    <text x="120" y="8">A</text>
+    <text x="120" y="43">3</text>
+    <text x="130" y="104">B</text>
+    <text x="130" y="139">1</text>
+    <text x="210" y="196">C</text>
+    <text x="210" y="231">3</text>
+    <text x="280" y="8">D</text>
+    <text x="280" y="43">4</text>
+    <text x="280" y="104">E</text>
+    <text x="280" y="139">3</text>
+    <text x="425" y="8">F</text>
+    <text x="425" y="43">2</text>
+    <text x="425" y="104">G</text>
+    <text x="425" y="139">4</text>
+    <text x="500" y="196">H</text>
+    <text x="500" y="231">6</text>
+    <text x="570" y="8">J</text>
+    <text x="570" y="43">2</text>
+    <text x="570" y="104">K</text>
+    <text x="570" y="139">5</text>
+    <text x="710" y="104">M</text>
+    <text x="710" y="139">3</text>
+    <text x="488" y="100">I</text>
+    <text x="511" y="100">3</text>
+    <text x="628" y="64">L</text>
+    <text x="655" y="64">1</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="14" text-anchor="middle">
+    <text x="64" y="120.5">1</text>
+    <text x="207.5" y="23">2</text>
+    <text x="207.5" y="120.5">3</text>
+    <text x="352.5" y="213">4</text>
+    <text x="352.5" y="23">5</text>
+    <text x="352.5" y="120.5">6</text>
+    <text x="498.5" y="23">7</text>
+    <text x="498.5" y="120.5">8</text>
+    <text x="640" y="23">9</text>
+    <text x="640" y="120.5">10</text>
+    <text x="778" y="120.5">11</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-23 施工总进度计划（初始计划）</p>
 
@@ -1595,7 +1746,64 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 承包单位开工前编制并经总监理工程师认可的施工进度计划如图4-24所示。施工过程中发生了以下4个事件，致使承包单位完成该项目的施工实际用了15个月。
 
-<FigureZoom caption="图 4-24 施工进度计划" src="/images/case-analysis/chapter-04/fig-4-24.png" :width="665" :height="300" />
+<FigureZoom caption="图 4-24 施工进度计划">
+  <svg viewBox="0 0 665 300" role="img" aria-label="图 4-24 施工进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-24" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <path d="M90.5,157 H156.5" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M167.5,146 V46.5 H264.5" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M167.5,168 V271.5 H264.5" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M286.5,46.5 H437.5" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M286.5,157 H437.5" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M286.5,271.5 H628.5 V168" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M459.5,46.5 H628.5 V146" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M459.5,157 H617.5" marker-end="url(#arrow-case-4-24)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M275.5,57.5 V146" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M275.5,260.5 V168" marker-end="url(#arrow-case-4-24)"></path>
+    <path d="M448.5,57.5 V145.5" marker-end="url(#arrow-case-4-24)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="79.5" cy="157" r="11"></circle>
+    <circle cx="167.5" cy="157" r="11"></circle>
+    <circle cx="275.5" cy="46.5" r="11"></circle>
+    <circle cx="275.5" cy="271.5" r="11"></circle>
+    <circle cx="275.5" cy="157" r="11"></circle>
+    <circle cx="448.5" cy="46.5" r="11"></circle>
+    <circle cx="448.5" cy="157" r="11"></circle>
+    <circle cx="628.5" cy="157" r="11"></circle>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="12.5" text-anchor="middle">
+    <text x="118" y="145">A</text>
+    <text x="118" y="180">2</text>
+    <text x="216" y="34">B</text>
+    <text x="216" y="69">3</text>
+    <text x="216" y="259">C</text>
+    <text x="216" y="294">2</text>
+    <text x="360" y="34">D</text>
+    <text x="360" y="69">3</text>
+    <text x="360" y="145">E</text>
+    <text x="360" y="180">2</text>
+    <text x="455" y="259">F</text>
+    <text x="455" y="294">4</text>
+    <text x="542" y="34">G</text>
+    <text x="542" y="69">2</text>
+    <text x="542" y="145">H</text>
+    <text x="542" y="180">5</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="12" text-anchor="middle">
+    <text x="79.5" y="161.4">1</text>
+    <text x="167.5" y="161.4">2</text>
+    <text x="275.5" y="50.9">3</text>
+    <text x="275.5" y="275.9">4</text>
+    <text x="275.5" y="161.4">5</text>
+    <text x="448.5" y="50.9">6</text>
+    <text x="448.5" y="161.4">7</text>
+    <text x="628.5" y="161.4">8</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-24 施工进度计划</p>
 
