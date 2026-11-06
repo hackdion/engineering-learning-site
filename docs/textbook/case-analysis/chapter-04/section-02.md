@@ -421,10 +421,9 @@ sectionTitle: 第二节 工程质量控制
     <rect x="470" y="265" width="90" height="35"></rect>
     <path d="M285,265 L350,170" marker-end="url(#arrow-case-4-6)"></path>
     <path d="M240,225 H312" marker-end="url(#arrow-case-4-6)"></path>
-    <path d="M420,252 H294" marker-end="url(#arrow-case-4-6)"></path>
-    <path d="M505,265 L480,170" marker-end="url(#arrow-case-4-6)"></path>
-    <path d="M545,265 L600,170" marker-end="url(#arrow-case-4-6)"></path>
-    <path d="M440,235 H497" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M372,252 H294" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M515,265 L591,170" marker-end="url(#arrow-case-4-6)"></path>
+    <path d="M467,235 H539" marker-end="url(#arrow-case-4-6)"></path>
   </g>
   <g fill="currentColor" font-size="14" text-anchor="middle">
     <text x="224" y="78">材料</text>
@@ -439,8 +438,8 @@ sectionTitle: 第二节 工程质量控制
     <text x="374" y="130">③</text>
     <text x="545" y="130">①</text>
     <text x="230" y="220">④</text>
-    <text x="400" y="247">⑤</text>
-    <text x="452" y="230">②</text>
+    <text x="345" y="244">⑤</text>
+    <text x="503" y="228">②</text>
   </g>
 </svg>
 </FigureZoom>
