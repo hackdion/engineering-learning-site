@@ -98,7 +98,29 @@ sectionTitle: 第一节 招标工程量清单编制
 
 以房屋建筑与装饰工程中的现浇混凝土独立基础为例，项目编码结构如图 7-1 所示。
 
-<FigureZoom caption="图 7-1 项目编码结构图" src="/images/investment/chapter-07/fig-7-01.png" :width="870" :height="263" />
+<FigureZoom caption="图 7-1 项目编码结构图">
+<svg viewBox="0 0 730 210" role="img" aria-label="图 7-1 项目编码结构图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M10,36 H58 M58,36 V186 H330"></path>
+    <path d="M70,36 H112 M112,36 V154 H330"></path>
+    <path d="M130,36 H172 M172,36 V122 H330"></path>
+    <path d="M190,36 H236 M236,36 V90 H330"></path>
+    <path d="M260,36 H306 M306,36 V58 H330"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="16" y="26">01</text>
+    <text x="76" y="26">05</text>
+    <text x="136" y="26">02</text>
+    <text x="196" y="26">001</text>
+    <text x="266" y="26">×××</text>
+    <text x="336" y="62">第五级为工程量清单项目名称顺序码，从001开始编</text>
+    <text x="336" y="94">第四级为分项工程项目名称顺序码，001表示独立基础</text>
+    <text x="336" y="126">第三级为分部工程顺序码，02表示现浇混凝土构件</text>
+    <text x="336" y="158">第二级为附录分类顺序码，05表示混凝土及钢筋混凝土工程</text>
+    <text x="336" y="190">第一级为专业工程代码，01表示房屋建筑与装饰工程</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 7-1 项目编码结构图</p>
 

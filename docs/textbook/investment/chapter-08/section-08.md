@@ -382,7 +382,58 @@ H工作已完工作实际投资:
 
 一般来说，产生投资偏差的原因有几种，见图8-12。
 
-<FigureZoom caption="图 8-12 投资偏差原因" src="/images/investment/chapter-08/fig-8-12.png" :width="1060" :height="322" />
+<FigureZoom caption="图 8-12 投资偏差原因">
+<svg viewBox="0 0 960 252" role="img" aria-label="图 8-12 投资偏差原因" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M471,27 V45 M89.5,45 H853"></path>
+    <path d="M89.5,45 V62 M251.5,45 V62 M463,45 V62 M674.5,45 V62 M853,45 V62"></path>
+    <path d="M40,94 H139 M169,94 H334 M364,94 H562 M592,94 H757 M787,94 H919"></path>
+    <path d="M40,94 V110 M73,94 V110 M106,94 V110 M139,94 V110"></path>
+    <path d="M169,94 V110 M202,94 V110 M235,94 V110 M268,94 V110 M301,94 V110 M334,94 V110"></path>
+    <path d="M364,94 V110 M397,94 V110 M430,94 V110 M463,94 V110 M496,94 V110 M529,94 V110 M562,94 V110"></path>
+    <path d="M592,94 V110 M625,94 V110 M658,94 V110 M691,94 V110 M724,94 V110 M757,94 V110"></path>
+    <path d="M787,94 V110 M820,94 V110 M853,94 V110 M886,94 V110 M919,94 V110"></path>
+  </g>
+  <g fill="currentColor" font-size="15">
+    <text x="471" y="20" text-anchor="middle" font-size="16">投资偏差原因</text>
+    <text x="89.5" y="78" text-anchor="middle">物价上涨</text>
+    <text x="251.5" y="78" text-anchor="middle">设计原因</text>
+    <text x="463" y="78" text-anchor="middle">业主原因</text>
+    <text x="674.5" y="78" text-anchor="middle">施工原因</text>
+    <text x="853" y="78" text-anchor="middle">客观原因</text>
+  </g>
+  <g fill="currentColor" font-size="14">
+    <text x="40" y="126" text-anchor="middle"><tspan>人</tspan><tspan x="40" dy="16">工</tspan><tspan x="40" dy="16">涨</tspan><tspan x="40" dy="16">价</tspan></text>
+    <text x="73" y="126" text-anchor="middle"><tspan>材</tspan><tspan x="73" dy="16">料</tspan><tspan x="73" dy="16">涨</tspan><tspan x="73" dy="16">价</tspan></text>
+    <text x="106" y="126" text-anchor="middle"><tspan>设</tspan><tspan x="106" dy="16">备</tspan><tspan x="106" dy="16">涨</tspan><tspan x="106" dy="16">价</tspan></text>
+    <text x="139" y="126" text-anchor="middle"><tspan>利</tspan><tspan x="139" dy="16">率</tspan><tspan x="139" dy="16">、</tspan><tspan x="139" dy="16">汇</tspan><tspan x="139" dy="16">率</tspan><tspan x="139" dy="16">变</tspan><tspan x="139" dy="16">化</tspan></text>
+    <text x="169" y="126" text-anchor="middle"><tspan>设</tspan><tspan x="169" dy="16">计</tspan><tspan x="169" dy="16">错</tspan><tspan x="169" dy="16">误</tspan></text>
+    <text x="202" y="126" text-anchor="middle"><tspan>设</tspan><tspan x="202" dy="16">计</tspan><tspan x="202" dy="16">漏</tspan><tspan x="202" dy="16">项</tspan></text>
+    <text x="235" y="126" text-anchor="middle"><tspan>设</tspan><tspan x="235" dy="16">计</tspan><tspan x="235" dy="16">标</tspan><tspan x="235" dy="16">准</tspan><tspan x="235" dy="16">变</tspan><tspan x="235" dy="16">化</tspan></text>
+    <text x="268" y="126" text-anchor="middle"><tspan>设</tspan><tspan x="268" dy="16">计</tspan><tspan x="268" dy="16">保</tspan><tspan x="268" dy="16">守</tspan></text>
+    <text x="301" y="126" text-anchor="middle"><tspan>图</tspan><tspan x="301" dy="16">纸</tspan><tspan x="301" dy="16">提</tspan><tspan x="301" dy="16">供</tspan><tspan x="301" dy="16">不</tspan><tspan x="301" dy="16">及</tspan><tspan x="301" dy="16">时</tspan></text>
+    <text x="334" y="126" text-anchor="middle"><tspan>其</tspan><tspan x="334" dy="16">他</tspan></text>
+    <text x="364" y="126" text-anchor="middle"><tspan>增</tspan><tspan x="364" dy="16">加</tspan><tspan x="364" dy="16">内</tspan><tspan x="364" dy="16">容</tspan></text>
+    <text x="397" y="126" text-anchor="middle"><tspan>投</tspan><tspan x="397" dy="16">资</tspan><tspan x="397" dy="16">规</tspan><tspan x="397" dy="16">划</tspan><tspan x="397" dy="16">不</tspan><tspan x="397" dy="16">当</tspan></text>
+    <text x="430" y="126" text-anchor="middle"><tspan>组</tspan><tspan x="430" dy="16">织</tspan><tspan x="430" dy="16">不</tspan><tspan x="430" dy="16">落</tspan><tspan x="430" dy="16">实</tspan></text>
+    <text x="463" y="126" text-anchor="middle"><tspan>建</tspan><tspan x="463" dy="16">设</tspan><tspan x="463" dy="16">手</tspan><tspan x="463" dy="16">续</tspan><tspan x="463" dy="16">不</tspan><tspan x="463" dy="16">全</tspan></text>
+    <text x="496" y="126" text-anchor="middle"><tspan>协</tspan><tspan x="496" dy="16">调</tspan><tspan x="496" dy="16">不</tspan><tspan x="496" dy="16">佳</tspan></text>
+    <text x="529" y="126" text-anchor="middle"><tspan>未</tspan><tspan x="529" dy="16">及</tspan><tspan x="529" dy="16">时</tspan><tspan x="529" dy="16">提</tspan><tspan x="529" dy="16">供</tspan><tspan x="529" dy="16">场</tspan><tspan x="529" dy="16">地</tspan></text>
+    <text x="562" y="126" text-anchor="middle"><tspan>其</tspan><tspan x="562" dy="16">他</tspan></text>
+    <text x="592" y="126" text-anchor="middle"><tspan>施</tspan><tspan x="592" dy="16">工</tspan><tspan x="592" dy="16">方</tspan><tspan x="592" dy="16">案</tspan><tspan x="592" dy="16">不</tspan><tspan x="592" dy="16">当</tspan></text>
+    <text x="625" y="126" text-anchor="middle"><tspan>材</tspan><tspan x="625" dy="16">料</tspan><tspan x="625" dy="16">代</tspan><tspan x="625" dy="16">用</tspan></text>
+    <text x="658" y="126" text-anchor="middle"><tspan>施</tspan><tspan x="658" dy="16">工</tspan><tspan x="658" dy="16">质</tspan><tspan x="658" dy="16">量</tspan><tspan x="658" dy="16">有</tspan><tspan x="658" dy="16">问</tspan><tspan x="658" dy="16">题</tspan></text>
+    <text x="691" y="126" text-anchor="middle"><tspan>赶</tspan><tspan x="691" dy="16">进</tspan><tspan x="691" dy="16">度</tspan></text>
+    <text x="724" y="126" text-anchor="middle"><tspan>工</tspan><tspan x="724" dy="16">期</tspan><tspan x="724" dy="16">拖</tspan><tspan x="724" dy="16">延</tspan></text>
+    <text x="757" y="126" text-anchor="middle"><tspan>其</tspan><tspan x="757" dy="16">他</tspan></text>
+    <text x="787" y="126" text-anchor="middle"><tspan>自</tspan><tspan x="787" dy="16">然</tspan><tspan x="787" dy="16">因</tspan><tspan x="787" dy="16">素</tspan></text>
+    <text x="820" y="126" text-anchor="middle"><tspan>基</tspan><tspan x="820" dy="16">础</tspan><tspan x="820" dy="16">处</tspan><tspan x="820" dy="16">理</tspan></text>
+    <text x="853" y="126" text-anchor="middle"><tspan>社</tspan><tspan x="853" dy="16">会</tspan><tspan x="853" dy="16">原</tspan><tspan x="853" dy="16">因</tspan></text>
+    <text x="886" y="126" text-anchor="middle"><tspan>法</tspan><tspan x="886" dy="16">规</tspan><tspan x="886" dy="16">变</tspan><tspan x="886" dy="16">化</tspan></text>
+    <text x="919" y="126" text-anchor="middle"><tspan>其</tspan><tspan x="919" dy="16">他</tspan></text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-12 投资偏差原因</p>
 

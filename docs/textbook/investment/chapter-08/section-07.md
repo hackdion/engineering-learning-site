@@ -168,7 +168,45 @@ sectionTitle: 第七节 工程结算与支付
 
 竣工结算支付流程见图 8-8。
 
-<FigureZoom caption="图 8-8 竣工结算支付流程" src="/images/investment/chapter-08/fig-8-08.png" :width="937" :height="342" />
+<FigureZoom caption="图 8-8 竣工结算支付流程">
+<svg viewBox="0 0 950 360" role="img" aria-label="图 8-8 竣工结算支付流程" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-8-8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="5" y="125" width="160" height="105" rx="14"></rect>
+    <path d="M165,177 H190" marker-end="url(#arrow-inv-8-8)"></path>
+    <path d="M205,177 L300,115 L395,177 L300,239 Z"></path>
+    <path d="M395,177 H505" marker-end="url(#arrow-inv-8-8)"></path>
+    <path d="M505,177 L600,115 L695,177 L600,239 Z"></path>
+    <path d="M300,115 V82 H600 V112" marker-end="url(#arrow-inv-8-8)"></path>
+    <path d="M695,177 H758" marker-end="url(#arrow-inv-8-8)"></path>
+    <path d="M600,239 V290" marker-end="url(#arrow-inv-8-8)"></path>
+    <rect x="760" y="147" width="160" height="60" rx="14"></rect>
+    <rect x="500" y="292" width="200" height="50" rx="14"></rect>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="85" y="151" text-anchor="middle">承包人在规</text>
+    <text x="85" y="171" text-anchor="middle">定时间内提</text>
+    <text x="85" y="191" text-anchor="middle">交竣工结算</text>
+    <text x="85" y="211" text-anchor="middle">支付申请</text>
+    <text x="300" y="160" text-anchor="middle">发包人</text>
+    <text x="300" y="180" text-anchor="middle">在规定时间内核实、</text>
+    <text x="300" y="200" text-anchor="middle">签发证书</text>
+    <text x="600" y="160" text-anchor="middle">发包人</text>
+    <text x="600" y="180" text-anchor="middle">在约定时间内</text>
+    <text x="600" y="200" text-anchor="middle">进行支付</text>
+    <text x="450" y="160" text-anchor="middle">是</text>
+    <text x="725" y="160" text-anchor="middle">否</text>
+    <text x="612" y="266" text-anchor="middle">是</text>
+    <text x="600" y="30" text-anchor="middle">发包人在规定时间内不予核实也</text>
+    <text x="600" y="48" text-anchor="middle">不签发支付证书的，视为发包人</text>
+    <text x="600" y="66" text-anchor="middle">认可承包人提交的竣工结算价款</text>
+    <text x="300" y="78" text-anchor="middle">否</text>
+    <text x="840" y="169" text-anchor="middle">承包人催告、</text>
+    <text x="840" y="189" text-anchor="middle">索赔</text>
+    <text x="600" y="322" text-anchor="middle">竣工结算支付结束</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-8 竣工结算支付流程</p>
 

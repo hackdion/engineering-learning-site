@@ -66,7 +66,57 @@ $$
 
 预付款支付流程见图8-7。
 
-<FigureZoom caption="图 8-7 预付款支付流程" src="/images/investment/chapter-08/fig-8-07.png" :width="1057" :height="247" />
+<FigureZoom caption="图 8-7 预付款支付流程">
+<svg viewBox="0 0 1120 290" role="img" aria-label="图 8-7 预付款支付流程" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-8-7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="5" y="45" width="160" height="95" rx="14"></rect>
+    <path d="M180,90 L280,42 L380,90 L280,138 Z"></path>
+    <path d="M370,90 H448" marker-end="url(#arrow-inv-8-7)"></path>
+    <path d="M450,90 L545,42 L640,90 L545,138 Z"></path>
+    <path d="M165,90 H178" marker-end="url(#arrow-inv-8-7)"></path>
+    <path d="M640,90 H688" marker-end="url(#arrow-inv-8-7)"></path>
+    <rect x="690" y="55" width="165" height="55"></rect>
+    <path d="M772,110 V152" marker-end="url(#arrow-inv-8-7)"></path>
+    <path d="M772,198 L852,150 L932,198 L852,246 Z"></path>
+    <path d="M692,198 H642" marker-end="url(#arrow-inv-8-7)"></path>
+    <rect x="490" y="172" width="150" height="52" rx="14"></rect>
+    <path d="M545,138 V170" marker-end="url(#arrow-inv-8-7)"></path>
+    <path d="M932,198 H960 M960,170 V240"></path>
+    <path d="M960,170 H972" marker-end="url(#arrow-inv-8-7)"></path>
+    <path d="M960,240 H972" marker-end="url(#arrow-inv-8-7)"></path>
+    <rect x="972" y="145" width="138" height="50" rx="14"></rect>
+    <rect x="972" y="215" width="138" height="50" rx="14"></rect>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="85" y="76" text-anchor="middle">承包人在约定</text>
+    <text x="85" y="96" text-anchor="middle">时间内提交预</text>
+    <text x="85" y="116" text-anchor="middle">付款支付申请</text>
+    <text x="280" y="80" text-anchor="middle">发包人</text>
+    <text x="280" y="100" text-anchor="middle">在约定时间内</text>
+    <text x="280" y="120" text-anchor="middle">予以审核</text>
+    <text x="545" y="80" text-anchor="middle">发包人</text>
+    <text x="545" y="100" text-anchor="middle">在约定时间内</text>
+    <text x="545" y="120" text-anchor="middle">进行支付</text>
+    <text x="415" y="60" text-anchor="middle">具备施工条件</text>
+    <text x="415" y="78" text-anchor="middle">的前提下</text>
+    <text x="665" y="76" text-anchor="middle">否</text>
+    <text x="772" y="78" text-anchor="middle">承包人催告</text>
+    <text x="772" y="98" text-anchor="middle">发包人预付</text>
+    <text x="852" y="192" text-anchor="middle">发包人</text>
+    <text x="852" y="212" text-anchor="middle">按要求支付</text>
+    <text x="565" y="191" text-anchor="middle">预付款支付</text>
+    <text x="565" y="209" text-anchor="middle">办理结束</text>
+    <text x="560" y="168" text-anchor="middle">是</text>
+    <text x="668" y="190" text-anchor="middle">是</text>
+    <text x="944" y="190" text-anchor="middle">否</text>
+    <text x="1041" y="167" text-anchor="middle">承包人有权</text>
+    <text x="1041" y="185" text-anchor="middle">暂定施工</text>
+    <text x="1041" y="238" text-anchor="middle">向发包人</text>
+    <text x="1041" y="256" text-anchor="middle">提出索赔</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-7 预付款支付流程</p>
 

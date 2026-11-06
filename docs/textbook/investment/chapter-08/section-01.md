@@ -34,7 +34,51 @@ sectionTitle: 第一节 资金使用计划编制
 
 <p class="figure-caption">图 8-1 施工阶段投资控制的工作流程</p>
 
-<FigureZoom caption="图 8-2 按投资构成分解目标" src="/images/investment/chapter-08/fig-8-02.png" :width="1021" :height="328" />
+<FigureZoom caption="图 8-2 按投资构成分解目标">
+<svg viewBox="0 0 720 277" role="img" aria-label="图 8-2 按投资构成分解目标" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="300" y="8" width="180" height="40"></rect>
+    <rect x="35" y="86" width="130" height="40"></rect>
+    <rect x="175" y="86" width="130" height="40"></rect>
+    <rect x="315" y="86" width="130" height="40"></rect>
+    <rect x="455" y="86" width="130" height="40"></rect>
+    <rect x="585" y="86" width="130" height="40"></rect>
+    <path d="M390,48 V70 M100,70 H650"></path>
+    <path d="M100,70 V86 M240,70 V86 M380,70 V86 M520,70 V86 M650,70 V86"></path>
+    <path d="M100,126 V150 M55,150 H145 M60,150 V170 M100,150 V170 M140,150 V170"></path>
+    <path d="M240,126 V150 M195,150 H285 M200,150 V170 M240,150 V170 M280,150 V170"></path>
+    <path d="M380,126 V150 M335,150 H425 M340,150 V170 M380,150 V170 M420,150 V170"></path>
+    <path d="M520,126 V150 M475,150 H565 M480,150 V170 M520,150 V170 M560,150 V170"></path>
+    <path d="M650,126 V150 M600,150 H700 M605,150 V168 M650,150 V168 M695,150 V168"></path>
+    <rect x="588" y="170" width="34" height="102"></rect>
+    <rect x="633" y="170" width="34" height="102"></rect>
+    <rect x="678" y="170" width="34" height="102"></rect>
+  </g>
+  <g fill="currentColor" font-size="14">
+    <text x="390" y="33" text-anchor="middle">××项目总投资</text>
+    <text x="100" y="111" text-anchor="middle">建筑工程投资</text>
+    <text x="240" y="111" text-anchor="middle">安装工程投资</text>
+    <text x="380" y="111" text-anchor="middle">设备购置投资</text>
+    <text x="520" y="111" text-anchor="middle">预备费</text>
+    <text x="650" y="111" text-anchor="middle">其他投资</text>
+    <text x="60" y="190" text-anchor="middle">……</text>
+    <text x="100" y="190" text-anchor="middle">……</text>
+    <text x="140" y="190" text-anchor="middle">……</text>
+    <text x="200" y="190" text-anchor="middle">……</text>
+    <text x="240" y="190" text-anchor="middle">……</text>
+    <text x="280" y="190" text-anchor="middle">……</text>
+    <text x="340" y="190" text-anchor="middle">……</text>
+    <text x="380" y="190" text-anchor="middle">……</text>
+    <text x="420" y="190" text-anchor="middle">……</text>
+    <text x="480" y="190" text-anchor="middle">……</text>
+    <text x="520" y="190" text-anchor="middle">……</text>
+    <text x="560" y="190" text-anchor="middle">……</text>
+    <text x="605" y="187" text-anchor="middle" font-size="13"><tspan>土</tspan><tspan x="605" dy="14">地</tspan><tspan x="605" dy="14">使</tspan><tspan x="605" dy="14">用</tspan><tspan x="605" dy="14">费</tspan></text>
+    <text x="650" y="187" text-anchor="middle" font-size="13"><tspan>建</tspan><tspan x="650" dy="14">设</tspan><tspan x="650" dy="14">单</tspan><tspan x="650" dy="14">位</tspan><tspan x="650" dy="14">管</tspan><tspan x="650" dy="14">理</tspan><tspan x="650" dy="14">费</tspan></text>
+    <text x="695" y="187" text-anchor="middle" font-size="13"><tspan>勘</tspan><tspan x="695" dy="14">察</tspan><tspan x="695" dy="14">设</tspan><tspan x="695" dy="14">计</tspan><tspan x="695" dy="14">费</tspan><tspan x="695" dy="14">等</tspan></text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-2 按投资构成分解目标</p>
 
@@ -42,7 +86,33 @@ sectionTitle: 第一节 资金使用计划编制
 
 大中型的工程项目通常是由若干单项工程构成的，而每个单项工程包括多个单位工程，每个单位工程又是由若干个分部分项工程构成的，因此，首先要把项目总投资分解到单项工程和单位工程中，如图8-3所示。
 
-<FigureZoom caption="图 8-3 按子项目分解投资目标" src="/images/investment/chapter-08/fig-8-03.png" :width="859" :height="307" />
+<FigureZoom caption="图 8-3 按子项目分解投资目标">
+<svg viewBox="0 0 700 230" role="img" aria-label="图 8-3 按子项目分解投资目标" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="230" y="6" width="180" height="40"></rect>
+    <rect x="30" y="86" width="140" height="40"></rect>
+    <rect x="250" y="86" width="140" height="40"></rect>
+    <rect x="470" y="86" width="140" height="40"></rect>
+    <rect x="230" y="166" width="110" height="48"></rect>
+    <rect x="350" y="166" width="110" height="48"></rect>
+    <path d="M320,46 V70 M100,70 H650 M650,70 V92"></path>
+    <path d="M100,70 V86 M320,70 V86 M540,70 V86"></path>
+    <path d="M320,126 V150 M240,150 H440 M270,150 V166 M370,150 V166"></path>
+  </g>
+  <g fill="currentColor" font-size="14">
+    <text x="320" y="31" text-anchor="middle">××项目总投资</text>
+    <text x="100" y="111" text-anchor="middle">单项工程1投资</text>
+    <text x="320" y="111" text-anchor="middle">单项工程2投资</text>
+    <text x="540" y="111" text-anchor="middle">单项工程3投资</text>
+    <text x="650" y="111" text-anchor="middle">……</text>
+    <text x="285" y="188" text-anchor="middle">单位工程</text>
+    <text x="285" y="206" text-anchor="middle">21投资</text>
+    <text x="405" y="188" text-anchor="middle">单位工程</text>
+    <text x="405" y="206" text-anchor="middle">22投资</text>
+    <text x="490" y="196" text-anchor="middle">……</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-3 按子项目分解投资目标</p>
 
