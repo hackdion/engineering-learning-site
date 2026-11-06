@@ -94,7 +94,87 @@ sectionTitle: 第三节 工程进度控制
 
 网络进度计划如图4-9所示。（时间单位：天）
 
-<FigureZoom caption="图 4-9 网络进度计划" src="/images/case-analysis/chapter-04/fig-4-09.png" :width="930" :height="344" />
+<FigureZoom caption="图 4-9 网络进度计划">
+<svg viewBox="0 0 930 344" role="img" aria-label="图 4-9 网络进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-9" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M19,4.5 H912 M19,4.5 V344 M912,4.5 V344 M63.5,4.5 V344"></path>
+    <path d="M19,141.5 H912 M19,256.5 H912"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M101,106.5 H151" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M180.7,106.5 H245" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M166.2,92 V49.5 H245" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M274,49.5 H351.5" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M380.5,49.5 H636.7" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M665.7,49.5 H748.2 V161.5" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M259.5,121 V231 H351.1" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M380.1,231 H477.5" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M380.3,176 H477.7" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M506.7,176 H593" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M622,176 H733.7" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M762.7,176 H828 V300" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M492,245.5 V300" marker-end="url(#arrow-case-4-9)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="7 5">
+    <path d="M259.5,92 V64" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M366,64 V161.5" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M365.6,216.5 V190.5" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M492,216.5 V190.5" marker-end="url(#arrow-case-4-9)"></path>
+    <path d="M607.5,190.5 V300" marker-end="url(#arrow-case-4-9)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <circle cx="86.5" cy="106.5" r="14.5"></circle>
+    <circle cx="166.2" cy="106.5" r="14.5"></circle>
+    <circle cx="259.5" cy="106.5" r="14.5"></circle>
+    <circle cx="259.5" cy="49.5" r="14.5"></circle>
+    <circle cx="366" cy="49.5" r="14.5"></circle>
+    <circle cx="651.2" cy="49.5" r="14.5"></circle>
+    <circle cx="365.8" cy="176" r="14.5"></circle>
+    <circle cx="492.2" cy="176" r="14.5"></circle>
+    <circle cx="607.5" cy="176" r="14.5"></circle>
+    <circle cx="748.2" cy="176" r="14.5"></circle>
+    <circle cx="365.6" cy="231" r="14.5"></circle>
+    <circle cx="492" cy="231" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-size="17" text-anchor="middle">
+    <text x="199" y="38">柱1（一）</text>
+    <text x="301" y="38">柱1（二）</text>
+    <text x="497" y="38">养护1</text>
+    <text x="705" y="38">托梁1</text>
+    <text x="189" y="67">3</text>
+    <text x="306" y="67">3</text>
+    <text x="497" y="67">20</text>
+    <text x="706" y="67">5</text>
+    <text x="122" y="84">基1（一）</text>
+    <text x="215" y="84">基1（二）</text>
+    <text x="123" y="128">4</text>
+    <text x="215" y="128">4</text>
+    <text x="430" y="161">柱2（一）</text>
+    <text x="556" y="161">柱2（二）</text>
+    <text x="677" y="161">养护2</text>
+    <text x="808" y="161">托梁2</text>
+    <text x="434" y="197">3</text>
+    <text x="554" y="197">3</text>
+    <text x="676" y="197">20</text>
+    <text x="808" y="197">5</text>
+    <text x="308" y="222">基2（一）</text>
+    <text x="425" y="222">基2（二）</text>
+    <text x="310" y="250">4</text>
+    <text x="430" y="250">4</text>
+    <text x="41" y="60">第</text>
+    <text x="41" y="77">1</text>
+    <text x="41" y="102">组</text>
+    <text x="41" y="187">第</text>
+    <text x="41" y="204">2</text>
+    <text x="41" y="228">组</text>
+    <text x="41" y="306">⋮</text>
+  </g>
+  <g fill="currentColor" font-size="18" text-anchor="start">
+    <text x="117" y="335">（以下各组关系同上，共20组构成总进度计划）</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-9 网络进度计划</p>
 
