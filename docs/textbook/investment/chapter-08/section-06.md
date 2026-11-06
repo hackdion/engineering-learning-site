@@ -103,8 +103,8 @@ $$
     <text x="665" y="76" text-anchor="middle">否</text>
     <text x="772" y="78" text-anchor="middle">承包人催告</text>
     <text x="772" y="98" text-anchor="middle">发包人预付</text>
-    <text x="852" y="192" text-anchor="middle">发包人</text>
-    <text x="852" y="212" text-anchor="middle">按要求支付</text>
+    <text x="772" y="192" text-anchor="middle">发包人</text>
+    <text x="772" y="212" text-anchor="middle">按要求支付</text>
     <text x="565" y="191" text-anchor="middle">预付款支付</text>
     <text x="565" y="209" text-anchor="middle">办理结束</text>
     <text x="560" y="168" text-anchor="middle">是</text>

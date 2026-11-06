@@ -34,7 +34,7 @@ sectionTitle: 第三节 设计概算编制与审查
 <svg viewBox="0 0 440 180" role="img" aria-label="图 6-1 设计概算的内容和组成" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <path d="M34,40 V150"></path>
-    <path d="M22,95 H34"></path>
+    <path d="M26,95 H34"></path>
     <path d="M34,40 H48 M34,95 H48 M34,150 H48"></path>
     <path d="M166,45 H180 M180,18 V72 M180,22 H192 M180,68 H192"></path>
   </g>
@@ -55,7 +55,7 @@ sectionTitle: 第三节 设计概算编制与审查
 <svg viewBox="0 0 440 390" role="img" aria-label="图 6-2 单项工程综合概算的组成" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <path d="M42,105 V330"></path>
-    <path d="M22,210 H42"></path>
+    <path d="M26,210 H42"></path>
     <path d="M42,105 H56 M42,330 H56"></path>
     <path d="M185,105 H199 M199,50 V160 M199,50 H211 M199,72 H211 M199,94 H211 M199,116 H211 M199,138 H211 M199,160 H211"></path>
     <path d="M185,330 H199 M199,290 V370 M199,290 H211 M199,330 H211 M199,370 H211"></path>
@@ -83,7 +83,7 @@ sectionTitle: 第三节 设计概算编制与审查
 <svg viewBox="0 0 560 780" role="img" aria-label="图 6-3 建设工程总概算的组成" xmlns="http://www.w3.org/2000/svg">
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <path d="M38,94 V720"></path>
-    <path d="M22,392 H38"></path>
+    <path d="M26,392 H38"></path>
     <path d="M38,94 H52 M38,392 H52 M38,720 H52"></path>
     <path d="M180,94 H194 M194,42 V146 M194,42 H208 M194,68 H208 M194,94 H208 M194,120 H208 M194,146 H208"></path>
     <path d="M232,392 H246 M246,210 V574 M246,210 H260 M246,236 H260 M246,262 H260 M246,288 H260 M246,314 H260 M246,340 H260 M246,366 H260 M246,392 H260 M246,418 H260 M246,444 H260 M246,470 H260 M246,496 H260 M246,522 H260 M246,548 H260 M246,574 H260"></path>
