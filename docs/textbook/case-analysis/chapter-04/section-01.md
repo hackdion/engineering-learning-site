@@ -428,7 +428,38 @@ sectionTitle: 第一节 工程监理组织、工作内容与相关法规
 
 某市政工程分为四个施工标段。某监理单位承担了该工程施工阶段的监理任务，一、二标段工程先行开工，项目监理机构组织形式如图4-2所示。
 
-<FigureZoom caption="图 4-2 一、二标段工程项目监理机构组织形式" src="/images/case-analysis/chapter-04/fig-4-02.png" :width="860" :height="318" />
+<FigureZoom caption="图 4-2 一、二标段工程项目监理机构组织形式">
+<svg viewBox="0 0 860 300" role="img" aria-label="图 4-2 一、二标段工程项目监理机构组织形式" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="300" y="10" width="240" height="56"></rect>
+    <rect x="90" y="116" width="240" height="56"></rect>
+    <rect x="510" y="116" width="240" height="56"></rect>
+    <rect x="75" y="232" width="130" height="48"></rect>
+    <rect x="215" y="232" width="130" height="48"></rect>
+    <rect x="495" y="232" width="130" height="48"></rect>
+    <rect x="635" y="232" width="130" height="48"></rect>
+    <path d="M420,66 V88 M210,88 H630"></path>
+    <path d="M210,88 V116" marker-end="url(#arrow-case-4-2)"></path>
+    <path d="M630,88 V116" marker-end="url(#arrow-case-4-2)"></path>
+    <path d="M210,172 V196 M140,196 H280"></path>
+    <path d="M140,196 V232" marker-end="url(#arrow-case-4-2)"></path>
+    <path d="M280,196 V232" marker-end="url(#arrow-case-4-2)"></path>
+    <path d="M630,172 V196 M560,196 H700"></path>
+    <path d="M560,196 V232" marker-end="url(#arrow-case-4-2)"></path>
+    <path d="M700,196 V232" marker-end="url(#arrow-case-4-2)"></path>
+  </g>
+  <g fill="currentColor" font-size="20" text-anchor="middle">
+    <text x="420" y="44">总监理工程师</text>
+    <text x="210" y="150">一标段监理组</text>
+    <text x="630" y="150">二标段监理组</text>
+    <text x="140" y="263">专项监理组</text>
+    <text x="280" y="263">专项监理组</text>
+    <text x="560" y="263">专项监理组</text>
+    <text x="700" y="263">专项监理组</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-2 一、二标段工程项目监理机构组织形式</p>
 
@@ -458,7 +489,39 @@ sectionTitle: 第一节 工程监理组织、工作内容与相关法规
 
 3. 总监理工程师决定修改监理规划，调整项目监理机构组织形式的目的，应该是发挥矩阵制组织形式的优点，即把按管理职能划分的部门和按标段划分的监理组结合起来组成一个矩阵，使同一名管理人员，既同原职能部门保持组织与业务上的联系，又参加部门的工作。为了保证完成一定的管理目标，每个标段监理组都设负责人，在负责人的直接领导下进行工作。成员受双重领导，一方面受标段监理组的领导，另一方面又受原属职能部门的领导。
 
-<FigureZoom caption="图 4-3 组织结构示意" src="/images/case-analysis/chapter-04/fig-4-03.png" :width="940" :height="478" />
+<FigureZoom caption="图 4-3 组织结构示意">
+<svg viewBox="0 0 940 430" role="img" aria-label="图 4-3 组织结构示意" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="325" y="12" width="190" height="44"></rect>
+    <rect x="200" y="87" width="134" height="44"></rect>
+    <rect x="353" y="87" width="134" height="44"></rect>
+    <rect x="509" y="87" width="134" height="44"></rect>
+    <rect x="665" y="87" width="134" height="44"></rect>
+    <rect x="81" y="177" width="160" height="46"></rect>
+    <rect x="81" y="243" width="160" height="46"></rect>
+    <rect x="81" y="309" width="160" height="46"></rect>
+    <rect x="81" y="375" width="160" height="46"></rect>
+    <path d="M420,56 V72 H32 V398"></path>
+    <path d="M420,56 V87 M267,72 V87 M576,72 V87 M732,72 V87"></path>
+    <path d="M32,200 H81 M32,266 H81 M32,332 H81 M32,398 H81"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 5">
+    <path d="M267,131 V398 M420,131 V398 M576,131 V398 M732,131 V398"></path>
+    <path d="M241,200 H765 M241,266 H765 M241,332 H765 M241,398 H765"></path>
+  </g>
+  <g fill="currentColor" font-size="20" text-anchor="middle">
+    <text x="420" y="41">总监理工程师</text>
+    <text x="267" y="116">投资控制部</text>
+    <text x="420" y="116">质量控制部</text>
+    <text x="576" y="116">进度控制部</text>
+    <text x="732" y="116">合同管理部</text>
+    <text x="161" y="207">一标段监理组</text>
+    <text x="161" y="273">二标段监理组</text>
+    <text x="161" y="339">三标段监理组</text>
+    <text x="161" y="405">四标段监理组</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-3 组织结构示意</p>
 
