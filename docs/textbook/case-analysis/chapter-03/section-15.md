@@ -52,7 +52,31 @@ sectionTitle: 第十五节 流水施工计划方法
 
 在流水施工中，由于流水节拍的规律不同，决定了流水步距、流水施工工期的计算方法等也不同，甚至影响到各个施工过程的专业工作队数目。分类情况如图 3-3 所示。
 
-<FigureZoom caption="图 3-3 流水施工分类图" src="/images/case-analysis/chapter-03/fig-3-03.png" :width="648" :height="230" />
+<FigureZoom caption="图 3-3 流水施工分类图">
+<svg viewBox="0 0 760 271" role="img" aria-label="图 3-3 流水施工分类图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="14" y="45" width="48" height="176"></rect>
+    <path d="M62,59 H130 M62,207 H130"></path>
+    <rect x="130" y="42" width="150" height="34"></rect>
+    <rect x="130" y="190" width="150" height="34"></rect>
+    <path d="M280,207 H302 M302,134 V240 M302,134 H320 M302,240 H320"></path>
+    <rect x="320" y="117" width="160" height="34"></rect>
+    <rect x="320" y="223" width="160" height="34"></rect>
+    <path d="M480,134 H502 M502,79 V167 M502,79 H520 M502,167 H520"></path>
+    <rect x="520" y="62" width="210" height="34"></rect>
+    <rect x="520" y="150" width="210" height="34"></rect>
+  </g>
+  <g fill="currentColor" font-size="14">
+    <text x="38" y="106" text-anchor="middle"><tspan>流</tspan><tspan x="38" dy="18">水</tspan><tspan x="38" dy="18">施</tspan><tspan x="38" dy="18">工</tspan></text>
+    <text x="205" y="64" text-anchor="middle">非节奏流水施工</text>
+    <text x="205" y="212" text-anchor="middle">有节奏流水施工</text>
+    <text x="400" y="139" text-anchor="middle">异节奏流水施工</text>
+    <text x="400" y="245" text-anchor="middle">固定节拍流水施工</text>
+    <text x="625" y="84" text-anchor="middle">一般的成倍节拍流水施工</text>
+    <text x="625" y="172" text-anchor="middle">加快的成倍节拍流水施工</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 3-3 流水施工分类图</p>
 
