@@ -342,7 +342,7 @@ edition: 2026 年版（中国建设监理协会组织编写）
 - **治理结构**：股东会是权力机构，董事会 3 人以上，监事会 3 人以上且职工代表不低于 1/3。
 - **经营准则**：守法守底线，诚信立根本，公平待双方，科学建体系。
 
-继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听本节朗读（B 站第 10 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=10) · [课程中心](/courses/)
+继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听「工程监理企业组织形式」（B 站第 10 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=10) · [听「经营活动准则」（B 站第 11 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=11) · [课程中心](/courses/)
 
 <template #notes>
 

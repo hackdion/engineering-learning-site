@@ -312,7 +312,7 @@ edition: 2026 年版（中国建设监理协会组织编写）
 - **两个关键主体**：内部审核由管理者代表组织，管理评审由最高管理者组织；例行内部审核和管理评审一般每年一次。
 - **两条措施**：纠正措施消除已发生不合格的原因，预防措施消除潜在不合格的原因。
 
-继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听本节朗读（B 站第 12 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=12) · [课程中心](/courses/)
+继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听「管理体系的建立与运行」（B 站第 14 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=14) · [课程中心](/courses/)
 
 <template #notes>
 

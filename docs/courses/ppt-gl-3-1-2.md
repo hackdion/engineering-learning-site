@@ -328,7 +328,7 @@ GB/T 19001 的正文有十部分。 前三部分是范围、规范性引用文�
 - **职业健康安全**：风险管理科学原理加 PDCA 管理过程原理，基础目标是事故控制，七方面要素，四项应用要求。
 - **异同**：目的对象不同，逻辑、模式、框架、要素相通，可以整合建立和运行。
 
-继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听本节朗读（B 站第 11 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=11) · [课程中心](/courses/)
+继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听「质量管理体系」（B 站第 12 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=12) · [听「环境、职业健康安全体系」（B 站第 13 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=13) · [课程中心](/courses/)
 
 <template #notes>
 

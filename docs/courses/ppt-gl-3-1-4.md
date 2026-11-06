@@ -307,7 +307,7 @@ edition: 2026 年版（中国建设监理协会组织编写）
 - **框架**：七个方面；领导作用三角是驱动力，过程结果三角是从动的，测量分析改进是连接两三角的链条。
 - **五条措施**：发挥领导作用加强培训学习、坚持战略引领动态监测绩效、坚持顾客导向满足客户需求、加强资源管理优化过程管控、履行社会责任打造卓越企业。
 
-继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听本节朗读（B 站第 13 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=13) · [课程中心](/courses/)
+继续学：[读本节教材原文](/textbook/chapter-03/section-01) · [听「卓越绩效管理」（B 站第 15 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=15) · [课程中心](/courses/)
 
 <template #notes>
 
