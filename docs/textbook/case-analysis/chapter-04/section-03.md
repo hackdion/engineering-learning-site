@@ -1053,7 +1053,117 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 某工程的施工合同工期为16周，项目监理机构批准的施工进度计划如图4-19所示（时间单位：周）。各工作均按匀速施工。施工单位的报价单（部分）见表4-8。
 
-<FigureZoom caption="图 4-19 施工进度计划" src="/images/case-analysis/chapter-04/fig-4-19.png" :width="775" :height="317" />
+<FigureZoom caption="图 4-19 施工进度计划">
+<svg viewBox="0 0 775 317" role="img" aria-label="图 4-19 施工进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <path d="M54,40 H730"></path>
+    <path d="M54,40 V33 M96.2,40 V33 M138.5,40 V33 M180.8,40 V33 M223,40 V33 M265.2,40 V33 M307.5,40 V33 M349.8,40 V33 M392,40 V33 M434.2,40 V33 M476.5,40 V33 M518.8,40 V33 M561,40 V33 M603.2,40 V33 M645.5,40 V33 M687.8,40 V33 M730,40 V33"></path>
+    <path d="M54,266 H730"></path>
+    <path d="M54,266 V273 M96.2,266 V273 M138.5,266 V273 M180.8,266 V273 M223,266 V273 M265.2,266 V273 M307.5,266 V273 M349.8,266 V273 M392,266 V273 M434.2,266 V273 M476.5,266 V273 M518.8,266 V273 M561,266 V273 M603.2,266 V273 M645.5,266 V273 M687.8,266 V273 M730,266 V273"></path>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="middle">
+    <text x="75.1" y="30">1</text>
+    <text x="117.4" y="30">2</text>
+    <text x="159.6" y="30">3</text>
+    <text x="201.9" y="30">4</text>
+    <text x="244.1" y="30">5</text>
+    <text x="286.4" y="30">6</text>
+    <text x="328.6" y="30">7</text>
+    <text x="370.9" y="30">8</text>
+    <text x="413.1" y="30">9</text>
+    <text x="455.4" y="30">10</text>
+    <text x="497.6" y="30">11</text>
+    <text x="539.9" y="30">12</text>
+    <text x="582.1" y="30">13</text>
+    <text x="624.4" y="30">14</text>
+    <text x="666.6" y="30">15</text>
+    <text x="708.9" y="30">16</text>
+    <text x="75.1" y="288">1</text>
+    <text x="117.4" y="288">2</text>
+    <text x="159.6" y="288">3</text>
+    <text x="201.9" y="288">4</text>
+    <text x="244.1" y="288">5</text>
+    <text x="286.4" y="288">6</text>
+    <text x="328.6" y="288">7</text>
+    <text x="370.9" y="288">8</text>
+    <text x="413.1" y="288">9</text>
+    <text x="455.4" y="288">10</text>
+    <text x="497.6" y="288">11</text>
+    <text x="539.9" y="288">12</text>
+    <text x="582.1" y="288">13</text>
+    <text x="624.4" y="288">14</text>
+    <text x="666.6" y="288">15</text>
+    <text x="708.9" y="288">16</text>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="start">
+    <text x="740" y="30">(周)</text>
+    <text x="740" y="288">(周)</text>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M73,155.5 H128" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M148,155.5 H297" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M138,145.5 V74.5 H297" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M138,165.5 V232 H337.5" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M317,74.5 H461" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M317,155.5 H424" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M481,74.5 H598 V145.5" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M608,155.5 H709" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M444,155.5 H503 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 H586" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M357.5,232 H383 q8,-9 16,0 q8,9 16,0 q4,-9 8,0" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M443.5,232 H512 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 H595 V165.5" marker-end="url(#arrow-case-4-19)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4">
+    <path d="M307,84.5 V145" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M307,165 V172" ></path>
+    <path d="M347,200 V222" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M434,145.5 V113"></path>
+    <path d="M470,113 V84.5" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M434,165.5 V222" marker-end="url(#arrow-case-4-19)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M307,172 q8,-9 16,0 q8,9 16,0 q8,-9 16,0" transform="rotate(35 307 172)"></path>
+    <path d="M434,113 q8,-9 16,0 q8,9 16,0 q2,-9 4,0"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <circle cx="63" cy="155.5" r="10"></circle>
+    <circle cx="138" cy="155.5" r="10"></circle>
+    <circle cx="307" cy="74.5" r="10"></circle>
+    <circle cx="307" cy="155" r="10"></circle>
+    <circle cx="347.5" cy="232" r="10"></circle>
+    <circle cx="434" cy="155.5" r="10"></circle>
+    <circle cx="471" cy="74.5" r="10"></circle>
+    <circle cx="433.5" cy="232" r="10"></circle>
+    <circle cx="598" cy="155.5" r="10"></circle>
+    <circle cx="719" cy="155" r="10"></circle>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="63" y="160.5">1</text>
+    <text x="138" y="160.5">2</text>
+    <text x="307" y="79.5">3</text>
+    <text x="307" y="160">4</text>
+    <text x="347.5" y="237">5</text>
+    <text x="434" y="160.5">6</text>
+    <text x="471" y="79.5">7</text>
+    <text x="433.5" y="237">8</text>
+    <text x="598" y="160.5">9</text>
+    <text x="719" y="160">10</text>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="middle">
+    <text x="95" y="145">A</text>
+    <text x="222" y="145">B</text>
+    <text x="215" y="222">C</text>
+    <text x="215" y="64">D</text>
+    <text x="370" y="64">E</text>
+    <text x="355" y="145">G</text>
+    <text x="385" y="222">H</text>
+    <text x="475" y="222">J</text>
+    <text x="665" y="145">K</text>
+    <text x="522" y="64">L</text>
+    <text x="465" y="145">N</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-19 施工进度计划</p>
 
@@ -1081,7 +1191,120 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 1. 根据第4周末的检查结果，绘制的实际进度前锋线如图4-20所示。
 
-<FigureZoom caption="图 4-20 实际进度前锋线" src="/images/case-analysis/chapter-04/fig-4-20.png" :width="935" :height="348" />
+<FigureZoom caption="图 4-20 实际进度前锋线">
+<svg viewBox="0 0 935 348" role="img" aria-label="图 4-20 实际进度前锋线" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-20" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <path d="M58,40 H899"></path>
+    <path d="M58,40 V33 M110.6,40 V33 M163.1,40 V33 M215.7,40 V33 M268.2,40 V33 M320.8,40 V33 M373.4,40 V33 M425.9,40 V33 M478.5,40 V33 M531.1,40 V33 M583.6,40 V33 M636.2,40 V33 M688.8,40 V33 M741.3,40 V33 M793.9,40 V33 M846.4,40 V33 M899,40 V33"></path>
+    <path d="M58,305 H899"></path>
+    <path d="M58,305 V312 M110.6,305 V312 M163.1,305 V312 M215.7,305 V312 M268.2,305 V312 M320.8,305 V312 M373.4,305 V312 M425.9,305 V312 M478.5,305 V312 M531.1,305 V312 M583.6,305 V312 M636.2,305 V312 M688.8,305 V312 M741.3,305 V312 M793.9,305 V312 M846.4,305 V312 M899,305 V312"></path>
+  </g>
+  <g fill="currentColor" font-size="17" text-anchor="middle">
+    <text x="84.3" y="30">1</text>
+    <text x="136.8" y="30">2</text>
+    <text x="189.4" y="30">3</text>
+    <text x="242" y="30">4</text>
+    <text x="294.5" y="30">5</text>
+    <text x="347.1" y="30">6</text>
+    <text x="399.7" y="30">7</text>
+    <text x="452.2" y="30">8</text>
+    <text x="504.8" y="30">9</text>
+    <text x="557.3" y="30">10</text>
+    <text x="609.9" y="30">11</text>
+    <text x="662.5" y="30">12</text>
+    <text x="715" y="30">13</text>
+    <text x="767.6" y="30">14</text>
+    <text x="820.2" y="30">15</text>
+    <text x="872.7" y="30">16</text>
+    <text x="84.3" y="327">1</text>
+    <text x="136.8" y="327">2</text>
+    <text x="189.4" y="327">3</text>
+    <text x="242" y="327">4</text>
+    <text x="294.5" y="327">5</text>
+    <text x="347.1" y="327">6</text>
+    <text x="399.7" y="327">7</text>
+    <text x="452.2" y="327">8</text>
+    <text x="504.8" y="327">9</text>
+    <text x="557.3" y="327">10</text>
+    <text x="609.9" y="327">11</text>
+    <text x="662.5" y="327">12</text>
+    <text x="715" y="327">13</text>
+    <text x="767.6" y="327">14</text>
+    <text x="820.2" y="327">15</text>
+    <text x="872.7" y="327">16</text>
+  </g>
+  <g fill="currentColor" font-size="17" text-anchor="start">
+    <text x="898" y="30">(周)</text>
+    <text x="898" y="327">(周)</text>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M82,184 H150" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M174,184 H360" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M162,172 V82 H361" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M162,196 V279 H412" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M385,82 H570" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M384,184 H520" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M594,82 H738 V172" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M750,184 H876" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M544,184 H612 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q8,9 16,0 q7,-9 14,0 H726" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M436,279 H480 q8,-9 16,0 q8,9 16,0 q3.5,-9 7,0" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M544,279 H627 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q8,9 16,0 H738 V196" marker-end="url(#arrow-case-4-20)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4">
+    <path d="M373,94 V172" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M372,196 V215"></path>
+    <path d="M424,240 V267" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M532,172 V120"></path>
+    <path d="M580,120 V94" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M532,196 V267" marker-end="url(#arrow-case-4-20)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M372.5,215 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q4,9 8.8,0" transform="rotate(26.1 372.5 215)"></path>
+    <path d="M532,120 q8,-9 16,0 q8,9 16,0 q8,-9 16,0"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="7 5">
+    <path d="M250,40 L162,82 L216,184 L216,279 L245,305"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <circle cx="70" cy="184" r="12"></circle>
+    <circle cx="162" cy="184" r="12"></circle>
+    <circle cx="373" cy="82" r="12"></circle>
+    <circle cx="372" cy="184" r="12"></circle>
+    <circle cx="424" cy="279" r="12"></circle>
+    <circle cx="532" cy="184" r="12"></circle>
+    <circle cx="582" cy="82" r="12"></circle>
+    <circle cx="532" cy="279" r="12"></circle>
+    <circle cx="738" cy="184" r="12"></circle>
+    <circle cx="888" cy="184" r="12"></circle>
+  </g>
+  <g fill="currentColor" font-size="17" text-anchor="middle">
+    <text x="70" y="190">1</text>
+    <text x="162" y="190">2</text>
+    <text x="373" y="88">3</text>
+    <text x="372" y="190">4</text>
+    <text x="424" y="285">5</text>
+    <text x="532" y="190">6</text>
+    <text x="582" y="88">7</text>
+    <text x="532" y="285">8</text>
+    <text x="738" y="190">9</text>
+    <text x="888" y="190">10</text>
+  </g>
+  <g fill="currentColor" font-size="17" text-anchor="middle">
+    <text x="110" y="174">A</text>
+    <text x="252" y="174">B</text>
+    <text x="300" y="269">C</text>
+    <text x="222" y="72">D</text>
+    <text x="477" y="72">E</text>
+    <text x="460" y="174">G</text>
+    <text x="470" y="269">H</text>
+    <text x="620" y="269">J</text>
+    <text x="810" y="174">K</text>
+    <text x="650" y="72">L</text>
+    <text x="590" y="174">N</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-20 实际进度前锋线</p>
 
@@ -1101,7 +1324,78 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
 
 某实施施工监理的工程，建设单位根据《建设工程施工合同（示范文本）》GF-2017-0201与甲施工单位签订了施工总承包合同。合同约定：开工日期为20××年3月1日。工期为302天。建设单位负责施工现场外道路开通及设备采购；设备安装工程可以分包。经总监理工程师批准的施工总进度计划如图4-21所示（时间单位：天）。
 
-<FigureZoom caption="图 4-21 施工总进度计划" src="/images/case-analysis/chapter-04/fig-4-21.png" :width="790" :height="290" />
+<FigureZoom caption="图 4-21 施工总进度计划">
+<svg viewBox="0 0 790 290" role="img" aria-label="图 4-21 施工总进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-21" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M54,144 H184" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M194,134 V34.5 H330" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M204,144 H330" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M194,154 V247 H330" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M350,34.5 H472" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M350,144.5 H472" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M350,247 H470" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M492,34.5 H620 V134" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M492,144.5 H610" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M491,245 H620 V154.5" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M630,144.5 H752" marker-end="url(#arrow-case-4-21)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4">
+    <path d="M340,44.5 V134" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M340,154.5 V237" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M482,44.5 V134" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M482,154.5 V235" marker-end="url(#arrow-case-4-21)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.1">
+    <circle cx="44" cy="144" r="10"></circle>
+    <circle cx="194" cy="144" r="10"></circle>
+    <circle cx="340" cy="34.5" r="10"></circle>
+    <circle cx="340" cy="247" r="10"></circle>
+    <circle cx="340" cy="144.5" r="10"></circle>
+    <circle cx="482" cy="34.5" r="10"></circle>
+    <circle cx="481" cy="245" r="10"></circle>
+    <circle cx="482" cy="144.5" r="10"></circle>
+    <circle cx="620" cy="144.5" r="10"></circle>
+    <circle cx="762" cy="144.5" r="10"></circle>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle">
+    <text x="44" y="149">1</text>
+    <text x="194" y="149">2</text>
+    <text x="340" y="39.5">3</text>
+    <text x="340" y="252">4</text>
+    <text x="340" y="149.5">5</text>
+    <text x="482" y="39.5">6</text>
+    <text x="481" y="250">7</text>
+    <text x="482" y="149.5">8</text>
+    <text x="620" y="149.5">9</text>
+    <text x="762" y="149.5">10</text>
+  </g>
+  <g fill="currentColor" font-size="15" text-anchor="middle">
+    <text x="112" y="132">A</text>
+    <text x="112" y="168">14</text>
+    <text x="255" y="20">B</text>
+    <text x="255" y="58">86</text>
+    <text x="265" y="132">C</text>
+    <text x="265" y="168">75</text>
+    <text x="255" y="235">D</text>
+    <text x="255" y="272">80</text>
+    <text x="412" y="20">E</text>
+    <text x="412" y="58">80</text>
+    <text x="412" y="132">F</text>
+    <text x="412" y="168">90</text>
+    <text x="412" y="235">G</text>
+    <text x="412" y="272">85</text>
+    <text x="560" y="20">H</text>
+    <text x="560" y="58">56</text>
+    <text x="555" y="132">I</text>
+    <text x="555" y="168">67</text>
+    <text x="555" y="235">J</text>
+    <text x="555" y="272">56</text>
+    <text x="690" y="132">K</text>
+    <text x="690" y="168">45</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-21 施工总进度计划</p>
 
