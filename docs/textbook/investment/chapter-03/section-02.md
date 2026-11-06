@@ -422,7 +422,76 @@ $$
 
 其中分部分项工程费、措施项目费、其他项目费包括前述按费用构成要素划分的人工费、材料费、施工机具使用费、企业管理费和利润，如图 3-2 所示。
 
-<FigureZoom caption="图 3-2 按造价形成划分的建筑安装工程费用项目构成" src="/images/investment/chapter-03/fig-3-02.png" :width="930" :height="941" />
+<FigureZoom caption="图 3-2 按造价形成划分的建筑安装工程费用项目构成">
+<svg viewBox="0 0 930 900" role="img" aria-label="图 3-2 按造价形成划分的建筑安装工程费用项目构成" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="8" y="355" width="62" height="180"></rect>
+    <path d="M70,445 H95 M95,158 V861"></path>
+    <rect x="130" y="138" width="150" height="40"></rect>
+    <rect x="130" y="375" width="150" height="40"></rect>
+    <rect x="130" y="620" width="150" height="40"></rect>
+    <rect x="130" y="774" width="150" height="40"></rect>
+    <rect x="130" y="835" width="150" height="40"></rect>
+    <path d="M95,158 H130 M95,395 H130 M95,640 H130 M95,794 H130 M95,855 H130"></path>
+    <path d="M280,158 H290 M290,145 V370 M290,145 H305 M290,170 H305 M290,195 H305 M290,220 H305 M290,245 H305 M290,270 H305 M290,295 H305 M290,320 H305 M290,345 H305 M290,370 H305"></path>
+    <path d="M430,145 H505 M505,145 V195 M505,145 H520 M505,170 H520 M505,195 H520"></path>
+    <path d="M280,395 H290 M290,382 V607 M290,382 H305 M290,407 H305 M290,432 H305 M290,457 H305 M290,482 H305 M290,507 H305 M290,532 H305 M290,557 H305 M290,582 H305 M290,607 H305"></path>
+    <path d="M280,640 H290 M290,627 V702 M290,627 H305 M290,652 H305 M290,677 H305 M290,702 H305"></path>
+    <path d="M280,794 H290 M290,794 V838 M290,794 H305 M290,838 H305"></path>
+    <path d="M378,794 H400 M400,750 V838 M400,750 H410 M400,772 H410 M400,794 H410 M400,816 H410 M400,838 H410"></path>
+    <path d="M745,148 V677 M745,148 H790 M745,235 H790 M745,335 H790 M745,450 H790 M745,565 H790"></path>
+    <path d="M505,245 H745 M430,507 H745 M430,677 H745"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="22" y="395" text-anchor="middle" font-size="11.5"><tspan>建</tspan><tspan x="22" dy="15">筑</tspan><tspan x="22" dy="15">安</tspan><tspan x="22" dy="15">装</tspan><tspan x="22" dy="15">工</tspan><tspan x="22" dy="15">程</tspan><tspan x="22" dy="15">费</tspan></text>
+    <text x="52" y="380" text-anchor="middle" font-size="11.5"><tspan>（</tspan><tspan x="52" dy="15">按</tspan><tspan x="52" dy="15">造</tspan><tspan x="52" dy="15">价</tspan><tspan x="52" dy="15">形</tspan><tspan x="52" dy="15">成</tspan><tspan x="52" dy="15">划</tspan><tspan x="52" dy="15">分</tspan><tspan x="52" dy="15">）</tspan></text>
+    <text x="205" y="164" text-anchor="middle" font-size="14">分部分项工程费</text>
+    <text x="205" y="401" text-anchor="middle" font-size="14">措施项目费</text>
+    <text x="205" y="646" text-anchor="middle" font-size="14">其他项目费</text>
+    <text x="205" y="800" text-anchor="middle" font-size="14">规费</text>
+    <text x="205" y="861" text-anchor="middle" font-size="14">税金</text>
+    <text x="310" y="150">房屋建筑与装饰工程</text>
+    <text x="310" y="175">仿古建筑工程</text>
+    <text x="310" y="200">通用安装工程</text>
+    <text x="310" y="225">市政工程</text>
+    <text x="310" y="250">园林绿化工程</text>
+    <text x="310" y="275">矿山工程</text>
+    <text x="310" y="300">构筑物工程</text>
+    <text x="310" y="325">城市轨道交通工程</text>
+    <text x="310" y="350">爆破工程</text>
+    <text x="310" y="375">……</text>
+    <text x="520" y="150">土石方工程</text>
+    <text x="520" y="175">桩基工程</text>
+    <text x="520" y="200">……</text>
+    <text x="310" y="387">安全文明施工费</text>
+    <text x="310" y="412">夜间施工增加费</text>
+    <text x="310" y="437">二次搬运费</text>
+    <text x="310" y="462">冬雨季施工增加费</text>
+    <text x="310" y="487">已完工程及设备保护费</text>
+    <text x="310" y="512">工程定位复测费</text>
+    <text x="310" y="537">特殊地区施工增加费</text>
+    <text x="310" y="562">大型机械进出场及安拆费</text>
+    <text x="310" y="587">脚手架工程费</text>
+    <text x="310" y="612">……</text>
+    <text x="310" y="632">暂列金额</text>
+    <text x="310" y="657">计日工</text>
+    <text x="310" y="682">总承包服务费</text>
+    <text x="310" y="707">……</text>
+    <text x="310" y="799">社会保险费</text>
+    <text x="310" y="843">住房公积金</text>
+    <text x="415" y="755">养老保险费</text>
+    <text x="415" y="777">失业保险费</text>
+    <text x="415" y="799">医疗保险费</text>
+    <text x="415" y="821">生育保险费</text>
+    <text x="415" y="843">工伤保险费</text>
+    <text x="845" y="154" text-anchor="middle" font-size="14">人工费</text>
+    <text x="845" y="241" text-anchor="middle" font-size="14">材料费</text>
+    <text x="845" y="341" text-anchor="middle" font-size="14">施工机具使用费</text>
+    <text x="845" y="456" text-anchor="middle" font-size="14">企业管理费</text>
+    <text x="845" y="571" text-anchor="middle" font-size="14">利润</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 3-2 按造价形成划分的建筑安装工程费用项目构成</p>
 

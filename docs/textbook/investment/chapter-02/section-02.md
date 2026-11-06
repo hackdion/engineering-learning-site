@@ -192,7 +192,55 @@ C——对象获得功能所产生的费用（成本），包括获得功能所�
 
 ① 功能定义。功能定义是就对象功能的内容和本质属性进行准确而简洁的表述；价值工程对象不同，则功能属性不同，对功能进行定义也不同。例如，对于生产多种产品的企业而言，不同产品在企业生存和发展中的效用（功能）不同，有些产品的功能是创造利润，有些产品功能是维持品牌，有些产品的功能是服务公众，等等；而针对某一产品而言，需要对整体产品及其组成部分（产品的零部件、工程项目的分部分项工程）的功能进行定义，各组成部分的功能则需要从产品的整体功能出发（即先进行整体功能定义），针对每一个组成部分进行功能定义，如居住建筑工程的整体功能是提供舒适的居住空间（这里采用的定义形式是“动词”+“形容词”+“名词”），这一整体功能需要建筑物各组成部分共同保证，其中，建筑围护结构与之相关的功能可定义为抵御风雨、保持温度、阻隔热量，等等。
 
-<FigureZoom caption="图 2-8 （价值工程）对象与功能关系图" src="/images/investment/chapter-02/fig-2-08.png" :width="576" :height="507" />
+<FigureZoom caption="图 2-8 （价值工程）对象与功能关系图">
+<svg viewBox="0 0 520 450" role="img" aria-label="图 2-8 （价值工程）对象与功能关系图" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-2-8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M100,20 H400" stroke-dasharray="8 3 2 3" marker-start="url(#arrow-inv-2-8)" marker-end="url(#arrow-inv-2-8)"></path>
+    <rect x="8" y="45" width="92" height="40"></rect>
+    <rect x="35" y="105" width="80" height="40"></rect>
+    <rect x="35" y="165" width="80" height="40"></rect>
+    <rect x="35" y="225" width="80" height="40"></rect>
+    <rect x="35" y="285" width="80" height="40"></rect>
+    <rect x="35" y="345" width="80" height="40"></rect>
+    <rect x="35" y="405" width="80" height="40"></rect>
+    <path d="M25,85 V425 M25,125 H35 M25,185 H35 M25,245 H35 M25,305 H35 M25,365 H35 M25,425 H35"></path>
+    <rect x="400" y="45" width="110" height="40"></rect>
+    <rect x="400" y="105" width="110" height="40"></rect>
+    <rect x="330" y="165" width="180" height="40"></rect>
+    <rect x="400" y="225" width="110" height="40"></rect>
+    <rect x="400" y="285" width="110" height="40"></rect>
+    <rect x="400" y="345" width="110" height="40"></rect>
+    <rect x="310" y="405" width="200" height="40"></rect>
+    <path d="M515,20 V445 M510,65 H515 M510,125 H515 M510,185 H515 M510,245 H515 M510,305 H515 M510,365 H515 M510,425 H515"></path>
+    <path d="M115,125 H170 M170,125 V245 M115,185 H170 M115,245 H170"></path>
+    <path d="M170,245 H230 V245 H400" stroke-dasharray="8 3 2 3" marker-end="url(#arrow-inv-2-8)"></path>
+    <path d="M115,305 H330 V270 H370" stroke-dasharray="2 4"></path>
+    <path d="M370,270 V245 H400" stroke-dasharray="2 4" marker-end="url(#arrow-inv-2-8)"></path>
+    <path d="M370,270 V305 H400" stroke-dasharray="2 4" marker-end="url(#arrow-inv-2-8)"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="8" y="25">产品及其组成</text>
+    <text x="410" y="25">用户关注的功能</text>
+    <text x="54" y="70" text-anchor="middle">住宅产品</text>
+    <text x="75" y="130" text-anchor="middle">地面</text>
+    <text x="75" y="190" text-anchor="middle">墙体</text>
+    <text x="75" y="250" text-anchor="middle">屋面</text>
+    <text x="75" y="310" text-anchor="middle">门窗</text>
+    <text x="75" y="370" text-anchor="middle">……</text>
+    <text x="75" y="430" text-anchor="middle">基础</text>
+    <text x="455" y="70" text-anchor="middle">建筑面积</text>
+    <text x="455" y="130" text-anchor="middle">平面布局</text>
+    <text x="420" y="190" text-anchor="middle">各功能空间使用面积</text>
+    <text x="455" y="250" text-anchor="middle">保温性能</text>
+    <text x="455" y="310" text-anchor="middle">采光通风</text>
+    <text x="455" y="370" text-anchor="middle">……</text>
+    <text x="410" y="430" text-anchor="middle">周边环境（受外部制约）</text>
+    <text x="245" y="238">功能保证</text>
+    <text x="205" y="297">功能分解</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 2-8 （价值工程）对象与功能关系图</p>
 
@@ -216,7 +264,59 @@ C——对象获得功能所产生的费用（成本），包括获得功能所�
 
 功能评价是对功能进行量化以确定功能评价值（绝对值）或功能指数（相对值），并与实现功能的成本或成本指数进行比较，计算价值指数，分析成本改进期望值，以确定价值工程改进对象及其目标成本或根据比较结果进行方案择优的过程。
 
-<FigureZoom caption="图 2-9 功能系统图" src="/images/investment/chapter-02/fig-2-09.png" :width="437" :height="636" />
+<FigureZoom caption="图 2-9 功能系统图">
+<svg viewBox="0 0 430 630" role="img" aria-label="图 2-9 功能系统图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="8" y="270" width="50" height="40"></rect>
+    <rect x="170" y="90" width="50" height="40"></rect>
+    <rect x="170" y="270" width="50" height="40"></rect>
+    <rect x="170" y="465" width="50" height="40"></rect>
+    <rect x="300" y="30" width="50" height="32"></rect>
+    <rect x="300" y="85" width="50" height="32"></rect>
+    <rect x="300" y="155" width="50" height="32"></rect>
+    <rect x="300" y="215" width="50" height="32"></rect>
+    <rect x="300" y="270" width="50" height="32"></rect>
+    <rect x="300" y="340" width="50" height="32"></rect>
+    <rect x="300" y="410" width="50" height="32"></rect>
+    <rect x="300" y="465" width="50" height="32"></rect>
+    <rect x="300" y="535" width="50" height="32"></rect>
+    <path d="M58,290 H110 V485 H220"></path>
+    <path d="M110,110 H170 M110,290 H170 M110,485 H170"></path>
+    <path d="M220,110 H250 M220,290 H250 M220,485 H250"></path>
+    <path d="M250,46 V171 M250,46 H300 M250,101 H300 M250,171 H300"></path>
+    <path d="M250,231 V356 M250,231 H300 M250,286 H300 M250,356 H300"></path>
+    <path d="M250,426 V551 M250,426 H300 M250,481 H300 M250,551 H300"></path>
+    <path d="M30,310 V600 M110,485 V600 M195,505 V600 M350,567 V600"></path>
+    <path d="M30,600 H430"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="33" y="295" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">0</tspan></text>
+    <text x="195" y="115" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">1</tspan></text>
+    <text x="195" y="295" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">2</tspan></text>
+    <text x="195" y="490" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">m</tspan></text>
+    <text x="325" y="52" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">11</tspan></text>
+    <text x="325" y="107" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">12</tspan></text>
+    <text x="325" y="145" text-anchor="middle">……</text>
+    <text x="325" y="177" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">1n</tspan></text>
+    <text x="325" y="237" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">21</tspan></text>
+    <text x="325" y="292" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">22</tspan></text>
+    <text x="325" y="330" text-anchor="middle">……</text>
+    <text x="325" y="362" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">2n</tspan></text>
+    <text x="325" y="432" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">m1</tspan></text>
+    <text x="325" y="487" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">m2</tspan></text>
+    <text x="325" y="525" text-anchor="middle">……</text>
+    <text x="325" y="557" text-anchor="middle"><tspan>F</tspan><tspan dy="3" font-size="10">mn</tspan></text>
+    <text x="70" y="593" text-anchor="middle">上位功能</text>
+    <text x="172" y="593" text-anchor="middle">下位功能</text>
+    <text x="305" y="593" text-anchor="middle">上位功能</text>
+    <text x="402" y="593" text-anchor="middle">下位功能</text>
+    <text x="70" y="620" text-anchor="middle">目的</text>
+    <text x="172" y="620" text-anchor="middle">手段</text>
+    <text x="305" y="620" text-anchor="middle">目的</text>
+    <text x="402" y="620" text-anchor="middle">手段</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 2-9 功能系统图</p>
 

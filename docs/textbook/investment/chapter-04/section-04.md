@@ -58,7 +58,55 @@ sectionTitle: 第四节 项目融资特点、程序和主要方式
 
 这一阶段的重要步骤是对与项目有关的风险因素进行全面的分析、判断和评估，确定项目的债务承受能力和风险，设计出切实可行的融资方案和抵押保证结构。项目融资的信用结构的基础是由项目本身的经济强度以及与之有关的各个利益主体与项目的契约关系和信用保证构成的。项目融资结构以及相应的资金结构的设计和选择，必须全面地反映投资者的融资战略要求和考虑。
 
-<FigureZoom caption="图 4-1 项目融资程序" src="/images/investment/chapter-04/fig-4-01.png" :width="506" :height="805" />
+<FigureZoom caption="图 4-1 项目融资程序">
+<svg viewBox="0 0 506 735" role="img" aria-label="图 4-1 项目融资程序" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-4-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="12" y="8" width="428" height="132"></rect>
+    <rect x="12" y="153" width="428" height="147"></rect>
+    <rect x="12" y="313" width="428" height="112"></rect>
+    <rect x="12" y="438" width="428" height="142"></rect>
+    <rect x="12" y="593" width="428" height="127"></rect>
+    <path d="M226,140 V153" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M226,300 V313" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M226,425 V438" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M226,580 V593" marker-end="url(#arrow-inv-4-1)"></path>
+    <path d="M440,225 H467 V345"></path>
+    <path d="M440,330 H467"></path>
+    <path d="M440,445 H467"></path>
+    <path d="M467,425 V650 H440"></path>
+    <rect x="443" y="345" width="50" height="80"></rect>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="24" y="30">投资决策分析阶段：</text>
+    <text x="24" y="52">· 工业部门（技术、市场）分析</text>
+    <text x="24" y="74">· 项目可行性研究</text>
+    <text x="24" y="96">· 投资决策</text>
+    <text x="24" y="118">—初步确定项目投资结构</text>
+    <text x="24" y="180">融资决策分析阶段：</text>
+    <text x="24" y="202">· 选择项目的融资方式</text>
+    <text x="24" y="224">— 决定是否采用项目融资</text>
+    <text x="24" y="246">· 任命项目融资顾问</text>
+    <text x="24" y="268">—明确融资任务和具体目标要求</text>
+    <text x="24" y="340">融资结构设计阶段：</text>
+    <text x="24" y="362">· 评价项目风险因素</text>
+    <text x="24" y="384">· 评价项目的融资结构和资金结构</text>
+    <text x="24" y="406">—修正项目融资结构</text>
+    <text x="24" y="465">融资谈判阶段：</text>
+    <text x="24" y="487">· 选择银行、发出项目融资建议书</text>
+    <text x="24" y="509">· 组织贷款银团</text>
+    <text x="24" y="531">· 起草融资法律文件</text>
+    <text x="24" y="553">· 融资谈判</text>
+    <text x="24" y="620">融资执行阶段：</text>
+    <text x="24" y="642">· 签署项目融资文件</text>
+    <text x="24" y="664">· 执行项目投资计划</text>
+    <text x="24" y="686">· 贷款银团经理人监督并参与项目决策</text>
+    <text x="24" y="708">· 项目风险控制与管理</text>
+    <text x="468" y="372" text-anchor="middle">反</text>
+    <text x="468" y="400" text-anchor="middle">馈</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-1 项目融资程序</p>
 

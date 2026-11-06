@@ -78,7 +78,50 @@ sectionTitle: 第一节 工程项目投资特点和控制原理
 
 投资动态控制原理如图 1-2 所示，这种控制是动态的，并贯穿于项目建设始终。
 
-<FigureZoom caption="图 1-2 投资动态控制原理图" src="/images/investment/chapter-01/fig-1-02.png" :width="774" :height="440" />
+<FigureZoom caption="图 1-2 投资动态控制原理图">
+<svg viewBox="0 0 780 440" role="img" aria-label="图 1-2 投资动态控制原理图" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-inv-1-2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <rect x="195" y="8" width="380" height="36"></rect>
+    <rect x="250" y="54" width="380" height="36"></rect>
+    <rect x="590" y="176" width="170" height="60"></rect>
+    <rect x="150" y="176" width="240" height="60"></rect>
+    <rect x="330" y="262" width="150" height="42"></rect>
+    <rect x="370" y="366" width="220" height="38"></rect>
+    <rect x="118" y="362" width="184" height="48"></rect>
+    <path d="M16,164 L94,134 L172,164 L94,194 Z"></path>
+    <path d="M385,44 V54" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M250,72 H94 V134" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M172,164 H333 V176" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M94,194 V284 H330" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M270,236 V272 H330" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M262,298 H330" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M480,280 H675 V236" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M675,176 V72 H630" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M302,386 H370" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M480,366 V304" marker-end="url(#arrow-inv-1-2)"></path>
+    <path d="M200,344 L240,320 L290,344 L352,304" marker-end="url(#arrow-inv-1-2)"></path>
+  </g>
+  <g fill="currentColor" font-size="13">
+    <text x="385" y="31" text-anchor="middle">工程项目计划投资额（目标值）</text>
+    <text x="440" y="77" text-anchor="middle">投资实际值与计划值比较</text>
+    <text x="94" y="169" text-anchor="middle">偏差</text>
+    <text x="252" y="156">有</text>
+    <text x="106" y="216">无</text>
+    <text x="270" y="199" text-anchor="middle">分析产生偏差的原因，</text>
+    <text x="270" y="221" text-anchor="middle">采取纠偏措施</text>
+    <text x="405" y="287" text-anchor="middle">工程进展</text>
+    <text x="675" y="199" text-anchor="middle">收集投资实际</text>
+    <text x="675" y="221" text-anchor="middle">支出数据</text>
+    <text x="210" y="380" text-anchor="middle">事先分析各种产</text>
+    <text x="210" y="402" text-anchor="middle">生偏差的原因</text>
+    <text x="480" y="390" text-anchor="middle">决策，采取预防措施</text>
+    <text x="20" y="292">人力、财力、物力投入</text>
+    <text x="250" y="352">干扰</text>
+    <text x="655" y="64">实际值</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 1-2 投资动态控制原理图</p>
 
