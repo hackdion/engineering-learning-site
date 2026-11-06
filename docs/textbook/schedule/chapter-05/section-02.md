@@ -12,7 +12,105 @@ sectionTitle: 第二节 设计进度控制工作程序和内容
 
 工程设计进度控制的主要任务是出图控制，也就是通过采取有效措施使工程设计者如期完成初步设计、技术设计、施工图设计等各阶段的设计工作，并提交相应的设计图纸及说明。为此，项目监理机构要审核设计单位的进度计划和各专业的出图计划，并在设计实施过程中，跟踪检查这些计划的执行情况，定期将实际进度与计划进度进行比较，进而纠正或修订进度计划。若发现进度拖后，监理工程师应督促设计单位采取有效措施加快进度。图5-1是考虑三阶段设计的进度控制工作流程图。
 
-<FigureZoom caption="图 5-1 工程设计进度控制工作流程图" src="/images/schedule/chapter-05/fig-5-01.png" :width="754" :height="917" />
+<FigureZoom caption="图 5-1 工程设计进度控制工作流程图">
+<svg viewBox="0 0 754 917" role="img" aria-label="图 5-1 工程设计进度控制工作流程图" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-5-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="45" y="22" width="202" height="37"></rect>
+    <rect x="45" y="59" width="202" height="59"></rect>
+    <rect x="35" y="147" width="224" height="38"></rect>
+    <rect x="281" y="22" width="202" height="37" stroke-dasharray="8 6"></rect>
+    <rect x="281" y="59" width="202" height="59" stroke-dasharray="8 6"></rect>
+    <rect x="265" y="147" width="238" height="38" stroke-dasharray="8 6"></rect>
+    <rect x="505" y="22" width="218" height="37"></rect>
+    <rect x="505" y="59" width="218" height="59"></rect>
+    <rect x="503" y="147" width="223" height="38"></rect>
+    <rect x="251" y="226" width="266" height="37"></rect>
+    <polygon points="383,284 511,318 383,352 255,318"></polygon>
+    <rect x="251" y="401" width="266" height="37"></rect>
+    <rect x="251" y="481" width="266" height="37"></rect>
+    <rect x="334" y="566" width="98" height="37"></rect>
+    <polygon points="139,637 221,697 139,757 57,697"></polygon>
+    <polygon points="383,637 463,697 383,757 303,697"></polygon>
+    <polygon points="611,637 691,697 611,757 531,697"></polygon>
+    <rect x="47" y="803" width="177" height="89"></rect>
+    <rect x="287" y="803" width="176" height="59"></rect>
+    <rect x="484" y="811" width="125" height="78"></rect>
+    <rect x="618" y="811" width="124" height="78"></rect>
+    <path d="M146,118 V147" marker-end="url(#arrow-5-1)"></path>
+    <path d="M383,118 V147" marker-end="url(#arrow-5-1)"></path>
+    <path d="M614,118 V147" marker-end="url(#arrow-5-1)"></path>
+    <path d="M146,185 V210 H383"></path>
+    <path d="M383,185 V226" marker-end="url(#arrow-5-1)"></path>
+    <path d="M614,185 V210 H383"></path>
+    <path d="M383,263 V284" marker-end="url(#arrow-5-1)"></path>
+    <path d="M383,352 V401" marker-end="url(#arrow-5-1)"></path>
+    <path d="M511,318 H616 V539 H383"></path>
+    <path d="M383,438 V481" marker-end="url(#arrow-5-1)"></path>
+    <path d="M383,518 V566" marker-end="url(#arrow-5-1)"></path>
+    <path d="M383,603 V629"></path>
+    <path d="M139,629 H611"></path>
+    <path d="M139,629 V637" marker-end="url(#arrow-5-1)"></path>
+    <path d="M383,629 V637" marker-end="url(#arrow-5-1)"></path>
+    <path d="M611,629 V637" marker-end="url(#arrow-5-1)"></path>
+    <path d="M57,697 H20 V130 H134" marker-end="url(#arrow-5-1)"></path>
+    <path d="M303,697 H249 V916 H3 V4 H264 V129 H378" marker-end="url(#arrow-5-1)"></path>
+    <path d="M691,697 H747 V120 H614" marker-end="url(#arrow-5-1)"></path>
+    <path d="M139,757 V803" marker-end="url(#arrow-5-1)"></path>
+    <path d="M383,757 V803" marker-end="url(#arrow-5-1)"></path>
+    <path d="M611,757 V790 H546 V811" marker-end="url(#arrow-5-1)"></path>
+    <path d="M611,790 H680 V811" marker-end="url(#arrow-5-1)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="146" y="40" dy="0.35em" font-size="17">① 初步设计阶段</text>
+    <text x="146" y="82" dy="0.35em" font-size="17">编制设计进度计划</text>
+    <text x="146" y="103" dy="0.35em" font-size="17">编制初步设计出图计划</text>
+    <text x="147" y="166" dy="0.35em" font-size="17">初步设计实际出图情况</text>
+    <text x="382" y="40" dy="0.35em" font-size="17">② 技术设计阶段</text>
+    <text x="382" y="82" dy="0.35em" font-size="17">修订设计进度计划</text>
+    <text x="382" y="103" dy="0.35em" font-size="17">编制技术设计出图计划</text>
+    <text x="384" y="166" dy="0.35em" font-size="17">技术设计实际出图情况</text>
+    <text x="614" y="40" dy="0.35em" font-size="17">③ 施工图设计阶段</text>
+    <text x="614" y="82" dy="0.35em" font-size="17">修订设计进度计划</text>
+    <text x="614" y="103" dy="0.35em" font-size="17">编制施工图设计出图计划</text>
+    <text x="615" y="166" dy="0.35em" font-size="17">施工图设计实际出图情况</text>
+    <text x="384" y="244" dy="0.35em" font-size="17">定期比较实际进度与计划进度</text>
+    <text x="383" y="318" dy="0.35em" font-size="17">是否有偏差?</text>
+    <text x="384" y="419" dy="0.35em" font-size="17">分析原因，提出进度加快措施</text>
+    <text x="384" y="499" dy="0.35em" font-size="17">纠偏行动，落实进度加快措施</text>
+    <text x="383" y="584" dy="0.35em" font-size="17">进度报告</text>
+    <text x="139" y="688" dy="0.35em" font-size="15">初步设计完</text>
+    <text x="139" y="710" dy="0.35em" font-size="15">成否?</text>
+    <text x="383" y="688" dy="0.35em" font-size="15">技术设计完</text>
+    <text x="383" y="710" dy="0.35em" font-size="15">成否?</text>
+    <text x="611" y="688" dy="0.35em" font-size="15">施工图设计</text>
+    <text x="611" y="710" dy="0.35em" font-size="15">完成否?</text>
+    <text x="530" y="310" dy="0.35em" font-size="15">无</text>
+    <text x="392" y="382" dy="0.35em" font-size="15" text-anchor="start">有</text>
+    <text x="30" y="686" dy="0.35em" font-size="15">否</text>
+    <text x="270" y="686" dy="0.35em" font-size="15">否</text>
+    <text x="706" y="686" dy="0.35em" font-size="15">否</text>
+    <text x="148" y="780" dy="0.35em" font-size="15">是</text>
+    <text x="390" y="780" dy="0.35em" font-size="15">是</text>
+    <text x="625" y="780" dy="0.35em" font-size="15">是</text>
+    <text x="135" y="820" dy="0.35em" font-size="15">转入</text>
+    <text x="135" y="845" dy="0.35em" font-size="15">②技术设计阶段或</text>
+    <text x="135" y="868" dy="0.35em" font-size="15">③施工图设计阶段</text>
+    <text x="375" y="820" dy="0.35em" font-size="15">转入</text>
+    <text x="375" y="845" dy="0.35em" font-size="15">③施工图设计阶段</text>
+    <text x="546" y="835" dy="0.35em" font-size="15">编制详细的设</text>
+    <text x="546" y="858" dy="0.35em" font-size="15">备采购计划，</text>
+    <text x="546" y="881" dy="0.35em" font-size="15">并控制其执行</text>
+    <text x="680" y="835" dy="0.35em" font-size="15">编制详细的施</text>
+    <text x="680" y="858" dy="0.35em" font-size="15">工招标计划，</text>
+    <text x="680" y="881" dy="0.35em" font-size="15">并控制其执行</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 5-1 工程设计进度控制工作流程图</p>
 
