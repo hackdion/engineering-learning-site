@@ -67,17 +67,17 @@ sectionTitle: 第一节 基本原理
     <text x="538" y="132" dy="0.35em" font-size="12.5">5</text>
     <text x="682" y="132" dy="0.35em" font-size="12.5">6</text>
     <text x="140" y="40" font-size="13.5">支模1</text>
-    <text x="140" y="78" font-size="13">3</text>
+    <text x="140" y="72" font-size="13">3</text>
     <text x="286" y="40" font-size="13.5">扎筋1</text>
-    <text x="286" y="78" font-size="13">2</text>
+    <text x="286" y="72" font-size="13">2</text>
     <text x="455" y="40" font-size="13.5">混凝土1</text>
-    <text x="455" y="78" font-size="13">1</text>
+    <text x="455" y="72" font-size="13">1</text>
     <text x="276" y="120" font-size="13.5">支模2</text>
-    <text x="276" y="160" font-size="13">3</text>
+    <text x="276" y="154" font-size="13">3</text>
     <text x="452" y="120" font-size="13.5">扎筋2</text>
-    <text x="452" y="160" font-size="13">2</text>
+    <text x="452" y="154" font-size="13">2</text>
     <text x="610" y="120" font-size="13.5">混凝土2</text>
-    <text x="610" y="160" font-size="13">1</text>
+    <text x="610" y="154" font-size="13">1</text>
   </g>
 </svg>
 </FigureZoom>
