@@ -145,6 +145,26 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：CM 代理型与非代理型、Partnering 合作机制、Project Controlling 决策支持与应用边界，配排序和 8 道自测题。'
   },
   {
+    id: 'ppt-gl-2-1-1', book: 'gailun', section: '2.1', title: '《建筑法》与《建设工程质量管理条例》',
+    date: '2026-11-06', deck: '/courses/ppt-gl-2-1-1',
+    summary: '互动 PPT：建筑许可、发包承包、安全生产管理、建筑法质量责任，以及质量条例五方责任、竣工验收备案、保修与事故报告，配对比、排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-2-1-2', book: 'gailun', section: '2.1', title: '《招标投标法》与《招标投标法实施条例》',
+    date: '2026-11-06', deck: '/courses/ppt-gl-2-1-2',
+    summary: '互动 PPT：招标方式与例外、招标文件和资格预审、投标与联合体、串通投标、开标评标中标、保证金与投诉时限，配对比、排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-2-1-3', book: 'gailun', section: '2.1', title: '《民法典》合同编',
+    date: '2026-11-06', deck: '/courses/ppt-gl-2-1-3',
+    summary: '互动 PPT：合同订立、效力、履行、保全、变更和转让、终止、违约责任，含要约承诺、抗辩权、代位权与撤销权、违约金与定金，配排序和 8 道自测题。'
+  },
+  {
+    id: 'ppt-gl-2-1-4', book: 'gailun', section: '2.1', title: '安全生产三件套',
+    date: '2026-11-06', deck: '/courses/ppt-gl-2-1-4',
+    summary: '互动 PPT：安全生产法主要负责人职责与从业人员权利义务、建设工程安全生产管理条例各方责任、危大工程与现场管理、事故等级报告调查与批复，配对比、排序和 8 道自测题。'
+  },
+  {
     id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-01', courseware: '/courses/gl-2-2',
     summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
