@@ -285,7 +285,91 @@ sectionTitle: 第三节 工程进度控制
 
 某市政工程，项目的合同工期为38周。经总监理工程师批准的施工总进度计划如图4-10所示（时间单位：周），各工作可以缩短的时间及其增加的赶工费见表4-5，其中H、L分别为道路的路基、路面工程。
 
-<FigureZoom caption="图 4-10 施工总进度计划" src="/images/case-analysis/chapter-04/fig-4-10.png" :width="738" :height="340" />
+<FigureZoom caption="图 4-10 施工总进度计划">
+<svg viewBox="0 0 738 340" role="img" aria-label="图 4-10 施工总进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-10" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M47,171 H110" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M122,159 V34 H213" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M134,171 H221" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M122,183 V302 H220" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M237,34 H337" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M225,46 V106 H310 L343,161" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M245,171 H337" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M244,302 H337" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M361,34 H452" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M355,161 L384,110 H464 V46" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M361,171 H638" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M361,302 H462" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M476,34 H650 V159" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M486,302 H650 V183" marker-end="url(#arrow-case-4-10)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="7 5">
+    <path d="M232,290 V183" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M349,290 V183" marker-end="url(#arrow-case-4-10)"></path>
+    <path d="M356,181 L389,230 H474 V290" marker-end="url(#arrow-case-4-10)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="35" cy="171" r="12"></circle>
+    <circle cx="122" cy="171" r="12"></circle>
+    <circle cx="225" cy="34" r="12"></circle>
+    <circle cx="232" cy="302" r="12"></circle>
+    <circle cx="233" cy="171" r="12"></circle>
+    <circle cx="349" cy="34" r="12"></circle>
+    <circle cx="349" cy="302" r="12"></circle>
+    <circle cx="349" cy="171" r="12"></circle>
+    <circle cx="474" cy="302" r="12"></circle>
+    <circle cx="464" cy="34" r="12"></circle>
+    <circle cx="650" cy="171" r="12"></circle>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <text x="35" y="175.5">1</text>
+    <text x="122" y="175.5">2</text>
+    <text x="225" y="38.5">3</text>
+    <text x="232" y="306.5">4</text>
+    <text x="233" y="175.5">5</text>
+    <text x="349" y="38.5">6</text>
+    <text x="349" y="306.5">7</text>
+    <text x="349" y="175.5">8</text>
+    <text x="474" y="306.5">9</text>
+    <text x="464" y="38.5">10</text>
+    <text x="650" y="175.5">11</text>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle">
+    <text x="73" y="160">A</text>
+    <text x="71" y="190">3</text>
+    <text x="168" y="28">B</text>
+    <text x="169" y="62">7</text>
+    <text x="172" y="160">C</text>
+    <text x="172" y="190">9</text>
+    <text x="169" y="294">D</text>
+    <text x="169" y="322">3</text>
+    <text x="281" y="28">E</text>
+    <text x="280" y="62">5</text>
+    <text x="269" y="96">F</text>
+    <text x="269" y="129">6</text>
+    <text x="289" y="160">G</text>
+    <text x="289" y="190">7</text>
+    <text x="290" y="294">H</text>
+    <text x="291" y="322">8</text>
+    <text x="403" y="28">I</text>
+    <text x="406" y="62">12</text>
+    <text x="422" y="96">J</text>
+    <text x="422" y="129">12</text>
+    <text x="476" y="160">K</text>
+    <text x="475" y="190">6</text>
+    <text x="400" y="294">L</text>
+    <text x="402" y="322">2</text>
+    <text x="556" y="28">M</text>
+    <text x="557" y="62">7</text>
+    <text x="566" y="294">N</text>
+    <text x="568" y="322">10</text>
+  </g>
+  <g fill="currentColor" font-size="13" font-style="italic" text-anchor="start">
+    <text x="668" y="160">T<tspan font-size="10" dy="4">c</tspan><tspan dy="-4">=38周</tspan></text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-10 施工总进度计划</p>
 
