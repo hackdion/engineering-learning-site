@@ -127,18 +127,18 @@ sectionTitle: 第四节 双代号时标网络计划
     <path d="M645.0,190 V235" stroke-dasharray="5 4" marker-end="url(#arrow-3-31)"></path>
     <line x1="296.3" y1="165" x2="296.3" y2="235" stroke-dasharray="5 4"></line>
     <line x1="303.7" y1="165" x2="303.7" y2="235" stroke-dasharray="5 4"></line>
-    <path d="M295.5,228 L300.0,235 L304.5,228"></path>
+    <path d="M295,225.5 L300.0,235 L305,225.5 z" fill="currentColor" stroke="none"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <path d="M83.0,150.3 H287.0"></path>
     <path d="M83.0,153.7 H287.0"></path>
-    <path d="M283.0,147.0 L287.0,152 L283.0,157.0"></path>
+    <path d="M277.0,147.5 L287.0,152 L277.0,156.5 z" fill="currentColor" stroke="none"></path>
     <path d="M313.0,246.3 H632.0"></path>
     <path d="M313.0,249.7 H632.0"></path>
-    <path d="M628.0,243.0 L632.0,248 L628.0,253.0"></path>
+    <path d="M622.0,243.5 L632.0,248 L622.0,252.5 z" fill="currentColor" stroke="none"></path>
     <path d="M658.0,246.3 H930.8 V173.0"></path>
     <path d="M658.0,249.7 H934.2 V173.0"></path>
-    <path d="M927.5,173.0 L932.5,165.0 L937.5,173.0"></path>
+    <path d="M927.5,175.0 L932.5,165.0 L937.5,175.0 z" fill="currentColor" stroke="none"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <circle cx="70" cy="152" r="13"></circle>

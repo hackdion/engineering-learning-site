@@ -12,7 +12,97 @@ sectionTitle: 第二节 施工进度控制工作流程和内容
 
 工程施工进度控制工作流程如图 6-2 所示。
 
-<FigureZoom caption="图 6-2 工程施工进度控制工作流程图" src="/images/schedule/chapter-06/fig-6-02.png" :width="874" :height="955" />
+<FigureZoom caption="图 6-2 工程施工进度控制工作流程图">
+<svg viewBox="0 0 874 955" role="img" aria-label="图 6-2 工程施工进度控制工作流程图" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-6-2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="318" y="7" width="326" height="37"></rect>
+    <rect x="180" y="98" width="221" height="37"></rect>
+    <rect x="624" y="98" width="244" height="37"></rect>
+    <rect x="394" y="212" width="164" height="37"></rect>
+    <rect x="209" y="272" width="162" height="37"></rect>
+    <rect x="394" y="272" width="164" height="37"></rect>
+    <rect x="282" y="528" width="348" height="37"></rect>
+    <rect x="371" y="596" width="209" height="37"></rect>
+    <rect x="408" y="779" width="134" height="37"></rect>
+    <rect x="408" y="844" width="134" height="38"></rect>
+    <rect x="407" y="906" width="135" height="42"></rect>
+    <rect x="14" y="223" width="223" height="37"></rect>
+    <rect x="14" y="336" width="223" height="37"></rect>
+    <polygon points="289,140 433,192 289,244 145,192"></polygon>
+    <polygon points="476,320 559,370 476,420 393,370"></polygon>
+    <polygon points="701,323 754,345 701,367 648,345"></polygon>
+    <polygon points="476,430 568,465 476,500 384,465"></polygon>
+    <polygon points="133,430 216,465 133,500 50,465"></polygon>
+    <polygon points="476,658 567,694 476,730 385,694"></polygon>
+    <path d="M485,44 V73 H299 V98" marker-end="url(#arrow-6-2)"></path>
+    <path d="M485,73 H710 V98" marker-end="url(#arrow-6-2)"></path>
+    <path d="M289,135 V140" marker-end="url(#arrow-6-2)"></path>
+    <path d="M433,192 H501 V119 H401" marker-end="url(#arrow-6-2)"></path>
+    <path d="M289,244 V272" marker-end="url(#arrow-6-2)"></path>
+    <path d="M754,135 V231 H558" marker-end="url(#arrow-6-2)"></path>
+    <path d="M394,231 H324 V272" marker-end="url(#arrow-6-2)"></path>
+    <path d="M476,249 V272" marker-end="url(#arrow-6-2)"></path>
+    <path d="M371,290 H394" marker-end="url(#arrow-6-2)"></path>
+    <path d="M476,309 V320" marker-end="url(#arrow-6-2)"></path>
+    <path d="M559,370 H640 V296 H558" marker-end="url(#arrow-6-2)"></path>
+    <path d="M393,370 H291 V309" marker-end="url(#arrow-6-2)"></path>
+    <path d="M476,420 V430" marker-end="url(#arrow-6-2)"></path>
+    <path d="M384,465 H216" marker-end="url(#arrow-6-2)"></path>
+    <path d="M133,430 V373" marker-end="url(#arrow-6-2)"></path>
+    <path d="M133,500 V742 H470 V779" marker-end="url(#arrow-6-2)"></path>
+    <path d="M476,500 V528" marker-end="url(#arrow-6-2)"></path>
+    <path d="M476,565 V596" marker-end="url(#arrow-6-2)"></path>
+    <path d="M476,633 V658" marker-end="url(#arrow-6-2)"></path>
+    <path d="M385,694 H305 V616 H371" marker-end="url(#arrow-6-2)"></path>
+    <path d="M567,694 H637 V742"></path>
+    <path d="M558,289 H701 V323" marker-end="url(#arrow-6-2)"></path>
+    <path d="M754,345 V282 H558" marker-end="url(#arrow-6-2)"></path>
+    <path d="M701,367 V754 H470"></path>
+    <path d="M475,816 V844" marker-end="url(#arrow-6-2)"></path>
+    <path d="M475,882 V906" marker-end="url(#arrow-6-2)"></path>
+    <path d="M125,223 V116 H180" marker-end="url(#arrow-6-2)"></path>
+    <path d="M125,336 V260" marker-end="url(#arrow-6-2)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="481" y="25" dy="0.35em" font-size="17">发送中标通知书并签订施工承包合同</text>
+    <text x="290" y="116" dy="0.35em" font-size="17">承包单位提交进度计划</text>
+    <text x="746" y="116" dy="0.35em" font-size="17">监理工程师下达工程开工令</text>
+    <text x="476" y="230" dy="0.35em" font-size="17">第一次工地会议</text>
+    <text x="290" y="290" dy="0.35em" font-size="17">协调会议与指令</text>
+    <text x="476" y="290" dy="0.35em" font-size="17">监督实施计划</text>
+    <text x="456" y="546" dy="0.35em" font-size="17">监理工程师督促承包单位采取赶工措施</text>
+    <text x="475" y="614" dy="0.35em" font-size="17">承包单位调整进度计划</text>
+    <text x="475" y="797" dy="0.35em" font-size="17">工程竣工验收</text>
+    <text x="475" y="863" dy="0.35em" font-size="17">颁发移交证书</text>
+    <text x="474" y="927" dy="0.35em" font-size="17">监督工程保修</text>
+    <text x="125" y="241" dy="0.35em" font-size="17">监理工程师审批工程延期</text>
+    <text x="125" y="354" dy="0.35em" font-size="17">承包单位提出延期</text>
+    <text x="289" y="192" dy="0.35em" font-size="17">监理工程师审批</text>
+    <text x="476" y="370" dy="0.35em" font-size="17">检查执行情况</text>
+    <text x="701" y="345" dy="0.35em" font-size="15">完工?</text>
+    <text x="476" y="465" dy="0.35em" font-size="16">承包单位责任?</text>
+    <text x="133" y="465" dy="0.35em" font-size="16">影响工期?</text>
+    <text x="476" y="694" dy="0.35em" font-size="16">监理工程师审核</text>
+    <text x="418" y="172" dy="0.35em" font-size="15">要求整改</text>
+    <text x="279" y="214" dy="0.35em" font-size="15">同</text>
+    <text x="279" y="232" dy="0.35em" font-size="15">意</text>
+    <text x="336" y="358" dy="0.35em" font-size="15">有干扰</text>
+    <text x="598" y="358" dy="0.35em" font-size="15">正常</text>
+    <text x="500" y="430" dy="0.35em" font-size="15" text-anchor="start">有拖延</text>
+    <text x="500" y="518" dy="0.35em" font-size="15" text-anchor="start">是</text>
+    <text x="330" y="454" dy="0.35em" font-size="15">否</text>
+    <text x="143" y="398" dy="0.35em" font-size="15" text-anchor="start">是</text>
+    <text x="335" y="678" dy="0.35em" font-size="15">不同意</text>
+    <text x="150" y="522" dy="0.35em" font-size="15" text-anchor="start">否</text>
+    <text x="736" y="312" dy="0.35em" font-size="15" text-anchor="start">否</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-2 工程施工进度控制工作流程图</p>
 
