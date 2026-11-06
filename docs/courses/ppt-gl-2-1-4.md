@@ -375,7 +375,7 @@ edition: 2026 年版（中国建设监理协会组织编写）
 - **现场与机具**：危险部位设警示标志；机具验收合格方可使用，30 日内登记；意外伤害保险由施工单位支付。
 - **事故**：四级按死亡、重伤或直接经济损失划分；1 小时内上报、每级不超过 2 小时；60 日内提交报告，15 日或 30 日内批复。
 
-继续学：[读本节教材原文](/textbook/chapter-02/section-01) · [听《安全生产法》（B 站第 6 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=6) · [听《生产安全事故报告和调查处理条例》（B 站第 8 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=8) · [课程中心](/courses/)
+继续学：[读本节教材原文](/textbook/chapter-02/section-01) · [听《安全生产法》（B 站第 6 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=6) · [听《建设工程安全生产管理条例》（B 站第 7 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=7) · [听《生产安全事故报告和调查处理条例》（B 站第 8 集）](https://www.bilibili.com/video/BV1Zoap65EKb/?p=8) · [课程中心](/courses/)
 
 <template #notes>
 
