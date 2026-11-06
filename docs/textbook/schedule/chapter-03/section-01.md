@@ -34,7 +34,53 @@ sectionTitle: 第一节 基本原理
 
 生产性工作之间由工艺过程决定的、非生产性工作之间由工作程序决定的先后顺序关系称为工艺关系。如图 3-3 所示，支模 1→扎筋 1→混凝土 1 为工艺关系。
 
-<FigureZoom caption="图 3-3 某混凝土工程双代号网络计划" src="/images/schedule/chapter-03/fig-3-03.png" :width="719" :height="200" />
+<FigureZoom caption="图 3-3 某混凝土工程双代号网络计划">
+<svg viewBox="0 0 719 200" role="img" aria-label="图 3-3 某混凝土工程双代号网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <line x1="91" y1="50" x2="185" y2="50" marker-end="url(#arrow-3-3)"></line>
+    <line x1="213" y1="50" x2="343" y2="50" marker-end="url(#arrow-3-3)"></line>
+    <path d="M200,63 V132 H343" marker-end="url(#arrow-3-3)"></path>
+    <line x1="371" y1="50" x2="538" y2="50"></line>
+    <path d="M538,50 V117" marker-end="url(#arrow-3-3)"></path>
+    <line x1="371" y1="132" x2="523" y2="132" marker-end="url(#arrow-3-3)"></line>
+    <line x1="551" y1="132" x2="667" y2="132" marker-end="url(#arrow-3-3)"></line>
+    <line x1="358" y1="63" x2="358" y2="117" stroke-dasharray="5 4" marker-end="url(#arrow-3-3)"></line>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="78" cy="50" r="13"></circle>
+    <circle cx="200" cy="50" r="13"></circle>
+    <circle cx="358" cy="50" r="13"></circle>
+    <circle cx="358" cy="132" r="13"></circle>
+    <circle cx="538" cy="132" r="13"></circle>
+    <circle cx="682" cy="132" r="13"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="78" y="50" dy="0.35em" font-size="12.5">1</text>
+    <text x="200" y="50" dy="0.35em" font-size="12.5">2</text>
+    <text x="358" y="50" dy="0.35em" font-size="12.5">3</text>
+    <text x="358" y="132" dy="0.35em" font-size="12.5">4</text>
+    <text x="538" y="132" dy="0.35em" font-size="12.5">5</text>
+    <text x="682" y="132" dy="0.35em" font-size="12.5">6</text>
+    <text x="140" y="40" font-size="13.5">支模1</text>
+    <text x="140" y="78" font-size="13">3</text>
+    <text x="286" y="40" font-size="13.5">扎筋1</text>
+    <text x="286" y="78" font-size="13">2</text>
+    <text x="455" y="40" font-size="13.5">混凝土1</text>
+    <text x="455" y="78" font-size="13">1</text>
+    <text x="276" y="120" font-size="13.5">支模2</text>
+    <text x="276" y="160" font-size="13">3</text>
+    <text x="452" y="120" font-size="13.5">扎筋2</text>
+    <text x="452" y="160" font-size="13">2</text>
+    <text x="610" y="120" font-size="13.5">混凝土2</text>
+    <text x="610" y="160" font-size="13">1</text>
+  </g>
+</svg>
+</FigureZoom>
 
 ### （二）组织关系
 

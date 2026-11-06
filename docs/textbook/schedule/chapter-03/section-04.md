@@ -84,7 +84,104 @@ sectionTitle: 第四节 双代号时标网络计划
 
 在绘制时标网络计划时，特别需要注意的问题是处理好虚箭线。首先，应将虚箭线与实箭线等同看待，只是其对应工作的持续时间为零；其次，尽管其本身没有持续时间，但可能存在波形线，因此，要按规定画出波形线。在画波形线时，其垂直部分仍应画为虚线（如图 3-31 所示时标网络计划中的虚箭线⑤→⑥）。
 
-<FigureZoom caption="图 3-31 双代号时标网络计划" src="/images/schedule/chapter-03/fig-3-31.png" :width="1005" :height="279" />
+<FigureZoom caption="图 3-31 双代号时标网络计划">
+<svg viewBox="0 0 1005 279" role="img" aria-label="图 3-31 双代号时标网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-31" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <line x1="70.0" y1="44" x2="932.5" y2="44"></line>
+    <line x1="70.0" y1="44" x2="70.0" y2="51"></line>
+    <line x1="127.5" y1="44" x2="127.5" y2="51"></line>
+    <line x1="185.0" y1="44" x2="185.0" y2="51"></line>
+    <line x1="242.5" y1="44" x2="242.5" y2="51"></line>
+    <line x1="300.0" y1="44" x2="300.0" y2="51"></line>
+    <line x1="357.5" y1="44" x2="357.5" y2="51"></line>
+    <line x1="415.0" y1="44" x2="415.0" y2="51"></line>
+    <line x1="472.5" y1="44" x2="472.5" y2="51"></line>
+    <line x1="530.0" y1="44" x2="530.0" y2="51"></line>
+    <line x1="587.5" y1="44" x2="587.5" y2="51"></line>
+    <line x1="645.0" y1="44" x2="645.0" y2="51"></line>
+    <line x1="702.5" y1="44" x2="702.5" y2="51"></line>
+    <line x1="760.0" y1="44" x2="760.0" y2="51"></line>
+    <line x1="817.5" y1="44" x2="817.5" y2="51"></line>
+    <line x1="875.0" y1="44" x2="875.0" y2="51"></line>
+    <line x1="932.5" y1="44" x2="932.5" y2="51"></line>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M70.0,139 V92 H402.0" marker-end="url(#arrow-3-31)"></path>
+    <path d="M70.0,165 V248 H185.0"></path>
+    <polyline points="185.0,248.0 191.0,252.0 197.0,244.0 203.0,252.0 209.0,244.0 215.0,252.0 221.0,244.0 227.0,252.0 233.0,244.0 239.0,252.0 245.0,244.0 251.0,252.0 257.0,244.0 263.0,252.0 269.0,244.0 275.0,252.0 281.0,244.0 282.0,248.0"></polyline>
+    <line x1="282.0" y1="248" x2="287.0" y2="248" marker-end="url(#arrow-3-31)"></line>
+    <line x1="313.0" y1="152" x2="574.5" y2="152" marker-end="url(#arrow-3-31)"></line>
+    <line x1="600.5" y1="152" x2="760.0" y2="152"></line>
+    <polyline points="760.0,152.0 765.9,156.0 771.8,148.0 777.7,156.0 783.6,148.0 789.5,156.0 795.4,148.0 801.4,156.0 807.3,148.0 813.2,156.0 819.1,148.0 825.0,156.0 830.9,148.0 836.8,156.0 842.7,148.0 848.6,156.0 854.5,148.0 860.4,156.0 866.3,148.0 872.2,156.0 878.1,148.0 884.1,156.0 890.0,148.0 895.9,156.0 901.8,148.0 907.7,156.0 913.0,148.0 913.0,152.0"></polyline>
+    <line x1="913.0" y1="152" x2="919.5" y2="152" marker-end="url(#arrow-3-31)"></line>
+    <line x1="415.0" y1="92" x2="702.5" y2="92"></line>
+    <polyline points="702.5,92.0 708.5,96.0 714.6,88.0 720.6,96.0 726.6,88.0 732.6,96.0 738.7,88.0 744.7,96.0 750.7,88.0 756.8,96.0 762.8,88.0 768.8,96.0 774.8,88.0 780.9,96.0 786.9,88.0 792.9,96.0 798.9,88.0 805.0,96.0 811.0,88.0 817.0,96.0 823.1,88.0 829.1,96.0 835.1,88.0 841.1,96.0 847.2,88.0 853.2,96.0 859.2,88.0 865.2,96.0 871.3,88.0 877.3,96.0 883.3,88.0 889.4,96.0 895.4,88.0 901.4,96.0 907.4,88.0 913.5,96.0 919.5,88.0 919.5,92.0"></polyline>
+    <path d="M932.5,92 V139" marker-end="url(#arrow-3-31)"></path>
+    <path d="M587.5,165 V188" stroke-dasharray="5 4"></path>
+    <polyline points="587.5,191.0 589.9,197.5 599.1,194.1 599.3,203.9 608.5,200.4 608.7,210.2 617.8,206.8 618.0,216.6 627.2,213.1 627.4,222.9 636.6,219.5 639.0,226.0" stroke-dasharray="0"></polyline>
+    <path d="M639.0,226 L639.0,235" stroke-dasharray="4 3" marker-end="url(#arrow-3-31)"></path>
+    <line x1="300.0" y1="165" x2="300.0" y2="235" stroke-dasharray="5 4" marker-end="url(#arrow-3-31)"></line>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M83.0,150.3 H291.0"></path>
+    <path d="M83.0,153.7 H291.0"></path>
+    <path d="M291.0,147.0 L287.0,152 L291.0,157.0"></path>
+    <path d="M313.0,246.3 H636.0"></path>
+    <path d="M313.0,249.7 H636.0"></path>
+    <path d="M636.0,243.0 L632.0,248 L636.0,253.0"></path>
+    <path d="M658.0,246.3 H930.8 V173.0"></path>
+    <path d="M658.0,249.7 H934.2 V173.0"></path>
+    <path d="M927.5,173.0 L932.5,165.0 L937.5,173.0"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="70" cy="152" r="13"></circle>
+    <circle cx="415" cy="92" r="13"></circle>
+    <circle cx="300" cy="152" r="13"></circle>
+    <circle cx="300" cy="248" r="13"></circle>
+    <circle cx="587.5" cy="152" r="13"></circle>
+    <circle cx="645" cy="248" r="13"></circle>
+    <circle cx="932.5" cy="152" r="13"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="70" y="152" dy="0.35em" font-size="12.5">1</text>
+    <text x="415" y="92" dy="0.35em" font-size="12.5">2</text>
+    <text x="300" y="152" dy="0.35em" font-size="12.5">3</text>
+    <text x="300" y="248" dy="0.35em" font-size="12.5">4</text>
+    <text x="587.5" y="152" dy="0.35em" font-size="12.5">5</text>
+    <text x="645" y="248" dy="0.35em" font-size="12.5">6</text>
+    <text x="932.5" y="152" dy="0.35em" font-size="12.5">7</text>
+    <text x="242.5" y="82" font-size="13.5">A</text>
+    <text x="185.0" y="142" font-size="13.5">B</text>
+    <text x="127.5" y="238" font-size="13.5">C</text>
+    <text x="443.8" y="142" font-size="13.5">D</text>
+    <text x="472.5" y="238" font-size="13.5">E</text>
+    <text x="558.8" y="82" font-size="13.5">G</text>
+    <text x="673.8" y="142" font-size="13.5">H</text>
+    <text x="788.8" y="238" font-size="13.5">I</text>
+    <text x="70.0" y="38" font-size="11">0</text>
+    <text x="127.5" y="38" font-size="11">1</text>
+    <text x="185.0" y="38" font-size="11">2</text>
+    <text x="242.5" y="38" font-size="11">3</text>
+    <text x="300.0" y="38" font-size="11">4</text>
+    <text x="357.5" y="38" font-size="11">5</text>
+    <text x="415.0" y="38" font-size="11">6</text>
+    <text x="472.5" y="38" font-size="11">7</text>
+    <text x="530.0" y="38" font-size="11">8</text>
+    <text x="587.5" y="38" font-size="11">9</text>
+    <text x="645.0" y="38" font-size="11">10</text>
+    <text x="702.5" y="38" font-size="11">11</text>
+    <text x="760.0" y="38" font-size="11">12</text>
+    <text x="817.5" y="38" font-size="11">13</text>
+    <text x="875.0" y="38" font-size="11">14</text>
+    <text x="932.5" y="38" font-size="11">15</text>
+  </g>
+</svg>
+</FigureZoom>
 
 ## 二、时标网络计划中时间参数判定
 

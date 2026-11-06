@@ -298,7 +298,137 @@ $$
 
 【解】根据第6周末实际进度的检查结果绘制前锋线，如图4-18中点划线所示。通过比较可以看出：
 
-<FigureZoom caption="图 4-18 某工程前锋线比较图" src="/images/schedule/chapter-04/fig-4-18.png" :width="890" :height="408" />
+<FigureZoom caption="图 4-18 某工程前锋线比较图">
+<svg viewBox="0 0 890 408" role="img" aria-label="图 4-18 某工程前锋线比较图" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-4-18" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <line x1="30.0" y1="40" x2="814.0" y2="40"></line>
+    <line x1="30.0" y1="374" x2="814.0" y2="374"></line>
+    <line x1="30.0" y1="40" x2="30.0" y2="47"></line>
+    <line x1="30.0" y1="374" x2="30.0" y2="381"></line>
+    <line x1="86.0" y1="40" x2="86.0" y2="47"></line>
+    <line x1="86.0" y1="374" x2="86.0" y2="381"></line>
+    <line x1="142.0" y1="40" x2="142.0" y2="47"></line>
+    <line x1="142.0" y1="374" x2="142.0" y2="381"></line>
+    <line x1="198.0" y1="40" x2="198.0" y2="47"></line>
+    <line x1="198.0" y1="374" x2="198.0" y2="381"></line>
+    <line x1="254.0" y1="40" x2="254.0" y2="47"></line>
+    <line x1="254.0" y1="374" x2="254.0" y2="381"></line>
+    <line x1="310.0" y1="40" x2="310.0" y2="47"></line>
+    <line x1="310.0" y1="374" x2="310.0" y2="381"></line>
+    <line x1="366.0" y1="40" x2="366.0" y2="47"></line>
+    <line x1="366.0" y1="374" x2="366.0" y2="381"></line>
+    <line x1="422.0" y1="40" x2="422.0" y2="47"></line>
+    <line x1="422.0" y1="374" x2="422.0" y2="381"></line>
+    <line x1="478.0" y1="40" x2="478.0" y2="47"></line>
+    <line x1="478.0" y1="374" x2="478.0" y2="381"></line>
+    <line x1="534.0" y1="40" x2="534.0" y2="47"></line>
+    <line x1="534.0" y1="374" x2="534.0" y2="381"></line>
+    <line x1="590.0" y1="40" x2="590.0" y2="47"></line>
+    <line x1="590.0" y1="374" x2="590.0" y2="381"></line>
+    <line x1="646.0" y1="40" x2="646.0" y2="47"></line>
+    <line x1="646.0" y1="374" x2="646.0" y2="381"></line>
+    <line x1="702.0" y1="40" x2="702.0" y2="47"></line>
+    <line x1="702.0" y1="374" x2="702.0" y2="381"></line>
+    <line x1="758.0" y1="40" x2="758.0" y2="47"></line>
+    <line x1="758.0" y1="374" x2="758.0" y2="381"></line>
+    <line x1="814.0" y1="40" x2="814.0" y2="47"></line>
+    <line x1="814.0" y1="374" x2="814.0" y2="381"></line>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M30.0,209 V122 H185.0" marker-end="url(#arrow-4-18)"></path>
+    <line x1="43.0" y1="222" x2="241.0" y2="222" marker-end="url(#arrow-4-18)"></line>
+    <path d="M30.0,235 V329 H409.0" marker-end="url(#arrow-4-18)"></path>
+    <line x1="211.0" y1="122" x2="465.0" y2="122" marker-end="url(#arrow-4-18)"></line>
+    <line x1="267.0" y1="222" x2="366.0" y2="222"></line>
+    <polyline points="366.0,222.0 370.8,225.5 375.6,218.5 380.3,225.5 385.1,218.5 389.9,225.5 394.7,218.5 399.4,225.5 400.0,222.0"></polyline>
+    <line x1="400.0" y1="222" x2="409.0" y2="222" marker-end="url(#arrow-4-18)"></line>
+    <line x1="435.0" y1="222" x2="577.0" y2="222" marker-end="url(#arrow-4-18)"></line>
+    <line x1="603.0" y1="222" x2="801.0" y2="222" marker-end="url(#arrow-4-18)"></line>
+    <line x1="491.0" y1="122" x2="758.0" y2="122"></line>
+    <polyline points="758.0,122.0 762.9,125.5 767.8,118.5 772.7,125.5 777.6,118.5 782.5,125.5 787.5,118.5 792.4,125.5 797.3,118.5 802.2,125.5 807.1,118.5 812.0,125.5 812.0,122.0"></polyline>
+    <path d="M814.0,122 V209" marker-end="url(#arrow-4-18)"></path>
+    <line x1="435.0" y1="329" x2="702.0" y2="329"></line>
+    <polyline points="702.0,329.0 707.0,332.5 712.0,325.5 717.0,332.5 722.0,325.5 727.0,332.5 732.0,325.5 737.0,332.5 742.0,325.5 747.0,332.5 752.0,325.5 757.0,332.5 762.0,325.5 767.0,332.5 772.0,325.5 777.0,332.5 782.0,325.5 787.0,332.5 792.0,325.5 797.0,332.5 802.0,325.5 807.0,332.5 812.0,325.5 812.0,329.0"></polyline>
+    <path d="M814.0,329 V235" marker-end="url(#arrow-4-18)"></path>
+    <path d="M198.0,135 V155" stroke-dasharray="5 4"></path>
+    <polyline points="198.0,157.0 203.1,161.0 208.2,153.0 213.3,161.0 218.4,153.0 223.5,161.0 228.5,153.0 233.6,161.0 238.7,153.0 243.8,161.0 248.9,153.0 254.0,161.0 254.0,157.0"></polyline>
+    <path d="M254.0,165 V209" stroke-dasharray="5 4" marker-end="url(#arrow-4-18)"></path>
+    <path d="M478.0,135 V155" stroke-dasharray="5 4"></path>
+    <polyline points="478.0,157.0 483.9,161.0 489.8,153.0 495.7,161.0 501.6,153.0 507.5,161.0 513.4,153.0 519.3,161.0 525.2,153.0 531.1,161.0 536.9,153.0 542.8,161.0 548.7,153.0 554.6,161.0 560.5,153.0 566.4,161.0 572.3,153.0 578.2,161.0 584.1,153.0 590.0,161.0 590.0,157.0"></polyline>
+    <path d="M590.0,165 V209" stroke-dasharray="5 4" marker-end="url(#arrow-4-18)"></path>
+    <line x1="422.0" y1="316" x2="422.0" y2="235" stroke-dasharray="5 4" marker-end="url(#arrow-4-18)"></line>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <polyline points="366.0,40 254.0,122 310.0,222 254.0,329 366.0,374" stroke-dasharray="14 4 2 4"></polyline>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="30" cy="222" r="13"></circle>
+    <circle cx="198" cy="122" r="13"></circle>
+    <circle cx="254" cy="222" r="13"></circle>
+    <circle cx="422" cy="329" r="13"></circle>
+    <circle cx="478" cy="122" r="13"></circle>
+    <circle cx="422" cy="222" r="13"></circle>
+    <circle cx="590" cy="222" r="13"></circle>
+    <circle cx="814" cy="222" r="13"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="30" y="222" dy="0.35em" font-size="12.5">1</text>
+    <text x="198" y="122" dy="0.35em" font-size="12.5">2</text>
+    <text x="254" y="222" dy="0.35em" font-size="12.5">3</text>
+    <text x="422" y="329" dy="0.35em" font-size="12.5">4</text>
+    <text x="478" y="122" dy="0.35em" font-size="12.5">5</text>
+    <text x="422" y="222" dy="0.35em" font-size="12.5">6</text>
+    <text x="590" y="222" dy="0.35em" font-size="12.5">7</text>
+    <text x="814" y="222" dy="0.35em" font-size="12.5">8</text>
+    <text x="108.4" y="112" font-size="13.5">A</text>
+    <text x="130.8" y="212" font-size="13.5">B</text>
+    <text x="209.2" y="319" font-size="13.5">C</text>
+    <text x="338.0" y="112" font-size="13.5">D</text>
+    <text x="310.0" y="212" font-size="13.5">E</text>
+    <text x="618.0" y="112" font-size="13.5">F</text>
+    <text x="506.0" y="212" font-size="13.5">G</text>
+    <text x="550.8" y="319" font-size="13.5">H</text>
+    <text x="702.0" y="212" font-size="13.5">J</text>
+    <text x="844.0" y="32" font-size="11">(周)</text>
+    <text x="844.0" y="398" font-size="11">(周)</text>
+    <text x="30.0" y="32" font-size="11">0</text>
+    <text x="30.0" y="398" font-size="11">0</text>
+    <text x="86.0" y="32" font-size="11">1</text>
+    <text x="86.0" y="398" font-size="11">1</text>
+    <text x="142.0" y="32" font-size="11">2</text>
+    <text x="142.0" y="398" font-size="11">2</text>
+    <text x="198.0" y="32" font-size="11">3</text>
+    <text x="198.0" y="398" font-size="11">3</text>
+    <text x="254.0" y="32" font-size="11">4</text>
+    <text x="254.0" y="398" font-size="11">4</text>
+    <text x="310.0" y="32" font-size="11">5</text>
+    <text x="310.0" y="398" font-size="11">5</text>
+    <text x="366.0" y="32" font-size="11">6</text>
+    <text x="366.0" y="398" font-size="11">6</text>
+    <text x="422.0" y="32" font-size="11">7</text>
+    <text x="422.0" y="398" font-size="11">7</text>
+    <text x="478.0" y="32" font-size="11">8</text>
+    <text x="478.0" y="398" font-size="11">8</text>
+    <text x="534.0" y="32" font-size="11">9</text>
+    <text x="534.0" y="398" font-size="11">9</text>
+    <text x="590.0" y="32" font-size="11">10</text>
+    <text x="590.0" y="398" font-size="11">10</text>
+    <text x="646.0" y="32" font-size="11">11</text>
+    <text x="646.0" y="398" font-size="11">11</text>
+    <text x="702.0" y="32" font-size="11">12</text>
+    <text x="702.0" y="398" font-size="11">12</text>
+    <text x="758.0" y="32" font-size="11">13</text>
+    <text x="758.0" y="398" font-size="11">13</text>
+    <text x="814.0" y="32" font-size="11">14</text>
+    <text x="814.0" y="398" font-size="11">14</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-18 某工程前锋线比较图</p>
 
