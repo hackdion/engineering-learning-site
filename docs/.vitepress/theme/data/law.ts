@@ -62,24 +62,6 @@ export interface ContractEntry {
  */
 export const CONTRACT_SKELETON: ContractEntry[] = [
   {
-    slug: 'sg-gf-2017-0201',
-    title: '建设工程施工合同（示范文本）',
-    shortName: '施工合同',
-    type: '施工',
-    code: 'GF-2017-0201',
-    status: '整理中，待接入',
-    pending: true
-  },
-  {
-    slug: 'jl-gf-2012-0202',
-    title: '建设工程监理合同（示范文本）',
-    shortName: '监理合同',
-    type: '监理',
-    code: 'GF-2012-0202',
-    status: '整理中，待接入',
-    pending: true
-  },
-  {
     slug: 'zcb-gf-2020-0216',
     title: '建设项目工程总承包合同（示范文本）',
     shortName: '总承包合同',
