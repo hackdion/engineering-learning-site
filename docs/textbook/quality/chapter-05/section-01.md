@@ -433,6 +433,9 @@ $$
   <defs><marker id="a56" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
   <g fill="none" stroke="currentColor" stroke-width="1.3">
     <path d="M8,131 H447" marker-end="url(#a56)"/>
+    <path d="M202,82 H257" marker-end="url(#a56)"/>
+    <path d="M240,182 H316" marker-end="url(#a56)"/>
+    <path d="M231,217 L267,182" marker-end="url(#a56)"/>
     <path d="M83,51 L165,131" marker-end="url(#a56)"/>
     <path d="M55,62 L91,103" marker-end="url(#a56)"/>
     <path d="M13,82 H72" marker-end="url(#a56)"/>
@@ -525,6 +528,7 @@ $$
     <path d="M313,333 H420" marker-end="url(#a57)"/>
     <path d="M446,231 L429,271" marker-end="url(#a57)"/>
     <path d="M416,271 L403,333" marker-end="url(#a57)"/>
+    <path d="M335,416 L382,333" marker-end="url(#a57)"/>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
     <rect x="56" y="11" width="67" height="38"/>
@@ -559,15 +563,16 @@ $$
     <text x="522" y="247" text-anchor="middle">养护差</text>
     <text x="481" y="355" text-anchor="middle">配合比不当</text>
     <text x="342" y="326" text-anchor="middle">振捣差</text>
-    <text transform="rotate(-65 183 110)" x="183" y="110" text-anchor="middle" font-size="14">未</text>    <text transform="rotate(-65 187 131)" x="187" y="131" text-anchor="middle" font-size="14">筛</text>    <text transform="rotate(-65 196 153)" x="196" y="153" text-anchor="middle" font-size="14">洗</text>
-    <text transform="rotate(-65 484 109)" x="484" y="109" text-anchor="middle" font-size="14">图</text>    <text transform="rotate(-65 491 128)" x="491" y="128" text-anchor="middle" font-size="14">快</text>
-    <text transform="rotate(-65 495 167)" x="495" y="167" text-anchor="middle" font-size="14">偷</text>    <text transform="rotate(-65 498 185)" x="498" y="185" text-anchor="middle" font-size="14">懒</text>
-    <text transform="rotate(-60 569 120)" x="569" y="120" text-anchor="middle" font-size="14">施</text>    <text transform="rotate(-60 579 138)" x="579" y="138" text-anchor="middle" font-size="14">工</text>    <text transform="rotate(-60 589 157)" x="589" y="157" text-anchor="middle" font-size="14">未</text>    <text transform="rotate(-60 599 175)" x="599" y="175" text-anchor="middle" font-size="14">交</text>    <text transform="rotate(-60 609 193)" x="609" y="193" text-anchor="middle" font-size="14">底</text>
-    <text transform="rotate(-65 432 226)" x="432" y="226" text-anchor="middle" font-size="14">计</text>    <text transform="rotate(-65 423 248)" x="423" y="248" text-anchor="middle" font-size="14">量</text>
-    <text transform="rotate(-65 464 238)" x="464" y="238" text-anchor="middle" font-size="14">不</text>    <text transform="rotate(-65 455 260)" x="455" y="260" text-anchor="middle" font-size="14">准</text>
-    <text transform="rotate(-75 393 290)" x="393" y="290" text-anchor="middle" font-size="14">坍</text>    <text transform="rotate(-75 391 307)" x="391" y="307" text-anchor="middle" font-size="14">落</text>    <text transform="rotate(-75 396 324)" x="396" y="324" text-anchor="middle" font-size="14">度</text>
-    <text transform="rotate(-65 431 288)" x="431" y="288" text-anchor="middle" font-size="14">不</text>    <text transform="rotate(-65 427 310)" x="427" y="310" text-anchor="middle" font-size="14">宜</text>
-    <text transform="rotate(-60 510 266)" x="510" y="266" text-anchor="middle" font-size="14">未</text>    <text transform="rotate(-60 500 291)" x="500" y="291" text-anchor="middle" font-size="14">覆</text>    <text transform="rotate(-60 491 315)" x="491" y="315" text-anchor="middle" font-size="14">盖</text>
+    <text transform="rotate(72 183 110)" x="183" y="110" font-size="14" letter-spacing="7.5" dominant-baseline="central">未筛洗</text>
+    <text transform="rotate(70 484 109)" x="484" y="109" font-size="14" letter-spacing="6" dominant-baseline="central">图快</text>
+    <text transform="rotate(80 495 167)" x="495" y="167" font-size="14" letter-spacing="4.5" dominant-baseline="central">偷懒</text>
+    <text transform="rotate(61 562 120)" x="562" y="120" font-size="14" letter-spacing="7" dominant-baseline="central">施工未交底</text>
+    <text transform="rotate(112 432 226)" x="432" y="226" font-size="14" letter-spacing="10" dominant-baseline="central">计量</text>
+    <text transform="rotate(112 464 238)" x="464" y="238" font-size="14" letter-spacing="10" dominant-baseline="central">不准</text>
+    <text transform="rotate(85 393 290)" x="393" y="290" font-size="14" letter-spacing="3" dominant-baseline="central">坍落度</text>
+    <text transform="rotate(100 431 288)" x="431" y="288" font-size="14" letter-spacing="8" dominant-baseline="central">不宜</text>
+    <text transform="rotate(112 510 266)" x="510" y="266" font-size="14" letter-spacing="13" dominant-baseline="central">未覆盖</text>
+    <text transform="rotate(-56 333 398)" x="333" y="398" font-size="14" letter-spacing="4" dominant-baseline="central">模板跑浆</text>
   </g>
 </svg>
 </FigureZoom>
@@ -728,7 +733,6 @@ $$
 
 <FigureZoom caption="图 5-10 实际质量分析与标准比较">
 <svg viewBox="0 0 744 528" role="img" aria-label="图 5-10 实际质量分析与标准比较" xmlns="http://www.w3.org/2000/svg">
-  <defs><marker id="t510" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
   <g transform="translate(0,0)">
     <defs><marker id="a510a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
     <g fill="none" stroke="currentColor" stroke-width="1.2">
@@ -853,7 +857,6 @@ $$
       <path d="M129.5,121 H148 V201 H129.5 Z"/>
       <path d="M148,138 H165.5 V201 H148 Z"/>
       <path d="M165.5,157 H184 V201 H165.5 Z"/>
-      <path d="M184,184 H202 V201 H184 Z"/>
       <path d="M103,58 V213" stroke-dasharray="10 3 2 3"/>
     </g>
     <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
