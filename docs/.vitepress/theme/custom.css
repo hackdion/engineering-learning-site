@@ -37,8 +37,10 @@
   }
 }
 
-/* 窄屏长公式横向滚动：公式超宽时在自身区域内滚动，不撑破页面 */
-@media (max-width: 768px) {
+/* 长行内公式横向滚动：公式超宽时在自身区域内滚动，不撑破页面。
+   断点与整块公式一致（1279px）：只约束 ≤768px 时，769–1279px 区间行内公式
+   仍是 display:inline，overflow 对其无效，长公式按自然宽度撑出横向滚动。 */
+@media (max-width: 1279px) {
   .vp-doc mjx-container:not([display]) {
     display: inline-block;
     max-width: 100%;
