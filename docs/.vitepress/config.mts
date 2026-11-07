@@ -210,7 +210,7 @@ export default defineConfig({
           ]
         }
       ],
-      // 法规文本按层级分组。骨架期只列出已接入的样例页，其余层级保留分组并指向总览。
+      // 法规文本按层级分组。已接入六部法规全文，其余层级保留分组并指向总览。
       '/law/': [
         {
           text: '法规文本',
@@ -222,7 +222,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '中华人民共和国建筑法', link: '/law/jianzhufa' },
-                { text: '中华人民共和国民法典·合同编', link: '/law/minfadian-hetong' }
+                { text: '中华人民共和国招标投标法', link: '/law/zhaobiao-toubiao-fa' }
               ]
             },
             {
@@ -230,13 +230,16 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '建设工程质量管理条例', link: '/law/zhiliang-tiaoli' },
-                { text: '建设工程安全生产管理条例', link: '/law/anquan-shengchan-tiaoli' }
+                { text: '建设工程安全生产管理条例', link: '/law/anquan-tiaoli' },
+                { text: '招标投标法实施条例', link: '/law/zhaobiao-toubiao-shishi-tiaoli' }
               ]
             },
             {
               text: '部门规章',
-              collapsed: true,
-              items: [{ text: '整理中，待接入', link: '/law/#laws' }]
+              collapsed: false,
+              items: [
+                { text: '必须招标的工程项目规定', link: '/law/bixu-zhaobiao-gongcheng' }
+              ]
             },
             {
               text: '规范性文件',

@@ -1,9 +1,9 @@
 // 教材节 ↔ 法规条文 的映射。
 // SectionLaw 用它按当前路由自动在教材节页出现；LawBanner 反向列出「教材里怎么讲」。
 //
-// 当前只放 2026-11-07 骨架样例用到的四条，来源是内部知识专题 T01～T04 已核实的回链节：
-//   质量管理条例第 37 条、安全生产管理条例第 14 条、建筑法第 32 条、民法典第 796 条。
-// 正式整理接入后，由「教材引用扫描」包生成完整映射替换本表，组件不用改。
+// 当前放 2026-11-07 已接入法规的回链节（质量条例第 37 条、安全生产管理条例第 14 条、
+// 建筑法第 32 条），来源是内部知识专题 T01～T04 已核实的回链节。
+// 其余条文的完整映射由后续「教材引用扫描」包生成后替换本表，组件不用改。
 
 import { BOOKS } from './books'
 
@@ -15,26 +15,22 @@ export interface LawRefLink {
 }
 
 export const LAW_REFS: LawRefLink[] = [
-  // 案例分析 第一章：四部法律法规各一节
+  // 案例分析 第一章：法规分析各节
   { id: 'jianzhufa', art: 32, book: 'anli', section: '1.1' },
   { id: 'zhiliang-tiaoli', art: 37, book: 'anli', section: '1.3' },
-  { id: 'anquan-shengchan-tiaoli', art: 14, book: 'anli', section: '1.4' },
-  { id: 'minfadian-hetong', art: 796, book: 'anli', section: '2.1' },
+  { id: 'anquan-tiaoli', art: 14, book: 'anli', section: '1.4' },
   // 案例分析 第三章：安全生产管理的监理工作
-  { id: 'anquan-shengchan-tiaoli', art: 14, book: 'anli', section: '3.12' },
+  { id: 'anquan-tiaoli', art: 14, book: 'anli', section: '3.12' },
   // 监理概论
   { id: 'jianzhufa', art: 32, book: 'gailun', section: '1.1' },
-  { id: 'minfadian-hetong', art: 796, book: 'gailun', section: '1.1' },
   { id: 'zhiliang-tiaoli', art: 37, book: 'gailun', section: '2.1' },
-  { id: 'anquan-shengchan-tiaoli', art: 14, book: 'gailun', section: '2.1' },
+  { id: 'anquan-tiaoli', art: 14, book: 'gailun', section: '2.1' },
   // 质量与安全
-  { id: 'anquan-shengchan-tiaoli', art: 14, book: 'zhiliang', section: '1.5' },
+  { id: 'anquan-tiaoli', art: 14, book: 'zhiliang', section: '1.5' },
   { id: 'jianzhufa', art: 32, book: 'zhiliang', section: '2.4' },
   { id: 'zhiliang-tiaoli', art: 37, book: 'zhiliang', section: '3.1' },
   // 投资控制：合同价款期中支付
-  { id: 'zhiliang-tiaoli', art: 37, book: 'touzi', section: '8.6' },
-  // 合同管理：工程合同管理相关法律基础
-  { id: 'minfadian-hetong', art: 796, book: 'hetong', section: '1.3' }
+  { id: 'zhiliang-tiaoli', art: 37, book: 'touzi', section: '8.6' }
 ]
 
 export function lawRefsAt(book: string, section: string): LawRefLink[] {
