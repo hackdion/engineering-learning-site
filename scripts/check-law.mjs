@@ -5,9 +5,14 @@
  * 规则来自《规划-合同示范文本与法律法规-20261107》5.5 节：
  *   1. 版本卡字段齐全：法规页 frontmatter 必须有 title、shortName、slug、level、
  *      docNo、published、effective、revisions、status、asOf、source，且日期与链接格式可识别。
+ *      示范文本页同样要求 title、shortName、slug、type、docNo、published、effective、
+ *      revisions、status、asOf、source；施行日允许写「自颁布之日起执行」等原件原文。
  *   2. 条号连续：正文 `#### 第X条 {#aN}` 的锚点必须等于 a<条号>；全文页从第一条起连续，
  *      摘录页（excerpt: true）条号严格递增，并核对 articleRange 首尾。
- *   3. 公开页无内部字段：frontmatter 不得出现核对人、核对记录、来源路径、授权/验收记录等。
+ *   3. 示范文本全文页（fullText: true）：条款锚点不得重复，锚点前缀必须与所在部分一致，
+ *      锚点编号必须与标题编号对应；协议书、通用条款、附件分别从 1 起连续，
+ *      专用条款严格递增（原件的既定跳号只登记提示，不判失败）。
+ *   4. 公开页无内部字段：frontmatter 不得出现核对人、核对记录、来源路径、授权/验收记录等。
  *
  * 只读 frontmatter 与条标题，不扫描正文，避免把合法叙述误判。
  * 退出码：0 = 通过；1 = 发现必须修复的问题。
@@ -23,8 +28,9 @@ const LAW_DIR = path.join(REPO_ROOT, 'docs', 'law')
 const CONTRACT_DIR = path.join(REPO_ROOT, 'docs', 'model-contracts')
 
 const LEVELS = new Set(['法律', '行政法规', '部门规章', '规范性文件', '标准'])
+const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际'])
 const LAW_REQUIRED = ['title', 'shortName', 'slug', 'level', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
-const CONTRACT_REQUIRED = ['title', 'shortName', 'slug', 'type', 'status']
+const CONTRACT_REQUIRED = ['title', 'shortName', 'slug', 'type', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
 
 const INTERNAL_FIELDS = new Set([
   'pdfPages',
@@ -134,6 +140,7 @@ function parseArticles(body) {
 }
 
 const problems = []
+const notes = []
 const scanned = { laws: 0, contracts: 0, samples: 0 }
 
 function addProblem(file, message) {
@@ -215,15 +222,135 @@ function checkLaw(file) {
   checkInternal(file, keys)
 }
 
+/** 全文页所属部分对应的锚点前缀。 */
+function partOfHeading(text) {
+  if (/附录\s*A/.test(text)) return 'fa'
+  if (/附录\s*B/.test(text)) return 'fb'
+  if (/合同协议书|第一部分\s*协议书/.test(text)) return 'x'
+  if (/通用(合同)?条款|通用条件/.test(text)) return 't'
+  if (/专用(合同)?条款|专用条件/.test(text)) return 'z'
+  if (/^附件/.test(text)) return 'f'
+  return ''
+}
+
+/** 从条款标题取出编号：中文序号、阿拉伯多级编号、附件编号、附录 A-1 编号。 */
+function headingNumbers(text) {
+  const cn = text.match(/^([一二三四五六七八九十]+)\s*[、．.]/)
+  if (cn) return { kind: 'cn', values: [cnToNum(cn[1])] }
+  const ar = text.match(/^(\d+(?:\.\d+)*)/)
+  if (ar) return { kind: 'ar', values: ar[1].split('.').map(Number) }
+  const fj = text.match(/^附件\s*(\d+)/)
+  if (fj) return { kind: 'ar', values: [Number(fj[1])] }
+  const ab = text.match(/^[AB]-(\d+)/)
+  if (ab) return { kind: 'ar', values: [Number(ab[1])] }
+  return null
+}
+
+const ANCHOR_SCHEME = /^(sm|p\d+|x-\d+|t(?:-\d+)+|z(?:-\d+)+|f(?:-\d+)*|fa(?:-\d+)?|fb(?:-\d+)?)$/
+
+/** 示范文本全文页的条款结构与锚点检查。 */
+function checkContractStructure(file, body) {
+  const lines = body.split(/\r?\n/)
+  const seen = new Set()
+  const sections = { x: [], t: [], z: [], f: [], fa: [], fb: [] }
+  let part = ''
+
+  for (const line of lines) {
+    const match = line.match(/^(#{2,6})\s+(.*?)\s*\{#([A-Za-z0-9_-]+)\}\s*$/)
+    if (!match) continue
+    const level = match[1].length
+    const text = match[2].trim()
+    const anchor = match[3]
+
+    if (seen.has(anchor)) addProblem(file, `锚点重复：#${anchor}`)
+    seen.add(anchor)
+
+    if (level === 2) {
+      const next = partOfHeading(text)
+      if (next) part = next
+      continue
+    }
+
+    if (!ANCHOR_SCHEME.test(anchor)) {
+      addProblem(file, `锚点不符合条款命名规则：#${anchor}（${text}）`)
+      continue
+    }
+
+    const prefix = anchor.split('-')[0]
+    if (part && prefix !== part && !(part === 'f' && prefix === 'f')) {
+      addProblem(file, `锚点前缀与所在部分不符：#${anchor} 出现在「${text}」`)
+    }
+
+    if (part && Array.isArray(sections[part])) {
+      const top = anchor.match(/^([a-z]+)-(\d+)$/)
+      if (top && top[1] === part && (part === 'x' || part === 't' || part === 'z' || part === 'f' || part === 'fa' || part === 'fb')) {
+        sections[part].push(Number(top[2]))
+      }
+    }
+
+    const nums = headingNumbers(text)
+    if (!nums) continue
+    const parts = anchor.split('-').slice(1).map(Number).filter((n) => Number.isFinite(n))
+    if (nums.kind === 'cn') {
+      if (parts[parts.length - 1] !== nums.values[0]) {
+        addProblem(file, `锚点与标题编号不符：#${anchor} ↔「${text}」`)
+      }
+    } else if (nums.values.join('-') !== parts.join('-')) {
+      addProblem(file, `锚点与标题编号不符：#${anchor} ↔「${text}」`)
+    }
+  }
+
+  const continuous = (key, label) => {
+    const list = sections[key]
+    if (list.length === 0) return
+    list.forEach((num, index) => {
+      if (num !== index + 1) addProblem(file, `${label}编号不连续：第 ${index + 1} 项为 ${num}`)
+    })
+  }
+  continuous('x', '协议书')
+  continuous('t', '通用条款')
+  continuous('f', '附件')
+  continuous('fa', '附录 A')
+  continuous('fb', '附录 B')
+
+  const z = sections.z
+  for (let i = 1; i < z.length; i += 1) {
+    if (z[i] <= z[i - 1]) addProblem(file, `专用条款编号未递增：${z[i - 1]} → ${z[i]}`)
+  }
+  if (z.length) {
+    const missing = []
+    for (let n = 1; n <= z[z.length - 1]; n += 1) if (!z.includes(n)) missing.push(n)
+    if (missing.length) notes.push(`${path.basename(path.dirname(file))} 专用条款缺号 ${missing.join('、')}（按原件保留）`)
+  }
+  if (sections.t.length === 0) addProblem(file, '全文页未找到通用条款/通用条件的顶层条款')
+}
+
 function checkContract(file) {
   const content = fs.readFileSync(file, 'utf8')
-  const { values, keys } = parseFrontmatter(content)
+  const { values, keys, body } = parseFrontmatter(content)
   checkInternal(file, keys)
   if (!values.type) return
   scanned.contracts += 1
+
   for (const field of CONTRACT_REQUIRED) {
     if (!hasValue(values[field])) addProblem(file, `版本卡字段缺失或为空：${field}`)
   }
+  if (values.type && !CONTRACT_TYPES.has(String(values.type))) {
+    addProblem(file, `type 不在允许值内：${values.type}`)
+  }
+  for (const field of ['published', 'asOf']) {
+    if (hasValue(values[field]) && !DATE_RE.test(String(values[field]))) {
+      addProblem(file, `${field} 不是 YYYY-MM-DD：${values[field]}`)
+    }
+  }
+  // 监理合同等原件写「自颁布之日起执行」，没有独立施行日，照录原文即可。
+  if (hasValue(values.effective) && !DATE_RE.test(String(values.effective)) && String(values.effective).trim().length < 4) {
+    addProblem(file, `effective 既不是 YYYY-MM-DD，也不是可识别的原文表述：${values.effective}`)
+  }
+  if (hasValue(values.source) && !/^https?:\/\//.test(String(values.source))) {
+    addProblem(file, `source 不是 http(s) 链接：${values.source}`)
+  }
+  if (values.fullText === true) checkContractStructure(file, body)
 }
 
 for (const file of walk(LAW_DIR)) checkLaw(file)
@@ -231,6 +358,7 @@ for (const file of walk(CONTRACT_DIR)) checkContract(file)
 
 if (problems.length === 0) {
   console.log(`[PASS] 法规文本结构检查通过：法规页 ${scanned.laws} 个（样例 ${scanned.samples} 个），示范文本页 ${scanned.contracts} 个`)
+  for (const note of notes) console.log(`  · ${note}`)
   process.exit(0)
 }
 

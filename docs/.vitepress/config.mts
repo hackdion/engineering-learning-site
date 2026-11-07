@@ -254,14 +254,36 @@ export default defineConfig({
           ]
         }
       ],
-      // 合同示范文本按合同类型分组。骨架期只显示占位卡，接入后替换为导读页。
+      // 合同示范文本按合同类型分组。已接入的文本给出导读页与全文页入口。
       '/model-contracts/': [
         {
           text: '合同示范文本',
           items: [
             { text: '总览', link: '/model-contracts/' },
-            { text: '施工', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
-            { text: '监理', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            {
+              text: '施工',
+              collapsed: false,
+              items: [
+                { text: '建设工程施工合同 GF-2017-0201', link: '/model-contracts/shigong-hetong/' },
+                { text: '　全文', link: '/model-contracts/shigong-hetong/full' },
+                { text: '　合同协议书', link: '/model-contracts/shigong-hetong/full#p1' },
+                { text: '　通用合同条款', link: '/model-contracts/shigong-hetong/full#p2' },
+                { text: '　专用合同条款', link: '/model-contracts/shigong-hetong/full#p3' },
+                { text: '　附件 1～11', link: '/model-contracts/shigong-hetong/full#f' }
+              ]
+            },
+            {
+              text: '监理',
+              collapsed: false,
+              items: [
+                { text: '建设工程监理合同 GF-2012-0202', link: '/model-contracts/jianli-hetong/' },
+                { text: '　全文', link: '/model-contracts/jianli-hetong/full' },
+                { text: '　协议书', link: '/model-contracts/jianli-hetong/full#p1' },
+                { text: '　通用条件', link: '/model-contracts/jianli-hetong/full#p2' },
+                { text: '　专用条件', link: '/model-contracts/jianli-hetong/full#p3' },
+                { text: '　附录 A、B', link: '/model-contracts/jianli-hetong/full#fa' }
+              ]
+            },
             { text: '总承包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '咨询', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '勘察设计', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },

@@ -164,8 +164,11 @@ function loadContracts(): ContractEntry[] {
     const source = fs.readFileSync(file, 'utf8')
     const { fm } = parseFrontmatter(source)
     if (!fm.type || !fm.title) continue
+    // 全文页（`<slug>/full.md`）与导读页同属一份文本，总览只出导读一张卡。
+    if (fm.fullText === true) continue
     pages.push({
-      slug: String(fm.slug || slug),
+      // `shigong-hetong/index.md` 与卡片链接 `/model-contracts/shigong-hetong/` 对齐。
+      slug: String(fm.slug || slug.replace(/\/index$/, '')),
       title: String(fm.title),
       shortName: String(fm.shortName || fm.title),
       type: String(fm.type) as ContractType,
