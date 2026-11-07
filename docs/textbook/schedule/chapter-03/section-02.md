@@ -348,7 +348,45 @@ sectionTitle: 第二节 网络图绘制
 </svg>
 </FigureZoom>
 
-<FigureZoom caption="图 3-12 正确的网络图" src="/images/schedule/chapter-03/fig-3-12.png" :width="724" :height="194" />
+<FigureZoom caption="图 3-12 正确的网络图">
+<svg viewBox="0 0 724 194" role="img" aria-label="图 3-12 正确的网络图" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-12" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="37" cy="37" r="15"></circle>
+    <circle cx="235" cy="37" r="15"></circle>
+    <circle cx="460" cy="37" r="15"></circle>
+    <circle cx="236" cy="166" r="15"></circle>
+    <circle cx="460" cy="166" r="15"></circle>
+    <circle cx="686" cy="166" r="15"></circle>
+    <path d="M52,37 H220" marker-end="url(#arrow-3-12)"></path>
+    <path d="M250,37 H445" marker-end="url(#arrow-3-12)"></path>
+    <path d="M475,37 H686 V151" marker-end="url(#arrow-3-12)"></path>
+    <path d="M37,52 V166 H221" marker-end="url(#arrow-3-12)"></path>
+    <path d="M251,166 H445" marker-end="url(#arrow-3-12)"></path>
+    <path d="M475,166 H671" marker-end="url(#arrow-3-12)"></path>
+    <path d="M235,52 V151" stroke-dasharray="6 4" marker-end="url(#arrow-3-12)"></path>
+    <path d="M460,52 V151" stroke-dasharray="6 4" marker-end="url(#arrow-3-12)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="37" y="43">1</text>
+    <text x="235" y="43">3</text>
+    <text x="460" y="43">5</text>
+    <text x="236" y="172">4</text>
+    <text x="460" y="172">6</text>
+    <text x="686" y="172">8</text>
+    <text x="128" y="32">A</text>
+    <text x="133" y="160">B</text>
+    <text x="331" y="33">C</text>
+    <text x="339" y="159">D</text>
+    <text x="570" y="33">E</text>
+    <text x="567" y="159">F</text>
+  </g>
+</svg>
+</FigureZoom>
 
 ### （二）绘图方法
 
@@ -414,7 +452,57 @@ sectionTitle: 第二节 网络图绘制
 
 3. 按前述原则（1）绘制工作箭线 D 后，将工作箭线 C 和 D 的箭头节点合并，以保证网络图只有一个终点节点。当确认给定的逻辑关系表达正确后，再进行节点编号。表 3-2 给定逻辑关系所对应的双代号网络图如图 3-13（c）所示。
 
-<FigureZoom caption="图 3-13 【例3-1】绘图过程" src="/images/schedule/chapter-03/fig-3-13.png" :width="946" :height="202" />
+<FigureZoom caption="图 3-13 【例3-1】绘图过程">
+<svg viewBox="0 0 946 202" role="img" aria-label="图 3-13 【例3-1】绘图过程" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="41" cy="34" r="15"></circle>
+    <circle cx="174" cy="34" r="15"></circle>
+    <circle cx="174" cy="126" r="15"></circle>
+    <circle cx="282" cy="34" r="15"></circle>
+    <circle cx="414" cy="34" r="15"></circle>
+    <circle cx="543" cy="34" r="15"></circle>
+    <circle cx="414" cy="126" r="15"></circle>
+    <circle cx="648" cy="34" r="15"></circle>
+    <circle cx="777" cy="34" r="15"></circle>
+    <circle cx="909" cy="34" r="15"></circle>
+    <circle cx="777" cy="126" r="15"></circle>
+    <path d="M56,34 H159" marker-end="url(#arrow-3-13)"></path>
+    <path d="M41,49 V126 H159" marker-end="url(#arrow-3-13)"></path>
+    <path d="M297,34 H401" marker-end="url(#arrow-3-13)"></path>
+    <path d="M282,49 V126 H401" marker-end="url(#arrow-3-13)"></path>
+    <path d="M428,34 H528" marker-end="url(#arrow-3-13)"></path>
+    <path d="M414,111 V49" stroke-dasharray="6 4" marker-end="url(#arrow-3-13)"></path>
+    <path d="M663,34 H762" marker-end="url(#arrow-3-13)"></path>
+    <path d="M790,34 H894" marker-end="url(#arrow-3-13)"></path>
+    <path d="M648,49 V126 H762" marker-end="url(#arrow-3-13)"></path>
+    <path d="M792,126 H909 V49" marker-end="url(#arrow-3-13)"></path>
+    <path d="M777,111 V49" stroke-dasharray="6 4" marker-end="url(#arrow-3-13)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="648" y="40">1</text>
+    <text x="777" y="132">2</text>
+    <text x="777" y="40">3</text>
+    <text x="909" y="40">4</text>
+    <text x="96" y="30">A</text>
+    <text x="96" y="119">B</text>
+    <text x="338" y="30">A</text>
+    <text x="337" y="119">B</text>
+    <text x="469" y="30">C</text>
+    <text x="700" y="30">A</text>
+    <text x="701" y="119">B</text>
+    <text x="837" y="30">C</text>
+    <text x="838" y="119">D</text>
+    <text x="106" y="197" font-style="italic">(a)</text>
+    <text x="408" y="197" font-style="italic">(b)</text>
+    <text x="777" y="197" font-style="italic">(c)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 【例 3-2】已知各工作之间的逻辑关系见表 3-3，则可按下述步骤绘制其双代号网络图。
 
@@ -456,7 +544,70 @@ sectionTitle: 第二节 网络图绘制
 
 4. 按前述原则（2）中的情况②绘制工作箭线 G。当确认给定的逻辑关系表达正确后，再进行节点编号。表 3-3 给定逻辑关系所对应的双代号网络图如图 3-14（d）所示。
 
-<FigureZoom caption="图 3-14 【例3-2】绘图过程" src="/images/schedule/chapter-03/fig-3-14.png" :width="939" :height="284" />
+<FigureZoom caption="图 3-14 【例3-2】绘图过程">
+<svg viewBox="0 0 939 284" role="img" aria-label="图 3-14 【例3-2】绘图过程" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-14" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="41" cy="121" r="15"></circle>
+    <circle cx="161" cy="35" r="15"></circle>
+    <circle cx="161" cy="121" r="15"></circle>
+    <circle cx="161" cy="212" r="15"></circle>
+    <path d="M41,35 V106"></path>
+    <path d="M41,136 V212"></path>
+    <path d="M41,35 H146" marker-end="url(#arrow-3-14)"></path>
+    <path d="M56,121 H146" marker-end="url(#arrow-3-14)"></path>
+    <path d="M41,212 H146" marker-end="url(#arrow-3-14)"></path>
+    <circle cx="291" cy="121" r="15"></circle>
+    <circle cx="412" cy="35" r="15"></circle>
+    <circle cx="412" cy="121" r="15"></circle>
+    <circle cx="412" cy="212" r="15"></circle>
+    <circle cx="526" cy="121" r="15"></circle>
+    <path d="M291,35 V106"></path>
+    <path d="M291,136 V212"></path>
+    <path d="M291,35 H397" marker-end="url(#arrow-3-14)"></path>
+    <path d="M306,121 H397" marker-end="url(#arrow-3-14)"></path>
+    <path d="M427,121 H511" marker-end="url(#arrow-3-14)"></path>
+    <path d="M291,212 H396" marker-end="url(#arrow-3-14)"></path>
+    <path d="M412,50 V106" stroke-dasharray="6 4" marker-end="url(#arrow-3-14)"></path>
+    <circle cx="665" cy="121" r="15"></circle>
+    <circle cx="785" cy="35" r="15"></circle>
+    <circle cx="785" cy="121" r="15"></circle>
+    <circle cx="785" cy="212" r="15"></circle>
+    <circle cx="899" cy="121" r="15"></circle>
+    <circle cx="899" cy="212" r="15"></circle>
+    <path d="M665,35 V106"></path>
+    <path d="M665,136 V212"></path>
+    <path d="M665,35 H770" marker-end="url(#arrow-3-14)"></path>
+    <path d="M680,121 H770" marker-end="url(#arrow-3-14)"></path>
+    <path d="M665,212 H770" marker-end="url(#arrow-3-14)"></path>
+    <path d="M800,121 H884" marker-end="url(#arrow-3-14)"></path>
+    <path d="M800,212 H884" marker-end="url(#arrow-3-14)"></path>
+    <path d="M785,50 V106" stroke-dasharray="6 4" marker-end="url(#arrow-3-14)"></path>
+    <path d="M785,136 V197" stroke-dasharray="6 4" marker-end="url(#arrow-3-14)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="92" y="30">A</text>
+    <text x="92" y="118">B</text>
+    <text x="91" y="205">C</text>
+    <text x="343" y="30">A</text>
+    <text x="343" y="118">B</text>
+    <text x="463" y="116">D</text>
+    <text x="342" y="205">C</text>
+    <text x="717" y="30">A</text>
+    <text x="717" y="117">B</text>
+    <text x="836" y="115">D</text>
+    <text x="716" y="205">C</text>
+    <text x="836" y="205">E</text>
+    <text x="98" y="276" font-style="italic">(a)</text>
+    <text x="416" y="276" font-style="italic">(b)</text>
+    <text x="782" y="276" font-style="italic">(c)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 【例 3-3】已知各工作之间的逻辑关系见表 3-4，则可按下述步骤绘制其双代号网络图。
 
