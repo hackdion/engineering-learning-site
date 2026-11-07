@@ -418,7 +418,7 @@ sectionTitle: 第五节 工程招标投标与合同管理
     <path d="M515,287 H661 V225" marker-end="url(#arrow-case-4-33)"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
-    <path d="M152,205 V112" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M152,112 V205" marker-end="url(#arrow-case-4-33)"></path>
     <path d="M152,92 V40" marker-end="url(#arrow-case-4-33)"></path>
     <path d="M505,225 V277" marker-end="url(#arrow-case-4-33)"></path>
   </g>
