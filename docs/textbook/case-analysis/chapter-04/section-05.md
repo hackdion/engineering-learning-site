@@ -98,7 +98,61 @@ sectionTitle: 第五节 工程招标投标与合同管理
 
 设备安装工程开始前，施工单位依据总进度计划的要求编制了如图4-32所示的设备安装双代号网络进度计划（时间单位：天），并得到了总监理工程师批准。
 
-<FigureZoom caption="图 4-32 设备安装双代号网络进度计划" src="/images/case-analysis/chapter-04/fig-4-32.png" :width="660" :height="227" />
+<FigureZoom caption="图 4-32 设备安装双代号网络进度计划">
+<svg viewBox="0 0 660 227" role="img" aria-label="图 4-32 设备安装双代号网络进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M46,112 H100" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M120,112 H167" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M177,102 V37 H330" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M177,122 V181 H330" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M340,47 V171" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M350,37 H505 V102" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M350,181 H505 V122" marker-end="url(#arrow-case-4-32)"></path>
+    <path d="M515,112 H609" marker-end="url(#arrow-case-4-32)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="36" cy="112" r="10"></circle>
+    <circle cx="110" cy="112" r="10"></circle>
+    <circle cx="177" cy="112" r="10"></circle>
+    <circle cx="340" cy="37" r="10"></circle>
+    <circle cx="340" cy="181" r="10"></circle>
+    <circle cx="505" cy="112" r="10"></circle>
+    <circle cx="619" cy="112" r="10"></circle>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="36" y="118">1</text>
+    <text x="110" y="118">2</text>
+    <text x="177" y="118">3</text>
+    <text x="340" y="43">4</text>
+    <text x="340" y="187">5</text>
+    <text x="505" y="118">6</text>
+    <text x="619" y="118">7</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="73" y="104">A</text>
+    <text x="144" y="104">B</text>
+    <text x="250" y="30">C</text>
+    <text x="250" y="174">D</text>
+    <text x="420" y="30">F</text>
+    <text x="430" y="174">G</text>
+    <text x="560" y="104">H</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="73" y="132">7</text>
+    <text x="144" y="132">15</text>
+    <text x="250" y="56">15</text>
+    <text x="250" y="202">24</text>
+    <text x="420" y="56">25</text>
+    <text x="430" y="202">17</text>
+    <text x="560" y="132">15</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16">
+    <text x="328" y="104" text-anchor="end">E</text>
+    <text x="352" y="104">10</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-32 设备安装双代号网络进度计划</p>
 
@@ -346,7 +400,80 @@ sectionTitle: 第五节 工程招标投标与合同管理
 
 合同签订后，承包单位编制并获批准的施工进度计划如图4-33所示。
 
-<FigureZoom caption="图 4-33 施工进度计划" src="/images/case-analysis/chapter-04/fig-4-33.png" :width="690" :height="314" />
+<FigureZoom caption="图 4-33 施工进度计划">
+<svg viewBox="0 0 690 314" role="img" aria-label="图 4-33 施工进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-33" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M25,92 V30 H142" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M35,102 H142" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M25,112 V215 H142" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M162,30 H508 V92" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M162,102 H498" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M162,215 H319" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M329,205 V162 H508 V112" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M518,102 H661 V205" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M339,215 H495" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M515,215 H651" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M329,225 V287 H495" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M515,287 H661 V225" marker-end="url(#arrow-case-4-33)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M152,205 V112" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M152,92 V40" marker-end="url(#arrow-case-4-33)"></path>
+    <path d="M505,225 V277" marker-end="url(#arrow-case-4-33)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="25" cy="102" r="10"></circle>
+    <circle cx="152" cy="102" r="10"></circle>
+    <circle cx="152" cy="30" r="10"></circle>
+    <circle cx="152" cy="215" r="10"></circle>
+    <circle cx="329" cy="215" r="10"></circle>
+    <circle cx="508" cy="102" r="10"></circle>
+    <circle cx="505" cy="215" r="10"></circle>
+    <circle cx="505" cy="287" r="10"></circle>
+    <circle cx="661" cy="215" r="10"></circle>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="25" y="108">1</text>
+    <text x="152" y="108">2</text>
+    <text x="152" y="36">3</text>
+    <text x="152" y="221">4</text>
+    <text x="329" y="221">5</text>
+    <text x="508" y="108">6</text>
+    <text x="505" y="221">7</text>
+    <text x="505" y="293">8</text>
+    <text x="661" y="221">9</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="78" y="23">A</text>
+    <text x="85" y="95">B</text>
+    <text x="85" y="208">C</text>
+    <text x="330" y="23">D</text>
+    <text x="330" y="95">E</text>
+    <text x="240" y="208">F</text>
+    <text x="420" y="155">G</text>
+    <text x="590" y="95">H</text>
+    <text x="415" y="208">I</text>
+    <text x="580" y="208">J</text>
+    <text x="410" y="280">K</text>
+    <text x="590" y="280">L</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="78" y="50">80</text>
+    <text x="85" y="123">110</text>
+    <text x="85" y="236">60</text>
+    <text x="330" y="50">50</text>
+    <text x="330" y="123">90</text>
+    <text x="240" y="236">90</text>
+    <text x="420" y="183">60</text>
+    <text x="590" y="123">100</text>
+    <text x="415" y="236">80</text>
+    <text x="580" y="236">60</text>
+    <text x="410" y="308">60</text>
+    <text x="590" y="308">70</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-33 施工进度计划</p>
 
