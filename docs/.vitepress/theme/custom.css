@@ -46,7 +46,12 @@
     overflow-y: hidden;
     vertical-align: middle;
   }
+}
 
+/* 整块公式：MathJax 会给 mjx-container 内联 min-width（如 94.538ex）。只在 ≤768px
+   约束时，769px 到右侧目录出现（1280px）前的宽度仍会把整页撑出横向滚动。
+   统一到 1279px 以下在自身容器内横滚；≥1280px（含 1440）保持原有显示。 */
+@media (max-width: 1279px) {
   .vp-doc mjx-container[display="true"] {
     display: block !important;
     min-width: 0 !important;
