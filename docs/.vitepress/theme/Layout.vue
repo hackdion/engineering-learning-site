@@ -13,6 +13,7 @@ import SectionLaw from './components/SectionLaw.vue'
 import CraneTop from './components/CraneTop.vue'
 import SearchWarmup from './components/SearchWarmup.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import OutlineFollow from './components/OutlineFollow.vue'
 
 const { site } = useData()
 const route = useRoute()
@@ -58,6 +59,6 @@ const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?\/?$/.test(r
     <template #nav-screen-content-after><FollowButton block /></template>
     <template #doc-after><SectionLaw v-if="isSection" /></template>
     <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
-    <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /><SearchWarmup /></template>
+    <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /><SearchWarmup /><OutlineFollow /></template>
   </DefaultTheme.Layout>
 </template>
