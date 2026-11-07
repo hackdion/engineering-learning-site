@@ -8,9 +8,8 @@ const rawBase = process.env.VITEPRESS_BASE || '/'
 const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`
 
 /**
- * 本地搜索书名前缀：教材节的结果在标题层级前加「某册 · 教材」，
- * 便于在手机搜索结果里分清六册。路径前缀与 Layout.vue 的 BOOKS 一致；
- * 监理用表、互动 PPT、课程页不在 /textbook/ 下，保持原样。
+ * 本地搜索前缀：教材节结果加「某册 · 教材」；法规条文与合同示范文本分别加类别前缀，
+ * 便于在手机搜索结果里分清内容类型。
  */
 const TEXTBOOK_SEARCH_BOOKS: [string, string][] = [
   ...BOOKS.filter((book) => book.dir).map((book): [string, string] => [`${book.dir}/`, book.shortName]),
@@ -18,8 +17,10 @@ const TEXTBOOK_SEARCH_BOOKS: [string, string][] = [
   ['appendix-', '监理概论']
 ]
 
-function searchBookLabel(file: string) {
+function searchPageLabel(file: string) {
   const norm = file.replace(/\\/g, '/')
+  if (/(^|\/)law\//.test(norm)) return '法规 · 条文'
+  if (/(^|\/)model-contracts\//.test(norm)) return '示范文本'
   const at = norm.indexOf('/textbook/')
   if (at === -1) return ''
   const rel = norm.slice(at + '/textbook/'.length)
@@ -32,7 +33,7 @@ const SEARCH_HEADING = /<h(\d*).*?>(.*?<a.*? href="#.*?".*?>.*?<\/a>)<\/h\1>/gi
 const SEARCH_HEADING_CONTENT = /(.*?)<a.*? href="#(.*?)".*?>.*?<\/a>/i
 
 function splitSearchSections(file: string, html: string) {
-  const label = searchBookLabel(file)
+  const label = searchPageLabel(file)
   const out: { anchor: string; titles: string[]; text: string }[] = []
   const parts = html.split(SEARCH_HEADING)
   parts.shift()
@@ -197,7 +198,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '教材书架', link: '/textbook/' },
       { text: '课程', link: '/courses/' },
-      { text: '监理用表', link: '/forms/' }
+      { text: '监理用表', link: '/forms/' },
+      { text: '法规文本', link: '/law/' }
     ],
     sidebar: {
       '/knowledge/': [
@@ -205,6 +207,64 @@ export default defineConfig({
           text: '知识库',
           items: [
             { text: '文章目录', link: '/knowledge/' }
+          ]
+        }
+      ],
+      // 法规文本按层级分组。骨架期只列出已接入的样例页，其余层级保留分组并指向总览。
+      '/law/': [
+        {
+          text: '法规文本',
+          items: [
+            { text: '总览', link: '/law/' },
+            { text: '合同示范文本总览', link: '/model-contracts/' },
+            {
+              text: '法律',
+              collapsed: false,
+              items: [
+                { text: '中华人民共和国建筑法', link: '/law/jianzhufa' },
+                { text: '中华人民共和国民法典·合同编', link: '/law/minfadian-hetong' }
+              ]
+            },
+            {
+              text: '行政法规',
+              collapsed: false,
+              items: [
+                { text: '建设工程质量管理条例', link: '/law/zhiliang-tiaoli' },
+                { text: '建设工程安全生产管理条例', link: '/law/anquan-shengchan-tiaoli' }
+              ]
+            },
+            {
+              text: '部门规章',
+              collapsed: true,
+              items: [{ text: '整理中，待接入', link: '/law/#laws' }]
+            },
+            {
+              text: '规范性文件',
+              collapsed: true,
+              items: [{ text: '整理中，待接入', link: '/law/#laws' }]
+            },
+            {
+              text: '标准',
+              collapsed: true,
+              items: [{ text: '整理中，待接入', link: '/law/#laws' }]
+            }
+          ]
+        }
+      ],
+      // 合同示范文本按合同类型分组。骨架期只显示占位卡，接入后替换为导读页。
+      '/model-contracts/': [
+        {
+          text: '合同示范文本',
+          items: [
+            { text: '总览', link: '/model-contracts/' },
+            { text: '施工', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '监理', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '总承包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '咨询', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '勘察设计', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '分包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '招标文件', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            { text: '国际', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] }
           ]
         }
       ],

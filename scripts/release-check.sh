@@ -10,6 +10,7 @@
 #   4. 无「待审核素材」目录误入产物
 #   5. Git 受跟踪文件不含内部目录（路径前缀精确匹配，不对正文做 grep）
 #   6. docs/ 下公开 Markdown 的 YAML frontmatter 不含内部管理字段
+#   6b. 法规文本结构：版本卡字段齐全、条号连续、公开页无内部字段
 #
 # 无任何豁免：任何一项失败都阻断发布。
 # 历史教训：
@@ -158,6 +159,19 @@ if [ -f "scripts/check-frontmatter.mjs" ]; then
   fi
 else
   warn "scripts/check-frontmatter.mjs 不存在，跳过 frontmatter 检查"
+fi
+
+# ---------- 检查 6b：法规文本结构 ----------
+echo ""
+echo "[检查 6b] 法规文本：版本卡字段齐全、条号连续、公开页无内部字段"
+if [ -f "scripts/check-law.mjs" ]; then
+  if node scripts/check-law.mjs; then
+    pass "法规文本结构检查通过"
+  else
+    FAILED=1
+  fi
+else
+  warn "scripts/check-law.mjs 不存在，跳过法规文本结构检查"
 fi
 
 # ---------- 总结 ----------

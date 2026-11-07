@@ -14,6 +14,9 @@ import Steps from './components/deck/Steps.vue'
 import SortSteps from './components/deck/SortSteps.vue'
 import CompareCard from './components/deck/CompareCard.vue'
 import FormSheet from './components/FormSheet.vue'
+import LawBanner from './components/LawBanner.vue'
+import ArticleRef from './components/ArticleRef.vue'
+import LawIndex from './components/LawIndex.vue'
 import './hd-theme.css'
 import './custom.css'
 
@@ -30,5 +33,9 @@ export default {
     // 互动 PPT
     for (const [name, c] of Object.entries({ SlideDeck, Slide, Reveal, Quiz, Steps, SortSteps, CompareCard })) app.component(name, c)
     app.component('FormSheet', FormSheet)
+    // 法规文本
+    app.component('LawBanner', LawBanner)
+    app.component('ArticleRef', ArticleRef)
+    app.component('LawIndex', LawIndex)
   }
 }

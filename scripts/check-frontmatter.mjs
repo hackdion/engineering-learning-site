@@ -33,6 +33,13 @@ const INTERNAL_FIELDS = new Set([
   'reviewStatus',
   'userAcceptance',
   'publicationAuthorization',
+  'sourcePath',
+  'reviewedBy',
+  'reviewRecord',
+  'reviewNotes',
+  'acceptanceRecord',
+  'authorizationRecord',
+  'internalNote',
 ])
 
 function walk(dir) {
