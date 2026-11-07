@@ -8,11 +8,23 @@ import { useRoute } from 'vitepress'
 const route = useRoute()
 let observer: MutationObserver | null = null
 let last: Element | null = null
+let timer: ReturnType<typeof setTimeout> | null = null
+let unmounted = false
 
 function follow() {
   const box = document.querySelector<HTMLElement>('.VPDoc .aside-container')
   const active = box?.querySelector<HTMLElement>('.outline-link.active')
-  if (!box || !active || active === last) return
+  // 没有高亮条目时清空缓存：高亮按 A→无→A 变化时，A 再次高亮仍要能触发
+  if (!box || !active) {
+    last = null
+    return
+  }
+  // 目录框隐藏（宽度不足 1280）或高度为 0 时不缓存，避免恢复后跳过应做的滚动
+  if (box.clientHeight <= 0) {
+    last = null
+    return
+  }
+  if (active === last) return
   last = active
   if (box.scrollHeight <= box.clientHeight + 1) return
   const b = box.getBoundingClientRect()
@@ -23,19 +35,42 @@ function follow() {
   box.scrollTo({ top: box.scrollTop + top - b.height / 2 + a.height / 2, behavior: 'smooth' })
 }
 
+function onResize() {
+  // 尺寸变化后目录框可能出现或隐藏，清空缓存并重新判断
+  last = null
+  follow()
+}
+
 function attach() {
+  timer = null
+  if (unmounted) return
   observer?.disconnect()
   last = null
   const outline = document.querySelector('.VPDoc .aside-container .VPDocAsideOutline')
   if (!outline) return
   observer = new MutationObserver(follow)
   observer.observe(outline, { subtree: true, attributes: true, attributeFilter: ['class'] })
+  window.addEventListener('resize', onResize)
   follow()
 }
 
-onMounted(() => setTimeout(attach, 300))
-watch(() => route.path, () => nextTick(() => setTimeout(attach, 300)))
-onBeforeUnmount(() => observer?.disconnect())
+function schedule() {
+  if (timer) clearTimeout(timer)
+  timer = setTimeout(attach, 300)
+}
+
+onMounted(schedule)
+watch(() => route.path, () => nextTick(schedule))
+onBeforeUnmount(() => {
+  unmounted = true
+  if (timer) {
+    clearTimeout(timer)
+    timer = null
+  }
+  observer?.disconnect()
+  observer = null
+  window.removeEventListener('resize', onResize)
+})
 </script>
 
 <template><span hidden /></template>
