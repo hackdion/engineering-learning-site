@@ -2845,7 +2845,7 @@ EMBED Equation.KSEE3 \* MERGEFORMAT ——各可调因子的基本价格指数�
 
 附件3：工程质量保修书
 
-附件4：主要建设工程文件
+附件4：主要建设工程文件目录
 
 附件5：承包人用于本工程施工的机械设备表
 
@@ -2880,8 +2880,6 @@ EMBED Equation.KSEE3 \* MERGEFORMAT ——各可调因子的基本价格指数�
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
-
-设备品种规格型号单位数量单价（元）质量等级供应时间送达地点备注
 
 ### 附件3：工程质量保修书 {#f-3}
 
@@ -2961,9 +2959,9 @@ EMBED Equation.KSEE3 \* MERGEFORMAT ——各可调因子的基本价格指数�
 
 邮政编码：________邮政编码：________
 
-### 附件4：主要建设工程文件 {#f-4}
+### 附件4：主要建设工程文件目录 {#f-4}
 
-主要建设工程文件
+主要建设工程文件目录
 <table>
 <tr><td>文件名称</td><td>套数</td><td>费用（元）</td><td>质量</td><td>移交时间</td><td>责任人</td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
