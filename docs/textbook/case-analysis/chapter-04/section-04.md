@@ -350,9 +350,9 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
     <path d="M188.5,136.5 V206.2" marker-end="url(#arrow-case-4-28)"></path>
     <path d="M497,232.5 V320.5" marker-end="url(#arrow-case-4-28)"></path>
     <path d="M497,206.5 V184"></path>
-    <path d="M523,184 H536 V136.7" marker-end="url(#arrow-case-4-28)"></path>
+    <path d="M536,184 V136.7" marker-end="url(#arrow-case-4-28)"></path>
   </g>
-  <path d="M497,184 q6.5,-4.5 13,0 q6.5,4.5 13,0" fill="none" stroke="currentColor" stroke-width="1.2"></path>
+  <path d="M497,184 q6.5,-4.5 13,0 q6.5,4.5 13,0 q6.5,-4.5 13,0" fill="none" stroke="currentColor" stroke-width="1.2"></path>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
     <circle cx="31.5" cy="219" r="13"></circle>
     <circle cx="188.5" cy="123.5" r="13"></circle>
@@ -384,7 +384,7 @@ C公司应得到的工程预付款为：3355.00×25%＝838.75（万元）；
   <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
     <text x="108" y="106">A</text>
     <text x="92" y="316">B</text>
-    <text x="159" y="185">C</text>
+    <text x="161" y="210">C</text>
     <text x="255" y="106">D</text>
     <text x="265" y="206">E</text>
     <text x="186" y="321">F</text>
@@ -1172,24 +1172,24 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
     <path d="M57,352 V357 M115.6,352 V357 M174.2,352 V357 M232.8,352 V357 M291.4,352 V357 M350,352 V357 M408.6,352 V357 M467.2,352 V357 M525.8,352 V357"></path>
   </g>
   <g fill="currentColor" stroke="none" font-size="12" text-anchor="middle">
-    <text x="57" y="48">1</text>
-    <text x="115.6" y="48">2</text>
-    <text x="174.2" y="48">3</text>
-    <text x="232.8" y="48">4</text>
-    <text x="291.4" y="48">5</text>
-    <text x="350" y="48">6</text>
-    <text x="408.6" y="48">7</text>
-    <text x="467.2" y="48">8</text>
-    <text x="525.8" y="48">9</text>
-    <text x="57" y="371">1</text>
-    <text x="115.6" y="371">2</text>
-    <text x="174.2" y="371">3</text>
-    <text x="232.8" y="371">4</text>
-    <text x="291.4" y="371">5</text>
-    <text x="350" y="371">6</text>
-    <text x="408.6" y="371">7</text>
-    <text x="467.2" y="371">8</text>
-    <text x="525.8" y="371">9</text>
+    <text x="86.3" y="48">1</text>
+    <text x="144.9" y="48">2</text>
+    <text x="203.5" y="48">3</text>
+    <text x="262.1" y="48">4</text>
+    <text x="320.7" y="48">5</text>
+    <text x="379.3" y="48">6</text>
+    <text x="437.9" y="48">7</text>
+    <text x="496.5" y="48">8</text>
+    <text x="547" y="48">9</text>
+    <text x="86.3" y="371">1</text>
+    <text x="144.9" y="371">2</text>
+    <text x="203.5" y="371">3</text>
+    <text x="262.1" y="371">4</text>
+    <text x="320.7" y="371">5</text>
+    <text x="379.3" y="371">6</text>
+    <text x="437.9" y="371">7</text>
+    <text x="496.5" y="371">8</text>
+    <text x="547" y="371">9</text>
   </g>
   <g fill="currentColor" stroke="none" font-size="12" text-anchor="start">
     <text x="590" y="48">（月）</text>

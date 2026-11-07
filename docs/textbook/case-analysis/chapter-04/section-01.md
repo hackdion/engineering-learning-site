@@ -501,7 +501,7 @@ sectionTitle: 第一节 工程监理组织、工作内容与相关法规
     <rect x="81" y="243" width="160" height="46"></rect>
     <rect x="81" y="309" width="160" height="46"></rect>
     <rect x="81" y="375" width="160" height="46"></rect>
-    <path d="M420,56 V72 H32 V398"></path>
+    <path d="M420,56 V72 M32,72 H732 M32,72 V398"></path>
     <path d="M420,56 V87 M267,72 V87 M576,72 V87 M732,72 V87"></path>
     <path d="M32,200 H81 M32,266 H81 M32,332 H81 M32,398 H81"></path>
   </g>

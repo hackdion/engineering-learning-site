@@ -237,8 +237,8 @@ sectionTitle: 第三节 工程进度控制
     <text x="808" y="197">5</text>
     <text x="308" y="222">基2（一）</text>
     <text x="425" y="222">基2（二）</text>
-    <text x="310" y="250">4</text>
-    <text x="430" y="250">4</text>
+    <text x="310" y="248">4</text>
+    <text x="430" y="248">4</text>
     <text x="41" y="60">第</text>
     <text x="41" y="77">1</text>
     <text x="41" y="102">组</text>
@@ -429,55 +429,57 @@ sectionTitle: 第三节 工程进度控制
 <svg viewBox="0 0 760 283" role="img" aria-label="图 4-11 施工进度计划" xmlns="http://www.w3.org/2000/svg">
   <defs><marker id="arrow-case-4-11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
   <g fill="none" stroke="currentColor" stroke-width="1.2">
-    <path d="M36,56 H700"></path>
-    <path d="M36.5,46 V56 M68.5,46 V56 M99.5,46 V56 M132.5,46 V56 M165.5,46 V56 M203.5,46 V56 M229.5,46 V56 M266.5,46 V56 M301.5,46 V56 M333,46 V56 M371,46 V56 M401.5,46 V56 M436.5,46 V56 M467,46 V56 M498.5,46 V56 M535.5,46 V56 M565.5,46 V56 M600.5,46 V56 M630.5,46 V56 M666.5,46 V56 M698.5,46 V56"></path>
+    <path d="M36.5,56 H698.5"></path>
+    <path d="M36.5,46 V56 M69.6,46 V56 M102.7,46 V56 M135.8,46 V56 M168.9,46 V56 M202,46 V56 M235.1,46 V56 M268.2,46 V56 M301.3,46 V56 M334.4,46 V56 M367.5,46 V56 M400.6,46 V56 M433.7,46 V56 M466.8,46 V56 M499.9,46 V56 M533,46 V56 M566.1,46 V56 M599.2,46 V56 M632.3,46 V56 M665.4,46 V56 M698.5,46 V56"></path>
   </g>
   <g fill="currentColor" font-size="16" text-anchor="middle">
-    <text x="36.5" y="39">0</text><text x="68.5" y="39">1</text><text x="99.5" y="39">2</text><text x="132.5" y="39">3</text><text x="165.5" y="39">4</text><text x="203.5" y="39">5</text><text x="229.5" y="39">6</text><text x="266.5" y="39">7</text><text x="301.5" y="39">8</text><text x="333" y="39">9</text><text x="371" y="39">10</text><text x="401.5" y="39">11</text><text x="436.5" y="39">12</text><text x="467" y="39">13</text><text x="498.5" y="39">14</text><text x="535.5" y="39">15</text><text x="565.5" y="39">16</text><text x="600.5" y="39">17</text><text x="630.5" y="39">18</text><text x="666.5" y="39">19</text><text x="698.5" y="39">20</text>
+    <text x="36.5" y="39">0</text><text x="69.6" y="39">1</text><text x="102.7" y="39">2</text><text x="135.8" y="39">3</text><text x="168.9" y="39">4</text><text x="202" y="39">5</text><text x="235.1" y="39">6</text><text x="268.2" y="39">7</text><text x="301.3" y="39">8</text><text x="334.4" y="39">9</text><text x="367.5" y="39">10</text><text x="400.6" y="39">11</text><text x="433.7" y="39">12</text><text x="466.8" y="39">13</text><text x="499.9" y="39">14</text><text x="533" y="39">15</text><text x="566.1" y="39">16</text><text x="599.2" y="39">17</text><text x="632.3" y="39">18</text><text x="665.4" y="39">19</text><text x="698.5" y="39">20</text>
   </g>
   <text x="712" y="54" fill="currentColor" font-size="14" text-anchor="start">(月)</text>
   <g fill="none" stroke="currentColor" stroke-width="1.4">
-    <path d="M31,164 V98 H152" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M44,177 H110 q8,-12 16,0 q8,12 16,0 q5,-12 10,0" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M31,190 V255 H129 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q1,-12 2,0" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M178,98 H255" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M178,177 H222" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M281,98 H497 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 q8,-8 16,0 q8,8 16,0 H698 V164" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M248,177 H386" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M412,177 H520" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M546,177 H685" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M412,255 H481 q8,-12 16,0 q7,12 14,0 q4.5,-12 9,0" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M546,255 H610 q8,-12 16,0 q8,12 16,0 q8,-12 16,0 q8,12 16,0 q8,-12 16,0 H698 V190" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M235,164 V150 q5.5,-10 11,0 q5.5,10 11,0 q5.5,-10 11,0 V111" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M36.5,164 V98 H155.9" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M49.5,177 H102.7 q8.85,-12 17.7,0 q8.85,12 17.7,0 q8.85,-12 17.7,0" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M36.5,190 V255 H135.8 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q8.5,-12 17,0 q8.5,12 17,0 q6.9,-12 13.8,0" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M181.9,98 H255.2" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M181.9,177 H222.1" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M281.2,98 H499.9 q8.435,-8 16.87,0 q8.435,8 16.87,0 q8.435,-8 16.87,0 q8.435,8 16.87,0 q8.435,-8 16.87,0 q8.435,8 16.87,0 q8.435,-8 16.87,0 q8.435,8 16.87,0 q8.435,-8 16.87,0 q8.435,8 16.87,0 q8.435,-8 16.87,0 H698.5 V164" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M248.1,177 H387.6" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M413.6,177 H520" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M546,177 H685.5" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M413.6,255 H466.8 q8.85,-12 17.7,0 q8.85,12 17.7,0 q8.85,-12 17.7,0" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M546,255 H599.2 q8.63,-12 17.26,0 q8.63,12 17.26,0 q8.63,-12 17.26,0 q8.63,12 17.26,0 q8.63,-12 17.26,0 H698.5 V190" marker-end="url(#arrow-case-4-11)"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 4">
-    <path d="M165,111 V164" marker-end="url(#arrow-case-4-11)"></path>
-    <path d="M399,190 V242" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M168.9,111 V164" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M400.6,190 V242" marker-end="url(#arrow-case-4-11)"></path>
     <path d="M533,190 V242" marker-end="url(#arrow-case-4-11)"></path>
+    <path d="M235.1,164 V145"></path>
+    <path d="M268.2,145 V111" marker-end="url(#arrow-case-4-11)"></path>
   </g>
+  <path d="M235.1,145 q8.3,-10 16.5,0 q8.3,10 16.5,0" fill="none" stroke="currentColor" stroke-width="1.4"></path>
   <g fill="none" stroke="currentColor" stroke-width="1.4">
-    <circle cx="31" cy="177" r="13"></circle>
-    <circle cx="165" cy="98" r="13"></circle>
-    <circle cx="165" cy="177" r="13"></circle>
-    <circle cx="235" cy="177" r="13"></circle>
-    <circle cx="268" cy="98" r="13"></circle>
-    <circle cx="399" cy="177" r="13"></circle>
-    <circle cx="399" cy="255" r="13"></circle>
+    <circle cx="36.5" cy="177" r="13"></circle>
+    <circle cx="168.9" cy="98" r="13"></circle>
+    <circle cx="168.9" cy="177" r="13"></circle>
+    <circle cx="235.1" cy="177" r="13"></circle>
+    <circle cx="268.2" cy="98" r="13"></circle>
+    <circle cx="400.6" cy="177" r="13"></circle>
+    <circle cx="400.6" cy="255" r="13"></circle>
     <circle cx="533" cy="177" r="13"></circle>
     <circle cx="533" cy="255" r="13"></circle>
-    <circle cx="698" cy="177" r="13"></circle>
+    <circle cx="698.5" cy="177" r="13"></circle>
   </g>
   <g fill="currentColor" font-size="14" text-anchor="middle">
-    <text x="31" y="181.8">1</text>
-    <text x="165" y="102.8">2</text>
-    <text x="165" y="181.8">3</text>
-    <text x="235" y="181.8">4</text>
-    <text x="268" y="102.8">5</text>
-    <text x="399" y="181.8">6</text>
-    <text x="399" y="259.8">7</text>
+    <text x="36.5" y="181.8">1</text>
+    <text x="168.9" y="102.8">2</text>
+    <text x="168.9" y="181.8">3</text>
+    <text x="235.1" y="181.8">4</text>
+    <text x="268.2" y="102.8">5</text>
+    <text x="400.6" y="181.8">6</text>
+    <text x="400.6" y="259.8">7</text>
     <text x="533" y="181.8">8</text>
     <text x="533" y="259.8">9</text>
-    <text x="698" y="181.8">10</text>
+    <text x="698.5" y="181.8">10</text>
   </g>
   <g fill="currentColor" font-size="14" text-anchor="middle">
     <text x="81" y="93">A</text>
@@ -805,8 +807,8 @@ G、H、L三项工作的流水施工工期为：（3＋2）＋（2＋3）＝10�
     <text x="300" y="150">(12,①)</text>
     <text x="500" y="150">(24,③)</text>
     <text x="652" y="150">(32,⑤)</text>
-    <text x="520" y="264">(21,③)</text>
-    <text x="70" y="182" text-anchor="end">b<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">=0</tspan></text>
+    <text x="520" y="264">(21,④)</text>
+    <text x="70" y="182" text-anchor="end">b<tspan dy="4" font-size="10">2</tspan><tspan dy="-4">=0</tspan></text>
   </g>
 </svg>
 </FigureZoom>
@@ -959,7 +961,7 @@ G、H、L三项工作的流水施工工期为：（3＋2）＋（2＋3）＝10�
     <path d="M602.5,100 H710.8 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q3.6,10 7.2,0 H830 V185" marker-end="url(#arrow-case-4-18)"></path>
     <path d="M542.9,196 H770.4 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q0.3,10 0.6,0" marker-end="url(#arrow-case-4-18)"></path>
     <path d="M542.9,272 H830 V207" marker-end="url(#arrow-case-4-18)"></path>
-    <path d="M293.5,111 V145"></path>
+    <path d="M293.5,111 V145" stroke-dasharray="6 4"></path>
     <path d="M293.5,145 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q8,10 16,0 q8,-10 16,0 q3.6,10 7.2,0"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 4">
@@ -1115,14 +1117,14 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4">
     <path d="M307,84.5 V145" marker-end="url(#arrow-case-4-19)"></path>
-    <path d="M307,165 V172" ></path>
-    <path d="M347,200 V222" marker-end="url(#arrow-case-4-19)"></path>
+    <path d="M307,165 V186"></path>
+    <path d="M347.5,186 V222" marker-end="url(#arrow-case-4-19)"></path>
     <path d="M434,145.5 V113"></path>
     <path d="M470,113 V84.5" marker-end="url(#arrow-case-4-19)"></path>
     <path d="M434,165.5 V222" marker-end="url(#arrow-case-4-19)"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <path d="M307,172 q8,-9 16,0 q8,9 16,0 q8,-9 16,0" transform="rotate(35 307 172)"></path>
+    <path d="M307,186 q6.75,-9 13.5,0 q6.75,9 13.5,0 q6.75,-9 13.5,0"></path>
     <path d="M434,113 q8,-9 16,0 q8,9 16,0 q2,-9 4,0"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.1">
@@ -1253,18 +1255,18 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4">
     <path d="M373,94 V172" marker-end="url(#arrow-case-4-20)"></path>
-    <path d="M372,196 V215"></path>
-    <path d="M424,240 V267" marker-end="url(#arrow-case-4-20)"></path>
+    <path d="M372,196 V221"></path>
+    <path d="M424,221 V267" marker-end="url(#arrow-case-4-20)"></path>
     <path d="M532,172 V120"></path>
     <path d="M580,120 V94" marker-end="url(#arrow-case-4-20)"></path>
     <path d="M532,196 V267" marker-end="url(#arrow-case-4-20)"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <path d="M372.5,215 q8,-9 16,0 q8,9 16,0 q8,-9 16,0 q4,9 8.8,0" transform="rotate(26.1 372.5 215)"></path>
+    <path d="M372,221 q8.7,-9 17.4,0 q8.7,9 17.4,0 q8.7,-9 17.4,0"></path>
     <path d="M532,120 q8,-9 16,0 q8,9 16,0 q8,-9 16,0"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="7 5">
-    <path d="M250,40 L162,82 L216,184 L216,279 L245,305"></path>
+    <path d="M268.2,40 L162,82 L216,184 L216,279 L268.2,305"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.1">
     <circle cx="70" cy="184" r="12"></circle>
@@ -1294,7 +1296,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
     <text x="110" y="174">A</text>
     <text x="252" y="174">B</text>
     <text x="300" y="269">C</text>
-    <text x="222" y="72">D</text>
+    <text x="263" y="72">D</text>
     <text x="477" y="72">E</text>
     <text x="460" y="174">G</text>
     <text x="470" y="269">H</text>
@@ -1342,9 +1344,9 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4">
     <path d="M340,44.5 V134" marker-end="url(#arrow-case-4-21)"></path>
-    <path d="M340,154.5 V237" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M340,237 V154.5" marker-end="url(#arrow-case-4-21)"></path>
     <path d="M482,44.5 V134" marker-end="url(#arrow-case-4-21)"></path>
-    <path d="M482,154.5 V235" marker-end="url(#arrow-case-4-21)"></path>
+    <path d="M482,235 V154.5" marker-end="url(#arrow-case-4-21)"></path>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.1">
     <circle cx="44" cy="144" r="10"></circle>
@@ -1499,8 +1501,8 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
     <text x="252" y="241">25</text>
     <text x="442" y="16">B1</text>
     <text x="442" y="53">20</text>
-    <text x="480" y="44">C2</text>
-    <text x="494" y="76">10</text>
+    <text x="416" y="80">C2</text>
+    <text x="425" y="105">10</text>
     <text x="622" y="16">B2</text>
     <text x="622" y="53">40</text>
     <text x="450" y="110">A4</text>
@@ -1649,8 +1651,8 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
     <text x="570" y="139">5</text>
     <text x="710" y="104">M</text>
     <text x="710" y="139">3</text>
-    <text x="488" y="100">I</text>
-    <text x="511" y="100">3</text>
+    <text x="488" y="70">I</text>
+    <text x="511" y="70">3</text>
     <text x="628" y="64">L</text>
     <text x="655" y="64">1</text>
   </g>
@@ -1910,7 +1912,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
     <text x="219.5" y="285">4</text>
     <text x="164" y="173.5">5</text>
     <text x="368.5" y="41.5">9</text>
-    <text x="351" y="156">9</text>
+    <text x="399" y="163">9</text>
     <text x="594" y="184.4">14</text>
   </g>
   <g fill="currentColor" stroke="none" font-size="12" text-anchor="start">
@@ -1919,7 +1921,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
     <text x="225.5" y="285">5</text>
     <text x="168" y="173.5">5</text>
     <text x="374.5" y="41.5">9</text>
-    <text x="357" y="156">9</text>
+    <text x="405.5" y="163">9</text>
     <text x="602" y="184.4">14</text>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1">
@@ -1928,7 +1930,7 @@ $R=P\cdot q=15\%\times 32500=4875$（元）
     <path d="M208,291 H238 M222.5,273 V291"></path>
     <path d="M150,179.5 H174 M166,161.5 V179.5"></path>
     <path d="M357,47.5 H387 M371.5,29.5 V47.5"></path>
-    <path d="M339,162 H364 M354,144 V162"></path>
+    <path d="M387,168 H416 M401.5,146 V168"></path>
     <path d="M578,190 H621 M598,172 V190"></path>
   </g>
 </svg>
