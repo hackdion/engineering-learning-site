@@ -332,7 +332,96 @@ $$
 <table><caption style="text-align: left"><span style="display: block; max-width: min(624px, calc(100vw - 48px))">表 8-19 工程价格指数表</span></caption><tbody><tr><th scope="col">时间</th><th scope="col">2023年12月</th><th scope="col">2024年1月</th><th scope="col">2024年2月</th><th scope="col">2024年3月</th><th scope="col">2024年4月</th><th scope="col">2024年5月</th><th scope="col">2024年6月</th><th scope="col">2024年7月</th><th scope="col">2024年8月</th><th scope="col">2024年9月</th></tr><tr><td>混凝土结构工程价格指数(%)</td><td>100</td><td>115</td><td>105</td><td>110</td><td>115</td><td>110</td><td>110</td><td>120</td><td>110</td><td>110</td></tr></tbody></table>
 </div>
 
-<FigureZoom caption="图 8-11 时标网络计划" src="/images/investment/chapter-08/fig-8-11.png" :width="799" :height="347" />
+<FigureZoom caption="图 8-11 时标网络计划">
+<svg viewBox="0 0 799 347" role="img" aria-label="图 8-11 时标网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="a811" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M19,30 H739"/>
+    <path d="M19,30 V18"/>
+    <path d="M99,30 V24"/>
+    <path d="M179,30 V24"/>
+    <path d="M259,30 V24"/>
+    <path d="M339,30 V24"/>
+    <path d="M419,30 V24"/>
+    <path d="M499,30 V24"/>
+    <path d="M579,30 V24"/>
+    <path d="M659,30 V24"/>
+    <path d="M739,30 V24"/>
+    <path d="M19,321 H739"/>
+    <path d="M19,321 V333"/>
+    <path d="M99,321 V327"/>
+    <path d="M179,321 V327"/>
+    <path d="M259,321 V327"/>
+    <path d="M339,321 V327"/>
+    <path d="M419,321 V327"/>
+    <path d="M499,321 V327"/>
+    <path d="M579,321 V327"/>
+    <path d="M659,321 V327"/>
+    <path d="M739,321 V327"/>
+    <path d="M19,160 V76 H164" marker-end="url(#a811)"/>
+    <path d="M34,175 H164" marker-end="url(#a811)"/>
+    <path d="M194,76 H419"/>
+    <polyline points="419.0,76.0 426.2,70.0 433.5,82.0 440.8,70.0 448.0,82.0 455.2,70.0 462.5,82.0 469.8,70.0 477.0,76.0"/>
+    <path d="M477,76 H483" marker-end="url(#a811)"/>
+    <path d="M194,175 H484" marker-end="url(#a811)"/>
+    <path d="M179,190 V273 H324" marker-end="url(#a811)"/>
+    <path d="M514,76 H659 V160" marker-end="url(#a811)"/>
+    <path d="M514,175 H579"/>
+    <polyline points="579.0,175.0 586.2,169.0 593.5,181.0 600.8,169.0 608.0,181.0 615.2,169.0 622.5,181.0 629.8,169.0 637.0,175.0"/>
+    <path d="M637,175 H643" marker-end="url(#a811)"/>
+    <path d="M354,273 H579"/>
+    <polyline points="579.0,273.0 585.9,267.0 592.8,279.0 599.7,267.0 606.6,279.0 613.5,267.0 620.4,279.0 627.3,267.0 634.2,279.0 641.1,267.0 648.0,273.0"/>
+    <path d="M648,273 H659 V190" marker-end="url(#a811)"/>
+    <path d="M499,160 V92" stroke-dasharray="5 4" marker-end="url(#a811)"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="19" cy="175" r="15"/>
+    <circle cx="179" cy="76" r="15"/>
+    <circle cx="179" cy="175" r="15"/>
+    <circle cx="339" cy="273" r="15"/>
+    <circle cx="499" cy="175" r="15"/>
+    <circle cx="499" cy="76" r="15"/>
+    <circle cx="659" cy="175" r="15"/>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="19" y="175" dy="0.35em" font-size="15">1</text>
+    <text x="179" y="76" dy="0.35em" font-size="15">2</text>
+    <text x="179" y="175" dy="0.35em" font-size="15">3</text>
+    <text x="339" y="273" dy="0.35em" font-size="15">4</text>
+    <text x="499" y="175" dy="0.35em" font-size="15">5</text>
+    <text x="499" y="76" dy="0.35em" font-size="15">6</text>
+    <text x="659" y="175" dy="0.35em" font-size="15">7</text>
+    <text x="98" y="66" font-size="14">A</text>
+    <text x="257" y="66" font-size="14">C</text>
+    <text x="536" y="66" font-size="14">F</text>
+    <text x="102" y="164" font-size="14">B</text>
+    <text x="257" y="164" font-size="14">D</text>
+    <text x="536" y="164" font-size="14">G</text>
+    <text x="257" y="261" font-size="14">E</text>
+    <text x="495" y="261" font-size="14">H</text>
+    <text x="59" y="24" font-size="12.5">1</text>
+    <text x="59" y="343" font-size="12.5">1</text>
+    <text x="139" y="24" font-size="12.5">2</text>
+    <text x="139" y="343" font-size="12.5">2</text>
+    <text x="219" y="24" font-size="12.5">3</text>
+    <text x="219" y="343" font-size="12.5">3</text>
+    <text x="299" y="24" font-size="12.5">4</text>
+    <text x="299" y="343" font-size="12.5">4</text>
+    <text x="379" y="24" font-size="12.5">5</text>
+    <text x="379" y="343" font-size="12.5">5</text>
+    <text x="459" y="24" font-size="12.5">6</text>
+    <text x="459" y="343" font-size="12.5">6</text>
+    <text x="539" y="24" font-size="12.5">7</text>
+    <text x="539" y="343" font-size="12.5">7</text>
+    <text x="619" y="24" font-size="12.5">8</text>
+    <text x="619" y="343" font-size="12.5">8</text>
+    <text x="699" y="24" font-size="12.5">9</text>
+    <text x="699" y="343" font-size="12.5">9</text>
+    <text x="753" y="35" font-size="14" text-anchor="start">（月）</text>
+    <text x="753" y="327" font-size="14" text-anchor="start">（月）</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-11 时标网络计划</p>
 

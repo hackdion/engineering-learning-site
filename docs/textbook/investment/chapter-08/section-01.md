@@ -160,7 +160,64 @@ sectionTitle: 第一节 资金使用计划编制
 
 （3）计算规定时间 $t$ 计划累计完成的投资额。其计算方法为:各单位时间计划完成的投资额累加求和，可按下式计算:
 
-<FigureZoom caption="图 8-4 时标网络图上按月编制的资金使用计划" src="/images/investment/chapter-08/fig-8-04.png" :width="710" :height="270" />
+<FigureZoom caption="图 8-4 时标网络图上按月编制的资金使用计划">
+<svg viewBox="0 0 710 252" role="img" aria-label="图 8-4 时标网络图上按月编制的资金使用计划" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M78,29 V222 H658"/>
+    <path d="M95.0,201.2 h36.0 V222 h-36.0 Z"/>
+    <path d="M141.8,180.4 h36.0 V222 h-36.0 Z"/>
+    <path d="M188.6,149.3 h36.0 V222 h-36.0 Z"/>
+    <path d="M235.4,118.1 h36.0 V222 h-36.0 Z"/>
+    <path d="M282.2,97.3 h36.0 V222 h-36.0 Z"/>
+    <path d="M329.0,55.8 h36.0 V222 h-36.0 Z"/>
+    <path d="M375.8,55.8 h36.0 V222 h-36.0 Z"/>
+    <path d="M422.6,76.6 h36.0 V222 h-36.0 Z"/>
+    <path d="M469.4,97.3 h36.0 V222 h-36.0 Z"/>
+    <path d="M516.2,138.9 h36.0 V222 h-36.0 Z"/>
+    <path d="M563.0,159.7 h36.0 V222 h-36.0 Z"/>
+    <path d="M609.8,180.4 h36.0 V222 h-36.0 Z"/>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="13.5">
+    <text x="72" y="226.5" text-anchor="end">0</text>
+    <text x="72" y="205.7" text-anchor="end">100</text>
+    <text x="72" y="184.9" text-anchor="end">200</text>
+    <text x="72" y="164.2" text-anchor="end">300</text>
+    <text x="72" y="143.4" text-anchor="end">400</text>
+    <text x="72" y="122.6" text-anchor="end">500</text>
+    <text x="72" y="101.8" text-anchor="end">600</text>
+    <text x="72" y="81.1" text-anchor="end">700</text>
+    <text x="72" y="60.3" text-anchor="end">800</text>
+    <text x="72" y="39.5" text-anchor="end">900</text>
+    <text x="113.0" y="196.2" text-anchor="middle">100</text>
+    <text x="113.0" y="241" text-anchor="middle">1</text>
+    <text x="159.8" y="175.4" text-anchor="middle">200</text>
+    <text x="159.8" y="241" text-anchor="middle">2</text>
+    <text x="206.6" y="144.3" text-anchor="middle">350</text>
+    <text x="206.6" y="241" text-anchor="middle">3</text>
+    <text x="253.4" y="113.1" text-anchor="middle">500</text>
+    <text x="253.4" y="241" text-anchor="middle">4</text>
+    <text x="300.2" y="92.3" text-anchor="middle">600</text>
+    <text x="300.2" y="241" text-anchor="middle">5</text>
+    <text x="347.0" y="50.8" text-anchor="middle">800</text>
+    <text x="347.0" y="241" text-anchor="middle">6</text>
+    <text x="393.8" y="50.8" text-anchor="middle">800</text>
+    <text x="393.8" y="241" text-anchor="middle">7</text>
+    <text x="440.6" y="71.6" text-anchor="middle">700</text>
+    <text x="440.6" y="241" text-anchor="middle">8</text>
+    <text x="487.4" y="92.3" text-anchor="middle">600</text>
+    <text x="487.4" y="241" text-anchor="middle">9</text>
+    <text x="534.2" y="133.9" text-anchor="middle">400</text>
+    <text x="534.2" y="241" text-anchor="middle">10</text>
+    <text x="581.0" y="154.7" text-anchor="middle">300</text>
+    <text x="581.0" y="241" text-anchor="middle">11</text>
+    <text x="627.8" y="175.4" text-anchor="middle">200</text>
+    <text x="627.8" y="241" text-anchor="middle">12</text>
+    <text x="8" y="24" font-size="15">投资（万元）</text>
+    <text x="680" y="219" text-anchor="middle" font-size="15">时间</text>
+    <text x="680" y="238" text-anchor="middle" font-size="15">（月）</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-4 时标网络图上按月编制的资金使用计划</p>
 
