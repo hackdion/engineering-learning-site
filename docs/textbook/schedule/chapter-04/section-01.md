@@ -12,7 +12,44 @@ sectionTitle: 第一节 实际进度监测与调整系统过程
 
 在工程项目实施过程中，监理工程师应经常地、定期地对进度计划的执行情况进行跟踪检查，发现问题后，及时采取措施加以解决。进度监测系统过程如图 4-1 所示。
 
-<FigureZoom caption="图 4-1 工程进度监测系统过程" src="/images/schedule/chapter-04/fig-4-01.png" :width="489" :height="672" />
+<FigureZoom caption="图 4-1 工程进度监测系统过程">
+<svg viewBox="0 0 489 672" role="img" aria-label="图 4-1 工程进度监测系统过程" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-4-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="113" y="9" width="275" height="37"></rect>
+    <rect x="113" y="118" width="275" height="37"></rect>
+    <rect x="113" y="205" width="275" height="37"></rect>
+    <rect x="113" y="301" width="275" height="38"></rect>
+    <rect x="113" y="396" width="275" height="37"></rect>
+    <rect x="113" y="628" width="275" height="37"></rect>
+    <polygon points="253,485 397,531 255,575 105,531"></polygon>
+    <path d="M253,46 V118" marker-end="url(#arrow-4-1)"></path>
+    <path d="M253,155 V205" marker-end="url(#arrow-4-1)"></path>
+    <path d="M253,242 V301" marker-end="url(#arrow-4-1)"></path>
+    <path d="M253,339 V396" marker-end="url(#arrow-4-1)"></path>
+    <path d="M253,433 V485" marker-end="url(#arrow-4-1)"></path>
+    <path d="M255,575 V628" marker-end="url(#arrow-4-1)"></path>
+    <path d="M105,531 H10 V25 H113" marker-end="url(#arrow-4-1)"></path>
+    <path d="M397,67 L330,97 L255,83" marker-end="url(#arrow-4-1)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="250" y="27" dy="0.35em" font-size="17">进度计划的实施</text>
+    <text x="250" y="136" dy="0.35em" font-size="17">建立进度数据采集系统</text>
+    <text x="250" y="223" dy="0.35em" font-size="17">收集实际进度数据</text>
+    <text x="250" y="320" dy="0.35em" font-size="17">数据处理(整理、统计、分析)</text>
+    <text x="250" y="414" dy="0.35em" font-size="17">实际进度与计划进度的比较</text>
+    <text x="250" y="646" dy="0.35em" font-size="17">进入进度调整系统</text>
+    <text x="253" y="531" dy="0.35em" font-size="17">是否出现偏差?</text>
+    <text x="450" y="67" dy="0.35em" font-size="17">外部干扰</text>
+    <text x="57" y="516" dy="0.35em" font-size="15">否</text>
+    <text x="272" y="600" dy="0.35em" font-size="15">是</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-1 工程进度监测系统过程</p>
 
@@ -50,7 +87,40 @@ sectionTitle: 第一节 实际进度监测与调整系统过程
 
 通过实际进度与计划进度的比较，发现进度偏差时，为了采取有效措施调整进度计划，必须深入现场进行调查，分析产生进度偏差的原因。
 
-<FigureZoom caption="图 4-2 工程进度调整系统过程" src="/images/schedule/chapter-04/fig-4-02.png" :width="383" :height="519" />
+<FigureZoom caption="图 4-2 工程进度调整系统过程">
+<svg viewBox="0 0 383 519" role="img" aria-label="图 4-2 工程进度调整系统过程" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-4-2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="9" y="10" width="365" height="42" stroke-dasharray="8 6"></rect>
+    <rect x="9" y="90" width="365" height="37"></rect>
+    <rect x="9" y="163" width="365" height="37"></rect>
+    <rect x="8" y="236" width="365" height="37"></rect>
+    <rect x="8" y="309" width="365" height="37"></rect>
+    <rect x="7" y="383" width="366" height="60"></rect>
+    <rect x="7" y="480" width="365" height="37"></rect>
+    <path d="M191,52 V90" marker-end="url(#arrow-4-2)"></path>
+    <path d="M191,127 V163" marker-end="url(#arrow-4-2)"></path>
+    <path d="M191,200 V236" marker-end="url(#arrow-4-2)"></path>
+    <path d="M190,273 V309" marker-end="url(#arrow-4-2)"></path>
+    <path d="M190,346 V383" marker-end="url(#arrow-4-2)"></path>
+    <path d="M190,443 V480" marker-end="url(#arrow-4-2)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="191" y="31" dy="0.35em" font-size="17">出现进度偏差</text>
+    <text x="191" y="108" dy="0.35em" font-size="17">分析产生偏差的原因</text>
+    <text x="191" y="181" dy="0.35em" font-size="17">分析偏差对后续工作及总工期的影响</text>
+    <text x="190" y="254" dy="0.35em" font-size="17">确定工期和后续工作的限制条件</text>
+    <text x="190" y="327" dy="0.35em" font-size="17">采取措施调整进度计划</text>
+    <text x="190" y="402" dy="0.35em" font-size="17">采取相应的组织、经济、技术措施</text>
+    <text x="190" y="425" dy="0.35em" font-size="17">实施调整后的进度计划</text>
+    <text x="189" y="498" dy="0.35em" font-size="17">返回进度监测系统</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-2 工程进度调整系统过程</p>
 

@@ -28,7 +28,53 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 
 进度偏差的分析判断过程如图 4-19 所示。通过分析，进度控制人员可以根据进度偏差的影响程度，制订相应的纠偏措施进行调整，以获得符合实际进度情况和计划目标的新进度计划。
 
-<FigureZoom caption="图 4-19 进度偏差对后续工作和总工期影响分析过程图" src="/images/schedule/chapter-04/fig-4-19.png" :width="689" :height="535" />
+<FigureZoom caption="图 4-19 进度偏差对后续工作和总工期影响分析过程图">
+<svg viewBox="0 0 689 535" role="img" aria-label="图 4-19 进度偏差对后续工作和总工期影响分析过程图" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-4-19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="330" y="7" width="295" height="36"></rect>
+    <polygon points="477,58 676,88 477,118 279,88"></polygon>
+    <polygon points="477,155 676,185 477,215 278,185"></polygon>
+    <polygon points="477,250 676,280 477,310 278,280"></polygon>
+    <rect x="8" y="427" width="295" height="35"></rect>
+    <rect x="8" y="494" width="295" height="35"></rect>
+    <rect x="330" y="494" width="195" height="35"></rect>
+    <path d="M477,43 V58" marker-end="url(#arrow-4-19)"></path>
+    <path d="M477,118 V155" marker-end="url(#arrow-4-19)"></path>
+    <path d="M477,215 V250" marker-end="url(#arrow-4-19)"></path>
+    <path d="M477,310 V494" marker-end="url(#arrow-4-19)"></path>
+    <path d="M279,88 H97 V427" marker-end="url(#arrow-4-19)"></path>
+    <path d="M278,185 H157 V427" marker-end="url(#arrow-4-19)"></path>
+    <path d="M278,280 H219 V427" marker-end="url(#arrow-4-19)"></path>
+    <path d="M155,462 V494" marker-end="url(#arrow-4-19)"></path>
+    <path d="M303,511 H330" marker-end="url(#arrow-4-19)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="477" y="25" dy="0.35em" font-size="17">某项工作出现进度偏差</text>
+    <text x="477" y="88" dy="0.35em" font-size="17">此偏差是否在关键线路上?</text>
+    <text x="477" y="185" dy="0.35em" font-size="17">此偏差是否大于总时差?</text>
+    <text x="477" y="280" dy="0.35em" font-size="17">此偏差是否大于自由时差?</text>
+    <text x="155" y="444" dy="0.35em" font-size="17">采取进度计划调整措施</text>
+    <text x="155" y="511" dy="0.35em" font-size="17">实施新的进度计划</text>
+    <text x="427" y="511" dy="0.35em" font-size="17">返回进度监测系统</text>
+    <text x="252" y="70" dy="0.35em" font-size="15">是</text>
+    <text x="247" y="167" dy="0.35em" font-size="15">是</text>
+    <text x="245" y="262" dy="0.35em" font-size="15">是</text>
+    <text x="490" y="133" dy="0.35em" font-size="15" text-anchor="start">否</text>
+    <text x="490" y="230" dy="0.35em" font-size="15" text-anchor="start">否</text>
+    <text x="463" y="334" dy="0.35em" font-size="15">否</text>
+    <text x="530" y="230" dy="0.35em" font-size="15" text-anchor="start">不影响总工期</text>
+    <text x="75" y="155" font-size="15"><tspan x="75" dy="0">影</tspan><tspan x="75" dy="22">响</tspan><tspan x="75" dy="22">总</tspan><tspan x="75" dy="22">工</tspan><tspan x="75" dy="22">期</tspan></text>
+    <text x="135" y="245" font-size="15"><tspan x="135" dy="0">影</tspan><tspan x="135" dy="22">响</tspan><tspan x="135" dy="22">总</tspan><tspan x="135" dy="22">工</tspan><tspan x="135" dy="22">期</tspan></text>
+    <text x="200" y="305" font-size="15"><tspan x="200" dy="0">影</tspan><tspan x="200" dy="22">响</tspan><tspan x="200" dy="22">后</tspan><tspan x="200" dy="22">续</tspan><tspan x="200" dy="22">工</tspan><tspan x="200" dy="22">作</tspan></text>
+    <text x="505" y="315" font-size="15"><tspan x="505" dy="0">不</tspan><tspan x="505" dy="22">影</tspan><tspan x="505" dy="22">响</tspan><tspan x="505" dy="22">后</tspan><tspan x="505" dy="22">续</tspan><tspan x="505" dy="22">工</tspan><tspan x="505" dy="22">作</tspan></text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-19 进度偏差对后续工作和总工期影响分析过程图</p>
 

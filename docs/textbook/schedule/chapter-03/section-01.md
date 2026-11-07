@@ -14,9 +14,58 @@ sectionTitle: 第一节 基本原理
 
 网络图有双代号网络图和单代号网络图两种。双代号网络图又称箭线式网络图，它是以箭线及其两端节点的编号表示工作，同时，节点表示工作的开始或结束以及工作之间的连接状态。单代号网络图又称节点式网络图，它是以节点及其编号表示工作，箭线表示工作之间的逻辑关系。网络图中工作的表示方法如图 3-1 和图 3-2 所示。
 
-<FigureZoom caption="图 3-1 双代号网络图中工作的表示方法" src="/images/schedule/chapter-03/fig-3-01.png" :width="610" :height="192" />
+<FigureZoom caption="图 3-1 双代号网络图中工作的表示方法">
+<svg viewBox="0 0 610 192" role="img" aria-label="图 3-1 双代号网络图中工作的表示方法" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="38" cy="84" r="15"></circle>
+    <circle cx="232" cy="84" r="15"></circle>
+    <path d="M53,84 H216" marker-end="url(#arrow-3-1)"></path>
+    <circle cx="386" cy="134" r="15"></circle>
+    <circle cx="570" cy="40" r="15"></circle>
+    <path d="M386,119 V40 H554" marker-end="url(#arrow-3-1)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="38" y="90" font-style="italic">i</text>
+    <text x="232" y="90" font-style="italic">j</text>
+    <text x="386" y="140" font-style="italic">i</text>
+    <text x="570" y="46" font-style="italic">j</text>
+    <text x="134" y="74">工作名称</text>
+    <text x="134" y="106">持续时间</text>
+    <text x="470" y="32">工作名称</text>
+    <text x="471" y="63">持续时间</text>
+    <text x="127" y="178" font-style="italic">(a)</text>
+    <text x="490" y="179" font-style="italic">(b)</text>
+  </g>
+</svg>
+</FigureZoom>
 
-<FigureZoom caption="图 3-2 单代号网络图中工作的表示方法" src="/images/schedule/chapter-03/fig-3-02.png" :width="627" :height="272" />
+<FigureZoom caption="图 3-2 单代号网络图中工作的表示方法">
+<svg viewBox="0 0 627 272" role="img" aria-label="图 3-2 单代号网络图中工作的表示方法" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="121" cy="122" r="96"></circle>
+    <path d="M27,96 H215"></path>
+    <path d="M26,144 H215"></path>
+    <rect x="425" y="49" width="181" height="142"></rect>
+    <path d="M425,96 H606"></path>
+    <path d="M425,144 H606"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="121" y="77">节点编号</text>
+    <text x="121" y="129">工作名称</text>
+    <text x="121" y="177">持续时间</text>
+    <text x="520" y="82">节点编号</text>
+    <text x="520" y="129">工作名称</text>
+    <text x="519" y="177">持续时间</text>
+    <text x="121" y="266" font-style="italic">(a)</text>
+    <text x="520" y="266" font-style="italic">(b)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 网络图中的节点都必须有编号，其编号严禁重复，并应使每一条箭线上箭尾节点编号小于箭头节点编号。
 
@@ -34,7 +83,53 @@ sectionTitle: 第一节 基本原理
 
 生产性工作之间由工艺过程决定的、非生产性工作之间由工作程序决定的先后顺序关系称为工艺关系。如图 3-3 所示，支模 1→扎筋 1→混凝土 1 为工艺关系。
 
-<FigureZoom caption="图 3-3 某混凝土工程双代号网络计划" src="/images/schedule/chapter-03/fig-3-03.png" :width="719" :height="200" />
+<FigureZoom caption="图 3-3 某混凝土工程双代号网络计划">
+<svg viewBox="0 0 719 200" role="img" aria-label="图 3-3 某混凝土工程双代号网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <line x1="91" y1="50" x2="185" y2="50" marker-end="url(#arrow-3-3)"></line>
+    <line x1="213" y1="50" x2="343" y2="50" marker-end="url(#arrow-3-3)"></line>
+    <path d="M200,63 V132 H343" marker-end="url(#arrow-3-3)"></path>
+    <line x1="371" y1="50" x2="538" y2="50"></line>
+    <path d="M538,50 V117" marker-end="url(#arrow-3-3)"></path>
+    <line x1="371" y1="132" x2="523" y2="132" marker-end="url(#arrow-3-3)"></line>
+    <line x1="551" y1="132" x2="667" y2="132" marker-end="url(#arrow-3-3)"></line>
+    <line x1="358" y1="63" x2="358" y2="117" stroke-dasharray="5 4" marker-end="url(#arrow-3-3)"></line>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="78" cy="50" r="13"></circle>
+    <circle cx="200" cy="50" r="13"></circle>
+    <circle cx="358" cy="50" r="13"></circle>
+    <circle cx="358" cy="132" r="13"></circle>
+    <circle cx="538" cy="132" r="13"></circle>
+    <circle cx="682" cy="132" r="13"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="78" y="50" dy="0.35em" font-size="12.5">1</text>
+    <text x="200" y="50" dy="0.35em" font-size="12.5">2</text>
+    <text x="358" y="50" dy="0.35em" font-size="12.5">3</text>
+    <text x="358" y="132" dy="0.35em" font-size="12.5">4</text>
+    <text x="538" y="132" dy="0.35em" font-size="12.5">5</text>
+    <text x="682" y="132" dy="0.35em" font-size="12.5">6</text>
+    <text x="140" y="40" font-size="13.5">支模1</text>
+    <text x="140" y="72" font-size="13">3</text>
+    <text x="286" y="40" font-size="13.5">扎筋1</text>
+    <text x="286" y="72" font-size="13">2</text>
+    <text x="455" y="40" font-size="13.5">混凝土1</text>
+    <text x="455" y="72" font-size="13">1</text>
+    <text x="276" y="120" font-size="13.5">支模2</text>
+    <text x="276" y="154" font-size="13">3</text>
+    <text x="452" y="120" font-size="13.5">扎筋2</text>
+    <text x="452" y="154" font-size="13">2</text>
+    <text x="610" y="120" font-size="13.5">混凝土2</text>
+    <text x="610" y="154" font-size="13">1</text>
+  </g>
+</svg>
+</FigureZoom>
 
 ### （二）组织关系
 

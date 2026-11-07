@@ -80,7 +80,45 @@ sectionTitle: 第三节 施工进度计划编制与审查
 
 单位工程施工进度计划的编制程序如图 6-5 所示。
 
-<FigureZoom caption="图 6-5 单位工程施工进度计划编制程序" src="/images/schedule/chapter-06/fig-6-05.png" :width="689" :height="336" />
+<FigureZoom caption="图 6-5 单位工程施工进度计划编制程序">
+<svg viewBox="0 0 689 336" role="img" aria-label="图 6-5 单位工程施工进度计划编制程序" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-6-5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="7" y="12" width="36" height="319"></rect>
+    <rect x="86" y="12" width="37" height="319"></rect>
+    <rect x="165" y="12" width="37" height="319"></rect>
+    <rect x="245" y="12" width="38" height="319"></rect>
+    <rect x="326" y="12" width="37" height="319"></rect>
+    <rect x="405" y="12" width="37" height="319"></rect>
+    <rect x="486" y="12" width="36" height="319"></rect>
+    <rect x="565" y="12" width="37" height="319"></rect>
+    <rect x="644" y="12" width="37" height="319"></rect>
+    <path d="M43,171 H86" marker-end="url(#arrow-6-5)"></path>
+    <path d="M123,171 H165" marker-end="url(#arrow-6-5)"></path>
+    <path d="M202,171 H245" marker-end="url(#arrow-6-5)"></path>
+    <path d="M283,171 H326" marker-end="url(#arrow-6-5)"></path>
+    <path d="M363,171 H405" marker-end="url(#arrow-6-5)"></path>
+    <path d="M442,171 H486" marker-end="url(#arrow-6-5)"></path>
+    <path d="M522,171 H565" marker-end="url(#arrow-6-5)"></path>
+    <path d="M602,171 H644" marker-end="url(#arrow-6-5)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" font-size="15">
+    <text x="25" y="132"><tspan x="25" dy="0">收</tspan><tspan x="25" dy="17">集</tspan><tspan x="25" dy="17">编</tspan><tspan x="25" dy="17">制</tspan><tspan x="25" dy="17">依</tspan><tspan x="25" dy="17">据</tspan></text>
+    <text x="104" y="132"><tspan x="104" dy="0">划</tspan><tspan x="104" dy="17">分</tspan><tspan x="104" dy="17">工</tspan><tspan x="104" dy="17">作</tspan><tspan x="104" dy="17">项</tspan><tspan x="104" dy="17">目</tspan></text>
+    <text x="183" y="132"><tspan x="183" dy="0">确</tspan><tspan x="183" dy="17">定</tspan><tspan x="183" dy="17">施</tspan><tspan x="183" dy="17">工</tspan><tspan x="183" dy="17">顺</tspan><tspan x="183" dy="17">序</tspan></text>
+    <text x="264" y="140"><tspan x="264" dy="0">计</tspan><tspan x="264" dy="17">算</tspan><tspan x="264" dy="17">工</tspan><tspan x="264" dy="17">程</tspan><tspan x="264" dy="17">量</tspan></text>
+    <text x="344" y="89"><tspan x="344" dy="0">计</tspan><tspan x="344" dy="17">算</tspan><tspan x="344" dy="17">劳</tspan><tspan x="344" dy="17">动</tspan><tspan x="344" dy="17">量</tspan><tspan x="344" dy="17">和</tspan><tspan x="344" dy="17">机</tspan><tspan x="344" dy="17">械</tspan><tspan x="344" dy="17">台</tspan><tspan x="344" dy="17">班</tspan><tspan x="344" dy="17">数</tspan></text>
+    <text x="423" y="89"><tspan x="423" dy="0">确</tspan><tspan x="423" dy="17">定</tspan><tspan x="423" dy="17">工</tspan><tspan x="423" dy="17">作</tspan><tspan x="423" dy="17">项</tspan><tspan x="423" dy="17">目</tspan><tspan x="423" dy="17">的</tspan><tspan x="423" dy="17">持</tspan><tspan x="423" dy="17">续</tspan><tspan x="423" dy="17">时</tspan><tspan x="423" dy="17">间</tspan></text>
+    <text x="504" y="98"><tspan x="504" dy="0">绘</tspan><tspan x="504" dy="17">制</tspan><tspan x="504" dy="17">施</tspan><tspan x="504" dy="17">工</tspan><tspan x="504" dy="17">进</tspan><tspan x="504" dy="17">度</tspan><tspan x="504" dy="17">计</tspan><tspan x="504" dy="17">划</tspan><tspan x="504" dy="17">图</tspan></text>
+    <text x="583" y="81"><tspan x="583" dy="0">施</tspan><tspan x="583" dy="17">工</tspan><tspan x="583" dy="17">进</tspan><tspan x="583" dy="17">度</tspan><tspan x="583" dy="17">计</tspan><tspan x="583" dy="17">划</tspan><tspan x="583" dy="17">的</tspan><tspan x="583" dy="17">检</tspan><tspan x="583" dy="17">查</tspan><tspan x="583" dy="17">与</tspan><tspan x="583" dy="17">调</tspan><tspan x="583" dy="17">整</tspan></text>
+    <text x="662" y="98"><tspan x="662" dy="0">编</tspan><tspan x="662" dy="17">制</tspan><tspan x="662" dy="17">正</tspan><tspan x="662" dy="17">式</tspan><tspan x="662" dy="17">施</tspan><tspan x="662" dy="17">工</tspan><tspan x="662" dy="17">进</tspan><tspan x="662" dy="17">度</tspan><tspan x="662" dy="17">计</tspan><tspan x="662" dy="17">划</tspan></text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-5 单位工程施工进度计划编制程序</p>
 

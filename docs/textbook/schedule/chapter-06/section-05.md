@@ -34,7 +34,47 @@ sectionTitle: 第五节 工程延期和工期延误的处理
 
 如果遇到比较复杂的延期事件，监理工程师可以成立专门小组进行处理。对于一时难以作出结论的延期事件，即使不属于持续性的事件，也可以采用先作出临时延期的决定，然后再作出最后决定的办法。这样既可以保证有充足的时间处理延期事件，又可以避免由于处理不及时而造成的损失。
 
-<FigureZoom caption="图 6-7 工程延期的审批程序" src="/images/schedule/chapter-06/fig-6-07.png" :width="607" :height="485" />
+<FigureZoom caption="图 6-7 工程延期的审批程序">
+<svg viewBox="0 0 607 485" role="img" aria-label="图 6-7 工程延期的审批程序" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-6-7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="141" y="11" width="254" height="36"></rect>
+    <rect x="141" y="83" width="254" height="37"></rect>
+    <rect x="9" y="146" width="252" height="37"></rect>
+    <rect x="348" y="146" width="253" height="37"></rect>
+    <polygon points="136,210 242,244 136,280 30,244"></polygon>
+    <rect x="299" y="278" width="254" height="37"></rect>
+    <rect x="9" y="342" width="253" height="37"></rect>
+    <rect x="9" y="442" width="253" height="37"></rect>
+    <path d="M268,47 V83" marker-end="url(#arrow-6-7)"></path>
+    <path d="M268,120 V132 H135 V146" marker-end="url(#arrow-6-7)"></path>
+    <path d="M268,132 H474 V146" marker-end="url(#arrow-6-7)"></path>
+    <path d="M348,157 H261" marker-end="url(#arrow-6-7)"></path>
+    <path d="M261,172 H348" marker-end="url(#arrow-6-7)"></path>
+    <path d="M135,183 V210" marker-end="url(#arrow-6-7)"></path>
+    <path d="M242,244 H428 V278" marker-end="url(#arrow-6-7)"></path>
+    <path d="M136,280 V342" marker-end="url(#arrow-6-7)"></path>
+    <path d="M426,315 V360 H262" marker-end="url(#arrow-6-7)"></path>
+    <path d="M136,379 V442" marker-end="url(#arrow-6-7)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="268" y="29" dy="0.35em" font-size="17">工程延期事件发生</text>
+    <text x="268" y="101" dy="0.35em" font-size="17">承包单位提出意向通知</text>
+    <text x="135" y="164" dy="0.35em" font-size="17">监理工程师调查核实</text>
+    <text x="474" y="164" dy="0.35em" font-size="17">承包单位详情报告</text>
+    <text x="136" y="244" dy="0.35em" font-size="17">事件具有持续性?</text>
+    <text x="426" y="296" dy="0.35em" font-size="17">临时延期决定</text>
+    <text x="135" y="360" dy="0.35em" font-size="17">承包单位最终详情报告</text>
+    <text x="135" y="460" dy="0.35em" font-size="17">监理工程师审批延期</text>
+    <text x="330" y="232" dy="0.35em" font-size="15">是</text>
+    <text x="148" y="310" dy="0.35em" font-size="15">否</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-7 工程延期的审批程序</p>
 

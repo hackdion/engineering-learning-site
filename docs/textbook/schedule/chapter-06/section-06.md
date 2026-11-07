@@ -188,7 +188,70 @@ sectionTitle: 第六节 物资供应进度控制
 
 在物资供应计划执行过程中，内外部条件的变化可能对其产生影响。例如，施工进度的变化（提前或拖延）、设计变更、价格变化、市场各供应部门突然出现的供货中断以及一些意外情况的发生，都会使物资供应的实际情况与计划不符。因此，在物资供应计划的执行过程中，进度控制人员必须经常地、定期地进行检查，认真收集反映物资供应实际状况的数据资料，并将其与计划数据进行比较，一旦发现实际与计划不符，要及时分析产生问题的原因并提出相应的调整措施。物资供应进度监测与调整的系统过程如图6-9所示。
 
-<FigureZoom caption="图 6-9 物资供应进度监测与调整的系统过程" src="/images/schedule/chapter-06/fig-6-09.png" :width="884" :height="803" />
+<FigureZoom caption="图 6-9 物资供应进度监测与调整的系统过程">
+<svg viewBox="0 0 884 803" role="img" aria-label="图 6-9 物资供应进度监测与调整的系统过程" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-6-9" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="317" y="9" width="147" height="59"></rect>
+    <rect x="279" y="96" width="222" height="37"></rect>
+    <rect x="279" y="165" width="222" height="37"></rect>
+    <rect x="316" y="229" width="147" height="59"></rect>
+    <polygon points="390,311 508,348 390,385 273,348"></polygon>
+    <rect x="278" y="417" width="222" height="37"></rect>
+    <rect x="208" y="485" width="363" height="37"></rect>
+    <polygon points="390,540 568,590 390,625 213,590"></polygon>
+    <rect x="27" y="661" width="209" height="59"></rect>
+    <rect x="535" y="673" width="222" height="37"></rect>
+    <rect x="277" y="673" width="222" height="37"></rect>
+    <rect x="277" y="761" width="222" height="37"></rect>
+    <path d="M390,68 V96" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,133 V165" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,202 V229" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,288 V311" marker-end="url(#arrow-6-9)"></path>
+    <path d="M273,348 H157 V115 H279" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,385 V417" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,454 V485" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,522 V540" marker-end="url(#arrow-6-9)"></path>
+    <path d="M213,590 H111 V661" marker-end="url(#arrow-6-9)"></path>
+    <path d="M568,590 H663 V673" marker-end="url(#arrow-6-9)"></path>
+    <path d="M236,690 H277" marker-end="url(#arrow-6-9)"></path>
+    <path d="M535,690 H499" marker-end="url(#arrow-6-9)"></path>
+    <path d="M390,710 V761" marker-end="url(#arrow-6-9)"></path>
+    <path d="M277,780 H7 V108 H279" marker-end="url(#arrow-6-9)"></path>
+    <path d="M650,96 L560,126 H501" marker-end="url(#arrow-6-9)"></path>
+    <path d="M748,10 Q732,10 732,36 Q732,60 718,62 Q732,64 732,88 Q732,114 748,114"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle">
+    <text x="390" y="27" dy="0.35em" font-size="17">物资供应计划</text>
+    <text x="390" y="50" dy="0.35em" font-size="17">的编制与优化</text>
+    <text x="390" y="114" dy="0.35em" font-size="17">供应物资计划的实施</text>
+    <text x="390" y="183" dy="0.35em" font-size="17">检查、监督</text>
+    <text x="390" y="247" dy="0.35em" font-size="17">实际供货情况</text>
+    <text x="390" y="270" dy="0.35em" font-size="17">与供应计划比较</text>
+    <text x="390" y="348" dy="0.35em" font-size="17">是否出现供货拖延?</text>
+    <text x="390" y="435" dy="0.35em" font-size="17">分析产生供货拖延的原因</text>
+    <text x="390" y="503" dy="0.35em" font-size="17">分析供货拖延对实施施工进度计划的影响</text>
+    <text x="390" y="590" dy="0.35em" font-size="17">是否调整施工进度计划?</text>
+    <text x="131" y="679" dy="0.35em" font-size="17">调整施工进度计划使其</text>
+    <text x="131" y="702" dy="0.35em" font-size="17">与物资供应计划协调</text>
+    <text x="646" y="691" dy="0.35em" font-size="17">调整物资供应计划</text>
+    <text x="388" y="691" dy="0.35em" font-size="17">其他有关计划的调整</text>
+    <text x="388" y="779" dy="0.35em" font-size="17">采取必要的控制措施</text>
+    <text x="160" y="578" dy="0.35em" font-size="15">是</text>
+    <text x="620" y="578" dy="0.35em" font-size="15">否</text>
+    <text x="400" y="400" dy="0.35em" font-size="15" text-anchor="start">是</text>
+    <text x="170" y="336" dy="0.35em" font-size="15">否</text>
+    <text x="620" y="92" dy="0.35em" font-size="15">干扰</text>
+    <text x="758" y="24" dy="0.35em" font-size="14" text-anchor="start">工程变更</text>
+    <text x="758" y="62" dy="0.35em" font-size="14" text-anchor="start">物资供应的意外中断</text>
+    <text x="758" y="100" dy="0.35em" font-size="14" text-anchor="start">施工进度变化</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 6-9 物资供应进度监测与调整的系统过程</p>
 
