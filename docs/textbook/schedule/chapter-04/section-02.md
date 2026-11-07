@@ -119,7 +119,7 @@ sectionTitle: 第二节 实际进度与计划进度的比较方法
     <path d="M11,41 H483"></path>
     <path d="M30,33 V41 M94,33 V41 M159,33 V41 M224,33 V41 M288,33 V41 M353,33 V41 M417,33 V41 M482,33 V41"></path>
     <path d="M11,197 H483"></path>
-    <path d="M30,189 V197 M94,189 V197 M159,189 V197 M224,189 V197 M288,189 V197 M353,189 V197 M417,189 V197 M482,189 V197"></path>
+    <path d="M30,189 V197 M94,189 V197 M159,189 V197 M224,189 V197 M288,189 V197"></path>
     <rect x="33" y="110" width="448" height="17"></rect>
   </g>
   <rect x="61" y="110" width="230" height="17" fill="currentColor" fill-opacity="0.65"></rect>
@@ -149,7 +149,7 @@ sectionTitle: 第二节 实际进度与计划进度的比较方法
     <text x="289" y="251" font-size="16">检查日期</text>
   </g>
   <g fill="currentColor" font-family="sans-serif" font-size="19">
-    <text x="495" y="63">(%) 计划累计完成百分比</text>
+    <text x="513" y="63">(%) 计划累计完成百分比</text>
     <text x="506" y="177">(%) 实际累计完成百分比</text>
   </g>
 </svg>

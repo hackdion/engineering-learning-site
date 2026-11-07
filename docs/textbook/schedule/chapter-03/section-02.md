@@ -44,17 +44,122 @@ sectionTitle: 第二节 网络图绘制
 
 （2）网络图中严禁出现从一个节点出发，顺箭头方向又回到原出发点的循环回路。如果出现循环回路，会造成逻辑关系混乱，使工作无法按顺序进行。如图 3-5 所示，网络图中存在不允许出现的循环回路 BCGF。当然，此时节点编号也发生错误。
 
-<FigureZoom caption="图 3-5 存在循环回路的错误网络图" src="/images/schedule/chapter-03/fig-3-05.png" :width="867" :height="188" />
+<FigureZoom caption="图 3-5 存在循环回路的错误网络图">
+<svg viewBox="0 0 867 188" role="img" aria-label="图 3-5 存在循环回路的错误网络图" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="38" cy="38" r="15"></circle>
+    <circle cx="237" cy="38" r="15"></circle>
+    <circle cx="446" cy="38" r="15"></circle>
+    <circle cx="655" cy="38" r="15"></circle>
+    <circle cx="238" cy="162" r="15"></circle>
+    <circle cx="445" cy="162" r="15"></circle>
+    <circle cx="655" cy="162" r="15"></circle>
+    <circle cx="828" cy="162" r="15"></circle>
+    <path d="M52,38 H223" marker-end="url(#arrow-3-5)"></path>
+    <path d="M251,38 H432" marker-end="url(#arrow-3-5)"></path>
+    <path d="M460,38 H641" marker-end="url(#arrow-3-5)"></path>
+    <path d="M669,38 H828 V147" marker-end="url(#arrow-3-5)"></path>
+    <path d="M655,52 V147" stroke-dasharray="5 4" marker-end="url(#arrow-3-5)"></path>
+    <path d="M669,162 H814" marker-end="url(#arrow-3-5)"></path>
+    <path d="M641,162 H459" marker-end="url(#arrow-3-5)"></path>
+    <path d="M431,162 H252" marker-end="url(#arrow-3-5)"></path>
+    <path d="M224,162 H38 V52" marker-end="url(#arrow-3-5)"></path>
+    <path d="M238,147 V52" stroke-dasharray="5 4" marker-end="url(#arrow-3-5)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="16" text-anchor="middle">
+    <text x="38" y="43">1</text>
+    <text x="237" y="43">2</text>
+    <text x="446" y="43">3</text>
+    <text x="655" y="43">4</text>
+    <text x="238" y="167">7</text>
+    <text x="445" y="167">6</text>
+    <text x="655" y="167">5</text>
+    <text x="828" y="167">8</text>
+    <text x="133" y="36">A</text>
+    <text x="340" y="36">B</text>
+    <text x="548" y="36">C</text>
+    <text x="741" y="36">D</text>
+    <text x="133" y="156">E</text>
+    <text x="338" y="156">F</text>
+    <text x="550" y="156">G</text>
+    <text x="741" y="156">H</text>
+  </g>
+</svg>
+</FigureZoom>
 
 （3）网络图中的箭线（包括虚箭线，以下同）应保持自左向右的方向，不应出现箭头指向左方的水平箭线和箭头偏向左方的斜向箭线。若遵循该规则绘制网络图，就不会出现循环回路。
 
 （4）网络图中严禁出现双向箭头和无箭头的连线。图 3-6 所示即为错误的工作箭线画法，因为工作进行的方向不明确，因而不能达到网络图有向的要求。
 
-<FigureZoom caption="图 3-6 错误的工作箭线画法（a）双向箭头；（b）无箭头" src="/images/schedule/chapter-03/fig-3-06.png" :width="687" :height="106" />
+<FigureZoom caption="图 3-6 错误的工作箭线画法（a）双向箭头；（b）无箭头">
+<svg viewBox="0 0 687 106" role="img" aria-label="图 3-6 错误的工作箭线画法（a）双向箭头；（b）无箭头" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+    <marker id="arrow-3-6-back" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M10,0 L0,5 L10,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="38" cy="32" r="15"></circle>
+    <circle cx="241" cy="32" r="15"></circle>
+    <path d="M53,32 H226" marker-start="url(#arrow-3-6-back)" marker-end="url(#arrow-3-6)"></path>
+    <circle cx="441" cy="32" r="14"></circle>
+    <circle cx="646" cy="32" r="14"></circle>
+    <path d="M455,32 H632"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="38" y="38" font-style="italic">i</text>
+    <text x="241" y="38" font-style="italic">j</text>
+    <text x="441" y="38" font-style="italic">i</text>
+    <text x="646" y="38" font-style="italic">j</text>
+    <text x="131" y="99" font-style="italic">(a)</text>
+    <text x="536" y="99" font-style="italic">(b)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 （5）网络图中严禁出现没有箭尾节点的箭线和没有箭头节点的箭线。图 3-7 即为错误画法。
 
-<FigureZoom caption="图 3-7 错误画法（a）存在没有箭尾节点的箭线；（b）存在没有箭头节点的箭线" src="/images/schedule/chapter-03/fig-3-07.png" :width="755" :height="160" />
+<FigureZoom caption="图 3-7 错误画法（a）存在没有箭尾节点的箭线；（b）存在没有箭头节点的箭线">
+<svg viewBox="0 0 755 160" role="img" aria-label="图 3-7 错误画法（a）存在没有箭尾节点的箭线；（b）存在没有箭头节点的箭线" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="40" cy="88" r="15"></circle>
+    <circle cx="187" cy="88" r="15"></circle>
+    <circle cx="334" cy="88" r="15"></circle>
+    <path d="M55,88 H170" marker-end="url(#arrow-3-7)"></path>
+    <path d="M202,88 H317" marker-end="url(#arrow-3-7)"></path>
+    <path d="M31,18 H187 V71" marker-end="url(#arrow-3-7)"></path>
+    <circle cx="424" cy="88" r="15"></circle>
+    <circle cx="571" cy="88" r="15"></circle>
+    <circle cx="717" cy="88" r="16"></circle>
+    <path d="M439,88 H554" marker-end="url(#arrow-3-7)"></path>
+    <path d="M586,88 H701" marker-end="url(#arrow-3-7)"></path>
+    <path d="M571,73 V27 H714" marker-end="url(#arrow-3-7)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="40" y="94" font-style="italic">i</text>
+    <text x="187" y="94" font-style="italic">j</text>
+    <text x="334" y="94" font-style="italic">k</text>
+    <text x="424" y="94" font-style="italic">i</text>
+    <text x="571" y="94" font-style="italic">j</text>
+    <text x="700" y="94" font-style="italic">k</text>
+    <text x="186" y="153" font-style="italic">(a)</text>
+    <text x="571" y="154" font-style="italic">(b)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 （6）严禁在箭线上引入或引出箭线，图 3-8 即为错误画法。
 
