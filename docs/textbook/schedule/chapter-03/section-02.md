@@ -965,8 +965,189 @@ sectionTitle: 第二节 网络图绘制
 
 【解】
 
-<FigureZoom caption="图 3-18 【例3-5】绘图过程（一）" src="/images/schedule/chapter-03/fig-3-18.png" :width="945" :height="447" />
+<FigureZoom caption="图 3-18 【例3-5】绘图过程（一）">
+<svg viewBox="0 0 945 447" role="img" aria-label="图 3-18 【例3-5】绘图过程（一）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-18" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <circle cx="69" cy="57.5" r="39"></circle>
+    <path d="M32.2,44.5 H105.8"></path>
+    <path d="M32.2,70.5 H105.8"></path>
+    <circle cx="69" cy="156.5" r="39"></circle>
+    <path d="M32.2,143.5 H105.8"></path>
+    <path d="M32.2,169.5 H105.8"></path>
+    <circle cx="69" cy="259.5" r="39"></circle>
+    <path d="M32.2,246.5 H105.8"></path>
+    <path d="M32.2,272.5 H105.8"></path>
+    <circle cx="69" cy="359.5" r="39"></circle>
+    <path d="M32.2,346.5 H105.8"></path>
+    <path d="M32.2,372.5 H105.8"></path>
+    <circle cx="210" cy="57.5" r="39"></circle>
+    <path d="M173.2,44.5 H246.8"></path>
+    <path d="M173.2,70.5 H246.8"></path>
+    <circle cx="210" cy="156.5" r="39"></circle>
+    <path d="M173.2,143.5 H246.8"></path>
+    <path d="M173.2,169.5 H246.8"></path>
+    <circle cx="210" cy="259.5" r="39"></circle>
+    <path d="M173.2,246.5 H246.8"></path>
+    <path d="M173.2,272.5 H246.8"></path>
+    <circle cx="210" cy="359.5" r="39"></circle>
+    <path d="M173.2,346.5 H246.8"></path>
+    <path d="M173.2,372.5 H246.8"></path>
+    <circle cx="404" cy="99.5" r="39"></circle>
+    <path d="M367.2,86.5 H440.8"></path>
+    <path d="M367.2,112.5 H440.8"></path>
+    <circle cx="404" cy="211.5" r="39"></circle>
+    <path d="M367.2,198.5 H440.8"></path>
+    <path d="M367.2,224.5 H440.8"></path>
+    <circle cx="404" cy="321.5" r="39"></circle>
+    <path d="M367.2,308.5 H440.8"></path>
+    <path d="M367.2,334.5 H440.8"></path>
+    <path d="M248.1,65.8 L365.9,91.2" marker-end="url(#arrow-3-18)"></path>
+    <path d="M247.4,145.5 L366.6,110.5" marker-end="url(#arrow-3-18)"></path>
+    <path d="M247.5,167.1 L366.5,200.9" marker-end="url(#arrow-3-18)"></path>
+    <path d="M247.9,250.1 L366.1,220.9" marker-end="url(#arrow-3-18)"></path>
+    <path d="M247.1,271.4 L293.8,286.3 A9,9 0 0 1 311.0,291.7 L366.9,309.6" marker-end="url(#arrow-3-18)"></path>
+    <path d="M241.0,335.8 L373.0,235.2" marker-end="url(#arrow-3-18)"></path>
+    <path d="M248.3,352.0 L365.7,329.0" marker-end="url(#arrow-3-18)"></path>
+    <circle cx="543" cy="57.5" r="39"></circle>
+    <path d="M506.2,44.5 H579.8"></path>
+    <path d="M506.2,70.5 H579.8"></path>
+    <circle cx="543" cy="156.5" r="39"></circle>
+    <path d="M506.2,143.5 H579.8"></path>
+    <path d="M506.2,169.5 H579.8"></path>
+    <circle cx="543" cy="259.5" r="39"></circle>
+    <path d="M506.2,246.5 H579.8"></path>
+    <path d="M506.2,272.5 H579.8"></path>
+    <circle cx="543" cy="359.5" r="39"></circle>
+    <path d="M506.2,346.5 H579.8"></path>
+    <path d="M506.2,372.5 H579.8"></path>
+    <circle cx="734" cy="99.5" r="39"></circle>
+    <path d="M697.2,86.5 H770.8"></path>
+    <path d="M697.2,112.5 H770.8"></path>
+    <circle cx="734" cy="211.5" r="39"></circle>
+    <path d="M697.2,198.5 H770.8"></path>
+    <path d="M697.2,224.5 H770.8"></path>
+    <circle cx="734" cy="321.5" r="39"></circle>
+    <path d="M697.2,308.5 H770.8"></path>
+    <path d="M697.2,334.5 H770.8"></path>
+    <circle cx="878.5" cy="211.5" r="40"></circle>
+    <path d="M840.7,198.5 H916.3"></path>
+    <path d="M840.7,224.5 H916.3"></path>
+    <path d="M581.1,65.9 L695.9,91.1" marker-end="url(#arrow-3-18)"></path>
+    <path d="M580.4,145.3 L696.6,110.7" marker-end="url(#arrow-3-18)"></path>
+    <path d="M580.5,167.3 L696.5,200.7" marker-end="url(#arrow-3-18)"></path>
+    <path d="M580.8,250.0 L696.2,221.0" marker-end="url(#arrow-3-18)"></path>
+    <path d="M580.1,271.5 L625.4,286.3 A9,9 0 0 1 642.5,291.7 L696.9,309.5" marker-end="url(#arrow-3-18)"></path>
+    <path d="M573.8,335.6 L703.2,235.4" marker-end="url(#arrow-3-18)"></path>
+    <path d="M581.3,351.9 L695.7,329.1" marker-end="url(#arrow-3-18)"></path>
+    <path d="M764.8,123.4 L846.9,187.0" marker-end="url(#arrow-3-18)"></path>
+    <path d="M773.0,211.5 L838.5,211.5" marker-end="url(#arrow-3-18)"></path>
+    <path d="M765.0,297.9 L846.7,235.7" marker-end="url(#arrow-3-18)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="69" y="64.5">A</text>
+    <text x="69" y="163.5">B</text>
+    <text x="69" y="266.5">C</text>
+    <text x="69" y="366.5">D</text>
+    <text x="210" y="64.5">A</text>
+    <text x="210" y="163.5">B</text>
+    <text x="210" y="266.5">C</text>
+    <text x="210" y="366.5">D</text>
+    <text x="404" y="106.5">E</text>
+    <text x="404" y="218.5">G</text>
+    <text x="404" y="328.5">H</text>
+    <text x="543" y="64.5">A</text>
+    <text x="543" y="163.5">B</text>
+    <text x="543" y="266.5">C</text>
+    <text x="543" y="366.5">D</text>
+    <text x="734" y="106.5">E</text>
+    <text x="734" y="218.5">G</text>
+    <text x="734" y="328.5">H</text>
+    <text x="878.5" y="218.5">I</text>
+    <text x="77" y="427" font-size="18" font-style="italic">(a)</text>
+    <text x="307" y="427" font-size="18" font-style="italic">(b)</text>
+    <text x="673" y="427" font-size="18" font-style="italic">(c)</text>
+  </g>
+</svg>
+</FigureZoom>
 
-<FigureZoom caption="图 3-18 【例3-5】绘图过程（二）" src="/images/schedule/chapter-03/fig-3-18-2.png" :width="804" :height="458" />
+<FigureZoom caption="图 3-18 【例3-5】绘图过程（二）">
+<svg viewBox="0 0 804 458" role="img" aria-label="图 3-18 【例3-5】绘图过程（二）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-18d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <circle cx="135" cy="239" r="38"></circle>
+    <path d="M99.3,226 H170.7"></path>
+    <path d="M99.3,252 H170.7"></path>
+    <circle cx="325" cy="74" r="38"></circle>
+    <path d="M289.3,61 H360.7"></path>
+    <path d="M289.3,87 H360.7"></path>
+    <circle cx="325" cy="171" r="38"></circle>
+    <path d="M289.3,158 H360.7"></path>
+    <path d="M289.3,184 H360.7"></path>
+    <circle cx="325" cy="272.5" r="38"></circle>
+    <path d="M289.3,259.5 H360.7"></path>
+    <path d="M289.3,285.5 H360.7"></path>
+    <circle cx="325" cy="375.5" r="38"></circle>
+    <path d="M289.3,362.5 H360.7"></path>
+    <path d="M289.3,388.5 H360.7"></path>
+    <circle cx="511" cy="109.5" r="38"></circle>
+    <path d="M475.3,96.5 H546.7"></path>
+    <path d="M475.3,122.5 H546.7"></path>
+    <circle cx="511" cy="219" r="38"></circle>
+    <path d="M475.3,206 H546.7"></path>
+    <path d="M475.3,232 H546.7"></path>
+    <circle cx="511" cy="328.5" r="38"></circle>
+    <path d="M475.3,315.5 H546.7"></path>
+    <path d="M475.3,341.5 H546.7"></path>
+    <circle cx="666.5" cy="217.5" r="38"></circle>
+    <path d="M630.8,204.5 H702.2"></path>
+    <path d="M630.8,230.5 H702.2"></path>
+    <path d="M163.7,214.1 L296.3,98.9" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M170.8,226.2 L289.2,183.8" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M172.4,245.6 L287.6,265.9" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M165.9,261.2 L294.1,353.3" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M362.3,81.1 L473.7,102.4" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M361.1,159.1 L474.9,121.4" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M361.8,180.5 L474.2,209.5" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M361.5,262.0 L474.5,229.5" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M361.4,283.5 L406.6,297.0 A9,9 0 0 1 423.8,302.2 L474.6,317.5" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M354.1,351.0 L481.9,243.5" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M361.8,366.2 L474.2,337.8" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M542.2,131.2 L635.3,195.8" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M549.0,218.6 L628.5,217.9" marker-end="url(#arrow-3-18d)"></path>
+    <path d="M541.9,306.4 L635.6,239.6" marker-end="url(#arrow-3-18d)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="135" y="220">1</text>
+    <text x="135" y="246">S</text>
+    <text x="135" y="272">0</text>
+    <text x="324" y="55">2</text>
+    <text x="325" y="81">A</text>
+    <text x="324" y="152">3</text>
+    <text x="325" y="178">B</text>
+    <text x="324" y="253.5">4</text>
+    <text x="325" y="279.5">C</text>
+    <text x="324" y="356.5">5</text>
+    <text x="325" y="382.5">D</text>
+    <text x="510" y="90.5">6</text>
+    <text x="511" y="116.5">E</text>
+    <text x="510" y="200">7</text>
+    <text x="511" y="226">G</text>
+    <text x="510" y="309.5">8</text>
+    <text x="511" y="335.5">H</text>
+    <text x="665.5" y="198.5">9</text>
+    <text x="666.5" y="224.5">I</text>
+    <text x="400" y="445" font-size="18" font-style="italic">(d)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <SourceNote />
