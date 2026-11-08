@@ -428,7 +428,52 @@ $$
 
 从图 5-6 可见，因果分析图由质量特性（即质量结果指某个质量问题）、要因（产生质量问题的主要原因）、枝干（指一系列箭线表示不同层次的原因）、主干（指较粗的直接指向质量结果的水平箭线）等所组成。
 
-<FigureZoom caption="图 5-6 因果分析图的基本形式" src="/images/quality/chapter-05/fig-5-06.png" :width="573" :height="273" />
+<FigureZoom caption="图 5-6 因果分析图的基本形式">
+<svg viewBox="0 0 573 273" role="img" aria-label="图 5-6 因果分析图的基本形式" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="a56" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M8,131 H447" marker-end="url(#a56)"/>
+    <path d="M202,82 H257" marker-end="url(#a56)"/>
+    <path d="M240,182 H316" marker-end="url(#a56)"/>
+    <path d="M231,217 L267,182" marker-end="url(#a56)"/>
+    <path d="M83,51 L165,131" marker-end="url(#a56)"/>
+    <path d="M55,62 L91,103" marker-end="url(#a56)"/>
+    <path d="M13,82 H72" marker-end="url(#a56)"/>
+    <path d="M47,103 H135" marker-end="url(#a56)"/>
+    <path d="M157,72 H105" marker-end="url(#a56)"/>
+    <path d="M224,51 L312,131" marker-end="url(#a56)"/>
+    <path d="M275,53 L322,102" marker-end="url(#a56)"/>
+    <path d="M363,74 H296" marker-end="url(#a56)"/>
+    <path d="M378,102 H281" marker-end="url(#a56)"/>
+    <path d="M128,229 L225,131" marker-end="url(#a56)"/>
+    <path d="M75,182 H174" marker-end="url(#a56)"/>
+    <path d="M88,219 L129,182" marker-end="url(#a56)"/>
+    <path d="M274,158 H200" marker-end="url(#a56)"/>
+    <path d="M269,229 L368,131" marker-end="url(#a56)"/>
+    <path d="M420,159 H343" marker-end="url(#a56)"/>
+    <path d="M328,209 L381,159" marker-end="url(#a56)"/>
+    <path d="M420,183 H356" marker-end="url(#a56)"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="39" y="14" width="71" height="37"/>
+    <rect x="178" y="14" width="71" height="37"/>
+    <rect x="92" y="229" width="72" height="37"/>
+    <rect x="231" y="229" width="72" height="37"/>
+    <rect x="447" y="99" width="117" height="59"/>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" font-size="15">
+    <text x="234" y="124">主干</text>
+    <text x="251" y="59">小</text><text x="268" y="81">原</text><text x="288" y="100">因</text>
+    <text x="364" y="66">更小原因</text>
+    <text x="352" y="126">中原因</text>
+    <text x="111" y="176">中枝</text>
+    <text x="69" y="206">小枝</text>
+    <text x="215" y="208">大枝</text>
+    <text x="505" y="122">某个质量</text>
+    <text x="505" y="147">问题(结果)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 5-6 因果分析图的基本形式</p>
 
@@ -452,7 +497,85 @@ $$
 
 图5-7是混凝土强度不足的因果分析图。
 
-<FigureZoom caption="图 5-7 混凝土强度不足的因果分析图" src="/images/quality/chapter-05/fig-5-07.png" :width="672" :height="452" />
+<FigureZoom caption="图 5-7 混凝土强度不足的因果分析图">
+<svg viewBox="0 0 672 452" role="img" aria-label="图 5-7 混凝土强度不足的因果分析图" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="a57" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M8,213 H618" marker-end="url(#a57)"/>
+    <path d="M95,49 L180,213" marker-end="url(#a57)"/>
+    <path d="M286,50 L377,213" marker-end="url(#a57)"/>
+    <path d="M473,49 L554,213" marker-end="url(#a57)"/>
+    <path d="M129,406 L237,213" marker-end="url(#a57)"/>
+    <path d="M375,408 L493,213" marker-end="url(#a57)"/>
+    <path d="M10,80 H110" marker-end="url(#a57)"/>
+    <path d="M233,95 H120" marker-end="url(#a57)"/>
+    <path d="M58,147 H146" marker-end="url(#a57)"/>
+    <path d="M196,164 L166,96" marker-end="url(#a57)"/>
+    <path d="M388,82 H305" marker-end="url(#a57)"/>
+    <path d="M224,150 H342" marker-end="url(#a57)"/>
+    <path d="M404,76 H485" marker-end="url(#a57)"/>
+    <path d="M606,100 H499" marker-end="url(#a57)"/>
+    <path d="M442,153 H523" marker-end="url(#a57)"/>
+    <path d="M467,102 L490,153" marker-end="url(#a57)"/>
+    <path d="M495,205 L474,153" marker-end="url(#a57)"/>
+    <path d="M604,200 L549,100" marker-end="url(#a57)"/>
+    <path d="M123,270 H205" marker-end="url(#a57)"/>
+    <path d="M272,321 H178" marker-end="url(#a57)"/>
+    <path d="M360,271 H457" marker-end="url(#a57)"/>
+    <path d="M553,255 H468" marker-end="url(#a57)"/>
+    <path d="M480,318 L508,256" marker-end="url(#a57)"/>
+    <path d="M530,365 H401" marker-end="url(#a57)"/>
+    <path d="M313,333 H420" marker-end="url(#a57)"/>
+    <path d="M446,231 L429,271" marker-end="url(#a57)"/>
+    <path d="M416,271 L403,333" marker-end="url(#a57)"/>
+    <path d="M335,416 L382,333" marker-end="url(#a57)"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <rect x="56" y="11" width="67" height="38"/>
+    <rect x="246" y="12" width="70" height="38"/>
+    <rect x="433" y="11" width="68" height="37"/>
+    <rect x="95" y="406" width="68" height="34"/>
+    <rect x="348" y="408" width="68" height="37"/>
+    <rect x="628" y="123" width="39" height="175"/>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="15">
+    <text x="89" y="37" text-anchor="middle" font-size="17">料</text>
+    <text x="281" y="38" text-anchor="middle" font-size="17">机</text>
+    <text x="467" y="37" text-anchor="middle" font-size="17">人</text>
+    <text x="129" y="429" text-anchor="middle" font-size="16">环境</text>
+    <text x="382" y="432" text-anchor="middle" font-size="16">方法</text>
+    <text x="647" y="146" text-anchor="middle" font-size="17">混<tspan x="647" dy="23">凝</tspan><tspan x="647" dy="23">土</tspan><tspan x="647" dy="23">强</tspan><tspan x="647" dy="23">度</tspan><tspan x="647" dy="23">不</tspan><tspan x="647" dy="23">足</tspan></text>
+    <text x="10" y="74">△水泥重</text>
+    <text x="22" y="100">量不足</text>
+    <text x="176" y="84" text-anchor="middle">砂石含泥量大</text>
+    <text x="82" y="138" text-anchor="middle">水泥过期</text>
+    <text x="347" y="72" text-anchor="middle">搅拌机失修</text>
+    <text x="273" y="141" text-anchor="middle">振捣器常坏</text>
+    <text x="408" y="71">分工</text>
+    <text x="401" y="95">不明确</text>
+    <text x="531" y="44">新工人</text>
+    <text x="531" y="67">未培训</text>
+    <text x="531" y="90">基础知识差△</text>
+    <text x="440" y="145" text-anchor="middle">责任心差</text>
+    <text x="148" y="261" text-anchor="middle">场地太乱</text>
+    <text x="234" y="315" text-anchor="middle">气温太低</text>
+    <text x="349" y="262" text-anchor="middle">△水灰比不准</text>
+    <text x="522" y="247" text-anchor="middle">养护差</text>
+    <text x="481" y="355" text-anchor="middle">配合比不当</text>
+    <text x="342" y="326" text-anchor="middle">振捣差</text>
+    <text transform="rotate(72 183 110)" x="183" y="110" font-size="14" letter-spacing="7.5" dominant-baseline="central">未筛洗</text>
+    <text transform="rotate(70 484 109)" x="484" y="109" font-size="14" letter-spacing="6" dominant-baseline="central">图快</text>
+    <text transform="rotate(80 495 167)" x="495" y="167" font-size="14" letter-spacing="4.5" dominant-baseline="central">偷懒</text>
+    <text transform="rotate(61 562 120)" x="562" y="120" font-size="14" letter-spacing="7" dominant-baseline="central">施工未交底</text>
+    <text transform="rotate(112 432 226)" x="432" y="226" font-size="14" letter-spacing="10" dominant-baseline="central">计量</text>
+    <text transform="rotate(112 464 238)" x="464" y="238" font-size="14" letter-spacing="10" dominant-baseline="central">不准</text>
+    <text transform="rotate(85 393 290)" x="393" y="290" font-size="14" letter-spacing="3" dominant-baseline="central">坍落度</text>
+    <text transform="rotate(100 431 288)" x="431" y="288" font-size="14" letter-spacing="8" dominant-baseline="central">不宜</text>
+    <text transform="rotate(112 510 266)" x="510" y="266" font-size="14" letter-spacing="13" dominant-baseline="central">未覆盖</text>
+    <text transform="rotate(-56 333 398)" x="333" y="398" font-size="14" letter-spacing="4" dominant-baseline="central">模板跑浆</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 5-7 混凝土强度不足的因果分析图</p>
 
@@ -608,7 +731,173 @@ $$
 
 2）图 5-10（b），B 虽然落在 T 内，但质量分布中心  $\bar{x}$  与 T 中心的 M 不重合，偏向一边。这样如果生产状态一旦发生变化，就可能超出质量标准下限而出现不合格品。出现这种情况时应迅速采取措施，使直方图移到中间来。
 
-<FigureZoom caption="图 5-10 实际质量分析与标准比较" src="/images/quality/chapter-05/fig-5-10.png" :width="744" :height="528" />
+<FigureZoom caption="图 5-10 实际质量分析与标准比较">
+<svg viewBox="0 0 744 528" role="img" aria-label="图 5-10 实际质量分析与标准比较" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0,0)">
+    <defs><marker id="a510a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+    <g fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M23,180 H224"/>
+      <path d="M38,19 V180"/>
+      <path d="M205,19 V180"/>
+      <path d="M38,34.5 H205" marker-start="url(#a510a)" marker-end="url(#a510a)"/>
+      <path d="M58,44 V180" stroke-dasharray="6 4"/>
+      <path d="M186,44 V180" stroke-dasharray="6 4"/>
+      <path d="M58,51 H186" marker-start="url(#a510a)" marker-end="url(#a510a)"/>
+      <path d="M58,133 H76 V180 H58 Z"/>
+      <path d="M76,115 H94 V180 H76 Z"/>
+      <path d="M94,87 H112 V180 H94 Z"/>
+      <path d="M112,54 H131 V180 H112 Z"/>
+      <path d="M131,100 H149 V180 H131 Z"/>
+      <path d="M149,123 H167 V180 H149 Z"/>
+      <path d="M167,140 H186 V180 H167 Z"/>
+      <path d="M121,58 V192" stroke-dasharray="10 3 2 3"/>
+    </g>
+    <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
+      <text x="126" y="30" font-size="16">T</text>
+      <text x="123" y="47" font-size="16">B</text>
+      <text x="121" y="206" font-size="16"><tspan text-decoration="overline">x</tspan>(M)</text>
+      <text x="123" y="227" font-size="16">(a)</text>
+    </g>
+  </g>
+  <g transform="translate(248,0)">
+    <defs><marker id="a510b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+    <g fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M23,180 H224"/>
+      <path d="M48,19 V180"/>
+      <path d="M212,19 V180"/>
+      <path d="M48,34.5 H212" marker-start="url(#a510b)" marker-end="url(#a510b)"/>
+      <path d="M48,44 V180" stroke-dasharray="6 4"/>
+      <path d="M174,44 V180" stroke-dasharray="6 4"/>
+      <path d="M48,51 H174" marker-start="url(#a510b)" marker-end="url(#a510b)"/>
+      <path d="M49,135 H67 V180 H49 Z"/>
+      <path d="M67,111 H85 V180 H67 Z"/>
+      <path d="M85,84 H103 V180 H85 Z"/>
+      <path d="M103,54 H121 V180 H103 Z"/>
+      <path d="M121,89 H139 V180 H121 Z"/>
+      <path d="M139,123 H157 V180 H139 Z"/>
+      <path d="M157,139 H175 V180 H157 Z"/>
+      <path d="M111,58 V192" stroke-dasharray="10 3 2 3"/>
+      <path d="M130,59 V178"/>
+    </g>
+    <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
+      <text x="134" y="30" font-size="16">T</text>
+      <text x="124" y="47" font-size="16">B</text>
+      <text x="120" y="206" font-size="16"><tspan text-decoration="overline">x</tspan>(M)</text>
+      <text x="124" y="227" font-size="16">(b)</text>
+    </g>
+  </g>
+  <g transform="translate(496,0)">
+    <defs><marker id="a510c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+    <g fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M23,180 H224"/>
+      <path d="M46,19 V180"/>
+      <path d="M208,19 V180"/>
+      <path d="M46,34.5 H208" marker-start="url(#a510c)" marker-end="url(#a510c)"/>
+      <path d="M46,51 H208" marker-start="url(#a510c)" marker-end="url(#a510c)"/>
+      <path d="M46,146 H63.5 V180 H46 Z"/>
+      <path d="M63.5,127 H81.5 V180 H63.5 Z"/>
+      <path d="M81.5,103 H100 V180 H81.5 Z"/>
+      <path d="M100,70 H118 V180 H100 Z"/>
+      <path d="M118,57 H136 V180 H118 Z"/>
+      <path d="M136,83 H154 V180 H136 Z"/>
+      <path d="M154,116 H172.5 V180 H154 Z"/>
+      <path d="M172.5,142 H190 V180 H172.5 Z"/>
+      <path d="M190,141 H208 V180 H190 Z"/>
+      <path d="M127,58 V192" stroke-dasharray="10 3 2 3"/>
+    </g>
+    <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
+      <text x="131" y="30" font-size="16">T</text>
+      <text x="126" y="47" font-size="16">B</text>
+      <text x="127" y="206" font-size="16"><tspan text-decoration="overline">x</tspan>(M)</text>
+      <text x="126" y="227" font-size="16">(c)</text>
+    </g>
+  </g>
+  <g transform="translate(0,264)">
+    <defs><marker id="a510d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+    <g fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M23,201 H224"/>
+      <path d="M26,19 V201"/>
+      <path d="M193,19 V201"/>
+      <path d="M26,34.5 H193" marker-start="url(#a510d)" marker-end="url(#a510d)"/>
+      <path d="M48,44 V201" stroke-dasharray="6 4"/>
+      <path d="M170,44 V201" stroke-dasharray="6 4"/>
+      <path d="M48,51 H170" marker-start="url(#a510d)" marker-end="url(#a510d)"/>
+      <path d="M48,157 H66 V201 H48 Z"/>
+      <path d="M66,145 H84 V201 H66 Z"/>
+      <path d="M84,122 H101 V201 H84 Z"/>
+      <path d="M101,92 H118 V201 H101 Z"/>
+      <path d="M118,115 H135 V201 H118 Z"/>
+      <path d="M135,138 H152 V201 H135 Z"/>
+      <path d="M152,158 H170 V201 H152 Z"/>
+      <path d="M109,58 V213" stroke-dasharray="10 3 2 3"/>
+    </g>
+    <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
+      <text x="114" y="30" font-size="16">T</text>
+      <text x="111" y="47" font-size="16">B</text>
+      <text x="109" y="227" font-size="16"><tspan text-decoration="overline">x</tspan>(M)</text>
+      <text x="111" y="248" font-size="16">(d)</text>
+    </g>
+  </g>
+  <g transform="translate(248,264)">
+    <defs><marker id="a510e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+    <g fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M23,201 H224"/>
+      <path d="M40,19 V201"/>
+      <path d="M202,19 V201"/>
+      <path d="M40,34.5 H202" marker-start="url(#a510e)" marker-end="url(#a510e)"/>
+      <path d="M21.5,44 V201" stroke-dasharray="6 4"/>
+      <path d="M184,44 V201" stroke-dasharray="6 4"/>
+      <path d="M21.5,51 H184" marker-start="url(#a510e)" marker-end="url(#a510e)"/>
+      <path d="M21.5,166 H39.5 V201 H21.5 Z"/>
+      <path d="M39.5,151 H57.5 V201 H39.5 Z"/>
+      <path d="M57.5,115 H76 V201 H57.5 Z"/>
+      <path d="M76,91 H94 V201 H76 Z"/>
+      <path d="M94,67 H112 V201 H94 Z"/>
+      <path d="M112,100 H129.5 V201 H112 Z"/>
+      <path d="M129.5,121 H148 V201 H129.5 Z"/>
+      <path d="M148,138 H165.5 V201 H148 Z"/>
+      <path d="M165.5,157 H184 V201 H165.5 Z"/>
+      <path d="M103,58 V213" stroke-dasharray="10 3 2 3"/>
+    </g>
+    <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
+      <text x="125" y="30" font-size="16">T</text>
+      <text x="106" y="47" font-size="16">B</text>
+      <text x="103" y="227" font-size="16"><tspan text-decoration="overline">x</tspan>(M)</text>
+      <text x="106" y="248" font-size="16">(e)</text>
+    </g>
+  </g>
+  <g transform="translate(496,264)">
+    <defs><marker id="a510f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+    <g fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M23,201 H224"/>
+      <path d="M35,19 V201"/>
+      <path d="M197,19 V201"/>
+      <path d="M35,34.5 H197" marker-start="url(#a510f)" marker-end="url(#a510f)"/>
+      <path d="M17,44 V201" stroke-dasharray="6 4"/>
+      <path d="M215.5,44 V201" stroke-dasharray="6 4"/>
+      <path d="M17,51 H215.5" marker-start="url(#a510f)" marker-end="url(#a510f)"/>
+      <path d="M17,161 H35.5 V201 H17 Z"/>
+      <path d="M35.5,144 H53 V201 H35.5 Z"/>
+      <path d="M53,111 H71 V201 H53 Z"/>
+      <path d="M71,98 H89 V201 H71 Z"/>
+      <path d="M89,83 H107 V201 H89 Z"/>
+      <path d="M107,71 H125 V201 H107 Z"/>
+      <path d="M125,103 H143.5 V201 H125 Z"/>
+      <path d="M143.5,131 H161.5 V201 H143.5 Z"/>
+      <path d="M161.5,151 H179.5 V201 H161.5 Z"/>
+      <path d="M179.5,176 H197 V201 H179.5 Z"/>
+      <path d="M197,178 H215.5 V201 H197 Z"/>
+      <path d="M116,58 V213" stroke-dasharray="10 3 2 3"/>
+    </g>
+    <g fill="currentColor" font-family='Times New Roman, serif' font-style="italic" text-anchor="middle">
+      <text x="120" y="30" font-size="16">T</text>
+      <text x="119" y="47" font-size="16">B</text>
+      <text x="116" y="227" font-size="16"><tspan text-decoration="overline">x</tspan>(M)</text>
+      <text x="119" y="248" font-size="16">(f)</text>
+    </g>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 5-10 实际质量分析与标准比较</p>
 

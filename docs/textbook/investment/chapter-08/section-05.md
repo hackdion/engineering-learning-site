@@ -446,7 +446,76 @@ $5\times(1000+15\times100)+2\times15\times50=14000$ 元
 
 事件 2:主体结构施工时，发包人收到用于工程的商品混凝土不合格的举报，立刻指令总包单位暂停施工。经检测鉴定单位对商品混凝土的抽样检验及混凝土实体质量抽芯检测，质量符合要求。为此，施工总包单位向项目监理机构提交了暂停施工后人员窝工及机械闲置的费用索赔申请。
 
-<FigureZoom caption="图 8-6 施工总进度计划" src="/images/investment/chapter-08/fig-8-06.png" :width="704" :height="278" />
+<FigureZoom caption="图 8-6 施工总进度计划">
+<svg viewBox="0 0 704 268" role="img" aria-label="图 8-6 施工总进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="a86" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <path d="M40,110 H115" marker-end="url(#a86)"/>
+    <path d="M130,95 V32 H219" marker-end="url(#a86)"/>
+    <path d="M145,110 H372" marker-end="url(#a86)"/>
+    <path d="M142.2,118.8 L221.8,176.2" marker-end="url(#a86)"/>
+    <path d="M130,125 V248 H219" marker-end="url(#a86)"/>
+    <path d="M249,32 H372" marker-end="url(#a86)"/>
+    <path d="M249,185 H387 V233" marker-end="url(#a86)"/>
+    <path d="M249,248 H372" marker-end="url(#a86)"/>
+    <path d="M387,47 V95" marker-end="url(#a86)"/>
+    <path d="M402,32 H535 V95" marker-end="url(#a86)"/>
+    <path d="M402,110 H520" marker-end="url(#a86)"/>
+    <path d="M402,248 H535 V125" marker-end="url(#a86)"/>
+    <path d="M550,110 H663" marker-end="url(#a86)"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="25" cy="110" r="15"/>
+    <circle cx="130" cy="110" r="15"/>
+    <circle cx="234" cy="32" r="15"/>
+    <circle cx="234" cy="185" r="15"/>
+    <circle cx="234" cy="248" r="15"/>
+    <circle cx="387" cy="32" r="15"/>
+    <circle cx="387" cy="110" r="15"/>
+    <circle cx="387" cy="248" r="15"/>
+    <circle cx="535" cy="110" r="15"/>
+    <circle cx="678" cy="110" r="15"/>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="15" text-anchor="middle">
+    <text x="25" y="110" dy="0.35em">1</text>
+    <text x="130" y="110" dy="0.35em">2</text>
+    <text x="234" y="32" dy="0.35em">3</text>
+    <text x="234" y="185" dy="0.35em">4</text>
+    <text x="234" y="248" dy="0.35em">5</text>
+    <text x="387" y="32" dy="0.35em">6</text>
+    <text x="387" y="110" dy="0.35em">7</text>
+    <text x="387" y="248" dy="0.35em">8</text>
+    <text x="535" y="110" dy="0.35em">9</text>
+    <text x="678" y="110" dy="0.35em">10</text>
+    <text x="77" y="102">A</text>
+    <text x="77" y="129">10</text>
+    <text x="175" y="24">B</text>
+    <text x="175" y="51">15</text>
+    <text x="258" y="102">C</text>
+    <text x="258" y="129">50</text>
+    <text x="310" y="24">F</text>
+    <text x="310" y="51">45</text>
+    <text x="305" y="177">G</text>
+    <text x="305" y="204">30</text>
+    <text x="305" y="240">H</text>
+    <text x="305" y="267">35</text>
+    <text x="464" y="102">K</text>
+    <text x="464" y="129">20</text>
+    <text x="464" y="240">L</text>
+    <text x="464" y="267">25</text>
+    <text x="606" y="102">M</text>
+    <text x="606" y="129">15</text>
+    <text x="192" y="143" font-style="italic">D</text>
+    <text x="172" y="166">10</text>
+    <text x="163" y="243">E</text>
+    <text x="163" y="267">20</text>
+    <text x="376" y="70" text-anchor="end">I</text>
+    <text x="398" y="70">10</text>
+    <text x="468" y="26">J</text>
+    <text x="468" y="51">25</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 8-6 施工总进度计划</p>
 
