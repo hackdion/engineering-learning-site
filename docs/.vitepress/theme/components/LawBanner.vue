@@ -47,7 +47,10 @@ const rows = computed(() => {
     { label: '施行', value: effective.value },
     { label: '修订沿革', value: revisions.value },
     { label: '状态', value: data.status ? String(data.status) : '' },
-    { label: '本站依据', value: asOf.value ? `依据 ${asOf.value} 取得的官方版本` : '' },
+    { label: '整理依据', value: data.basis ? String(data.basis) : '' },
+    { label: '文本性质', value: data.nature ? String(data.nature) : '' },
+    { label: '本站依据', value: asOf.value && !data.basis ? `依据 ${asOf.value} 取得的官方版本` : '' },
+    { label: '整理时点', value: asOf.value && data.basis ? `${asOf.value} 整理` : '' },
     { label: '教材所用版本', value: data.textbookEdition ? String(data.textbookEdition) : '' }
   ]
   return list.filter((row) => row.value)
