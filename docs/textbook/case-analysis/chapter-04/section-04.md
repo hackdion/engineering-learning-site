@@ -1266,7 +1266,67 @@ D工作原计划第11个月初开始，第12个月末完成，计划工作预算
 
 某工程，施工单位按招标文件中提供的工程量清单做出报价（表4-27）。施工合同约定：工程预付款为347万元，从工程进度款累计总额达到合同总价10%的月份开始，按当月工程进度款的30%扣回，扣完为止。经项目监理机构批准的施工进度计划如图4-31所示（时间单位：月）。
 
-<FigureZoom caption="图 4-31 施工进度计划" src="/images/case-analysis/chapter-04/fig-4-31.png" :width="1030" :height="318" />
+<FigureZoom caption="图 4-31 施工进度计划">
+<svg viewBox="0 0 700 330" role="img" aria-label="图 4-31 施工进度计划" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-case-4-31" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <path d="M24,156 V43 H192" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M35,167 H192" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M24,178 V289 H320" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M214,43 H386" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M214,167 H393" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M342,289 H533 V178" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M408,43 H533 V156" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M415,167 H522" marker-end="url(#arrow-case-4-31)"></path>
+    <path d="M544,167 H655" marker-end="url(#arrow-case-4-31)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 4">
+    <path d="M203,54 V156" marker-end="url(#arrow-case-4-31)"></path>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.2">
+    <circle cx="24" cy="167" r="11"></circle>
+    <circle cx="203" cy="43" r="11"></circle>
+    <circle cx="203" cy="167" r="11"></circle>
+    <circle cx="331" cy="289" r="11"></circle>
+    <circle cx="404" cy="167" r="11"></circle>
+    <circle cx="397" cy="43" r="11"></circle>
+    <circle cx="533" cy="167" r="11"></circle>
+    <circle cx="666" cy="167" r="11"></circle>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="24" y="173">1</text>
+    <text x="203" y="49">2</text>
+    <text x="203" y="173">3</text>
+    <text x="331" y="295">4</text>
+    <text x="404" y="173">5</text>
+    <text x="397" y="49">6</text>
+    <text x="533" y="173">7</text>
+    <text x="666" y="173">8</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="110" y="36">A</text>
+    <text x="105" y="159">B</text>
+    <text x="170" y="281">C</text>
+    <text x="290" y="36">D</text>
+    <text x="300" y="159">E</text>
+    <text x="430" y="281">F</text>
+    <text x="465" y="36">G</text>
+    <text x="465" y="159">H</text>
+    <text x="595" y="159">I</text>
+  </g>
+  <g fill="currentColor" stroke="none" font-size="16" text-anchor="middle">
+    <text x="110" y="64">2</text>
+    <text x="105" y="187">1</text>
+    <text x="170" y="309">2</text>
+    <text x="290" y="64">1</text>
+    <text x="300" y="187">2</text>
+    <text x="430" y="309">1</text>
+    <text x="465" y="64">1</text>
+    <text x="465" y="187">1</text>
+    <text x="595" y="187">1</text>
+  </g>
+</svg>
+</FigureZoom>
 
 <p class="figure-caption">图 4-31 施工进度计划</p>
 
