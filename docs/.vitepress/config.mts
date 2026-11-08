@@ -254,7 +254,7 @@ export default defineConfig({
           ]
         }
       ],
-      // 合同示范文本按合同类型分组。已接入的文本给出导读页与全文页入口。
+      // 合同示范文本按合同类型分组；专项方案编写范例单独成组，不混在合同示范文本内。
       '/model-contracts/': [
         {
           text: '合同示范文本',
@@ -284,28 +284,27 @@ export default defineConfig({
                 { text: '　附录 A、B', link: '/model-contracts/jianli-hetong/full#fa' }
               ]
             },
-            {
-              text: '专项方案',
-              collapsed: false,
-              items: [
-                { text: '基坑工程', link: '/model-contracts/jikeng-gongcheng/' },
-                { text: '　全文', link: '/model-contracts/jikeng-gongcheng/full' },
-                { text: '模板工程及支撑体系', link: '/model-contracts/muban-zhicheng/' },
-                { text: '　全文', link: '/model-contracts/muban-zhicheng/full' },
-                { text: '起重吊装及安装拆卸', link: '/model-contracts/qizhong-diaozhuang/' },
-                { text: '　全文', link: '/model-contracts/qizhong-diaozhuang/full' },
-                { text: '脚手架', link: '/model-contracts/jiaoshoujia/' },
-                { text: '　全文', link: '/model-contracts/jiaoshoujia/full' },
-                { text: '拆除工程', link: '/model-contracts/chaichu-gongcheng/' },
-                { text: '　全文', link: '/model-contracts/chaichu-gongcheng/full' }
-              ]
-            },
             { text: '总承包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '咨询', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '勘察设计', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '分包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '招标文件', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '国际', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] }
+          ]
+        },
+        {
+          text: '专项方案编写范例',
+          items: [
+            { text: '基坑工程编写范例', link: '/model-contracts/jikeng-gongcheng/' },
+            { text: '　全文', link: '/model-contracts/jikeng-gongcheng/full' },
+            { text: '模板支撑体系编写范例', link: '/model-contracts/muban-zhicheng/' },
+            { text: '　全文', link: '/model-contracts/muban-zhicheng/full' },
+            { text: '起重吊装编写范例', link: '/model-contracts/qizhong-diaozhuang/' },
+            { text: '　全文', link: '/model-contracts/qizhong-diaozhuang/full' },
+            { text: '脚手架编写范例', link: '/model-contracts/jiaoshoujia/' },
+            { text: '　全文', link: '/model-contracts/jiaoshoujia/full' },
+            { text: '拆除工程编写范例', link: '/model-contracts/chaichu-gongcheng/' },
+            { text: '　全文', link: '/model-contracts/chaichu-gongcheng/full' }
           ]
         }
       ],

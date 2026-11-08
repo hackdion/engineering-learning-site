@@ -68,8 +68,8 @@ const total = computed(() => (props.mode === 'contracts' ? lawIndex.contracts.le
     <a class="law-entry__card law-entry__card--alt" :href="withBase('/model-contracts/')">
       <span class="law-entry__eyebrow">02 / 合同示范文本</span>
       <span class="law-entry__title">合同示范文本</span>
-      <span class="law-entry__desc">施工、监理、总承包、咨询、勘察设计、分包与标准招标文件，按合同类型归档；导读与全文分开呈现。</span>
-      <span class="law-entry__go">按合同类型浏览 →</span>
+      <span class="law-entry__desc">施工、监理、总承包、咨询、勘察设计、分包与标准招标文件，按合同类型归档；危大工程专项施工方案编写范例单列成组，导读与全文分开呈现。</span>
+      <span class="law-entry__go">按类型浏览 →</span>
     </a>
   </div>
 

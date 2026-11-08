@@ -30,7 +30,7 @@ const LAW_DIR = path.join(REPO_ROOT, 'docs', 'law')
 const CONTRACT_DIR = path.join(REPO_ROOT, 'docs', 'model-contracts')
 
 const LEVELS = new Set(['法律', '行政法规', '部门规章', '规范性文件', '标准'])
-const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际', '专项方案'])
+const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际', '专项方案编写范例'])
 const LAW_REQUIRED = ['title', 'shortName', 'slug', 'level', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
 const CONTRACT_REQUIRED = ['title', 'shortName', 'slug', 'type', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
 // 专项方案示范文本没有官方发文日与施行日，改查依据（37 号令、31 号文、48 号指南）与整理性质。
@@ -380,8 +380,8 @@ function checkScheme(file, values, body) {
   for (const token of ['第37号', '建办质〔2018〕31号', '建办质〔2021〕48号']) {
     if (!basis.includes(token)) addProblem(file, `basis 未写明 ${token}：${basis}`)
   }
-  if (!/非官方示范文本/.test(String(values.nature || ''))) {
-    addProblem(file, 'nature 应写明「本站整理文本，非官方示范文本」')
+  if (!/非官方/.test(String(values.nature || ''))) {
+    addProblem(file, 'nature 应写明「本站整理文本，非官方文件」')
   }
 
   if (values.fullText === true) {
@@ -401,7 +401,7 @@ function checkContract(file) {
   const { values, keys, body } = parseFrontmatter(content)
   checkInternal(file, keys)
   if (!values.type) return
-  if (String(values.type) === '专项方案') {
+  if (String(values.type) === '专项方案编写范例') {
     scanned.schemes += 1
     checkScheme(file, values, body)
     return
@@ -433,7 +433,7 @@ for (const file of walk(LAW_DIR)) checkLaw(file)
 for (const file of walk(CONTRACT_DIR)) checkContract(file)
 
 if (problems.length === 0) {
-  console.log(`[PASS] 法规文本结构检查通过：法规页 ${scanned.laws} 个（样例 ${scanned.samples} 个），合同示范文本页 ${scanned.contracts} 个，专项方案示范文本页 ${scanned.schemes} 个`)
+  console.log(`[PASS] 法规文本结构检查通过：法规页 ${scanned.laws} 个（样例 ${scanned.samples} 个），合同示范文本页 ${scanned.contracts} 个，专项方案编写范例页 ${scanned.schemes} 个`)
   for (const note of notes) console.log(`  · ${note}`)
   process.exit(0)
 }

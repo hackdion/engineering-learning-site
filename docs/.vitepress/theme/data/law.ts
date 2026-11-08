@@ -7,10 +7,10 @@ export type LawLevel = '法律' | '行政法规' | '部门规章' | '规范性�
 /** 侧边栏与总览页的固定层级顺序。 */
 export const LAW_LEVELS: LawLevel[] = ['法律', '行政法规', '部门规章', '规范性文件', '标准']
 
-export type ContractType = '施工' | '监理' | '总承包' | '咨询' | '勘察设计' | '分包' | '招标文件' | '国际' | '专项方案'
+export type ContractType = '施工' | '监理' | '总承包' | '咨询' | '勘察设计' | '分包' | '招标文件' | '国际' | '专项方案编写范例'
 
-/** 示范文本总览页的固定分组顺序。 */
-export const CONTRACT_TYPES: ContractType[] = ['施工', '监理', '专项方案', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际']
+/** 示范文本总览页的固定分组顺序；专项方案编写范例单列在最后，与合同示范文本分开。 */
+export const CONTRACT_TYPES: ContractType[] = ['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际', '专项方案编写范例']
 
 export interface LawArticle {
   /** 条号数字，如 37。 */
