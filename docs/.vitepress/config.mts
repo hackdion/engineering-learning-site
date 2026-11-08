@@ -284,6 +284,22 @@ export default defineConfig({
                 { text: '　附录 A、B', link: '/model-contracts/jianli-hetong/full#fa' }
               ]
             },
+            {
+              text: '专项方案',
+              collapsed: false,
+              items: [
+                { text: '基坑工程', link: '/model-contracts/jikeng-gongcheng/' },
+                { text: '　全文', link: '/model-contracts/jikeng-gongcheng/full' },
+                { text: '模板工程及支撑体系', link: '/model-contracts/muban-zhicheng/' },
+                { text: '　全文', link: '/model-contracts/muban-zhicheng/full' },
+                { text: '起重吊装及安装拆卸', link: '/model-contracts/qizhong-diaozhuang/' },
+                { text: '　全文', link: '/model-contracts/qizhong-diaozhuang/full' },
+                { text: '脚手架', link: '/model-contracts/jiaoshoujia/' },
+                { text: '　全文', link: '/model-contracts/jiaoshoujia/full' },
+                { text: '拆除工程', link: '/model-contracts/chaichu-gongcheng/' },
+                { text: '　全文', link: '/model-contracts/chaichu-gongcheng/full' }
+              ]
+            },
             { text: '总承包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '咨询', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '勘察设计', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },

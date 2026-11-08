@@ -13,6 +13,8 @@
  *      锚点编号必须与标题编号对应；协议书、通用条款、附件分别从 1 起连续，
  *      专用条款严格递增（原件的既定跳号只登记提示，不判失败）。
  *   4. 公开页无内部字段：frontmatter 不得出现核对人、核对记录、来源路径、授权/验收记录等。
+ *   5. 专项方案示范文本（type: 专项方案）：版本卡须写整理依据（37 号令、31 号文、48 号指南）
+ *      与「非官方示范文本」性质；全文页章级锚点固定为 sm、c1～c9、ap，导读页须给出对应入口。
  *
  * 只读 frontmatter 与条标题，不扫描正文，避免把合法叙述误判。
  * 退出码：0 = 通过；1 = 发现必须修复的问题。
@@ -28,9 +30,12 @@ const LAW_DIR = path.join(REPO_ROOT, 'docs', 'law')
 const CONTRACT_DIR = path.join(REPO_ROOT, 'docs', 'model-contracts')
 
 const LEVELS = new Set(['法律', '行政法规', '部门规章', '规范性文件', '标准'])
-const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际'])
+const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际', '专项方案'])
 const LAW_REQUIRED = ['title', 'shortName', 'slug', 'level', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
 const CONTRACT_REQUIRED = ['title', 'shortName', 'slug', 'type', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
+// 专项方案示范文本没有官方发文日与施行日，改查依据（37 号令、31 号文、48 号指南）与整理性质。
+const SCHEME_REQUIRED = ['title', 'shortName', 'slug', 'type', 'code', 'level', 'basis', 'nature', 'status', 'asOf']
+const SCHEME_ANCHORS = ['sm', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9', 'ap']
 
 const INTERNAL_FIELDS = new Set([
   'pdfPages',
@@ -141,7 +146,7 @@ function parseArticles(body) {
 
 const problems = []
 const notes = []
-const scanned = { laws: 0, contracts: 0, samples: 0 }
+const scanned = { laws: 0, contracts: 0, samples: 0, schemes: 0 }
 
 function addProblem(file, message) {
   problems.push({ file: path.relative(REPO_ROOT, file), message })
@@ -325,11 +330,82 @@ function checkContractStructure(file, body) {
   if (sections.t.length === 0) addProblem(file, '全文页未找到通用条款/通用条件的顶层条款')
 }
 
+/** 专项方案全文页：只允许章级锚点，且必须按「使用说明 → 九章 → 附录」顺序齐备。 */
+function checkSchemeStructure(file, body) {
+  const lines = body.split(/\r?\n/)
+  const seen = new Set()
+  const found = []
+
+  for (const line of lines) {
+    const bare = line.match(/^##\s+(使用说明|附录|[一二三四五六七八九]、[^{]+?)\s*$/)
+    if (bare) {
+      addProblem(file, `章级标题缺少锚点：## ${bare[1]}`)
+      continue
+    }
+    const match = line.match(/^(#{2,6})\s+(.*?)\s*\{#([A-Za-z0-9_-]+)\}\s*$/)
+    if (!match) continue
+    const text = match[2].trim()
+    const anchor = match[3]
+
+    if (seen.has(anchor)) addProblem(file, `锚点重复：#${anchor}`)
+    seen.add(anchor)
+
+    if (!SCHEME_ANCHORS.includes(anchor)) {
+      addProblem(file, `专项方案全文页只允许章级锚点（sm、c1～c9、ap）：#${anchor}（${text}）`)
+      continue
+    }
+    found.push(anchor)
+
+    if (anchor === 'sm' && text !== '使用说明') addProblem(file, `#sm 应挂在「使用说明」标题上，实际为「${text}」`)
+    if (anchor === 'ap' && text !== '附录') addProblem(file, `#ap 应挂在「附录」标题上，实际为「${text}」`)
+    const chapter = anchor.match(/^c([1-9])$/)
+    if (chapter && !new RegExp(`^${'一二三四五六七八九'[Number(chapter[1]) - 1]}、`).test(text)) {
+      addProblem(file, `#${anchor} 与章序号不符，实际为「${text}」`)
+    }
+  }
+
+  if (found.join(',') !== SCHEME_ANCHORS.join(',')) {
+    addProblem(file, `章级锚点须按 ${SCHEME_ANCHORS.join('、')} 顺序齐备，实际为 ${found.join('、') || '无'}`)
+  }
+}
+
+function checkScheme(file, values, body) {
+  for (const field of SCHEME_REQUIRED) {
+    if (!hasValue(values[field])) addProblem(file, `专项方案版本卡字段缺失或为空：${field}`)
+  }
+  if (!DATE_RE.test(String(values.asOf || ''))) {
+    addProblem(file, `asOf 不是 YYYY-MM-DD：${values.asOf}`)
+  }
+  const basis = String(values.basis || '')
+  for (const token of ['第37号', '建办质〔2018〕31号', '建办质〔2021〕48号']) {
+    if (!basis.includes(token)) addProblem(file, `basis 未写明 ${token}：${basis}`)
+  }
+  if (!/非官方示范文本/.test(String(values.nature || ''))) {
+    addProblem(file, 'nature 应写明「本站整理文本，非官方示范文本」')
+  }
+
+  if (values.fullText === true) {
+    checkSchemeStructure(file, body)
+    return
+  }
+  // 导读页：须给出使用说明、九章正文与附录的全文入口。
+  for (const anchor of SCHEME_ANCHORS) {
+    if (!body.includes(`./full.md#${anchor})`)) {
+      addProblem(file, `导读页缺少全文入口 ./full.md#${anchor}`)
+    }
+  }
+}
+
 function checkContract(file) {
   const content = fs.readFileSync(file, 'utf8')
   const { values, keys, body } = parseFrontmatter(content)
   checkInternal(file, keys)
   if (!values.type) return
+  if (String(values.type) === '专项方案') {
+    scanned.schemes += 1
+    checkScheme(file, values, body)
+    return
+  }
   scanned.contracts += 1
 
   for (const field of CONTRACT_REQUIRED) {
@@ -357,7 +433,7 @@ for (const file of walk(LAW_DIR)) checkLaw(file)
 for (const file of walk(CONTRACT_DIR)) checkContract(file)
 
 if (problems.length === 0) {
-  console.log(`[PASS] 法规文本结构检查通过：法规页 ${scanned.laws} 个（样例 ${scanned.samples} 个），示范文本页 ${scanned.contracts} 个`)
+  console.log(`[PASS] 法规文本结构检查通过：法规页 ${scanned.laws} 个（样例 ${scanned.samples} 个），合同示范文本页 ${scanned.contracts} 个，专项方案示范文本页 ${scanned.schemes} 个`)
   for (const note of notes) console.log(`  · ${note}`)
   process.exit(0)
 }
