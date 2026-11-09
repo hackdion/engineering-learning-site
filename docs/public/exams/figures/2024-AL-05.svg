@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-label="图5-1 施工总进度计划双代号网络图" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="currentColor">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0L9,4.5L0,9z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <!-- A 1->2 -->
+  <line x1="76" y1="230" x2="184" y2="230" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="130" y="216" text-anchor="middle">A</text>
+  <text x="130" y="260" text-anchor="middle">15</text>
+  <!-- B 2->3 -->
+  <line x1="216" y1="230" x2="324" y2="230" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="270" y="216" text-anchor="middle">B</text>
+  <text x="270" y="260" text-anchor="middle">45</text>
+  <!-- E 3->6 -->
+  <line x1="356" y1="230" x2="484" y2="230" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="420" y="216" text-anchor="middle">E</text>
+  <text x="420" y="260" text-anchor="middle">15</text>
+  <!-- H 6->8 -->
+  <line x1="516" y1="230" x2="644" y2="230" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="580" y="216" text-anchor="middle">H</text>
+  <text x="580" y="260" text-anchor="middle">15</text>
+  <!-- D 3->7 (up then right) -->
+  <path d="M340,214 L340,80 L484,80" fill="none" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="412" y="66" text-anchor="middle">D</text>
+  <text x="412" y="104" text-anchor="middle">10</text>
+  <!-- 虚工作 6->7 -->
+  <line x1="500" y1="212" x2="500" y2="98" stroke="currentColor" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#ah)"/>
+  <text x="514" y="158" font-size="13">虚</text>
+  <!-- G 7->8 (right then down) -->
+  <path d="M516,80 L660,80 L660,212" fill="none" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="600" y="66" text-anchor="middle">G</text>
+  <text x="600" y="104" text-anchor="middle">35</text>
+  <!-- C 2->4 (down then right) -->
+  <path d="M200,246 L200,370 L324,370" fill="none" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="262" y="356" text-anchor="middle">C</text>
+  <text x="262" y="394" text-anchor="middle">36</text>
+  <!-- F 4->5 -->
+  <line x1="356" y1="370" x2="484" y2="370" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="420" y="356" text-anchor="middle">F</text>
+  <text x="420" y="394" text-anchor="middle">10</text>
+  <!-- K 5->8 (right then up) -->
+  <path d="M516,370 L660,370 L660,248" fill="none" stroke="currentColor" stroke-width="1.8" marker-end="url(#ah)"/>
+  <text x="600" y="356" text-anchor="middle">K</text>
+  <text x="600" y="394" text-anchor="middle">42</text>
+
+  <!-- nodes -->
+  <g stroke="currentColor" stroke-width="1.6" fill="#fff">
+    <circle cx="60" cy="230" r="16"/>
+    <circle cx="200" cy="230" r="16"/>
+    <circle cx="340" cy="230" r="16"/>
+    <circle cx="500" cy="230" r="16"/>
+    <circle cx="660" cy="230" r="16"/>
+    <circle cx="340" cy="370" r="16"/>
+    <circle cx="500" cy="370" r="16"/>
+    <circle cx="500" cy="80" r="16"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="60" y="236">1</text>
+    <text x="200" y="236">2</text>
+    <text x="340" y="236">3</text>
+    <text x="500" y="236">6</text>
+    <text x="660" y="236">8</text>
+    <text x="340" y="376">4</text>
+    <text x="500" y="376">5</text>
+    <text x="500" y="86">7</text>
+  </g>
+
+  <text x="380" y="432" text-anchor="middle" font-size="15">图5-1 施工总进度计划（时间单位：天）</text>
+</svg>

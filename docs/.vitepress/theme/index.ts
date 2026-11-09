@@ -17,6 +17,8 @@ import FormSheet from './components/FormSheet.vue'
 import LawBanner from './components/LawBanner.vue'
 import ArticleRef from './components/ArticleRef.vue'
 import LawIndex from './components/LawIndex.vue'
+import ExamCenter from './components/exam/ExamCenter.vue'
+import ExamPaper from './components/exam/ExamPaper.vue'
 import './hd-theme.css'
 import './custom.css'
 
@@ -37,5 +39,8 @@ export default {
     app.component('LawBanner', LawBanner)
     app.component('ArticleRef', ArticleRef)
     app.component('LawIndex', LawIndex)
+    // 试卷
+    app.component('ExamCenter', ExamCenter)
+    app.component('ExamPaper', ExamPaper)
   }
 }
