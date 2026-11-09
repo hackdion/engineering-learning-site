@@ -289,7 +289,14 @@ export default defineConfig({
             { text: '咨询', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '勘察设计', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
             { text: '分包', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
-            { text: '招标文件', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] },
+            {
+              text: '招标文件',
+              collapsed: true,
+              items: [
+                { text: '标准施工招标文件格式摘录', link: '/model-contracts/zbwj-2007-geshi/' },
+                { text: '整理中，待接入', link: '/model-contracts/#contracts' }
+              ]
+            },
             { text: '国际', collapsed: true, items: [{ text: '整理中，待接入', link: '/model-contracts/#contracts' }] }
           ]
         },
