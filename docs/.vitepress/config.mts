@@ -294,6 +294,7 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { text: '标准施工招标文件格式摘录', link: '/model-contracts/zbwj-2007-geshi/' },
+                { text: '标准监理招标文件格式摘录', link: '/model-contracts/jianli-zhaobiao-2017/' },
                 { text: '整理中，待接入', link: '/model-contracts/#contracts' }
               ]
             },

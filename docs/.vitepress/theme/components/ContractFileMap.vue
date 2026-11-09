@@ -19,6 +19,11 @@ function statusKey(status: ContractFileStatus) {
   return 'project'
 }
 
+// 站内链接加 base，官方原件等外链原样输出。
+function href(link: string) {
+  return /^https?:\/\//.test(link) ? link : withBase(link)
+}
+
 async function place() {
   host.value = null
   await nextTick()
@@ -66,7 +71,7 @@ onBeforeUnmount(cleanup)
       <ul class="cf__list">
         <li v-for="item in map.items" :key="item.name" class="cf__item">
           <div class="cf__head">
-            <a v-if="item.link" :href="withBase(item.link)" class="cf__name">{{ item.name }}</a>
+            <a v-if="item.link" :href="href(item.link)" class="cf__name">{{ item.name }}</a>
             <span v-else class="cf__name">{{ item.name }}</span>
             <span class="cf__status" :class="`cf__status--${statusKey(item.status)}`">{{ item.status }}</span>
           </div>
@@ -75,7 +80,14 @@ onBeforeUnmount(cleanup)
           <p v-if="item.extraLinks?.length" class="cf__meta">
             <span class="cf__label">另见</span>
             <span>
-              <a v-for="extra in item.extraLinks" :key="extra.href" :href="withBase(extra.href)" class="cf__extra">{{ extra.label }}</a>
+              <a
+                v-for="extra in item.extraLinks"
+                :key="extra.href"
+                :href="href(extra.href)"
+                class="cf__extra"
+                :target="/^https?:\/\//.test(extra.href) ? '_blank' : undefined"
+                :rel="/^https?:\/\//.test(extra.href) ? 'noreferrer' : undefined"
+              >{{ extra.label }}</a>
             </span>
           </p>
         </li>

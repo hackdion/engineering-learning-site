@@ -3,6 +3,9 @@
 // 状态含义：本文已有＝本页已有全文，可跳页内锚点；有官方格式＝跳到本站转录的官方格式页；
 // 项目形成＝随项目形成，没有全国统一通用格式。
 
+/** 《标准监理招标文件》（2017年版）官方 PDF；链接带 #page= 直接跳到原件页码。 */
+const NDRC_PDF = 'https://www.ndrc.gov.cn/fzggw/jgsj/fgs/sjdt/201709/W020190910481384172449.pdf'
+
 export type ContractFileStatus = '本文已有' | '有官方格式' | '项目形成'
 
 export interface ContractFileItem {
@@ -100,7 +103,7 @@ export const CONTRACT_FILE_MAPS: Record<string, ContractFileMap> = {
   'jianli-hetong': {
     anchor: 'x-3',
     title: '这些文件在哪里',
-    note: '按《建设工程监理合同（示范文本）》GF-2012-0202 协议书第三条列出的文件逐项对应。协议书、专用条件、通用条件和附录可在本页找到全文；中标通知书、委托书、投标文件、监理与相关服务建议书随招标或委托形成，没有全国统一的通用格式。',
+    note: '按《建设工程监理合同（示范文本）》GF-2012-0202 协议书第三条列出的文件逐项对应。协议书、专用条件、通用条件和附录可在本页找到全文；招标工程的中标通知书、投标文件可在本站找到《标准监理招标文件》（2017年版）的官方格式；非招标工程的委托书、监理与相关服务建议书不属于该标准文件，全国层面没有统一格式，随委托文件形成。',
     items: [
       {
         name: '协议书',
@@ -110,16 +113,41 @@ export const CONTRACT_FILE_MAPS: Record<string, ContractFileMap> = {
         link: '/model-contracts/jianli-hetong/full#p1'
       },
       {
-        name: '中标通知书（适用于招标工程）或委托书（适用于非招标工程）',
-        status: '项目形成',
-        issuer: '招标人或委托人',
-        role: '通知中标或委托监理；监理招标没有全国统一格式，按招标文件或委托文件出具。'
+        name: '中标通知书（适用于招标工程）',
+        status: '有官方格式',
+        issuer: '招标人',
+        role: '通知中标，载明中标价、监理服务期限和总监理工程师，是签订监理合同的依据。',
+        link: '/model-contracts/jianli-zhaobiao-2017/#zbtzs',
+        extraLinks: [
+          { label: '官方原件第 30 页', href: `${NDRC_PDF}#page=38` }
+        ]
       },
       {
-        name: '投标文件（适用于招标工程）或监理与相关服务建议书（适用于非招标工程）',
+        name: '委托书（适用于非招标工程）',
         status: '项目形成',
-        issuer: '投标人或监理人',
-        role: '承诺监理范围、人员、方案与报价；监理与相关服务建议书没有官方格式。'
+        issuer: '委托人',
+        role: '非招标工程由委托人直接委托监理时出具，明确委托的监理范围与内容；该标准文件只适用于招标工程，不含此项格式。',
+        link: '/model-contracts/jianli-zhaobiao-2017/#fw',
+        extraLinks: [{ label: '官方适用范围说明', href: `${NDRC_PDF}#page=2` }]
+      },
+      {
+        name: '投标文件（适用于招标工程）',
+        status: '有官方格式',
+        issuer: '投标人',
+        role: '投标人的报价、监理服务期限与人员承诺，中标后成为合同文件的组成部分；投标函及附录载明报价与主要约定。',
+        link: '/model-contracts/jianli-zhaobiao-2017/#tbwj',
+        extraLinks: [
+          { label: '官方原件第 67 页', href: `${NDRC_PDF}#page=75` },
+          { label: '投标函第 70 页', href: `${NDRC_PDF}#page=78` }
+        ]
+      },
+      {
+        name: '监理与相关服务建议书（适用于非招标工程）',
+        status: '项目形成',
+        issuer: '监理人',
+        role: '非招标工程中监理人提交的监理方案、人员配备与报价建议；没有全国统一格式，随委托文件形成。',
+        link: '/model-contracts/jianli-zhaobiao-2017/#fw',
+        extraLinks: [{ label: '官方适用范围说明', href: `${NDRC_PDF}#page=2` }]
       },
       {
         name: '专用条件',
