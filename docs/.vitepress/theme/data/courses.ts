@@ -97,7 +97,7 @@ export const COURSES: CourseItem[] = [
   {
     id: 'ppt-gl-8-1', book: 'gailun', section: '8.1', title: '工程监理基本表式及主要文件资料',
     date: '2026-11-05', deck: '/courses/ppt-gl-8-1',
-    summary: '互动 PPT：A/B/C 三类共 32 张表、十张总监签章表、建设单位审批与 18 类监理文件资料、五种文件编制要求，配复工排序和 8 道自测题。'
+    summary: '互动 PPT：A/B/C 三类共 25 张表、十张总监签章表、建设单位审批与 18 类监理文件资料、五种文件编制要求，配复工排序和 8 道自测题。'
   },
   {
     id: 'ppt-gl-8-2', book: 'gailun', section: '8.2', title: '工程监理文件资料管理职责和要求',
