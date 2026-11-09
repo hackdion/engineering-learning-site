@@ -6,6 +6,7 @@ export interface ExamRef {
   book: string
   path: string
   anchor: string
+  hash: string
   anchorFound: boolean
 }
 
@@ -270,10 +271,11 @@ export function formatDate(time: number): string {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
 }
 
-/** 回到教材：优先带 anchor；anchor 在教材里找不到时只跳节页。 */
+/** 回到教材：带题目所属小节标题的锚点；没有可用锚点时只跳节页。 */
 export function studyUrl(ref?: ExamRef): string {
   if (!ref || !ref.path) return ''
-  return withBase(ref.path)
+  const base = withBase(ref.path)
+  return ref.hash ? `${base}#${ref.hash}` : base
 }
 
 export function answerText(letters: string[] | undefined): string {

@@ -19,7 +19,10 @@
  *   1. 每个 ref.path 对应的 docs/<path>.md 存在；
  *   2. 答案字母都在选项内；
  *   3. id 全站不重复；
- *   4. 配图文件存在。
+ *   4. 配图文件存在；
+ *   5. 每个 ref.anchor 都能定位到教材里的标题：锚点本身是标题时直接命中，
+ *      是正文段落时定位到它所属的最近一个标题，并把标题文字与 VitePress 标题 id 写进 ref。
+ *      确实定位不到的（仅限 ANCHOR_EXCEPTIONS 中逐条登记的）会在输出里列出题号与原因。
  */
 
 import fs from 'node:fs'
@@ -57,6 +60,9 @@ const SUBJECTS = {
     cases: 0,
     minutes: 120
   },
+  // 考试时长按北京地区 2026 年度监理工程师考试通知（2026-03-02 发布）：
+  // 5 月 16 日 9:00-11:00 合同管理、14:00-17:00 目标控制；
+  // 5 月 17 日 9:00-11:00 基本理论和相关法规、14:00-18:00 案例分析。
   mk: {
     name: '建设工程目标控制（土木建筑工程）',
     short: '目标控制',
@@ -64,7 +70,7 @@ const SUBJECTS = {
     single: 80,
     multi: 40,
     cases: 0,
-    minutes: 150
+    minutes: 180
   },
   al: {
     name: '建设工程监理案例分析（土木建筑工程）',
@@ -144,35 +150,103 @@ const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(SOURCE_DIR, rel),
 const hasMarkdown = (text) => /(^|\n)\s*\|/.test(text)
 const toHtml = (text) => (hasMarkdown(text) ? renderTables(text) : '')
 
-/** ref.path 是否对应真实节页；返回 { ok, anchorFound }。 */
+// 与 VitePress 的标题 id 规则一致（node_modules/vitepress 内 slugify 的同款实现）。
+const slugify = (text) => String(text)
+  .normalize('NFKD')
+  .replace(/[\u0300-\u036F]/g, '')
+  .replace(/[\u0000-\u001f]/g, '')
+  .replace(/[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g, '-')
+  .replace(/-{2,}/g, '-')
+  .replace(/^-+|-+$/g, '')
+  .replace(/^(\d)/, '_$1')
+  .toLowerCase()
+
+const HEADING_LINE = /^(#{2,4})\s+(.+?)\s*$/
+// 全角括号、空白不参与比对，用来抹平「（2）」与「(2)」这类排版差异。
+const normalizeAnchor = (text) => String(text)
+  .replace(/（/g, '(')
+  .replace(/）/g, ')')
+  .replace(/[\s\u00a0]/g, '')
+
+// 个别题目的来源锚点是概述写法，教材里对应到具体条目标题时在这里逐条登记。
+const ANCHOR_ALIAS = new Map([
+  ['/textbook/chapter-09/section-04#（一）风险识别', '1. 风险识别']
+])
+
+// 确实无法定位的锚点在此登记题号与原因；未登记的不允许出现，避免以后悄悄退化。
+const ANCHOR_EXCEPTIONS = new Map([])
+
+const anchorStats = { total: 0, heading: 0, section: 0, unresolved: 0 }
+
+function resolveAnchor(body, ref) {
+  const lines = body.split('\n')
+  const headings = []
+  lines.forEach((line, i) => {
+    const m = HEADING_LINE.exec(line)
+    if (m) headings.push({ line: i, text: m[2].replace(/`/g, '').trim() })
+  })
+  if (headings.length === 0) return { ok: false, reason: '教材页没有小标题' }
+
+  const alias = ANCHOR_ALIAS.get(`${ref.path}#${ref.anchor}`)
+  const needle = normalizeAnchor(alias || ref.anchor)
+
+  // 1. 锚点本身就是某个标题（允许全角/半角括号差异）
+  const hit = headings.find((h) => normalizeAnchor(h.text).includes(needle))
+  if (hit) return { ok: true, heading: hit.text, kind: 'heading' }
+
+  // 2. 锚点是正文段落：定位到它所在小节最近的上一级标题
+  const at = lines.findIndex((line) => normalizeAnchor(line).includes(needle))
+  if (at === -1) return { ok: false, reason: '教材里找不到这句原文' }
+  const above = headings.filter((h) => h.line <= at).pop()
+  if (!above) return { ok: false, reason: '这段之前没有小标题' }
+  return { ok: true, heading: above.text, kind: 'section' }
+}
+
+/** ref.path 是否对应真实节页；返回 { ok, anchorFound, hash, reason }。 */
 function checkRef(ref) {
   if (!ref || !ref.path) return { ok: false, anchorFound: false, missing: true }
   const file = path.join(DOCS_DIR, `${ref.path.replace(/^\//, '')}.md`)
   const ok = fs.existsSync(file)
-  let anchorFound = false
-  if (ok && ref.anchor) {
-    const body = fs.readFileSync(file, 'utf8')
-    const needle = String(ref.anchor).replace(/\s+/g, '')
-    anchorFound = body.replace(/\s+/g, '').includes(needle)
+  if (!ok) return { ok: false, anchorFound: false, missing: false }
+  if (!ref.anchor) return { ok: true, anchorFound: false, hash: '' }
+  anchorStats.total += 1
+  const resolved = resolveAnchor(fs.readFileSync(file, 'utf8'), ref)
+  if (!resolved.ok) {
+    anchorStats.unresolved += 1
+    return { ok: true, anchorFound: false, hash: '', anchor: '', reason: resolved.reason }
   }
-  return { ok, anchorFound, missing: false }
+  anchorStats[resolved.kind] += 1
+  return {
+    ok: true,
+    anchorFound: true,
+    anchor: resolved.heading,
+    hash: slugify(resolved.heading),
+    kind: resolved.kind
+  }
 }
 
 function cleanRef(ref, qid, paperId) {
   if (!ref || !ref.path) return null
-  const { ok, anchorFound } = checkRef(ref)
-  if (!ok) {
+  const res = checkRef(ref)
+  if (!res.ok) {
     errors.push(`${paperId} ${qid}：ref.path 不存在 docs${ref.path}.md`)
     return null
   }
-  if (ref.anchor && !anchorFound) {
-    warnings.push(`${paperId} ${qid}：教材里找不到 anchor「${ref.anchor}」，只跳到节页`)
+  if (ref.anchor && !res.anchorFound) {
+    const reason = res.reason || '未知'
+    const allowed = ANCHOR_EXCEPTIONS.get(qid)
+    if (allowed) {
+      warnings.push(`${paperId} ${qid}：锚点「${ref.anchor}」无法定位（${reason}），${allowed}，只跳到节页`)
+    } else {
+      errors.push(`${paperId} ${qid}：锚点「${ref.anchor}」无法定位（${reason}）`)
+    }
   }
   return {
     book: ref.book || '',
     path: ref.path,
-    anchor: ref.anchor || '',
-    anchorFound
+    anchor: res.anchor ?? (ref.anchor || ''),
+    hash: res.hash || '',
+    anchorFound: res.anchorFound
   }
 }
 
@@ -396,6 +470,7 @@ function main() {
     if (p.missingCount) notes.push(`原卷缺 ${p.missingCount} 题`)
     console.log(`  ${p.id.padEnd(9)} ${p.title} · ${p.subject} · ${p.collected} 题 · ${p.durationMinutes} 分钟 · ${p.selfScore ? '自评' : `${p.fullScore} 分`}${notes.length ? ` · ${notes.join('，')}` : ''}`)
   }
+  console.log(`[sync-exams] 锚点校验：${anchorStats.total} 个，命中标题 ${anchorStats.heading} 个，按所属小节定位 ${anchorStats.section} 个，未定位 ${anchorStats.unresolved} 个`)
   if (warnings.length > 0) {
     console.log(`\n[sync-exams] 提示 ${warnings.length} 条（不影响生成）：`)
     for (const line of warnings) console.log(`  - ${line}`)
