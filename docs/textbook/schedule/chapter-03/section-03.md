@@ -239,12 +239,18 @@ $$
   <g fill="none" stroke="currentColor" stroke-width="1.8">
     <path d="M36,219.5 V85.5 H392.5" marker-end="url(#arrow-3-20)"></path>
     <path d="M421.5,85.5 H796 V219.5" marker-end="url(#arrow-3-20)"></path>
-    <path d="M50.5,234 H255.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M50.5,232 H244"></path>
+    <path d="M50.5,236 H244"></path>
+    <path d="M243,234 H255.5" marker-end="url(#arrow-3-20)"></path>
     <path d="M284.5,234 H515" marker-end="url(#arrow-3-20)"></path>
     <path d="M544,234 H781.5" marker-end="url(#arrow-3-20)"></path>
     <path d="M36,248.5 V370 H255.5" marker-end="url(#arrow-3-20)"></path>
-    <path d="M284.5,370 H515" marker-end="url(#arrow-3-20)"></path>
-    <path d="M544,370 H796 V248.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M284.5,368 H504"></path>
+    <path d="M284.5,372 H504"></path>
+    <path d="M503,370 H515" marker-end="url(#arrow-3-20)"></path>
+    <path d="M544,368 H792 V258"></path>
+    <path d="M544,372 H796 V258"></path>
+    <path d="M794,258 V248.5" marker-end="url(#arrow-3-20)"></path>
     <path d="M268,248.5 V344"></path>
     <path d="M272,248.5 V344"></path>
     <path d="M270,344 V355.5" marker-end="url(#arrow-3-20)"></path>
@@ -292,6 +298,14 @@ $$
     <text x="529.5" y="240">5</text>
     <text x="529.5" y="376">6</text>
     <text x="796" y="240">7</text>
+    <text x="203.5" y="104">6</text>
+    <text x="605.5" y="104">5</text>
+    <text x="141.5" y="253">4</text>
+    <text x="386.5" y="253">5</text>
+    <text x="646" y="255">3</text>
+    <text x="138.5" y="389">2</text>
+    <text x="386" y="389">6</text>
+    <text x="646" y="390">5</text>
     <text x="168.5" y="38">0</text>
     <text x="202" y="38">6</text>
     <text x="241" y="38">4</text>
@@ -352,10 +366,10 @@ $$
   </g>
   <g fill="currentColor" font-family="sans-serif" font-size="18" font-style="italic">
     <text x="827" y="240">T</text>
-    <text x="836" y="246" font-size="13">p</text>
-    <text x="843" y="240">=T</text>
-    <text x="864" y="246" font-size="13">c</text>
-    <text x="870" y="240">=15</text>
+    <text x="838" y="247">p</text>
+    <text x="849" y="240">=T</text>
+    <text x="871" y="247">c</text>
+    <text x="881" y="240">=15</text>
   </g>
 </svg>
 </FigureZoom>
