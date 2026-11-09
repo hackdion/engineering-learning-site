@@ -50,11 +50,10 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
               翻开教材书架
             </a>
             <span class="home__try">
-              <a class="hd-btn hd-btn--helmet home__btn" :href="withBase('/courses/gl-2-2')">
+              <a class="hd-btn hd-btn--helmet home__btn" :href="withBase('/courses/')">
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 17h18" /><path d="M5 17a7 7 0 0 1 14 0" /><path d="M10 10V6.5a2 2 0 0 1 4 0V10" /></svg>
                 戴好安全帽，开工
               </a>
-              <small>试学一节课：《建设工程监理规范》互动课件，约 13 分钟</small>
             </span>
           </div>
           <p class="home__byline">
@@ -157,7 +156,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
         <span class="home__way-icon">音</span><b>独立音频 <span class="hd-wip">筹备中</span></b>
         <p>独立音频尚未上线；互动课件自带旁白，不计作单独音频。</p>
       </div>
-      <a class="home__way" :href="withBase('/courses/gl-2-2')">
+      <a class="home__way" :href="withBase('/courses/ppt-gl-2-2')">
         <span class="home__way-icon">课</span><b>互动课件</b>
         <p>翻页讲解加随堂练习，先从《建设工程监理规范》试一节。</p>
       </a>
@@ -207,8 +206,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__lead { margin: 0; font-size: 18px; line-height: 1.8; color: var(--hd-ink-2); max-width: 560px; }
 .home__actions { display: flex; flex-wrap: wrap; gap: 12px 16px; padding-top: 8px; align-items: flex-start; }
 .home__btn { min-height: 52px; padding: 0 24px; gap: 10px; }
-.home__try { display: flex; flex-direction: column; gap: 8px; }
-.home__try small { font-size: 13px; color: var(--hd-ink-3); max-width: 260px; line-height: 1.5; }
+.home__try { display: flex; flex-direction: column; align-items: flex-start; }
 .home__byline { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--hd-ink-3); }
 .home__byline img { width: 30px; height: 30px; object-fit: contain; }
 .home__art { flex: 1 1 420px; min-width: 0; display: flex; justify-content: center; }

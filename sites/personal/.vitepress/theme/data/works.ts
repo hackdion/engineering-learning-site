@@ -54,7 +54,7 @@ export const WORKS: Work[] = [
     links: [
       { label: '打开学习网站', href: learning(''), kind: 'learning' },
       { label: '教材书架', href: learning('textbook/'), kind: 'learning' },
-      { label: '互动课件示例', href: learning('courses/gl-2-2'), kind: 'learning' },
+      { label: '互动 PPT 示例', href: learning('courses/ppt-gl-2-2'), kind: 'learning' },
       { label: '公开源码', href: REPO.learning, kind: 'external' }
     ],
     detail: {
@@ -73,7 +73,7 @@ export const WORKS: Work[] = [
           list: [
             '确定六册书与章、节结构，每节单独成页，保留原书顺序、编号、表格和公式。',
             '以教材原页为依据逐页核对识别底稿：清理页眉页脚、合并断词断句、还原跨页表格与图示，疑点逐条登记，不凭猜测改写。',
-            '为已读章节写课程讲稿、设计互动练习，用 OpenMAIC 做出一节可以操作的课件。',
+            '为已读章节写课程讲稿、设计互动练习，做成可在站内翻页作答的互动 PPT。',
             '设计网站结构与视觉（纸色底、深蓝、塔吊与安全帽元素），实现中文全文搜索、移动端适配、学完盖章等功能。',
             '每次更新都走构建、发布检查、推送、线上验证的固定流程，并记录发布结果。'
           ]
@@ -89,7 +89,7 @@ export const WORKS: Work[] = [
           heading: '做出了什么',
           list: [
             '网站已上线：建设工程监理概论、合同管理、质量控制与安全生产管理、投资控制、进度控制、案例分析六册，按章、节可读。',
-            '课程中心接入了 B 站课程视频，以及一节《建设工程监理规范》互动课件。',
+            '课程中心接入了 B 站课程视频与多节自制互动 PPT。',
             '支持中文全文搜索、教材表格与公式横向滚动、图示放大、手机阅读和学习进度小标记。',
             '仓库公开，提交记录、发布检查和整理流程都可以查看。'
           ]

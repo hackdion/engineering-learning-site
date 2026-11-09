@@ -190,11 +190,6 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT：项目监理机构设立要求与步骤、四种组织形式、人员结构与数量确定、四类人员基本职责，配对比、排序和 8 道自测题。'
   },
   {
-    id: 'gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
-    date: '2026-11-01', courseware: '/courses/gl-2-2',
-    summary: '10 页讲解配旁白，3 组练习共 9 道章节题，全程约 13 分钟，讲稿逐句对照本节教材正文。'
-  },
-  {
     id: 'jd-series', book: 'jindu', section: '1.1', title: '建设工程进度控制 · 教材全文朗读',
     date: '2026-10-04',
     series: { bvid: 'BV1TqHi6gESR', url: 'https://www.bilibili.com/video/BV1TqHi6gESR/', count: 23, hours: 6.5 },
