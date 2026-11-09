@@ -305,7 +305,15 @@ export default defineConfig({
             { text: '脚手架编写范例', link: '/model-contracts/jiaoshoujia/' },
             { text: '　全文', link: '/model-contracts/jiaoshoujia/full' },
             { text: '拆除工程编写范例', link: '/model-contracts/chaichu-gongcheng/' },
-            { text: '　全文', link: '/model-contracts/chaichu-gongcheng/full' }
+            { text: '　全文', link: '/model-contracts/chaichu-gongcheng/full' },
+            { text: '暗挖工程编写范例', link: '/model-contracts/anwa-gongcheng/' },
+            { text: '　全文', link: '/model-contracts/anwa-gongcheng/full' },
+            { text: '建筑幕墙安装编写范例', link: '/model-contracts/muqiang-anzhuang/' },
+            { text: '　全文', link: '/model-contracts/muqiang-anzhuang/full' },
+            { text: '人工挖孔桩编写范例', link: '/model-contracts/rengong-wakongzhuang/' },
+            { text: '　全文', link: '/model-contracts/rengong-wakongzhuang/full' },
+            { text: '钢结构安装编写范例', link: '/model-contracts/gangjiegou-anzhuang/' },
+            { text: '　全文', link: '/model-contracts/gangjiegou-anzhuang/full' }
           ]
         }
       ],
