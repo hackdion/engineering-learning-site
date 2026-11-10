@@ -5,7 +5,7 @@ import { withBase } from 'vitepress'
 import BookShelf from './BookShelf.vue'
 import { BOOKS } from '../data/books'
 import { COURSES, type CourseItem } from '../data/courses'
-import { readAlongAt, readAlongUrl } from '../data/readalong'
+import { readAlongAt, readAlongUrl, CASE_ONLINE, CASE_TOTAL } from '../data/readalong'
 import {
   DECK_COUNT, DECK_SECTIONS, DECK_BOOKS, VIDEO_COUNT, EPISODE_COUNT, SERIES_COUNT,
   LISTEN_SECTIONS, SERIES_BY_BOOK
@@ -31,12 +31,13 @@ const seriesList = BOOKS
   .map((b) => SERIES_BY_BOOK.find((s) => s.book === b.key))
   .filter((s): s is (typeof SERIES_BY_BOOK)[number] => !!s)
 const deckBooks = DECK_BOOKS.map((k) => `《${shortBookName(k)}》`).join('、')
-// 卡片去向：站内课件、互动 PPT 优先；只有视频或朗读合集才去 B 站
+// 卡片主操作优先级：精讲视频 → 站内课件 / 互动 PPT → 合集。
+// 同一节既有精讲又有 PPT 时主操作去精讲，PPT 留作次级入口，两者在卡片上分开标注。
 const innerCourse = (c: CourseItem) => c.deck || c.courseware
-const cardHref = (c: CourseItem) => innerCourse(c) ? withBase(innerCourse(c)!) : (c.video?.url || c.series?.url)!
-const external = (c: CourseItem) => !innerCourse(c) && !!(c.video || c.series)
+const primaryHref = (c: CourseItem) => (c.video?.url || (innerCourse(c) ? withBase(innerCourse(c)!) : c.series?.url))!
+const primaryExternal = (c: CourseItem) => !!c.video || (!innerCourse(c) && !!c.series)
 const cardLabel = (c: CourseItem) =>
-  c.deck ? `打开互动 PPT：${c.title}` : c.courseware ? `打开互动课件：${c.title}` : c.video ? `在 B 站播放讲解：${c.title}` : `在 B 站听：${c.title}`
+  c.video ? `在 B 站播放精讲：${c.title}` : c.deck ? `打开互动 PPT：${c.title}` : c.courseware ? `打开互动课件：${c.title}` : `在 B 站听：${c.title}`
 const listenOf = (c: CourseItem) => (c.series ? null : readAlongAt(c.book, c.section))
 function openFollow(e: MouseEvent) {
   window.dispatchEvent(new CustomEvent('hd:follow', { detail: e.currentTarget }))
@@ -121,12 +122,12 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           <a
             class="home__card-cover hd-grid-bp"
             :style="{ backgroundColor: bookOf(c.book).color }"
-            :href="cardHref(c)"
-            :target="external(c) ? '_blank' : undefined"
-            :rel="external(c) ? 'noopener' : undefined"
+            :href="primaryHref(c)"
+            :target="primaryExternal(c) ? '_blank' : undefined"
+            :rel="primaryExternal(c) ? 'noopener' : undefined"
             :aria-label="cardLabel(c)"
           >
-            <span class="home__card-kicker" :style="{ color: bookOf(c.book).inkSoft }">{{ bookOf(c.book).shortName }} · {{ c.series ? `全文朗读 ${c.series.count} 集` : cnNo(c.section) }}</span>
+            <span class="home__card-kicker" :style="{ color: bookOf(c.book).inkSoft }">{{ bookOf(c.book).shortName }} · {{ c.series ? `全文朗读 ${c.series.count} 集` : cnNo(c.section) }}<template v-if="c.video"> · 精讲视频</template></span>
             <span class="home__card-title">{{ c.title }}</span>
             <span class="home__play" :style="{ color: bookOf(c.book).color }">
               <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
@@ -145,10 +146,11 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
               <span v-else class="hd-wip">音 · 施工中</span>
               <span class="home__card-id">{{ c.video?.bvid || c.series?.bvid || c.date }}</span>
             </div>
-            <a v-if="c.deck" class="hd-chip-bili home__chip-course" :href="cardHref(c)">▶ 试学这节互动 PPT</a>
-            <a v-else-if="c.courseware" class="hd-chip-bili home__chip-course" :href="cardHref(c)">▶ 试学这节课件</a>
-            <a v-else-if="c.video" class="hd-chip-bili" :href="c.video.url" target="_blank" rel="noopener">▶ 去 B 站看</a>
+            <a v-if="c.video" class="hd-chip-bili" :href="c.video.url" target="_blank" rel="noopener">▶ 去 B 站看精讲</a>
+            <a v-else-if="c.deck" class="hd-chip-bili home__chip-course" :href="withBase(c.deck)">▶ 试学这节互动 PPT</a>
+            <a v-else-if="c.courseware" class="hd-chip-bili home__chip-course" :href="withBase(c.courseware)">▶ 试学这节课件</a>
             <a v-else-if="c.series" class="hd-chip-bili" :href="c.series.url" target="_blank" rel="noopener">▶ 去 B 站听</a>
+            <a v-if="c.video && innerCourse(c)" class="home__card-alt" :href="withBase(innerCourse(c)!)">{{ c.deck ? '或翻这节互动 PPT' : '或看这节课件' }} →</a>
           </div>
         </article>
       </div>
@@ -168,7 +170,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           >
             <span class="home__series-dot" :style="{ background: bookOf(s.book).color }"></span>
             <b>{{ shortBookName(s.book) }}</b>
-            <span class="home__series-num">{{ s.episodes }} 集 · {{ s.sections }} 节</span>
+            <span class="home__series-num">{{ s.episodes }} 集 · {{ s.sections }} 节<template v-if="s.book === 'anli'"> · 第四章案例 {{ CASE_ONLINE }}/{{ CASE_TOTAL }}</template></span>
             <span class="home__series-go">去 B 站听 ↗</span>
           </a>
         </div>
@@ -314,6 +316,8 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__card-tags a.hd-badge { text-decoration: none; }
 .home__card-id { margin-left: auto; font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
 .home__card-body > .hd-chip-bili { align-self: flex-start; margin-top: auto; }
+.home__card-alt { align-self: flex-start; font-size: 13px; text-decoration: none; color: var(--hd-ink-3) !important; }
+.home__card-alt:hover { text-decoration: underline; }
 .home__chip-course { background: #E6EEF6 !important; color: var(--hd-accent) !important; }
 
 /* 合集入口：六册朗读合集，整册一条 */

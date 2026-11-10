@@ -21,12 +21,17 @@ export const LISTEN_SECTIONS = new Set(
   READ_ALONG.flatMap((r) => Object.keys(r.sections).map((no) => `${r.book}-${no}`))
 ).size
 
+// 每册的朗读分集数：与全站同一口径，按「BV 号 + 分集号」去重，
+// 同一集被关联到本节多处时只算一集，不与全站合计打架。
+const seriesEpisodes = (r: (typeof READ_ALONG)[number]) =>
+  new Set(Object.values(r.sections).flatMap((s) => s.parts.map((p) => `${r.bvid}-${p.p}`))).size
+
 // 每册的朗读分集数，首页「合集入口」与内部核对共用
 export const SERIES_BY_BOOK = READ_ALONG.map((r) => ({
   book: r.book,
   bvid: r.bvid,
   url: `https://www.bilibili.com/video/${r.bvid}/`,
-  episodes: Object.values(r.sections).reduce((n, s) => n + s.parts.length, 0),
+  episodes: seriesEpisodes(r),
   sections: Object.keys(r.sections).length,
   date: r.date
 }))
