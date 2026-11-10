@@ -2,9 +2,17 @@
 // 这里为它们补一份搜索用摘要，标题锚点与页面元素 id 对应，点结果能落到对应位置。
 import { BOOKS } from './theme/data/books'
 import { COURSES } from './theme/data/courses'
+import { stages } from './theme/data/engineeringStages'
+import { roleCards } from './theme/data/engineeringRoles'
 
 const bookNames = BOOKS.map((b) => `《${b.fullName}》`).join('、')
 const courseLines = COURSES.map((c) => `- ${c.title}：${c.summary}`).join('\n')
+const stageLines = stages
+  .map((stage: any, index: number) => `- ${String(index + 1).padStart(2, '0')} ${stage.name}：${stage.intro}`)
+  .join('\n')
+const roleLines = Object.values(roleCards as any)
+  .map((card: any) => `- ${card.name}：${card.intro}`)
+  .join('\n')
 
 export const SEARCH_PAGES: Record<string, string> = {
   'index.md': `
@@ -49,5 +57,22 @@ hackdion 是一个努力学习 AI 的普通人，把学习中用到的方法做�
 ## 联系与纠错 {#联系与纠错}
 
 发现内容有误，可附上页面链接、原文位置和修改建议发邮件联系；也可在哔哩哔哩、小红书、YouTube 或 GitHub 查看更新。
+`,
+  'engineering-map/index.md': `
+# 工程地图 {#map-title}
+
+从策划立项到运维的九阶段工程路线，按阶段看关键事项与文件交接，按单位查岗位职责。默认显示阶段与交接，单位与岗位在 #roles。
+
+## 阶段与交接 {#handoff}
+
+${stageLines}
+
+## 典型交接示例 {#handover-examples}
+
+勘察从钻孔到基础设计；设计按建筑、结构、给排水、暖通、电气分组；电梯串起井道预留、供电与监督检验；混凝土串起出厂、见证取样与检测；消防区分技术服务、竣工查验与行政验收。
+
+## 单位与岗位 {#roles}
+
+${roleLines}
 `
 }

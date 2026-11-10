@@ -195,10 +195,10 @@ export default defineConfig({
   themeConfig: {
     siteTitle: '工程学习手记',
     nav: [
-      { text: '首页', link: '/' },
       { text: '教材书架', link: '/textbook/' },
       { text: '试卷', link: '/exams/' },
       { text: '课程', link: '/courses/' },
+      { text: '工程地图', link: '/engineering-map/' },
       { text: '监理用表', link: '/forms/' },
       { text: '法规文本', link: '/law/' }
     ],
