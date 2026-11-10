@@ -7,9 +7,16 @@ import { inBrowser, withBase } from 'vitepress'
 import { BOOKS } from '../data/books'
 import { SECTION_COURSES as COURSES, BILIBILI_SPACE, type CourseItem } from '../data/courses'
 import { readAlongAt } from '../data/readalong'
+import {
+  DECK_COUNT, DECK_SECTIONS, VIDEO_COUNT, EPISODE_COUNT, SERIES_COUNT,
+  LISTEN_SECTIONS, SECTION_TOTAL, SERIES_BY_BOOK
+} from '../data/courseStats'
 import { data as textbook } from '../data/textbook.data'
 
 type Tab = 'video' | 'courseware' | 'listen'
+
+// 本册朗读分集数，与首页「合集入口」同源
+const seriesEpisodes = (key: string) => SERIES_BY_BOOK.find((s) => s.book === key)?.episodes ?? 0
 
 // 只有全文朗读的节：临时拼成一条课程，标题取教材节名
 function listenItem(key: string, no: string): CourseItem | null {
@@ -156,6 +163,11 @@ const visibleChapters = (key: string) => {
       <div class="cc__head">
         <h1 id="课程中心">课程中心</h1>
         <p>每节最多四种学法：读原文、听全文朗读、做互动课件、看讲解视频。先上线的先放出来，没做好的标「制作中」。</p>
+        <div class="cc__stats" aria-label="已上线内容统计">
+          <span><b>{{ DECK_COUNT }}</b> 份互动课件 · {{ DECK_SECTIONS }} 节</span>
+          <span><b>{{ VIDEO_COUNT }}</b> 条精讲视频</span>
+          <span><b>{{ EPISODE_COUNT }}</b> 集全文朗读 · {{ SERIES_COUNT }} 册合集 · 覆盖 {{ LISTEN_SECTIONS }}/{{ SECTION_TOTAL }} 节</span>
+        </div>
       </div>
 
       <section id="课程视频" ref="playerEl" class="cc__player" aria-label="正在播放">
@@ -269,7 +281,7 @@ const visibleChapters = (key: string) => {
           <span class="cc__spine hd-grid-bp" :style="{ backgroundColor: b.color }"></span>
           <div class="cc__book-name">
             <b>{{ b.fullName.replace(/（.*?）/, '') }}</b>
-            <span>{{ b.edition.split(' · ')[0] }} · {{ textbook[b.key].chapters.length }} 章 · 已上线 {{ textbook[b.key].sectionCount }} 节</span>
+            <span>{{ b.edition.split(' · ')[0] }} · {{ textbook[b.key].chapters.length }} 章 · 已上线 {{ textbook[b.key].sectionCount }} 节 · 朗读 {{ seriesEpisodes(b.key) }} 集</span>
           </div>
           <a class="cc__book-link" :href="withBase(b.link)">读教材原书结构 →</a>
         </div>
@@ -352,6 +364,12 @@ const visibleChapters = (key: string) => {
 .cc__head { display: flex; flex-direction: column; gap: 8px; }
 .cc__head h1 { margin: 0; font-family: var(--hd-font-serif); font-weight: 900; font-size: 40px; line-height: 1.25; }
 .cc__head p { margin: 0; color: var(--hd-ink-3); font-size: 16px; line-height: 1.7; }
+.cc__stats {
+  display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: baseline;
+  margin-top: 2px; padding: 10px 14px; border-radius: 8px; background: var(--hd-paper-2);
+  font-size: 13px; color: var(--hd-ink-3);
+}
+.cc__stats b { font-family: var(--hd-font-mono); font-size: 16px; color: var(--hd-ink); }
 
 .cc__player {
   background: #fff; border: 1px solid var(--hd-line); border-radius: 12px; overflow: hidden;

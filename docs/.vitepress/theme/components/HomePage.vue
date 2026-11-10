@@ -6,6 +6,10 @@ import BookShelf from './BookShelf.vue'
 import { BOOKS } from '../data/books'
 import { COURSES, type CourseItem } from '../data/courses'
 import { readAlongAt, readAlongUrl } from '../data/readalong'
+import {
+  DECK_COUNT, DECK_SECTIONS, DECK_BOOKS, VIDEO_COUNT, EPISODE_COUNT, SERIES_COUNT,
+  LISTEN_SECTIONS, SECTION_TOTAL, SERIES_BY_BOOK
+} from '../data/courseStats'
 import { AUTHOR, PLATFORMS } from '../data/author'
 import { data as textbook } from '../data/textbook.data'
 
@@ -20,12 +24,19 @@ const cnNo = (no: string) => {
   const [c, s] = no.split('.').map(Number)
   return `第${d[c]}章第${d[s]}节`
 }
+const shortBookName = (key: string) => bookOf(key).fullName.replace(/（.*?）/, '')
 const latest = [...COURSES].sort((a, b) => b.date.localeCompare(a.date))
-// 卡片去向：讲解视频、朗读合集去 B 站；课件、互动 PPT 留在站内
-const cardHref = (c: CourseItem) => c.video?.url || c.series?.url || withBase((c.deck || c.courseware)!)
-const external = (c: CourseItem) => !!(c.video || c.series)
+// 合集入口按书架顺序排，缺册的跳过
+const seriesList = BOOKS
+  .map((b) => SERIES_BY_BOOK.find((s) => s.book === b.key))
+  .filter((s): s is (typeof SERIES_BY_BOOK)[number] => !!s)
+const deckBooks = DECK_BOOKS.map((k) => `《${shortBookName(k)}》`).join('、')
+// 卡片去向：站内课件、互动 PPT 优先；只有视频或朗读合集才去 B 站
+const innerCourse = (c: CourseItem) => c.deck || c.courseware
+const cardHref = (c: CourseItem) => innerCourse(c) ? withBase(innerCourse(c)!) : (c.video?.url || c.series?.url)!
+const external = (c: CourseItem) => !innerCourse(c) && !!(c.video || c.series)
 const cardLabel = (c: CourseItem) =>
-  c.video ? `在 B 站播放讲解：${c.title}` : c.series ? `在 B 站听：${c.title}` : c.deck ? `打开互动 PPT：${c.title}` : `打开互动课件：${c.title}`
+  c.deck ? `打开互动 PPT：${c.title}` : c.courseware ? `打开互动课件：${c.title}` : c.video ? `在 B 站播放讲解：${c.title}` : `在 B 站听：${c.title}`
 const listenOf = (c: CourseItem) => (c.series ? null : readAlongAt(c.book, c.section))
 function openFollow(e: MouseEvent) {
   window.dispatchEvent(new CustomEvent('hd:follow', { detail: e.currentTarget }))
@@ -88,6 +99,12 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           </div>
           <a class="home__more" :href="withBase('/textbook/')">完整教材目录 →</a>
         </div>
+        <div class="home__stats" aria-label="已上线内容统计">
+          <a class="home__stat" :href="withBase('/courses/')"><b>{{ DECK_COUNT }}</b><span>份互动课件</span></a>
+          <a class="home__stat" :href="withBase('/courses/')"><b>{{ VIDEO_COUNT }}</b><span>条精讲视频</span></a>
+          <a class="home__stat" :href="withBase('/courses/')"><b>{{ EPISODE_COUNT }}</b><span>集全文朗读 · {{ SERIES_COUNT }} 个合集</span></a>
+          <p class="home__stats-note">全文朗读覆盖 {{ LISTEN_SECTIONS }}/{{ SECTION_TOTAL }} 节；互动课件集中在{{ deckBooks }}{{ DECK_SECTIONS }} 节。</p>
+        </div>
       </aside>
     </section>
 
@@ -128,11 +145,33 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
               <span v-else class="hd-wip">音 · 施工中</span>
               <span class="home__card-id">{{ c.video?.bvid || c.series?.bvid || c.date }}</span>
             </div>
-            <a v-if="c.video" class="hd-chip-bili" :href="c.video.url" target="_blank" rel="noopener">▶ 去 B 站看</a>
+            <a v-if="c.deck" class="hd-chip-bili home__chip-course" :href="cardHref(c)">▶ 试学这节互动 PPT</a>
+            <a v-else-if="c.courseware" class="hd-chip-bili home__chip-course" :href="cardHref(c)">▶ 试学这节课件</a>
+            <a v-else-if="c.video" class="hd-chip-bili" :href="c.video.url" target="_blank" rel="noopener">▶ 去 B 站看</a>
             <a v-else-if="c.series" class="hd-chip-bili" :href="c.series.url" target="_blank" rel="noopener">▶ 去 B 站听</a>
-            <a v-else class="hd-chip-bili home__chip-course" :href="cardHref(c)">{{ c.deck ? '▶ 试学这节互动 PPT' : '▶ 试学这节课件' }}</a>
           </div>
         </article>
+      </div>
+      <div class="home__series">
+        <div class="home__series-head">
+          <b>合集入口 · 六册教材全文朗读</b>
+          <span>整册按节分集，点开按册听；每节页面也能直接跳到对应一集。</span>
+        </div>
+        <div class="home__series-list">
+          <a
+            v-for="s in seriesList"
+            :key="s.bvid"
+            class="home__series-item"
+            :href="s.url"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="home__series-dot" :style="{ background: bookOf(s.book).color }"></span>
+            <b>{{ shortBookName(s.book) }}</b>
+            <span class="home__series-num">{{ s.episodes }} 集 · {{ s.sections }} 节</span>
+            <span class="home__series-go">去 B 站听 ↗</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -152,17 +191,17 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
         <span class="home__way-icon">文</span><b>文章精讲</b>
         <p>按原书章节整理的正文、表格与公式，适合查阅。</p>
       </a>
-      <div class="home__way">
-        <span class="home__way-icon">音</span><b>独立音频 <span class="hd-wip">筹备中</span></b>
-        <p>独立音频尚未上线；互动课件自带旁白，不计作单独音频。</p>
-      </div>
+      <a class="home__way" :href="withBase('/courses/')">
+        <span class="home__way-icon">音</span><b>全文朗读</b>
+        <p>六册逐节朗读，共 {{ EPISODE_COUNT }} 集；一节一集，长节分集，适合通勤时听。</p>
+      </a>
       <a class="home__way" :href="withBase('/courses/ppt-gl-2-2')">
         <span class="home__way-icon">课</span><b>互动课件</b>
-        <p>翻页讲解加随堂练习，先从《建设工程监理规范》试一节。</p>
+        <p>{{ DECK_COUNT }} 份翻页讲解加随堂练习，先从《建设工程监理规范》试一节。</p>
       </a>
       <a class="home__way" :href="withBase('/courses/')">
-        <span class="home__way-icon">播</span><b>课程视频</b>
-        <p>完整录播，首发在 B 站，网站同步嵌入。</p>
+        <span class="home__way-icon">播</span><b>精讲视频</b>
+        <p>{{ VIDEO_COUNT }} 条精讲视频，首发在 B 站，网站同步嵌入。</p>
       </a>
     </section>
 
@@ -241,6 +280,12 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 }
 .home__num { font-family: var(--hd-font-mono); color: var(--hd-ink-3); text-align: right; font-size: 13px; }
 .home__more { font-size: 14px; padding-top: 4px; align-self: flex-start; }
+/* 已上线统计：与课程中心共用 data/courseStats.ts 的数字 */
+.home__stats { flex: 1 0 100%; border-top: 1px solid var(--hd-line); padding: 14px 24px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 28px; box-sizing: border-box; }
+.home__stat { display: inline-flex; align-items: baseline; gap: 6px; font-size: 13px; color: var(--hd-ink-3) !important; text-decoration: none; }
+.home__stat b { font-family: var(--hd-font-mono); font-size: 20px; color: var(--hd-ink); }
+.home__stat:hover span { text-decoration: underline; }
+.home__stats-note { flex: 1 1 100%; margin: 0; font-size: 12px; color: var(--hd-ink-3); line-height: 1.7; }
 
 .home__section { padding-top: 64px; padding-bottom: 24px; }
 .home__section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 24px; }
@@ -270,6 +315,22 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__card-id { margin-left: auto; font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
 .home__card-body > .hd-chip-bili { align-self: flex-start; margin-top: auto; }
 .home__chip-course { background: #E6EEF6 !important; color: var(--hd-accent) !important; }
+
+/* 合集入口：六册朗读合集，整册一条 */
+.home__series { margin-top: 24px; background: #fff; border: 1px solid var(--hd-line); border-radius: 12px; padding: 18px 22px 12px; display: flex; flex-direction: column; gap: 10px; }
+.home__series-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.home__series-head b { font-size: 15px; }
+.home__series-head span { font-size: 13px; color: var(--hd-ink-3); }
+.home__series-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 28px; }
+.home__series-item {
+  display: grid; grid-template-columns: 8px 1fr auto auto; align-items: center; gap: 4px 10px; padding: 9px 0;
+  border-top: 1px dashed var(--hd-line); color: var(--hd-ink) !important; text-decoration: none; font-size: 14px;
+}
+.home__series-item b { font-weight: 600; }
+.home__series-dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.home__series-num { font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
+.home__series-go { font-size: 12px; color: var(--hd-accent); }
+.home__series-item:hover b { text-decoration: underline; }
 
 .home__ways { padding-top: 48px; padding-bottom: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .home__way {
@@ -309,6 +370,15 @@ a.home__way:hover { border-color: var(--hd-accent); }
   .home__bar { grid-template-columns: 80px minmax(0, 1fr) 48px; }
   .home__cards { grid-template-columns: 1fr; }
   .home__card-title { font-size: 24px; }
+  .home__stats { padding: 12px 16px 14px; gap: 6px 20px; }
+  .home__stat b { font-size: 18px; }
+  .home__series { padding: 16px 16px 10px; }
+  .home__series-list { grid-template-columns: 1fr; }
+  /* 手机端：册名独占第一行，集数与入口排第二行，避免长册名把数字挤到右边 */
+  .home__series-item { grid-template-columns: 8px 1fr auto; }
+  .home__series-item b { grid-column: 2 / 4; }
+  .home__series-num { grid-column: 2; }
+  .home__series-go { grid-column: 3; justify-self: end; }
   .home__follow-btns { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {

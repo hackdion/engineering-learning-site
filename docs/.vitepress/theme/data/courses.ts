@@ -37,11 +37,13 @@ export const COURSES: CourseItem[] = [
   {
     id: 'ppt-gl-2-2', book: 'gailun', section: '2.2', title: '建设工程监理规范',
     date: '2026-11-04', deck: '/courses/ppt-gl-2-2',
+    video: { bvid: 'BV1Nc4G6LEdq', url: 'https://www.bilibili.com/video/BV1Nc4G6LEdq/' },
     summary: '互动 PPT：GB/T 50319—2013 的 9 章 3 附录骨架、四类人员资格、监理规划与细则、三控与安全管理、文件归档和附录表，配 8 道自测题。'
   },
   {
     id: 'ppt-gl-3-2', book: 'gailun', section: '3.2', title: '监理工程师',
     date: '2026-11-04', deck: '/courses/ppt-gl-3-2',
+    video: { bvid: 'BV1Uk4z6cE9t', url: 'https://www.bilibili.com/video/BV1Uk4z6cE9t/' },
     summary: '互动 PPT：从考试四科、成绩滚动、报考条件，到注册、执业禁止行为和三类法律责任，配时间线排序和 8 道自测题。'
   },
   {
@@ -200,6 +202,30 @@ export const COURSES: CourseItem[] = [
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
     summary: '整册 10 章 28 节逐节朗读，长节拆成多集，共 37 集；各节页面可直接跳到对应一集。'
+  },
+  {
+    id: 'ht-series', book: 'hetong', section: '1.1', title: '建设工程合同管理 · 教材全文朗读',
+    date: '2026-11-04',
+    series: { bvid: 'BV1wZx96WEuj', url: 'https://www.bilibili.com/video/BV1wZx96WEuj/', count: 26, hours: 12.6 },
+    summary: '整册 6 章 26 节逐节朗读，一节一集；各节页面可直接跳到对应一集。'
+  },
+  {
+    id: 'tz-series', book: 'touzi', section: '1.1', title: '建设工程投资控制 · 教材全文朗读',
+    date: '2026-11-04',
+    series: { bvid: 'BV1g6xd6CE5L', url: 'https://www.bilibili.com/video/BV1g6xd6CE5L/', count: 39, hours: 14.9 },
+    summary: '整册 9 章 39 节逐节朗读，一节一集；各节页面可直接跳到对应一集。'
+  },
+  {
+    id: 'al-series', book: 'anli', section: '1.1', title: '建设工程监理案例分析 · 教材全文朗读',
+    date: '2026-11-04',
+    series: { bvid: 'BV1TrxQ64E8m', url: 'https://www.bilibili.com/video/BV1TrxQ64E8m/', count: 90, hours: 11.6 },
+    summary: '前三章 25 节逐节朗读，第四章收录 72 个案例中的 65 个，共 90 集；各节页面可直接跳到对应一集。'
+  },
+  {
+    id: 'zl-series', book: 'zhiliang', section: '1.1', title: '建设工程质量控制与安全生产管理 · 教材全文朗读',
+    date: '2026-11-05',
+    series: { bvid: 'BV1z6xR69Eg9', url: 'https://www.bilibili.com/video/BV1z6xR69Eg9/', count: 30, hours: 16.1 },
+    summary: '整册 8 章 30 节逐节朗读，一节一集；各节页面可直接跳到对应一集。'
   }
 ]
 

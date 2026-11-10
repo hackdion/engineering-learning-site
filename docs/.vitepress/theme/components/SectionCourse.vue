@@ -35,6 +35,12 @@ const courses = computed(() =>
 const listen = computed(() => (bookKey.value && sectionNo.value ? readAlongAt(bookKey.value, sectionNo.value) : null))
 const minutes = (sec: number) => Math.max(1, Math.round(sec / 60))
 const centerLink = (book: string, section: string) => withBase(`/courses/?book=${book}&section=${section}`)
+// 案例分析第四章按案例分集，直接用「案例 1-1」当链接文字，比集号好认
+const isCase = (title: string) => /^案例 /.test(title)
+const partLabel = (title: string, p: number, multi: boolean) =>
+  isCase(title) ? title : multi ? `第 ${p} 集` : `B 站第 ${p} 集`
+const kindOf = (c: (typeof SECTION_COURSES)[number]) =>
+  c.deck ? '互动 PPT' : c.courseware ? '互动课件' : '讲解视频'
 </script>
 
 <template>
@@ -45,7 +51,7 @@ const centerLink = (book: string, section: string) => withBase(`/courses/?book=$
     </div>
     <ul class="section-course__list">
       <li v-for="c in courses" :key="c.id" class="section-course__item">
-        <span class="section-course__kind">{{ c.video ? '讲解视频' : c.deck ? '互动 PPT' : '互动课件' }}</span>
+        <span class="section-course__kind">{{ kindOf(c) }}</span>
         <span class="section-course__name">{{ c.title }}</span>
         <span class="section-course__actions">
           <a v-if="c.deck" class="section-course__go" :href="withBase(c.deck)">做互动 PPT →</a>
@@ -58,7 +64,12 @@ const centerLink = (book: string, section: string) => withBase(`/courses/?book=$
       </li>
       <li v-if="listen" class="section-course__item">
         <span class="section-course__kind">全文朗读</span>
-        <span class="section-course__name">{{ listen.parts.length > 1 ? `本节分 ${listen.parts.length} 集朗读` : '整节朗读' }} · 约 {{ minutes(listen.parts.reduce((a, p) => a + p.sec, 0)) }} 分钟</span>
+        <span class="section-course__name">
+          <template v-if="listen.parts.length > 1 && listen.parts.every((p) => isCase(p.title))">本节 {{ listen.parts.length }} 个案例分别朗读</template>
+          <template v-else-if="listen.parts.length > 1">本节分 {{ listen.parts.length }} 集朗读</template>
+          <template v-else>整节朗读</template>
+          · 约 {{ minutes(listen.parts.reduce((a, p) => a + p.sec, 0)) }} 分钟
+        </span>
         <span class="section-course__actions">
           <a
             v-for="p in listen.parts"
@@ -68,7 +79,7 @@ const centerLink = (book: string, section: string) => withBase(`/courses/?book=$
             target="_blank"
             rel="noopener"
             :title="p.title"
-          >{{ listen.parts.length > 1 ? `第 ${p.p} 集 ↗` : `B 站第 ${p.p} 集 ↗` }}</a>
+          >{{ partLabel(p.title, p.p, listen.parts.length > 1) }} ↗</a>
         </span>
       </li>
     </ul>
