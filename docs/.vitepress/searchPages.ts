@@ -3,16 +3,19 @@
 import { BOOKS } from './theme/data/books'
 import { COURSES } from './theme/data/courses'
 import { stages } from './theme/data/engineeringStages'
-import { roleCards } from './theme/data/engineeringRoles'
+import { roleCards, roleDirectory } from './theme/data/engineeringRoles'
 
 const bookNames = BOOKS.map((b) => `《${b.fullName}》`).join('、')
 const courseLines = COURSES.map((c) => `- ${c.title}：${c.summary}`).join('\n')
 const stageLines = stages
   .map((stage: any, index: number) => `- ${String(index + 1).padStart(2, '0')} ${stage.name}：${stage.intro}`)
   .join('\n')
-const roleLines = Object.values(roleCards as any)
-  .map((card: any) => `- ${card.name}：${card.intro}`)
+const unitLines = Object.values(roleDirectory as any)
+  .map((unit: any) => `- ${unit.name}：${unit.note}`)
   .join('\n')
+const roleSections = Object.entries(roleCards as any)
+  .map(([key, card]: [string, any]) => `### ${card.name} {#role-${key}}\n\n${card.intro}经手文件：${card.files}。`)
+  .join('\n\n')
 
 export const SEARCH_PAGES: Record<string, string> = {
   'index.md': `
@@ -73,6 +76,8 @@ ${stageLines}
 
 ## 单位与岗位 {#roles}
 
-${roleLines}
+${unitLines}
+
+${roleSections}
 `
 }

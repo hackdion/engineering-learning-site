@@ -18,6 +18,7 @@ const view = ref<'flow' | 'roles'>('flow')
 const stageIndex = ref(0)
 const stepIndex = ref(0)
 const projectType = ref<'all' | 'government' | 'enterprise'>('all')
+const filterNotice = ref('')
 const trace = ref<string | null>(null)
 const activeUnit = ref('owner')
 const activeJob = ref('owner')
@@ -49,7 +50,7 @@ const stageHits = (index: number) =>
     .filter((s: any) => projectType.value === 'all' || !s.applies || s.applies === projectType.value)
     .filter((s: any) => matchesRole(s, trace.value)).length
 const currentBasis = computed(() => {
-  const [label, url] = (stageSources as any)[(step.value as any).basis] || ['依据待核', '']
+  const [label, url] = (stageSources as any)[(step.value as any).basis] || ['以适用规定为准', '']
   return { label, url }
 })
 const relatedRoles = computed(() => [step.value.actor, ...((step.value as any).participants || [])].filter(Boolean))
@@ -57,6 +58,9 @@ const jobExamples = computed(() =>
   stages
     .map((s: any, index: number) => ({ stage: s, index, count: s.steps.filter((item: any) => matchesRole(item, activeJob.value)).length }))
     .filter((item) => item.count)
+)
+const exampleHits = computed(() =>
+  handoverExamples.filter((example) => example.chain.some((node: any) => node.role === activeJob.value))
 )
 
 function showView(next: 'flow' | 'roles', syncHash = true) {
@@ -67,8 +71,32 @@ function showView(next: 'flow' | 'roles', syncHash = true) {
   }
 }
 
+function setProjectType(key: string) {
+  const current = step.value as any
+  projectType.value = key as 'all' | 'government' | 'enterprise'
+  const list = stages[stageIndex.value].steps.filter(
+    (item: any) => key === 'all' || !item.applies || item.applies === key
+  )
+  const match = current ? list.findIndex((item: any) => item.action === current.action) : -1
+  if (match >= 0) {
+    stepIndex.value = match
+    filterNotice.value = ''
+  } else {
+    stepIndex.value = 0
+    filterNotice.value = current
+      ? `“${current.action}”不适用于“${(projectTypes as any)[key]}”，已切换到当前筛选下的第一项。`
+      : ''
+  }
+}
+
+function chooseStep(index: number) {
+  stepIndex.value = index
+  filterNotice.value = ''
+}
+
 function selectStage(index: number, keepStep = false) {
   stageIndex.value = index
+  filterNotice.value = ''
   if (!keepStep) {
     const found = stages[index].steps.findIndex((item: any) => matchesRole(item, trace.value))
     stepIndex.value = Math.max(0, found)
@@ -78,11 +106,17 @@ function selectStage(index: number, keepStep = false) {
 function selectUnit(unitKey: string, job?: string) {
   activeUnit.value = unitKey
   activeJob.value = job || (roleDirectory as any)[unitKey].jobs[0]
+  trace.value = null
 }
 
-function goRole(job: string) {
+function chooseJob(job: string) {
+  activeJob.value = job
+  trace.value = null
+}
+
+function goRole(job: string, syncHash = true) {
   selectUnit(roleUnits[job], job)
-  showView('roles')
+  showView('roles', syncHash)
 }
 
 function jumpToHandoff(job: string, index?: number) {
@@ -92,26 +126,78 @@ function jumpToHandoff(job: string, index?: number) {
   requestAnimationFrame(() => document.getElementById('handoff-title')?.focus())
 }
 
+function goExample(id: string) {
+  showView('flow')
+  requestAnimationFrame(() => setTimeout(() => scrollToId('example-' + id), 40))
+}
+
 function clearTrace() {
   trace.value = null
 }
 
-function syncHash() {
-  if (location.hash === '#roles' || location.hash === '#role-book') {
+function scrollToId(id: string) {
+  const element = document.getElementById(id)
+  if (!element) return
+  element.scrollIntoView({ block: 'start' })
+  if (element.hasAttribute('tabindex')) (element as HTMLElement).focus({ preventScroll: true })
+}
+
+function applyHash() {
+  if (typeof window === 'undefined') return
+  const hash = location.hash
+  if (!hash) return
+  if (hash === '#roles') {
     view.value = 'roles'
-    requestAnimationFrame(() => document.getElementById('roles-title')?.focus())
-  } else if (location.hash === '#handoff') {
-    view.value = 'flow'
+    requestAnimationFrame(() => setTimeout(() => scrollToId('roles-title'), 40))
+    return
   }
+  if (hash.startsWith('#role-')) {
+    const job = hash.slice(6)
+    if ((roleCards as any)[job]) {
+      activeUnit.value = roleUnits[job]
+      activeJob.value = job
+      view.value = 'roles'
+      requestAnimationFrame(() => setTimeout(() => scrollToId('role-title'), 40))
+    }
+    return
+  }
+  if (hash === '#handover-examples' || hash === '#examples-title' || hash.startsWith('#example-')) {
+    view.value = 'flow'
+    const id = hash === '#examples-title' ? 'handover-examples' : hash.slice(1)
+    requestAnimationFrame(() => setTimeout(() => scrollToId(id), 40))
+    return
+  }
+  if (hash === '#handoff' || hash === '#handoff-title' || hash === '#stage-title') {
+    view.value = 'flow'
+    requestAnimationFrame(() => setTimeout(() => scrollToId('handoff'), 40))
+    return
+  }
+  if (hash === '#map-title') view.value = 'flow'
+}
+
+function onDocumentClick(event: MouseEvent) {
+  const target = event.target as HTMLElement | null
+  const anchor = target?.closest?.('a')
+  if (!anchor) return
+  const href = anchor.getAttribute('href') || ''
+  if (!/#(roles|role-|handoff|handover-examples|examples-title|example-|stage-title|map-title)/.test(href)) return
+  setTimeout(applyHash, 60)
+  setTimeout(applyHash, 320)
 }
 
 onMounted(() => {
-  syncHash()
-  setTimeout(syncHash, 80)
-  window.addEventListener('hashchange', syncHash)
+  applyHash()
+  setTimeout(applyHash, 80)
+  window.addEventListener('hashchange', applyHash)
+  window.addEventListener('popstate', applyHash)
+  document.addEventListener('click', onDocumentClick)
 })
 
-onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
+onBeforeUnmount(() => {
+  window.removeEventListener('hashchange', applyHash)
+  window.removeEventListener('popstate', applyHash)
+  document.removeEventListener('click', onDocumentClick)
+})
 </script>
 
 <template>
@@ -136,10 +222,11 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
               :key="key"
               type="button"
               :aria-pressed="projectType === key"
-              @click="projectType = key; selectStage(stageIndex, true)"
+              @click="setProjectType(key)"
             >{{ label }}</button>
           </div>
         </div>
+        <p v-if="filterNotice" class="map__notice" role="status">{{ filterNotice }}</p>
 
         <nav class="phases" aria-label="选择工程阶段">
           <section v-for="(group, groupIndex) in stageGroups" :key="group" class="phase-group">
@@ -213,7 +300,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
                 class="step"
                 :class="{ 'is-match': matchesRole(item, trace) && trace }"
                 :aria-pressed="stepIndex === index"
-                @click="stepIndex = index"
+                @click="chooseStep(index)"
               >
                 <span class="step__no" aria-hidden="true">{{ number(index) }}</span>
                 <span class="step__copy">
@@ -233,7 +320,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
             <p class="detail__meta">所需资料 · {{ step.input }}</p>
             <p class="detail__meta">产出与文件 · {{ step.output }}</p>
             <a v-if="currentBasis.url" class="detail__basis" :href="link(currentBasis.url)">{{ currentBasis.label }} ↗</a>
-            <p v-else class="detail__pending">依据内部待核，页面暂不引用具体条款。</p>
+            <p v-else class="detail__pending">该事项依据按项目类型和属地规定核对，页面暂不引用具体条款。</p>
             <div v-if="relatedRoles.length" class="detail__roles" aria-label="相关职责卡">
               <button v-for="(job, index) in relatedRoles" :key="job" type="button" class="quiet" @click="goRole(job)">
                 {{ index ? roleCards[job].name : '职责卡 · ' + roleCards[job].name }}
@@ -252,7 +339,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
           <h2 id="examples-title">典型交接示例</h2>
           <p>把一条工作从谁发起、经过谁、交什么文件说清楚。示例按全国房建口径整理，具体分工以合同和属地要求为准。</p>
         </div>
-        <article v-for="example in handoverExamples" :key="example.id" class="example">
+        <article v-for="example in handoverExamples" :id="'example-' + example.id" :key="example.id" class="example" tabindex="-1">
           <header>
             <span class="example__no">{{ example.no }}</span>
             <h3>{{ example.title }}</h3>
@@ -260,7 +347,8 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
           </header>
           <ol class="example__chain">
             <li v-for="node in example.chain" :key="node.do">
-              <b>{{ node.actor }}</b>
+              <button v-if="node.role" type="button" class="example__role" @click="goRole(node.role, false)">{{ node.actor }}</button>
+              <b v-else>{{ node.actor }}</b>
               <span>{{ node.do }}</span>
               <em v-if="node.file">{{ node.file }}</em>
             </li>
@@ -305,7 +393,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
             :key="job"
             type="button"
             :aria-pressed="activeJob === job"
-            @click="activeJob = job"
+            @click="chooseJob(job)"
           >{{ roleCards[job].name }}</button>
         </div>
         <article class="role-card" aria-labelledby="role-title">
@@ -324,7 +412,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
           </div>
           <div class="role-card__examples" aria-label="交接示例">
             <p v-if="jobExamples.length">去工程阶段看这个岗位经手的交接：</p>
-            <p v-else>这张卡可独立查阅，当前路线暂无对应交接。</p>
+            <p v-else-if="!exampleHits.length">这张卡可独立查阅，当前路线暂无对应交接。</p>
             <button
               v-for="item in jobExamples"
               :key="item.stage.id"
@@ -332,6 +420,13 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
               class="quiet"
               @click="jumpToHandoff(activeJob, item.index)"
             >{{ item.stage.name }} · {{ item.count }} 步 →</button>
+            <button
+              v-for="item in exampleHits"
+              :key="item.id"
+              type="button"
+              class="quiet"
+              @click="goExample(item.id)"
+            >交接示例 {{ item.no }} · {{ item.title }} →</button>
           </div>
         </article>
       </div>
@@ -439,10 +534,12 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
 .roles { padding-top: 8px; }
 .roles__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 16px; margin-bottom: 15px; }
 .roles__head p { color: var(--hd-ink-3); }
-.units { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border: 1px solid var(--hd-line); border-radius: 8px; background: #fff; overflow: hidden; }
-.units button { min-height: 53px; padding: 6px 4px; border: 0; border-inline-end: 1px solid var(--hd-line); background: transparent; font: inherit; font-weight: 600; cursor: pointer; }
-.units button:last-child { border-inline-end: 0; }
+.map__notice { margin: 0 16px 12px; padding: 8px 10px; border-left: 3px solid var(--hd-accent); background: #fff; color: var(--hd-ink-2); font-size: 14px; }
+.units { display: flex; flex-wrap: wrap; gap: 6px; }
+.units button { flex: 1 1 96px; min-height: 44px; padding: 6px 8px; border: 1px solid var(--hd-line); border-radius: 6px; background: #fff; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
 .units button[aria-pressed='true'] { background: #e9edf0; color: var(--hd-accent); box-shadow: inset 0 -3px var(--hd-accent); }
+.role-card, .example { scroll-margin-top: 84px; }
+.example__role { display: inline; padding: 0; border: 0; background: transparent; color: var(--hd-accent); font: inherit; font-weight: 700; text-align: left; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .roles__note { margin-top: 14px; color: var(--hd-ink-3); }
 .models { margin-top: 12px; border: 1px solid var(--hd-line); border-radius: 8px; background: #fff; padding: 10px 14px; }
 .models summary { color: var(--hd-accent); font-weight: 700; cursor: pointer; }
@@ -484,9 +581,8 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', syncHash))
   .stage { padding: 12px; gap: 12px; }
   .facilities { margin: 0 12px 12px; }
   .facilities__list { grid-template-columns: 1fr; }
-  .units { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .units button:nth-child(3) { border-inline-end: 0; }
-  .units button:nth-child(-n + 3) { border-bottom: 1px solid var(--hd-line); }
+  .units { gap: 6px; }
+  .units button { flex: 1 1 30%; }
   .handoff__layout { gap: 12px; }
   .detail { margin-left: 17px; padding-left: 12px; }
   .role-card { padding: 14px; }

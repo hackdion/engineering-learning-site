@@ -6,7 +6,7 @@ export const stageSources = {
   survey: ['教材 · 工程勘察', '/textbook/quality/chapter-02/section-01'],
   gov: ['《政府投资条例》第九条', 'https://www.gov.cn/gongbao/content/2019/content_5392291.htm'],
   enterprise: ['《企业投资项目核准和备案管理条例》第三条、第十三条', 'https://www.gov.cn/zhengce/content/2016-12/14/content_5147959.htm'],
-  land: ['用地预审与规划选址（依据待核）', ''],
+  land: ['自然资函〔2024〕709号通知第一部分', 'https://gi.mnr.gov.cn/202410/t20241010_2870075.html'],
   planning: ['《城乡规划法》第四十五条', 'https://www.gov.cn/gongbao/content/content_823771.htm'],
   tender: ['《必须招标的工程项目规定》第五条', 'https://www.gov.cn/gongbao/content/2018/content_5296544.htm'],
   bidding: ['《招标投标法》', '/law/zhaobiao-toubiao-fa'],
@@ -15,9 +15,11 @@ export const stageSources = {
   safety: ['《建设工程安全生产管理条例》', '/law/anquan-tiaoli'],
   roles: ['教材 · 项目监理机构及人员职责', '/textbook/chapter-05/section-03'],
   forms: ['教材 · 工程监理基本表式', '/textbook/chapter-08/section-01'],
-  testing: ['《建设工程质量检测管理办法》第十六条至第二十二条', 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2024/art_17337_770018.html'],
-  dangerous: ['《危险性较大的分部分项工程安全管理规定》第十一、十二、二十一条', 'https://www.gov.cn/gongbao/content/2018/content_5294422.htm'],
-  fire: ['《建设工程消防设计审查验收管理暂行规定》（2023年第58号令修正）', 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2022/art_17337_763780.html'],
+  testing: ['《建设工程质量检测管理办法》第十六条至第二十一条', 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2024/art_17337_770018.html'],
+  dangerous: ['《危险性较大的分部分项工程安全管理规定》第十一、十五、二十一条', 'https://www.gov.cn/gongbao/content/2018/content_5294422.htm'],
+  elevator: ['《特种设备安全法》第二十三条、第二十五条', 'https://www.gov.cn/flfg/2013-06/30/content_2437160.htm'],
+  fire: ['《建设工程消防设计审查验收管理暂行规定》第十三、二十七、二十八、三十六、三十八条', 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2022/art_17337_763780.html'],
+  archive: ['《城市建设档案管理规定》第十八条、第十九条', 'https://www.mohurd.gov.cn/tsgb/gzk/art/2026/art_1247976268.html'],
   final: ['《房屋建筑和市政基础设施工程竣工验收规定》第五条', 'https://www.gov.cn/gongbao/content/2014/content_2629947.htm'],
   settlement: ['教材 · 竣工结算审核与支付', '/textbook/investment/chapter-01/section-02'],
   evaluation: ['《国家发展改革委重大项目后评价管理办法》', 'https://www.gov.cn/gongbao/2024/issue_11586/202409/content_6975088.html']
@@ -29,9 +31,9 @@ export const siteFacilities = [
   { name: '车行入口', tag: '图中 03', description: '供工程车辆进出，结合现场安排车辆检查、运输组织和人车分流。' },
   { name: '人员门禁', tag: '图中 04', description: '用于人员进出和实名考勤。图上以人脸识别终端示意。其他方式能达到同等要求时，不得把人脸识别作为唯一验证方式，国家另有规定的从其规定。' },
   { name: '保安室（门卫房）', tag: '图中 05', description: '值守、访客登记及出入口管理。示例设在围挡内侧、靠近出入口。' },
-  { name: '食堂', tag: '按需配置 · 图位待补', description: '集中供餐。设在符合安全和卫生要求的生活区，也可按项目条件采用场外供餐。' },
-  { name: '工人宿舍', tag: '按需配置 · 图位待补', description: '施工人员住宿。现场设宿舍时位于安全生活区，尚未竣工的建筑内禁止设置员工集体宿舍。' },
-  { name: '项目管理人员宿舍', tag: '按需配置 · 图位待补', description: '项目管理人员住宿。是否单独设置由项目安排，和工人宿舍均属于生活区功能。' }
+  { name: '食堂', tag: '按需配置 · 图示未列', description: '集中供餐。设在符合安全和卫生要求的生活区，也可按项目条件采用场外供餐。' },
+  { name: '工人宿舍', tag: '按需配置 · 图示未列', description: '施工人员住宿。现场设宿舍时位于安全生活区，尚未竣工的建筑内禁止设置员工集体宿舍。' },
+  { name: '项目管理人员宿舍', tag: '按需配置 · 图示未列', description: '项目管理人员住宿。是否单独设置由项目安排，和工人宿舍均属于生活区功能。' }
 ];
 
 export const stages = [
@@ -76,7 +78,7 @@ export const stages = [
         action: '核对用地预审与规划选址要求',
         input: '项目性质、拟选位置、用地现状和拟用地范围',
         output: '按适用规定取得用地预审与选址意见书等文件',
-        description: '根据供地方式、土地现状和审批路径判断需要办理的事项及申报时点。已经依法批准的建设用地与需要新增建设用地的情形分别核对。',
+        description: '根据供地方式、土地现状和审批路径判断需要办理的事项及申报时点。规划选址与用地预审按自然资函〔2024〕709号合并办理；已经依法批准的建设用地不再办理用地预审。纳入自然资发〔2026〕38号清单的项目，按该文规定出具规划许可意见，不再办理用地预审和选址手续。',
         basis: 'land'
       }
     ]
@@ -92,6 +94,7 @@ export const stages = [
       {
         actor: 'surveyLead',
         action: '按需要开展选址勘察',
+        participants: ['geotech', 'surveyor', 'driller', 'soilLab'],
         input: '备选场址、既有地质资料和勘察任务',
         output: '场址稳定性、适宜性评价',
         description: '比较拟选场址的工程地质条件。勘察深度按项目需要确定，后续还可能有初步勘察和详细勘察。',
@@ -166,19 +169,20 @@ export const stages = [
       {
         actor: 'surveyLead',
         action: '开展详细勘察',
+        participants: ['geotech', 'surveyor', 'driller', 'soilLab'],
         input: '建筑布置、拟建结构和勘察要求',
         output: '满足施工图设计需要的勘察报告',
-        description: '提供设计所需的岩土参数和建议，勘察成果应真实准确。',
+        description: '提供设计所需的岩土参数和建议，勘察成果应真实准确。钻探取样、现场测量和室内土工试验按勘察纲要分工完成。',
         basis: 'survey',
         kind: '教材'
       },
       {
         actor: 'designLead',
         action: '形成施工图设计文件',
-        participants: ['structural'],
+        participants: ['architect', 'structural', 'water', 'hvac', 'electrical', 'elv'],
         input: '详细勘察成果、设计要求和专业条件',
         output: '施工图、设计说明和相关计算资料',
-        description: '各专业依据勘察成果及适用标准协同设计，落实设计深度和相应签字责任。',
+        description: '建筑、结构、给排水、暖通、电气等专业依据勘察成果及适用标准协同设计，落实设计深度和相应签字责任。',
         basis: 'quality'
       },
       {
@@ -365,18 +369,36 @@ export const stages = [
         file: 'B.0.6',
         input: '合格证、检验报告、施工单位自检及报审资料',
         output: '材料设备审查与进场记录',
-        description: '核查报审资料和进场质量。依法需见证取样的，在规定的见证下取样、送检。',
+        description: '核查报审资料和进场质量。预拌混凝土的出厂合格证、配合比和发货单由搅拌站提供，进场验收由施工单位完成；依法需见证取样的，在规定见证下取样、送检。',
         basis: 'forms',
         kind: '教材与法规'
       },
       {
         actor: 'tester',
         action: '实施见证送检相关检测',
-        participants: ['inspector'],
+        participants: ['inspector', 'sampler', 'witness'],
         input: '符合规定的委托、样品、标识与见证记录',
         output: '检测原始记录及检测报告',
-        description: '检测机构按资质及委托开展检测并按规定出具报告。现场见证与实验检测由相应责任方分别完成。',
+        description: '检测机构按资质及委托开展检测并按规定出具报告。现场取样、见证与实验检测由相应责任方分别完成。',
         basis: 'testing'
+      },
+      {
+        actor: 'sampler',
+        action: '预拌混凝土进场取样与送检',
+        participants: ['concretePlant', 'witness', 'tester', 'quality'],
+        input: '预拌混凝土发货单、配合比、取样方案与见证安排',
+        output: '取样记录、试样标识、委托单和检测报告',
+        description: '搅拌站对出厂混凝土质量负责，施工单位负责进场验收并按规定现场取样，建设和监理见证人员监督取样，检测机构受委托试验并出具报告。四类角色不互相替代。',
+        basis: 'testing'
+      },
+      {
+        actor: 'elevatorInstaller',
+        action: '办理电梯安装告知与监督检验',
+        participants: ['specialInspector', 'chief'],
+        input: '电梯设备资料、井道与机房条件确认、安装方案',
+        output: '安装告知材料、安装自检记录、监督检验报告',
+        description: '安装单位在施工前书面告知，按安全技术规范安装并申请监督检验；未经监督检验合格不得交付使用。井道、门洞、机房或无机房条件、荷载和供电按项目设计及设备资料确认。',
+        basis: 'elevator'
       },
       {
         actor: 'engineer',
@@ -516,15 +538,16 @@ export const stages = [
       {
         actor: 'owner',
         action: '组织正式竣工验收',
-        participants: ['chief', 'designLead', 'surveyLead'],
+        participants: ['chief', 'designLead', 'surveyLead', 'fireService'],
         input: '竣工报告、各方质量合格文件、技术档案、试验报告和保修书等',
         output: '工程竣工验收报告',
-        description: '建设单位对符合条件的工程组织有关单位验收。对适用消防规定的工程，在竣工验收时按规定开展消防查验。',
+        description: '建设单位对符合条件的工程组织有关单位验收。对适用消防规定的工程，在竣工验收时按规定开展消防查验；需要委托检测的，检测报告和联调记录作为查验资料。',
         basis: 'final'
       },
       {
         actor: 'owner',
         action: '办理适用的消防验收或消防备案',
+        participants: ['fireAuthority'],
         input: '工程竣工验收报告、消防相关竣工图及适用申请材料',
         output: '消防验收意见或消防备案凭证',
         description: '特殊建设工程竣工验收后申请消防验收，未经验收或验收不合格禁止使用。其他按规定需消防设计的工程，竣工验收合格后按规定备案并接受抽查。',
@@ -565,8 +588,8 @@ export const stages = [
         participants: ['ownerRecords', 'records', 'chief'],
         input: '竣工图、技术档案、施工和监理管理资料',
         output: '建设项目档案、移交清单和接收记录',
-        description: '建设单位汇总各方文件，按档案管理规定移交。具体接收范围、载体及时间以适用要求为准。',
-        basis: 'quality'
+        description: '建设单位汇总各方文件，按城市建设档案管理规定整理、立卷并移交。具体接收范围、载体及时间以适用要求为准。',
+        basis: 'archive'
       },
       {
         actor: 'chief',
