@@ -6,7 +6,7 @@ import { computed } from 'vue'
 import { useData, useRoute, withBase } from 'vitepress'
 import { BOOKS } from '../data/books'
 import { SECTION_COURSES } from '../data/courses'
-import { readAlongAt, readAlongUrl } from '../data/readalong'
+import { CASE_MISSING, CASE_ONLINE, CASE_TOTAL, readAlongAt, readAlongUrl } from '../data/readalong'
 
 const { site } = useData()
 const route = useRoute()
@@ -41,6 +41,27 @@ const partLabel = (title: string, p: number, multi: boolean) =>
   isCase(title) ? title : multi ? `第 ${p} 集` : `B 站第 ${p} 集`
 const kindOf = (c: (typeof SECTION_COURSES)[number]) =>
   c.deck ? '互动 PPT' : c.courseware ? '互动课件' : '讲解视频'
+// 案例分析第四章：已上线案例跳 B 站，缺集跳回本节教材原文，不留空
+const caseMode = computed(() =>
+  !!listen.value && listen.value.parts.length > 0 && listen.value.parts.every((p) => isCase(p.title))
+)
+const missingCases = computed(() =>
+  caseMode.value && sectionNo.value ? CASE_MISSING.filter((m) => m.section === sectionNo.value) : []
+)
+const caseLinks = computed(() => {
+  if (!listen.value || !caseMode.value) return []
+  const online = listen.value.parts.map((p) => ({
+    label: p.title,
+    href: readAlongUrl(listen.value!.bvid, p.p),
+    missing: false
+  }))
+  const missing = missingCases.value.map((m) => ({
+    label: m.title,
+    href: `${withBase(relPath.value)}#${encodeURIComponent(m.title.replace(/^案例 /, '案例-'))}`,
+    missing: true
+  }))
+  return [...online, ...missing].sort((a, b) => a.label.localeCompare(b.label, 'zh-Hans-CN', { numeric: true }))
+})
 </script>
 
 <template>
@@ -65,21 +86,34 @@ const kindOf = (c: (typeof SECTION_COURSES)[number]) =>
       <li v-if="listen" class="section-course__item">
         <span class="section-course__kind">全文朗读</span>
         <span class="section-course__name">
-          <template v-if="listen.parts.length > 1 && listen.parts.every((p) => isCase(p.title))">本节 {{ listen.parts.length }} 个案例分别朗读</template>
+          <template v-if="caseMode">第四章案例已上线 {{ CASE_ONLINE }}/{{ CASE_TOTAL }} · 本节 {{ listen.parts.length }}/{{ listen.parts.length + missingCases.length }} 个案例有声，缺的读原文</template>
           <template v-else-if="listen.parts.length > 1">本节分 {{ listen.parts.length }} 集朗读</template>
           <template v-else>整节朗读</template>
           · 约 {{ minutes(listen.parts.reduce((a, p) => a + p.sec, 0)) }} 分钟
         </span>
         <span class="section-course__actions">
-          <a
-            v-for="p in listen.parts"
-            :key="p.p"
-            class="section-course__ext"
-            :href="readAlongUrl(listen.bvid, p.p)"
-            target="_blank"
-            rel="noopener"
-            :title="p.title"
-          >{{ partLabel(p.title, p.p, listen.parts.length > 1) }} ↗</a>
+          <template v-if="caseMode">
+            <a
+              v-for="x in caseLinks"
+              :key="x.label"
+              :class="x.missing ? 'section-course__go' : 'section-course__ext'"
+              :href="x.href"
+              :target="x.missing ? undefined : '_blank'"
+              :rel="x.missing ? undefined : 'noopener'"
+              :title="x.missing ? x.label + '：读教材原文' : x.label"
+            >{{ x.label }}{{ x.missing ? ' · 读原文' : ' ↗' }}</a>
+          </template>
+          <template v-else>
+            <a
+              v-for="p in listen.parts"
+              :key="p.p"
+              class="section-course__ext"
+              :href="readAlongUrl(listen.bvid, p.p)"
+              target="_blank"
+              rel="noopener"
+              :title="p.title"
+            >{{ partLabel(p.title, p.p, listen.parts.length > 1) }} ↗</a>
+          </template>
         </span>
       </li>
     </ul>

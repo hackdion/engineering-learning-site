@@ -10,7 +10,7 @@ export interface CourseItem {
   book: string        // BOOKS.key
   section: string     // 章.节，如 '1.1'；整册合集填首节
   title: string
-  date: string        // 上线日期
+  date: string        // 上线日期；课件与精讲都有时取较晚者，供「最新发布」排序
   video?: { bvid: string; url: string }
   courseware?: string
   deck?: string
@@ -42,7 +42,8 @@ export const COURSES: CourseItem[] = [
   },
   {
     id: 'ppt-gl-3-2', book: 'gailun', section: '3.2', title: '监理工程师',
-    date: '2026-11-04', deck: '/courses/ppt-gl-3-2',
+    // 精讲 2026-11-06 21:56 发布，比互动 PPT 晚，按发布时间排进「最新发布」
+    date: '2026-11-06T21:56', deck: '/courses/ppt-gl-3-2',
     video: { bvid: 'BV1Uk4z6cE9t', url: 'https://www.bilibili.com/video/BV1Uk4z6cE9t/' },
     summary: '互动 PPT：从考试四科、成绩滚动、报考条件，到注册、执业禁止行为和三类法律责任，配时间线排序和 8 道自测题。'
   },

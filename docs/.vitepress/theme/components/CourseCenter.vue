@@ -6,10 +6,10 @@ import { computed, nextTick, onMounted, reactive, ref } from 'vue'
 import { inBrowser, withBase } from 'vitepress'
 import { BOOKS } from '../data/books'
 import { SECTION_COURSES as COURSES, BILIBILI_SPACE, type CourseItem } from '../data/courses'
-import { readAlongAt } from '../data/readalong'
+import { readAlongAt, CASE_ONLINE, CASE_TOTAL } from '../data/readalong'
 import {
   DECK_COUNT, DECK_SECTIONS, VIDEO_COUNT, EPISODE_COUNT, SERIES_COUNT,
-  LISTEN_SECTIONS, SECTION_TOTAL, SERIES_BY_BOOK
+  LISTEN_SECTIONS, SERIES_BY_BOOK
 } from '../data/courseStats'
 import { data as textbook } from '../data/textbook.data'
 
@@ -166,7 +166,7 @@ const visibleChapters = (key: string) => {
         <div class="cc__stats" aria-label="已上线内容统计">
           <span><b>{{ DECK_COUNT }}</b> 份互动课件 · {{ DECK_SECTIONS }} 节</span>
           <span><b>{{ VIDEO_COUNT }}</b> 条精讲视频</span>
-          <span><b>{{ EPISODE_COUNT }}</b> 集全文朗读 · {{ SERIES_COUNT }} 册合集 · 覆盖 {{ LISTEN_SECTIONS }}/{{ SECTION_TOTAL }} 节</span>
+          <span><b>{{ EPISODE_COUNT }}</b> 集全文朗读 · {{ SERIES_COUNT }} 册合集 · {{ LISTEN_SECTIONS }} 个教材小节有朗读入口</span>
         </div>
       </div>
 
@@ -281,7 +281,7 @@ const visibleChapters = (key: string) => {
           <span class="cc__spine hd-grid-bp" :style="{ backgroundColor: b.color }"></span>
           <div class="cc__book-name">
             <b>{{ b.fullName.replace(/（.*?）/, '') }}</b>
-            <span>{{ b.edition.split(' · ')[0] }} · {{ textbook[b.key].chapters.length }} 章 · 已上线 {{ textbook[b.key].sectionCount }} 节 · 朗读 {{ seriesEpisodes(b.key) }} 集</span>
+            <span>{{ b.edition.split(' · ')[0] }} · {{ textbook[b.key].chapters.length }} 章 · 已上线 {{ textbook[b.key].sectionCount }} 节 · 朗读 {{ seriesEpisodes(b.key) }} 集<template v-if="b.key === 'anli'"> · 第四章案例 {{ CASE_ONLINE }}/{{ CASE_TOTAL }}</template></span>
           </div>
           <a class="cc__book-link" :href="withBase(b.link)">读教材原书结构 →</a>
         </div>

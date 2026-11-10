@@ -8,7 +8,7 @@ import { COURSES, type CourseItem } from '../data/courses'
 import { readAlongAt, readAlongUrl } from '../data/readalong'
 import {
   DECK_COUNT, DECK_SECTIONS, DECK_BOOKS, VIDEO_COUNT, EPISODE_COUNT, SERIES_COUNT,
-  LISTEN_SECTIONS, SECTION_TOTAL, SERIES_BY_BOOK
+  LISTEN_SECTIONS, SERIES_BY_BOOK
 } from '../data/courseStats'
 import { AUTHOR, PLATFORMS } from '../data/author'
 import { data as textbook } from '../data/textbook.data'
@@ -103,7 +103,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           <a class="home__stat" :href="withBase('/courses/')"><b>{{ DECK_COUNT }}</b><span>份互动课件</span></a>
           <a class="home__stat" :href="withBase('/courses/')"><b>{{ VIDEO_COUNT }}</b><span>条精讲视频</span></a>
           <a class="home__stat" :href="withBase('/courses/')"><b>{{ EPISODE_COUNT }}</b><span>集全文朗读 · {{ SERIES_COUNT }} 个合集</span></a>
-          <p class="home__stats-note">全文朗读覆盖 {{ LISTEN_SECTIONS }}/{{ SECTION_TOTAL }} 节；互动课件集中在{{ deckBooks }}{{ DECK_SECTIONS }} 节。</p>
+          <p class="home__stats-note">{{ LISTEN_SECTIONS }} 个教材小节有朗读入口；互动课件集中在{{ deckBooks }}{{ DECK_SECTIONS }} 节。</p>
         </div>
       </aside>
     </section>
@@ -114,7 +114,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           <h2>最新发布</h2>
           <p>已经可以看、可以学的内容，先放在最前面。</p>
         </div>
-        <span class="home__meta">共 <b>{{ latest.length }}</b> 期 · 持续更新中 · <a :href="withBase('/courses/')">课程中心 →</a></span>
+        <span class="home__meta">按发布时间排序 · 持续更新中 · <a :href="withBase('/courses/')">课程中心 →</a></span>
       </div>
       <div class="home__cards">
         <article v-for="c in latest.slice(0, 3)" :key="c.id" class="home__card">

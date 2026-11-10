@@ -216,6 +216,25 @@ export const READ_ALONG: ReadAlong[] = [
   },
 ]
 
+// 案例分析第四章：教材 72 个案例，B 站已上线 65 个。缺集本轮只登记，页面上给教材原文入口。
+export interface MissingCase { section: string; title: string }
+export const CASE_MISSING: MissingCase[] = [
+  { section: '4.1', title: '案例 1-2' },
+  { section: '4.1', title: '案例 1-4' },
+  { section: '4.1', title: '案例 1-12' },
+  { section: '4.3', title: '案例 3-12' },
+  { section: '4.4', title: '案例 4-12' },
+  { section: '4.5', title: '案例 5-6' },
+  { section: '4.5', title: '案例 5-11' }
+]
+const caseBook = READ_ALONG.find((r) => r.book === 'anli')
+export const CASE_ONLINE = caseBook
+  ? Object.entries(caseBook.sections)
+      .filter(([no]) => no.startsWith('4.'))
+      .reduce((n, [, s]) => n + s.parts.filter((p) => p.title.startsWith('案例 ')).length, 0)
+  : 0
+export const CASE_TOTAL = CASE_ONLINE + CASE_MISSING.length
+
 export const readAlongUrl = (bvid: string, p: number) => `https://www.bilibili.com/video/${bvid}/?p=${p}`
 
 export function readAlongAt(book: string, section: string) {
