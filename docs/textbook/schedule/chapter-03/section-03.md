@@ -96,7 +96,51 @@ $$
 
 下面以图 3-19 所示双代号网络计划为例，说明按工作计算法计算时间参数的过程。其计算结果如图 3-20 所示。
 
-<FigureZoom caption="图 3-19 双代号网络计划" src="/images/schedule/chapter-03/fig-3-19.png" :width="732" :height="316" />
+<FigureZoom caption="图 3-19 双代号网络计划">
+<svg viewBox="0 0 732 316" role="img" aria-label="图 3-19 双代号网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M44,142.5 V33 H343" marker-end="url(#arrow-3-19)"></path>
+    <path d="M371,33 H685.5 V142.5" marker-end="url(#arrow-3-19)"></path>
+    <path d="M58.5,157 H229.5" marker-end="url(#arrow-3-19)"></path>
+    <path d="M258.5,157 H444" marker-end="url(#arrow-3-19)"></path>
+    <path d="M473,157 H673.5" marker-end="url(#arrow-3-19)"></path>
+    <path d="M44,171.5 V274 H230" marker-end="url(#arrow-3-19)"></path>
+    <path d="M258,274 H444" marker-end="url(#arrow-3-19)"></path>
+    <path d="M473,274 H685.5 V171.5" marker-end="url(#arrow-3-19)"></path>
+    <path d="M244,171.5 V260" stroke-dasharray="7 6.5" marker-end="url(#arrow-3-19)"></path>
+    <path d="M458.5,171.5 V260" stroke-dasharray="7 6.5" marker-end="url(#arrow-3-19)"></path>
+    <circle cx="44" cy="157" r="14.5"></circle>
+    <circle cx="357" cy="33" r="14"></circle>
+    <circle cx="244" cy="157" r="14.5"></circle>
+    <circle cx="244" cy="274" r="14"></circle>
+    <circle cx="458.5" cy="157" r="14.5"></circle>
+    <circle cx="458.5" cy="274" r="14.5"></circle>
+    <circle cx="688" cy="157" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="17" text-anchor="middle">
+    <text x="44" y="163">1</text>
+    <text x="357" y="39">2</text>
+    <text x="244" y="163">3</text>
+    <text x="244" y="280">4</text>
+    <text x="458.5" y="163">5</text>
+    <text x="458.5" y="280">6</text>
+    <text x="688" y="163">7</text>
+    <text x="186" y="53">6</text>
+    <text x="530" y="53">5</text>
+    <text x="134" y="178">4</text>
+    <text x="342" y="178">5</text>
+    <text x="564" y="178">3</text>
+    <text x="134.5" y="295">2</text>
+    <text x="337.5" y="295">6</text>
+    <text x="561" y="295">5</text>
+  </g>
+</svg>
+</FigureZoom>
 
 #### 1. 计算工作的最早开始时间和最早完成时间
 
@@ -185,7 +229,150 @@ $$
 
 计划工期应标注在网络计划终点节点的右上方，如图 3-20 所示。
 
-<FigureZoom caption="图 3-20 双代号网络计划（六时标注法）" src="/images/schedule/chapter-03/fig-3-20.png" :width="995" :height="409" />
+<FigureZoom caption="图 3-20 双代号网络计划（六时标注法）">
+<svg viewBox="0 0 995 409" role="img" aria-label="图 3-20 双代号网络计划（六时标注法）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-20" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M36,219.5 V85.5 H392.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M421.5,85.5 H796 V219.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M50.5,232 H244"></path>
+    <path d="M50.5,236 H244"></path>
+    <path d="M243,234 H255.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M284.5,234 H515" marker-end="url(#arrow-3-20)"></path>
+    <path d="M544,234 H781.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M36,248.5 V370 H255.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M284.5,368 H504"></path>
+    <path d="M284.5,372 H504"></path>
+    <path d="M503,370 H515" marker-end="url(#arrow-3-20)"></path>
+    <path d="M544,368 H792 V258"></path>
+    <path d="M544,372 H796 V258"></path>
+    <path d="M794,258 V248.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M268,248.5 V344"></path>
+    <path d="M272,248.5 V344"></path>
+    <path d="M270,344 V355.5" marker-end="url(#arrow-3-20)"></path>
+    <path d="M529.5,248.5 V355.5" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-20)"></path>
+    <circle cx="36" cy="234" r="14.5"></circle>
+    <circle cx="407" cy="85.5" r="14.5"></circle>
+    <circle cx="270" cy="234" r="14.5"></circle>
+    <circle cx="270" cy="370" r="14.5"></circle>
+    <circle cx="529.5" cy="234" r="14.5"></circle>
+    <circle cx="529.5" cy="370" r="14.5"></circle>
+    <circle cx="796" cy="234" r="14.5"></circle>
+    <path d="M158,42 H257"></path>
+    <path d="M179,16 V70"></path>
+    <path d="M225,16 V70"></path>
+    <path d="M550,45 H664"></path>
+    <path d="M585,19 V73"></path>
+    <path d="M632,19 V73"></path>
+    <path d="M86,196 H199"></path>
+    <path d="M121,170 V224"></path>
+    <path d="M167,170 V224"></path>
+    <path d="M330,196 H444"></path>
+    <path d="M365,170 V224"></path>
+    <path d="M412,170 V224"></path>
+    <path d="M588,197 H704"></path>
+    <path d="M625,171 V225"></path>
+    <path d="M671,171 V225"></path>
+    <path d="M82,332 H197"></path>
+    <path d="M117,306 V360"></path>
+    <path d="M164,306 V360"></path>
+    <path d="M327,333 H441"></path>
+    <path d="M363,307 V361"></path>
+    <path d="M409,307 V361"></path>
+    <path d="M590,330 H706"></path>
+    <path d="M627,304 V358"></path>
+    <path d="M673,304 V358"></path>
+    <path d="M878,99 H976"></path>
+    <path d="M893,73 V127"></path>
+    <path d="M945,73 V127"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" text-anchor="middle">
+    <text x="36" y="240">1</text>
+    <text x="407" y="91.5">2</text>
+    <text x="270" y="240">3</text>
+    <text x="270" y="376">4</text>
+    <text x="529.5" y="240">5</text>
+    <text x="529.5" y="376">6</text>
+    <text x="796" y="240">7</text>
+    <text x="203.5" y="104">6</text>
+    <text x="605.5" y="104">5</text>
+    <text x="141.5" y="253">4</text>
+    <text x="386.5" y="253">5</text>
+    <text x="646" y="255">3</text>
+    <text x="138.5" y="389">2</text>
+    <text x="386" y="389">6</text>
+    <text x="646" y="390">5</text>
+    <text x="168.5" y="38">0</text>
+    <text x="202" y="38">6</text>
+    <text x="241" y="38">4</text>
+    <text x="168.5" y="63">4</text>
+    <text x="202" y="63">10</text>
+    <text x="241" y="63">0</text>
+    <text x="567.5" y="41">6</text>
+    <text x="608.5" y="41">11</text>
+    <text x="648" y="41">4</text>
+    <text x="567.5" y="66">10</text>
+    <text x="608.5" y="66">15</text>
+    <text x="648" y="66">4</text>
+    <text x="103.5" y="192">0</text>
+    <text x="144" y="192">4</text>
+    <text x="183" y="192">0</text>
+    <text x="103.5" y="217">0</text>
+    <text x="144" y="217">4</text>
+    <text x="183" y="217">0</text>
+    <text x="347.5" y="192">4</text>
+    <text x="388.5" y="192">9</text>
+    <text x="428" y="192">1</text>
+    <text x="347.5" y="217">5</text>
+    <text x="388.5" y="217">10</text>
+    <text x="428" y="217">0</text>
+    <text x="606.5" y="193">9</text>
+    <text x="648" y="193">12</text>
+    <text x="687.5" y="193">3</text>
+    <text x="606.5" y="218">12</text>
+    <text x="648" y="218">15</text>
+    <text x="687.5" y="218">3</text>
+    <text x="99.5" y="328">0</text>
+    <text x="140.5" y="328">2</text>
+    <text x="180.5" y="328">2</text>
+    <text x="99.5" y="353">2</text>
+    <text x="140.5" y="353">4</text>
+    <text x="180.5" y="353">2</text>
+    <text x="345" y="329">4</text>
+    <text x="386" y="329">10</text>
+    <text x="425" y="329">0</text>
+    <text x="345" y="354">4</text>
+    <text x="386" y="354">10</text>
+    <text x="425" y="354">0</text>
+    <text x="608.5" y="326">10</text>
+    <text x="650" y="326">15</text>
+    <text x="689.5" y="326">0</text>
+    <text x="608.5" y="351">10</text>
+    <text x="650" y="351">15</text>
+    <text x="689.5" y="351">0</text>
+    <text x="843" y="61">图例：</text>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" font-style="italic" text-anchor="middle">
+    <text x="878" y="95">ES</text>
+    <text x="919" y="95">EF</text>
+    <text x="960.5" y="95">TF</text>
+    <text x="878" y="120">LS</text>
+    <text x="919" y="120">LF</text>
+    <text x="960.5" y="120">FF</text>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="18" font-style="italic">
+    <text x="827" y="240">T</text>
+    <text x="838" y="247">p</text>
+    <text x="849" y="240">=T</text>
+    <text x="871" y="247">c</text>
+    <text x="881" y="240">=15</text>
+  </g>
+</svg>
+</FigureZoom>
 
 #### 3. 计算工作的最迟完成时间和最迟开始时间
 
