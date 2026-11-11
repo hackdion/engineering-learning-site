@@ -185,6 +185,13 @@ export default defineConfig({
   lang: 'zh-CN',
   base,
   cleanUrls: true,
+  // 站点地图：部署在子路径时，地址要带上子路径
+  sitemap: { hostname: `https://hackdion.github.io${base}` },
+  // 工程地图的节点页由数据生成，描述从路由参数里取
+  transformPageData(pageData) {
+    const desc = (pageData.params as { desc?: string } | undefined)?.desc
+    if (desc) pageData.description = desc
+  },
   appearance: false,
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }]
@@ -195,10 +202,11 @@ export default defineConfig({
   themeConfig: {
     siteTitle: '工程学习手记',
     nav: [
+      { text: '首页', link: '/' },
+      { text: '工程地图', link: '/engineering-map/', activeMatch: '^/engineering-map/' },
       { text: '教材书架', link: '/textbook/' },
       { text: '试卷', link: '/exams/' },
       { text: '课程', link: '/courses/' },
-      { text: '工程地图', link: '/engineering-map/' },
       { text: '监理用表', link: '/forms/' },
       { text: '法规文本', link: '/law/' }
     ],

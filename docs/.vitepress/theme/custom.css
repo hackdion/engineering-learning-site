@@ -77,3 +77,8 @@
 .deck-page__meta { font: 13px var(--hd-font-mono); color: var(--hd-ink-3) !important; }
 @media (max-width: 767px) { .deck-page { padding: 20px 16px 16px; } }
 .VPPage .source-note { max-width: 1180px; margin-left: auto; margin-right: auto; padding: 0 24px 32px; box-sizing: border-box; }
+
+/* 工程地图节点页（阶段页、单位页、场景页由数据生成为普通文档页） */
+.vp-doc .em-crumb { margin: 0 0 12px; font: 13px/1.6 var(--hd-font-mono); color: var(--hd-ink-3); }
+.vp-doc .em-answer { margin: 16px 0 20px; padding-left: 12px; border-left: 3px solid var(--hd-accent); font-size: 18px; line-height: 1.75; }
+.vp-doc .em-note { font-size: 14px; color: var(--hd-ink-3); }

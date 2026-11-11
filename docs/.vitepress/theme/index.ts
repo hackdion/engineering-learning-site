@@ -5,7 +5,7 @@ import SourceNote from './SourceNote.vue'
 import BookShelf from './components/BookShelf.vue'
 import CourseCenter from './components/CourseCenter.vue'
 import HomePage from './components/HomePage.vue'
-import EngineeringMap from './components/EngineeringMap.vue'
+import EngineeringMapHome from './components/EngineeringMapHome.vue'
 import AboutPage from './components/AboutPage.vue'
 import SlideDeck from './components/deck/SlideDeck.vue'
 import Slide from './components/deck/Slide.vue'
@@ -32,7 +32,7 @@ export default {
     app.component('BookShelf', BookShelf)
     app.component('CourseCenter', CourseCenter)
     app.component('HomePage', HomePage)
-    app.component('EngineeringMap', EngineeringMap)
+    app.component('EngineeringMapHome', EngineeringMapHome)
     app.component('AboutPage', AboutPage)
     // 互动 PPT
     for (const [name, c] of Object.entries({ SlideDeck, Slide, Reveal, Quiz, Steps, SortSteps, CompareCard })) app.component(name, c)

@@ -3,7 +3,8 @@
 import { BOOKS } from './theme/data/books'
 import { COURSES } from './theme/data/courses'
 import { stages } from './theme/data/engineeringStages'
-import { roleCards, roleDirectory } from './theme/data/engineeringRoles'
+import { roleDirectory } from './theme/data/engineeringRoles'
+import { mapScenes } from './theme/data/engineeringMapPages'
 
 const bookNames = BOOKS.map((b) => `《${b.fullName}》`).join('、')
 const courseLines = COURSES.map((c) => `- ${c.title}：${c.summary}`).join('\n')
@@ -13,9 +14,7 @@ const stageLines = stages
 const unitLines = Object.values(roleDirectory as any)
   .map((unit: any) => `- ${unit.name}：${unit.note}`)
   .join('\n')
-const roleSections = Object.entries(roleCards as any)
-  .map(([key, card]: [string, any]) => `### ${card.name} {#role-${key}}\n\n${card.intro}经手文件：${card.files}。`)
-  .join('\n\n')
+const sceneLines = mapScenes.map((x) => `- ${x.name}（${x.stage}）`).join('\n')
 
 export const SEARCH_PAGES: Record<string, string> = {
   'index.md': `
@@ -64,20 +63,18 @@ hackdion 是一个努力学习 AI 的普通人，把学习中用到的方法做�
   'engineering-map/index.md': `
 # 工程地图 {#map-title}
 
-从策划立项到运维的九阶段工程路线，按阶段看关键事项与文件交接，按单位查岗位职责。默认显示阶段与交接，单位与岗位在 #roles。
+一个房建工程从立项到运维，谁在什么时候做什么、交什么、凭什么。按阶段、按单位与岗位、按场景三种方式查，每个阶段、单位和场景各有一页。
 
-## 阶段与交接 {#handoff}
+## 按阶段 {#stages}
 
 ${stageLines}
 
-## 典型交接示例 {#handover-examples}
-
-勘察从钻孔到基础设计；设计按建筑、结构、给排水、暖通、电气分组；电梯串起井道预留、供电与监督检验；混凝土串起出厂、见证取样与检测；消防区分技术服务、竣工查验与行政验收。
-
-## 单位与岗位 {#roles}
+## 按单位与岗位 {#units}
 
 ${unitLines}
 
-${roleSections}
+## 按场景 {#scenes}
+
+${sceneLines}
 `
 }

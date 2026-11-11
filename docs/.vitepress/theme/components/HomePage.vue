@@ -117,7 +117,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
       </div>
       <div class="home__map-actions">
         <a class="hd-btn home__map-btn" :href="withBase('/engineering-map/')">看工程全流程</a>
-        <a class="home__map-link" :href="withBase('/engineering-map/#roles')">查单位与岗位 →</a>
+        <a class="home__map-link" :href="withBase('/engineering-map/#units')">查单位与岗位 →</a>
       </div>
     </section>
 
