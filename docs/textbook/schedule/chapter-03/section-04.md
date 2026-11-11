@@ -60,26 +60,335 @@ sectionTitle: 第四节 双代号时标网络计划
 
 所谓直接绘制法，是指不计算时间参数而直接按无时标的网络计划草图绘制时标网络计划。现以图 3-26 所示网络计划为例，说明时标网络计划的绘制过程。
 
-<FigureZoom caption="图 3-26 双代号网络计划" src="/images/schedule/chapter-03/fig-3-26.png" :width="761" :height="318" />
-
+<FigureZoom caption="图 3-26 双代号网络计划">
+<svg viewBox="0 0 761 318" role="img" aria-label="图 3-26 双代号网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M61,152 V42 H359" marker-end="url(#arrow)"></path>
+    <path d="M388,42 H701 V152" marker-end="url(#arrow)"></path>
+    <path d="M76,166 H246" marker-end="url(#arrow)"></path>
+    <path d="M274,166 H462" marker-end="url(#arrow)"></path>
+    <path d="M490,166 H686" marker-end="url(#arrow)"></path>
+    <path d="M61,180 V283 H246" marker-end="url(#arrow)"></path>
+    <path d="M274,283 H462" marker-end="url(#arrow)"></path>
+    <path d="M490,283 H701 V181" marker-end="url(#arrow)"></path>
+    <path d="M260,180 V250" marker-end="url(#arrow)" stroke-dasharray="7 4"></path>
+    <path d="M476,180 V250" marker-end="url(#arrow)" stroke-dasharray="7 4"></path>
+    <circle cx="61" cy="166" r="14.5"></circle>
+    <circle cx="373" cy="42" r="14.5"></circle>
+    <circle cx="260" cy="166" r="14.5"></circle>
+    <circle cx="260" cy="283" r="14.5"></circle>
+    <circle cx="476" cy="166" r="14.5"></circle>
+    <circle cx="476" cy="283" r="14.5"></circle>
+    <circle cx="701" cy="166" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="61" y="172">1</text>
+    <text x="373" y="48">2</text>
+    <text x="260" y="172">3</text>
+    <text x="260" y="289">4</text>
+    <text x="476" y="172">5</text>
+    <text x="476" y="289">6</text>
+    <text x="701" y="172">7</text>
+    <text x="240" y="30" font-size="22">A</text>
+    <text x="240" y="66" font-size="22">6</text>
+    <text x="560" y="30" font-size="22">G</text>
+    <text x="560" y="66" font-size="22">5</text>
+    <text x="160" y="142" font-size="22">B</text>
+    <text x="160" y="196" font-size="22">4</text>
+    <text x="368" y="142" font-size="22">D</text>
+    <text x="368" y="196" font-size="22">5</text>
+    <text x="600" y="142" font-size="22">H</text>
+    <text x="600" y="196" font-size="22">3</text>
+    <text x="160" y="260" font-size="22">C</text>
+    <text x="160" y="314" font-size="22">2</text>
+    <text x="368" y="260" font-size="22">E</text>
+    <text x="368" y="314" font-size="22">6</text>
+    <text x="600" y="260" font-size="22">I</text>
+    <text x="600" y="314" font-size="22">5</text>
+  </g>
+</svg>
+</FigureZoom>
 （1）将网络计划的起点节点定位在时标网络计划表的起始刻度线上。如图 3-27 所示，节点①就是定位在时标网络计划表的起始刻度线“0”位置上。
 
-<FigureZoom caption="图 3-27 直接绘制法第一步" src="/images/schedule/chapter-03/fig-3-27.png" :width="962" :height="270" />
-
+<FigureZoom caption="图 3-27 直接绘制法第一步">
+<svg viewBox="0 0 962 270" role="img" aria-label="图 3-27 直接绘制法第一步" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M48.0,52 H920.0" stroke-width="1.6"></path>
+    <path d="M48.0,46 V52" stroke-width="1.4"></path>
+    <path d="M106.1,46 V52" stroke-width="1.4"></path>
+    <path d="M164.3,46 V52" stroke-width="1.4"></path>
+    <path d="M222.4,46 V52" stroke-width="1.4"></path>
+    <path d="M280.5,46 V52" stroke-width="1.4"></path>
+    <path d="M338.7,46 V52" stroke-width="1.4"></path>
+    <path d="M396.8,46 V52" stroke-width="1.4"></path>
+    <path d="M454.9,46 V52" stroke-width="1.4"></path>
+    <path d="M513.0,46 V52" stroke-width="1.4"></path>
+    <path d="M571.2,46 V52" stroke-width="1.4"></path>
+    <path d="M629.3,46 V52" stroke-width="1.4"></path>
+    <path d="M687.4,46 V52" stroke-width="1.4"></path>
+    <path d="M745.6,46 V52" stroke-width="1.4"></path>
+    <path d="M803.7,46 V52" stroke-width="1.4"></path>
+    <path d="M861.8,46 V52" stroke-width="1.4"></path>
+    <path d="M920.0,46 V52" stroke-width="1.4"></path>
+    <path d="M48,164 V100 H396.8"></path>
+    <path d="M62,178 H280.5"></path>
+    <path d="M48,192 V259 H164.3"></path>
+    <circle cx="48" cy="178" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="48.0" y="40" font-size="22">0</text>
+    <text x="106.1" y="40" font-size="22">1</text>
+    <text x="164.3" y="40" font-size="22">2</text>
+    <text x="222.4" y="40" font-size="22">3</text>
+    <text x="280.5" y="40" font-size="22">4</text>
+    <text x="338.7" y="40" font-size="22">5</text>
+    <text x="396.8" y="40" font-size="22">6</text>
+    <text x="454.9" y="40" font-size="22">7</text>
+    <text x="513.0" y="40" font-size="22">8</text>
+    <text x="571.2" y="40" font-size="22">9</text>
+    <text x="629.3" y="40" font-size="22">10</text>
+    <text x="687.4" y="40" font-size="22">11</text>
+    <text x="745.6" y="40" font-size="22">12</text>
+    <text x="803.7" y="40" font-size="22">13</text>
+    <text x="861.8" y="40" font-size="22">14</text>
+    <text x="920.0" y="40" font-size="22">15</text>
+    <text x="48" y="184">1</text>
+    <text x="222" y="92" font-size="22">A</text>
+    <text x="150" y="170" font-size="22">B</text>
+    <text x="110" y="251" font-size="22">C</text>
+  </g>
+</svg>
+</FigureZoom>
 （2）按工作的持续时间绘制以网络计划起点节点为开始节点的工作箭线。如图 3-27 所示，分别绘出工作箭线 A、B 和 C。
 
 （3）除网络计划的起点节点外，其他节点必须在所有以该节点为完成节点的工作箭线均绘出后，定位在这些工作箭线中最迟的箭线末端。当某些工作箭线的长度不足以到达该节点时，须用波形线补足，箭头画在与该节点的连接处。例如在本例中，节点②直接定位在工作箭线 A 的末端；节点③直接定位在工作箭线 B 的末端；节点④的位置需要在绘出虚箭线③→④之后，定位在工作箭线 C 和虚箭线③→④中最迟的箭线末端，即坐标“4”的位置上。此时，工作箭线 C 的长度不足以到达节点④，因而用波形线补足，如图 3-28 所示。
 
-<FigureZoom caption="图 3-28 直接绘制法第二步" src="/images/schedule/chapter-03/fig-3-28.png" :width="991" :height="283" />
-
+<FigureZoom caption="图 3-28 直接绘制法第二步">
+<svg viewBox="0 0 991 283" role="img" aria-label="图 3-28 直接绘制法第二步" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M73.0,43 H946.0" stroke-width="1.6"></path>
+    <path d="M73.0,37 V43" stroke-width="1.4"></path>
+    <path d="M131.2,37 V43" stroke-width="1.4"></path>
+    <path d="M189.4,37 V43" stroke-width="1.4"></path>
+    <path d="M247.6,37 V43" stroke-width="1.4"></path>
+    <path d="M305.8,37 V43" stroke-width="1.4"></path>
+    <path d="M364.0,37 V43" stroke-width="1.4"></path>
+    <path d="M422.2,37 V43" stroke-width="1.4"></path>
+    <path d="M480.4,37 V43" stroke-width="1.4"></path>
+    <path d="M538.6,37 V43" stroke-width="1.4"></path>
+    <path d="M596.8,37 V43" stroke-width="1.4"></path>
+    <path d="M655.0,37 V43" stroke-width="1.4"></path>
+    <path d="M713.2,37 V43" stroke-width="1.4"></path>
+    <path d="M771.4,37 V43" stroke-width="1.4"></path>
+    <path d="M829.6,37 V43" stroke-width="1.4"></path>
+    <path d="M887.8,37 V43" stroke-width="1.4"></path>
+    <path d="M946.0,37 V43" stroke-width="1.4"></path>
+    <path d="M73.0,153 V90 H407.7" marker-end="url(#arrow)"></path>
+    <path d="M87.5,167 H291.3" marker-end="url(#arrow)"></path>
+    <path d="M73.0,181 V250 H189.4"></path>
+    <path d="M189.4,250.0 L194.4,258.0 L202.8,242.0 L211.2,258.0 L219.5,242.0 L227.9,258.0 L236.3,242.0 L244.6,258.0 L253.0,242.0 L261.4,258.0 L269.7,242.0 L278.1,258.0 L286.5,242.0 L289.8,250.0"></path>
+    <path d="M289.8,250 H291.3" marker-end="url(#arrow)"></path>
+    <path d="M305.8,181.5 V234" marker-end="url(#arrow)" stroke-dasharray="7 4"></path>
+    <circle cx="73.0" cy="167" r="14.5"></circle>
+    <circle cx="422.2" cy="90" r="14.5"></circle>
+    <circle cx="305.8" cy="167" r="14.5"></circle>
+    <circle cx="305.8" cy="250" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="73.0" y="31" font-size="22">0</text>
+    <text x="131.2" y="31" font-size="22">1</text>
+    <text x="189.4" y="31" font-size="22">2</text>
+    <text x="247.6" y="31" font-size="22">3</text>
+    <text x="305.8" y="31" font-size="22">4</text>
+    <text x="364.0" y="31" font-size="22">5</text>
+    <text x="422.2" y="31" font-size="22">6</text>
+    <text x="480.4" y="31" font-size="22">7</text>
+    <text x="538.6" y="31" font-size="22">8</text>
+    <text x="596.8" y="31" font-size="22">9</text>
+    <text x="655.0" y="31" font-size="22">10</text>
+    <text x="713.2" y="31" font-size="22">11</text>
+    <text x="771.4" y="31" font-size="22">12</text>
+    <text x="829.6" y="31" font-size="22">13</text>
+    <text x="887.8" y="31" font-size="22">14</text>
+    <text x="946.0" y="31" font-size="22">15</text>
+    <text x="73.0" y="173">1</text>
+    <text x="422.2" y="96">2</text>
+    <text x="305.8" y="173">3</text>
+    <text x="305.8" y="256">4</text>
+    <text x="240" y="82" font-size="22">A</text>
+    <text x="185" y="160" font-size="22">B</text>
+    <text x="150" y="241" font-size="22">C</text>
+  </g>
+</svg>
+</FigureZoom>
 （4）当某个节点的位置确定之后，即可绘制以该节点为开始节点的工作箭线。例如在本例中，在图 3-28 基础之上，可以分别以节点②、节点③和节点④为开始节点绘制工作箭线 G、工作箭线 D 和工作箭线 E，如图 3-29 所示。
 
-<FigureZoom caption="图 3-29 直接绘制法第三步" src="/images/schedule/chapter-03/fig-3-29.png" :width="991" :height="290" />
-
+<FigureZoom caption="图 3-29 直接绘制法第三步">
+<svg viewBox="0 0 991 290" role="img" aria-label="图 3-29 直接绘制法第三步" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M73.0,43 H946.0" stroke-width="1.6"></path>
+    <path d="M73.0,37 V43" stroke-width="1.4"></path>
+    <path d="M131.2,37 V43" stroke-width="1.4"></path>
+    <path d="M189.4,37 V43" stroke-width="1.4"></path>
+    <path d="M247.6,37 V43" stroke-width="1.4"></path>
+    <path d="M305.8,37 V43" stroke-width="1.4"></path>
+    <path d="M364.0,37 V43" stroke-width="1.4"></path>
+    <path d="M422.2,37 V43" stroke-width="1.4"></path>
+    <path d="M480.4,37 V43" stroke-width="1.4"></path>
+    <path d="M538.6,37 V43" stroke-width="1.4"></path>
+    <path d="M596.8,37 V43" stroke-width="1.4"></path>
+    <path d="M655.0,37 V43" stroke-width="1.4"></path>
+    <path d="M713.2,37 V43" stroke-width="1.4"></path>
+    <path d="M771.4,37 V43" stroke-width="1.4"></path>
+    <path d="M829.6,37 V43" stroke-width="1.4"></path>
+    <path d="M887.8,37 V43" stroke-width="1.4"></path>
+    <path d="M946.0,37 V43" stroke-width="1.4"></path>
+    <path d="M73.0,153 V90 H407.7" marker-end="url(#arrow)"></path>
+    <path d="M87.5,167 H291.3" marker-end="url(#arrow)"></path>
+    <path d="M73.0,181 V250 H189.4"></path>
+    <path d="M189.4,250.0 L194.4,258.0 L202.8,242.0 L211.2,258.0 L219.5,242.0 L227.9,258.0 L236.3,242.0 L244.6,258.0 L253.0,242.0 L261.4,258.0 L269.7,242.0 L278.1,258.0 L286.5,242.0 L289.8,250.0"></path>
+    <path d="M289.8,250 H291.3" marker-end="url(#arrow)"></path>
+    <path d="M305.8,181.5 V234" marker-end="url(#arrow)" stroke-dasharray="7 4"></path>
+    <path d="M436.7,90 H713.2"></path>
+    <path d="M320.3,167 H596.8"></path>
+    <path d="M320.3,250 H655.0"></path>
+    <circle cx="73.0" cy="167" r="14.5"></circle>
+    <circle cx="422.2" cy="90" r="14.5"></circle>
+    <circle cx="305.8" cy="167" r="14.5"></circle>
+    <circle cx="305.8" cy="250" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="73.0" y="31" font-size="22">0</text>
+    <text x="131.2" y="31" font-size="22">1</text>
+    <text x="189.4" y="31" font-size="22">2</text>
+    <text x="247.6" y="31" font-size="22">3</text>
+    <text x="305.8" y="31" font-size="22">4</text>
+    <text x="364.0" y="31" font-size="22">5</text>
+    <text x="422.2" y="31" font-size="22">6</text>
+    <text x="480.4" y="31" font-size="22">7</text>
+    <text x="538.6" y="31" font-size="22">8</text>
+    <text x="596.8" y="31" font-size="22">9</text>
+    <text x="655.0" y="31" font-size="22">10</text>
+    <text x="713.2" y="31" font-size="22">11</text>
+    <text x="771.4" y="31" font-size="22">12</text>
+    <text x="829.6" y="31" font-size="22">13</text>
+    <text x="887.8" y="31" font-size="22">14</text>
+    <text x="946.0" y="31" font-size="22">15</text>
+    <text x="73.0" y="173">1</text>
+    <text x="422.2" y="96">2</text>
+    <text x="305.8" y="173">3</text>
+    <text x="305.8" y="256">4</text>
+    <text x="240" y="82" font-size="22">A</text>
+    <text x="555" y="82" font-size="22">G</text>
+    <text x="185" y="160" font-size="22">B</text>
+    <text x="455" y="160" font-size="22">D</text>
+    <text x="150" y="241" font-size="22">C</text>
+    <text x="480" y="241" font-size="22">E</text>
+  </g>
+</svg>
+</FigureZoom>
 （5）利用上述方法从左至右依次确定其他各个节点的位置，直至绘出网络计划的终点节点。例如在本例中，在图 3-29 基础之上，可以分别确定节点⑤和节点⑥的位置，并在它们之后分别绘制工作箭线 H 和工作箭线 I，如图 3-30 所示。
 
-<FigureZoom caption="图 3-30 直接绘制法第四步" src="/images/schedule/chapter-03/fig-3-30.png" :width="1020" :height="293" />
-
+<FigureZoom caption="图 3-30 直接绘制法第四步">
+<svg viewBox="0 0 1020 293" role="img" aria-label="图 3-30 直接绘制法第四步" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M70.0,52 H943.0" stroke-width="1.6"></path>
+    <path d="M70.0,46 V52" stroke-width="1.4"></path>
+    <path d="M128.2,46 V52" stroke-width="1.4"></path>
+    <path d="M186.4,46 V52" stroke-width="1.4"></path>
+    <path d="M244.6,46 V52" stroke-width="1.4"></path>
+    <path d="M302.8,46 V52" stroke-width="1.4"></path>
+    <path d="M361.0,46 V52" stroke-width="1.4"></path>
+    <path d="M419.2,46 V52" stroke-width="1.4"></path>
+    <path d="M477.4,46 V52" stroke-width="1.4"></path>
+    <path d="M535.6,46 V52" stroke-width="1.4"></path>
+    <path d="M593.8,46 V52" stroke-width="1.4"></path>
+    <path d="M652.0,46 V52" stroke-width="1.4"></path>
+    <path d="M710.2,46 V52" stroke-width="1.4"></path>
+    <path d="M768.4,46 V52" stroke-width="1.4"></path>
+    <path d="M826.6,46 V52" stroke-width="1.4"></path>
+    <path d="M884.8,46 V52" stroke-width="1.4"></path>
+    <path d="M943.0,46 V52" stroke-width="1.4"></path>
+    <path d="M70.0,163 V99 H404.7" marker-end="url(#arrow)"></path>
+    <path d="M84.5,177 H288.3" marker-end="url(#arrow)"></path>
+    <path d="M70.0,191 V256 H186.4"></path>
+    <path d="M186.4,256.0 L191.4,264.0 L199.8,248.0 L208.2,264.0 L216.5,248.0 L224.9,264.0 L233.3,248.0 L241.6,264.0 L250.0,248.0 L258.4,264.0 L266.7,248.0 L275.1,264.0 L283.5,248.0 L286.8,256.0"></path>
+    <path d="M286.8,256 H288.3" marker-end="url(#arrow)"></path>
+    <path d="M302.8,191.5 V240" marker-end="url(#arrow)" stroke-dasharray="7 4"></path>
+    <path d="M433.7,99 H710.2"></path>
+    <path d="M317.3,177 H579.3" marker-end="url(#arrow)"></path>
+    <path d="M317.3,256 H637.5" marker-end="url(#arrow)"></path>
+    <path d="M608.3,177 H768.4"></path>
+    <path d="M666.5,256 H943.0"></path>
+    <path d="M593.8,191 V207" stroke-dasharray="7 4"></path>
+    <path d="M593.8,207.0 L598.2,214.0 L605.4,200.0 L612.7,214.0 L620.0,200.0 L627.3,214.0 L634.5,200.0 L641.8,214.0 L649.1,200.0 L652.0,207.0"></path>
+    <path d="M652.0,207 V241.5" marker-end="url(#arrow)" stroke-dasharray="7 4"></path>
+    <circle cx="70.0" cy="177" r="14.5"></circle>
+    <circle cx="419.2" cy="99" r="14.5"></circle>
+    <circle cx="302.8" cy="177" r="14.5"></circle>
+    <circle cx="302.8" cy="256" r="14.5"></circle>
+    <circle cx="593.8" cy="177" r="14.5"></circle>
+    <circle cx="652.0" cy="256" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="70.0" y="40" font-size="22">0</text>
+    <text x="128.2" y="40" font-size="22">1</text>
+    <text x="186.4" y="40" font-size="22">2</text>
+    <text x="244.6" y="40" font-size="22">3</text>
+    <text x="302.8" y="40" font-size="22">4</text>
+    <text x="361.0" y="40" font-size="22">5</text>
+    <text x="419.2" y="40" font-size="22">6</text>
+    <text x="477.4" y="40" font-size="22">7</text>
+    <text x="535.6" y="40" font-size="22">8</text>
+    <text x="593.8" y="40" font-size="22">9</text>
+    <text x="652.0" y="40" font-size="22">10</text>
+    <text x="710.2" y="40" font-size="22">11</text>
+    <text x="768.4" y="40" font-size="22">12</text>
+    <text x="826.6" y="40" font-size="22">13</text>
+    <text x="884.8" y="40" font-size="22">14</text>
+    <text x="943.0" y="40" font-size="22">15</text>
+    <text x="70.0" y="183">1</text>
+    <text x="419.2" y="105">2</text>
+    <text x="302.8" y="183">3</text>
+    <text x="302.8" y="262">4</text>
+    <text x="593.8" y="183">5</text>
+    <text x="652.0" y="262">6</text>
+    <text x="240" y="90" font-size="22">A</text>
+    <text x="555" y="90" font-size="22">G</text>
+    <text x="185" y="168" font-size="22">B</text>
+    <text x="455" y="168" font-size="22">D</text>
+    <text x="700" y="168" font-size="22">H</text>
+    <text x="150" y="248" font-size="22">C</text>
+    <text x="480" y="248" font-size="22">E</text>
+    <text x="800" y="248" font-size="22">I</text>
+  </g>
+</svg>
+</FigureZoom>
 最后，根据工作箭线 G、工作箭线 H 和工作箭线 I 确定出终点节点的位置。本例所对应的时标网络计划如图 3-31 所示，图中双箭线表示的线路为关键线路。
 
 在绘制时标网络计划时，特别需要注意的问题是处理好虚箭线。首先，应将虚箭线与实箭线等同看待，只是其对应工作的持续时间为零；其次，尽管其本身没有持续时间，但可能存在波形线，因此，要按规定画出波形线。在画波形线时，其垂直部分仍应画为虚线（如图 3-31 所示时标网络计划中的虚箭线⑤→⑥）。
