@@ -6,7 +6,7 @@ export const stageSources = {
   survey: ['教材 · 工程勘察', '/textbook/quality/chapter-02/section-01'],
   gov: ['《政府投资条例》第九条', 'https://www.gov.cn/gongbao/content/2019/content_5392291.htm'],
   enterprise: ['《企业投资项目核准和备案管理条例》第三条、第十三条', 'https://www.gov.cn/zhengce/content/2016-12/14/content_5147959.htm'],
-  land: ['自然资函〔2024〕709号通知第一部分', 'https://gi.mnr.gov.cn/202410/t20241010_2870075.html'],
+  land: ['自然资发〔2026〕38号', 'https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=105358'],
   planning: ['《城乡规划法》第四十五条', 'https://www.gov.cn/gongbao/content/content_823771.htm'],
   tender: ['《必须招标的工程项目规定》第五条', 'https://www.gov.cn/gongbao/content/2018/content_5296544.htm'],
   bidding: ['《招标投标法》', '/law/zhaobiao-toubiao-fa'],
@@ -17,7 +17,7 @@ export const stageSources = {
   forms: ['教材 · 工程监理基本表式', '/textbook/chapter-08/section-01'],
   testing: ['《建设工程质量检测管理办法》第十六条至第二十一条', 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2024/art_17337_770018.html'],
   dangerous: ['《危险性较大的分部分项工程安全管理规定》第十一、十五、二十一条', 'https://www.gov.cn/gongbao/content/2018/content_5294422.htm'],
-  elevator: ['《特种设备安全法》第二十三条、第二十五条', 'https://www.gov.cn/flfg/2013-06/30/content_2437160.htm'],
+  elevator: ['《特种设备安全法》第二十三条、第二十五条、第三十三条', 'https://www.gov.cn/flfg/2013-06/30/content_2437160.htm'],
   fire: ['《建设工程消防设计审查验收管理暂行规定》第十三、二十七、二十八、三十六、三十八条', 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2022/art_17337_763780.html'],
   archive: ['《城市建设档案管理规定》第十八条、第十九条', 'https://www.mohurd.gov.cn/tsgb/gzk/art/2026/art_1247976268.html'],
   final: ['《房屋建筑和市政基础设施工程竣工验收规定》第五条', 'https://www.gov.cn/gongbao/content/2014/content_2629947.htm'],
@@ -78,7 +78,7 @@ export const stages = [
         action: '核对用地预审与规划选址要求',
         input: '项目性质、拟选位置、用地现状和拟用地范围',
         output: '按适用规定取得用地预审与选址意见书等文件',
-        description: '根据供地方式、土地现状和审批路径判断需要办理的事项及申报时点。规划选址与用地预审按自然资函〔2024〕709号合并办理；已经依法批准的建设用地不再办理用地预审。纳入自然资发〔2026〕38号清单的项目，按该文规定出具规划许可意见，不再办理用地预审和选址手续。',
+        description: '根据供地方式、土地现状和审批路径判断需要办理的事项及申报时点。规划选址与用地预审按自然资函〔2024〕709号合并办理；已经依法批准的建设用地不再办理用地预审。与自然资源部联网的相关省份，纳入自然资发〔2026〕38号清单，且在国家或省级国土空间规划「一张图」上落图落位的国家和省级单独选址项目，按该文规定出具规划许可意见，不再办理用地预审和选址手续；不属于上述情形的，仍按709号通知办理。',
         basis: 'land'
       }
     ]
@@ -393,11 +393,11 @@ export const stages = [
       },
       {
         actor: 'elevatorInstaller',
-        action: '办理电梯安装告知与监督检验',
-        participants: ['specialInspector', 'chief'],
+        action: '办理电梯安装告知、监督检验与使用登记',
+        participants: ['specialInspector', 'chief', 'owner'],
         input: '电梯设备资料、井道与机房条件确认、安装方案',
-        output: '安装告知材料、安装自检记录、监督检验报告',
-        description: '安装单位在施工前书面告知，按安全技术规范安装并申请监督检验；未经监督检验合格不得交付使用。井道、门洞、机房或无机房条件、荷载和供电按项目设计及设备资料确认。',
+        output: '安装告知材料、安装自检记录、监督检验报告、使用登记证书',
+        description: '安装单位在施工前书面告知，按安全技术规范实施安装并自检，向核准的检验机构申请监督检验，检验合格后方可交付使用；使用单位在投入使用前或者投入使用后三十日内办理使用登记，登记标志置于设备显著位置。井道、门洞、机房或无机房条件、荷载和供电按项目设计及设备资料确认。',
         basis: 'elevator'
       },
       {

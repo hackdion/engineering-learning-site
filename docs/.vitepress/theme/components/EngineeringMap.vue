@@ -63,12 +63,13 @@ const exampleHits = computed(() =>
   handoverExamples.filter((example) => example.chain.some((node: any) => node.role === activeJob.value))
 )
 
+function setHash(hash: string) {
+  if (typeof window !== 'undefined') history.replaceState(null, '', hash)
+}
+
 function showView(next: 'flow' | 'roles', syncHash = true) {
   view.value = next
-  if (syncHash && typeof window !== 'undefined') {
-    const hash = next === 'roles' ? '#roles' : '#handoff'
-    history.replaceState(null, '', hash)
-  }
+  if (syncHash) setHash(next === 'roles' ? '#roles' : '#handoff')
 }
 
 function setProjectType(key: string) {
@@ -103,20 +104,23 @@ function selectStage(index: number, keepStep = false) {
   }
 }
 
-function selectUnit(unitKey: string, job?: string) {
+function selectUnit(unitKey: string, job?: string, syncHash = true) {
   activeUnit.value = unitKey
   activeJob.value = job || (roleDirectory as any)[unitKey].jobs[0]
   trace.value = null
+  if (syncHash) setHash('#role-' + activeJob.value)
 }
 
 function chooseJob(job: string) {
   activeJob.value = job
   trace.value = null
+  setHash('#role-' + job)
 }
 
 function goRole(job: string, syncHash = true) {
-  selectUnit(roleUnits[job], job)
-  showView('roles', syncHash)
+  selectUnit(roleUnits[job], job, false)
+  showView('roles', false)
+  if (syncHash) setHash('#role-' + job)
 }
 
 function jumpToHandoff(job: string, index?: number) {
@@ -127,7 +131,8 @@ function jumpToHandoff(job: string, index?: number) {
 }
 
 function goExample(id: string) {
-  showView('flow')
+  showView('flow', false)
+  setHash('#example-' + id)
   requestAnimationFrame(() => setTimeout(() => scrollToId('example-' + id), 40))
 }
 
@@ -347,7 +352,7 @@ onBeforeUnmount(() => {
           </header>
           <ol class="example__chain">
             <li v-for="node in example.chain" :key="node.do">
-              <button v-if="node.role" type="button" class="example__role" @click="goRole(node.role, false)">{{ node.actor }}</button>
+              <button v-if="node.role" type="button" class="example__role" @click="goRole(node.role)">{{ node.actor }}</button>
               <b v-else>{{ node.actor }}</b>
               <span>{{ node.do }}</span>
               <em v-if="node.file">{{ node.file }}</em>
