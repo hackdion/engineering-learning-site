@@ -9,6 +9,8 @@ import FollowButton from './components/FollowButton.vue'
 import FollowDialog from './components/FollowDialog.vue'
 import LearnedStamp from './components/LearnedStamp.vue'
 import SectionCourse from './components/SectionCourse.vue'
+import ContractCopy from './components/ContractCopy.vue'
+import ContractFileMap from './components/ContractFileMap.vue'
 import SectionLaw from './components/SectionLaw.vue'
 import CraneTop from './components/CraneTop.vue'
 import SearchWarmup from './components/SearchWarmup.vue'
@@ -54,11 +56,11 @@ const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?\/?$/.test(r
 <template>
   <DefaultTheme.Layout>
     <template #not-found><NotFound /></template>
-    <template #doc-before><SectionCourse v-if="isSection" /></template>
+    <template #doc-before><ContractCopy /><SectionCourse v-if="isSection" /></template>
     <template #nav-bar-content-after><FollowButton /></template>
     <template #nav-screen-content-after><FollowButton block /></template>
     <template #doc-after><SectionLaw v-if="isSection" /></template>
     <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
-    <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /><SearchWarmup /><OutlineFollow /></template>
+    <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /><SearchWarmup /><OutlineFollow /><ContractFileMap /></template>
   </DefaultTheme.Layout>
 </template>
