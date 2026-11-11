@@ -109,6 +109,18 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
       </aside>
     </section>
 
+    <section class="home__wrap home__map" aria-labelledby="map-entry-title">
+      <div class="home__map-copy">
+        <span class="home__map-eyebrow">工程地图 · 01—09</span>
+        <h2 id="map-entry-title">从立项到运维，先看全流程</h2>
+        <p>九个阶段的关键事项、交接文件和参建单位，按全国房建口径整理。</p>
+      </div>
+      <div class="home__map-actions">
+        <a class="hd-btn home__map-btn" :href="withBase('/engineering-map/')">看工程全流程</a>
+        <a class="home__map-link" :href="withBase('/engineering-map/#roles')">查单位与岗位 →</a>
+      </div>
+    </section>
+
     <section id="latest" class="home__wrap home__section">
       <div class="home__section-head">
         <div>
@@ -288,6 +300,16 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__stat b { font-family: var(--hd-font-mono); font-size: 20px; color: var(--hd-ink); }
 .home__stat:hover span { text-decoration: underline; }
 .home__stats-note { flex: 1 1 100%; margin: 0; font-size: 12px; color: var(--hd-ink-3); line-height: 1.7; }
+
+/* 工程地图入口：备考面板与最新发布之间的一条路线带 */
+.home__map { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; padding-top: 18px; padding-bottom: 18px; border-top: 2px solid var(--hd-accent); border-bottom: 1px solid var(--hd-line); }
+.home__map-copy { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.home__map-eyebrow { color: var(--hd-accent); font-family: var(--hd-font-mono); font-size: 12px; letter-spacing: .08em; }
+.home__map-copy h2 { margin: 0; font-family: var(--hd-font-serif); font-size: 24px; line-height: 1.3; }
+.home__map-copy p { margin: 0; color: var(--hd-ink-3); font-size: 14px; }
+.home__map-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.home__map-btn { min-height: 44px; }
+.home__map-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; color: var(--hd-accent); }
 
 .home__section { padding-top: 64px; padding-bottom: 24px; }
 .home__section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 24px; }
