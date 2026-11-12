@@ -1,5 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
-import { SEARCH_PAGES } from './searchPages'
+import MiniSearch from 'minisearch'
+import { SEARCH_PAGES, engineeringMapSearchRecords } from './searchPages'
 import { cjkFriendlyTokenize } from './searchTokenize'
 import { BOOKS } from './theme/data/books'
 
@@ -179,7 +180,25 @@ const gailunSidebar: DefaultTheme.SidebarItem[] = [
   }
 ]
 
+const searchOptions = { tokenize: cjkFriendlyTokenize }
+
 export default defineConfig({
+  vite: {
+    plugins: [{
+      name: 'engineering-map-search',
+      enforce: 'post',
+      transform(code, id) {
+        if (id !== '/@localSearchIndexroot') return
+        const index = MiniSearch.loadJSON(JSON.parse(code.slice('export default '.length)), {
+          ...searchOptions,
+          fields: ['title', 'titles', 'text'],
+          storeFields: ['title', 'titles']
+        })
+        index.addAll(engineeringMapSearchRecords(base))
+        return `export default ${JSON.stringify(JSON.stringify(index))}`
+      }
+    }]
+  },
   title: '工程学习手记',
   description: '六册注册监理工程师教材按章节查阅，课程视频与互动课件从已上线内容开始学习。',
   lang: 'zh-CN',
@@ -826,9 +845,7 @@ export default defineConfig({
           }
         },
         miniSearch: {
-          options: {
-            tokenize: cjkFriendlyTokenize
-          },
+          options: searchOptions,
           _splitIntoSections: splitSearchSections
         },
         // 组件页没有 Markdown 正文，追加 searchPages.ts 里的摘要进入索引
