@@ -4,7 +4,7 @@ import { BOOKS } from './theme/data/books'
 import { COURSES } from './theme/data/courses'
 import { stages } from './theme/data/engineeringStages'
 import { roleDirectory } from './theme/data/engineeringRoles'
-import { mapScenes } from './theme/data/engineeringMapPages'
+import { mapScenes, scenePages, stagePages, unitPages } from './theme/data/engineeringMapPages'
 
 const bookNames = BOOKS.map((b) => `《${b.fullName}》`).join('、')
 const courseLines = COURSES.map((c) => `- ${c.title}：${c.summary}`).join('\n')
@@ -77,4 +77,27 @@ ${unitLines}
 
 ${sceneLines}
 `
+}
+
+// 动态路由由 VitePress 渲染，但本地搜索只读取磁盘上的 Markdown。
+export function engineeringMapSearchRecords(base: string) {
+  const groups = { stage: stagePages(), unit: unitPages(), scene: scenePages() }
+  return Object.entries(groups).flatMap(([kind, pages]) => pages.flatMap(({ params, content }) => {
+    const [firstLine, ...body] = content.split('\n')
+    const title = firstLine.replace(/^# /, '')
+    const id = `${base}engineering-map/${kind}/${params.id}`
+    const titles = ['工程地图']
+    const summary = params.id === 'main-structure-acceptance' ? '主体结构验收' : ''
+    const page = { id, title, titles, text: `${params.desc} ${summary}` }
+    if (kind === 'scene') return [page]
+
+    const headings = body.join('\n').matchAll(/^#{2,3} (.+?) \{#([\w-]+)\}$/gm)
+    const items = Array.from(headings, ([, heading, anchor]) => ({
+      id: `${id}#${anchor}`,
+      title: heading.replace(/<[^>]*>/g, '').trim(),
+      titles: [...titles, title],
+      text: ''
+    }))
+    return [page, ...items]
+  }))
 }

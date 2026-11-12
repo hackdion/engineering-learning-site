@@ -30,7 +30,7 @@ const pics = [
 // 第一版的旧锚点：#roles、#role-岗位、#example-示例，跳到新地址
 onMounted(() => {
   const hash = decodeURIComponent(location.hash.slice(1))
-  if (hash === 'roles') document.getElementById('units')?.scrollIntoView()
+  if (hash === 'roles') location.replace('#units')
   else if (hash.startsWith('role-')) {
     const job = hash.slice(5)
     const unit = unitOf(job)
