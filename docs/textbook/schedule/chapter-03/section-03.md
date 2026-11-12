@@ -658,7 +658,7 @@ $$
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.8">
     <path d="M113,196 V86 H422" marker-end="url(#arrow)"></path>
-    <path d="M451,86 H767 V196" marker-end="url(#arrow)"></path>
+    <path d="M451,86 H767 V193.5" marker-end="url(#arrow)"></path>
     <path d="M127,209 H285"></path>
     <path d="M127,213 H285"></path>
     <path d="M284,211 H301" marker-end="url(#arrow)"></path>
@@ -670,7 +670,7 @@ $$
     <path d="M494,330 H525" marker-end="url(#arrow)"></path>
     <path d="M554,328 H763 V238"></path>
     <path d="M554,332 H767 V238"></path>
-    <path d="M765,238 V196" marker-end="url(#arrow)"></path>
+    <path d="M765,238 V227.5" marker-end="url(#arrow)"></path>
     <path d="M314,226 V292"></path>
     <path d="M318,226 V292"></path>
     <path d="M316,292 V315.5" marker-end="url(#arrow)"></path>
@@ -1279,6 +1279,8 @@ $$
     <path d="M1054,226 V330" stroke-width="1.4"></path>
     <path d="M916,60 V136" stroke-width="1.4"></path>
     <path d="M1004,60 V136" stroke-width="1.4"></path>
+    <path d="M920,78 H1000" stroke-width="1.4"></path>
+    <path d="M919,112.5 H1001" stroke-width="1.4"></path>
     <circle cx="78" cy="278" r="54"></circle>
     <circle cx="314" cy="131" r="54"></circle>
     <circle cx="313" cy="291" r="54"></circle>
@@ -1383,7 +1385,7 @@ $$
     <text x="999" y="348">0</text>
     <text x="1054" y="348">15</text>
     <text x="902" y="26" text-anchor="start">图例：</text>
-    <text x="960" y="105">工作名称</text>
+    <text x="960" y="100">工作名称</text>
   </g>
   <g fill="currentColor" font-family="sans-serif" font-size="20" font-style="italic" text-anchor="middle">
     <text x="172" y="163">LAG=0</text>
@@ -1395,19 +1397,19 @@ $$
     <text x="420" y="487">LAG=2</text>
     <text x="660" y="262">LAG=0</text>
     <text x="645" y="332">LAG=1</text>
-    <text x="632" y="412">LAG=0</text>
+    <text x="655" y="446">LAG=0</text>
     <text x="885" y="180">LAG=4</text>
-    <text x="885" y="252">LAG=3</text>
+    <text x="885" y="272">LAG=3</text>
     <text x="885" y="330">LAG=0</text>
     <text x="916" y="46">ES</text>
     <text x="960" y="46">TF</text>
     <text x="1005" y="46">EF</text>
-    <text x="960" y="79">i</text>
-    <text x="955" y="131">D</text>
-    <text x="970" y="137">i</text>
-    <text x="916" y="150">LS</text>
-    <text x="960" y="150">FF</text>
-    <text x="1005" y="150">LF</text>
+    <text x="960" y="70">i</text>
+    <text x="955" y="127">D</text>
+    <text x="970" y="133">i</text>
+    <text x="916" y="156">LS</text>
+    <text x="960" y="156">FF</text>
+    <text x="1005" y="156">LF</text>
   </g>
 </svg>
 </FigureZoom>
