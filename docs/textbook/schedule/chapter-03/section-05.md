@@ -53,13 +53,117 @@ $T_{\mathrm{r}}$ ——要求工期。
 
 【例 3-6】已知某工程双代号网络计划如图 3-33 所示，图中箭线下方括号外数字为工作的正常持续时间，括号内数字为最短持续时间；箭线上方括号内数字为优选系数，该系数综合考虑质量、安全和费用增加情况而确定。选择关键工作压缩其持续时间时，应选择优选系数最小的关键工作。若需要同时压缩多个关键工作的持续时间时，则它们的优选系数之和（组合优选系数）最小者应优先作为压缩对象。现假设要求工期为 15，试对其进行工期优化。
 
-<FigureZoom caption="图 3-33 初始网络计划" src="/images/schedule/chapter-03/fig-3-33.png" :width="685" :height="284" />
+<FigureZoom caption="图 3-33 初始网络计划">
+<svg viewBox="0 0 685 284" role="img" aria-label="图 3-33 初始网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-33" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M34.2,136.9 L193.3,40.1" marker-end="url(#arrow-3-33)"></path>
+    <path d="M34.3,153.0 L193.2,248.0" marker-end="url(#arrow-3-33)"></path>
+    <path d="M206.5,47.5 V240.5" marker-end="url(#arrow-3-33)"></path>
+    <path d="M222,32 H458" marker-end="url(#arrow-3-33)"></path>
+    <path d="M218.4,246.1 L462.1,41.9" marker-end="url(#arrow-3-33)"></path>
+    <path d="M222,256 H458" marker-end="url(#arrow-3-33)"></path>
+    <path d="M474,47.5 V240.5" marker-end="url(#arrow-3-33)" stroke-dasharray="8 4.5"></path>
+    <path d="M487.3,39.9 L651.7,137.1" marker-end="url(#arrow-3-33)"></path>
+    <path d="M487.4,248.2 L651.6,152.8" marker-end="url(#arrow-3-33)"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="21" cy="145" r="14.5"></circle>
+    <circle cx="206.5" cy="32" r="14.5"></circle>
+    <circle cx="206.5" cy="256" r="14.5"></circle>
+    <circle cx="474" cy="32" r="14.5"></circle>
+    <circle cx="474" cy="256" r="14.5"></circle>
+    <circle cx="665" cy="145" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="21" y="145">1</text><text x="206.5" y="32">2</text><text x="206.5" y="256">3</text><text x="474" y="32">4</text><text x="474" y="256">5</text><text x="665" y="145">6</text>
+    <text x="97.5" y="72.5">A(2)</text>
+    <text x="118.5" y="110.5">5(3)</text>
+    <text x="115" y="173.5">B(8)</text>
+    <text x="96.5" y="217">6(4)</text>
+    <text x="194" y="129.5">1</text>
+    <text x="236.5" y="125.5">C(∞)</text>
+    <text x="324.5" y="16">D(5)</text>
+    <text x="323" y="47.5">6(4)</text>
+    <text x="322.5" y="134">E(4)</text>
+    <text x="347" y="168.5">4(3)</text>
+    <text x="332.5" y="241">G(5)</text>
+    <text x="330" y="272">2(1)</text>
+    <text x="576" y="68">H(10)</text>
+    <text x="561.5" y="106">8(6)</text>
+    <text x="552" y="187">I(2)</text>
+    <text x="556.5" y="231">4(2)</text>
+  </g>
+</svg>
+</FigureZoom>
 
 【解】该网络计划的工期优化可按以下步骤进行：
 
 （1）根据各项工作的正常持续时间，用标号法确定网络计划的计算工期和关键线路，如图 3-34 所示。此时关键线路为①→②→④→⑥。
 
-<FigureZoom caption="图 3-34 初始网络计划中的关键线路" src="/images/schedule/chapter-03/fig-3-34.png" :width="678" :height="302" />
+<FigureZoom caption="图 3-34 初始网络计划中的关键线路">
+<svg viewBox="0 0 678 302" role="img" aria-label="图 3-34 初始网络计划中的关键线路" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-34" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M44.8,145.1 L180.1,62.5"></path>
+    <path d="M42.7,141.7 L178.0,59.1"></path>
+    <path d="M179.1,60.8 L189.3,54.6" marker-end="url(#arrow-3-34)"></path>
+    <path d="M43.8,159.5 L189.2,247.5" marker-end="url(#arrow-3-34)"></path>
+    <path d="M202.5,62 V240" marker-end="url(#arrow-3-34)"></path>
+    <path d="M219,44.5 H423"></path>
+    <path d="M219,48.5 H423"></path>
+    <path d="M423,46.5 H435" marker-end="url(#arrow-3-34)"></path>
+    <path d="M214.3,245.5 L438.2,56.5" marker-end="url(#arrow-3-34)"></path>
+    <path d="M218,255.5 H434" marker-end="url(#arrow-3-34)"></path>
+    <path d="M450,62 V240" marker-end="url(#arrow-3-34)" stroke-dasharray="8 4.5"></path>
+    <path d="M464.4,52.7 L604.4,135.3"></path>
+    <path d="M462.4,56.1 L602.4,138.7"></path>
+    <path d="M603.4,137.0 L613.7,143.1" marker-end="url(#arrow-3-34)"></path>
+    <path d="M463.8,247.6 L613.2,159.5" marker-end="url(#arrow-3-34)"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="30.5" cy="151.5" r="14.5"></circle>
+    <circle cx="202.5" cy="46.5" r="14.5"></circle>
+    <circle cx="202.5" cy="255.5" r="14.5"></circle>
+    <circle cx="450" cy="46.5" r="14.5"></circle>
+    <circle cx="450" cy="255.5" r="14.5"></circle>
+    <circle cx="627" cy="151" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="30.5" y="151.5">1</text><text x="202.5" y="46.5">2</text><text x="202.5" y="255.5">3</text><text x="450" y="46.5">4</text><text x="450" y="255.5">5</text><text x="627" y="151">6</text>
+    <text x="23.5" y="119">b₁=0</text>
+    <text x="199.5" y="18.5">(①, 5)</text>
+    <text x="452" y="18.5">(②, 11)</text>
+    <text x="640.5" y="121.5">(④, 19)</text>
+    <text x="201.5" y="283.5">(①、②, 6)</text>
+    <text x="452.5" y="286.5">(④, 11)</text>
+    <text x="102.5" y="85">A(2)</text>
+    <text x="110.5" y="119.5">5</text>
+    <text x="117.5" y="184.5">B</text>
+    <text x="106" y="211.5">6</text>
+    <text x="194" y="134.5">1</text>
+    <text x="213.5" y="135">C</text>
+    <text x="312" y="32.5">D(5)</text>
+    <text x="310.5" y="59.5">6</text>
+    <text x="314.5" y="144.5">E</text>
+    <text x="327.5" y="166.5">4</text>
+    <text x="319" y="239">G</text>
+    <text x="321.5" y="267.5">2</text>
+    <text x="544.5" y="80.5">H(10)</text>
+    <text x="527.5" y="113.5">8</text>
+    <text x="521.5" y="196.5">I</text>
+    <text x="526.5" y="229.5">4</text>
+  </g>
+</svg>
+</FigureZoom>
 
 （2）计算应缩短的时间：
 
