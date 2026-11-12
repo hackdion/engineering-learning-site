@@ -157,7 +157,7 @@ $T_{\mathrm{r}}$ ——要求工期。
     <text x="327.5" y="166.5">4</text>
     <text x="319" y="239">G</text>
     <text x="321.5" y="267.5">2</text>
-    <text x="544.5" y="80.5">H(10)</text>
+    <text x="544.5" y="74">H(10)</text>
     <text x="527.5" y="113.5">8</text>
     <text x="521.5" y="196.5">I</text>
     <text x="526.5" y="229.5">4</text>
@@ -175,9 +175,144 @@ $$
 
 （4）将关键工作 A 的持续时间压缩至最短持续时间 3，利用标号法确定新的计算工期和关键线路，如图 3-35 所示。此时，关键工作 A 被压缩成非关键工作，故将其持续时间 3 延长为 4，使之成为关键工作。工作 A 恢复为关键工作之后，网络计划中出现两条关键线路，即：①→②→④→⑥和①→③→④→⑥，如图 3-36 所示。
 
-<FigureZoom caption="图 3-35 工作 A 压缩至最短时的关键线路" src="/images/schedule/chapter-03/fig-3-35.png" :width="680" :height="300" />
+<FigureZoom caption="图 3-35 工作 A 压缩至最短时的关键线路">
+<svg viewBox="0 0 680 300" role="img" aria-label="图 3-35 工作 A 压缩至最短时的关键线路" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-35" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M46.8,141.5 L190.4,53.4"></path>
+    <path d="M47.9,156.7 L180.2,237.7"></path>
+    <path d="M45.8,160.2 L178.1,241.1"></path>
+    <path d="M179.1,239.4 L189.4,245.7" marker-end="url(#arrow-3-35)"></path>
+    <path d="M204,61.2 L204,238"></path>
+    <path d="M220.2,45 L439,45"></path>
+    <path d="M214.2,242.1 L432.2,61.3"></path>
+    <path d="M216.7,245.2 L434.7,64.4"></path>
+    <path d="M433.4,62.9 L442.7,55.2" marker-end="url(#arrow-3-35)"></path>
+    <path d="M219.2,254 L437,254"></path>
+    <path d="M455,61.2 L455,238" stroke-dasharray="8 4.5"></path>
+    <path d="M470,51.5 L605.9,132"></path>
+    <path d="M467.9,55 L603.9,135.5"></path>
+    <path d="M604.9,133.7 L615.2,139.8" marker-end="url(#arrow-3-35)"></path>
+    <path d="M466.9,245.6 L615.3,156.3"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="33" cy="150" r="14.5"></circle>
+    <circle cx="204" cy="45" r="14.5"></circle>
+    <circle cx="203" cy="254" r="14.5"></circle>
+    <circle cx="455" cy="45" r="14.5"></circle>
+    <circle cx="453" cy="254" r="14.5"></circle>
+    <circle cx="629" cy="148" r="14.5"></circle>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="112.5" y="112.5" width="20" height="20"></rect>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="33" y="150">1</text>
+    <text x="204" y="45">2</text>
+    <text x="203" y="254">3</text>
+    <text x="455" y="45">4</text>
+    <text x="453" y="254">5</text>
+    <text x="629" y="148">6</text>
+    <text x="25.5" y="118.5">b₁=0</text>
+    <text x="201" y="17.5">(①, 3)</text>
+    <text x="453" y="17">(③, 10)</text>
+    <text x="643.5" y="119.5">(④, 18)</text>
+    <text x="202.5" y="286.5">(①, 6)</text>
+    <text x="455" y="284.5">(④, 10)</text>
+    <text x="107" y="86.5">A</text>
+    <text x="119.5" y="182.5">B</text>
+    <text x="108" y="213">6</text>
+    <text x="195" y="133">1</text>
+    <text x="215.5" y="133.5">C</text>
+    <text x="314" y="29.5">D</text>
+    <text x="312.5" y="58.5">6</text>
+    <text x="317" y="140.5">E</text>
+    <text x="330" y="168.5">4</text>
+    <text x="321.5" y="238">G</text>
+    <text x="323.5" y="266">2</text>
+    <text x="547" y="77">H</text>
+    <text x="529.5" y="112">8</text>
+    <text x="525" y="194.5">I</text>
+    <text x="529.5" y="227.5">4</text>
+    <text x="122.5" y="122.5">3</text>
+  </g>
+</svg>
+</FigureZoom>
 
-<FigureZoom caption="图 3-36 第一次压缩后的网络计划" src="/images/schedule/chapter-03/fig-3-36.png" :width="672" :height="304" />
+<FigureZoom caption="图 3-36 第一次压缩后的网络计划">
+<svg viewBox="0 0 672 304" role="img" aria-label="图 3-36 第一次压缩后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-36" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M43.8,142.8 L177.1,60.9"></path>
+    <path d="M45.9,146.2 L179.2,64.4"></path>
+    <path d="M178.1,62.7 L188.4,56.4" marker-end="url(#arrow-3-36)"></path>
+    <path d="M45.9,159.7 L178.2,240.7"></path>
+    <path d="M43.8,163.2 L176.1,244.1"></path>
+    <path d="M177.1,242.4 L187.4,248.7" marker-end="url(#arrow-3-36)"></path>
+    <path d="M202,64.2 L202,241"></path>
+    <path d="M218.2,46 L424,46"></path>
+    <path d="M218.2,50 L424,50"></path>
+    <path d="M424,48 L436,48" marker-end="url(#arrow-3-36)"></path>
+    <path d="M212.2,245.1 L429.2,64.4"></path>
+    <path d="M214.7,248.2 L431.8,67.5"></path>
+    <path d="M430.5,65.9 L439.7,58.2" marker-end="url(#arrow-3-36)"></path>
+    <path d="M217.2,257 L435,257"></path>
+    <path d="M452,64.2 L452,241" stroke-dasharray="8 4.5"></path>
+    <path d="M467,54.5 L603.9,135.1"></path>
+    <path d="M464.9,57.9 L601.9,138.5"></path>
+    <path d="M602.9,136.8 L613.2,142.9" marker-end="url(#arrow-3-36)"></path>
+    <path d="M464.9,248.6 L613.3,159.3"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="31" cy="153" r="14.5"></circle>
+    <circle cx="202" cy="48" r="14.5"></circle>
+    <circle cx="201" cy="257" r="14.5"></circle>
+    <circle cx="452" cy="48" r="14.5"></circle>
+    <circle cx="451" cy="257" r="14.5"></circle>
+    <circle cx="627" cy="151" r="14.5"></circle>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="31" y="153">1</text>
+    <text x="202" y="48">2</text>
+    <text x="201" y="257">3</text>
+    <text x="452" y="48">4</text>
+    <text x="451" y="257">5</text>
+    <text x="627" y="151">6</text>
+    <text x="23.5" y="121">b₁=0</text>
+    <text x="199" y="20">(①, 4)</text>
+    <text x="456" y="18.5">(②, ③, 10)</text>
+    <text x="634.5" y="118.5">(④, 18)</text>
+    <text x="198.5" y="290.5">(①, 6)</text>
+    <text x="453" y="288">(④, 10)</text>
+    <text x="102" y="82.5">A(2)</text>
+    <text x="119.5" y="125">4(3)</text>
+    <text x="121" y="179">B(8)</text>
+    <text x="102.5" y="224.5">6(4)</text>
+    <text x="193" y="136">1</text>
+    <text x="213.5" y="136.5">C</text>
+    <text x="312" y="32.5">D(5)</text>
+    <text x="310.5" y="63">6(4)</text>
+    <text x="305" y="136.5">E(4)</text>
+    <text x="339.5" y="179">4(3)</text>
+    <text x="319" y="240.5">G</text>
+    <text x="321.5" y="268.5">2</text>
+    <text x="556" y="78.5">H(10)</text>
+    <text x="525" y="118.5">8(6)</text>
+    <text x="522.5" y="197.5">I</text>
+    <text x="527" y="231">4</text>
+  </g>
+</svg>
+</FigureZoom>
 
 （5）由于此时计算工期为 18，仍大于要求工期，故需继续压缩。需要缩短的时间：$\Delta T_{1} = 18 - 15 = 3$。在图 3-36 所示网络计划中，有以下五个压缩方案：
 
@@ -195,7 +330,78 @@ $$
 
 在图 3-37 中，关键工作 A 和 E 的持续时间已达最短，不能再压缩，它们的优选系数变为无穷大。
 
-<FigureZoom caption="图 3-37 第二次压缩后的网络计划" src="/images/schedule/chapter-03/fig-3-37.png" :width="673" :height="312" />
+<FigureZoom caption="图 3-37 第二次压缩后的网络计划">
+<svg viewBox="0 0 673 312" role="img" aria-label="图 3-37 第二次压缩后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-37" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M43.8,149.9 L178.1,67.9"></path>
+    <path d="M45.9,153.3 L180.1,71.3"></path>
+    <path d="M179.1,69.6 L189.3,63.3" marker-end="url(#arrow-3-37)"></path>
+    <path d="M45.9,166.7 L179.1,247.7"></path>
+    <path d="M43.8,170.1 L177,251.2"></path>
+    <path d="M178.1,249.5 L188.3,255.7" marker-end="url(#arrow-3-37)"></path>
+    <path d="M203,71.2 L203,248"></path>
+    <path d="M219.2,53 L424,53"></path>
+    <path d="M219.2,57 L424,57"></path>
+    <path d="M424,55 L436,55" marker-end="url(#arrow-3-37)"></path>
+    <path d="M213.1,252.1 L429.2,71.4"></path>
+    <path d="M215.7,255.1 L431.8,74.5"></path>
+    <path d="M430.5,73 L439.7,65.3" marker-end="url(#arrow-3-37)"></path>
+    <path d="M218.2,264 L435,264"></path>
+    <path d="M452,71.2 L452,249" stroke-dasharray="8 4.5"></path>
+    <path d="M467,61.5 L604.9,143"></path>
+    <path d="M464.9,65 L602.9,146.5"></path>
+    <path d="M603.9,144.8 L614.2,150.9" marker-end="url(#arrow-3-37)"></path>
+    <path d="M464.9,256.7 L614.3,167.2"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="31" cy="160" r="14.5"></circle>
+    <circle cx="203" cy="55" r="14.5"></circle>
+    <circle cx="202" cy="264" r="14.5"></circle>
+    <circle cx="452" cy="55" r="14.5"></circle>
+    <circle cx="451" cy="265" r="14.5"></circle>
+    <circle cx="628" cy="159" r="14.5"></circle>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="113" y="121" width="20" height="20"></rect>
+    <rect x="325" y="181" width="20" height="20"></rect>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="31" y="160">1</text>
+    <text x="203" y="55">2</text>
+    <text x="202" y="264">3</text>
+    <text x="452" y="55">4</text>
+    <text x="451" y="265">5</text>
+    <text x="628" y="159">6</text>
+    <text x="23.5" y="128">b₁=0</text>
+    <text x="200" y="27.5">(①, 3)</text>
+    <text x="445" y="19">(②, ③, 9)</text>
+    <text x="635.5" y="127.5">(④, 17)</text>
+    <text x="199" y="298">(①, 6)</text>
+    <text x="453.5" y="295.5">(④, 9)</text>
+    <text x="102" y="88">A(∞)</text>
+    <text x="121" y="186.5">B(8)</text>
+    <text x="103" y="231.5">6(4)</text>
+    <text x="194.5" y="142.5">1</text>
+    <text x="214.5" y="143.5">C</text>
+    <text x="313" y="39.5">D(5)</text>
+    <text x="311.5" y="70">6(4)</text>
+    <text x="305.5" y="142">E(∞)</text>
+    <text x="320" y="247.5">G</text>
+    <text x="322" y="276">2</text>
+    <text x="558" y="87">H(10)</text>
+    <text x="525.5" y="124.5">8(6)</text>
+    <text x="522.5" y="205.5">I</text>
+    <text x="527.5" y="238.5">4</text>
+    <text x="123" y="131">3</text>
+    <text x="335" y="191">3</text>
+  </g>
+</svg>
+</FigureZoom>
 
 （6）由于此时计算工期为 17，仍大于要求工期，故需继续压缩。需要缩短的时间：$\Delta T_{2} = 17 - 15 = 2$。在图 3-37 所示网络计划中，由于关键工作 A 和 E 已不能再压缩，故此时只有两个压缩方案：
 
@@ -205,7 +411,79 @@ $$
 
 在上述压缩方案中，由于工作 H 的优选系数最小，故应选择压缩工作 H 的方案。将工作 H 的持续时间缩短 2，再用标号法确定计算工期和关键线路，如图 3-38 所示。此时，计算工期为 15，已等于要求工期，故图 3-38 所示网络计划即为优化方案。
 
-<FigureZoom caption="图 3-38 工期优化后的网络计划" src="/images/schedule/chapter-03/fig-3-38.png" :width="672" :height="307" />
+<FigureZoom caption="图 3-38 工期优化后的网络计划">
+<svg viewBox="0 0 672 307" role="img" aria-label="图 3-38 工期优化后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-38" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M42.8,145.9 L177.1,63.9"></path>
+    <path d="M44.9,149.3 L179.1,67.3"></path>
+    <path d="M178.1,65.6 L188.3,59.3" marker-end="url(#arrow-3-38)"></path>
+    <path d="M44.9,162.7 L178.1,243.7"></path>
+    <path d="M42.8,166.1 L176,247.2"></path>
+    <path d="M177.1,245.5 L187.3,251.7" marker-end="url(#arrow-3-38)"></path>
+    <path d="M202,67.2 L202,244"></path>
+    <path d="M218.2,49 L423,49"></path>
+    <path d="M218.2,53 L423,53"></path>
+    <path d="M423,51 L435,51" marker-end="url(#arrow-3-38)"></path>
+    <path d="M212.1,248.1 L428.2,67.4"></path>
+    <path d="M214.7,251.1 L430.8,70.5"></path>
+    <path d="M429.5,69 L438.7,61.3" marker-end="url(#arrow-3-38)"></path>
+    <path d="M217.2,260 L434,260"></path>
+    <path d="M451,67.2 L451,245" stroke-dasharray="8 4.5"></path>
+    <path d="M466,57.5 L603.9,139"></path>
+    <path d="M463.9,61 L601.9,142.5"></path>
+    <path d="M602.9,140.8 L613.2,146.9" marker-end="url(#arrow-3-38)"></path>
+    <path d="M463.9,252.7 L613.3,163.2"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="30" cy="156" r="14.5"></circle>
+    <circle cx="202" cy="51" r="14.5"></circle>
+    <circle cx="201" cy="260" r="14.5"></circle>
+    <circle cx="451" cy="51" r="14.5"></circle>
+    <circle cx="450" cy="261" r="14.5"></circle>
+    <circle cx="627" cy="155" r="14.5"></circle>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="113" y="117" width="20" height="20"></rect>
+    <rect x="324" y="177" width="20" height="20"></rect>
+    <rect x="522" y="118" width="20" height="20"></rect>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="30" y="156">1</text>
+    <text x="202" y="51">2</text>
+    <text x="201" y="260">3</text>
+    <text x="451" y="51">4</text>
+    <text x="450" y="261">5</text>
+    <text x="627" y="155">6</text>
+    <text x="23.5" y="123">b₁=0</text>
+    <text x="199.5" y="23.5">(①, 3)</text>
+    <text x="443.5" y="14.5">(②, ③, 9)</text>
+    <text x="634" y="123">(④, 15)</text>
+    <text x="198.5" y="293.5">(①, 6)</text>
+    <text x="452" y="291.5">(④, 9)</text>
+    <text x="110.5" y="89.5">A</text>
+    <text x="121" y="185.5">B</text>
+    <text x="102.5" y="226">6</text>
+    <text x="194" y="138.5">1</text>
+    <text x="213.5" y="140">C</text>
+    <text x="312.5" y="35.5">D</text>
+    <text x="310.5" y="64.5">6</text>
+    <text x="313.5" y="145.5">E</text>
+    <text x="319" y="244">G</text>
+    <text x="321.5" y="272">2</text>
+    <text x="550.5" y="83.5">H</text>
+    <text x="521" y="201.5">I</text>
+    <text x="525.5" y="234.5">4</text>
+    <text x="123" y="127">3</text>
+    <text x="334" y="187">3</text>
+    <text x="532" y="128">6</text>
+  </g>
+</svg>
+</FigureZoom>
 
 ## 二、费用优化
 
