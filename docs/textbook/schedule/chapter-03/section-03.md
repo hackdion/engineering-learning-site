@@ -550,16 +550,194 @@ $$
 
 在上述计算过程中，是将每项工作的六个时间参数均标注在图中，故称为六时标注法，如图 3-20 所示。为使网络计划的图面更加简洁，在双代号网络计划中，除各项工作的持续时间以外，通常只需标注两个最基本的时间参数——各项工作的最早开始时间和最迟开始时间即可，而工作的其他四个时间参数（最早完成时间、最迟完成时间、总时差和自由时差）均可根据工作的最早开始时间、最迟开始时间及持续时间导出。这种方法称为二时标注法，如图 3-21 所示。
 
-<FigureZoom caption="图 3-21 双代号网络计划（二时标注法）" src="/images/schedule/chapter-03/fig-3-21.png" :width="943" :height="387" />
-
+<FigureZoom caption="图 3-21 双代号网络计划（二时标注法）">
+<svg viewBox="0 0 943 387" role="img" aria-label="图 3-21 双代号网络计划（二时标注法）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M34,203 V70 H391" marker-end="url(#arrow)"></path>
+    <path d="M419,70 H796 V203" marker-end="url(#arrow)"></path>
+    <path d="M48,215 H240"></path>
+    <path d="M48,219 H240"></path>
+    <path d="M239,217 H256" marker-end="url(#arrow)"></path>
+    <path d="M284,217 H515" marker-end="url(#arrow)"></path>
+    <path d="M544,217 H782" marker-end="url(#arrow)"></path>
+    <path d="M34,231 V353 H256" marker-end="url(#arrow)"></path>
+    <path d="M284,351 H504"></path>
+    <path d="M284,355 H504"></path>
+    <path d="M503,353 H515" marker-end="url(#arrow)"></path>
+    <path d="M544,351 H792 V238"></path>
+    <path d="M544,355 H796 V238"></path>
+    <path d="M794,238 V231" marker-end="url(#arrow)"></path>
+    <path d="M268,231 V330"></path>
+    <path d="M272,231 V330"></path>
+    <path d="M270,330 V339" marker-end="url(#arrow)"></path>
+    <path d="M529.5,231 V339" marker-end="url(#arrow)" stroke-dasharray="8 4.5"></path>
+    <path d="M156,56 H232" stroke-width="1.4"></path>
+    <path d="M194,29 V56" stroke-width="1.4"></path>
+    <path d="M561,55 H637" stroke-width="1.4"></path>
+    <path d="M599,28 V55" stroke-width="1.4"></path>
+    <path d="M103.5,200 H179.5" stroke-width="1.4"></path>
+    <path d="M141.5,173 V200" stroke-width="1.4"></path>
+    <path d="M342,202 H418" stroke-width="1.4"></path>
+    <path d="M380,175 V202" stroke-width="1.4"></path>
+    <path d="M607,200 H683" stroke-width="1.4"></path>
+    <path d="M645,173 V200" stroke-width="1.4"></path>
+    <path d="M97.5,337 H173.5" stroke-width="1.4"></path>
+    <path d="M135.5,310 V337" stroke-width="1.4"></path>
+    <path d="M341.5,337 H417.5" stroke-width="1.4"></path>
+    <path d="M379.5,310 V337" stroke-width="1.4"></path>
+    <path d="M618.5,336 H694.5" stroke-width="1.4"></path>
+    <path d="M656.5,309 V336" stroke-width="1.4"></path>
+    <path d="M851,130 H926" stroke-width="1.4"></path>
+    <path d="M889,103 V130" stroke-width="1.4"></path>
+    <circle cx="34" cy="217" r="14.5"></circle>
+    <circle cx="405" cy="70" r="14.5"></circle>
+    <circle cx="270" cy="217" r="14.5"></circle>
+    <circle cx="270" cy="353" r="14.5"></circle>
+    <circle cx="529.5" cy="217" r="14.5"></circle>
+    <circle cx="529.5" cy="353" r="14.5"></circle>
+    <circle cx="796" cy="217" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="34" y="223">1</text>
+    <text x="405" y="76">2</text>
+    <text x="270" y="223">3</text>
+    <text x="270" y="359">4</text>
+    <text x="529.5" y="223">5</text>
+    <text x="529.5" y="359">6</text>
+    <text x="796" y="223">7</text>
+    <text x="175" y="52">0</text>
+    <text x="213" y="52">4</text>
+    <text x="580" y="51">6</text>
+    <text x="618" y="51">10</text>
+    <text x="122.5" y="196">0</text>
+    <text x="160.5" y="196">0</text>
+    <text x="361" y="198">4</text>
+    <text x="399" y="198">5</text>
+    <text x="626" y="196">9</text>
+    <text x="664" y="196">12</text>
+    <text x="116.5" y="333">0</text>
+    <text x="154.5" y="333">2</text>
+    <text x="360.5" y="333">4</text>
+    <text x="398.5" y="333">4</text>
+    <text x="637.5" y="332">10</text>
+    <text x="675.5" y="332">10</text>
+    <text x="203.5" y="90">6</text>
+    <text x="605.5" y="90">5</text>
+    <text x="141.5" y="239">4</text>
+    <text x="386.5" y="239">5</text>
+    <text x="646" y="239">3</text>
+    <text x="138.5" y="373">2</text>
+    <text x="386" y="373">6</text>
+    <text x="646" y="373">5</text>
+    <text x="814" y="223" text-anchor="start">T<tspan dy="7" font-size="18">p</tspan><tspan dy="-7">=T</tspan><tspan dy="7" font-size="18">c</tspan><tspan dy="-7">=15</tspan></text>
+    <text x="843" y="64" font-size="18">图例：</text>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" font-style="italic" text-anchor="middle">
+    <text x="866" y="126" font-size="18">ES</text>
+    <text x="913" y="126" font-size="18">LS</text>
+  </g>
+</svg>
+</FigureZoom>
 ### （二）按节点计算法
 
 所谓按节点计算法，就是先计算网络计划中各个节点的最早时间和最迟时间，然后再据此计算各项工作的时间参数和网络计划的计算工期。
 
 下面仍以图 3-19 所示双代号网络计划为例，说明按节点计算法计算时间参数的过程。
 
-<FigureZoom caption="图 3-22 双代号网络计划（按节点计算法）" src="/images/schedule/chapter-03/fig-3-22.png" :width="911" :height="407" />
-
+<FigureZoom caption="图 3-22 双代号网络计划（按节点计算法）">
+<svg viewBox="0 0 911 407" role="img" aria-label="图 3-22 双代号网络计划（按节点计算法）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M113,196 V86 H422" marker-end="url(#arrow)"></path>
+    <path d="M451,86 H767 V193.5" marker-end="url(#arrow)"></path>
+    <path d="M127,209 H285"></path>
+    <path d="M127,213 H285"></path>
+    <path d="M284,211 H301" marker-end="url(#arrow)"></path>
+    <path d="M331,211 H525" marker-end="url(#arrow)"></path>
+    <path d="M554,211 H752" marker-end="url(#arrow)"></path>
+    <path d="M113,225 V330 H301" marker-end="url(#arrow)"></path>
+    <path d="M331,328 H495"></path>
+    <path d="M331,332 H495"></path>
+    <path d="M494,330 H525" marker-end="url(#arrow)"></path>
+    <path d="M554,328 H763 V238"></path>
+    <path d="M554,332 H767 V238"></path>
+    <path d="M765,238 V227.5" marker-end="url(#arrow)"></path>
+    <path d="M314,226 V292"></path>
+    <path d="M318,226 V292"></path>
+    <path d="M316,292 V315.5" marker-end="url(#arrow)"></path>
+    <path d="M539.5,226 V315.5" marker-end="url(#arrow)" stroke-dasharray="8 4.5"></path>
+    <path d="M6.5,218 H82.5" stroke-width="1.4"></path>
+    <path d="M44.5,191 V218" stroke-width="1.4"></path>
+    <path d="M400.5,59 H476.5" stroke-width="1.4"></path>
+    <path d="M438.5,32 V59" stroke-width="1.4"></path>
+    <path d="M276.5,187 H352.5" stroke-width="1.4"></path>
+    <path d="M314.5,160 V187" stroke-width="1.4"></path>
+    <path d="M277,388 H353" stroke-width="1.4"></path>
+    <path d="M315,361 V388" stroke-width="1.4"></path>
+    <path d="M498.5,184 H574.5" stroke-width="1.4"></path>
+    <path d="M536.5,157 V184" stroke-width="1.4"></path>
+    <path d="M501.5,384.5 H577.5" stroke-width="1.4"></path>
+    <path d="M539.5,357.5 V384.5" stroke-width="1.4"></path>
+    <path d="M800.5,225.5 H876.5" stroke-width="1.4"></path>
+    <path d="M838.5,198.5 V225.5" stroke-width="1.4"></path>
+    <path d="M813,111 H890" stroke-width="1.4"></path>
+    <path d="M851.5,84 V111" stroke-width="1.4"></path>
+    <circle cx="113" cy="211" r="14.5"></circle>
+    <circle cx="437" cy="86" r="14.5"></circle>
+    <circle cx="316" cy="211" r="14.5"></circle>
+    <circle cx="316" cy="330" r="14.5"></circle>
+    <circle cx="539.5" cy="211" r="14.5"></circle>
+    <circle cx="539.5" cy="330" r="14.5"></circle>
+    <circle cx="767" cy="211" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="113" y="217">1</text>
+    <text x="437" y="92">2</text>
+    <text x="316" y="217">3</text>
+    <text x="316" y="336">4</text>
+    <text x="539.5" y="217">5</text>
+    <text x="539.5" y="336">6</text>
+    <text x="767" y="217">7</text>
+    <text x="25.5" y="214">0</text>
+    <text x="63.5" y="214">0</text>
+    <text x="419.5" y="55">6</text>
+    <text x="457.5" y="55">10</text>
+    <text x="295.5" y="183">4</text>
+    <text x="333.5" y="183">4</text>
+    <text x="296" y="384">4</text>
+    <text x="334" y="384">4</text>
+    <text x="517.5" y="180">9</text>
+    <text x="555.5" y="180">10</text>
+    <text x="520.5" y="380.5">10</text>
+    <text x="558.5" y="380.5">10</text>
+    <text x="819.5" y="221.5">15</text>
+    <text x="857.5" y="221.5">15</text>
+    <text x="250" y="108">6</text>
+    <text x="620" y="108">5</text>
+    <text x="215" y="233">4</text>
+    <text x="425" y="233">5</text>
+    <text x="650" y="233">3</text>
+    <text x="190" y="352">2</text>
+    <text x="420" y="352">6</text>
+    <text x="650" y="352">5</text>
+    <text x="818" y="163" text-anchor="start">T<tspan dy="7" font-size="18">p</tspan><tspan dy="-7">=T</tspan><tspan dy="7" font-size="18">c</tspan><tspan dy="-7">=15</tspan></text>
+    <text x="820" y="58" font-size="18">图例：</text>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" font-style="italic" text-anchor="middle">
+    <text x="831" y="107" font-size="18">ET</text>
+    <text x="872" y="107" font-size="18">LT</text>
+  </g>
+</svg>
+</FigureZoom>
 其计算结果如图 3-22 所示。
 
 #### 1. 计算节点的最早时间和最迟时间
@@ -827,8 +1005,83 @@ $LT_j$——工作 $i-j$ 的完成节点（关键节点）$j$ 的最迟时间。
 
 下面仍以图 3-19 所示网络计划为例，说明标号法的计算过程。其计算结果如图 3-23 所示。
 
-<FigureZoom caption="图 3-23 双代号网络计划（标号法）" src="/images/schedule/chapter-03/fig-3-23.png" :width="783" :height="376" />
-
+<FigureZoom caption="图 3-23 双代号网络计划（标号法）">
+<svg viewBox="0 0 783 376" role="img" aria-label="图 3-23 双代号网络计划（标号法）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M17,175 V64 H327" marker-end="url(#arrow)"></path>
+    <path d="M356,64 H671 V175" marker-end="url(#arrow)"></path>
+    <path d="M32,187 H192"></path>
+    <path d="M32,191 H192"></path>
+    <path d="M191,189 H208" marker-end="url(#arrow)"></path>
+    <path d="M236,189 H431" marker-end="url(#arrow)"></path>
+    <path d="M459,189 H657" marker-end="url(#arrow)"></path>
+    <path d="M17,203 V307 H208" marker-end="url(#arrow)"></path>
+    <path d="M236,305 H414"></path>
+    <path d="M236,309 H414"></path>
+    <path d="M413,307 H429" marker-end="url(#arrow)"></path>
+    <path d="M459,305 H667 V238"></path>
+    <path d="M459,309 H671 V238"></path>
+    <path d="M669,238 V203" marker-end="url(#arrow)"></path>
+    <path d="M220,204 V276"></path>
+    <path d="M224,204 V276"></path>
+    <path d="M222,276 V293" marker-end="url(#arrow)"></path>
+    <path d="M444,204 V293" marker-end="url(#arrow)" stroke-dasharray="8 4.5"></path>
+    <circle cx="17" cy="189" r="14.5"></circle>
+    <circle cx="341.5" cy="64" r="14.5"></circle>
+    <circle cx="222" cy="189" r="14.5"></circle>
+    <circle cx="222" cy="307" r="14.5"></circle>
+    <circle cx="444" cy="189" r="14.5"></circle>
+    <circle cx="444" cy="307" r="14.5"></circle>
+    <circle cx="671" cy="189" r="14.5"></circle>
+    <circle cx="324" cy="29" r="9"></circle>
+    <circle cx="207" cy="151" r="9"></circle>
+    <circle cx="427" cy="151" r="9"></circle>
+    <circle cx="207" cy="345" r="9"></circle>
+    <circle cx="428" cy="345" r="9"></circle>
+    <circle cx="702" cy="191" r="9"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="17" y="195">1</text>
+    <text x="341.5" y="70">2</text>
+    <text x="222" y="195">3</text>
+    <text x="222" y="313">4</text>
+    <text x="444" y="195">5</text>
+    <text x="444" y="313">6</text>
+    <text x="671" y="195">7</text>
+    <text x="307" y="36">（</text>
+    <text x="324" y="34" font-size="14">1</text>
+    <text x="336" y="36" text-anchor="start">, 6）</text>
+    <text x="190" y="158">（</text>
+    <text x="207" y="156" font-size="14">1</text>
+    <text x="219" y="158" text-anchor="start">, 4）</text>
+    <text x="410" y="158">（</text>
+    <text x="427" y="156" font-size="14">3</text>
+    <text x="439" y="158" text-anchor="start">, 9）</text>
+    <text x="190" y="352">（</text>
+    <text x="207" y="350" font-size="14">3</text>
+    <text x="219" y="352" text-anchor="start">, 4）</text>
+    <text x="411" y="352">（</text>
+    <text x="428" y="350" font-size="14">4</text>
+    <text x="440" y="352" text-anchor="start">, 10）</text>
+    <text x="685" y="198">（</text>
+    <text x="702" y="196" font-size="14">6</text>
+    <text x="714" y="198" text-anchor="start">, 15）</text>
+    <text x="161" y="86">6</text>
+    <text x="520" y="86">5</text>
+    <text x="123" y="211">4</text>
+    <text x="320" y="211">5</text>
+    <text x="542" y="211">3</text>
+    <text x="116" y="329">2</text>
+    <text x="320" y="329">6</text>
+    <text x="542" y="329">5</text>
+  </g>
+</svg>
+</FigureZoom>
 （1）网络计划起点节点的标号值为零。例如在本例中，节点①的标号值为零，即：
 
 $$
@@ -869,10 +1122,297 @@ $$
 
 单代号网络计划与双代号网络计划只是表现形式不同，它们所表达的内容则完全一样。下面以图 3-24 所示单代号网络计划为例，说明其时间参数的计算过程。计算结果如图 3-25 所示。
 
-<FigureZoom caption="图 3-24 单代号网络计划" src="/images/schedule/chapter-03/fig-3-24.png" :width="939" :height="437" />
-
-<FigureZoom caption="图 3-25 单代号网络计划" src="/images/schedule/chapter-03/fig-3-25.png" :width="1079" :height="576" />
-
+<FigureZoom caption="图 3-24 单代号网络计划">
+<svg viewBox="0 0 939 437" role="img" aria-label="图 3-24 单代号网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M109.2,168.7 L232.8,80.3" marker-end="url(#arrow)"></path>
+    <path d="M118.0,196.7 L224.0,198.3" marker-end="url(#arrow)"></path>
+    <path d="M107.4,225.7 L228.6,324.3" marker-end="url(#arrow)"></path>
+    <path d="M318.0,53.0 L618.0,53.0" marker-end="url(#arrow)"></path>
+    <path d="M318.0,199.0 L419.0,199.0" marker-end="url(#arrow)"></path>
+    <path d="M307.8,228.2 L431.2,325.8" marker-end="url(#arrow)"></path>
+    <path d="M312.0,354.2 L421.0,354.8" marker-end="url(#arrow)"></path>
+    <path d="M513.0,199.5 L618.0,200.5" marker-end="url(#arrow)"></path>
+    <path d="M503.5,227.3 L628.5,321.7" marker-end="url(#arrow)"></path>
+    <path d="M515.0,353.8 L619.0,351.2" marker-end="url(#arrow)"></path>
+    <path d="M703.2,80.3 L829.8,170.7" marker-end="url(#arrow)"></path>
+    <path d="M712.0,200.3 L821.0,198.7" marker-end="url(#arrow)"></path>
+    <path d="M703.6,321.7 L830.4,226.3" marker-end="url(#arrow)"></path>
+    <path d="M26.8,180 H115.2" stroke-width="1.4"></path>
+    <path d="M26.8,212 H115.2" stroke-width="1.4"></path>
+    <path d="M226.8,37 H315.2" stroke-width="1.4"></path>
+    <path d="M226.8,69 H315.2" stroke-width="1.4"></path>
+    <path d="M226.8,183 H315.2" stroke-width="1.4"></path>
+    <path d="M226.8,215 H315.2" stroke-width="1.4"></path>
+    <path d="M220.8,338 H309.2" stroke-width="1.4"></path>
+    <path d="M220.8,370 H309.2" stroke-width="1.4"></path>
+    <path d="M421.8,183 H510.2" stroke-width="1.4"></path>
+    <path d="M421.8,215 H510.2" stroke-width="1.4"></path>
+    <path d="M423.8,339 H512.2" stroke-width="1.4"></path>
+    <path d="M423.8,371 H512.2" stroke-width="1.4"></path>
+    <path d="M620.8,37 H709.2" stroke-width="1.4"></path>
+    <path d="M620.8,69 H709.2" stroke-width="1.4"></path>
+    <path d="M620.8,185 H709.2" stroke-width="1.4"></path>
+    <path d="M620.8,217 H709.2" stroke-width="1.4"></path>
+    <path d="M621.8,334 H710.2" stroke-width="1.4"></path>
+    <path d="M621.8,366 H710.2" stroke-width="1.4"></path>
+    <path d="M823.8,182 H912.2" stroke-width="1.4"></path>
+    <path d="M823.8,214 H912.2" stroke-width="1.4"></path>
+    <circle cx="71" cy="196" r="47"></circle>
+    <circle cx="271" cy="53" r="47"></circle>
+    <circle cx="271" cy="199" r="47"></circle>
+    <circle cx="265" cy="354" r="47"></circle>
+    <circle cx="466" cy="199" r="47"></circle>
+    <circle cx="468" cy="355" r="47"></circle>
+    <circle cx="665" cy="53" r="47"></circle>
+    <circle cx="665" cy="201" r="47"></circle>
+    <circle cx="666" cy="350" r="47"></circle>
+    <circle cx="868" cy="198" r="47"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="71" y="171" font-size="22">1</text>
+    <text x="71" y="203" font-size="22">ST</text>
+    <text x="71" y="235" font-size="22">0</text>
+    <text x="271" y="28" font-size="22">2</text>
+    <text x="271" y="60" font-size="22">A</text>
+    <text x="271" y="92" font-size="22">6</text>
+    <text x="271" y="174" font-size="22">3</text>
+    <text x="271" y="206" font-size="22">B</text>
+    <text x="271" y="238" font-size="22">4</text>
+    <text x="265" y="329" font-size="22">4</text>
+    <text x="265" y="361" font-size="22">C</text>
+    <text x="265" y="393" font-size="22">2</text>
+    <text x="466" y="174" font-size="22">5</text>
+    <text x="466" y="206" font-size="22">D</text>
+    <text x="466" y="238" font-size="22">5</text>
+    <text x="468" y="330" font-size="22">6</text>
+    <text x="468" y="362" font-size="22">E</text>
+    <text x="468" y="394" font-size="22">6</text>
+    <text x="665" y="28" font-size="22">7</text>
+    <text x="665" y="60" font-size="22">G</text>
+    <text x="665" y="92" font-size="22">5</text>
+    <text x="665" y="176" font-size="22">8</text>
+    <text x="665" y="208" font-size="22">H</text>
+    <text x="665" y="240" font-size="22">3</text>
+    <text x="666" y="325" font-size="22">9</text>
+    <text x="666" y="357" font-size="22">I</text>
+    <text x="666" y="389" font-size="22">5</text>
+    <text x="868" y="173" font-size="22">10</text>
+    <text x="868" y="205" font-size="22">FIN</text>
+    <text x="868" y="237" font-size="22">0</text>
+  </g>
+</svg>
+</FigureZoom>
+<FigureZoom caption="图 3-25 单代号网络计划">
+<svg viewBox="0 0 1079 576" role="img" aria-label="图 3-25 单代号网络计划（带时间参数）" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M124.7,248.9 L267.3,160.1" marker-end="url(#arrow)"></path>
+    <path d="M133.0,278.8 L258.2,285.8"></path>
+    <path d="M132.8,283.2 L258.0,290.2"></path>
+    <path d="M223.0,286.0 L258.1,288.0" marker-end="url(#arrow)"></path>
+    <path d="M120.7,312.7 L263.3,428.3" marker-end="url(#arrow)"></path>
+    <path d="M369.0,131.0 L716.0,131.0" marker-end="url(#arrow)"></path>
+    <path d="M368.0,288.8 L485.0,284.2" marker-end="url(#arrow)"></path>
+    <path d="M358.3,322.2 L498.3,427.2"></path>
+    <path d="M355.7,325.8 L495.7,430.8"></path>
+    <path d="M457.8,399.6 L497.0,429.0" marker-end="url(#arrow)"></path>
+    <path d="M361.0,462.8 L486.0,462.2" marker-end="url(#arrow)"></path>
+    <path d="M594.9,285.1 L719.1,291.9" marker-end="url(#arrow)"></path>
+    <path d="M583.8,315.2 L732.2,427.8" marker-end="url(#arrow)"></path>
+    <path d="M596.0,459.6 L721.0,459.0"></path>
+    <path d="M596.0,464.0 L721.0,463.4"></path>
+    <path d="M686.0,461.4 L721.0,461.2" marker-end="url(#arrow)"></path>
+    <path d="M817.2,160.8 L952.8,248.2" marker-end="url(#arrow)"></path>
+    <path d="M828.8,290.9 L944.2,282.1" marker-end="url(#arrow)"></path>
+    <path d="M817.1,424.4 L955.1,311.2"></path>
+    <path d="M819.9,427.8 L957.9,314.6"></path>
+    <path d="M917.9,344.6 L956.5,312.9" marker-end="url(#arrow)"></path>
+    <path d="M27.1,260 H128.9" stroke-width="1.4"></path>
+    <path d="M27.1,296 H128.9" stroke-width="1.4"></path>
+    <path d="M23,226 V330" stroke-width="1.4"></path>
+    <path d="M133,226 V330" stroke-width="1.4"></path>
+    <path d="M263.1,113 H364.9" stroke-width="1.4"></path>
+    <path d="M263.1,149 H364.9" stroke-width="1.4"></path>
+    <path d="M259,79 V183" stroke-width="1.4"></path>
+    <path d="M369,79 V183" stroke-width="1.4"></path>
+    <path d="M262.1,273 H363.9" stroke-width="1.4"></path>
+    <path d="M262.1,309 H363.9" stroke-width="1.4"></path>
+    <path d="M258,239 V343" stroke-width="1.4"></path>
+    <path d="M368,239 V343" stroke-width="1.4"></path>
+    <path d="M255.1,445 H356.9" stroke-width="1.4"></path>
+    <path d="M255.1,481 H356.9" stroke-width="1.4"></path>
+    <path d="M251,411 V515" stroke-width="1.4"></path>
+    <path d="M361,411 V515" stroke-width="1.4"></path>
+    <path d="M489.1,264 H590.9" stroke-width="1.4"></path>
+    <path d="M489.1,300 H590.9" stroke-width="1.4"></path>
+    <path d="M485,230 V334" stroke-width="1.4"></path>
+    <path d="M595,230 V334" stroke-width="1.4"></path>
+    <path d="M490.1,444 H591.9" stroke-width="1.4"></path>
+    <path d="M490.1,480 H591.9" stroke-width="1.4"></path>
+    <path d="M486,410 V514" stroke-width="1.4"></path>
+    <path d="M596,410 V514" stroke-width="1.4"></path>
+    <path d="M720.1,113 H821.9" stroke-width="1.4"></path>
+    <path d="M720.1,149 H821.9" stroke-width="1.4"></path>
+    <path d="M716,79 V183" stroke-width="1.4"></path>
+    <path d="M826,79 V183" stroke-width="1.4"></path>
+    <path d="M723.1,277 H824.9" stroke-width="1.4"></path>
+    <path d="M723.1,313 H824.9" stroke-width="1.4"></path>
+    <path d="M719,243 V347" stroke-width="1.4"></path>
+    <path d="M829,243 V347" stroke-width="1.4"></path>
+    <path d="M725.1,443 H826.9" stroke-width="1.4"></path>
+    <path d="M725.1,479 H826.9" stroke-width="1.4"></path>
+    <path d="M721,409 V513" stroke-width="1.4"></path>
+    <path d="M831,409 V513" stroke-width="1.4"></path>
+    <path d="M948.1,260 H1049.9" stroke-width="1.4"></path>
+    <path d="M948.1,296 H1049.9" stroke-width="1.4"></path>
+    <path d="M944,226 V330" stroke-width="1.4"></path>
+    <path d="M1054,226 V330" stroke-width="1.4"></path>
+    <path d="M916,60 V136" stroke-width="1.4"></path>
+    <path d="M1004,60 V136" stroke-width="1.4"></path>
+    <path d="M920,78 H1000" stroke-width="1.4"></path>
+    <path d="M919,112.5 H1001" stroke-width="1.4"></path>
+    <circle cx="78" cy="278" r="54"></circle>
+    <circle cx="314" cy="131" r="54"></circle>
+    <circle cx="313" cy="291" r="54"></circle>
+    <circle cx="306" cy="463" r="54"></circle>
+    <circle cx="540" cy="282" r="54"></circle>
+    <circle cx="541" cy="462" r="54"></circle>
+    <circle cx="771" cy="131" r="54"></circle>
+    <circle cx="774" cy="295" r="54"></circle>
+    <circle cx="776" cy="461" r="54"></circle>
+    <circle cx="999" cy="278" r="54"></circle>
+    <circle cx="960" cy="96" r="44"></circle>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="78" y="244" font-size="22">1</text>
+    <text x="78" y="282" font-size="22">ST</text>
+    <text x="78" y="314" font-size="22">0</text>
+    <text x="23" y="214">0</text>
+    <text x="78" y="214">0</text>
+    <text x="133" y="214">0</text>
+    <text x="23" y="348">0</text>
+    <text x="78" y="348">0</text>
+    <text x="133" y="348">0</text>
+    <text x="314" y="97" font-size="22">2</text>
+    <text x="314" y="135" font-size="22">A</text>
+    <text x="314" y="167" font-size="22">6</text>
+    <text x="259" y="67">0</text>
+    <text x="314" y="67">4</text>
+    <text x="369" y="67">6</text>
+    <text x="259" y="201">4</text>
+    <text x="314" y="201">0</text>
+    <text x="369" y="201">10</text>
+    <text x="313" y="257" font-size="22">3</text>
+    <text x="313" y="295" font-size="22">B</text>
+    <text x="313" y="327" font-size="22">4</text>
+    <text x="258" y="227">0</text>
+    <text x="313" y="227">0</text>
+    <text x="368" y="227">4</text>
+    <text x="258" y="361">0</text>
+    <text x="313" y="361">0</text>
+    <text x="368" y="361">4</text>
+    <text x="306" y="429" font-size="22">4</text>
+    <text x="306" y="467" font-size="22">C</text>
+    <text x="306" y="499" font-size="22">2</text>
+    <text x="251" y="399">0</text>
+    <text x="306" y="399">2</text>
+    <text x="361" y="399">2</text>
+    <text x="251" y="533">2</text>
+    <text x="306" y="533">2</text>
+    <text x="361" y="533">4</text>
+    <text x="540" y="248" font-size="22">5</text>
+    <text x="540" y="286" font-size="22">D</text>
+    <text x="540" y="318" font-size="22">5</text>
+    <text x="485" y="218">4</text>
+    <text x="540" y="218">1</text>
+    <text x="595" y="218">9</text>
+    <text x="485" y="352">5</text>
+    <text x="540" y="352">0</text>
+    <text x="595" y="352">10</text>
+    <text x="541" y="428" font-size="22">6</text>
+    <text x="541" y="466" font-size="22">E</text>
+    <text x="541" y="498" font-size="22">6</text>
+    <text x="486" y="398">4</text>
+    <text x="541" y="398">0</text>
+    <text x="596" y="398">10</text>
+    <text x="486" y="532">4</text>
+    <text x="541" y="532">0</text>
+    <text x="596" y="532">10</text>
+    <text x="771" y="97" font-size="22">7</text>
+    <text x="771" y="135" font-size="22">G</text>
+    <text x="771" y="167" font-size="22">5</text>
+    <text x="716" y="67">6</text>
+    <text x="771" y="67">4</text>
+    <text x="826" y="67">11</text>
+    <text x="716" y="201">10</text>
+    <text x="771" y="201">4</text>
+    <text x="826" y="201">15</text>
+    <text x="774" y="261" font-size="22">8</text>
+    <text x="774" y="299" font-size="22">H</text>
+    <text x="774" y="331" font-size="22">3</text>
+    <text x="719" y="231">9</text>
+    <text x="774" y="231">3</text>
+    <text x="829" y="231">12</text>
+    <text x="719" y="365">12</text>
+    <text x="774" y="365">3</text>
+    <text x="829" y="365">15</text>
+    <text x="776" y="427" font-size="22">9</text>
+    <text x="776" y="465" font-size="22">I</text>
+    <text x="776" y="497" font-size="22">5</text>
+    <text x="721" y="397">10</text>
+    <text x="776" y="397">0</text>
+    <text x="831" y="397">15</text>
+    <text x="721" y="531">10</text>
+    <text x="776" y="531">0</text>
+    <text x="831" y="531">15</text>
+    <text x="999" y="244" font-size="22">10</text>
+    <text x="999" y="282" font-size="22">FIN</text>
+    <text x="999" y="314" font-size="22">0</text>
+    <text x="944" y="214">15</text>
+    <text x="999" y="214">0</text>
+    <text x="1054" y="214">15</text>
+    <text x="944" y="348">15</text>
+    <text x="999" y="348">0</text>
+    <text x="1054" y="348">15</text>
+    <text x="902" y="26" text-anchor="start">图例：</text>
+    <text x="960" y="100">工作名称</text>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" font-size="20" font-style="italic" text-anchor="middle">
+    <text x="172" y="163">LAG=0</text>
+    <text x="215" y="258">LAG=0</text>
+    <text x="182" y="330">LAG=0</text>
+    <text x="500" y="120">LAG=0</text>
+    <text x="425" y="266">LAG=0</text>
+    <text x="432" y="332">LAG=0</text>
+    <text x="420" y="487">LAG=2</text>
+    <text x="660" y="262">LAG=0</text>
+    <text x="645" y="332">LAG=1</text>
+    <text x="655" y="446">LAG=0</text>
+    <text x="885" y="180">LAG=4</text>
+    <text x="885" y="272">LAG=3</text>
+    <text x="885" y="330">LAG=0</text>
+    <text x="916" y="46">ES</text>
+    <text x="960" y="46">TF</text>
+    <text x="1005" y="46">EF</text>
+    <text x="960" y="70">i</text>
+    <text x="955" y="127">D</text>
+    <text x="970" y="133">i</text>
+    <text x="916" y="156">LS</text>
+    <text x="960" y="156">FF</text>
+    <text x="1005" y="156">LF</text>
+  </g>
+</svg>
+</FigureZoom>
 ### （一）计算工作的最早开始时间和最早完成时间
 
 工作最早开始时间和最早完成时间的计算应从网络计划的起点节点开始，顺着箭线方向按节点编号从小到大的顺序依次进行。其计算步骤如下：
