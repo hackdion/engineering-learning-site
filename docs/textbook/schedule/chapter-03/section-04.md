@@ -679,7 +679,49 @@ $$
 
 图 3-32 所示的时标网络计划中同时标出了三种坐标体系。其中上面为计算坐标体系，中间为工作日坐标体系，下面为日历坐标体系。这里假定 4 月 24 日（星期三）开工，星期六、星期日和“五一”国际劳动节休息。
 
-<FigureZoom caption="图 3-32 双代号时标网络计划" src="/images/schedule/chapter-03/fig-3-32.png" :width="991" :height="368" />
+<FigureZoom caption="图 3-32 双代号时标网络计划">
+<svg viewBox="0 0 991 367" role="img" aria-label="图 3-32 双代号时标网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="currentColor"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor">
+    <path d="M80 34 V128 H950 V34 M80 41 H950 M80 70 H950 M80 99 H950 M138 34 V128 M196 34 V128 M254 34 V128 M312 34 V128 M370 34 V128 M428 34 V128 M486 34 V128 M544 34 V128 M602 34 V128 M660 34 V128 M718 34 V128 M776 34 V128 M834 34 V128 M892 34 V128"/>
+  </g>
+  <g fill="currentColor" text-anchor="middle" font-size="17">
+    <text y="28"><tspan x="80">0</tspan><tspan x="138">1</tspan><tspan x="196">2</tspan><tspan x="254">3</tspan><tspan x="312">4</tspan><tspan x="370">5</tspan><tspan x="428">6</tspan><tspan x="486">7</tspan><tspan x="544">8</tspan><tspan x="602">9</tspan><tspan x="660">10</tspan><tspan x="718">11</tspan><tspan x="776">12</tspan><tspan x="834">13</tspan><tspan x="892">14</tspan><tspan x="950">15</tspan></text>
+    <text y="62"><tspan x="109">1</tspan><tspan x="167">2</tspan><tspan x="225">3</tspan><tspan x="283">4</tspan><tspan x="341">5</tspan><tspan x="399">6</tspan><tspan x="457">7</tspan><tspan x="515">8</tspan><tspan x="573">9</tspan><tspan x="631">10</tspan><tspan x="689">11</tspan><tspan x="747">12</tspan><tspan x="805">13</tspan><tspan x="863">14</tspan><tspan x="921">15</tspan></text>
+    <text y="91"><tspan x="109">24/4</tspan><tspan x="167">25/4</tspan><tspan x="225">26/4</tspan><tspan x="283">29/4</tspan><tspan x="341">30/4</tspan><tspan x="399">6/5</tspan><tspan x="457">7/5</tspan><tspan x="515">8/5</tspan><tspan x="573">9/5</tspan><tspan x="631">10/5</tspan><tspan x="689">13/5</tspan><tspan x="747">14/5</tspan><tspan x="805">15/5</tspan><tspan x="863">16/5</tspan><tspan x="921">17/5</tspan></text>
+    <text y="120"><tspan x="109">三</tspan><tspan x="167">四</tspan><tspan x="225">五</tspan><tspan x="283">一</tspan><tspan x="341">二</tspan><tspan x="399">一</tspan><tspan x="457">二</tspan><tspan x="515">三</tspan><tspan x="573">四</tspan><tspan x="631">五</tspan><tspan x="689">一</tspan><tspan x="747">二</tspan><tspan x="805">三</tspan><tspan x="863">四</tspan><tspan x="921">五</tspan></text>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="1.4">
+    <path d="M80 244 V182 H412" marker-end="url(#arrow-3-32)"/>
+    <path d="M444 182 H718 L724 188 L730 176 L736 188 L742 176 L748 188 L754 176 L760 188 L766 176 L772 188 L778 176 L784 188 L790 176 L796 188 L802 176 L808 188 L814 176 L820 188 L826 176 L832 188 L838 176 L844 188 L850 176 L856 188 L862 176 L868 188 L874 176 L880 188 L886 176 L892 188 L898 176 L904 188 L910 176 L916 188 L922 176 L928 188 L934 176 L940 188 L945 176 L950 182 V244" marker-end="url(#arrow-3-32)"/>
+    <path d="M96 258 H287 V262 H96"/>
+    <path d="M328 260 H586" marker-end="url(#arrow-3-32)"/>
+    <path d="M618 260 H776 L782 266 L788 254 L794 266 L800 254 L806 266 L812 254 L818 266 L824 254 L830 266 L836 254 L842 266 L848 254 L854 266 L860 254 L866 266 L872 254 L878 266 L884 254 L890 266 L896 254 L902 266 L908 254 L914 266 L920 254 L926 260 H934" marker-end="url(#arrow-3-32)"/>
+    <path d="M80 276 V338 H196 L202 345 L208 331 L214 345 L220 331 L226 345 L232 331 L238 345 L244 331 L250 345 L256 331 L262 345 L268 331 L274 345 L280 331 L286 338 H296" marker-end="url(#arrow-3-32)"/>
+    <path d="M310 276 V314 M314 276 V314" stroke-dasharray="4 3"/>
+    <path d="M312 314 V322" marker-end="url(#arrow-3-32)"/>
+    <path d="M328 336 H635 V340 H328"/>
+    <path d="M602 276 V298 M660 298 V314" stroke-dasharray="4 3"/>
+    <path d="M602 298 L607 305 L613 283 L619 305 L625 283 L631 305 L637 283 L643 305 L649 283 L655 305 L660 298"/>
+    <path d="M676 336 H948 V286 H952 V340 H676"/>
+    <path d="M287 260 H296" marker-end="url(#arrow-3-32)"/>
+    <path d="M635 338 H644" marker-end="url(#arrow-3-32)"/>
+    <path d="M660 314 V322" marker-end="url(#arrow-3-32)"/>
+    <path d="M950 286 V276" marker-end="url(#arrow-3-32)"/>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.4">
+    <circle cx="80" cy="260" r="16"/><circle cx="428" cy="182" r="16"/><circle cx="312" cy="260" r="16"/><circle cx="312" cy="338" r="16"/><circle cx="602" cy="260" r="16"/><circle cx="660" cy="338" r="16"/><circle cx="950" cy="260" r="16"/>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-size="19">
+    <text x="80" y="260">1</text><text x="428" y="182">2</text><text x="312" y="260">3</text><text x="312" y="338">4</text><text x="602" y="260">5</text><text x="660" y="338">6</text><text x="950" y="260">7</text>
+    <text x="238" y="168">A</text><text x="180" y="246">B</text><text x="135" y="324">C</text><text x="464" y="246">D</text><text x="492" y="320">E</text><text x="570" y="168">G</text><text x="702" y="246">H</text><text x="812" y="320">I</text>
+  </g>
+</svg>
+</FigureZoom>
 
 ## 四、进度计划表
 
