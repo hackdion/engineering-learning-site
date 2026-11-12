@@ -45,6 +45,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="a-0-1" />
+
 ### 表 A.0.2 工程开工令 {#a-0-2}
 
 
@@ -63,6 +65,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="a-0-2" />
 
 ### 表 A.0.3 监理通知单 {#a-0-3}
 
@@ -83,6 +87,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="a-0-3" />
+
 ### 表 A.0.4 监理报告 {#a-0-4}
 
 
@@ -102,6 +108,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式四份，主管部门、建设单位、工程监理单位、项目监理机构各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="a-0-4" />
+
 ### 表 A.0.5 工程暂停令 {#a-0-5}
 
 
@@ -120,6 +128,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="a-0-5" />
 
 ### 表 A.0.6 旁站记录 {#a-0-6}
 
@@ -143,6 +153,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式一份，项目监理机构留存。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="a-0-6" />
+
 ### 表 A.0.7 工程复工令 {#a-0-7}
 
 
@@ -162,6 +174,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="a-0-7" />
+
 ### 表 A.0.8 工程款支付证书 {#a-0-8}
 
 
@@ -180,6 +194,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="a-0-8" />
 
 ## B 类表　施工单位报审、报验用表 {#b}
 
@@ -208,6 +224,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-1" />
+
 ### 表 B.0.2 工程开工报审表 {#b-0-2}
 
 
@@ -229,6 +247,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-2" />
+
 ### 表 B.0.3 工程复工报审表 {#b-0-3}
 
 
@@ -249,6 +269,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="b-0-3" />
 
 ### 表 B.0.4 分包单位资格报审表 {#b-0-4}
 
@@ -278,6 +300,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-4" />
+
 ### 表 B.0.5 施工控制测量成果报验表 {#b-0-5}
 
 
@@ -297,6 +321,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="b-0-5" />
 
 ### 表 B.0.6 工程材料、构配件、设备报审表 {#b-0-6}
 
@@ -318,6 +344,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式二份，项目监理机构、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-6" />
+
 ### 表 B.0.7 ______报审、报验表 {#b-0-7}
 
 
@@ -337,6 +365,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式二份，项目监理机构、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="b-0-7" />
 
 ### 表 B.0.8 分部工程报验表 {#b-0-8}
 
@@ -359,6 +389,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-8" />
+
 ### 表 B.0.9 监理通知回复单 {#b-0-9}
 
 
@@ -379,6 +411,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-9" />
+
 ### 表 B.0.10 单位工程竣工验收报审表 {#b-0-10}
 
 
@@ -398,6 +432,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="b-0-10" />
 
 ### 表 B.0.11 工程款支付报审表 {#b-0-11}
 
@@ -421,6 +457,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份；工程竣工结算报审时本表一式四份，项目监理机构、建设单位各一份、施工单位二份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-11" />
+
 ### 表 B.0.12 施工进度计划报审表 {#b-0-12}
 
 
@@ -441,6 +479,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="b-0-12" />
 
 ### 表 B.0.13 费用索赔报审表 {#b-0-13}
 
@@ -463,6 +503,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="b-0-13" />
+
 ### 表 B.0.14 工程临时/最终延期报审表 {#b-0-14}
 
 
@@ -483,6 +525,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </table>
 <p class="fs-note">注：本表一式三份，项目监理机构、建设单位、施工单位各一份。</p>
 </FormSheet>
+
+<EngineeringMapRefs form="b-0-14" />
 
 ## C 类表　通用表 {#c}
 
@@ -505,6 +549,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </tbody>
 </table>
 </FormSheet>
+
+<EngineeringMapRefs form="c-0-1" />
 
 ### 表 C.0.2 工程变更单 {#c-0-2}
 
@@ -530,6 +576,8 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 <p class="fs-note">注：本表一式四份，建设单位、项目监理机构、设计单位、施工单位各一份。</p>
 </FormSheet>
 
+<EngineeringMapRefs form="c-0-2" />
+
 ### 表 C.0.3 索赔意向通知书 {#c-0-3}
 
 
@@ -546,5 +594,7 @@ edition: 2013 年版（住房和城乡建设部发布，2014 年 3 月 1 日起�
 </tbody>
 </table>
 </FormSheet>
+
+<EngineeringMapRefs form="c-0-3" />
 
 <SourceNote />

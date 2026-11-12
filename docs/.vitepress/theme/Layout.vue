@@ -9,6 +9,7 @@ import FollowButton from './components/FollowButton.vue'
 import FollowDialog from './components/FollowDialog.vue'
 import LearnedStamp from './components/LearnedStamp.vue'
 import SectionCourse from './components/SectionCourse.vue'
+import EngineeringMapRefs from './components/EngineeringMapRefs.vue'
 import ContractCopy from './components/ContractCopy.vue'
 import ContractFileMap from './components/ContractFileMap.vue'
 import SectionLaw from './components/SectionLaw.vue'
@@ -56,7 +57,7 @@ const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?\/?$/.test(r
 <template>
   <DefaultTheme.Layout>
     <template #not-found><NotFound /></template>
-    <template #doc-before><ContractCopy /><SectionCourse v-if="isSection" /></template>
+    <template #doc-before><ContractCopy /><SectionCourse v-if="isSection" /><EngineeringMapRefs v-if="isSection" /></template>
     <template #nav-bar-content-after><FollowButton /></template>
     <template #nav-screen-content-after><FollowButton block /></template>
     <template #doc-after><SectionLaw v-if="isSection" /></template>

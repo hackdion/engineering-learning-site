@@ -13,12 +13,15 @@ const TYPES = projectTypes as Record<string, string>
 
 export const no = (i: number) => String(i + 1).padStart(2, '0')
 export const unitOf = (role: string) => Object.keys(RD).find((u) => RD[u].jobs.includes(role))
+export const stageUrl = (id: string, anchor = '') => `/engineering-map/stage/${id}${anchor ? `#${anchor}` : ''}`
+export const unitUrl = (id: string, job = '') => `/engineering-map/unit/${id}${job ? `#${job}` : ''}`
+export const sceneUrl = (id: string) => `/engineering-map/scene/${id}`
 const stageIndex = (id: string) => S.findIndex((s) => s.id === id)
 const stageLabel = (id: string) => `阶段 ${no(stageIndex(id))} ${S[stageIndex(id)].name}`
 const link = (label: string, url?: string) => (url ? `[${label}](${url})` : label)
 const roleLink = (role: string) => {
   const unit = unitOf(role)
-  return unit && RC[role]?.name ? `[${RC[role].name}](/engineering-map/unit/${unit}#${role})` : ''
+  return unit && RC[role]?.name ? `[${RC[role].name}](${unitUrl(unit, role)})` : ''
 }
 const list = (items: string[]) => items.map((x) => `- ${x}`).join('\n')
 const short = (text: string, n = 110) => (text.length > n ? `${text.slice(0, n - 1)}…` : text)
@@ -88,9 +91,9 @@ function stagePage(s: any, i: number) {
     `## 关键事项与文件交接 {#steps}`,
     ...steps,
     s.media?.drawing === 'prep' ? `## 施工现场的设施 {#site}\n\n${list((siteFacilities as any[]).map((f) => `**${f.name}**（${f.tag}）：${f.description}`))}` : '',
-    related.length ? `## 这个阶段的场景 {#scenes}\n\n${list(related.map((x) => `[${x.name}](/engineering-map/scene/${x.id})`))}` : '',
+    related.length ? `## 这个阶段的场景 {#scenes}\n\n${list(related.map((x) => `[${x.name}](${sceneUrl(x.id)})`))}` : '',
     `## 前后阶段 {#nearby}`,
-    list([prev ? `上一阶段：[${no(i - 1)} ${prev.name}](/engineering-map/stage/${prev.id})` : '', next ? `下一阶段：[${no(i + 1)} ${next.name}](/engineering-map/stage/${next.id})` : '', '[回到总图](/engineering-map/)'].filter(Boolean)),
+    list([prev ? `上一阶段：[${no(i - 1)} ${prev.name}](${stageUrl(prev.id)})` : '', next ? `下一阶段：[${no(i + 1)} ${next.name}](${stageUrl(next.id)})` : '', '[回到总图](/engineering-map/)'].filter(Boolean)),
     `先看全国房建口径，各地办理细节按项目所在地规定核对。 {.em-note}`
   ]
   return { params: { id: s.id, desc: short(`${s.name}阶段：${s.intro}主要产出：${s.outputs}`) }, content: body.filter(Boolean).join('\n\n') }
@@ -106,7 +109,7 @@ function roleSection(job: string) {
     s.steps
       .map((step: any, k: number) => ({ step, k }))
       .filter(({ step }: any) => step.actor === job || step.participants?.includes(job))
-      .map(({ step, k }: any) => `[${no(i)} ${s.name} · ${step.action}](/engineering-map/stage/${s.id}#s${k + 1})`)
+      .map(({ step, k }: any) => `[${no(i)} ${s.name} · ${step.action}](${stageUrl(s.id, `s${k + 1}`)})`)
   )
   const facts = [
     c.files ? `经手文件：${c.files}` : '',
@@ -143,7 +146,7 @@ export const unitPages = () => Object.entries(RD).map(unitPage)
 function scenePage(s: (typeof scenes)[number]) {
   const body = [
     `# ${s.title}`,
-    `[工程地图](/engineering-map/) / 按场景 / [${stageLabel(s.stage)}](/engineering-map/stage/${s.stage}) {.em-crumb}`,
+    `[工程地图](/engineering-map/) / 按场景 / [${stageLabel(s.stage)}](${stageUrl(s.stage)}) {.em-crumb}`,
     `${s.answer} {.em-answer}`,
     `**什么时候做**：${s.when}`,
     `## 到场的人 {#people}`,
@@ -169,10 +172,10 @@ function handoverPage(h: (typeof handoverExamples)[number]) {
   const stage = HANDOVER_STAGE[h.id]
   const body = [
     `# ${h.title}`,
-    `[工程地图](/engineering-map/) / 按场景 / [${stageLabel(stage)}](/engineering-map/stage/${stage}) {.em-crumb}`,
+    `[工程地图](/engineering-map/) / 按场景 / [${stageLabel(stage)}](${stageUrl(stage)}) {.em-crumb}`,
     `${h.gist} {.em-answer}`,
     `## 交接顺序 {#chain}`,
-    h.chain.map((n, i) => `${i + 1}. **${n.role && roleLink(n.role) ? `[${n.actor}](/engineering-map/unit/${unitOf(n.role)}#${n.role})` : n.actor}**：${n.do}${n.file ? `。交出：${n.file}` : ''}`).join('\n'),
+    h.chain.map((n, i) => `${i + 1}. **${n.role && roleLink(n.role) ? `[${n.actor}](${unitUrl(unitOf(n.role)!, n.role)})` : n.actor}**：${n.do}${n.file ? `。交出：${n.file}` : ''}`).join('\n'),
     `## 依据 {#basis}`,
     list(h.basis.map(([l, u]) => link(l, u))),
     h.caveat ? `${h.caveat} {.em-note}` : ''
