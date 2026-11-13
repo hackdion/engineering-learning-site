@@ -1248,12 +1248,13 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
     <rect x="12" y="32" width="321" height="18" fill="var(--hd-paper)"></rect>
     <rect x="334" y="103" width="193" height="18" fill="currentColor" fill-opacity="0.17"></rect>
     <rect x="103" y="164" width="196" height="18" fill="var(--hd-paper)"></rect>
-    <path d="M229,164 V182" stroke-width="1.2"></path>
+    <path d="M229,164 V173" stroke-width="1.2"></path>
     <path d="M299,164 H419" stroke-dasharray="8 4"></path>
     <path d="M299,182 H419" stroke-dasharray="8 4"></path>
     <path d="M419,164 V182"></path>
     <path d="M420,212 V236"></path>
     <path d="M527,212 V236"></path>
+    <path d="M420,223 H527"></path>
     <path d="M435,223 H421" marker-end="url(#arrow-3-48)"></path>
     <path d="M512,223 H526" marker-end="url(#arrow-3-48)"></path>
   </g>
