@@ -621,6 +621,8 @@ $DC_{i-j}$ ——工作 $i-j$ 的最短持续时间。
 </svg>
 </FigureZoom>
 
+<p class="figure-caption">图 3-41 初始网络计划</p>
+
 【解】该网络计划的费用优化可按以下步骤进行：
 
 （1）根据各项工作的正常持续时间，用标号法确定网络计划的计算工期和关键线路，如图 3-42 所示。计算工期为 19 天，关键线路有两条，即：①→③→④→⑥和①→③→④→⑤→⑥。
@@ -634,23 +636,23 @@ $DC_{i-j}$ ——工作 $i-j$ 的最短持续时间。
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.7">
     <path d="M44,143.1 L189.3,54.3" marker-end="url(#arrow-3-42)"></path>
-    <path d="M45,157.2 L192.8,247.1"></path>
-    <path d="M42.9,160.6 L190.7,250.5"></path>
+    <path d="M45,157.2 L180.0,239.3"></path>
+    <path d="M42.9,160.6 L177.9,242.7"></path>
     <path d="M178.9,241 L188.3,246.7" marker-end="url(#arrow-3-42)"></path>
     <path d="M202.9,61.2 L202.1,239" marker-end="url(#arrow-3-42)"></path>
     <path d="M218.2,46 L437,46" marker-end="url(#arrow-3-42)"></path>
-    <path d="M212.4,243.7 L442.5,52.1"></path>
-    <path d="M215,246.8 L445.1,55.2"></path>
+    <path d="M212.4,243.7 L431,61.7"></path>
+    <path d="M215,246.8 L433.5,64.8"></path>
     <path d="M432.3,63.3 L440.7,56.2" marker-end="url(#arrow-3-42)"></path>
     <path d="M217.2,255.1 L436,255.9" marker-end="url(#arrow-3-42)"></path>
-    <path d="M454.9,61.2 L454.1,244"></path>
-    <path d="M450.9,61.2 L450.1,244"></path>
+    <path d="M454.9,61.2 L454.1,229"></path>
+    <path d="M450.9,61.2 L450.1,229"></path>
     <path d="M452.1,229 L452.1,240" marker-end="url(#arrow-3-42)"></path>
-    <path d="M467.1,52.1 L619.7,143.1"></path>
-    <path d="M465,55.5 L617.7,146.6"></path>
+    <path d="M467.1,52.1 L606.8,135.4"></path>
+    <path d="M465,55.5 L604.8,138.9"></path>
     <path d="M605.8,137.2 L615.3,142.8" marker-end="url(#arrow-3-42)"></path>
-    <path d="M464.1,246.5 L617.7,155.4"></path>
-    <path d="M466.1,250 L619.7,158.8"></path>
+    <path d="M464.1,246.5 L604.8,163.1"></path>
+    <path d="M466.1,250 L606.8,166.5"></path>
     <path d="M605.8,164.8 L615.2,159.2" marker-end="url(#arrow-3-42)"></path>
   </g>
   <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
@@ -676,14 +678,14 @@ $DC_{i-j}$ ——工作 $i-j$ 的最短持续时间。
     <text x="652" y="113" font-size="18">(④, ⑤, 19)</text>
     <text x="112" y="79">A</text>
     <text x="112" y="119">4</text>
-    <text x="110" y="185">B</text>
+    <text x="110" y="180">B</text>
     <text x="110" y="223">8</text>
     <text x="186" y="151">2</text>
     <text x="222" y="151" text-anchor="start">C</text>
     <text x="328" y="28">D</text>
     <text x="328" y="65">2</text>
     <text x="314" y="126">E</text>
-    <text x="320" y="170">5</text>
+    <text x="322" y="178">5</text>
     <text x="327" y="237">G</text>
     <text x="327" y="274">6</text>
     <text x="437" y="151">2</text>
@@ -695,6 +697,8 @@ $DC_{i-j}$ ——工作 $i-j$ 的最短持续时间。
   </g>
 </svg>
 </FigureZoom>
+
+<p class="figure-caption">图 3-42 初始网络计划中的关键线路</p>
 
 （2）计算各项工作的直接费用率：
 
@@ -747,19 +751,19 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.7">
     <path d="M44,141.1 L189.3,52.3" marker-end="url(#arrow-3-43)"></path>
-    <path d="M45,155.2 L192.8,245.1"></path>
-    <path d="M42.9,158.6 L190.7,248.5"></path>
+    <path d="M45,155.2 L180.0,237.3"></path>
+    <path d="M42.9,158.6 L177.9,240.7"></path>
     <path d="M178.9,239 L188.3,244.7" marker-end="url(#arrow-3-43)"></path>
     <path d="M202.9,59.2 L202.1,237" marker-end="url(#arrow-3-43)"></path>
     <path d="M218.2,44 L437,44" marker-end="url(#arrow-3-43)"></path>
     <path d="M213.7,243.3 L440.7,54.2" marker-end="url(#arrow-3-43)"></path>
-    <path d="M217.2,251.1 L439,252"></path>
-    <path d="M217.2,255.1 L439,256"></path>
+    <path d="M217.2,251.1 L424,251.9"></path>
+    <path d="M217.2,255.1 L424,255.9"></path>
     <path d="M424,253.9 L435,253.9" marker-end="url(#arrow-3-43)"></path>
     <path d="M452.9,59.2 L451.2,238" marker-end="url(#arrow-3-43)"></path>
     <path d="M466,51.9 L612.4,141.6" marker-end="url(#arrow-3-43)"></path>
-    <path d="M463,244.5 L614.7,154.4"></path>
-    <path d="M465.1,248 L616.7,157.8"></path>
+    <path d="M463,244.5 L601.8,162.1"></path>
+    <path d="M465.1,248 L603.8,165.5"></path>
     <path d="M602.8,163.8 L612.2,158.2" marker-end="url(#arrow-3-43)"></path>
   </g>
   <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
@@ -771,7 +775,7 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
     <circle cx="626" cy="150" r="14.5"></circle>
   </g>
   <g fill="none" stroke="currentColor" stroke-width="1.7">
-    <rect x="312" y="156" width="20" height="20"></rect>
+    <rect x="320" y="168" width="20" height="20"></rect>
   </g>
   <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
     <text x="31" y="149">1</text>
@@ -788,14 +792,14 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
     <text x="640" y="112" font-size="18">(⑤, 18)</text>
     <text x="112" y="77">A</text>
     <text x="112" y="114">4</text>
-    <text x="110" y="183">B</text>
+    <text x="110" y="178">B</text>
     <text x="110" y="221">8</text>
     <text x="186" y="150">2</text>
     <text x="222" y="150" text-anchor="start">C</text>
     <text x="328" y="26">D</text>
     <text x="328" y="63">2</text>
     <text x="312" y="120">E</text>
-    <text x="322" y="166" font-size="18">3</text>
+    <text x="330" y="178" font-size="18">3</text>
     <text x="327" y="235">G</text>
     <text x="327" y="272">6</text>
     <text x="437" y="150">2</text>
@@ -807,6 +811,8 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
   </g>
 </svg>
 </FigureZoom>
+
+<p class="figure-caption">图 3-43 工作 E 压缩至最短时的关键线路</p>
 
 <FigureZoom caption="图 3-44 第一次压缩后的网络计划" src="/images/schedule/chapter-03/fig-3-44.png" :width="700" :height="306" />
 
