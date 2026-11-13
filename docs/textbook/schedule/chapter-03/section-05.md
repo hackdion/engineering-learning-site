@@ -826,7 +826,80 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
 
 <p class="figure-caption">图 3-43 工作 E 压缩至最短时的关键线路</p>
 
-<FigureZoom caption="图 3-44 第一次压缩后的网络计划" src="/images/schedule/chapter-03/fig-3-44.png" :width="700" :height="306" />
+<FigureZoom caption="图 3-44 第一次压缩后的网络计划">
+<svg viewBox="0 0 700 306" role="img" aria-label="图 3-44 第一次压缩后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-44" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M44,146.1 L189.3,57.3" marker-end="url(#arrow-3-44)"></path>
+    <path d="M42.9,163.6 L176.9,245.6"></path>
+    <path d="M45,160.2 L179,242.2"></path>
+    <path d="M178,243.9 L187.4,249.7" marker-end="url(#arrow-3-44)"></path>
+    <path d="M202.9,64.2 L201.2,242" marker-end="url(#arrow-3-44)"></path>
+    <path d="M218.2,49 L436,49" marker-end="url(#arrow-3-44)"></path>
+    <path d="M214,249.8 L432.5,67.8"></path>
+    <path d="M211.4,246.7 L430,64.7"></path>
+    <path d="M431.3,66.3 L439.7,59.2" marker-end="url(#arrow-3-44)"></path>
+    <path d="M216.2,260.1 L423,260.9"></path>
+    <path d="M216.2,256.1 L423,256.9"></path>
+    <path d="M423,258.9 L434,258.9" marker-end="url(#arrow-3-44)"></path>
+    <path d="M449.9,64.2 L448.3,232"></path>
+    <path d="M453.9,64.2 L452.3,232"></path>
+    <path d="M450.3,232 L450.2,243" marker-end="url(#arrow-3-44)"></path>
+    <path d="M464,58.5 L602.8,141.8"></path>
+    <path d="M466.1,55.1 L604.9,138.4"></path>
+    <path d="M603.8,140.1 L613.3,145.8" marker-end="url(#arrow-3-44)"></path>
+    <path d="M464.1,253 L604.8,169.5"></path>
+    <path d="M462.1,249.5 L602.8,166.1"></path>
+    <path d="M603.8,167.8 L613.2,162.2" marker-end="url(#arrow-3-44)"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="31" cy="154" r="14.5"></circle>
+    <circle cx="203" cy="49" r="14.5"></circle>
+    <circle cx="201" cy="258" r="14.5"></circle>
+    <circle cx="452" cy="49" r="14.5"></circle>
+    <circle cx="450" cy="259" r="14.5"></circle>
+    <circle cx="627" cy="154" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="31" y="154">1</text>
+    <text x="203" y="49">2</text>
+    <text x="201" y="258">3</text>
+    <text x="452" y="49">4</text>
+    <text x="450" y="259">5</text>
+    <text x="627" y="154">6</text>
+    <text x="4" y="122" text-anchor="start" font-size="18">b₁=0</text>
+    <text x="204" y="20" font-size="18">(①, 4)</text>
+    <text x="204" y="289" font-size="18">(①, 8)</text>
+    <text x="450" y="20" font-size="18">(③, 12)</text>
+    <text x="455" y="288" font-size="18">(③, ④, 14)</text>
+    <text x="652" y="121" font-size="18">(④, ⑤, 18)</text>
+    <text x="106" y="91" font-size="20">A</text>
+    <text x="114" y="116" font-size="18">4</text>
+    <text x="121" y="181" font-size="18">B(1.0)</text>
+    <text x="98" y="222" font-size="18">8(6)</text>
+    <text x="189" y="136" font-size="18">2</text>
+    <text x="213" y="138" font-size="18">C</text>
+    <text x="312" y="34" font-size="20">D</text>
+    <text x="311" y="59" font-size="18">2</text>
+    <text x="308" y="128" font-size="18">E(0.2)</text>
+    <text x="341" y="177" font-size="18">4(3)</text>
+    <text x="319" y="243" font-size="18">G(0.8)</text>
+    <text x="322" y="272" font-size="18">6(4)</text>
+    <text x="423" y="150" font-size="18">2(1)</text>
+    <text x="482" y="150" font-size="18">H(0.7)</text>
+    <text x="551" y="82" font-size="18">I(0.5)</text>
+    <text x="530" y="123" font-size="18">6(4)</text>
+    <text x="520" y="189" font-size="18">J(0.2)</text>
+    <text x="540" y="234" font-size="18">4(2)</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-44 第一次压缩后的网络计划</p>
 
 2）第二次压缩：从图 3-44 可知，该网络计划中有三条关键线路，即：①→③→④→⑥、①→③→④→⑤→⑥和①→③→⑤→⑥。为了同时缩短三条关键线路的总持续时间，有以下五个压缩方案：
 
@@ -842,7 +915,81 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
 
 在上述压缩方案中，由于工作 E 和工作 J 的组合直接费用率最小，故应选择工作 E 和工作 J 作为压缩对象。工作 E 和工作 J 的组合直接费用率 0.4 万元/天，小于间接费用率 0.8 万元/天，说明同时压缩工作 E 和工作 J 可使工程总费用降低。由于工作 E 的持续时间只能压缩 1 天，工作 J 的持续时间也只能随之压缩 1 天。工作 E 和工作 J 的持续时间同时压缩 1 天后，利用标号法重新确定计算工期和关键线路。此时，关键线路由压缩前的三条变为两条，即：①→③→④→⑥和①→③→⑤→⑥。原来的关键工作 H 未经压缩而被动地变成了非关键工作。第二次压缩后的网络计划如图 3-45 所示。此时，关键工作 E 的持续时间已达最短，不能再压缩，故其直接费用率变为无穷大。
 
-<FigureZoom caption="图 3-45 第二次压缩后的网络计划" src="/images/schedule/chapter-03/fig-3-45.png" :width="704" :height="305" />
+<FigureZoom caption="图 3-45 第二次压缩后的网络计划">
+<svg viewBox="0 0 704 305" role="img" aria-label="图 3-45 第二次压缩后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-45" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M46.9,145 L192.4,55.4" marker-end="url(#arrow-3-45)"></path>
+    <path d="M45.9,162.6 L180.9,244.7"></path>
+    <path d="M48,159.2 L183,241.3"></path>
+    <path d="M181.9,243 L191.3,248.7" marker-end="url(#arrow-3-45)"></path>
+    <path d="M205.9,62.2 L205.1,241" marker-end="url(#arrow-3-45)"></path>
+    <path d="M221.2,47 L440,47" marker-end="url(#arrow-3-45)"></path>
+    <path d="M217.9,248.8 L436.6,65.9"></path>
+    <path d="M215.4,245.7 L434,62.8"></path>
+    <path d="M435.3,64.3 L443.7,57.3" marker-end="url(#arrow-3-45)"></path>
+    <path d="M220.2,259 L427,259"></path>
+    <path d="M220.2,255 L427,255"></path>
+    <path d="M427,257 L438,257" marker-end="url(#arrow-3-45)"></path>
+    <path d="M455.9,62.2 L454.2,241" marker-end="url(#arrow-3-45)"></path>
+    <path d="M468,56.5 L606.8,138.9"></path>
+    <path d="M470.1,53 L608.8,135.5"></path>
+    <path d="M607.8,137.2 L617.2,142.8" marker-end="url(#arrow-3-45)"></path>
+    <path d="M468.1,250.9 L608.9,166.6"></path>
+    <path d="M466,247.5 L606.8,163.2"></path>
+    <path d="M607.8,164.9 L617.3,159.2" marker-end="url(#arrow-3-45)"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="34" cy="153" r="14.5"></circle>
+    <circle cx="206" cy="47" r="14.5"></circle>
+    <circle cx="205" cy="257" r="14.5"></circle>
+    <circle cx="456" cy="47" r="14.5"></circle>
+    <circle cx="454" cy="257" r="14.5"></circle>
+    <circle cx="631" cy="151" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="34" y="153">1</text>
+    <text x="206" y="47">2</text>
+    <text x="205" y="257">3</text>
+    <text x="456" y="47">4</text>
+    <text x="454" y="257">5</text>
+    <text x="631" y="151">6</text>
+    <text x="7" y="121" text-anchor="start" font-size="18">b₁=0</text>
+    <text x="204" y="20" font-size="18">(①, 4)</text>
+    <text x="205" y="288" font-size="18">(①, 8)</text>
+    <text x="450" y="18" font-size="18">(③, 11)</text>
+    <text x="455" y="287" font-size="18">(③, 14)</text>
+    <text x="653" y="119" font-size="18">(④, ⑤, 17)</text>
+    <text x="108" y="89" font-size="20">A</text>
+    <text x="116" y="114" font-size="18">4</text>
+    <text x="124" y="179" font-size="18">B(1.0)</text>
+    <text x="101" y="221" font-size="18">8(6)</text>
+    <text x="189" y="134" font-size="18">2</text>
+    <text x="217" y="136" font-size="18">C</text>
+    <text x="312" y="32" font-size="20">D</text>
+    <text x="315" y="60" font-size="18">2</text>
+    <text x="312" y="126" font-size="18">E(∞)</text>
+    <text x="323" y="242" font-size="18">G(0.8)</text>
+    <text x="325" y="273" font-size="18">6(4)</text>
+    <text x="438" y="143" font-size="18">2</text>
+    <text x="470" y="147" font-size="20">H</text>
+    <text x="555" y="78" font-size="18">I(0.5)</text>
+    <text x="533" y="120" font-size="18">6(4)</text>
+    <text x="523" y="188" font-size="18">J(0.2)</text>
+    <text x="556" y="243" font-size="18">(2)</text>
+    <rect x="323" y="164" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="332.5" y="173.5" font-size="18">3</text>
+    <rect x="521" y="234" width="20" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="531" y="243.5" font-size="18">3</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-45 第二次压缩后的网络计划</p>
 
 3）第三次压缩：从图 3-45 可知，由于工作 E 不能再压缩，而为了同时缩短两条关键线路①→③→④→⑥和①→③→⑤→⑥的总持续时间，只有以下三个压缩方案：
 
@@ -854,7 +1001,82 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
 
 在上述压缩方案中，由于工作 I 和工作 J 的组合直接费用率最小，故应选择工作 I 和工作 J 作为压缩对象。工作 I 和工作 J 的组合直接费用率 0.7 万元/天，小于间接费用率 0.8 万元/天，说明同时压缩工作 I 和工作 J 可使工程总费用降低。由于工作 J 的持续时间只能压缩 1 天，工作 I 的持续时间也只能随之压缩 1 天。工作 I 和工作 J 的持续时间同时压缩 1 天后，利用标号法重新确定计算工期和关键线路。此时，关键线路仍然为两条，即：①→③→④→⑥和①→③→⑤→⑥。第三次压缩后的网络计划如图 3-46 所示。此时，关键工作 J 的持续时间也已达最短，不能再压缩，故其直接费用率变为无穷大。
 
-<FigureZoom caption="图 3-46 第三次压缩后的网络计划" src="/images/schedule/chapter-03/fig-3-46.png" :width="701" :height="306" />
+<FigureZoom caption="图 3-46 第三次压缩后的网络计划">
+<svg viewBox="0 0 701 306" role="img" aria-label="图 3-46 第三次压缩后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-46" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M44,144.1 L189.3,55.3" marker-end="url(#arrow-3-46)"></path>
+    <path d="M42.9,161.6 L177.9,243.7"></path>
+    <path d="M45,158.2 L180,240.3"></path>
+    <path d="M178.9,242 L188.3,247.7" marker-end="url(#arrow-3-46)"></path>
+    <path d="M202.9,62.2 L202.1,240" marker-end="url(#arrow-3-46)"></path>
+    <path d="M218.2,47 L437,47" marker-end="url(#arrow-3-46)"></path>
+    <path d="M215,247.8 L433.5,65.8"></path>
+    <path d="M212.4,244.7 L431,62.7"></path>
+    <path d="M432.3,64.3 L440.7,57.2" marker-end="url(#arrow-3-46)"></path>
+    <path d="M217.2,258 L424,258"></path>
+    <path d="M217.2,254 L424,254"></path>
+    <path d="M424,256 L435,256" marker-end="url(#arrow-3-46)"></path>
+    <path d="M452.9,62.2 L451.2,240" marker-end="url(#arrow-3-46)"></path>
+    <path d="M465.1,56.4 L603.7,138"></path>
+    <path d="M467.1,53 L605.7,134.6"></path>
+    <path d="M604.7,136.3 L614.2,141.9" marker-end="url(#arrow-3-46)"></path>
+    <path d="M465.1,249.9 L605.9,165.6"></path>
+    <path d="M463,246.5 L603.8,162.2"></path>
+    <path d="M604.8,163.9 L614.3,158.2" marker-end="url(#arrow-3-46)"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="31" cy="152" r="14.5"></circle>
+    <circle cx="203" cy="47" r="14.5"></circle>
+    <circle cx="202" cy="256" r="14.5"></circle>
+    <circle cx="453" cy="47" r="14.5"></circle>
+    <circle cx="451" cy="256" r="14.5"></circle>
+    <circle cx="628" cy="150" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="31" y="152">1</text>
+    <text x="203" y="47">2</text>
+    <text x="202" y="256">3</text>
+    <text x="453" y="47">4</text>
+    <text x="451" y="256">5</text>
+    <text x="628" y="150">6</text>
+    <text x="3" y="120" text-anchor="start" font-size="18">b₁=0</text>
+    <text x="203" y="20" font-size="18">(①, 4)</text>
+    <text x="203" y="287" font-size="18">(①, 8)</text>
+    <text x="448" y="17" font-size="18">(③, 11)</text>
+    <text x="450" y="286" font-size="18">(③, 14)</text>
+    <text x="650" y="117" font-size="18">(④, ⑤, 16)</text>
+    <text x="104" y="88" font-size="20">A</text>
+    <text x="114" y="114" font-size="18">4</text>
+    <text x="121" y="179" font-size="18">B(1.0)</text>
+    <text x="98" y="220" font-size="18">8(6)</text>
+    <text x="188" y="134" font-size="18">2</text>
+    <text x="214" y="136" font-size="18">C</text>
+    <text x="312" y="31" font-size="20">D</text>
+    <text x="311" y="57" font-size="18">2</text>
+    <text x="309" y="126" font-size="18">E(∞)</text>
+    <text x="320" y="240" font-size="18">G(0.8)</text>
+    <text x="322" y="269" font-size="18">6(4)</text>
+    <text x="434" y="145" font-size="18">2</text>
+    <text x="463" y="147" font-size="20">H</text>
+    <text x="552" y="78" font-size="18">I(0.5)</text>
+    <text x="534" y="124" font-size="18">(4)</text>
+    <text x="520" y="188" font-size="18">J(∞)</text>
+    <rect x="320" y="163" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="329.5" y="172.5" font-size="18">3</text>
+    <rect x="503" y="115" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="512.5" y="124.5" font-size="18">5</text>
+    <rect x="518" y="234" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="527.5" y="243.5" font-size="18">2</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-46 第三次压缩后的网络计划</p>
 
 4）第四次压缩：从图 3-46 可知，由于工作 E 和工作 J 不能再压缩，而为了同时缩短两条关键线路①→③→④→⑥和①→③→⑤→⑥的总持续时间，只有以下两个压缩方案：
 
@@ -864,7 +1086,80 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
 
 在上述压缩方案中，由于工作 B 的直接费用率最小，故应选择工作 B 作为压缩对象。但是，由于工作 B 的直接费用率 1.0 万元/天，大于间接费用率 0.8 万元/天，说明压缩工作 B 会使工程总费用增加。因此，不需要压缩工作 B，优化方案已得到，优化后的网络计划如图 3-47 所示。图中箭线上方括号内数字为工作的直接费。
 
-<FigureZoom caption="图 3-47 费用优化后的网络计划" src="/images/schedule/chapter-03/fig-3-47.png" :width="699" :height="305" />
+<FigureZoom caption="图 3-47 费用优化后的网络计划">
+<svg viewBox="0 0 699 305" role="img" aria-label="图 3-47 费用优化后的网络计划" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-47" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <path d="M43,145.1 L188.3,56.3" marker-end="url(#arrow-3-47)"></path>
+    <path d="M41.9,162.7 L176.9,245.6"></path>
+    <path d="M44,159.2 L179,242.2"></path>
+    <path d="M178,243.9 L187.4,249.6" marker-end="url(#arrow-3-47)"></path>
+    <path d="M201.9,63.2 L201.1,242" marker-end="url(#arrow-3-47)"></path>
+    <path d="M217.2,48.1 L436,48.9" marker-end="url(#arrow-3-47)"></path>
+    <path d="M214,249.8 L432.5,67.8"></path>
+    <path d="M211.4,246.7 L430,64.7"></path>
+    <path d="M431.3,66.3 L439.7,59.2" marker-end="url(#arrow-3-47)"></path>
+    <path d="M216.2,260 L423,260"></path>
+    <path d="M216.2,256 L423,256"></path>
+    <path d="M423,258 L434,258" marker-end="url(#arrow-3-47)"></path>
+    <path d="M451.9,64.2 L450.2,242" marker-end="url(#arrow-3-47)"></path>
+    <path d="M464,58.5 L602.8,140.9"></path>
+    <path d="M466.1,55 L604.8,137.5"></path>
+    <path d="M603.8,139.2 L613.2,144.8" marker-end="url(#arrow-3-47)"></path>
+    <path d="M464.1,252 L604.8,168.5"></path>
+    <path d="M462.1,248.5 L602.8,165.1"></path>
+    <path d="M603.8,166.8 L613.2,161.2" marker-end="url(#arrow-3-47)"></path>
+  </g>
+  <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.7">
+    <circle cx="30" cy="153" r="14.5"></circle>
+    <circle cx="202" cy="48" r="14.5"></circle>
+    <circle cx="201" cy="258" r="14.5"></circle>
+    <circle cx="452" cy="49" r="14.5"></circle>
+    <circle cx="450" cy="258" r="14.5"></circle>
+    <circle cx="627" cy="153" r="14.5"></circle>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="20">
+    <text x="30" y="153">1</text>
+    <text x="202" y="48">2</text>
+    <text x="201" y="258">3</text>
+    <text x="452" y="49">4</text>
+    <text x="450" y="258">5</text>
+    <text x="627" y="153">6</text>
+    <text x="4" y="121" text-anchor="start" font-size="18">b₁=0</text>
+    <text x="202" y="20" font-size="18">(①, 4)</text>
+    <text x="203" y="289" font-size="18">(①, 8)</text>
+    <text x="447" y="18" font-size="18">(③, 11)</text>
+    <text x="450" y="288" font-size="18">(③, 14)</text>
+    <text x="648" y="120" font-size="18">(④, ⑤, 16)</text>
+    <text x="94" y="80" font-size="18">A(7.0)</text>
+    <text x="113" y="115" font-size="18">4</text>
+    <text x="121" y="180" font-size="18">B(9.0)</text>
+    <text x="97" y="221" font-size="18">8</text>
+    <text x="187" y="137" font-size="18">2</text>
+    <text x="231" y="138" font-size="18">C(5.7)</text>
+    <text x="313" y="35" font-size="18">D(5.5)</text>
+    <text x="310" y="60" font-size="18">2</text>
+    <text x="311" y="128" font-size="18">E(8.4)</text>
+    <text x="318" y="242" font-size="18">G(8.0)</text>
+    <text x="321" y="270" font-size="18">6</text>
+    <text x="432" y="147" font-size="18">2</text>
+    <text x="484" y="151" font-size="18">H(5.0)</text>
+    <text x="551" y="81" font-size="18">I(8.0)</text>
+    <text x="538" y="122" font-size="18">5</text>
+    <text x="519" y="189" font-size="18">J(6.9)</text>
+    <rect x="319" y="165" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="328.5" y="174.5" font-size="18">3</text>
+    <rect x="516" y="236" width="20" height="19" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+    <text x="526" y="245.5" font-size="18">2</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-47 费用优化后的网络计划</p>
 
 （5）计算优化后的工程总费用（优化过程详见表 3-10）：
 
