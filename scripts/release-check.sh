@@ -22,8 +22,7 @@
 
 set -u
 
-# 产物目录：单站构建默认 docs/.vitepress/dist；
-# 双站聚合构建用 RELEASE_DIST_DIR=site-dist 指定。
+# 默认检查学习站构建产物，可用 RELEASE_DIST_DIR 指定其他产物目录。
 DIST_DIR="${RELEASE_DIST_DIR:-docs/.vitepress/dist}"
 WARN_BYTES=$((20 * 1024 * 1024))   # 20MB 预警线
 FAIL_BYTES=$((50 * 1024 * 1024))   # 50MB 失败线
@@ -52,23 +51,15 @@ echo "========================================"
 echo ""
 echo "[检查 0] 构建产物目录是否存在且非空"
 if [ ! -d "${DIST_DIR}" ]; then
-  fail "产物目录不存在：${DIST_DIR}（请先运行 npm run build 或 npm run build:sites）"
+  fail "产物目录不存在：${DIST_DIR}（请先运行 npm run build）"
 elif [ -z "$(find "${DIST_DIR}" -mindepth 1 -print -quit 2>/dev/null)" ]; then
   fail "产物目录为空：${DIST_DIR}"
 else
   pass "产物目录存在且非空"
 fi
 
-# 聚合产物（RELEASE_DIST_DIR 指定时）必须同时包含两个站的入口。
-if [ -n "${RELEASE_DIST_DIR:-}" ]; then
-  echo ""
-  echo "[检查 0b] 聚合产物是否包含两站入口（学习站 / 个人站）"
-  if [ -f "${DIST_DIR}/index.html" ] && [ -f "${DIST_DIR}/personal/index.html" ]; then
-    pass "已找到学习站入口 index.html 与个人站入口 personal/index.html"
-  else
-    [ -f "${DIST_DIR}/index.html" ] || fail "聚合产物缺少学习站入口：${DIST_DIR}/index.html"
-    [ -f "${DIST_DIR}/personal/index.html" ] || fail "聚合产物缺少个人站入口：${DIST_DIR}/personal/index.html"
-  fi
+if [ -d "${DIST_DIR}" ] && [ ! -f "${DIST_DIR}/index.html" ]; then
+  fail "产物缺少学习站入口：${DIST_DIR}/index.html"
 fi
 
 # ---------- 检查 1：PDF 文件 ----------
@@ -148,7 +139,7 @@ fi
 
 # ---------- 检查 6：公开 Markdown frontmatter 不含内部管理字段 ----------
 echo ""
-echo "[检查 6] docs/ 与 sites/personal/ 下公开 Markdown 的 frontmatter 是否含内部管理字段"
+echo "[检查 6] docs/ 下公开 Markdown 的 frontmatter 是否含内部管理字段"
 # 这一项只解析 YAML 块的 key，不扫描正文内容，避免把正文中的
 # 「验收记录」「发布规则」「项目管理」等合法文本误判为内部资料。
 if [ -f "scripts/check-frontmatter.mjs" ]; then
