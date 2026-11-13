@@ -1237,7 +1237,43 @@ $\Delta C_{5-6}=\dfrac{CC_{5-6}-CN_{5-6}}{DN_{5-6}-DC_{5-6}}=\dfrac{6.9-6.5}{4-2
 
 对于两项平行作业的工作 $m$ 和工作 $n$ 来说，为了降低相应时段的资源需用量，现将工作 $n$ 安排在工作 $m$ 之后进行，如图 3-48 所示。
 
-<FigureZoom caption="图 3-48 m，n 两项工作的排序" src="/images/schedule/chapter-03/fig-3-48.png" :width="534" :height="245" />
+<FigureZoom caption="图 3-48 m，n 两项工作的排序">
+<svg viewBox="0 0 534 245" role="img" aria-label="图 3-48 m，n 两项工作的排序" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-48" viewBox="0 0 14 7" refX="13" refY="3.5" markerWidth="14" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L14,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="12" y="32" width="321" height="18" fill="var(--hd-paper)"></rect>
+    <rect x="334" y="103" width="193" height="18" fill="currentColor" fill-opacity="0.17"></rect>
+    <rect x="103" y="164" width="196" height="18" fill="var(--hd-paper)"></rect>
+    <path d="M229,164 V173" stroke-width="1.2"></path>
+    <path d="M299,164 H419" stroke-dasharray="8 4"></path>
+    <path d="M299,182 H419" stroke-dasharray="8 4"></path>
+    <path d="M419,164 V182"></path>
+    <path d="M420,212 V236"></path>
+    <path d="M527,212 V236"></path>
+    <path d="M420,223 H527"></path>
+    <path d="M435,223 H421" marker-end="url(#arrow-3-48)"></path>
+    <path d="M512,223 H526" marker-end="url(#arrow-3-48)"></path>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="18" font-style="italic">
+    <text x="21.5" y="15">ES<tspan font-size="13" dy="4">m</tspan></text>
+    <text x="165.5" y="16">m</text>
+    <text x="320.5" y="14">EF<tspan font-size="13" dy="4">m</tspan></text>
+    <text x="108" y="150">ES<tspan font-size="13" dy="4">n</tspan></text>
+    <text x="232.5" y="150">LS<tspan font-size="13" dy="4">n</tspan></text>
+    <text x="296.5" y="149.5">EF<tspan font-size="13" dy="4">n</tspan></text>
+    <text x="411" y="149.5">LF<tspan font-size="13" dy="4">n</tspan></text>
+    <text x="204.5" y="197">n</text>
+    <text x="473.5" y="209">ΔT<tspan font-size="13" dy="4">m,n</tspan></text>
+    <text x="435.5" y="86" font-size="18" font-style="normal">工作<tspan font-style="italic">n</tspan>安排在工作<tspan font-style="italic">m</tspan>之后</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-48 m，n 两项工作的排序</p>
 
 如果将工作 $n$ 安排在工作 $m$ 之后进行，网络计划的工期延长值为：
 
