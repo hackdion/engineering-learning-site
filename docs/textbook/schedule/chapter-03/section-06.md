@@ -22,7 +22,41 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 
 从结束到开始的搭接关系如图 3-50（a）所示，这种搭接关系在网络计划中的表达方式如图 3-50（b）所示。
 
-<FigureZoom caption="图 3-50 FTS搭接关系及其在网络计划中的表达方式" src="/images/schedule/chapter-03/fig-3-50.png" :width="876" :height="185" />
+<FigureZoom caption="图 3-50 FTS搭接关系及其在网络计划中的表达方式">
+<svg viewBox="0 0 876 185" role="img" aria-label="图 3-50 FTS搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-50" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="29" y="42" width="114" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <rect x="226" y="82" width="147" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <path d="M139.5,105 V137"></path>
+    <path d="M224,104 V138"></path>
+    <path d="M139.5,122 H224" marker-start="url(#arrow-3-50)" marker-end="url(#arrow-3-50)"></path>
+    <circle cx="529" cy="77.5" r="49.5"></circle>
+    <path d="M479.5,77.5 H578.5"></path>
+    <circle cx="795" cy="77.5" r="49"></circle>
+    <path d="M746,77.5 H844"></path>
+    <path d="M579,77.5 H746" marker-end="url(#arrow-3-50)"></path>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic">
+    <text x="86.5" y="30.5" font-size="18">i</text>
+    <text x="296" y="65.5" font-size="18">j</text>
+    <text x="179.5" y="106.5" font-size="18">FTS</text>
+    <text x="181" y="167" font-size="18">(a)</text>
+    <text x="656.5" y="167" font-size="18">(b)</text>
+    <text x="529" y="58.5" font-size="18">i</text>
+    <text x="529.5" y="101.5" font-size="18">D<tspan font-size="13" dy="4">i</tspan></text>
+    <text x="795" y="61.5" font-size="18">j</text>
+    <text x="795.5" y="101.5" font-size="18">D<tspan font-size="13" dy="4">j</tspan></text>
+    <text x="653.5" y="62" font-size="18">FTS</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-50 FTS搭接关系及其在网络计划中的表达方式</p>
 
 例如在修堤坝时，一定要等土堤自然沉降后才能修护坡，筑土堤与修护坡之间的等待时间就是 FTS 时距。
 
@@ -32,7 +66,41 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 
 从开始到开始的搭接关系如图 3-51（a）所示，这种搭接关系在网络计划中的表达方式如图 3-51（b）所示。
 
-<FigureZoom caption="图 3-51 STS搭接关系及其在网络计划中的表达方式" src="/images/schedule/chapter-03/fig-3-51.png" :width="790" :height="200" />
+<FigureZoom caption="图 3-51 STS搭接关系及其在网络计划中的表达方式">
+<svg viewBox="0 0 790 200" role="img" aria-label="图 3-51 STS搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-51" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="22" y="40" width="171" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <rect x="153" y="101" width="147" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <path d="M25.5,126 V156"></path>
+    <path d="M155,126 V157"></path>
+    <path d="M25.5,142 H155" marker-start="url(#arrow-3-51)" marker-end="url(#arrow-3-51)"></path>
+    <circle cx="448" cy="96.5" r="49"></circle>
+    <path d="M399,96.5 H497"></path>
+    <circle cx="714.5" cy="96.5" r="48.5"></circle>
+    <path d="M666,96.5 H763"></path>
+    <path d="M497,96.5 H666" marker-end="url(#arrow-3-51)"></path>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic">
+    <text x="107.5" y="28.5" font-size="18">i</text>
+    <text x="223.5" y="88" font-size="18">j</text>
+    <text x="93" y="125.5" font-size="18">STS</text>
+    <text x="177" y="177.5" font-size="18">(a)</text>
+    <text x="576" y="177.5" font-size="18">(b)</text>
+    <text x="448" y="77.5" font-size="18">i</text>
+    <text x="448.5" y="119.5" font-size="18">D<tspan font-size="13" dy="4">i</tspan></text>
+    <text x="714" y="81" font-size="18">j</text>
+    <text x="714.5" y="119.5" font-size="18">D<tspan font-size="13" dy="4">j</tspan></text>
+    <text x="571.5" y="81" font-size="18">STS</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-51 STS搭接关系及其在网络计划中的表达方式</p>
 
 例如在道路工程中，当路基铺设工作开始一段时间为路面浇筑工作创造一定条件之后，路面浇筑工作即可开始，路基铺设工作的开始时间与路面浇筑工作的开始时间之间的差值就是 STS 时距。
 
@@ -40,7 +108,41 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 
 从结束到结束的搭接关系如图 3-52（a）所示，这种搭接关系在网络计划中的表达方式如图 3-52（b）所示。
 
-<FigureZoom caption="图 3-52 FTF搭接关系及其在网络计划中的表达方式" src="/images/schedule/chapter-03/fig-3-52.png" :width="790" :height="210" />
+<FigureZoom caption="图 3-52 FTF搭接关系及其在网络计划中的表达方式">
+<svg viewBox="0 0 790 210" role="img" aria-label="图 3-52 FTF搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-52" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="20" y="59" width="170" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <rect x="168" y="120" width="147" height="16" fill="currentColor" fill-opacity="0.18"></rect>
+    <path d="M189,26 V72"></path>
+    <path d="M314,26 V72"></path>
+    <path d="M189,44 H314" marker-start="url(#arrow-3-52)" marker-end="url(#arrow-3-52)"></path>
+    <circle cx="447.5" cy="117" r="49.5"></circle>
+    <path d="M398,117 H497"></path>
+    <circle cx="713.5" cy="117" r="48.5"></circle>
+    <path d="M665,117 H762"></path>
+    <path d="M497,117 H665" marker-end="url(#arrow-3-52)"></path>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic">
+    <text x="104.5" y="47" font-size="18">i</text>
+    <text x="235.5" y="105" font-size="18">j</text>
+    <text x="252" y="28.5" font-size="18">FTF</text>
+    <text x="180" y="191" font-size="18">(a)</text>
+    <text x="575.5" y="191" font-size="18">(b)</text>
+    <text x="447.5" y="98.5" font-size="18">i</text>
+    <text x="448" y="140.5" font-size="18">D<tspan font-size="13" dy="4">i</tspan></text>
+    <text x="713" y="101.5" font-size="18">j</text>
+    <text x="713.5" y="140.5" font-size="18">D<tspan font-size="13" dy="4">j</tspan></text>
+    <text x="572" y="102" font-size="18">FTF</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-52 FTF搭接关系及其在网络计划中的表达方式</p>
 
 例如在前述道路工程中，如果路基铺设工作的进展速度小于路面浇筑工作的进展速度时，须考虑为路面浇筑工作留有充分的工作面。否则，路面浇筑工作就将因没有工作面而无法进行。路基铺设工作的完成时间与路面浇筑工作的完成时间之间的差值就是 FTF 时距。
 
@@ -48,7 +150,41 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 
 从开始到结束的搭接关系如图 3-53（a）所示，这种搭接关系在网络计划中的表达方式如图 3-53（b）所示。
 
-<FigureZoom caption="图 3-53 STF搭接关系及其在网络计划中的表达方式" src="/images/schedule/chapter-03/fig-3-53.png" :width="790" :height="230" />
+<FigureZoom caption="图 3-53 STF搭接关系及其在网络计划中的表达方式">
+<svg viewBox="0 0 790 230" role="img" aria-label="图 3-53 STF搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-53" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <rect x="26" y="41" width="318" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <rect x="156" y="104" width="147" height="14" fill="currentColor" fill-opacity="0.18"></rect>
+    <path d="M29.5,141 V174"></path>
+    <path d="M299,141 V174"></path>
+    <path d="M29.5,159 H299" marker-start="url(#arrow-3-53)" marker-end="url(#arrow-3-53)"></path>
+    <circle cx="450" cy="98" r="49"></circle>
+    <path d="M401,98 H499"></path>
+    <circle cx="717" cy="98" r="49"></circle>
+    <path d="M668,98 H766"></path>
+    <path d="M499,98 H668" marker-end="url(#arrow-3-53)"></path>
+  </g>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic">
+    <text x="83" y="30" font-size="18">i</text>
+    <text x="226" y="87.5" font-size="18">j</text>
+    <text x="163" y="143.5" font-size="18">STF</text>
+    <text x="164.5" y="213" font-size="18">(a)</text>
+    <text x="578.5" y="211.5" font-size="18">(b)</text>
+    <text x="450" y="80" font-size="18">i</text>
+    <text x="451" y="122.5" font-size="18">D<tspan font-size="13" dy="4">i</tspan></text>
+    <text x="717" y="82" font-size="18">j</text>
+    <text x="718" y="122" font-size="18">D<tspan font-size="13" dy="4">j</tspan></text>
+    <text x="572.5" y="83" font-size="18">STF</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-53 STF搭接关系及其在网络计划中的表达方式</p>
 
 #### 5. 混合搭接关系
 
