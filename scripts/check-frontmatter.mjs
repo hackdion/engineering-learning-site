@@ -8,7 +8,7 @@
  *   - userAcceptance
  *   - publicationAuthorization
  *
- * 扫描范围默认为工程学习站 docs/ 与个人站 sites/personal/；
+ * 默认扫描工程学习站 docs/；
  * 也可通过命令行参数传入一个或多个目录（回归测试使用）。
  *
  * 只解析文件开头的 YAML 块（--- 包裹的部分），不对正文内容做任何 grep，
@@ -25,7 +25,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const REPO_ROOT = path.resolve(__dirname, '..')
 const ROOTS = process.argv.slice(2).length > 0
   ? process.argv.slice(2)
-  : ['docs', 'sites/personal']
+  : ['docs']
 
 const INTERNAL_FIELDS = new Set([
   'pdfPages',
