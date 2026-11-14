@@ -25,7 +25,7 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 <FigureZoom caption="图 3-50 FTS搭接关系及其在网络计划中的表达方式">
 <svg viewBox="0 0 876 185" role="img" aria-label="图 3-50 FTS搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-3-50" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+    <marker id="arrow-3-50" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
       <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
     </marker>
   </defs>
@@ -69,7 +69,7 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 <FigureZoom caption="图 3-51 STS搭接关系及其在网络计划中的表达方式">
 <svg viewBox="0 0 790 200" role="img" aria-label="图 3-51 STS搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-3-51" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+    <marker id="arrow-3-51" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
       <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
     </marker>
   </defs>
@@ -111,7 +111,7 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 <FigureZoom caption="图 3-52 FTF搭接关系及其在网络计划中的表达方式">
 <svg viewBox="0 0 790 210" role="img" aria-label="图 3-52 FTF搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-3-52" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+    <marker id="arrow-3-52" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
       <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
     </marker>
   </defs>
@@ -153,7 +153,7 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 <FigureZoom caption="图 3-53 STF搭接关系及其在网络计划中的表达方式">
 <svg viewBox="0 0 790 230" role="img" aria-label="图 3-53 STF搭接关系及其在网络计划中的表达方式" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-3-53" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+    <marker id="arrow-3-53" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
       <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
     </marker>
   </defs>
