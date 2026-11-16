@@ -334,15 +334,15 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
     <text x="460" y="363" font-size="16">4</text>
     <text x="630" y="342" font-size="18">J</text>
     <text x="630" y="363" font-size="16">6</text>
-    <text x="115.2" y="143.3" font-size="17">STS=2</text>
+    <text x="92" y="136" font-size="17">STS=2</text>
     <text x="187.5" y="196" font-size="17">FTF=4</text>
-    <text x="195.9" y="268.8" font-size="17">STF=8</text>
+    <text x="154" y="290" font-size="17">STF=8</text>
     <text x="280" y="76" font-size="17">FTS=2</text>
-    <text x="330.1" y="140.1" font-size="17">STS=6</text>
+    <text x="306" y="132" font-size="17">STS=6</text>
     <text x="370" y="196" font-size="17">STS=3</text>
     <text x="370" y="224" font-size="17">FTF=6</text>
     <text x="370" y="336" font-size="17">FTS=0</text>
-    <text x="521.5" y="137.6" font-size="17">STS=4</text>
+    <text x="546" y="128" font-size="17">STS=4</text>
     <text x="545" y="196" font-size="17">STF=6</text>
     <text x="545" y="336" font-size="17">FTF=4</text>
   </g>
@@ -364,129 +364,107 @@ sectionTitle: 第六节 单代号搭接网络计划和多级网络计划系统
 本例中各项工作最早开始时间和最早完成时间的计算结果如图 3-57 所示。
 
 <FigureZoom caption="图 3-57 单代号搭接网络计划中工作ES和EF的计算结果">
-<svg viewBox="0 0 985 429" role="img" aria-label="图 3-57 单代号搭接网络计划中工作ES和EF的计算结果" xmlns="http://www.w3.org/2000/svg">
-  <defs><marker id="arrow-3-57" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.7">
-    <path d="M86.0,255.0 L189.0,255.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M215.0,229.0 L215.0,141.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M241.0,255.0 L384.0,255.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M236.1,270.2 L388.9,379.8" marker-end="url(#arrow-3-57)"></path>
-    <path d="M241.0,115.0 L474.0,115.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M424.1,233.1 L485.9,136.9" marker-end="url(#arrow-3-57)"></path>
-    <path d="M436.0,255.0 L579.0,255.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M431.1,379.8 L583.9,270.2" marker-end="url(#arrow-3-57)"></path>
-    <path d="M436.0,395.0 L579.0,395.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M523.4,126.3 L766.6,243.7" marker-end="url(#arrow-3-57)"></path>
-    <path d="M631.0,255.0 L764.0,255.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M631.0,395.0 L764.0,395.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M816.0,255.0 L892.0,255.0" marker-end="url(#arrow-3-57)"></path>
-    <path d="M807.5,375.8 L900.5,274.2" marker-end="url(#arrow-3-57)"></path>
-    <path d="M84.1,264.7 L385.9,385.3" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-57)"></path>
-    <path d="M524.7,123.3 L893.3,246.7" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-57)"></path>
-    <path d="M60,229 V180 H410 V229" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-57)"></path>
-    <path d="M605,229 V168 H918 V229" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-57)"></path>
-    <circle cx="60" cy="255" r="26"></circle>
-    <path d="M34,255 H86"></path>
-    <path d="M24,237 V273"></path>
-    <path d="M96,237 V273"></path>
-    <circle cx="215" cy="255" r="26"></circle>
-    <path d="M189,255 H241"></path>
-    <path d="M179,237 V273"></path>
-    <path d="M251,237 V273"></path>
-    <circle cx="410" cy="255" r="26"></circle>
-    <path d="M384,255 H436"></path>
-    <path d="M374,237 V273"></path>
-    <path d="M446,237 V273"></path>
-    <circle cx="605" cy="255" r="26"></circle>
-    <path d="M579,255 H631"></path>
-    <path d="M569,237 V273"></path>
-    <path d="M641,237 V273"></path>
-    <circle cx="790" cy="255" r="26"></circle>
-    <path d="M764,255 H816"></path>
-    <path d="M754,237 V273"></path>
-    <path d="M826,237 V273"></path>
-    <circle cx="918" cy="255" r="26"></circle>
-    <path d="M892,255 H944"></path>
-    <path d="M882,237 V273"></path>
-    <path d="M954,237 V273"></path>
-    <circle cx="215" cy="115" r="26"></circle>
-    <path d="M189,115 H241"></path>
-    <path d="M179,97 V133"></path>
-    <path d="M251,97 V133"></path>
-    <circle cx="500" cy="115" r="26"></circle>
-    <path d="M474,115 H526"></path>
-    <path d="M464,97 V133"></path>
-    <path d="M536,97 V133"></path>
-    <circle cx="410" cy="395" r="26"></circle>
-    <path d="M384,395 H436"></path>
-    <path d="M374,377 V413"></path>
-    <path d="M446,377 V413"></path>
-    <circle cx="605" cy="395" r="26"></circle>
-    <path d="M579,395 H631"></path>
-    <path d="M569,377 V413"></path>
-    <path d="M641,377 V413"></path>
-    <circle cx="790" cy="395" r="26"></circle>
-    <path d="M764,395 H816"></path>
-    <path d="M754,377 V413"></path>
-    <path d="M826,377 V413"></path>
+<svg viewBox="0 0 1030 465" role="img" aria-label="图 3-57 单代号搭接网络计划中工作ES和EF的计算结果" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-3-57" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M91.0,265.0 L179.0,265.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M223.4,246.6 L326.6,143.4" marker-end="url(#arrow-3-57)"/>
+    <path d="M231.0,265.0 L369.0,265.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M225.9,280.4 L374.1,389.6" marker-end="url(#arrow-3-57)"/>
+    <path d="M371.0,125.0 L519.0,125.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M414.0,247.3 L526.0,142.7" marker-end="url(#arrow-3-57)"/>
+    <path d="M421.0,265.0 L589.0,265.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M416.9,391.0 L593.1,279.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M421.0,405.0 L589.0,405.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M567.6,137.9 L767.4,252.1" marker-end="url(#arrow-3-57)"/>
+    <path d="M641.0,265.0 L764.0,265.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M641.0,405.0 L764.0,405.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M816.0,265.0 L934.0,265.0" marker-end="url(#arrow-3-57)"/>
+    <path d="M810.1,388.5 L939.9,281.5" marker-end="url(#arrow-3-57)"/>
+    <path d="M84,247 L135,195 H370 L381,243" stroke-dasharray="7 4" marker-end="url(#arrow-3-57)"/>
+    <path d="M81,285 L145,405 H369" stroke-dasharray="7 4" marker-end="url(#arrow-3-57)"/>
+    <path d="M571,125 H875 L943,245" stroke-dasharray="7 4" marker-end="url(#arrow-3-57)"/>
+    <path d="M635,248 L690,190 H895 L941,247" stroke-dasharray="7 4" marker-end="url(#arrow-3-57)"/>
+    <circle cx="65" cy="265" r="26"/>
+    <path d="M39,265 H91 M33,241 V289 M97,241 V289"/>
+    <circle cx="205" cy="265" r="26"/>
+    <path d="M179,265 H231 M173,241 V289 M237,241 V289"/>
+    <circle cx="345" cy="125" r="26"/>
+    <path d="M319,125 H371 M313,101 V149 M377,101 V149"/>
+    <circle cx="395" cy="265" r="26"/>
+    <path d="M369,265 H421 M363,241 V289 M427,241 V289"/>
+    <circle cx="395" cy="405" r="26"/>
+    <path d="M369,405 H421 M363,381 V429 M427,381 V429"/>
+    <circle cx="545" cy="125" r="26"/>
+    <path d="M519,125 H571 M513,101 V149 M577,101 V149"/>
+    <circle cx="615" cy="265" r="26"/>
+    <path d="M589,265 H641 M583,241 V289 M647,241 V289"/>
+    <circle cx="615" cy="405" r="26"/>
+    <path d="M589,405 H641 M583,381 V429 M647,381 V429"/>
+    <circle cx="790" cy="265" r="26"/>
+    <path d="M764,265 H816 M758,241 V289 M822,241 V289"/>
+    <circle cx="790" cy="405" r="26"/>
+    <path d="M764,405 H816 M758,381 V429 M822,381 V429"/>
+    <circle cx="960" cy="265" r="26"/>
+    <path d="M934,265 H986 M928,241 V289 M992,241 V289"/>
   </g>
-  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic">
-    <text x="60" y="247" font-size="18">ST</text>
-    <text x="60" y="268" font-size="18">0</text>
-    <text x="12" y="255" font-size="18">0</text>
-    <text x="108" y="255" font-size="18">0</text>
-    <text x="215" y="247" font-size="18">A</text>
-    <text x="215" y="268" font-size="18">6</text>
-    <text x="167" y="255" font-size="18">0</text>
-    <text x="263" y="255" font-size="18">6</text>
-    <text x="410" y="247" font-size="18">C</text>
-    <text x="410" y="268" font-size="18">14</text>
-    <text x="362" y="255" font-size="18">0</text>
-    <text x="458" y="255" font-size="18">14</text>
-    <text x="605" y="247" font-size="18">G</text>
-    <text x="605" y="268" font-size="18">14</text>
-    <text x="557" y="255" font-size="18">10</text>
-    <text x="653" y="255" font-size="18">24</text>
-    <text x="790" y="247" font-size="18">I</text>
-    <text x="790" y="268" font-size="18">4</text>
-    <text x="742" y="255" font-size="18">16</text>
-    <text x="838" y="255" font-size="18">20</text>
-    <text x="918" y="247" font-size="18">FIN</text>
-    <text x="918" y="268" font-size="18">0</text>
-    <text x="870" y="255" font-size="18">24</text>
-    <text x="966" y="255" font-size="18">24</text>
-    <text x="215" y="107" font-size="18">B</text>
-    <text x="215" y="128" font-size="18">8</text>
-    <text x="167" y="115" font-size="18">2</text>
-    <text x="263" y="115" font-size="18">10</text>
-    <text x="500" y="107" font-size="18">E</text>
-    <text x="500" y="128" font-size="18">10</text>
-    <text x="452" y="115" font-size="18">12</text>
-    <text x="548" y="115" font-size="18">22</text>
-    <text x="410" y="387" font-size="18">D</text>
-    <text x="410" y="408" font-size="18">10</text>
-    <text x="362" y="395" font-size="18">0</text>
-    <text x="458" y="395" font-size="18">10</text>
-    <text x="605" y="387" font-size="18">H</text>
-    <text x="605" y="408" font-size="18">4</text>
-    <text x="557" y="395" font-size="18">10</text>
-    <text x="653" y="395" font-size="18">14</text>
-    <text x="790" y="387" font-size="18">J</text>
-    <text x="790" y="408" font-size="18">6</text>
-    <text x="742" y="395" font-size="18">12</text>
-    <text x="838" y="395" font-size="18">18</text>
-    <text x="201" y="185" font-size="18">STS=2</text>
-    <text x="312.5" y="241" font-size="18">FTF=4</text>
-    <text x="320.7" y="313.6" font-size="18">STF=8</text>
-    <text x="357.5" y="101" font-size="18">FTS=2</text>
-    <text x="443.2" y="177.4" font-size="18">STS=6</text>
-    <text x="507.5" y="241" font-size="18">STS=3</text>
-    <text x="507.5" y="269" font-size="18">FTF=6</text>
-    <text x="499.3" y="313.6" font-size="18">FTF=14</text>
-    <text x="507.5" y="381" font-size="18">FTS=0</text>
-    <text x="651.1" y="172.4" font-size="18">STS=4</text>
-    <text x="697.5" y="241" font-size="18">STF=6</text>
-    <text x="697.5" y="381" font-size="18">FTF=4</text>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="65" y="255" font-size="17" font-style="italic">ST</text>
+    <text x="65" y="277" font-size="16">0</text>
+    <text x="21" y="237" font-size="15">0</text>
+    <text x="109" y="237" font-size="15">0</text>
+    <text x="205" y="255" font-size="17" font-style="italic">A</text>
+    <text x="205" y="277" font-size="16">6</text>
+    <text x="161" y="237" font-size="15">0</text>
+    <text x="249" y="237" font-size="15">6</text>
+    <text x="345" y="115" font-size="17" font-style="italic">B</text>
+    <text x="345" y="137" font-size="16">8</text>
+    <text x="301" y="97" font-size="15">2</text>
+    <text x="389" y="97" font-size="15">10</text>
+    <text x="395" y="255" font-size="17" font-style="italic">C</text>
+    <text x="395" y="277" font-size="16">14</text>
+    <text x="351" y="237" font-size="15">0</text>
+    <text x="439" y="237" font-size="15">14</text>
+    <text x="395" y="395" font-size="17" font-style="italic">D</text>
+    <text x="395" y="417" font-size="16">10</text>
+    <text x="351" y="377" font-size="15">0</text>
+    <text x="439" y="377" font-size="15">10</text>
+    <text x="545" y="115" font-size="17" font-style="italic">E</text>
+    <text x="545" y="137" font-size="16">10</text>
+    <text x="501" y="97" font-size="15">12</text>
+    <text x="589" y="97" font-size="15">22</text>
+    <text x="615" y="255" font-size="17" font-style="italic">G</text>
+    <text x="615" y="277" font-size="16">14</text>
+    <text x="571" y="237" font-size="15">10</text>
+    <text x="659" y="237" font-size="15">24</text>
+    <text x="615" y="395" font-size="17" font-style="italic">H</text>
+    <text x="615" y="417" font-size="16">4</text>
+    <text x="571" y="377" font-size="15">10</text>
+    <text x="659" y="377" font-size="15">14</text>
+    <text x="790" y="255" font-size="17" font-style="italic">I</text>
+    <text x="790" y="277" font-size="16">4</text>
+    <text x="746" y="237" font-size="15">16</text>
+    <text x="834" y="237" font-size="15">20</text>
+    <text x="790" y="395" font-size="17" font-style="italic">J</text>
+    <text x="790" y="417" font-size="16">6</text>
+    <text x="746" y="377" font-size="15">12</text>
+    <text x="834" y="377" font-size="15">18</text>
+    <text x="960" y="255" font-size="17" font-style="italic">FIN</text>
+    <text x="960" y="277" font-size="16">0</text>
+    <text x="916" y="237" font-size="15">24</text>
+    <text x="1004" y="237" font-size="15">24</text>
+    <text x="248" y="178" font-size="15" font-style="italic">STS=2</text>
+    <text x="298" y="250" font-size="15" font-style="italic">FTF=4</text>
+    <text x="278" y="355" font-size="15" font-style="italic">STF=8</text>
+    <text x="445" y="110" font-size="15" font-style="italic">FTS=2</text>
+    <text x="448" y="192" font-size="15" font-style="italic">STS=6</text>
+    <text x="505" y="250" font-size="15" font-style="italic">STS=3</text>
+    <text x="505" y="282" font-size="15" font-style="italic">FTF=6</text>
+    <text x="492" y="348" font-size="15" font-style="italic">FTF=14</text>
+    <text x="505" y="390" font-size="15" font-style="italic">FTS=0</text>
+    <text x="686" y="176" font-size="15" font-style="italic">STS=4</text>
+    <text x="702" y="250" font-size="15" font-style="italic">STF=6</text>
+    <text x="702" y="390" font-size="15" font-style="italic">FTF=4</text>
   </g>
 </svg>
 </FigureZoom>
@@ -611,7 +589,7 @@ $$
 （4）搭接关系为开始到结束（STF）时的时间间隔。如果在搭接网络计划中出现 $EF_j>(ES_i+STF_{i,j})$ 的情况时，就说明在工作 $i$ 和工作 $j$ 之间存在时间间隔 $LAG_{i,j}$，如图 3-61 所示。由图 3-61 可得：
 
 <FigureZoom caption="图 3-61 时距为FTF时的时间间隔">
-<svg viewBox="0 0 501 189" role="img" aria-label="图 3-61 时距为FTF时的时间间隔" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 520 189" role="img" aria-label="图 3-61 时距为FTF时的时间间隔" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrow-3-61" viewBox="0 0 11 7" refX="11" refY="3.5" markerWidth="11" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
       <path d="M0,0 L11,3.5 L0,7 z" fill="currentColor" stroke="none"></path>
@@ -666,206 +644,175 @@ $$
 本例计算结果如图 3-62 所示，线路 $\mathrm{S}\rightarrow\mathrm{D}\rightarrow\mathrm{G}\rightarrow\mathrm{F}$ 为关键线路。关键工作是工作 D 和工作 G，而工作 S 和工作 F 为虚工作，其总时差均为零。
 
 <FigureZoom caption="图 3-62 单代号搭接网络计划时间参数的计算结果">
-<svg viewBox="0 0 1076 507" role="img" aria-label="图 3-62 单代号搭接网络计划时间参数的计算结果" xmlns="http://www.w3.org/2000/svg">
-  <defs><marker id="arrow-3-62" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.7">
-    <path d="M96.0,253.0 L199.0,253.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M225.0,227.0 L225.0,126.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M251.0,253.0 L394.0,253.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M245.8,268.7 L399.2,384.3" marker-end="url(#arrow-3-62)"></path>
-    <path d="M251.0,100.0 L474.0,100.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M432.0,230.0 L488.0,123.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M446.0,253.0 L589.0,253.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M446.0,400.0 L589.0,400.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M523.3,111.5 L786.7,241.5" marker-end="url(#arrow-3-62)"></path>
-    <path d="M641.0,253.0 L784.0,253.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M641.0,400.0 L784.0,400.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M836.0,253.0 L969.0,253.0" marker-end="url(#arrow-3-62)"></path>
-    <path d="M830.4,383.8 L974.6,269.2" marker-end="url(#arrow-3-62)"></path>
-    <path d="M524.8,107.7 L970.2,245.3" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-62)"></path>
-    <path d="M70,229 V170 H420 V229" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-62)"></path>
-    <path d="M615,229 V162 H995 V229" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-62)"></path>
-    <path d="M92.8,265.8 L394.9,392.7" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-62)"></path>
-    <path d="M95.1,260.3 L397.2,387.2" stroke-dasharray="8 4.5"></path>
-    <path d="M442.6,386.7 L596,271" marker-end="url(#arrow-3-62)"></path>
-    <path d="M439,382 L592.4,266.3"></path>
-    <path d="M641,256 L969,256" stroke-dasharray="8 4.5" marker-end="url(#arrow-3-62)"></path>
-    <path d="M641,250 L969,250" stroke-dasharray="8 4.5"></path>
-    <circle cx="70" cy="253" r="26"></circle>
-    <path d="M44,253 H96"></path>
-    <path d="M32,233 V273"></path>
-    <path d="M108,233 V273"></path>
-    <circle cx="225" cy="253" r="26"></circle>
-    <path d="M199,253 H251"></path>
-    <path d="M187,233 V273"></path>
-    <path d="M263,233 V273"></path>
-    <circle cx="420" cy="253" r="26"></circle>
-    <path d="M394,253 H446"></path>
-    <path d="M382,233 V273"></path>
-    <path d="M458,233 V273"></path>
-    <circle cx="615" cy="253" r="26"></circle>
-    <path d="M589,253 H641"></path>
-    <path d="M577,233 V273"></path>
-    <path d="M653,233 V273"></path>
-    <circle cx="810" cy="253" r="26"></circle>
-    <path d="M784,253 H836"></path>
-    <path d="M772,233 V273"></path>
-    <path d="M848,233 V273"></path>
-    <circle cx="995" cy="253" r="26"></circle>
-    <path d="M969,253 H1021"></path>
-    <path d="M957,233 V273"></path>
-    <path d="M1033,233 V273"></path>
-    <circle cx="225" cy="100" r="26"></circle>
-    <path d="M199,100 H251"></path>
-    <path d="M187,80 V120"></path>
-    <path d="M263,80 V120"></path>
-    <circle cx="500" cy="100" r="26"></circle>
-    <path d="M474,100 H526"></path>
-    <path d="M462,80 V120"></path>
-    <path d="M538,80 V120"></path>
-    <circle cx="420" cy="400" r="26"></circle>
-    <path d="M394,400 H446"></path>
-    <path d="M382,380 V420"></path>
-    <path d="M458,380 V420"></path>
-    <circle cx="615" cy="400" r="26"></circle>
-    <path d="M589,400 H641"></path>
-    <path d="M577,380 V420"></path>
-    <path d="M653,380 V420"></path>
-    <circle cx="810" cy="400" r="26"></circle>
-    <path d="M784,400 H836"></path>
-    <path d="M772,380 V420"></path>
-    <path d="M848,380 V420"></path>
-    <circle cx="70" cy="40" r="22"></circle>
-    <path d="M48,40 H92"></path>
-    <path d="M30,18 V62"></path>
-    <path d="M110,18 V62"></path>
+<svg viewBox="0 0 1120 510" role="img" aria-label="图 3-62 单代号搭接网络计划时间参数的计算结果" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow-3-62" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <path d="M94.0,280.0 L194.0,280.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M238.1,261.3 L356.9,138.7" marker-end="url(#arrow-3-62)"/>
+    <path d="M246.0,280.0 L399.0,280.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M240.5,296.0 L404.5,424.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M401.0,120.0 L564.0,120.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M443.7,261.9 L571.3,138.1" marker-end="url(#arrow-3-62)"/>
+    <path d="M451.0,280.0 L634.0,280.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M451.0,440.0 L634.0,440.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M612.3,133.4 L832.7,266.6" marker-end="url(#arrow-3-62)"/>
+    <path d="M686.0,280.0 L829.0,280.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M686.0,440.0 L829.0,440.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M881.0,280.0 L1019.0,280.0" marker-end="url(#arrow-3-62)"/>
+    <path d="M874.9,423.3 L1025.1,296.7" marker-end="url(#arrow-3-62)"/>
+    <path d="M448.2,427.8 L631.9,302.7 M444.8,422.9 L628.6,297.8"/>
+    <path d="M630.2,300.3 L638.5,294.6" marker-end="url(#arrow-3-62)"/>
+    <path d="M88,262 L145,205 H395 L410,258" stroke-dasharray="7 4" marker-end="url(#arrow-3-62)"/>
+    <path d="M616,120 H960 L1028,260" stroke-dasharray="7 4" marker-end="url(#arrow-3-62)"/>
+    <path d="M83,300 L150,437 H392 M88,295 L155,443 H392" stroke-dasharray="7 4"/>
+    <path d="M390,440 L399,440" marker-end="url(#arrow-3-62)"/>
+    <path d="M679,259 L745,193 H965 L1026,257 M684,264 L748,199 H962 L1022,262" stroke-dasharray="7 4"/>
+    <path d="M1023,258 L1027,262" marker-end="url(#arrow-3-62)"/>
+    <circle cx="115" cy="60" r="24"/><path d="M91,60 H139 M85,36 V84 M145,36 V84"/>
+    <circle cx="68" cy="280" r="26"/>
+    <path d="M42,280 H94 M35,255 V305 M101,255 V305"/>
+    <circle cx="220" cy="280" r="26"/>
+    <path d="M194,280 H246 M187,255 V305 M253,255 V305"/>
+    <circle cx="375" cy="120" r="26"/>
+    <path d="M349,120 H401 M342,95 V145 M408,95 V145"/>
+    <circle cx="425" cy="280" r="26"/>
+    <path d="M399,280 H451 M392,255 V305 M458,255 V305"/>
+    <circle cx="425" cy="440" r="26"/>
+    <path d="M399,440 H451 M392,415 V465 M458,415 V465"/>
+    <circle cx="590" cy="120" r="26"/>
+    <path d="M564,120 H616 M557,95 V145 M623,95 V145"/>
+    <circle cx="660" cy="280" r="26"/>
+    <path d="M634,280 H686 M627,255 V305 M693,255 V305"/>
+    <circle cx="660" cy="440" r="26"/>
+    <path d="M634,440 H686 M627,415 V465 M693,415 V465"/>
+    <circle cx="855" cy="280" r="26"/>
+    <path d="M829,280 H881 M822,255 V305 M888,255 V305"/>
+    <circle cx="855" cy="440" r="26"/>
+    <path d="M829,440 H881 M822,415 V465 M888,415 V465"/>
+    <circle cx="1045" cy="280" r="26"/>
+    <path d="M1019,280 H1071 M1012,255 V305 M1078,255 V305"/>
   </g>
-  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-style="italic">
-    <text x="70" y="245" font-size="19">S</text>
-    <text x="70" y="267" font-size="19">0</text>
-    <text x="18" y="239" font-size="19">0</text>
-    <text x="70" y="211" font-size="19">0</text>
-    <text x="122" y="239" font-size="19">0</text>
-    <text x="18" y="270" font-size="19">0</text>
-    <text x="70" y="295" font-size="19">0</text>
-    <text x="122" y="270" font-size="19">0</text>
-    <text x="225" y="245" font-size="19">A</text>
-    <text x="225" y="267" font-size="19">6</text>
-    <text x="173" y="239" font-size="19">0</text>
-    <text x="225" y="211" font-size="19">2</text>
-    <text x="277" y="239" font-size="19">6</text>
-    <text x="173" y="270" font-size="19">2</text>
-    <text x="225" y="295" font-size="19">0</text>
-    <text x="277" y="270" font-size="19">8</text>
-    <text x="420" y="245" font-size="19">C</text>
-    <text x="420" y="267" font-size="19">14</text>
-    <text x="368" y="239" font-size="19">0</text>
-    <text x="420" y="211" font-size="19">4</text>
-    <text x="472" y="239" font-size="19">14</text>
-    <text x="368" y="270" font-size="19">4</text>
-    <text x="420" y="295" font-size="19">4</text>
-    <text x="472" y="270" font-size="19">18</text>
-    <text x="615" y="245" font-size="19">G</text>
-    <text x="615" y="267" font-size="19">14</text>
-    <text x="563" y="239" font-size="19">10</text>
-    <text x="615" y="211" font-size="19">0</text>
-    <text x="667" y="239" font-size="19">24</text>
-    <text x="563" y="270" font-size="19">10</text>
-    <text x="615" y="295" font-size="19">0</text>
-    <text x="667" y="270" font-size="19">24</text>
-    <text x="810" y="245" font-size="19">I</text>
-    <text x="810" y="267" font-size="19">4</text>
-    <text x="758" y="239" font-size="19">16</text>
-    <text x="810" y="211" font-size="19">4</text>
-    <text x="862" y="239" font-size="19">20</text>
-    <text x="758" y="270" font-size="19">20</text>
-    <text x="810" y="295" font-size="19">4</text>
-    <text x="862" y="270" font-size="19">24</text>
-    <text x="995" y="245" font-size="19">F</text>
-    <text x="995" y="267" font-size="19">0</text>
-    <text x="943" y="239" font-size="19">24</text>
-    <text x="995" y="211" font-size="19">0</text>
-    <text x="1047" y="239" font-size="19">24</text>
-    <text x="943" y="270" font-size="19">24</text>
-    <text x="995" y="295" font-size="19">0</text>
-    <text x="1047" y="270" font-size="19">24</text>
-    <text x="225" y="92" font-size="19">B</text>
-    <text x="225" y="114" font-size="19">8</text>
-    <text x="173" y="86" font-size="19">2</text>
-    <text x="225" y="58" font-size="19">2</text>
-    <text x="277" y="86" font-size="19">10</text>
-    <text x="173" y="117" font-size="19">4</text>
-    <text x="225" y="142" font-size="19">0</text>
-    <text x="277" y="117" font-size="19">12</text>
-    <text x="500" y="92" font-size="19">E</text>
-    <text x="500" y="114" font-size="19">10</text>
-    <text x="448" y="86" font-size="19">12</text>
-    <text x="500" y="58" font-size="19">2</text>
-    <text x="552" y="86" font-size="19">22</text>
-    <text x="448" y="117" font-size="19">14</text>
-    <text x="500" y="142" font-size="19">0</text>
-    <text x="552" y="117" font-size="19">24</text>
-    <text x="420" y="392" font-size="19">D</text>
-    <text x="420" y="414" font-size="19">10</text>
-    <text x="368" y="386" font-size="19">0</text>
-    <text x="420" y="358" font-size="19">0</text>
-    <text x="472" y="386" font-size="19">10</text>
-    <text x="368" y="417" font-size="19">0</text>
-    <text x="420" y="442" font-size="19">0</text>
-    <text x="472" y="417" font-size="19">10</text>
-    <text x="615" y="392" font-size="19">H</text>
-    <text x="615" y="414" font-size="19">4</text>
-    <text x="563" y="386" font-size="19">10</text>
-    <text x="615" y="358" font-size="19">6</text>
-    <text x="667" y="386" font-size="19">14</text>
-    <text x="563" y="417" font-size="19">16</text>
-    <text x="615" y="442" font-size="19">0</text>
-    <text x="667" y="417" font-size="19">20</text>
-    <text x="810" y="392" font-size="19">J</text>
-    <text x="810" y="414" font-size="19">6</text>
-    <text x="758" y="386" font-size="19">12</text>
-    <text x="810" y="358" font-size="19">6</text>
-    <text x="862" y="386" font-size="19">18</text>
-    <text x="758" y="417" font-size="19">18</text>
-    <text x="810" y="442" font-size="19">6</text>
-    <text x="862" y="417" font-size="19">24</text>
-    <text x="211" y="176.5" font-size="19">STS=2</text>
-    <text x="322.5" y="239" font-size="19">FTF=4</text>
-    <text x="330.9" y="315.3" font-size="19">STF=8</text>
-    <text x="362.5" y="86" font-size="19">FTS=2</text>
-    <text x="447.6" y="170" font-size="19">STS=6</text>
-    <text x="517.5" y="239" font-size="19">STS=3</text>
-    <text x="517.5" y="267" font-size="19">FTF=6</text>
-    <text x="517.5" y="386" font-size="19">FTS=0</text>
-    <text x="661.2" y="163.9" font-size="19">STS=4</text>
-    <text x="712.5" y="239" font-size="19">STF=6</text>
-    <text x="712.5" y="386" font-size="19">FTF=4</text>
-    <text x="140" y="268" font-size="19">0</text>
-    <text x="258" y="138" font-size="19">0</text>
-    <text x="320" y="242" font-size="19">4</text>
-    <text x="345" y="320" font-size="19">2</text>
-    <text x="362" y="78" font-size="19">0</text>
-    <text x="475" y="150" font-size="19">6</text>
-    <text x="540" y="225" font-size="19">4</text>
-    <text x="528" y="320" font-size="19">0</text>
-    <text x="515" y="415" font-size="19">0</text>
-    <text x="690" y="145" font-size="19">0</text>
-    <text x="712" y="242" font-size="19">4</text>
-    <text x="712" y="415" font-size="19">0</text>
-    <text x="900" y="242" font-size="19">4</text>
-    <text x="905" y="340" font-size="19">6</text>
-    <text x="260" y="195" font-size="19">0</text>
-    <text x="245" y="380" font-size="19">0</text>
-    <text x="760" y="155" font-size="19">2</text>
-    <text x="760" y="180" font-size="19">0</text>
-    <text x="70" y="34" font-size="19">i</text>
-    <text x="70" y="48" font-size="19">D<tspan font-size="13" dy="4">i</tspan></text>
-    <text x="20" y="24" font-size="19">ES</text>
-    <text x="70" y="8" font-size="19">TF</text>
-    <text x="120" y="24" font-size="19">EF</text>
-    <text x="20" y="56" font-size="19">LS</text>
-    <text x="70" y="76" font-size="19">FF</text>
-    <text x="120" y="56" font-size="19">LF</text>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="115" y="51" font-size="16" font-style="italic">i</text><text x="115" y="70" font-size="15" font-style="italic">D<tspan font-size="12" dy="3">i</tspan></text>
+    <text x="68" y="34" font-size="15" font-style="italic">ES</text><text x="115" y="25" font-size="15" font-style="italic">TF</text><text x="162" y="34" font-size="15" font-style="italic">EF</text>
+    <text x="68" y="88" font-size="15" font-style="italic">LS</text><text x="115" y="96" font-size="15" font-style="italic">FF</text><text x="162" y="88" font-size="15" font-style="italic">LF</text>
+    <text x="68" y="270" font-size="17" font-style="italic">S</text>
+    <text x="68" y="292" font-size="16">0</text>
+    <text x="21" y="252" font-size="15">0</text>
+    <text x="68" y="242" font-size="15">0</text>
+    <text x="115" y="252" font-size="15">0</text>
+    <text x="21" y="308" font-size="15">0</text>
+    <text x="68" y="318" font-size="15">0</text>
+    <text x="115" y="308" font-size="15">0</text>
+    <text x="220" y="270" font-size="17" font-style="italic">A</text>
+    <text x="220" y="292" font-size="16">6</text>
+    <text x="173" y="252" font-size="15">0</text>
+    <text x="220" y="242" font-size="15">2</text>
+    <text x="267" y="252" font-size="15">6</text>
+    <text x="173" y="308" font-size="15">2</text>
+    <text x="220" y="318" font-size="15">0</text>
+    <text x="267" y="308" font-size="15">8</text>
+    <text x="375" y="110" font-size="17" font-style="italic">B</text>
+    <text x="375" y="132" font-size="16">8</text>
+    <text x="328" y="92" font-size="15">2</text>
+    <text x="375" y="82" font-size="15">2</text>
+    <text x="422" y="92" font-size="15">10</text>
+    <text x="328" y="148" font-size="15">4</text>
+    <text x="375" y="158" font-size="15">0</text>
+    <text x="422" y="148" font-size="15">12</text>
+    <text x="425" y="270" font-size="17" font-style="italic">C</text>
+    <text x="425" y="292" font-size="16">14</text>
+    <text x="378" y="252" font-size="15">0</text>
+    <text x="425" y="242" font-size="15">4</text>
+    <text x="472" y="252" font-size="15">14</text>
+    <text x="378" y="308" font-size="15">4</text>
+    <text x="425" y="318" font-size="15">4</text>
+    <text x="472" y="308" font-size="15">18</text>
+    <text x="425" y="430" font-size="17" font-style="italic">D</text>
+    <text x="425" y="452" font-size="16">10</text>
+    <text x="378" y="412" font-size="15">0</text>
+    <text x="425" y="402" font-size="15">0</text>
+    <text x="472" y="412" font-size="15">10</text>
+    <text x="378" y="468" font-size="15">0</text>
+    <text x="425" y="478" font-size="15">0</text>
+    <text x="472" y="468" font-size="15">10</text>
+    <text x="590" y="110" font-size="17" font-style="italic">E</text>
+    <text x="590" y="132" font-size="16">10</text>
+    <text x="543" y="92" font-size="15">12</text>
+    <text x="590" y="82" font-size="15">2</text>
+    <text x="637" y="92" font-size="15">22</text>
+    <text x="543" y="148" font-size="15">14</text>
+    <text x="590" y="158" font-size="15">0</text>
+    <text x="637" y="148" font-size="15">24</text>
+    <text x="660" y="270" font-size="17" font-style="italic">G</text>
+    <text x="660" y="292" font-size="16">14</text>
+    <text x="613" y="252" font-size="15">10</text>
+    <text x="660" y="242" font-size="15">0</text>
+    <text x="707" y="252" font-size="15">24</text>
+    <text x="613" y="308" font-size="15">10</text>
+    <text x="660" y="318" font-size="15">0</text>
+    <text x="707" y="308" font-size="15">24</text>
+    <text x="660" y="430" font-size="17" font-style="italic">H</text>
+    <text x="660" y="452" font-size="16">4</text>
+    <text x="613" y="412" font-size="15">10</text>
+    <text x="660" y="402" font-size="15">6</text>
+    <text x="707" y="412" font-size="15">14</text>
+    <text x="613" y="468" font-size="15">16</text>
+    <text x="660" y="478" font-size="15">0</text>
+    <text x="707" y="468" font-size="15">20</text>
+    <text x="855" y="270" font-size="17" font-style="italic">I</text>
+    <text x="855" y="292" font-size="16">4</text>
+    <text x="808" y="252" font-size="15">16</text>
+    <text x="855" y="242" font-size="15">4</text>
+    <text x="902" y="252" font-size="15">20</text>
+    <text x="808" y="308" font-size="15">20</text>
+    <text x="855" y="318" font-size="15">4</text>
+    <text x="902" y="308" font-size="15">24</text>
+    <text x="855" y="430" font-size="17" font-style="italic">J</text>
+    <text x="855" y="452" font-size="16">6</text>
+    <text x="808" y="412" font-size="15">12</text>
+    <text x="855" y="402" font-size="15">6</text>
+    <text x="902" y="412" font-size="15">18</text>
+    <text x="808" y="468" font-size="15">18</text>
+    <text x="855" y="478" font-size="15">6</text>
+    <text x="902" y="468" font-size="15">24</text>
+    <text x="1045" y="270" font-size="17" font-style="italic">F</text>
+    <text x="1045" y="292" font-size="16">0</text>
+    <text x="998" y="252" font-size="15">24</text>
+    <text x="1045" y="242" font-size="15">0</text>
+    <text x="1092" y="252" font-size="15">24</text>
+    <text x="998" y="308" font-size="15">24</text>
+    <text x="1045" y="318" font-size="15">0</text>
+    <text x="1092" y="308" font-size="15">24</text>
+    <text x="144" y="265" font-size="15" font-style="italic">0</text>
+    <text x="148" y="192" font-size="15" font-style="italic">0</text>
+    <text x="138" y="378" font-size="15" font-style="italic">0</text>
+    <text x="266" y="178" font-size="15" font-style="italic">STS=2</text>
+    <text x="304" y="196" font-size="15" font-style="italic">0</text>
+    <text x="322" y="265" font-size="15" font-style="italic">FTF=4</text>
+    <text x="322" y="296" font-size="15" font-style="italic">4</text>
+    <text x="296" y="374" font-size="15" font-style="italic">STF=8</text>
+    <text x="342" y="355" font-size="15" font-style="italic">2</text>
+    <text x="482" y="106" font-size="15" font-style="italic">FTS=2</text>
+    <text x="482" y="136" font-size="15" font-style="italic">0</text>
+    <text x="486" y="188" font-size="15" font-style="italic">STS=6</text>
+    <text x="526" y="206" font-size="15" font-style="italic">6</text>
+    <text x="542" y="265" font-size="15" font-style="italic">STS=3</text>
+    <text x="542" y="296" font-size="15" font-style="italic">FTF=6</text>
+    <text x="542" y="320" font-size="15" font-style="italic">4</text>
+    <text x="520" y="354" font-size="15" font-style="italic">FTF=14</text>
+    <text x="566" y="372" font-size="15" font-style="italic">0</text>
+    <text x="542" y="425" font-size="15" font-style="italic">FTS=0</text>
+    <text x="542" y="456" font-size="15" font-style="italic">0</text>
+    <text x="742" y="168" font-size="15" font-style="italic">STS=4</text>
+    <text x="830" y="106" font-size="15" font-style="italic">2</text>
+    <text x="830" y="180" font-size="15" font-style="italic">0</text>
+    <text x="758" y="265" font-size="15" font-style="italic">STF=6</text>
+    <text x="758" y="296" font-size="15" font-style="italic">4</text>
+    <text x="950" y="265" font-size="15" font-style="italic">4</text>
+    <text x="758" y="425" font-size="15" font-style="italic">FTF=4</text>
+    <text x="758" y="456" font-size="15" font-style="italic">0</text>
+    <text x="965" y="372" font-size="15" font-style="italic">6</text>
   </g>
 </svg>
 </FigureZoom>
@@ -881,51 +828,44 @@ $$
 例如在图 3-63 所示某地铁工程施工进度多级网络计划系统中，区间隧道施工进度网络计划、车站施工进度网络计划和车辆段施工进度网络计划等是整个地铁工程施工总进度网络计划的子网络，而各个区间隧道、各个车站的施工进度网络计划又分别是区间隧道施工进度网络计划和车站施工进度网络计划的子网络……这些网络计划既可以分解成独立的网络计划，又可以综合成一个多级网络计划系统。
 
 <FigureZoom caption="图 3-63 某地铁工程施工进度多级网络计划系统">
-<svg viewBox="0 0 897 481" role="img" aria-label="图 3-63 某地铁工程施工进度多级网络计划系统" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <path d="M448,49 V78"></path>
-    <path d="M200,78 H696"></path>
-    <path d="M200,78 V110"></path>
-    <path d="M448,78 V110"></path>
-    <path d="M696,78 V110"></path>
-    <path d="M448,144 V173"></path>
-    <path d="M200,173 H696"></path>
-    <path d="M200,173 V220"></path>
-    <path d="M448,173 V220"></path>
-    <path d="M696,173 V220"></path>
-    <path d="M448,254 V283"></path>
-    <path d="M200,283 H696"></path>
-    <path d="M200,283 V330"></path>
-    <path d="M448,283 V330"></path>
-    <path d="M696,283 V330"></path>
-    <path d="M345,15 L583,15 L567,49 L329,49 Z"></path>
-    <path d="M141,110 L291,110 L275,144 L125,144 Z"></path>
-    <path d="M389,110 L539,110 L523,144 L373,144 Z"></path>
-    <path d="M637,110 L787,110 L771,144 L621,144 Z"></path>
-    <path d="M141,220 L291,220 L275,254 L125,254 Z"></path>
-    <path d="M389,220 L539,220 L523,254 L373,254 Z"></path>
-    <path d="M637,220 L787,220 L771,254 L621,254 Z"></path>
-    <path d="M141,330 L291,330 L275,364 L125,364 Z"></path>
-    <path d="M389,330 L539,330 L523,364 L373,364 Z"></path>
-    <path d="M637,330 L787,330 L771,364 L621,364 Z"></path>
+<svg viewBox="0 0 920 500" role="img" aria-label="图 3-63 某地铁工程施工进度多级网络计划系统" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <!-- 连接线 -->
+    <path d="M475,58 V86 M215,86 H735 M215,86 V114 M475,86 V114 M735,86 V114"/>
+    <path d="M475,164 V192 M215,192 H735 M215,192 V220 M475,192 V220 M735,192 V220"/>
+    <path d="M475,270 V298 M215,298 H735 M215,298 V326 M475,298 V326 M735,298 V326"/>
+    <!-- 一级平行四边形 -->
+    <path d="M350,14 L620,14 L600,58 L330,58 Z"/>
+    <!-- 二级 -->
+    <path d="M120,114 L330,114 L310,164 L100,164 Z"/>
+    <path d="M380,114 L590,114 L570,164 L360,164 Z"/>
+    <path d="M640,114 L850,114 L830,164 L620,164 Z"/>
+    <!-- 三级 -->
+    <path d="M120,220 L330,220 L310,270 L100,270 Z"/>
+    <path d="M380,220 L590,220 L570,270 L360,270 Z"/>
+    <path d="M640,220 L850,220 L830,270 L620,270 Z"/>
+    <!-- 四级 -->
+    <path d="M120,326 L330,326 L310,376 L100,376 Z"/>
+    <path d="M380,326 L590,326 L570,376 L360,376 Z"/>
+    <path d="M640,326 L850,326 L830,376 L620,376 Z"/>
   </g>
-  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
-    <text x="30" y="32" font-size="16">（一级）</text>
-    <text x="30" y="127" font-size="16">（二级）</text>
-    <text x="30" y="237" font-size="16">（三级）</text>
-    <text x="30" y="347" font-size="16">（四级）</text>
-    <text x="448" y="32" font-size="16">某地铁工程施工总进度网络计划</text>
-    <text x="200" y="127" font-size="16">区间隧道施工进度网络计划</text>
-    <text x="448" y="127" font-size="16">车站施工进度网络计划</text>
-    <text x="572" y="127" font-size="16">……</text>
-    <text x="696" y="127" font-size="16">车辆段施工进度网络计划</text>
-    <text x="200" y="237" font-size="16">××车站施工进度网络计划</text>
-    <text x="448" y="237" font-size="16">××车站施工进度网络计划</text>
-    <text x="572" y="237" font-size="16">……</text>
-    <text x="696" y="237" font-size="16">××车站施工进度网络计划</text>
-    <text x="200" y="347" font-size="16">基础工程施工进度网络计划</text>
-    <text x="448" y="347" font-size="16">主体工程施工进度网络计划</text>
-    <text x="696" y="347" font-size="16">装饰工程施工进度网络计划</text>
+  <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif" font-size="16">
+    <text x="48" y="36">（一级）</text>
+    <text x="48" y="139">（二级）</text>
+    <text x="48" y="245">（三级）</text>
+    <text x="48" y="351">（四级）</text>
+    <text x="475" y="36">某地铁工程施工总进度网络计划</text>
+    <text x="215" y="129">区间隧道施工<tspan x="215" dy="20">进度网络计划</tspan></text>
+    <text x="475" y="129">车站施工<tspan x="475" dy="20">进度网络计划</tspan></text>
+    <text x="605" y="139">……</text>
+    <text x="735" y="129">车辆段施工<tspan x="735" dy="20">进度网络计划</tspan></text>
+    <text x="215" y="235">××车站施工<tspan x="215" dy="20">进度网络计划</tspan></text>
+    <text x="475" y="235">××车站施工<tspan x="475" dy="20">进度网络计划</tspan></text>
+    <text x="605" y="245">……</text>
+    <text x="735" y="235">××车站施工<tspan x="735" dy="20">进度网络计划</tspan></text>
+    <text x="215" y="341">基础工程施工<tspan x="215" dy="20">进度网络计划</tspan></text>
+    <text x="475" y="341">主体工程施工<tspan x="475" dy="20">进度网络计划</tspan></text>
+    <text x="735" y="341">装饰工程施工<tspan x="735" dy="20">进度网络计划</tspan></text>
   </g>
 </svg>
 </FigureZoom>
@@ -971,7 +911,7 @@ $$
 多级网络计划系统的图示模型如图 3-64 所示，该系统含有二级网络计划。这些网络计划既相互独立，又存在关联。既可以分解成一个个独立的网络计划，又可以综合成一个多级网络计划系统。
 
 <FigureZoom caption="图 3-64 多级网络计划系统图示模型">
-<svg viewBox="0 0 947 1233" role="img" aria-label="图 3-64 多级网络计划系统图示模型" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 947 1295" role="img" aria-label="图 3-64 多级网络计划系统图示模型" xmlns="http://www.w3.org/2000/svg">
   <defs><marker id="arrow-3-64" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker></defs>
   <g fill="var(--hd-paper)" stroke="currentColor" stroke-width="1.6">
     <rect x="19" y="144" width="42" height="42"></rect>
@@ -1010,142 +950,142 @@ $$
     <path d="M633,165 L669,165" marker-end="url(#arrow-3-64)"></path>
     <path d="M245,123 L245,152" stroke-dasharray="6 4" marker-end="url(#arrow-3-64)"></path>
     <path d="M395,123 L395,152" stroke-dasharray="6 4" marker-end="url(#arrow-3-64)"></path>
-    <rect x="39" y="294" width="42" height="42"></rect>
-    <circle cx="150" cy="245" r="13"></circle>
-    <circle cx="150" cy="315" r="13"></circle>
-    <circle cx="150" cy="385" r="13"></circle>
-    <circle cx="230" cy="385" r="13"></circle>
-    <rect x="299" y="294" width="42" height="42"></rect>
-    <path d="M81,298.7 L139.7,253" marker-end="url(#arrow-3-64)"></path>
-    <path d="M81,315 L137,315" marker-end="url(#arrow-3-64)"></path>
-    <path d="M81,331.3 L139.7,377" marker-end="url(#arrow-3-64)"></path>
-    <path d="M150,258 L150,302" marker-end="url(#arrow-3-64)"></path>
-    <path d="M163,385 L217,385" marker-end="url(#arrow-3-64)"></path>
-    <path d="M162,249.9 L299,306.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M163,315 L299,315" marker-end="url(#arrow-3-64)"></path>
-    <path d="M240.3,377 L299,331.3" marker-end="url(#arrow-3-64)"></path>
-    <rect x="479" y="294" width="42" height="42"></rect>
-    <circle cx="590" cy="245" r="13"></circle>
-    <circle cx="670" cy="245" r="13"></circle>
-    <circle cx="590" cy="385" r="13"></circle>
-    <circle cx="670" cy="385" r="13"></circle>
-    <rect x="749" y="294" width="42" height="42"></rect>
-    <path d="M521,298.7 L579.7,253" marker-end="url(#arrow-3-64)"></path>
-    <path d="M521,331.3 L579.7,377" marker-end="url(#arrow-3-64)"></path>
-    <path d="M521,323.6 L658,380.1" marker-end="url(#arrow-3-64)"></path>
-    <path d="M603,245 L657,245" marker-end="url(#arrow-3-64)"></path>
-    <path d="M602.1,249.7 L749,306.8" marker-end="url(#arrow-3-64)"></path>
-    <path d="M680.7,252.5 L749,300.3" marker-end="url(#arrow-3-64)"></path>
-    <path d="M603,385 L657,385" marker-end="url(#arrow-3-64)"></path>
-    <path d="M680.7,377.5 L749,329.7" marker-end="url(#arrow-3-64)"></path>
-    <rect x="39" y="504" width="42" height="42"></rect>
-    <circle cx="150" cy="455" r="13"></circle>
-    <circle cx="230" cy="455" r="13"></circle>
-    <circle cx="150" cy="525" r="13"></circle>
-    <circle cx="150" cy="595" r="13"></circle>
-    <circle cx="230" cy="595" r="13"></circle>
-    <rect x="299" y="504" width="42" height="42"></rect>
-    <path d="M81,508.7 L139.7,463" marker-end="url(#arrow-3-64)"></path>
-    <path d="M81,525 L137,525" marker-end="url(#arrow-3-64)"></path>
-    <path d="M81,541.3 L139.7,587" marker-end="url(#arrow-3-64)"></path>
-    <path d="M163,455 L217,455" marker-end="url(#arrow-3-64)"></path>
-    <path d="M163,595 L217,595" marker-end="url(#arrow-3-64)"></path>
-    <path d="M159.8,516.4 L220.2,463.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M159.8,533.6 L220.2,586.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M163,525 L299,525" marker-end="url(#arrow-3-64)"></path>
-    <path d="M240.3,587 L299,541.3" marker-end="url(#arrow-3-64)"></path>
-    <path d="M240.3,463 L299,508.7" marker-end="url(#arrow-3-64)"></path>
-    <rect x="479" y="504" width="42" height="42"></rect>
-    <circle cx="590" cy="455" r="13"></circle>
-    <circle cx="670" cy="455" r="13"></circle>
-    <circle cx="630" cy="525" r="13"></circle>
-    <circle cx="590" cy="595" r="13"></circle>
-    <circle cx="670" cy="595" r="13"></circle>
-    <rect x="749" y="504" width="42" height="42"></rect>
-    <path d="M521,508.7 L579.7,463" marker-end="url(#arrow-3-64)"></path>
-    <path d="M521,541.3 L579.7,587" marker-end="url(#arrow-3-64)"></path>
-    <path d="M521,525 L617,525" marker-end="url(#arrow-3-64)"></path>
-    <path d="M603,455 L657,455" marker-end="url(#arrow-3-64)"></path>
-    <path d="M596.4,466.3 L623.6,513.7" marker-end="url(#arrow-3-64)"></path>
-    <path d="M603,595 L657,595" marker-end="url(#arrow-3-64)"></path>
-    <path d="M596.4,583.7 L623.6,536.3" marker-end="url(#arrow-3-64)"></path>
-    <path d="M643,525 L749,525" marker-end="url(#arrow-3-64)"></path>
-    <path d="M680.7,587.5 L749,539.7" marker-end="url(#arrow-3-64)"></path>
-    <path d="M680.7,462.5 L749,510.3" marker-end="url(#arrow-3-64)"></path>
-    <rect x="19" y="869" width="42" height="42"></rect>
-    <circle cx="115" cy="890" r="13"></circle>
-    <rect x="164" y="739" width="42" height="42"></rect>
-    <circle cx="265" cy="690" r="13"></circle>
-    <circle cx="265" cy="760" r="13"></circle>
-    <circle cx="265" cy="830" r="13"></circle>
-    <circle cx="345" cy="830" r="13"></circle>
-    <rect x="404" y="739" width="42" height="42"></rect>
-    <circle cx="505" cy="690" r="13"></circle>
-    <circle cx="585" cy="690" r="13"></circle>
-    <circle cx="505" cy="830" r="13"></circle>
-    <circle cx="585" cy="830" r="13"></circle>
-    <rect x="644" y="739" width="42" height="42"></rect>
-    <rect x="164" y="1009" width="42" height="42"></rect>
-    <circle cx="265" cy="960" r="13"></circle>
-    <circle cx="345" cy="960" r="13"></circle>
-    <circle cx="265" cy="1030" r="13"></circle>
-    <circle cx="265" cy="1100" r="13"></circle>
-    <circle cx="345" cy="1100" r="13"></circle>
-    <rect x="404" y="1009" width="42" height="42"></rect>
-    <rect x="484" y="1009" width="42" height="42"></rect>
-    <circle cx="585" cy="960" r="13"></circle>
-    <circle cx="665" cy="960" r="13"></circle>
-    <circle cx="625" cy="1030" r="13"></circle>
-    <circle cx="585" cy="1100" r="13"></circle>
-    <circle cx="665" cy="1100" r="13"></circle>
-    <rect x="724" y="1009" width="42" height="42"></rect>
-    <circle cx="825" cy="890" r="13"></circle>
-    <rect x="874" y="869" width="42" height="42"></rect>
-    <path d="M61,890 L102,890" marker-end="url(#arrow-3-64)"></path>
-    <path d="M121.2,878.6 L173.7,781" marker-end="url(#arrow-3-64)"></path>
-    <path d="M120.8,901.6 L174.5,1009" marker-end="url(#arrow-3-64)"></path>
-    <path d="M206,741.6 L255.2,698.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M206,760 L252,760" marker-end="url(#arrow-3-64)"></path>
-    <path d="M206,778.4 L255.2,821.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M265,703 L265,747" marker-end="url(#arrow-3-64)"></path>
-    <path d="M278,830 L332,830" marker-end="url(#arrow-3-64)"></path>
-    <path d="M276.9,695.2 L404,750.8" marker-end="url(#arrow-3-64)"></path>
-    <path d="M278,760 L404,760" marker-end="url(#arrow-3-64)"></path>
-    <path d="M354.8,821.4 L404,778.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M446,741.6 L495.2,698.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M446,778.4 L495.2,821.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M446,769.2 L573.1,824.8" marker-end="url(#arrow-3-64)"></path>
-    <path d="M518,690 L572,690" marker-end="url(#arrow-3-64)"></path>
-    <path d="M516.9,695.2 L644,750.8" marker-end="url(#arrow-3-64)"></path>
-    <path d="M594.8,698.6 L644,741.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M518,830 L572,830" marker-end="url(#arrow-3-64)"></path>
-    <path d="M594.8,821.4 L644,778.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M206,1011.6 L255.2,968.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M206,1030 L252,1030" marker-end="url(#arrow-3-64)"></path>
-    <path d="M206,1048.4 L255.2,1091.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M278,960 L332,960" marker-end="url(#arrow-3-64)"></path>
-    <path d="M278,1100 L332,1100" marker-end="url(#arrow-3-64)"></path>
-    <path d="M274.8,1021.4 L335.2,968.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M274.8,1038.6 L335.2,1091.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M278,1030 L404,1030" marker-end="url(#arrow-3-64)"></path>
-    <path d="M354.8,1091.4 L404,1048.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M354.8,968.6 L404,1011.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M446,1030 L484,1030" marker-end="url(#arrow-3-64)"></path>
-    <path d="M526,1011.6 L575.2,968.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M526,1048.4 L575.2,1091.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M526,1030 L612,1030" marker-end="url(#arrow-3-64)"></path>
-    <path d="M598,960 L652,960" marker-end="url(#arrow-3-64)"></path>
-    <path d="M591.4,971.3 L618.6,1018.7" marker-end="url(#arrow-3-64)"></path>
-    <path d="M598,1100 L652,1100" marker-end="url(#arrow-3-64)"></path>
-    <path d="M591.4,1088.7 L618.6,1041.3" marker-end="url(#arrow-3-64)"></path>
-    <path d="M638,1030 L724,1030" marker-end="url(#arrow-3-64)"></path>
-    <path d="M674.8,1091.4 L724,1048.4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M674.8,968.6 L724,1011.6" marker-end="url(#arrow-3-64)"></path>
-    <path d="M686,777.1 L814.9,881.8" marker-end="url(#arrow-3-64)"></path>
-    <path d="M757,1009 L818.6,901.3" marker-end="url(#arrow-3-64)"></path>
-    <path d="M838,890 L874,890" marker-end="url(#arrow-3-64)"></path>
-    <path d="M338.2,841.1 L271.8,948.9" stroke-dasharray="6 4" marker-end="url(#arrow-3-64)"></path>
-    <path d="M591.8,841.1 L658.2,948.9" stroke-dasharray="6 4" marker-end="url(#arrow-3-64)"></path>
+    <rect x="39" y="349" width="42" height="42"></rect>
+    <circle cx="150" cy="300" r="13"></circle>
+    <circle cx="150" cy="370" r="13"></circle>
+    <circle cx="150" cy="440" r="13"></circle>
+    <circle cx="230" cy="440" r="13"></circle>
+    <rect x="299" y="349" width="42" height="42"></rect>
+    <path d="M81,353.7 L139.7,308" marker-end="url(#arrow-3-64)"></path>
+    <path d="M81,370 L137,370" marker-end="url(#arrow-3-64)"></path>
+    <path d="M81,386.3 L139.7,432" marker-end="url(#arrow-3-64)"></path>
+    <path d="M150,313 L150,357" marker-end="url(#arrow-3-64)"></path>
+    <path d="M163,440 L217,440" marker-end="url(#arrow-3-64)"></path>
+    <path d="M162,304.9 L299,361.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M163,370 L299,370" marker-end="url(#arrow-3-64)"></path>
+    <path d="M240.3,432 L299,386.3" marker-end="url(#arrow-3-64)"></path>
+    <rect x="479" y="349" width="42" height="42"></rect>
+    <circle cx="590" cy="300" r="13"></circle>
+    <circle cx="670" cy="300" r="13"></circle>
+    <circle cx="590" cy="440" r="13"></circle>
+    <circle cx="670" cy="440" r="13"></circle>
+    <rect x="749" y="349" width="42" height="42"></rect>
+    <path d="M521,353.7 L579.7,308" marker-end="url(#arrow-3-64)"></path>
+    <path d="M521,386.3 L579.7,432" marker-end="url(#arrow-3-64)"></path>
+    <path d="M521,378.6 L658,435.1" marker-end="url(#arrow-3-64)"></path>
+    <path d="M603,300 L657,300" marker-end="url(#arrow-3-64)"></path>
+    <path d="M602.1,304.7 L749,361.8" marker-end="url(#arrow-3-64)"></path>
+    <path d="M680.7,307.5 L749,355.3" marker-end="url(#arrow-3-64)"></path>
+    <path d="M603,440 L657,440" marker-end="url(#arrow-3-64)"></path>
+    <path d="M680.7,432.5 L749,384.7" marker-end="url(#arrow-3-64)"></path>
+    <rect x="39" y="559" width="42" height="42"></rect>
+    <circle cx="150" cy="510" r="13"></circle>
+    <circle cx="230" cy="510" r="13"></circle>
+    <circle cx="150" cy="580" r="13"></circle>
+    <circle cx="150" cy="650" r="13"></circle>
+    <circle cx="230" cy="650" r="13"></circle>
+    <rect x="299" y="559" width="42" height="42"></rect>
+    <path d="M81,563.7 L139.7,518" marker-end="url(#arrow-3-64)"></path>
+    <path d="M81,580 L137,580" marker-end="url(#arrow-3-64)"></path>
+    <path d="M81,596.3 L139.7,642" marker-end="url(#arrow-3-64)"></path>
+    <path d="M163,510 L217,510" marker-end="url(#arrow-3-64)"></path>
+    <path d="M163,650 L217,650" marker-end="url(#arrow-3-64)"></path>
+    <path d="M159.8,571.4 L220.2,518.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M159.8,588.6 L220.2,641.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M163,580 L299,580" marker-end="url(#arrow-3-64)"></path>
+    <path d="M240.3,642 L299,596.3" marker-end="url(#arrow-3-64)"></path>
+    <path d="M240.3,518 L299,563.7" marker-end="url(#arrow-3-64)"></path>
+    <rect x="479" y="559" width="42" height="42"></rect>
+    <circle cx="590" cy="510" r="13"></circle>
+    <circle cx="670" cy="510" r="13"></circle>
+    <circle cx="630" cy="580" r="13"></circle>
+    <circle cx="590" cy="650" r="13"></circle>
+    <circle cx="670" cy="650" r="13"></circle>
+    <rect x="749" y="559" width="42" height="42"></rect>
+    <path d="M521,563.7 L579.7,518" marker-end="url(#arrow-3-64)"></path>
+    <path d="M521,596.3 L579.7,642" marker-end="url(#arrow-3-64)"></path>
+    <path d="M521,580 L617,580" marker-end="url(#arrow-3-64)"></path>
+    <path d="M603,510 L657,510" marker-end="url(#arrow-3-64)"></path>
+    <path d="M596.4,521.3 L623.6,568.7" marker-end="url(#arrow-3-64)"></path>
+    <path d="M603,650 L657,650" marker-end="url(#arrow-3-64)"></path>
+    <path d="M596.4,638.7 L623.6,591.3" marker-end="url(#arrow-3-64)"></path>
+    <path d="M643,580 L749,580" marker-end="url(#arrow-3-64)"></path>
+    <path d="M680.7,642.5 L749,594.7" marker-end="url(#arrow-3-64)"></path>
+    <path d="M680.7,517.5 L749,565.3" marker-end="url(#arrow-3-64)"></path>
+    <rect x="19" y="924" width="42" height="42"></rect>
+    <circle cx="115" cy="945" r="13"></circle>
+    <rect x="164" y="794" width="42" height="42"></rect>
+    <circle cx="265" cy="745" r="13"></circle>
+    <circle cx="265" cy="815" r="13"></circle>
+    <circle cx="265" cy="885" r="13"></circle>
+    <circle cx="345" cy="885" r="13"></circle>
+    <rect x="404" y="794" width="42" height="42"></rect>
+    <circle cx="505" cy="745" r="13"></circle>
+    <circle cx="585" cy="745" r="13"></circle>
+    <circle cx="505" cy="885" r="13"></circle>
+    <circle cx="585" cy="885" r="13"></circle>
+    <rect x="644" y="794" width="42" height="42"></rect>
+    <rect x="164" y="1064" width="42" height="42"></rect>
+    <circle cx="265" cy="1015" r="13"></circle>
+    <circle cx="345" cy="1015" r="13"></circle>
+    <circle cx="265" cy="1085" r="13"></circle>
+    <circle cx="265" cy="1155" r="13"></circle>
+    <circle cx="345" cy="1155" r="13"></circle>
+    <rect x="404" y="1064" width="42" height="42"></rect>
+    <rect x="484" y="1064" width="42" height="42"></rect>
+    <circle cx="585" cy="1015" r="13"></circle>
+    <circle cx="665" cy="1015" r="13"></circle>
+    <circle cx="625" cy="1085" r="13"></circle>
+    <circle cx="585" cy="1155" r="13"></circle>
+    <circle cx="665" cy="1155" r="13"></circle>
+    <rect x="724" y="1064" width="42" height="42"></rect>
+    <circle cx="825" cy="945" r="13"></circle>
+    <rect x="874" y="924" width="42" height="42"></rect>
+    <path d="M61,945 L102,945" marker-end="url(#arrow-3-64)"></path>
+    <path d="M121.2,933.6 L173.7,836" marker-end="url(#arrow-3-64)"></path>
+    <path d="M120.8,956.6 L174.5,1064" marker-end="url(#arrow-3-64)"></path>
+    <path d="M206,796.6 L255.2,753.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M206,815 L252,815" marker-end="url(#arrow-3-64)"></path>
+    <path d="M206,833.4 L255.2,876.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M265,758 L265,802" marker-end="url(#arrow-3-64)"></path>
+    <path d="M278,885 L332,885" marker-end="url(#arrow-3-64)"></path>
+    <path d="M276.9,750.2 L404,805.8" marker-end="url(#arrow-3-64)"></path>
+    <path d="M278,815 L404,815" marker-end="url(#arrow-3-64)"></path>
+    <path d="M354.8,876.4 L404,833.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M446,796.6 L495.2,753.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M446,833.4 L495.2,876.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M446,824.2 L573.1,879.8" marker-end="url(#arrow-3-64)"></path>
+    <path d="M518,745 L572,745" marker-end="url(#arrow-3-64)"></path>
+    <path d="M516.9,750.2 L644,805.8" marker-end="url(#arrow-3-64)"></path>
+    <path d="M594.8,753.6 L644,796.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M518,885 L572,885" marker-end="url(#arrow-3-64)"></path>
+    <path d="M594.8,876.4 L644,833.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M206,1066.6 L255.2,1023.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M206,1085 L252,1085" marker-end="url(#arrow-3-64)"></path>
+    <path d="M206,1103.4 L255.2,1146.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M278,1015 L332,1015" marker-end="url(#arrow-3-64)"></path>
+    <path d="M278,1155 L332,1155" marker-end="url(#arrow-3-64)"></path>
+    <path d="M274.8,1076.4 L335.2,1023.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M274.8,1093.6 L335.2,1146.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M278,1085 L404,1085" marker-end="url(#arrow-3-64)"></path>
+    <path d="M354.8,1146.4 L404,1103.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M354.8,1023.6 L404,1066.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M446,1085 L484,1085" marker-end="url(#arrow-3-64)"></path>
+    <path d="M526,1066.6 L575.2,1023.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M526,1103.4 L575.2,1146.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M526,1085 L612,1085" marker-end="url(#arrow-3-64)"></path>
+    <path d="M598,1015 L652,1015" marker-end="url(#arrow-3-64)"></path>
+    <path d="M591.4,1026.3 L618.6,1073.7" marker-end="url(#arrow-3-64)"></path>
+    <path d="M598,1155 L652,1155" marker-end="url(#arrow-3-64)"></path>
+    <path d="M591.4,1143.7 L618.6,1096.3" marker-end="url(#arrow-3-64)"></path>
+    <path d="M638,1085 L724,1085" marker-end="url(#arrow-3-64)"></path>
+    <path d="M674.8,1146.4 L724,1103.4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M674.8,1023.6 L724,1066.6" marker-end="url(#arrow-3-64)"></path>
+    <path d="M686,832.1 L814.9,936.8" marker-end="url(#arrow-3-64)"></path>
+    <path d="M757,1064 L818.6,956.3" marker-end="url(#arrow-3-64)"></path>
+    <path d="M838,945 L874,945" marker-end="url(#arrow-3-64)"></path>
+    <path d="M338.2,896.1 L271.8,1003.9" stroke-dasharray="6 4" marker-end="url(#arrow-3-64)"></path>
+    <path d="M591.8,896.1 L658.2,1003.9" stroke-dasharray="6 4" marker-end="url(#arrow-3-64)"></path>
   </g>
   <g fill="currentColor" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
     <text x="40" y="166" font-size="17">10</text>
@@ -1163,71 +1103,71 @@ $$
     <text x="545" y="221" font-size="17">80</text>
     <text x="620" y="166" font-size="17">81</text>
     <text x="690" y="166" font-size="17">90</text>
-    <text x="247.5" y="68" font-size="17">分包合同A</text>
-    <text x="395" y="68" font-size="17">分包合同B</text>
-    <text x="247.5" y="233" font-size="17">分包合同C</text>
-    <text x="470" y="233" font-size="17">分包合同D</text>
-    <text x="375" y="200" font-size="17">(a)</text>
-    <text x="60" y="316" font-size="17">20</text>
-    <text x="150" y="246" font-size="17">21</text>
-    <text x="150" y="316" font-size="17">22</text>
-    <text x="150" y="386" font-size="17">23</text>
-    <text x="230" y="386" font-size="17">25</text>
-    <text x="320" y="316" font-size="17">30</text>
-    <text x="190" y="420" font-size="17">(b)</text>
-    <text x="500" y="316" font-size="17">30</text>
-    <text x="590" y="246" font-size="17">32</text>
-    <text x="670" y="246" font-size="17">33</text>
-    <text x="590" y="386" font-size="17">34</text>
-    <text x="670" y="386" font-size="17">35</text>
-    <text x="770" y="316" font-size="17">40</text>
-    <text x="635" y="420" font-size="17">(c)</text>
-    <text x="60" y="526" font-size="17">50</text>
-    <text x="150" y="456" font-size="17">51</text>
-    <text x="230" y="456" font-size="17">55</text>
-    <text x="150" y="526" font-size="17">52</text>
-    <text x="150" y="596" font-size="17">53</text>
-    <text x="230" y="596" font-size="17">54</text>
-    <text x="320" y="526" font-size="17">60</text>
-    <text x="190" y="630" font-size="17">(d)</text>
-    <text x="500" y="526" font-size="17">70</text>
-    <text x="590" y="456" font-size="17">71</text>
-    <text x="670" y="456" font-size="17">75</text>
-    <text x="630" y="526" font-size="17">73</text>
-    <text x="590" y="596" font-size="17">72</text>
-    <text x="670" y="596" font-size="17">74</text>
-    <text x="770" y="526" font-size="17">80</text>
-    <text x="635" y="630" font-size="17">(e)</text>
-    <text x="40" y="891" font-size="17">10</text>
-    <text x="115" y="891" font-size="17">11</text>
-    <text x="185" y="761" font-size="17">20</text>
-    <text x="265" y="691" font-size="17">21</text>
-    <text x="265" y="761" font-size="17">22</text>
-    <text x="265" y="831" font-size="17">23</text>
-    <text x="345" y="831" font-size="17">25</text>
-    <text x="425" y="761" font-size="17">30</text>
-    <text x="505" y="691" font-size="17">32</text>
-    <text x="585" y="691" font-size="17">33</text>
-    <text x="505" y="831" font-size="17">34</text>
-    <text x="585" y="831" font-size="17">35</text>
-    <text x="665" y="761" font-size="17">40</text>
-    <text x="185" y="1031" font-size="17">50</text>
-    <text x="265" y="961" font-size="17">51</text>
-    <text x="345" y="961" font-size="17">55</text>
-    <text x="265" y="1031" font-size="17">52</text>
-    <text x="265" y="1101" font-size="17">53</text>
-    <text x="345" y="1101" font-size="17">54</text>
-    <text x="425" y="1031" font-size="17">60</text>
-    <text x="505" y="1031" font-size="17">70</text>
-    <text x="585" y="961" font-size="17">71</text>
-    <text x="665" y="961" font-size="17">75</text>
-    <text x="625" y="1031" font-size="17">73</text>
-    <text x="585" y="1101" font-size="17">72</text>
-    <text x="665" y="1101" font-size="17">74</text>
-    <text x="745" y="1031" font-size="17">80</text>
-    <text x="825" y="891" font-size="17">81</text>
-    <text x="895" y="891" font-size="17">90</text>
-    <text x="465" y="1215" font-size="17">(f)</text>
+    <text x="247.5" y="24" font-size="17">分包合同A</text>
+    <text x="395" y="24" font-size="17">分包合同B</text>
+    <text x="247.5" y="188" font-size="17">分包合同C</text>
+    <text x="470" y="188" font-size="17">分包合同D</text>
+    <text x="375" y="262" font-size="17">(a)</text>
+    <text x="60" y="371" font-size="17">20</text>
+    <text x="150" y="301" font-size="17">21</text>
+    <text x="150" y="371" font-size="17">22</text>
+    <text x="150" y="441" font-size="17">23</text>
+    <text x="230" y="441" font-size="17">25</text>
+    <text x="320" y="371" font-size="17">30</text>
+    <text x="190" y="475" font-size="17">(b)</text>
+    <text x="500" y="371" font-size="17">30</text>
+    <text x="590" y="301" font-size="17">32</text>
+    <text x="670" y="301" font-size="17">33</text>
+    <text x="590" y="441" font-size="17">34</text>
+    <text x="670" y="441" font-size="17">35</text>
+    <text x="770" y="371" font-size="17">40</text>
+    <text x="635" y="475" font-size="17">(c)</text>
+    <text x="60" y="581" font-size="17">50</text>
+    <text x="150" y="511" font-size="17">51</text>
+    <text x="230" y="511" font-size="17">55</text>
+    <text x="150" y="581" font-size="17">52</text>
+    <text x="150" y="651" font-size="17">53</text>
+    <text x="230" y="651" font-size="17">54</text>
+    <text x="320" y="581" font-size="17">60</text>
+    <text x="190" y="685" font-size="17">(d)</text>
+    <text x="500" y="581" font-size="17">70</text>
+    <text x="590" y="511" font-size="17">71</text>
+    <text x="670" y="511" font-size="17">75</text>
+    <text x="630" y="581" font-size="17">73</text>
+    <text x="590" y="651" font-size="17">72</text>
+    <text x="670" y="651" font-size="17">74</text>
+    <text x="770" y="581" font-size="17">80</text>
+    <text x="635" y="685" font-size="17">(e)</text>
+    <text x="40" y="946" font-size="17">10</text>
+    <text x="115" y="946" font-size="17">11</text>
+    <text x="185" y="816" font-size="17">20</text>
+    <text x="265" y="746" font-size="17">21</text>
+    <text x="265" y="816" font-size="17">22</text>
+    <text x="265" y="886" font-size="17">23</text>
+    <text x="345" y="886" font-size="17">25</text>
+    <text x="425" y="816" font-size="17">30</text>
+    <text x="505" y="746" font-size="17">32</text>
+    <text x="585" y="746" font-size="17">33</text>
+    <text x="505" y="886" font-size="17">34</text>
+    <text x="585" y="886" font-size="17">35</text>
+    <text x="665" y="816" font-size="17">40</text>
+    <text x="185" y="1086" font-size="17">50</text>
+    <text x="265" y="1016" font-size="17">51</text>
+    <text x="345" y="1016" font-size="17">55</text>
+    <text x="265" y="1086" font-size="17">52</text>
+    <text x="265" y="1156" font-size="17">53</text>
+    <text x="345" y="1156" font-size="17">54</text>
+    <text x="425" y="1086" font-size="17">60</text>
+    <text x="505" y="1086" font-size="17">70</text>
+    <text x="585" y="1016" font-size="17">71</text>
+    <text x="665" y="1016" font-size="17">75</text>
+    <text x="625" y="1086" font-size="17">73</text>
+    <text x="585" y="1156" font-size="17">72</text>
+    <text x="665" y="1156" font-size="17">74</text>
+    <text x="745" y="1086" font-size="17">80</text>
+    <text x="825" y="946" font-size="17">81</text>
+    <text x="895" y="946" font-size="17">90</text>
+    <text x="465" y="1270" font-size="17">(f)</text>
   </g>
 </svg>
 </FigureZoom>
