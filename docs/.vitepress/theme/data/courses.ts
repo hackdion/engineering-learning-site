@@ -214,6 +214,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：挣值法三参数（BCWS/BCWP/ACWP）与四指标（CV/SV/CPI/SPI）、偏差原因与纠偏，配挣值动态沙盘、多视图切换与 8 道自测题。'
   },
   {
+    id: 'ppt-tz-1-1', book: 'touzi', section: '1.1', title: '工程项目投资特点和控制原理',
+    date: '2026-11-16', deck: '/courses/ppt-tz-1-1',
+    summary: '互动 PPT 2.0：总投资与静动态划分、六大特点、五级分解、动态控制原理与 75%～95% 设计控制重点，配多视图切换、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-1-2', book: 'touzi', section: '1.2', title: '工程投资控制目标、任务和措施',
+    date: '2026-11-16', deck: '/courses/ppt-tz-1-2',
+    summary: '互动 PPT 2.0：分阶段设置控制目标、FIDIC 与 QS 任务、监理施工/相关服务任务与四大措施界限，配情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-2-1', book: 'touzi', section: '2.1', title: '资金的时间价值及其计算',
+    date: '2026-11-16', deck: '/courses/ppt-tz-2-1',
+    summary: '互动 PPT 2.0：现金流量图三要素、单利复利、名义利率与有效利率换算、六个等值公式与延后年金求解，配多视图、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-2-2', book: 'touzi', section: '2.2', title: '价值工程及其应用',
+    date: '2026-11-16', deck: '/courses/ppt-tz-2-2',
+    summary: '互动 PPT 2.0：V=F/C 与寿命周期成本、提高价值五种途径、功能分析与 Vi/ΔC 改进对象优选，配情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-3-2', book: 'touzi', section: '3.2', title: '建筑安装工程费构成及计算',
+    date: '2026-11-16', deck: '/courses/ppt-tz-3-2',
+    summary: '互动 PPT 2.0：要素 7 项 vs 造价形成 5 项、机械台班 7 项、检验试验费易混归属、安规税不可竞争与 9% 增值税，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
