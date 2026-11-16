@@ -14,6 +14,10 @@ import Quiz from './components/deck/Quiz.vue'
 import Steps from './components/deck/Steps.vue'
 import SortSteps from './components/deck/SortSteps.vue'
 import CompareCard from './components/deck/CompareCard.vue'
+import DeckSimChart from './components/deck/DeckSimChart.vue'
+import DeckViewSwitch from './components/deck/DeckViewSwitch.vue'
+import DeckFlashcard from './components/deck/DeckFlashcard.vue'
+import DeckScenario from './components/deck/DeckScenario.vue'
 import FormSheet from './components/FormSheet.vue'
 import EngineeringMapRefs from './components/EngineeringMapRefs.vue'
 import LawBanner from './components/LawBanner.vue'
@@ -36,7 +40,7 @@ export default {
     app.component('EngineeringMapHome', EngineeringMapHome)
     app.component('AboutPage', AboutPage)
     // 互动 PPT
-    for (const [name, c] of Object.entries({ SlideDeck, Slide, Reveal, Quiz, Steps, SortSteps, CompareCard })) app.component(name, c)
+    for (const [name, c] of Object.entries({ SlideDeck, Slide, Reveal, Quiz, Steps, SortSteps, CompareCard, DeckSimChart, DeckViewSwitch, DeckFlashcard, DeckScenario })) app.component(name, c)
     app.component('FormSheet', FormSheet)
     app.component('EngineeringMapRefs', EngineeringMapRefs)
     // 法规文本

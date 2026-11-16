@@ -199,6 +199,11 @@ export const COURSES: CourseItem[] = [
     summary: '整册 6 章 23 节逐节朗读，一节一集，适合通勤时听；各节页面可直接跳到对应一集。'
   },
   {
+    id: 'ppt-jd-4-2', book: 'jindu', section: '4.2', title: '实际进度与计划进度的比较方法',
+    date: '2026-11-16', deck: '/courses/ppt-jd-4-2',
+    summary: '互动 PPT 2.0 样板：横道图、S 曲线、香蕉曲线、前锋线与列表比较法，配 S 曲线滑块沙盘、多视图切换、闪卡、情景推演和 4 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
