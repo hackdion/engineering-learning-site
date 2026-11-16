@@ -96,18 +96,20 @@ const sourceText = computed(() => String(fm.value.sourceLabel || '官方出处')
 </template>
 
 <style scoped>
+/* 法规版本卡：2px 墨边 + 5px 硬阴影 + 机械青语义顶条（青＝资料／依据） */
 .law-banner {
   margin: 18px 0 26px;
   padding: 18px 20px;
-  border: 1px solid var(--hd-line);
-  border-left: 4px solid var(--hd-accent);
+  border: 2px solid var(--hd-ink);
+  border-top: 4px solid var(--hd-teal);
   border-radius: 8px;
-  background: var(--hd-paper-2);
+  background: var(--hd-card);
   color: var(--hd-ink);
   font-family: var(--hd-font-sans);
+  box-shadow: var(--hd-shadow-card);
 }
 .law-banner__head { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 10px 16px; }
-.law-banner__eyebrow { margin: 0 0 4px; font-size: 12px; letter-spacing: .08em; color: var(--hd-ink-3); }
+.law-banner__eyebrow { margin: 0 0 4px; font-size: 12px; letter-spacing: .08em; color: var(--hd-teal); }
 .law-banner__name { margin: 0; font-size: 22px; line-height: 1.35; font-family: var(--hd-font-serif); }
 .law-banner__summary { margin: 6px 0 0; font-size: 14px; line-height: 1.7; color: var(--hd-ink-2); }
 .law-banner__tag {

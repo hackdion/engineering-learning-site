@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // 新首页：首屏署名与两个入口 → 备考面板 → 最新发布 → 六册书架 → 四种学法 → 关注横幅 → 页脚。
 // 所有数字来自构建时统计与真实课程数据；没有官方考试日期时只展示可读节数。
+import { ref } from 'vue'
 import { withBase } from 'vitepress'
 import BookShelf from './BookShelf.vue'
 import { BOOKS } from '../data/books'
@@ -39,6 +40,14 @@ const primaryExternal = (c: CourseItem) => !!c.video || (!innerCourse(c) && !!c.
 const cardLabel = (c: CourseItem) =>
   c.video ? `在 B 站播放精讲：${c.title}` : c.deck ? `打开互动 PPT：${c.title}` : c.courseware ? `打开互动课件：${c.title}` : `在 B 站听：${c.title}`
 const listenOf = (c: CourseItem) => (c.series ? null : readAlongAt(c.book, c.section))
+// 备考面板「按册 / 按形式」分段切换：同一份真实统计的两种视图
+const panelView = ref<'book' | 'form'>('book')
+const panelForms = [
+  { label: '教材正文', note: '六册按原书章节整理', count: `${BOOKS.length} 册 · ${totalSections} 节`, href: withBase('/textbook/') },
+  { label: '互动课件', note: `集中在${deckBooks}`, count: `${DECK_COUNT} 份 · ${DECK_SECTIONS} 节`, href: withBase('/courses/') },
+  { label: '精讲视频', note: '按 BV 号去重，首发 B 站', count: `${VIDEO_COUNT} 条`, href: withBase('/courses/') },
+  { label: '全文朗读', note: `按「BV 号 + 分集号」去重`, count: `${EPISODE_COUNT} 集 · ${SERIES_COUNT} 个合集`, href: withBase('/courses/') }
+]
 function openFollow(e: MouseEvent) {
   window.dispatchEvent(new CustomEvent('hd:follow', { detail: e.currentTarget }))
 }
@@ -47,7 +56,7 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 
 <template>
   <div class="home">
-    <section class="home__hero hd-grid-paper">
+    <section class="home__hero hd-grid-bp">
       <div class="home__wrap home__hero-inner">
         <div class="home__intro">
           <span class="home__stamp" aria-hidden="true">
@@ -73,8 +82,10 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
             <span>— {{ AUTHOR.name }} · {{ AUTHOR.tagline }} · <a :href="withBase('/about')">关于本站</a></span>
           </p>
         </div>
-        <div class="home__art">
-          <img :src="withBase('/images/brand/hero-crane-navy.webp')" alt="" aria-hidden="true" width="1536" height="1024" />
+        <div class="home__art" aria-hidden="true">
+          <span>01 — 06</span>
+          <b>六册教材</b>
+          <i>按章节整理 · 共 {{ totalSections }} 节</i>
         </div>
       </div>
     </section>
@@ -89,22 +100,29 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
           </div>
           <span class="home__exam">考试日期：预计 2027 年 5 月，以官方公布为准</span>
         </div>
-        <div class="home__progress">
-          <div class="home__progress-head"><span>各册已上线节数</span><span>条形长度表示节数</span></div>
-          <div class="home__bars">
-            <a v-for="b in BOOKS" :key="b.key" class="home__bar" :href="withBase(b.link)">
-              <span>{{ b.shortName }}</span>
-              <span class="home__track"><span :style="{ width: `${(textbook[b.key].sectionCount / maxSections) * 100}%`, background: b.color }"></span></span>
-              <span class="home__num">{{ textbook[b.key].sectionCount }} 节</span>
-            </a>
+        <div class="home__panel-main">
+          <div class="home__seg" role="group" aria-label="备考面板视图切换">
+            <button type="button" :class="{ 'is-on': panelView === 'book' }" :aria-pressed="panelView === 'book'" @click="panelView = 'book'">按册</button>
+            <button type="button" :class="{ 'is-on': panelView === 'form' }" :aria-pressed="panelView === 'form'" @click="panelView = 'form'">按形式</button>
           </div>
-          <a class="home__more" :href="withBase('/textbook/')">完整教材目录 →</a>
-        </div>
-        <div class="home__stats" aria-label="已上线内容统计">
-          <a class="home__stat" :href="withBase('/courses/')"><b>{{ DECK_COUNT }}</b><span>份互动课件</span></a>
-          <a class="home__stat" :href="withBase('/courses/')"><b>{{ VIDEO_COUNT }}</b><span>条精讲视频</span></a>
-          <a class="home__stat" :href="withBase('/courses/')"><b>{{ EPISODE_COUNT }}</b><span>集全文朗读 · {{ SERIES_COUNT }} 个合集</span></a>
-          <p class="home__stats-note">{{ LISTEN_SECTIONS }} 个教材小节有朗读入口；互动课件集中在{{ deckBooks }}{{ DECK_SECTIONS }} 节。</p>
+          <div v-if="panelView === 'book'" class="home__progress">
+            <div class="home__progress-head"><span>各册已上线节数</span><span>条形长度表示节数</span></div>
+            <div class="home__bars">
+              <a v-for="b in BOOKS" :key="b.key" class="home__bar" :href="withBase(b.link)">
+                <span>{{ b.shortName }}</span>
+                <span class="home__track"><span :style="{ width: `${(textbook[b.key].sectionCount / maxSections) * 100}%`, background: b.color }"></span></span>
+                <span class="home__num">{{ textbook[b.key].sectionCount }} 节</span>
+              </a>
+            </div>
+            <a class="home__more" :href="withBase('/textbook/')">完整教材目录 →</a>
+          </div>
+          <div v-else class="home__forms" aria-label="已上线内容统计">
+            <a v-for="f in panelForms" :key="f.label" class="home__form" :href="f.href">
+              <b>{{ f.count }}</b>
+              <span>{{ f.label }} · {{ f.note }}</span>
+            </a>
+            <p class="home__stats-note">{{ LISTEN_SECTIONS }} 个教材小节有朗读入口；分集与合集口径见课程中心。</p>
+          </div>
         </div>
       </aside>
     </section>
@@ -242,49 +260,69 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home a { color: var(--hd-accent); }
 .home__wrap { max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; box-sizing: border-box; }
 
-.home__hero { border-bottom: 1px solid var(--hd-line); }
+/* Hero：墨底反白 + 安全帽黄大标题 + 工程蓝资料块（GB 2894） */
+.home__hero { background-color: var(--hd-night); border-bottom: 0; }
 .home__hero-inner { padding-top: 64px; padding-bottom: 72px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
 .home__intro { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px; position: relative; }
 .home__stamp {
   position: absolute; top: -18px; right: 24px; width: 108px; height: 108px; border-radius: 50%;
-  border: 3px solid var(--hd-stamp); color: var(--hd-stamp); transform: rotate(-12deg);
+  border: 3px solid var(--hd-helmet); color: var(--hd-helmet); transform: rotate(-12deg);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
-  box-shadow: inset 0 0 0 4px var(--hd-paper), inset 0 0 0 5px var(--hd-stamp);
+  box-shadow: inset 0 0 0 4px var(--hd-night), inset 0 0 0 5px var(--hd-helmet);
   font-family: var(--hd-font-serif); font-weight: 900; pointer-events: none;
 }
 .home__stamp span { font-size: 10px; letter-spacing: .15em; }
 .home__stamp b { font-size: 20px; line-height: 1.1; }
-.home__eyebrow { font-family: var(--hd-font-mono); font-size: 13px; letter-spacing: .08em; color: var(--hd-accent); }
-.home h1 { margin: 0; font-family: var(--hd-font-serif); font-weight: 900; font-size: 52px; line-height: 1.2; letter-spacing: 0; }
-.home__lead { margin: 0; font-size: 18px; line-height: 1.8; color: var(--hd-ink-2); max-width: 560px; }
+.home__eyebrow { font-family: var(--hd-font-mono); font-size: 13px; letter-spacing: .14em; color: var(--hd-helmet); }
+.home h1 { margin: 0; font-family: var(--hd-font-serif); font-weight: 900; font-size: 52px; line-height: 1.2; letter-spacing: 0; color: var(--hd-helmet); }
+.home__lead { margin: 0; font-size: 18px; line-height: 1.8; color: #D9E0E5; max-width: 560px; }
 .home__actions { display: flex; flex-wrap: wrap; gap: 12px 16px; padding-top: 8px; align-items: flex-start; }
 .home__btn { min-height: 52px; padding: 0 24px; gap: 10px; }
 .home__try { display: flex; flex-direction: column; align-items: flex-start; }
-.home__byline { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--hd-ink-3); }
-.home__byline img { width: 30px; height: 30px; object-fit: contain; }
-.home__art { flex: 1 1 420px; min-width: 0; display: flex; justify-content: center; }
-.home__art img { width: 100%; max-width: 560px; height: auto; display: block; }
+.home__byline { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 14px; color: #C6D0DB; }
+.home__byline img { width: 30px; height: 30px; object-fit: contain; border-radius: 50%; background: #fff; }
+.home__byline a { color: var(--hd-helmet); }
+/* 右侧资料块：工程蓝底 + 8px 黄色硬阴影 */
+.home__art {
+  flex: 1 1 420px; min-width: 0; min-height: 220px; padding: 28px;
+  display: flex; flex-direction: column; justify-content: center; gap: 8px;
+  background: var(--hd-accent); border: 2px solid var(--hd-helmet);
+  box-shadow: 8px 8px 0 var(--hd-helmet); color: #fff;
+}
+.home__art span { font-family: var(--hd-font-mono); font-size: 14px; letter-spacing: .18em; color: var(--hd-accent-soft); }
+.home__art b { font-family: var(--hd-font-serif); font-weight: 900; font-size: 30px; line-height: 1.2; }
+.home__art i { font-style: normal; font-size: 14px; color: var(--hd-accent-soft); }
 
+/* 备考面板：分段切换「按册 / 按形式」 */
 .home__panel-wrap { margin-top: -36px; position: relative; }
 .home__panel {
-  background: #fff; border: 1px solid var(--hd-line); border-radius: 12px; overflow: hidden;
-  display: flex; flex-wrap: wrap; box-shadow: 0 10px 24px rgba(27, 31, 36, .08);
+  background: #fff; border: 2px solid var(--hd-ink); border-radius: 12px; overflow: hidden;
+  display: flex; flex-wrap: wrap; box-shadow: var(--hd-shadow-card);
 }
 .home__count {
   flex: 1 1 260px; background-color: var(--hd-accent); color: #fff; padding: 22px 24px;
   display: flex; flex-direction: column; justify-content: space-between; gap: 14px;
 }
 .home__count > div { display: flex; flex-direction: column; gap: 6px; }
-.home__count-label { font-size: 13px; color: #C9D6E6; }
+.home__count-label { font-size: 13px; color: #DCEBFA; }
 .home__count-num { font-family: var(--hd-font-mono); font-size: 44px; line-height: 1; }
 .home__count-num small { font-size: 18px; margin-left: 6px; }
-.home__exam { font-size: 12px; color: #C9D6E6; line-height: 1.6; border-top: 1px solid rgba(255, 255, 255, .2); padding-top: 10px; }
-.home__progress { flex: 999 1 560px; min-width: 0; padding: 18px 24px 20px; display: flex; flex-direction: column; gap: 12px; }
+.home__exam { font-size: 12px; color: #DCEBFA; line-height: 1.6; border-top: 1px solid rgba(255, 255, 255, .2); padding-top: 10px; }
+.home__panel-main { flex: 999 1 560px; min-width: 0; padding: 16px 24px 20px; display: flex; flex-direction: column; gap: 12px; }
+.home__seg { display: inline-flex; align-self: flex-start; gap: 0; border: 2px solid var(--hd-ink); border-radius: 10px; overflow: hidden; background: var(--hd-card); }
+.home__seg button {
+  min-height: 36px; padding: 0 18px; border: 0; background: transparent; color: var(--hd-ink-2);
+  font: 700 14px/1 var(--hd-font-sans); cursor: pointer;
+}
+.home__seg button + button { border-left: 2px solid var(--hd-ink); }
+.home__seg button.is-on { background: var(--hd-accent); color: #fff; }
+.home__seg button:focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 2px; }
+.home__progress { display: flex; flex-direction: column; gap: 12px; }
 .home__progress-head { display: flex; justify-content: space-between; font-size: 14px; color: var(--hd-ink-3); }
 .home__bars { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px 32px; }
 .home__bar { display: grid; grid-template-columns: 96px minmax(0, 1fr) 56px; gap: 12px; align-items: center; font-size: 14px; color: var(--hd-ink) !important; text-decoration: none; }
 .home__bar:hover > span:first-child { text-decoration: underline; }
-.home__track { height: 6px; background: #E8E6DF; border-radius: 3px; }
+.home__track { height: 6px; background: var(--hd-paper-2); border-radius: 3px; }
 .home__track span { display: block; height: 6px; border-radius: 3px; }
 /* 安全帽进度条：条头顶一顶小安全帽 */
 .home__track span { position: relative; }
@@ -294,12 +332,17 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 }
 .home__num { font-family: var(--hd-font-mono); color: var(--hd-ink-3); text-align: right; font-size: 13px; }
 .home__more { font-size: 14px; padding-top: 4px; align-self: flex-start; }
-/* 已上线统计：与课程中心共用 data/courseStats.ts 的数字 */
-.home__stats { flex: 1 0 100%; border-top: 1px solid var(--hd-line); padding: 14px 24px 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 28px; box-sizing: border-box; }
-.home__stat { display: inline-flex; align-items: baseline; gap: 6px; font-size: 13px; color: var(--hd-ink-3) !important; text-decoration: none; }
-.home__stat b { font-family: var(--hd-font-mono); font-size: 20px; color: var(--hd-ink); }
-.home__stat:hover span { text-decoration: underline; }
-.home__stats-note { flex: 1 1 100%; margin: 0; font-size: 12px; color: var(--hd-ink-3); line-height: 1.7; }
+/* 按形式视图：学习形式统计（数字同样来自 courseStats.ts，不手写） */
+.home__forms { display: flex; flex-direction: column; gap: 0; }
+.home__form {
+  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 6px 16px; align-items: baseline;
+  padding: 9px 0; border-top: 1px dashed var(--hd-line); color: var(--hd-ink) !important; text-decoration: none;
+}
+.home__form:first-of-type { border-top: 0; }
+.home__form b { font-family: var(--hd-font-mono); font-size: 18px; color: var(--hd-accent); }
+.home__form span { font-size: 14px; color: var(--hd-ink-2); }
+.home__form:hover span { text-decoration: underline; }
+.home__stats-note { margin: 10px 0 0; font-size: 12px; color: var(--hd-ink-3); line-height: 1.7; }
 
 /* 工程地图入口：备考面板与最新发布之间的一条路线带 */
 .home__map { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; padding-top: 18px; padding-bottom: 18px; border-top: 2px solid var(--hd-accent); border-bottom: 1px solid var(--hd-line); }
@@ -320,7 +363,10 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__meta b { color: var(--hd-ink); }
 
 .home__cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
-.home__card { background: #fff; border: 1px solid var(--hd-line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+/* 卡片顶条按语义分色：蓝（指令／信息）→ 橙（提醒）→ 青（资料），不用红 */
+.home__card { background: #fff; border: 2px solid var(--hd-ink); border-top: 4px solid var(--hd-accent); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--hd-shadow-card); }
+.home__cards .home__card:nth-child(3n + 2) { border-top-color: var(--hd-orange); }
+.home__cards .home__card:nth-child(3n + 3) { border-top-color: var(--hd-teal); }
 .home__card-cover {
   aspect-ratio: 16 / 9; position: relative; color: #fff !important; text-decoration: none;
   padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;
@@ -340,10 +386,10 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__card-body > .hd-chip-bili { align-self: flex-start; margin-top: auto; }
 .home__card-alt { align-self: flex-start; font-size: 13px; text-decoration: none; color: var(--hd-ink-3) !important; }
 .home__card-alt:hover { text-decoration: underline; }
-.home__chip-course { background: #E6EEF6 !important; color: var(--hd-accent) !important; }
+.home__chip-course { background: var(--hd-accent-soft) !important; color: var(--hd-accent) !important; }
 
 /* 合集入口：六册朗读合集，整册一条 */
-.home__series { margin-top: 24px; background: #fff; border: 1px solid var(--hd-line); border-radius: 12px; padding: 18px 22px 12px; display: flex; flex-direction: column; gap: 10px; }
+.home__series { margin-top: 24px; background: #fff; border: 2px solid var(--hd-ink); border-top: 4px solid var(--hd-green); border-radius: 12px; padding: 18px 22px 12px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--hd-shadow-card); }
 .home__series-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
 .home__series-head b { font-size: 15px; }
 .home__series-head span { font-size: 13px; color: var(--hd-ink-3); }
@@ -359,19 +405,25 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__series-item:hover b { text-decoration: underline; }
 
 .home__ways { padding-top: 48px; padding-bottom: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+/* 四种学法顶条按语义分色：蓝 → 橙 → 青 → 绿，不用红 */
 .home__way {
-  background: #fff; border: 1px solid var(--hd-line); border-radius: 12px; padding: 22px;
+  background: #fff; border: 2px solid var(--hd-ink); border-radius: 12px; padding: 22px;
   display: flex; flex-direction: column; gap: 8px; color: var(--hd-ink) !important; text-decoration: none;
+  box-shadow: var(--hd-shadow-card);
 }
-a.home__way:hover { border-color: var(--hd-accent); }
+.home__way:nth-child(4n + 1) { border-top: 4px solid var(--hd-accent); }
+.home__way:nth-child(4n + 2) { border-top: 4px solid var(--hd-orange); }
+.home__way:nth-child(4n + 3) { border-top: 4px solid var(--hd-teal); }
+.home__way:nth-child(4n + 4) { border-top: 4px solid var(--hd-green); }
+a.home__way:hover { border-color: var(--hd-ink); }
 .home__way b { font-size: 16px; display: flex; align-items: center; gap: 8px; }
 .home__way p { margin: 0; font-size: 14px; color: var(--hd-ink-3); line-height: 1.7; }
-.home__way-icon { width: 36px; height: 36px; border-radius: 8px; background: #E6EEF6; color: var(--hd-accent); display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.home__way-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--hd-accent-soft); color: var(--hd-accent); display: flex; align-items: center; justify-content: center; font-weight: 700; }
 
 .home__follow { background-color: var(--hd-accent); color: #fff; }
 .home__follow-inner { padding-top: 56px; padding-bottom: 56px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; }
 .home__follow h2 { color: #fff; }
-.home__follow p { margin: 10px 0 0; color: #C9D6E6; }
+.home__follow p { margin: 10px 0 0; color: #DCEBFA; }
 .home__follow-btns { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
 .home__follow .hd-plat { box-shadow: 0 6px 18px rgba(0, 0, 0, .2); }
 .home__more-plat {
@@ -390,14 +442,17 @@ a.home__way:hover { border-color: var(--hd-accent); }
   .home__lead { font-size: 16px; }
   .home__btn { width: 100%; justify-content: center; }
   .home__actions, .home__try { width: 100%; }
+  .home__art { min-height: 0; padding: 20px; box-shadow: 6px 6px 0 var(--hd-helmet); }
+  .home__art b { font-size: 24px; }
   .home__wrap { padding-left: 16px; padding-right: 16px; }
   .home h2 { font-size: 26px; }
   .home__bars { grid-template-columns: 1fr; }
   .home__bar { grid-template-columns: 80px minmax(0, 1fr) 48px; }
   .home__cards { grid-template-columns: 1fr; }
   .home__card-title { font-size: 24px; }
-  .home__stats { padding: 12px 16px 14px; gap: 6px 20px; }
-  .home__stat b { font-size: 18px; }
+  .home__panel-main { padding: 14px 16px 18px; }
+  .home__form { grid-template-columns: 1fr; gap: 2px; }
+  .home__form b { font-size: 16px; }
   .home__series { padding: 16px 16px 10px; }
   .home__series-list { grid-template-columns: 1fr; }
   /* 手机端：册名独占第一行，集数与入口排第二行，避免长册名把数字挤到右边 */

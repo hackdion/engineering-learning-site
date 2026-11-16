@@ -1,21 +1,43 @@
 /* hackdion 主题层（P1）——主品牌变量 + 学科/书目子主题 + 工地手账按钮 + 平台按钮
-   放置位置：docs/.vitepress/theme/hd-theme.css，在 index.ts 中于 custom.css 之前 import */
+   放置位置：docs/.vitepress/theme/hd-theme.css，在 index.ts 中于 custom.css 之前 import
+   2026-11-16 定稿：大胆工程安全色版（模式 C 融合 + tone=bold），色值按 GB 2894 工程安全色语义。
+   红色 #D63B22 仅限：危大工程提示、工期超期 danger、答错反馈、错误状态；严禁用于主按钮、
+   导航选中、Hero 资料块、普通卡片顶条与普通徽章。 */
 
 :root {
-  /* 主品牌（全站固定） */
-  --hd-paper: #F5F4EF;
-  --hd-paper-2: #EFEDE6;
+  /* 主品牌（全站固定）——2026-11-16 定稿色值 */
+  --hd-paper: #EFE9D9;
+  --hd-paper-2: #E4DBC4;
   --hd-card: #FFFFFF;
-  --hd-ink: #1B1F24;
-  --hd-ink-2: #4A4F57;
-  --hd-ink-3: #5A5F66;
-  --hd-line: #DDDAD0;
-  --hd-helmet: #FFD54A;   /* 安全帽黄：只配墨色字，每屏最多一处 */
-  --hd-stamp: #C8452D;    /* 印章红 */
+  --hd-night: #142231;
+  --hd-ink: #14212E;
+  --hd-ink-2: #334452;
+  --hd-ink-3: #5C6B78;
+  --hd-line: #C6BFA8;
+  --hd-helmet: #FFC72C;   /* 安全帽黄＝警告／注意：警示斜纹带、次级按钮、选中边框、Hero 大标题 */
+  --hd-orange: #E8791F;   /* 橙＝提醒／易错：卡片顶条第 2 色 */
+  --hd-green: #2E7A4F;    /* 绿＝安全／正常：阶段卡顶条、答对反馈、已学完盖章 */
+  --hd-teal: #0E7C86;     /* 青＝资料／依据：法规卡顶条、引用与来源标签 */
+  --hd-danger: #D63B22;   /* 红＝禁止／危险／消防：仅危大工程提示、工期超期、答错反馈、错误状态 */
+  --hd-danger-soft: #FBE0D8;
+  --hd-stamp: #D63B22;    /* 印章红＝危险／禁止／答错场景专用，不作普通装饰 */
 
-  /* 学科与书目（由 Layout.vue 写入 html[data-subject] / html[data-book] 切换） */
-  --hd-accent: #1F3A5F;
+  /* 主强调（蓝＝指令／信息，全站固定，不再按学科切换） */
+  --hd-accent: #0E5A9E;
+  --hd-accent-soft: #DCEBFA;
   --hd-book: var(--hd-accent);
+
+  /* 六色分类图表（第二序列为工程褐，不含危险红） */
+  --hd-chart-1: #0E5A9E;
+  --hd-chart-2: #8A6A2F;
+  --hd-chart-3: #0E7C86;
+  --hd-chart-4: #E5A10F;
+  --hd-chart-5: #E8791F;
+  --hd-chart-6: #2E7A4F;
+
+  /* 硬阴影 */
+  --hd-shadow-card: 5px 5px 0 var(--hd-ink);
+  --hd-shadow-btn: 5px 5px 0 var(--hd-ink);
 
   /* 平台色（只用于跳转外部平台的按钮） */
   --hd-bili: #EB4F84;
@@ -40,15 +62,12 @@
   --vp-c-divider: var(--hd-line);
   --vp-c-gutter: var(--hd-line);
   --vp-c-brand-1: var(--hd-accent);
-  --vp-c-brand-2: #2E4E6F;
-  --vp-c-brand-3: var(--hd-accent);
-  --vp-c-brand-soft: rgba(31, 58, 95, .10);
+  --vp-c-brand-2: #2E79C4;
+  --vp-c-brand-3: #0B4A84;
+  --vp-c-brand-soft: rgba(14, 90, 158, .10);
   --vp-font-family-base: var(--hd-font-sans);
   --vp-font-family-mono: var(--hd-font-mono);
 }
-
-html[data-subject="engineering"] { --hd-accent: #1F3A5F; }
-html[data-subject="economics"]   { --hd-accent: #2F5D50; }  /* 预留 */
 
 html[data-book="gailun"]   { --hd-book: #1F3A5F; }
 html[data-book="jindu"]    { --hd-book: #2B5A63; }
@@ -63,6 +82,46 @@ html[data-book="anli"]     { --hd-book: #3A3F45; }
 /* 书目页：H1 下方一条书目色细线，提示当前在哪本书 */
 html[data-book] .vp-doc h1 { padding-bottom: 10px; border-bottom: 3px solid var(--hd-book); }
 
+/* ---------- 顶部导航：墨底反白 + 黄黑 45° 警示斜纹 + 工程蓝选中（GB 2894） ---------- */
+.VPNav {
+  background-color: var(--hd-night);
+  /* 导航子树内的 VitePress 变量改按墨底反白口径，保证菜单、搜索与手机抽屉对比度 */
+  --vp-nav-bg-color: var(--hd-night);
+  --vp-nav-screen-bg-color: var(--hd-night);
+  --vp-c-bg: var(--hd-night);
+  --vp-c-bg-alt: var(--hd-night);
+  --vp-c-bg-soft: var(--hd-night);
+  --vp-c-bg-elv: var(--hd-night);
+  --vp-c-text-1: #F2F5F8;
+  --vp-c-text-2: #C6D0DB;
+  --vp-c-text-3: #9CA9B6;
+  --vp-c-divider: rgba(242, 245, 248, .22);
+  --vp-c-gutter: rgba(242, 245, 248, .22);
+  --vp-c-brand-1: var(--hd-helmet);
+  --vp-c-brand-2: var(--hd-helmet);
+  --vp-c-brand-3: var(--hd-helmet);
+  --vp-c-brand-soft: rgba(255, 199, 44, .18);
+}
+/* 导航底部 6px 黄黑警示斜纹条 */
+.VPNav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 6px;
+  background: repeating-linear-gradient(-45deg, var(--hd-helmet) 0 10px, var(--hd-night) 10px 20px);
+}
+/* 当前激活导航项：工程蓝底 + 黄边 */
+.VPNav .VPNavBar .VPNavBarMenuLink { border-radius: 8px; }
+.VPNav .VPNavBar .VPNavBarMenuLink:hover { color: var(--hd-helmet); }
+.VPNav .VPNavBar .VPNavBarMenuLink.active {
+  background: var(--hd-accent);
+  color: #fff;
+  box-shadow: inset 0 0 0 2px var(--hd-helmet);
+}
+.VPNav .VPNavBar .VPNavBarMenuLink.active:hover { color: #fff; }
+
 /* 纹样 */
 .hd-grid-bp {
   background-image:
@@ -72,23 +131,23 @@ html[data-book] .vp-doc h1 { padding-bottom: 10px; border-bottom: 3px solid var(
 }
 .hd-grid-paper {
   background-image:
-    linear-gradient(rgba(31,58,95,.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(31,58,95,.06) 1px, transparent 1px);
+    linear-gradient(rgba(14,90,158,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,90,158,.07) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
-/* A 类：自家按钮（工地手账风） */
+/* A 类：自家按钮（工地手账风：2px 墨边 + 5px 硬阴影） */
 .hd-btn {
   display: inline-flex; align-items: center; gap: 8px;
   min-height: 44px; padding: 0 20px; box-sizing: border-box;
   border: 2px solid var(--hd-ink); border-radius: 12px;
   background: var(--hd-accent); color: #fff !important;
   font-weight: 700; text-decoration: none !important;
-  box-shadow: 4px 4px 0 var(--hd-ink);
+  box-shadow: var(--hd-shadow-btn);
   transition: transform .12s, box-shadow .12s;
 }
-.hd-btn:hover  { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--hd-ink); }
-.hd-btn:active { transform: translate(2px, 2px);   box-shadow: 1px 1px 0 var(--hd-ink); }
+.hd-btn:hover  { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--hd-ink); }
+.hd-btn:active { transform: translate(2px, 2px);   box-shadow: 2px 2px 0 var(--hd-ink); }
 .hd-btn--helmet { background: var(--hd-helmet); color: var(--hd-ink) !important; }
 .hd-btn--paper  { background: var(--hd-card);   color: var(--hd-ink) !important; }
 
@@ -125,10 +184,10 @@ html[data-book] .vp-doc h1 { padding-bottom: 10px; border-bottom: 3px solid var(
   font-size: 14px; font-weight: 700; text-decoration: none !important;
 }
 
-/* 形式角标与「施工中」 */
+/* 形式角标与「施工中」（蓝＝指令／信息，黄＝警告） */
 .hd-badge {
   display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 4px;
-  background: #E6EEF6; color: #1F3A5F; font-size: 12px; line-height: 1.5;
+  background: var(--hd-accent-soft); color: var(--hd-accent); font-size: 12px; line-height: 1.5;
 }
 .hd-wip {
   display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px 2px 4px; border-radius: 4px;

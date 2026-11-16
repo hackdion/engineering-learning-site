@@ -19,6 +19,15 @@ export const sceneUrl = (id: string) => `/engineering-map/scene/${id}`
 const stageIndex = (id: string) => S.findIndex((s) => s.id === id)
 const stageLabel = (id: string) => `阶段 ${no(stageIndex(id))} ${S[stageIndex(id)].name}`
 const link = (label: string, url?: string) => (url ? `[${label}](${url})` : label)
+
+// 危险作业依据（危大工程：《危险性较大的分部分项工程安全管理规定》37 号令 / 建办质〔2018〕31 号）。
+// 按 GB 2894 工程安全色语义，这是全站少数允许使用红色（.is-danger）的真实危险场景。
+const DANGER_LABEL = /危险性较大的分部分项工程|危大工程管理规定|建办质〔2018〕31/
+const DANGER_URL = /content_5294422/
+const dangerRef = (label: string, url?: string) =>
+  DANGER_LABEL.test(label) || DANGER_URL.test(url || '')
+    ? `<span class="is-danger">危险作业依据 · ${link(label, url)}</span>`
+    : link(label, url)
 const roleLink = (role: string) => {
   const unit = unitOf(role)
   return unit && RC[role]?.name ? `[${RC[role].name}](${unitUrl(unit, role)})` : ''
@@ -75,7 +84,7 @@ function stagePage(s: any, i: number) {
       `### ${no(k)} ${step.action}${badge} {#s${k + 1}}`,
       `**负责**：${who}${helpers ? `　**配合**：${helpers}` : ''}`,
       step.description,
-      list([`需要：${step.input}`, `产出：${step.output}`, `依据：${link(basis, url)}（${step.kind || '法规依据'}）`])
+      list([`需要：${step.input}`, `产出：${step.output}`, `依据：${dangerRef(basis, url)}（${step.kind || '法规依据'}）`])
     ].join('\n\n')
   })
   const related = mapScenes.filter((x) => x.stage === stageLabel(s.id))
@@ -115,7 +124,7 @@ function roleSection(job: string) {
     c.files ? `经手文件：${c.files}` : '',
     c.contacts ? `协作对象：${c.contacts}` : '',
     c.boundary ? `易混点：${c.boundary}` : '',
-    c.sources?.length ? `依据：${c.sources.map(([l, u]: [string, string]) => link(l, u)).join('；')}` : ''
+    c.sources?.length ? `依据：${c.sources.map(([l, u]: [string, string]) => dangerRef(l, u)).join('；')}` : ''
   ].filter(Boolean)
   return [
     `## ${c.name} {#${job}}`,
@@ -160,7 +169,7 @@ function scenePage(s: (typeof scenes)[number]) {
     `## 结论与签字 {#result}`,
     list(s.result),
     `## 依据 {#basis}`,
-    list(s.basis.map(([l, u, level]) => `${link(l, u)} <Badge type="info" text="${level}" />`)),
+    list(s.basis.map(([l, u, level]) => `${dangerRef(l, u)} <Badge type="info" text="${level}" />`)),
     `## 接着看 {#learn}`,
     list(s.learn.map(([l, u]) => link(l, u))),
     `${s.note ? `${s.note} ` : ''}本页按全国房建口径整理，标准条文以现行原文为准，属地要求按项目所在地核对。 {.em-note}`
@@ -177,7 +186,7 @@ function handoverPage(h: (typeof handoverExamples)[number]) {
     `## 交接顺序 {#chain}`,
     h.chain.map((n, i) => `${i + 1}. **${n.role && roleLink(n.role) ? `[${n.actor}](${unitUrl(unitOf(n.role)!, n.role)})` : n.actor}**：${n.do}${n.file ? `。交出：${n.file}` : ''}`).join('\n'),
     `## 依据 {#basis}`,
-    list(h.basis.map(([l, u]) => link(l, u))),
+    list(h.basis.map(([l, u]) => dangerRef(l, u))),
     h.caveat ? `${h.caveat} {.em-note}` : ''
   ]
   return { params: { id: `handover-${h.id}`, desc: short(h.gist) }, content: body.filter(Boolean).join('\n\n') }

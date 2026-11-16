@@ -54,8 +54,8 @@ onMounted(read)
 .ls__note { font-size: 13px; color: var(--hd-ink-3); }
 .ls__stamp {
   width: 96px; height: 96px; border-radius: 50%; flex: none;
-  border: 3px solid var(--hd-stamp); color: var(--hd-stamp); transform: rotate(-12deg);
-  box-shadow: inset 0 0 0 4px var(--vp-c-bg), inset 0 0 0 5px var(--hd-stamp);
+  border: 3px solid var(--hd-green); color: var(--hd-green); transform: rotate(-12deg);
+  box-shadow: inset 0 0 0 4px var(--vp-c-bg), inset 0 0 0 5px var(--hd-green);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
   font-family: var(--hd-font-serif); font-weight: 900;
 }

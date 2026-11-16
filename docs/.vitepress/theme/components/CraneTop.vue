@@ -28,8 +28,8 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
     <svg aria-hidden="true" width="34" height="40" viewBox="0 0 34 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
       <circle cx="17" cy="6" r="4" />
       <path d="M17 10v6c0 3-4 3-4 6a4 4 0 0 0 8 0" />
-      <rect x="5" y="27" width="24" height="10" rx="2" fill="#FFD54A" stroke="#1B1F24" />
-      <path d="M11 32h12" stroke="#1B1F24" />
+      <rect x="5" y="27" width="24" height="10" rx="2" fill="#FFC72C" stroke="#14212E" />
+      <path d="M11 32h12" stroke="#14212E" />
     </svg>
     <span class="ct__label">吊回顶部</span>
   </button>

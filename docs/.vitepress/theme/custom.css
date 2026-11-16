@@ -82,3 +82,35 @@
 .vp-doc .em-crumb { margin: 0 0 12px; font: 13px/1.6 var(--hd-font-mono); color: var(--hd-ink-3); }
 .vp-doc .em-answer { margin: 16px 0 20px; padding-left: 12px; border-left: 3px solid var(--hd-accent); font-size: 18px; line-height: 1.75; }
 .vp-doc .em-note { font-size: 14px; color: var(--hd-ink-3); }
+
+/* 工程地图 · 危险作业依据标签（危大工程 37 号令 / 建办质〔2018〕31 号）：
+   红底 #FBE0D8、红边红字 #D63B22，是全站少数允许使用红色的真实危险场景 */
+.vp-doc .is-danger {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1.5px solid var(--hd-danger);
+  border-radius: 4px;
+  background: var(--hd-danger-soft);
+  color: var(--hd-danger);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.vp-doc .is-danger a {
+  color: var(--hd-danger);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* 危大工程红色危险警示框（专项施工方案编写范例等高风险提示） */
+.hd-danger-note {
+  margin: 14px 0 18px;
+  padding: 12px 16px;
+  border: 1.5px solid var(--hd-danger);
+  border-left: 6px solid var(--hd-danger);
+  border-radius: 8px;
+  background: var(--hd-danger-soft);
+  color: var(--hd-ink);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.hd-danger-note strong { color: var(--hd-danger); }

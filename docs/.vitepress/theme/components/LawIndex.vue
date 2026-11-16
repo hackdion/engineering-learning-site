@@ -167,15 +167,16 @@ const total = computed(() => (props.mode === 'contracts' ? lawIndex.contracts.le
 
 <style scoped>
 .law-entry { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; margin: 22px 0 10px; }
+/* 法规总览大卡：2px 墨边 + 5px 硬阴影 + 机械青语义顶条（青＝资料／依据） */
 .law-entry__card {
   display: flex; flex-direction: column; gap: 8px; min-width: 0;
-  padding: 20px 20px 18px; border: 1px solid var(--hd-line); border-radius: 10px;
+  padding: 20px 20px 18px; border: 2px solid var(--hd-ink); border-top: 4px solid var(--hd-teal); border-radius: 10px;
   background: var(--hd-card); color: var(--hd-ink); text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: var(--hd-shadow-card);
+  transition: transform .15s ease;
 }
-.law-entry__card--alt { border-left: 4px solid var(--hd-accent); }
-.law-entry__card:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(27, 31, 36, .12); }
-.law-entry__eyebrow { font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
+.law-entry__card:hover { transform: translate(-2px, -2px); }
+.law-entry__eyebrow { font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-teal); }
 .law-entry__title { font-family: var(--hd-font-serif); font-size: 24px; font-weight: 900; }
 .law-entry__desc { font-size: 14px; line-height: 1.7; color: var(--hd-ink-2); }
 .law-entry__go { margin-top: auto; padding-top: 6px; font-size: 14px; font-weight: 600; color: var(--hd-accent); }
@@ -203,21 +204,27 @@ const total = computed(() => (props.mode === 'contracts' ? lawIndex.contracts.le
 .law-group { margin-top: 20px; }
 .law-group__title {
   display: flex; align-items: baseline; gap: 10px;
-  margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--hd-line);
+  margin: 0 0 10px; padding-bottom: 6px; border-bottom: 3px solid var(--hd-ink);
   font-size: 18px; font-family: var(--hd-font-serif);
+}
+.law-group__title::before {
+  content: ""; width: 11px; height: 11px; background: var(--hd-accent); align-self: center;
+  transform: rotate(45deg); flex: none;
 }
 .law-group__count { font-family: var(--hd-font-mono); font-size: 12px; font-weight: 400; color: var(--hd-ink-3); }
 .law-group__empty { margin: 0; padding: 10px 0; font-size: 13px; color: var(--hd-ink-3); }
 
+/* 法规卡：2px 墨边 + 5px 硬阴影 + 机械青顶条 */
 .law-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 236px), 1fr)); gap: 12px; }
 .law-card {
   display: flex; flex-direction: column; gap: 5px; min-width: 0;
-  padding: 14px 15px; border: 1px solid var(--hd-line); border-radius: 8px;
+  padding: 14px 15px; border: 2px solid var(--hd-ink); border-top: 4px solid var(--hd-teal); border-radius: 8px;
   background: var(--hd-card); color: var(--hd-ink); text-decoration: none;
-  transition: border-color .15s ease, transform .15s ease;
+  box-shadow: var(--hd-shadow-card);
+  transition: transform .15s ease;
 }
-a.law-card:hover { border-color: var(--hd-accent); transform: translateY(-2px); }
-.law-card--pending { background: var(--hd-paper-2); border-style: dashed; }
+a.law-card:hover { transform: translate(-2px, -2px); }
+.law-card--pending { background: var(--hd-paper-2); border: 2px dashed var(--hd-ink-3); box-shadow: none; }
 .law-card__tag {
   align-self: flex-start; max-width: 100%; padding: 0 8px; border-radius: 4px;
   background: var(--hd-accent); color: #fff; font-size: 12px; line-height: 20px;
@@ -233,7 +240,7 @@ a.law-card:hover { border-color: var(--hd-accent); transform: translateY(-2px); 
 }
 .law-card:focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) {
-  .law-entry__card, .law-card { transition: none; }
+  .law-entry__card, .law-card { transition: none; transform: none; }
 }
 @media (max-width: 480px) {
   .law-filter__search { width: 100%; }
