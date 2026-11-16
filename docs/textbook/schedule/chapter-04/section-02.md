@@ -17,88 +17,92 @@ sectionTitle: 第二节 实际进度与计划进度的比较方法
 例如某工程项目基础工程的计划进度和截止到第9周末的实际进度如图4-3所示，其中双线条表示该工程计划进度，粗实线表示实际进度。从图中实际进度与计划进度的比较可以看出，到第9周末进行实际进度检查时，挖土方和做垫层两项工作已经完成；支模板按计划也应该完成，但实际只完成75%，任务量拖欠25%；绑扎钢筋按计划应该完成60%，而实际只完成20%，任务量拖欠40%。
 
 <FigureZoom caption="图 4-3 某基础工程实际进度与计划进度比较图">
-<svg viewBox="0 0 962 440" role="img" aria-label="图 4-3 某基础工程实际进度与计划进度比较图" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="currentColor" stroke-width="1.2">
-    <line x1="140" y1="18" x2="140" y2="385"></line>
-    <line x1="90" y1="18" x2="90" y2="385"></line>
-    <line x1="940" y1="18" x2="940" y2="385"></line>
-    <line x1="10" y1="58" x2="940" y2="58"></line>
-    <line x1="10" y1="18" x2="10" y2="385"></line>
-    <line x1="10" y1="385" x2="940" y2="385"></line>
-    <line x1="140" y1="18" x2="140" y2="385" stroke-opacity="0.2"></line>
-    <line x1="190" y1="18" x2="190" y2="385" stroke-opacity="0.2"></line>
-    <line x1="240" y1="18" x2="240" y2="385" stroke-opacity="0.2"></line>
-    <line x1="290" y1="18" x2="290" y2="385" stroke-opacity="0.2"></line>
-    <line x1="340" y1="18" x2="340" y2="385" stroke-opacity="0.2"></line>
-    <line x1="390" y1="18" x2="390" y2="385" stroke-opacity="0.2"></line>
-    <line x1="440" y1="18" x2="440" y2="385" stroke-opacity="0.2"></line>
-    <line x1="490" y1="18" x2="490" y2="385" stroke-opacity="0.2"></line>
-    <line x1="540" y1="18" x2="540" y2="385" stroke-opacity="0.2"></line>
-    <line x1="590" y1="18" x2="590" y2="385" stroke-opacity="0.2"></line>
-    <line x1="640" y1="18" x2="640" y2="385" stroke-opacity="0.2"></line>
-    <line x1="690" y1="18" x2="690" y2="385" stroke-opacity="0.2"></line>
-    <line x1="740" y1="18" x2="740" y2="385" stroke-opacity="0.2"></line>
-    <line x1="790" y1="18" x2="790" y2="385" stroke-opacity="0.2"></line>
-    <line x1="840" y1="18" x2="840" y2="385" stroke-opacity="0.2"></line>
-    <line x1="890" y1="18" x2="890" y2="385" stroke-opacity="0.2"></line>
+<svg viewBox="0 0 730 336" role="img" aria-label="图 4-3 某基础工程实际进度与计划进度比较图" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="currentColor" stroke-width="1.3">
+    <rect x="10" y="10" width="706" height="256"/>
+    <line x1="88" y1="10" x2="88" y2="266"/>
+    <line x1="140" y1="10" x2="140" y2="266"/>
+    <line x1="140" y1="36" x2="716" y2="36"/>
+    <line x1="10" y1="62" x2="716" y2="62"/>
+    <line x1="176" y1="36" x2="176" y2="266" stroke-width="0.9"/>
+    <line x1="212" y1="36" x2="212" y2="266" stroke-width="0.9"/>
+    <line x1="248" y1="36" x2="248" y2="266" stroke-width="0.9"/>
+    <line x1="284" y1="36" x2="284" y2="266" stroke-width="0.9"/>
+    <line x1="320" y1="36" x2="320" y2="266" stroke-width="0.9"/>
+    <line x1="356" y1="36" x2="356" y2="266" stroke-width="0.9"/>
+    <line x1="392" y1="36" x2="392" y2="266" stroke-width="0.9"/>
+    <line x1="428" y1="36" x2="428" y2="266" stroke-width="0.9"/>
+    <line x1="464" y1="36" x2="464" y2="266" stroke-width="0.9"/>
+    <line x1="500" y1="36" x2="500" y2="266" stroke-width="0.9"/>
+    <line x1="536" y1="36" x2="536" y2="266" stroke-width="0.9"/>
+    <line x1="572" y1="36" x2="572" y2="266" stroke-width="0.9"/>
+    <line x1="608" y1="36" x2="608" y2="266" stroke-width="0.9"/>
+    <line x1="644" y1="36" x2="644" y2="266" stroke-width="0.9"/>
+    <line x1="680" y1="36" x2="680" y2="266" stroke-width="0.9"/>
+    <line x1="10" y1="96" x2="716" y2="96" stroke-width="0.9"/>
+    <line x1="10" y1="130" x2="716" y2="130" stroke-width="0.9"/>
+    <line x1="10" y1="164" x2="716" y2="164" stroke-width="0.9"/>
+    <line x1="10" y1="198" x2="716" y2="198" stroke-width="0.9"/>
+    <line x1="10" y1="232" x2="716" y2="232" stroke-width="0.9"/>
+    <line x1="140" y1="74" x2="356" y2="74" stroke-width="1.3"/>
+    <line x1="140" y1="78" x2="356" y2="78" stroke-width="1.3"/>
+    <line x1="140" y1="85" x2="356" y2="85" stroke-width="4.2"/>
+    <line x1="284" y1="108" x2="392" y2="108" stroke-width="1.3"/>
+    <line x1="284" y1="112" x2="392" y2="112" stroke-width="1.3"/>
+    <line x1="284" y1="119" x2="392" y2="119" stroke-width="4.2"/>
+    <line x1="320" y1="142" x2="464" y2="142" stroke-width="1.3"/>
+    <line x1="320" y1="146" x2="464" y2="146" stroke-width="1.3"/>
+    <line x1="320" y1="153" x2="428" y2="153" stroke-width="4.2"/>
+    <line x1="392" y1="176" x2="572" y2="176" stroke-width="1.3"/>
+    <line x1="392" y1="180" x2="572" y2="180" stroke-width="1.3"/>
+    <line x1="392" y1="187" x2="428" y2="187" stroke-width="4.2"/>
+    <line x1="500" y1="210" x2="644" y2="210" stroke-width="1.3"/>
+    <line x1="500" y1="214" x2="644" y2="214" stroke-width="1.3"/>
+    <line x1="572" y1="244" x2="716" y2="244" stroke-width="1.3"/>
+    <line x1="572" y1="248" x2="716" y2="248" stroke-width="1.3"/>
+    <line x1="70" y1="290" x2="122" y2="290" stroke-width="1.3"/>
+    <line x1="70" y1="294" x2="122" y2="294" stroke-width="1.3"/>
+    <line x1="70" y1="316" x2="122" y2="316" stroke-width="4.2"/>
   </g>
-  <g stroke="currentColor" stroke-width="1.5" fill="none">
-    <rect x="140" y="78" width="300" height="14"></rect>
-    <rect x="290" y="133" width="150" height="14"></rect>
-    <rect x="340" y="188" width="200" height="14"></rect>
-    <rect x="440" y="243" width="250" height="14"></rect>
-    <rect x="590" y="298" width="200" height="14"></rect>
-    <rect x="690" y="353" width="250" height="14"></rect>
+  <polygon points="464,268 457,280 471,280" fill="currentColor"/>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="49" y="27">工作</text><text x="49" y="45">名称</text>
+    <text x="114" y="27">持续</text><text x="114" y="45">时间</text>
+    <text x="428" y="23">进度计划（周）</text>
+    <text x="158" y="49">1</text>
+    <text x="194" y="49">2</text>
+    <text x="230" y="49">3</text>
+    <text x="266" y="49">4</text>
+    <text x="302" y="49">5</text>
+    <text x="338" y="49">6</text>
+    <text x="374" y="49">7</text>
+    <text x="410" y="49">8</text>
+    <text x="446" y="49">9</text>
+    <text x="482" y="49">10</text>
+    <text x="518" y="49">11</text>
+    <text x="554" y="49">12</text>
+    <text x="590" y="49">13</text>
+    <text x="626" y="49">14</text>
+    <text x="662" y="49">15</text>
+    <text x="698" y="49">16</text>
+    <text x="49" y="79">挖土方</text>
+    <text x="114" y="79">6</text>
+    <text x="49" y="113">做垫层</text>
+    <text x="114" y="113">3</text>
+    <text x="49" y="147">支模板</text>
+    <text x="114" y="147">4</text>
+    <text x="49" y="181">绑钢筋</text>
+    <text x="114" y="181">5</text>
+    <text x="49" y="215">混凝土</text>
+    <text x="114" y="215">4</text>
+    <text x="49" y="249">回填土</text>
+    <text x="114" y="249">5</text>
+    <text x="464" y="294">检查日期</text>
   </g>
-  <g fill="currentColor">
-    <rect x="140" y="78" width="300" height="14"></rect>
-    <rect x="290" y="133" width="150" height="14"></rect>
-    <rect x="340" y="188" width="150" height="14"></rect>
-    <rect x="440" y="243" width="50" height="14"></rect>
+  <g fill="currentColor" font-size="14" text-anchor="start" dominant-baseline="central" font-family="sans-serif">
+    <text x="132" y="292">计划进度</text>
+    <text x="132" y="316">实际进度</text>
   </g>
-  <path d="M584,378 L596,378 L590,392 Z" fill="currentColor"></path>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="50" y="34" font-size="17">工作</text>
-    <text x="50" y="54" font-size="17">名称</text>
-    <text x="115" y="34" font-size="17">持续</text>
-    <text x="115" y="54" font-size="17">时间</text>
-    <text x="540" y="27" font-size="18">进度计划（周）</text>
-    <text x="165" y="50" font-size="17">1</text>
-    <text x="215" y="50" font-size="17">2</text>
-    <text x="265" y="50" font-size="17">3</text>
-    <text x="315" y="50" font-size="17">4</text>
-    <text x="365" y="50" font-size="17">5</text>
-    <text x="415" y="50" font-size="17">6</text>
-    <text x="465" y="50" font-size="17">7</text>
-    <text x="515" y="50" font-size="17">8</text>
-    <text x="565" y="50" font-size="17">9</text>
-    <text x="615" y="50" font-size="17">10</text>
-    <text x="665" y="50" font-size="17">11</text>
-    <text x="715" y="50" font-size="17">12</text>
-    <text x="765" y="50" font-size="17">13</text>
-    <text x="815" y="50" font-size="17">14</text>
-    <text x="865" y="50" font-size="17">15</text>
-    <text x="915" y="50" font-size="17">16</text>
-    <text x="50" y="85" font-size="17">挖土方</text>
-    <text x="115" y="85" font-size="17">6</text>
-    <text x="50" y="140" font-size="17">做垫层</text>
-    <text x="115" y="140" font-size="17">3</text>
-    <text x="50" y="195" font-size="17">支模板</text>
-    <text x="115" y="195" font-size="17">4</text>
-    <text x="50" y="250" font-size="17">绑扎钢筋</text>
-    <text x="115" y="250" font-size="17">5</text>
-    <text x="50" y="305" font-size="17">混凝土</text>
-    <text x="115" y="305" font-size="17">4</text>
-    <text x="50" y="360" font-size="17">回填土</text>
-    <text x="115" y="360" font-size="17">5</text>
-    <text x="590" y="403" font-size="17">检查日期</text>
-    <text x="140" y="415" font-size="16">细双线——计划进度</text>
-    <text x="500" y="415" font-size="16">粗实线——实际进度</text>
-  </g>
-  <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <rect x="92" y="408" width="40" height="14"></rect>
-  </g>
-  <rect x="452" y="408" width="40" height="14" fill="currentColor"></rect>
 </svg>
 </FigureZoom>
 
@@ -186,47 +190,49 @@ sectionTitle: 第二节 实际进度与计划进度的比较方法
 【例 4-1】某工程项目中的基槽开挖工作按施工进度计划安排需要 7 周完成，每周计划完成的任务量百分比如图 4-6 所示。编制横道图进度计划，比较实际进度与计划进度。
 
 <FigureZoom caption="图 4-6 基槽开挖工作进展时间与完成任务量关系图">
-<svg viewBox="0 0 534 318" role="img" aria-label="图 4-6 基槽开挖工作进展时间与完成任务量关系图" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 610 300" role="img" aria-label="图 4-6 基槽开挖工作进展时间与完成任务量关系图" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-06" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    <marker id="arrow-4-6" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
     </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <line x1="60" y1="260" x2="60" y2="16" marker-end="url(#arrow-4-06)"></line>
-    <line x1="60" y1="260" x2="470" y2="260" marker-end="url(#arrow-4-06)"></line>
-    <line x1="52" y1="140" x2="60" y2="140"></line>
-    <line x1="52" y1="20" x2="60" y2="20"></line>
-    <rect x="66" y="236" width="44" height="24"></rect>
-    <rect x="124" y="224" width="44" height="36"></rect>
-    <rect x="182" y="212" width="44" height="48"></rect>
-    <rect x="240" y="212" width="44" height="48"></rect>
-    <rect x="298" y="224" width="44" height="36"></rect>
-    <rect x="356" y="236" width="44" height="24"></rect>
-    <rect x="414" y="236" width="44" height="24"></rect>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <line x1="64" y1="260" x2="64" y2="44" marker-end="url(#arrow-4-6)"/>
+    <line x1="64" y1="260" x2="465" y2="260" marker-end="url(#arrow-4-6)"/>
+    <line x1="64" y1="70" x2="70" y2="70"/>
+    <line x1="64" y1="165" x2="70" y2="165"/>
+    <rect x="72" y="241.0" width="38" height="19.0" fill="currentColor" fill-opacity="0.1"/>
+    <rect x="124" y="231.5" width="38" height="28.5" fill="currentColor" fill-opacity="0.1"/>
+    <rect x="176" y="222.0" width="38" height="38.0" fill="currentColor" fill-opacity="0.1"/>
+    <rect x="228" y="222.0" width="38" height="38.0" fill="currentColor" fill-opacity="0.1"/>
+    <rect x="280" y="231.5" width="38" height="28.5" fill="currentColor" fill-opacity="0.1"/>
+    <rect x="332" y="241.0" width="38" height="19.0" fill="currentColor" fill-opacity="0.1"/>
+    <rect x="384" y="241.0" width="38" height="19.0" fill="currentColor" fill-opacity="0.1"/>
+    <line x1="416" y1="241" x2="448" y2="168" stroke-width="1.2"/>
   </g>
-  <line x1="468" y1="150" x2="440" y2="228" stroke="currentColor" stroke-width="1"></line>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="44" y="140" font-size="16">50</text>
-    <text x="44" y="20" font-size="16">100</text>
-    <text x="60" y="8" font-size="16" text-anchor="start">完成任务量百分比（%）</text>
-    <text x="88" y="230" font-size="15">10</text>
-    <text x="146" y="218" font-size="15">15</text>
-    <text x="204" y="206" font-size="15">20</text>
-    <text x="262" y="206" font-size="15">20</text>
-    <text x="320" y="218" font-size="15">15</text>
-    <text x="378" y="230" font-size="15">10</text>
-    <text x="436" y="230" font-size="15">10</text>
-    <text x="88" y="282" font-size="16">1</text>
-    <text x="146" y="282" font-size="16">2</text>
-    <text x="204" y="282" font-size="16">3</text>
-    <text x="262" y="282" font-size="16">4</text>
-    <text x="320" y="282" font-size="16">5</text>
-    <text x="378" y="282" font-size="16">6</text>
-    <text x="436" y="282" font-size="16">7</text>
-    <text x="490" y="288" font-size="16">时间（周）</text>
-    <text x="500" y="118" font-size="15">单位时间完成</text>
-    <text x="500" y="136" font-size="15">任务量百分比</text>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="91" y="231.0">10</text>
+    <text x="91" y="278">1</text>
+    <text x="143" y="221.5">15</text>
+    <text x="143" y="278">2</text>
+    <text x="195" y="212.0">20</text>
+    <text x="195" y="278">3</text>
+    <text x="247" y="212.0">20</text>
+    <text x="247" y="278">4</text>
+    <text x="299" y="221.5">15</text>
+    <text x="299" y="278">5</text>
+    <text x="351" y="231.0">10</text>
+    <text x="351" y="278">6</text>
+    <text x="403" y="231.0">10</text>
+    <text x="403" y="278">7</text>
+  </g>
+  <g fill="currentColor" font-size="14" dominant-baseline="central" font-family="sans-serif">
+    <text x="54" y="70" text-anchor="end">100</text>
+    <text x="54" y="165" text-anchor="end">50</text>
+    <text x="78" y="42" text-anchor="start">完成任务量百分比（%）</text>
+    <text x="475" y="260" text-anchor="start">时间（周）</text>
+    <text x="452" y="148" text-anchor="start">单位时间完成</text>
+    <text x="452" y="168" text-anchor="start">任务量百分比</text>
   </g>
 </svg>
 </FigureZoom>
@@ -306,54 +312,56 @@ S 曲线比较法是以横坐标表示时间，纵坐标表示累计完成任务
 【例 4-2】某混凝土工程的浇筑总量为 2000 m³，按照施工方案，计划 9 个月完成，每月计划完成的混凝土浇筑量如图 4-9 所示，试绘制该混凝土工程的计划 S 曲线。
 
 <FigureZoom caption="图 4-9 每月完成工程量图">
-<svg viewBox="0 0 527 420" role="img" aria-label="图 4-9 每月完成工程量图" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 560 326" role="img" aria-label="图 4-9 每月完成工程量图" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-09" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    <marker id="arrow-4-9" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
     </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <line x1="55" y1="370" x2="55" y2="16" marker-end="url(#arrow-4-09)"></line>
-    <line x1="55" y1="370" x2="505" y2="370" marker-end="url(#arrow-4-09)"></line>
-    <line x1="47" y1="285" x2="55" y2="285"></line>
-    <line x1="47" y1="200" x2="55" y2="200"></line>
-    <line x1="47" y1="115" x2="55" y2="115"></line>
-    <line x1="47" y1="30" x2="55" y2="30"></line>
-    <rect x="70" y="302" width="35" height="68"></rect>
-    <rect x="120" y="234" width="35" height="136"></rect>
-    <rect x="170" y="166" width="35" height="204"></rect>
-    <rect x="220" y="98" width="35" height="272"></rect>
-    <rect x="270" y="30" width="35" height="340"></rect>
-    <rect x="320" y="98" width="35" height="272"></rect>
-    <rect x="370" y="166" width="35" height="204"></rect>
-    <rect x="420" y="234" width="35" height="136"></rect>
-    <rect x="470" y="302" width="35" height="68"></rect>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <line x1="66" y1="290" x2="66" y2="36" marker-end="url(#arrow-4-9)"/>
+    <line x1="66" y1="290" x2="480" y2="290" marker-end="url(#arrow-4-9)"/>
+    <line x1="66" y1="237.5" x2="72" y2="237.5"/>
+    <line x1="66" y1="185.0" x2="72" y2="185.0"/>
+    <line x1="66" y1="132.5" x2="72" y2="132.5"/>
+    <line x1="66" y1="80.0" x2="72" y2="80.0"/>
+    <rect x="70" y="248.0" width="36" height="42.0" fill="none"/>
+    <rect x="114" y="206.0" width="36" height="84.0" fill="none"/>
+    <rect x="158" y="164.0" width="36" height="126.0" fill="none"/>
+    <rect x="202" y="122.0" width="36" height="168.0" fill="none"/>
+    <rect x="246" y="80.0" width="36" height="210.0" fill="none"/>
+    <rect x="290" y="122.0" width="36" height="168.0" fill="none"/>
+    <rect x="334" y="164.0" width="36" height="126.0" fill="none"/>
+    <rect x="378" y="206.0" width="36" height="84.0" fill="none"/>
+    <rect x="422" y="248.0" width="36" height="42.0" fill="none"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="40" y="285" font-size="15">100</text>
-    <text x="40" y="200" font-size="15">200</text>
-    <text x="40" y="115" font-size="15">300</text>
-    <text x="40" y="30" font-size="15">400</text>
-    <text x="55" y="8" font-size="15" text-anchor="start">每月完成工程量（m³）</text>
-    <text x="87.5" y="296" font-size="14">80</text>
-    <text x="137.5" y="228" font-size="14">160</text>
-    <text x="187.5" y="160" font-size="14">240</text>
-    <text x="237.5" y="92" font-size="14">320</text>
-    <text x="287.5" y="24" font-size="14">400</text>
-    <text x="337.5" y="92" font-size="14">320</text>
-    <text x="387.5" y="160" font-size="14">240</text>
-    <text x="437.5" y="228" font-size="14">160</text>
-    <text x="487.5" y="296" font-size="14">80</text>
-    <text x="87.5" y="392" font-size="15">1</text>
-    <text x="137.5" y="392" font-size="15">2</text>
-    <text x="187.5" y="392" font-size="15">3</text>
-    <text x="237.5" y="392" font-size="15">4</text>
-    <text x="287.5" y="392" font-size="15">5</text>
-    <text x="337.5" y="392" font-size="15">6</text>
-    <text x="387.5" y="392" font-size="15">7</text>
-    <text x="437.5" y="392" font-size="15">8</text>
-    <text x="487.5" y="392" font-size="15">9</text>
-    <text x="500" y="410" font-size="15">时间（月）</text>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="88" y="237.0">80</text>
+    <text x="88" y="308">1</text>
+    <text x="132" y="195.0">160</text>
+    <text x="132" y="308">2</text>
+    <text x="176" y="153.0">240</text>
+    <text x="176" y="308">3</text>
+    <text x="220" y="111.0">320</text>
+    <text x="220" y="308">4</text>
+    <text x="264" y="69.0">400</text>
+    <text x="264" y="308">5</text>
+    <text x="308" y="111.0">320</text>
+    <text x="308" y="308">6</text>
+    <text x="352" y="153.0">240</text>
+    <text x="352" y="308">7</text>
+    <text x="396" y="195.0">160</text>
+    <text x="396" y="308">8</text>
+    <text x="440" y="237.0">80</text>
+    <text x="440" y="308">9</text>
+  </g>
+  <g fill="currentColor" font-size="14" dominant-baseline="central" font-family="sans-serif">
+    <text x="56" y="237.5" text-anchor="end">100</text>
+    <text x="56" y="185" text-anchor="end">200</text>
+    <text x="56" y="132.5" text-anchor="end">300</text>
+    <text x="56" y="80" text-anchor="end">400</text>
+    <text x="80" y="36" text-anchor="start">每月完成工程量（m³）</text>
+    <text x="488" y="290" text-anchor="start">时间（月）</text>
   </g>
 </svg>
 </FigureZoom>
@@ -417,38 +425,40 @@ S 曲线比较法是以横坐标表示时间，纵坐标表示累计完成任务
 利用香蕉曲线可以对后期工程的进展情况进行预测。例如在图 4-13 中，该工程项目在检查日实际进度超前。检查日期之后的后期工程进度安排如图中虚线所示，预计该工程项目将提前完成。
 
 <FigureZoom caption="图 4-13 工程进展趋势预测图">
-<svg viewBox="0 0 442 334" role="img" aria-label="图 4-13 工程进展趋势预测图" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 600 320" role="img" aria-label="图 4-13 工程进展趋势预测图" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    <marker id="arrow-4-13" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
     </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="50" y1="280" x2="50" y2="30" marker-end="url(#arrow-4-13)"></line>
-    <line x1="50" y1="280" x2="400" y2="280" marker-end="url(#arrow-4-13)"></line>
-    <line x1="50" y1="205" x2="395" y2="205" stroke-dasharray="4 4" stroke-opacity="0.5"></line>
-    <line x1="50" y1="75" x2="395" y2="75" stroke-dasharray="4 4" stroke-opacity="0.5"></line>
+  <g fill="none" stroke="currentColor" stroke-width="1.6">
+    <line x1="56" y1="264" x2="56" y2="28" marker-end="url(#arrow-4-13)"/>
+    <line x1="56" y1="264" x2="465" y2="264" marker-end="url(#arrow-4-13)"/>
+    <line x1="56" y1="62" x2="368" y2="62" stroke-dasharray="5 4" stroke-width="1.2"/>
+    <line x1="56" y1="168" x2="148" y2="168" stroke-dasharray="5 4" stroke-width="1.2"/>
+    <line x1="148" y1="54" x2="148" y2="264" stroke-dasharray="5 4" stroke-width="1.2"/>
+    <!-- 计划 ES/LS 包络线 -->
+    <path d="M56,264 C135,230 220,100 368,62" stroke-width="1.5"/>
+    <path d="M56,264 C185,250 280,150 368,62" stroke-width="1.5"/>
+    <!-- 实际粗实线 -->
+    <path d="M56,264 C95,245 125,205 148,168" stroke-width="3.2"/>
+    <!-- 预测虚线（两条分支） -->
+    <path d="M148,168 C165,112 195,78 250,62" stroke-dasharray="6 4" stroke-width="1.8"/>
+    <path d="M148,168 C185,130 218,95 250,62" stroke-dasharray="6 4" stroke-width="1.8"/>
+    <!-- 右侧图例 -->
+    <line x1="418" y1="104" x2="458" y2="104" stroke-width="3.2"/>
+    <line x1="418" y1="136" x2="458" y2="136" stroke-dasharray="6 4" stroke-width="1.8"/>
+    <line x1="418" y1="168" x2="458" y2="168" stroke-width="1.5"/>
   </g>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <path d="M50,280 C90,235 120,200 175,155 C230,110 310,60 395,42"></path>
-    <path d="M50,280 C100,272 150,255 205,215 C265,170 340,100 395,42"></path>
+  <polygon points="148,266 141,278 155,278" fill="currentColor"/>
+  <g fill="currentColor" font-size="14" dominant-baseline="central" font-family="sans-serif">
+    <text x="68" y="30">累计完成任务量百分比（%）</text>
+    <text x="472" y="264">时间</text>
+    <text x="148" y="294" text-anchor="middle">检查日期</text>
+    <text x="468" y="104">实际</text>
+    <text x="468" y="136">预测</text>
+    <text x="468" y="168">计划</text>
   </g>
-  <path d="M50,280 C70,240 95,205 130,170 C155,145 170,130 185,115" fill="none" stroke="currentColor" stroke-width="2.6"></path>
-  <path d="M185,115 C200,95 220,72 250,55 C285,42 320,40 358,42" fill="none" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4"></path>
-  <line x1="185" y1="42" x2="185" y2="280" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"></line>
-  <line x1="50" y1="115" x2="185" y2="115" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"></line>
-  <path d="M185,280 L191,280 L188,290 Z" fill="currentColor"></path>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="50" y="12" font-size="14" text-anchor="start">累计完成任务量百分比（%）</text>
-    <text x="398" y="298" font-size="14">时间</text>
-    <text x="188" y="305" font-size="14">检查日期</text>
-    <text x="300" y="60" font-size="13" text-anchor="start">实际</text>
-    <text x="300" y="80" font-size="13" text-anchor="start">预测</text>
-    <text x="300" y="100" font-size="13" text-anchor="start">计划</text>
-  </g>
-  <path d="M272,54 H298" stroke="currentColor" stroke-width="2.6"></path>
-  <path d="M272,74 H298" stroke="currentColor" stroke-width="1.3" stroke-dasharray="6 4"></path>
-  <path d="M272,94 H298" stroke="currentColor" stroke-width="1.3"></path>
 </svg>
 </FigureZoom>
 
@@ -481,56 +491,53 @@ S 曲线比较法是以横坐标表示时间，纵坐标表示累计完成任务
 【解】假设各项工作均为匀速进展，即各项工作每周的劳动消耗量相等。
 
 <FigureZoom caption="图 4-14 某工程项目网络计划">
-<svg viewBox="0 0 651 280" role="img" aria-label="图 4-14 某工程项目网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 540 245" role="img" aria-label="图 4-14 某工程项目网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-14" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    <marker id="arrow-4-14" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
     </marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.6">
-    <circle cx="40" cy="140" r="15"></circle>
-    <circle cx="180" cy="55" r="15"></circle>
-    <circle cx="180" cy="225" r="15"></circle>
-    <circle cx="330" cy="140" r="15"></circle>
-    <circle cx="470" cy="140" r="15"></circle>
-    <circle cx="540" cy="55" r="15"></circle>
-    <circle cx="540" cy="225" r="15"></circle>
-    <circle cx="620" cy="140" r="15"></circle>
-    <path d="M50,128 L166,68" marker-end="url(#arrow-4-14)"></path>
-    <path d="M50,152 L166,212" marker-end="url(#arrow-4-14)"></path>
-    <path d="M195,55 H525" marker-end="url(#arrow-4-14)"></path>
-    <path d="M195,225 H525" marker-end="url(#arrow-4-14)"></path>
-    <path d="M345,140 H455" marker-end="url(#arrow-4-14)"></path>
-    <path d="M551,68 L606,128" marker-end="url(#arrow-4-14)"></path>
-    <path d="M551,212 L606,152" marker-end="url(#arrow-4-14)"></path>
-    <path d="M192,64 L318,128" stroke-dasharray="5 4"></path>
-    <path d="M192,216 L318,152" stroke-dasharray="5 4"></path>
-    <path d="M481,128 L528,68" stroke-dasharray="5 4"></path>
-    <path d="M481,152 L528,212" stroke-dasharray="5 4"></path>
+    <!-- 实箭线 -->
+    <path d="M40,104 V50 H164" marker-end="url(#arrow-4-14)"/>
+    <path d="M40,136 V190 H164" marker-end="url(#arrow-4-14)"/>
+    <line x1="196" y1="50" x2="334" y2="50" marker-end="url(#arrow-4-14)"/>
+    <line x1="196" y1="120" x2="334" y2="120" marker-end="url(#arrow-4-14)"/>
+    <line x1="196" y1="190" x2="334" y2="190" marker-end="url(#arrow-4-14)"/>
+    <path d="M366,50 H500 V104" marker-end="url(#arrow-4-14)"/>
+    <path d="M366,190 H500 V136" marker-end="url(#arrow-4-14)"/>
+    <!-- 虚箭线 -->
+    <line x1="180" y1="66" x2="180" y2="104" stroke-dasharray="5 4" marker-end="url(#arrow-4-14)"/>
+    <line x1="180" y1="174" x2="180" y2="136" stroke-dasharray="5 4" marker-end="url(#arrow-4-14)"/>
+    <line x1="350" y1="104" x2="350" y2="66" stroke-dasharray="5 4" marker-end="url(#arrow-4-14)"/>
+    <line x1="350" y1="136" x2="350" y2="174" stroke-dasharray="5 4" marker-end="url(#arrow-4-14)"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="40" y="140" font-size="15">1</text>
-    <text x="180" y="55" font-size="15">2</text>
-    <text x="180" y="225" font-size="15">3</text>
-    <text x="330" y="140" font-size="15">4</text>
-    <text x="470" y="140" font-size="15">5</text>
-    <text x="540" y="55" font-size="15">6</text>
-    <text x="540" y="225" font-size="15">7</text>
-    <text x="620" y="140" font-size="15">8</text>
-    <text x="96" y="82" font-size="16">A(45)</text>
-    <text x="124" y="112" font-size="16">3</text>
-    <text x="96" y="198" font-size="16">B(60)</text>
-    <text x="124" y="168" font-size="16">5</text>
-    <text x="360" y="38" font-size="16">C(54)</text>
-    <text x="360" y="74" font-size="16">3</text>
-    <text x="360" y="208" font-size="16">E(26)</text>
-    <text x="360" y="244" font-size="16">2</text>
-    <text x="400" y="122" font-size="16">D(51)</text>
-    <text x="400" y="160" font-size="16">3</text>
-    <text x="562" y="82" font-size="16">F(60)</text>
-    <text x="596" y="112" font-size="16">4</text>
-    <text x="562" y="198" font-size="16">G(40)</text>
-    <text x="596" y="168" font-size="16">2</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.6">
+    <circle cx="40" cy="120" r="16"/>
+    <circle cx="180" cy="50" r="16"/>
+    <circle cx="180" cy="190" r="16"/>
+    <circle cx="180" cy="120" r="16"/>
+    <circle cx="350" cy="120" r="16"/>
+    <circle cx="350" cy="50" r="16"/>
+    <circle cx="350" cy="190" r="16"/>
+    <circle cx="500" cy="120" r="16"/>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="40" y="120">1</text>
+    <text x="180" y="50">2</text>
+    <text x="180" y="190">3</text>
+    <text x="180" y="120">4</text>
+    <text x="350" y="120">5</text>
+    <text x="350" y="50">6</text>
+    <text x="350" y="190">7</text>
+    <text x="500" y="120">8</text>
+    <text x="104" y="34">A(45)</text><text x="104" y="66">3</text>
+    <text x="265" y="34">C(54)</text><text x="265" y="66">3</text>
+    <text x="432" y="34">F(60)</text><text x="432" y="66">4</text>
+    <text x="265" y="104">D(51)</text><text x="265" y="136">3</text>
+    <text x="104" y="174">B(60)</text><text x="104" y="206">5</text>
+    <text x="265" y="174">E(26)</text><text x="265" y="206">2</text>
+    <text x="432" y="174">G(40)</text><text x="432" y="206">2</text>
   </g>
 </svg>
 </FigureZoom>
@@ -556,80 +563,87 @@ $$
 （3）根据各项工作按最早开始时间安排的进度计划，确定工程项目每周计划劳动消耗量及各周累计劳动消耗量，如图4-15所示。
 
 <FigureZoom caption="图 4-15 按工作最早开始时间安排的进度计划及劳动消耗量">
-<svg viewBox="0 0 901 298" role="img" aria-label="图 4-15 按工作最早开始时间安排的进度计划及劳动消耗量" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 660 264" role="img" aria-label="图 4-15 按工作最早开始时间安排的进度计划及劳动消耗量" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-15" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-15" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <line x1="60" y1="24" x2="60" y2="32"></line>
-    <line x1="124" y1="24" x2="124" y2="32"></line>
-    <line x1="188" y1="24" x2="188" y2="32"></line>
-    <line x1="252" y1="24" x2="252" y2="32"></line>
-    <line x1="316" y1="24" x2="316" y2="32"></line>
-    <line x1="380" y1="24" x2="380" y2="32"></line>
-    <line x1="444" y1="24" x2="444" y2="32"></line>
-    <line x1="508" y1="24" x2="508" y2="32"></line>
-    <line x1="572" y1="24" x2="572" y2="32"></line>
-    <line x1="636" y1="24" x2="636" y2="32"></line>
-    <line x1="700" y1="24" x2="700" y2="32"></line>
-    <line x1="764" y1="24" x2="764" y2="32"></line>
-    <line x1="828" y1="24" x2="828" y2="32"></line>
-    <line x1="60" y1="32" x2="828" y2="32"></line>
-    <circle cx="60" cy="150" r="13"></circle>
-    <circle cx="252" cy="60" r="13"></circle>
-    <circle cx="380" cy="240" r="13"></circle>
-    <circle cx="380" cy="150" r="13"></circle>
-    <circle cx="572" cy="150" r="13"></circle>
-    <circle cx="572" cy="60" r="13"></circle>
-    <circle cx="572" cy="240" r="13"></circle>
-    <circle cx="828" cy="150" r="13"></circle>
-    <path d="M60,137 V60 H239" marker-end="url(#arrow-4-15)"></path>
-    <path d="M60,163 V240 H367" marker-end="url(#arrow-4-15)"></path>
-    <path d="M265,60 H444" marker-end="url(#arrow-4-15)"></path>
-    <polyline points="444,60 450,55 456,65 462,55 468,65 474,55 480,65 486,55 492,65 498,55 504,65 510,55 516,65 522,55 528,65 534,55 540,65 546,55 552,65 558,55 559,60"></polyline>
-    <path d="M393,150 H559" marker-end="url(#arrow-4-15)"></path>
-    <path d="M393,240 H508" marker-end="url(#arrow-4-15)"></path>
-    <polyline points="508,240 514,235 520,245 526,235 532,245 538,235 544,245 550,235 556,245 559,240"></polyline>
-    <path d="M585,60 H828 V137" marker-end="url(#arrow-4-15)"></path>
-    <path d="M585,240 H700" marker-end="url(#arrow-4-15)"></path>
-    <polyline points="700,240 706,235 712,245 718,235 724,245 730,235 736,245 742,235 748,245 754,235 760,245 766,235 772,245 778,235 784,245 790,235 796,245 802,235 808,245 814,235 820,245 826,235 828,240"></polyline>
-    <path d="M828,240 V163"></path>
-    <path d="M252,73 V150" stroke-dasharray="5 4"></path>
-    <polyline points="252,150 258,145 264,155 270,145 276,155 282,145 288,155 294,145 300,155 306,145 312,155 318,145 324,155 330,145 336,155 342,145 348,155 354,145 360,155 366,145 367,150" stroke-dasharray="5 4"></polyline>
-    <path d="M380,227 V163" stroke-dasharray="5 4" marker-end="url(#arrow-4-15)"></path>
-    <path d="M572,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-15)"></path>
-    <path d="M572,163 V227" stroke-dasharray="5 4" marker-end="url(#arrow-4-15)"></path>
+    <line x1="50" y1="38" x2="602" y2="38"/>
+    <line x1="50" y1="32" x2="50" y2="38"/>
+    <line x1="96" y1="32" x2="96" y2="38"/>
+    <line x1="142" y1="32" x2="142" y2="38"/>
+    <line x1="188" y1="32" x2="188" y2="38"/>
+    <line x1="234" y1="32" x2="234" y2="38"/>
+    <line x1="280" y1="32" x2="280" y2="38"/>
+    <line x1="326" y1="32" x2="326" y2="38"/>
+    <line x1="372" y1="32" x2="372" y2="38"/>
+    <line x1="418" y1="32" x2="418" y2="38"/>
+    <line x1="464" y1="32" x2="464" y2="38"/>
+    <line x1="510" y1="32" x2="510" y2="38"/>
+    <line x1="556" y1="32" x2="556" y2="38"/>
+    <line x1="602" y1="32" x2="602" y2="38"/>
+    <!-- 实箭线 -->
+    <path d="M50,138 V80 H174" marker-end="url(#arrow-4-15)"/>
+    <path d="M50,166 V224 H266" marker-end="url(#arrow-4-15)"/>
+    <line x1="202" y1="80" x2="326" y2="80"/>
+    <path d="M326,80 L328.5,76 L331.0,80 L333.5,84 L336.0,80 L338.5,76 L341.0,80 L343.5,84 L346.0,80 L348.5,76 L351.0,80 L353.5,84 L356.0,80 L358.5,76 L361.0,80 L363.5,84 L366.0,80 L368.5,76 L371.0,80 L373.5,84 L376.0,80 L378.5,76 L381.0,80 L383.5,84 L386.0,80 L388.5,76 L391.0,80 L396,80 L404,80" marker-end="url(#arrow-4-15)"/>
+    <line x1="294" y1="152" x2="404" y2="152" marker-end="url(#arrow-4-15)"/>
+    <line x1="294" y1="224" x2="372" y2="224"/>
+    <path d="M372,224 L374.5,220 L377.0,224 L379.5,228 L382.0,224 L384.5,220 L387.0,224 L389.5,228 L392.0,224 L396,224 L404,224" marker-end="url(#arrow-4-15)"/>
+    <path d="M432,80 H602 V138" marker-end="url(#arrow-4-15)"/>
+    <line x1="432" y1="224" x2="510" y2="224"/>
+    <path d="M510,224 L512.5,220 L515.0,224 L517.5,228 L520.0,224 L522.5,220 L525.0,224 L527.5,228 L530.0,224 L532.5,220 L535.0,224 L537.5,228 L540.0,224 L542.5,220 L545.0,224 L547.5,228 L550.0,224 L552.5,220 L555.0,224 L557.5,228 L560.0,224 L562.5,220 L565.0,224 L567.5,228 L570.0,224 L572.5,220 L575.0,224 L577.5,228 L580.0,224 L582.5,220 L585.0,224 L587.5,228 L590.0,224 L592.5,220 L595.0,224 L597.5,228 L600.0,224 L602,224 V166" marker-end="url(#arrow-4-15)"/>
+    <!-- 虚箭线 ②→④（垂直虚线+横波形线+向下箭头） -->
+    <line x1="188" y1="94" x2="188" y2="122" stroke-dasharray="4 3"/>
+    <path d="M188,122 L190.5,118 L193.0,122 L195.5,126 L198.0,122 L200.5,118 L203.0,122 L205.5,126 L208.0,122 L210.5,118 L213.0,122 L215.5,126 L218.0,122 L220.5,118 L223.0,122 L225.5,126 L228.0,122 L230.5,118 L233.0,122 L235.5,126 L238.0,122 L240.5,118 L243.0,122 L245.5,126 L248.0,122 L250.5,118 L253.0,122 L255.5,126 L258.0,122 L260.5,118 L263.0,122 L265.5,126 L268.0,122 L270.5,118 L273.0,122 L275.5,126 L278.0,122 L280,122"/>
+    <line x1="280" y1="122" x2="280" y2="138" stroke-dasharray="4 3" marker-end="url(#arrow-4-15)"/>
+    <!-- 虚箭线 ③→④, ⑤→⑥, ⑤→⑦ -->
+    <line x1="280" y1="210" x2="280" y2="166" stroke-dasharray="4 3" marker-end="url(#arrow-4-15)"/>
+    <line x1="418" y1="138" x2="418" y2="94" stroke-dasharray="4 3" marker-end="url(#arrow-4-15)"/>
+    <line x1="418" y1="166" x2="418" y2="210" stroke-dasharray="4 3" marker-end="url(#arrow-4-15)"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="60" y="14" font-size="15">0</text>
-    <text x="124" y="14" font-size="15">1</text>
-    <text x="188" y="14" font-size="15">2</text>
-    <text x="252" y="14" font-size="15">3</text>
-    <text x="316" y="14" font-size="15">4</text>
-    <text x="380" y="14" font-size="15">5</text>
-    <text x="444" y="14" font-size="15">6</text>
-    <text x="508" y="14" font-size="15">7</text>
-    <text x="572" y="14" font-size="15">8</text>
-    <text x="636" y="14" font-size="15">9</text>
-    <text x="700" y="14" font-size="15">10</text>
-    <text x="764" y="14" font-size="15">11</text>
-    <text x="828" y="14" font-size="15">12</text>
-    <text x="846" y="32" font-size="16">（周）</text>
-    <text x="60" y="150" font-size="14">1</text>
-    <text x="252" y="60" font-size="14">2</text>
-    <text x="380" y="240" font-size="14">3</text>
-    <text x="380" y="150" font-size="14">4</text>
-    <text x="572" y="150" font-size="14">5</text>
-    <text x="572" y="60" font-size="14">6</text>
-    <text x="572" y="240" font-size="14">7</text>
-    <text x="828" y="150" font-size="14">8</text>
-    <text x="156" y="42" font-size="15">A(15)</text>
-    <text x="220" y="225" font-size="15">B(12)</text>
-    <text x="348" y="42" font-size="15">C(18)</text>
-    <text x="476" y="132" font-size="15">D(17)</text>
-    <text x="444" y="222" font-size="15">E(13)</text>
-    <text x="700" y="42" font-size="15">F(15)</text>
-    <text x="636" y="222" font-size="15">G(20)</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="50" cy="152" r="14"/>
+    <circle cx="188" cy="80" r="14"/>
+    <circle cx="280" cy="224" r="14"/>
+    <circle cx="280" cy="152" r="14"/>
+    <circle cx="418" cy="152" r="14"/>
+    <circle cx="418" cy="80" r="14"/>
+    <circle cx="418" cy="224" r="14"/>
+    <circle cx="602" cy="152" r="14"/>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="50" y="152">1</text>
+    <text x="188" y="80">2</text>
+    <text x="280" y="224">3</text>
+    <text x="280" y="152">4</text>
+    <text x="418" y="152">5</text>
+    <text x="418" y="80">6</text>
+    <text x="418" y="224">7</text>
+    <text x="602" y="152">8</text>
+    <text x="50" y="20">0</text>
+    <text x="96" y="20">1</text>
+    <text x="142" y="20">2</text>
+    <text x="188" y="20">3</text>
+    <text x="234" y="20">4</text>
+    <text x="280" y="20">5</text>
+    <text x="326" y="20">6</text>
+    <text x="372" y="20">7</text>
+    <text x="418" y="20">8</text>
+    <text x="464" y="20">9</text>
+    <text x="510" y="20">10</text>
+    <text x="556" y="20">11</text>
+    <text x="602" y="20">12</text>
+    <text x="630" y="20">（周）</text>
+    <text x="119" y="64">A(15)</text>
+    <text x="257" y="64">C(18)</text>
+    <text x="510" y="64">F(15)</text>
+    <text x="349" y="136">D(17)</text>
+    <text x="165" y="208">B(12)</text>
+    <text x="326" y="208">E(13)</text>
+    <text x="464" y="208">G(20)</text>
   </g>
 </svg>
 </FigureZoom>
@@ -643,79 +657,83 @@ $$
 （4）根据各项工作按最迟开始时间安排的进度计划，确定工程项目每周计划劳动消耗量及各周累计劳动消耗量，如图 4-16 所示。
 
 <FigureZoom caption="图 4-16 按工作最迟开始时间安排的进度计划及劳动消耗量">
-<svg viewBox="0 0 890 298" role="img" aria-label="图 4-16 按工作最迟开始时间安排的进度计划及劳动消耗量" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 660 264" role="img" aria-label="图 4-16 按工作最迟开始时间安排的进度计划及劳动消耗量" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-16" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-16" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <line x1="60" y1="24" x2="60" y2="32"></line>
-    <line x1="124" y1="24" x2="124" y2="32"></line>
-    <line x1="188" y1="24" x2="188" y2="32"></line>
-    <line x1="252" y1="24" x2="252" y2="32"></line>
-    <line x1="316" y1="24" x2="316" y2="32"></line>
-    <line x1="380" y1="24" x2="380" y2="32"></line>
-    <line x1="444" y1="24" x2="444" y2="32"></line>
-    <line x1="508" y1="24" x2="508" y2="32"></line>
-    <line x1="572" y1="24" x2="572" y2="32"></line>
-    <line x1="636" y1="24" x2="636" y2="32"></line>
-    <line x1="700" y1="24" x2="700" y2="32"></line>
-    <line x1="764" y1="24" x2="764" y2="32"></line>
-    <line x1="828" y1="24" x2="828" y2="32"></line>
-    <line x1="60" y1="32" x2="828" y2="32"></line>
-    <circle cx="60" cy="150" r="13"></circle>
-    <circle cx="380" cy="60" r="13"></circle>
-    <circle cx="380" cy="240" r="13"></circle>
-    <circle cx="380" cy="150" r="13"></circle>
-    <circle cx="572" cy="150" r="13"></circle>
-    <circle cx="572" cy="60" r="13"></circle>
-    <circle cx="700" cy="240" r="13"></circle>
-    <circle cx="828" cy="150" r="13"></circle>
-    <path d="M60,137 V60"></path>
-    <polyline points="60,60 66,55 72,65 78,55 84,65 90,55 96,65 102,55 108,65 114,55 120,65 126,55 132,65 138,55 144,65 150,55 156,65 162,55 168,65 174,55 180,65 186,55 188,60"></polyline>
-    <path d="M188,60 H367" marker-end="url(#arrow-4-16)"></path>
-    <path d="M60,163 V240 H367" marker-end="url(#arrow-4-16)"></path>
-    <path d="M393,60 H559" marker-end="url(#arrow-4-16)"></path>
-    <path d="M393,150 H559" marker-end="url(#arrow-4-16)"></path>
-    <polyline points="393,240 399,235 405,245 411,235 417,245 423,235 429,245 435,235 441,245 447,235 453,245 459,235 465,245 471,235 477,245 483,235 489,245 495,235 501,245 507,235 513,245 519,235 525,245 531,235 537,245 543,235 549,245 555,235 561,245 567,235 572,240"></polyline>
-    <path d="M572,240 H687" marker-end="url(#arrow-4-16)"></path>
-    <path d="M585,60 H828 V137" marker-end="url(#arrow-4-16)"></path>
-    <path d="M713,240 H828 V163" marker-end="url(#arrow-4-16)"></path>
-    <path d="M380,73 V137" stroke-dasharray="5 4" marker-end="url(#arrow-4-16)"></path>
-    <path d="M380,227 V163" stroke-dasharray="5 4" marker-end="url(#arrow-4-16)"></path>
-    <path d="M572,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-16)"></path>
-    <path d="M572,163 V240" stroke-dasharray="5 4"></path>
-    <polyline points="572,240 578,235 584,245 590,235 596,245 602,235 608,245 614,235 620,245 626,235 632,245 638,235 644,245 650,235 656,245 662,235 668,245 674,235 680,245 686,235 687,240" stroke-dasharray="5 4"></polyline>
+    <line x1="50" y1="38" x2="602" y2="38"/>
+    <line x1="50" y1="32" x2="50" y2="38"/>
+    <line x1="96" y1="32" x2="96" y2="38"/>
+    <line x1="142" y1="32" x2="142" y2="38"/>
+    <line x1="188" y1="32" x2="188" y2="38"/>
+    <line x1="234" y1="32" x2="234" y2="38"/>
+    <line x1="280" y1="32" x2="280" y2="38"/>
+    <line x1="326" y1="32" x2="326" y2="38"/>
+    <line x1="372" y1="32" x2="372" y2="38"/>
+    <line x1="418" y1="32" x2="418" y2="38"/>
+    <line x1="464" y1="32" x2="464" y2="38"/>
+    <line x1="510" y1="32" x2="510" y2="38"/>
+    <line x1="556" y1="32" x2="556" y2="38"/>
+    <line x1="602" y1="32" x2="602" y2="38"/>
+    <path d="M50,138 V80 L52.5,76 L55.0,80 L57.5,84 L60.0,80 L62.5,76 L65.0,80 L67.5,84 L70.0,80 L72.5,76 L75.0,80 L77.5,84 L80.0,80 L82.5,76 L85.0,80 L87.5,84 L90.0,80 L92.5,76 L95.0,80 L97.5,84 L100.0,80 L102.5,76 L105.0,80 L107.5,84 L110.0,80 L112.5,76 L115.0,80 L117.5,84 L120.0,80 L122.5,76 L125.0,80 L127.5,84 L130.0,80 L132.5,76 L135.0,80 L137.5,84 L140.0,80 L142,80 H266" marker-end="url(#arrow-4-16)"/>
+    <path d="M50,166 V224 H266" marker-end="url(#arrow-4-16)"/>
+    <line x1="294" y1="80" x2="404" y2="80" marker-end="url(#arrow-4-16)"/>
+    <line x1="294" y1="152" x2="404" y2="152" marker-end="url(#arrow-4-16)"/>
+    <line x1="294" y1="224" x2="496" y2="224" marker-end="url(#arrow-4-16)"/>
+    <path d="M432,80 H602 V138" marker-end="url(#arrow-4-16)"/>
+    <path d="M524,224 H602 V166" marker-end="url(#arrow-4-16)"/>
+    <!-- 虚箭线 ②→④, ③→④, ⑤→⑥ -->
+    <line x1="280" y1="94" x2="280" y2="138" stroke-dasharray="4 3" marker-end="url(#arrow-4-16)"/>
+    <line x1="280" y1="210" x2="280" y2="166" stroke-dasharray="4 3" marker-end="url(#arrow-4-16)"/>
+    <line x1="418" y1="138" x2="418" y2="94" stroke-dasharray="4 3" marker-end="url(#arrow-4-16)"/>
+    <!-- 虚箭线 ⑤→⑦（从 ⑤ 向下至 y=190 + 横波形线 8->10 + 向下虚箭头入 ⑦） -->
+    <line x1="418" y1="166" x2="418" y2="190" stroke-dasharray="4 3"/>
+    <path d="M418,190 L420.5,186 L423.0,190 L425.5,194 L428.0,190 L430.5,186 L433.0,190 L435.5,194 L438.0,190 L440.5,186 L443.0,190 L445.5,194 L448.0,190 L450.5,186 L453.0,190 L455.5,194 L458.0,190 L460.5,186 L463.0,190 L465.5,194 L468.0,190 L470.5,186 L473.0,190 L475.5,194 L478.0,190 L480.5,186 L483.0,190 L485.5,194 L488.0,190 L490.5,186 L493.0,190 L495.5,194 L498.0,190 L500.5,186 L503.0,190 L505.5,194 L508.0,190 L510,190"/>
+    <line x1="510" y1="190" x2="510" y2="210" stroke-dasharray="4 3" marker-end="url(#arrow-4-16)"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="60" y="14" font-size="15">0</text>
-    <text x="124" y="14" font-size="15">1</text>
-    <text x="188" y="14" font-size="15">2</text>
-    <text x="252" y="14" font-size="15">3</text>
-    <text x="316" y="14" font-size="15">4</text>
-    <text x="380" y="14" font-size="15">5</text>
-    <text x="444" y="14" font-size="15">6</text>
-    <text x="508" y="14" font-size="15">7</text>
-    <text x="572" y="14" font-size="15">8</text>
-    <text x="636" y="14" font-size="15">9</text>
-    <text x="700" y="14" font-size="15">10</text>
-    <text x="764" y="14" font-size="15">11</text>
-    <text x="828" y="14" font-size="15">12</text>
-    <text x="846" y="32" font-size="16">（周）</text>
-    <text x="60" y="150" font-size="14">1</text>
-    <text x="380" y="60" font-size="14">2</text>
-    <text x="380" y="240" font-size="14">3</text>
-    <text x="380" y="150" font-size="14">4</text>
-    <text x="572" y="150" font-size="14">5</text>
-    <text x="572" y="60" font-size="14">6</text>
-    <text x="700" y="240" font-size="14">7</text>
-    <text x="828" y="150" font-size="14">8</text>
-    <text x="284" y="42" font-size="15">A(15)</text>
-    <text x="220" y="225" font-size="15">B(12)</text>
-    <text x="476" y="42" font-size="15">C(18)</text>
-    <text x="476" y="132" font-size="15">D(17)</text>
-    <text x="636" y="222" font-size="15">E(13)</text>
-    <text x="700" y="42" font-size="15">F(15)</text>
-    <text x="764" y="222" font-size="15">G(20)</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="50" cy="152" r="14"/>
+    <circle cx="280" cy="80" r="14"/>
+    <circle cx="280" cy="224" r="14"/>
+    <circle cx="280" cy="152" r="14"/>
+    <circle cx="418" cy="152" r="14"/>
+    <circle cx="418" cy="80" r="14"/>
+    <circle cx="510" cy="224" r="14"/>
+    <circle cx="602" cy="152" r="14"/>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="50" y="152">1</text>
+    <text x="280" y="80">2</text>
+    <text x="280" y="224">3</text>
+    <text x="280" y="152">4</text>
+    <text x="418" y="152">5</text>
+    <text x="418" y="80">6</text>
+    <text x="510" y="224">7</text>
+    <text x="602" y="152">8</text>
+    <text x="50" y="20">0</text>
+    <text x="96" y="20">1</text>
+    <text x="142" y="20">2</text>
+    <text x="188" y="20">3</text>
+    <text x="234" y="20">4</text>
+    <text x="280" y="20">5</text>
+    <text x="326" y="20">6</text>
+    <text x="372" y="20">7</text>
+    <text x="418" y="20">8</text>
+    <text x="464" y="20">9</text>
+    <text x="510" y="20">10</text>
+    <text x="556" y="20">11</text>
+    <text x="602" y="20">12</text>
+    <text x="630" y="20">（周）</text>
+    <text x="211" y="64">A(15)</text>
+    <text x="349" y="64">C(18)</text>
+    <text x="510" y="64">F(15)</text>
+    <text x="349" y="136">D(17)</text>
+    <text x="165" y="208">B(12)</text>
+    <text x="464" y="210">E(13)</text>
+    <text x="556" y="208">G(20)</text>
   </g>
 </svg>
 </FigureZoom>

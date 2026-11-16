@@ -91,73 +91,87 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 【解】该基础工程流水作业网络计划如图 4-20 所示。通过组织流水作业，使得该基础工程的计算工期由 63 天缩短为 35 天。
 
 <FigureZoom caption="图 4-20 某基础工程流水施工网络计划">
-<svg viewBox="0 0 836 326" role="img" aria-label="图 4-20 某基础工程流水施工网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 760 300" role="img" aria-label="图 4-20 某基础工程流水施工网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-20" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-20" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="30" cy="45" r="13"></circle>
-    <circle cx="150" cy="45" r="13"></circle>
-    <circle cx="270" cy="45" r="13"></circle>
-    <circle cx="390" cy="45" r="13"></circle>
-    <circle cx="150" cy="145" r="13"></circle>
-    <circle cx="270" cy="145" r="13"></circle>
-    <circle cx="390" cy="145" r="13"></circle>
-    <circle cx="510" cy="145" r="13"></circle>
-    <circle cx="270" cy="245" r="13"></circle>
-    <circle cx="390" cy="245" r="13"></circle>
-    <circle cx="510" cy="245" r="13"></circle>
-    <circle cx="630" cy="245" r="13"></circle>
-    <circle cx="510" cy="315" r="13"></circle>
-    <circle cx="750" cy="245" r="13"></circle>
-    <path d="M44,45 H136" marker-end="url(#arrow-4-20)"></path>
-    <path d="M164,45 H256" marker-end="url(#arrow-4-20)"></path>
-    <path d="M284,45 H376" marker-end="url(#arrow-4-20)"></path>
-    <path d="M150,59 V131" marker-end="url(#arrow-4-20)"></path>
-    <path d="M284,145 H376" marker-end="url(#arrow-4-20)"></path>
-    <path d="M400,58 L496,131" marker-end="url(#arrow-4-20)"></path>
-    <path d="M163,158 L256,231" marker-end="url(#arrow-4-20)"></path>
-    <path d="M404,245 H496" marker-end="url(#arrow-4-20)"></path>
-    <path d="M523,158 L616,231" marker-end="url(#arrow-4-20)"></path>
-    <path d="M283,258 L496,301" marker-end="url(#arrow-4-20)"></path>
-    <path d="M523,302 L616,258" marker-end="url(#arrow-4-20)"></path>
-    <path d="M644,245 H736" marker-end="url(#arrow-4-20)"></path>
-    <path d="M270,59 V131" stroke-dasharray="5 4"></path>
-    <path d="M164,145 H256" stroke-dasharray="5 4"></path>
-    <path d="M390,131 V59" stroke-dasharray="5 4"></path>
-    <path d="M390,159 V231" stroke-dasharray="5 4"></path>
-    <path d="M284,245 H376" stroke-dasharray="5 4"></path>
-    <path d="M510,231 V159" stroke-dasharray="5 4"></path>
-    <path d="M510,259 V301" stroke-dasharray="5 4"></path>
+    <!-- 关键线路双线（1->2->3->7->11->13->14） -->
+    <line x1="50" y1="44" x2="108" y2="44"/><line x1="50" y1="48" x2="108" y2="48"/>
+    <line x1="140" y1="44" x2="198" y2="44"/><line x1="140" y1="48" x2="198" y2="48"/>
+    <path d="M230,44 H422 V101"/><path d="M230,48 H418 V101"/>
+    <path d="M435,114 H512 V171"/><path d="M435,118 H508 V171"/>
+    <path d="M525,184 H602 V241"/><path d="M525,188 H598 V241"/>
+    <line x1="615" y1="254" x2="688" y2="254"/><line x1="615" y1="258" x2="688" y2="258"/>
+    <line x1="106" y1="46" x2="110" y2="46" marker-end="url(#arrow-4-20)"/>
+    <line x1="196" y1="46" x2="200" y2="46" marker-end="url(#arrow-4-20)"/>
+    <line x1="420" y1="97" x2="420" y2="101" marker-end="url(#arrow-4-20)"/>
+    <line x1="510" y1="167" x2="510" y2="171" marker-end="url(#arrow-4-20)"/>
+    <line x1="600" y1="237" x2="600" y2="241" marker-end="url(#arrow-4-20)"/>
+    <line x1="686" y1="256" x2="690" y2="256" marker-end="url(#arrow-4-20)"/>
+    <!-- 非关键实箭线 -->
+    <path d="M125,61 V116 H200" marker-end="url(#arrow-4-20)"/>
+    <line x1="310" y1="116" x2="345" y2="116" marker-end="url(#arrow-4-20)"/>
+    <path d="M215,131 V186 H280" marker-end="url(#arrow-4-20)"/>
+    <line x1="375" y1="186" x2="435" y2="186" marker-end="url(#arrow-4-20)"/>
+    <path d="M295,201 V256 H435" marker-end="url(#arrow-4-20)"/>
+    <line x1="465" y1="256" x2="585" y2="256" marker-end="url(#arrow-4-20)"/>
+    <!-- 虚箭线 7 条：3->5, 4->5, 6->7, 6->9, 8->9, 10->11, 10->12 -->
+    <line x1="215" y1="61" x2="215" y2="101" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)" opacity="0"/>
+    <path d="M295,46 V101" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
+    <line x1="230" y1="116" x2="280" y2="116" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
+    <line x1="375" y1="116" x2="405" y2="116" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
+    <line x1="360" y1="131" x2="360" y2="171" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
+    <line x1="310" y1="186" x2="345" y2="186" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
+    <line x1="465" y1="186" x2="495" y2="186" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
+    <line x1="450" y1="201" x2="450" y2="241" stroke-dasharray="4 3" marker-end="url(#arrow-4-20)"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="30" y="45" font-size="14">1</text>
-    <text x="150" y="45" font-size="14">2</text>
-    <text x="270" y="45" font-size="14">3</text>
-    <text x="390" y="45" font-size="14">7</text>
-    <text x="150" y="145" font-size="14">4</text>
-    <text x="270" y="145" font-size="14">5</text>
-    <text x="390" y="145" font-size="14">6</text>
-    <text x="510" y="145" font-size="14">11</text>
-    <text x="270" y="245" font-size="14">8</text>
-    <text x="390" y="245" font-size="14">9</text>
-    <text x="510" y="245" font-size="14">10</text>
-    <text x="630" y="245" font-size="14">13</text>
-    <text x="510" y="315" font-size="14">12</text>
-    <text x="750" y="245" font-size="14">14</text>
-    <text x="90" y="30" font-size="14">挖1</text><text x="90" y="66" font-size="14">7</text>
-    <text x="210" y="30" font-size="14">挖2</text><text x="210" y="66" font-size="14">7</text>
-    <text x="330" y="30" font-size="14">挖3</text><text x="330" y="66" font-size="14">7</text>
-    <text x="132" y="100" font-size="14">垫1</text><text x="168" y="100" font-size="14">5</text>
-    <text x="330" y="130" font-size="14">垫2</text><text x="330" y="166" font-size="14">5</text>
-    <text x="440" y="78" font-size="14">垫3</text><text x="478" y="116" font-size="14">5</text>
-    <text x="195" y="186" font-size="14">基1</text><text x="222" y="220" font-size="14">6</text>
-    <text x="450" y="230" font-size="14">基2</text><text x="450" y="266" font-size="14">6</text>
-    <text x="560" y="186" font-size="14">基3</text><text x="596" y="220" font-size="14">6</text>
-    <text x="378" y="296" font-size="14">填1</text><text x="404" y="286" font-size="14">3</text>
-    <text x="576" y="288" font-size="14">填2</text><text x="576" y="256" font-size="14">3</text>
-    <text x="690" y="230" font-size="14">填3</text><text x="690" y="266" font-size="14">3</text>
-    <text x="790" y="40" font-size="15">Tc=35</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="35" cy="46" r="15"/>
+    <circle cx="125" cy="46" r="15"/>
+    <circle cx="215" cy="46" r="15"/>
+    <circle cx="215" cy="116" r="15"/>
+    <circle cx="295" cy="116" r="15"/>
+    <circle cx="360" cy="116" r="15"/>
+    <circle cx="420" cy="116" r="15"/>
+    <circle cx="295" cy="186" r="15"/>
+    <circle cx="360" cy="186" r="15"/>
+    <circle cx="450" cy="186" r="15"/>
+    <circle cx="510" cy="186" r="15"/>
+    <circle cx="450" cy="256" r="15"/>
+    <circle cx="600" cy="256" r="15"/>
+    <circle cx="705" cy="256" r="15"/>
+  </g>
+  <g fill="currentColor" font-size="14" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="35" y="46">1</text>
+    <text x="125" y="46">2</text>
+    <text x="215" y="46">3</text>
+    <text x="215" y="116">4</text>
+    <text x="295" y="116">5</text>
+    <text x="360" y="116">6</text>
+    <text x="420" y="116">7</text>
+    <text x="295" y="186">8</text>
+    <text x="360" y="186">9</text>
+    <text x="450" y="186">10</text>
+    <text x="510" y="186">11</text>
+    <text x="450" y="256">12</text>
+    <text x="600" y="256">13</text>
+    <text x="705" y="256">14</text>
+    <text x="80" y="30">挖1</text><text x="80" y="62">7</text>
+    <text x="170" y="30">挖2</text><text x="170" y="62">7</text>
+    <text x="325" y="30">挖3</text><text x="325" y="62">7</text>
+    <text x="165" y="100">垫1</text><text x="165" y="132">5</text>
+    <text x="327" y="100">垫2</text><text x="327" y="132">5</text>
+    <text x="465" y="100">垫3</text><text x="465" y="132">5</text>
+    <text x="255" y="170">基1</text><text x="255" y="202">6</text>
+    <text x="405" y="170">基2</text><text x="405" y="202">6</text>
+    <text x="555" y="170">基3</text><text x="555" y="202">6</text>
+    <text x="365" y="240">填1</text><text x="365" y="272">3</text>
+    <text x="525" y="240">填2</text><text x="525" y="272">3</text>
+    <text x="652" y="240">填3</text><text x="652" y="272">3</text>
+    <text x="705" y="218" font-style="italic">T<tspan font-size="11" dy="3">c</tspan><tspan dy="-3">=35</tspan></text>
   </g>
 </svg>
 </FigureZoom>
@@ -175,121 +189,122 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 【例 4-7】某工程项目双代号时标网络计划如图 4-21 所示，该计划执行到第 35 天下班时刻检查时，其实际进度如图中前锋线所示。试分析目前实际进度对后续工作和总工期的影响，并提出相应的进度调整措施。
 
 <FigureZoom caption="图 4-21 某工程项目时标网络计划">
-<svg viewBox="0 0 773 364" role="img" aria-label="图 4-21 某工程项目时标网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 736 320" role="img" aria-label="图 4-21 某工程项目时标网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-21" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-21" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="50" y1="34" x2="739" y2="34"></line>
-    <line x1="50" y1="336" x2="739" y2="336"></line>
-    <line x1="50" y1="30" x2="50" y2="38"></line>
-    <line x1="103" y1="30" x2="103" y2="38"></line>
-    <line x1="156" y1="30" x2="156" y2="38"></line>
-    <line x1="209" y1="30" x2="209" y2="38"></line>
-    <line x1="262" y1="30" x2="262" y2="38"></line>
-    <line x1="315" y1="30" x2="315" y2="38"></line>
-    <line x1="368" y1="30" x2="368" y2="38"></line>
-    <line x1="421" y1="30" x2="421" y2="38"></line>
-    <line x1="474" y1="30" x2="474" y2="38"></line>
-    <line x1="527" y1="30" x2="527" y2="38"></line>
-    <line x1="580" y1="30" x2="580" y2="38"></line>
-    <line x1="633" y1="30" x2="633" y2="38"></line>
-    <line x1="686" y1="30" x2="686" y2="38"></line>
-    <line x1="739" y1="30" x2="739" y2="38"></line>
-    <line x1="50" y1="332" x2="50" y2="340"></line>
-    <line x1="103" y1="332" x2="103" y2="340"></line>
-    <line x1="156" y1="332" x2="156" y2="340"></line>
-    <line x1="209" y1="332" x2="209" y2="340"></line>
-    <line x1="262" y1="332" x2="262" y2="340"></line>
-    <line x1="315" y1="332" x2="315" y2="340"></line>
-    <line x1="368" y1="332" x2="368" y2="340"></line>
-    <line x1="421" y1="332" x2="421" y2="340"></line>
-    <line x1="474" y1="332" x2="474" y2="340"></line>
-    <line x1="527" y1="332" x2="527" y2="340"></line>
-    <line x1="580" y1="332" x2="580" y2="340"></line>
-    <line x1="633" y1="332" x2="633" y2="340"></line>
-    <line x1="686" y1="332" x2="686" y2="340"></line>
-    <line x1="739" y1="332" x2="739" y2="340"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="50" cy="150" r="13"></circle>
-    <circle cx="209" cy="150" r="13"></circle>
-    <circle cx="156" cy="60" r="13"></circle>
-    <circle cx="262" cy="240" r="13"></circle>
-    <circle cx="315" cy="150" r="13"></circle>
-    <circle cx="474" cy="240" r="13"></circle>
-    <circle cx="315" cy="60" r="13"></circle>
-    <circle cx="633" cy="150" r="13"></circle>
-    <circle cx="739" cy="150" r="13"></circle>
-    <path d="M50,137 V60 H143" marker-end="url(#arrow-4-21)"></path>
-    <path d="M63,150 H196" marker-end="url(#arrow-4-21)"></path>
-    <path d="M50,163 V240 H249" marker-end="url(#arrow-4-21)"></path>
-    <path d="M169,60 H262" marker-end="url(#arrow-4-21)"></path>
-    <polyline points="262,60 268,55 274,65 280,55 286,65 292,55 298,65 302,60"></polyline>
-    <path d="M222,150 H302" marker-end="url(#arrow-4-21)"></path>
-    <path d="M275,240 H461" marker-end="url(#arrow-4-21)"></path>
-    <path d="M328,150 H620" marker-end="url(#arrow-4-21)"></path>
-    <path d="M328,60 H527" marker-end="url(#arrow-4-21)"></path>
-    <polyline points="527,60 533,55 539,65 545,55 551,65 557,55 563,65 569,55 575,65 581,55 587,65 593,55 599,65 605,55 611,65 617,55 623,65 629,55 633,60"></polyline>
-    <path d="M633,60 V137"></path>
-    <path d="M487,240 H633 V163" marker-end="url(#arrow-4-21)"></path>
-    <path d="M646,150 H726" marker-end="url(#arrow-4-21)"></path>
-    <path d="M315,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-21)"></path>
-    <path d="M315,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="315,278 321,273 327,283 333,273 339,283 345,273 351,283 357,273 363,283 369,273 375,283 381,273 387,283 393,273 399,283 405,273 411,283 417,273 423,283 429,273 435,283 441,273 447,283 453,273 459,283 461,278" stroke-dasharray="5 4"></polyline>
-    <path d="M474,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-21)"></path>
-    <polyline points="235.5,30 209,60 262,150 209,240 235.5,336" stroke-dasharray="12 4 2 4" stroke-width="1.6"></polyline>
+    <line x1="56" y1="36" x2="654" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="102.0" y1="30" x2="102.0" y2="36"/>
+    <line x1="148.0" y1="30" x2="148.0" y2="36"/>
+    <line x1="194.0" y1="30" x2="194.0" y2="36"/>
+    <line x1="240.0" y1="30" x2="240.0" y2="36"/>
+    <line x1="286.0" y1="30" x2="286.0" y2="36"/>
+    <line x1="332.0" y1="30" x2="332.0" y2="36"/>
+    <line x1="378.0" y1="30" x2="378.0" y2="36"/>
+    <line x1="424.0" y1="30" x2="424.0" y2="36"/>
+    <line x1="470.0" y1="30" x2="470.0" y2="36"/>
+    <line x1="516.0" y1="30" x2="516.0" y2="36"/>
+    <line x1="562.0" y1="30" x2="562.0" y2="36"/>
+    <line x1="608.0" y1="30" x2="608.0" y2="36"/>
+    <line x1="654.0" y1="30" x2="654.0" y2="36"/>
+    <line x1="56" y1="286" x2="654" y2="286"/>
+    <line x1="56.0" y1="286" x2="56.0" y2="292"/>
+    <line x1="102.0" y1="286" x2="102.0" y2="292"/>
+    <line x1="148.0" y1="286" x2="148.0" y2="292"/>
+    <line x1="194.0" y1="286" x2="194.0" y2="292"/>
+    <line x1="240.0" y1="286" x2="240.0" y2="292"/>
+    <line x1="286.0" y1="286" x2="286.0" y2="292"/>
+    <line x1="332.0" y1="286" x2="332.0" y2="292"/>
+    <line x1="378.0" y1="286" x2="378.0" y2="292"/>
+    <line x1="424.0" y1="286" x2="424.0" y2="292"/>
+    <line x1="470.0" y1="286" x2="470.0" y2="292"/>
+    <line x1="516.0" y1="286" x2="516.0" y2="292"/>
+    <line x1="562.0" y1="286" x2="562.0" y2="292"/>
+    <line x1="608.0" y1="286" x2="608.0" y2="292"/>
+    <line x1="654.0" y1="286" x2="654.0" y2="292"/>
+    <path d="M56,139 V80 H135" marker-end="url(#arrow-4-21)"/>
+    <line x1="69" y1="152" x2="158" y2="152" marker-end="url(#arrow-4-21)"/>
+    <path d="M56,165 V224 H227" marker-end="url(#arrow-4-21)"/>
+    <line x1="161" y1="80" x2="263" y2="80"/>
+    <line x1="184" y1="152" x2="319" y2="152" marker-end="url(#arrow-4-21)"/>
+    <line x1="253" y1="224" x2="411" y2="224" marker-end="url(#arrow-4-21)"/>
+    <line x1="345" y1="80" x2="446.99999999999994" y2="80"/>
+    <line x1="345" y1="152" x2="549" y2="152" marker-end="url(#arrow-4-21)"/>
+    <path d="M437,224 H562 V165" marker-end="url(#arrow-4-21)"/>
+    <line x1="575" y1="152" x2="641" y2="152" marker-end="url(#arrow-4-21)"/>
+    <line x1="332" y1="139" x2="332" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-21)"/>
+    <line x1="332" y1="165" x2="332" y2="194" stroke-dasharray="4 3"/>
+    <line x1="424" y1="194" x2="424" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-21)"/>
+    <path d="M263,80 L265.5,76 L268.0,80 L270.5,84 L273.0,80 L275.5,76 L278.0,80 L280.5,84 L283.0,80 L285.5,76 L288.0,80 L290.5,84 L293.0,80 L295.5,76 L298.0,80 L300.5,84 L303.0,80 L305.5,76 L308.0,80 L313,80 L319,80" marker-end="url(#arrow-4-21)"/>
+    <path d="M446.99999999999994,80 L449.5,76 L452.0,80 L454.5,84 L457.0,80 L459.5,76 L462.0,80 L464.5,84 L467.0,80 L469.5,76 L472.0,80 L474.5,84 L477.0,80 L479.5,76 L482.0,80 L484.5,84 L487.0,80 L489.5,76 L492.0,80 L494.5,84 L497.0,80 L499.5,76 L502.0,80 L504.5,84 L507.0,80 L509.5,76 L512.0,80 L514.5,84 L517.0,80 L519.5,76 L522.0,80 L524.5,84 L527.0,80 L529.5,76 L532.0,80 L534.5,84 L537.0,80 L539.5,76 L542.0,80 L544.5,84 L547.0,80 L549.5,76 L552.0,80 L554.5,84 L557.0,80 L562,80 V139" marker-end="url(#arrow-4-21)"/>
+    <path d="M332,194 L334.5,190 L337.0,194 L339.5,198 L342.0,194 L344.5,190 L347.0,194 L349.5,198 L352.0,194 L354.5,190 L357.0,194 L359.5,198 L362.0,194 L364.5,190 L367.0,194 L369.5,198 L372.0,194 L374.5,190 L377.0,194 L379.5,198 L382.0,194 L384.5,190 L387.0,194 L389.5,198 L392.0,194 L394.5,190 L397.0,194 L399.5,198 L402.0,194 L404.5,190 L407.0,194 L409.5,198 L412.0,194 L414.5,190 L417.0,194 L419.5,198 L422.0,194 L424,194"/>
+    <path d="M240.0,36 L217.0,80 L240.0,152 L217.0,224 L240.0,286" stroke-dasharray="10 4 2 4" stroke-width="1.4"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="50" y="20" font-size="13">0</text>
-    <text x="103" y="20" font-size="13">10</text>
-    <text x="156" y="20" font-size="13">20</text>
-    <text x="209" y="20" font-size="13">30</text>
-    <text x="262" y="20" font-size="13">40</text>
-    <text x="315" y="20" font-size="13">50</text>
-    <text x="368" y="20" font-size="13">60</text>
-    <text x="421" y="20" font-size="13">70</text>
-    <text x="474" y="20" font-size="13">80</text>
-    <text x="527" y="20" font-size="13">90</text>
-    <text x="580" y="20" font-size="13">100</text>
-    <text x="633" y="20" font-size="13">110</text>
-    <text x="686" y="20" font-size="13">120</text>
-    <text x="739" y="20" font-size="13">130</text>
-    <text x="50" y="352" font-size="13">0</text>
-    <text x="103" y="352" font-size="13">10</text>
-    <text x="156" y="352" font-size="13">20</text>
-    <text x="209" y="352" font-size="13">30</text>
-    <text x="262" y="352" font-size="13">40</text>
-    <text x="315" y="352" font-size="13">50</text>
-    <text x="368" y="352" font-size="13">60</text>
-    <text x="421" y="352" font-size="13">70</text>
-    <text x="474" y="352" font-size="13">80</text>
-    <text x="527" y="352" font-size="13">90</text>
-    <text x="580" y="352" font-size="13">100</text>
-    <text x="633" y="352" font-size="13">110</text>
-    <text x="686" y="352" font-size="13">120</text>
-    <text x="739" y="352" font-size="13">130</text>
-    <text x="765" y="20" font-size="14">（天）</text>
-    <text x="765" y="352" font-size="14">（天）</text>
-    <text x="50" y="150" font-size="13">1</text>
-    <text x="209" y="150" font-size="13">2</text>
-    <text x="156" y="60" font-size="13">3</text>
-    <text x="262" y="240" font-size="13">4</text>
-    <text x="315" y="150" font-size="13">5</text>
-    <text x="474" y="240" font-size="13">6</text>
-    <text x="315" y="60" font-size="13">7</text>
-    <text x="633" y="150" font-size="13">8</text>
-    <text x="739" y="150" font-size="13">9</text>
-    <text x="103" y="42" font-size="14">A</text>
-    <text x="129.5" y="132" font-size="14">B</text>
-    <text x="156" y="222" font-size="14">C</text>
-    <text x="209" y="42" font-size="14">D</text>
-    <text x="262" y="132" font-size="14">E</text>
-    <text x="368" y="222" font-size="14">F</text>
-    <text x="474" y="132" font-size="14">I</text>
-    <text x="421" y="42" font-size="14">G</text>
-    <text x="553.5" y="222" font-size="14">H</text>
-    <text x="686" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="56.0" cy="152" r="13"/>
+    <circle cx="171.0" cy="152" r="13"/>
+    <circle cx="148.0" cy="80" r="13"/>
+    <circle cx="240.0" cy="224" r="13"/>
+    <circle cx="332.0" cy="152" r="13"/>
+    <circle cx="424.0" cy="224" r="13"/>
+    <circle cx="332.0" cy="80" r="13"/>
+    <circle cx="562.0" cy="152" r="13"/>
+    <circle cx="654.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="56.0" y="152">1</text>
+    <text x="171.0" y="152">2</text>
+    <text x="148.0" y="80">3</text>
+    <text x="240.0" y="224">4</text>
+    <text x="332.0" y="152">5</text>
+    <text x="424.0" y="224">6</text>
+    <text x="332.0" y="80">7</text>
+    <text x="562.0" y="152">8</text>
+    <text x="654.0" y="152">9</text>
+    <text x="56.0" y="19">0</text>
+    <text x="56.0" y="303">0</text>
+    <text x="102.0" y="19">10</text>
+    <text x="102.0" y="303">10</text>
+    <text x="148.0" y="19">20</text>
+    <text x="148.0" y="303">20</text>
+    <text x="194.0" y="19">30</text>
+    <text x="194.0" y="303">30</text>
+    <text x="240.0" y="19">40</text>
+    <text x="240.0" y="303">40</text>
+    <text x="286.0" y="19">50</text>
+    <text x="286.0" y="303">50</text>
+    <text x="332.0" y="19">60</text>
+    <text x="332.0" y="303">60</text>
+    <text x="378.0" y="19">70</text>
+    <text x="378.0" y="303">70</text>
+    <text x="424.0" y="19">80</text>
+    <text x="424.0" y="303">80</text>
+    <text x="470.0" y="19">90</text>
+    <text x="470.0" y="303">90</text>
+    <text x="516.0" y="19">100</text>
+    <text x="516.0" y="303">100</text>
+    <text x="562.0" y="19">110</text>
+    <text x="562.0" y="303">110</text>
+    <text x="608.0" y="19">120</text>
+    <text x="608.0" y="303">120</text>
+    <text x="654.0" y="19">130</text>
+    <text x="654.0" y="303">130</text>
+    <text x="690.0" y="19">（天）</text>
+    <text x="690.0" y="303">（天）</text>
+    <text x="102.0" y="66">A</text>
+    <text x="111.2" y="138">B</text>
+    <text x="148.0" y="210">C</text>
+    <text x="240.0" y="66">D</text>
+    <text x="249.2" y="138">E</text>
+    <text x="332.0" y="210">F</text>
+    <text x="396.4" y="66">G</text>
+    <text x="447.0" y="138">I</text>
+    <text x="493.0" y="210">H</text>
+    <text x="608.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
@@ -303,72 +318,76 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 如果后续工作拖延的时间完全被允许时，可将拖延后的时间参数代入原计划，并化简网络图（即去掉已执行部分，以进度检查日期为起点，将实际数据代入，绘制出未实施部分的进度计划），即可得调整方案。例如在本例中，以检查时刻第35天为起点，将工作D的实际进度数据及工作G被拖延后的时间参数代入原计划（此时工作D、G的开始时间分别为35天和65天），可得如图4-22所示的调整方案。
 
 <FigureZoom caption="图 4-22 后续工作拖延时间无限制时的网络计划">
-<svg viewBox="0 0 777 330" role="img" aria-label="图 4-22 后续工作拖延时间无限制时的网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 575 264" role="img" aria-label="图 4-22 后续工作拖延时间无限制时的网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-22" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-22" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="55" y1="34" x2="752" y2="34"></line>
-    <line x1="55" y1="30" x2="55" y2="38"></line>
-    <line x1="128.36842105263156" y1="30" x2="128.36842105263156" y2="38"></line>
-    <line x1="201.73684210526315" y1="30" x2="201.73684210526315" y2="38"></line>
-    <line x1="275.10526315789474" y1="30" x2="275.10526315789474" y2="38"></line>
-    <line x1="348.4736842105263" y1="30" x2="348.4736842105263" y2="38"></line>
-    <line x1="421.8421052631579" y1="30" x2="421.8421052631579" y2="38"></line>
-    <line x1="495.2105263157895" y1="30" x2="495.2105263157895" y2="38"></line>
-    <line x1="568.578947368421" y1="30" x2="568.578947368421" y2="38"></line>
-    <line x1="641.9473684210526" y1="30" x2="641.9473684210526" y2="38"></line>
-    <line x1="715.3157894736843" y1="30" x2="715.3157894736843" y2="38"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="91.68421052631578" cy="240" r="13"></circle>
-    <circle cx="165.05263157894737" cy="150" r="13"></circle>
-    <circle cx="385.15789473684214" cy="240" r="13"></circle>
-    <circle cx="165.05263157894737" cy="60" r="13"></circle>
-    <circle cx="605.2631578947369" cy="150" r="13"></circle>
-    <circle cx="752" cy="150" r="13"></circle>
-    <path d="M55,40 V330"></path>
-    <path d="M55,240 H78.68421052631578" marker-end="url(#arrow-4-22)"></path>
-    <path d="M55,150 H152.05263157894737" marker-end="url(#arrow-4-22)"></path>
-    <path d="M55,60 H152.05263157894737" marker-end="url(#arrow-4-22)"></path>
-    <path d="M104.68421052631578,240 H372.15789473684214" marker-end="url(#arrow-4-22)"></path>
-    <path d="M178.05263157894737,60 H458.5263157894737" marker-end="url(#arrow-4-22)"></path>
-    <polyline points="458.5263157894737,60 464.5263157894737,55 470.5263157894737,65 476.5263157894737,55 482.5263157894737,65 488.5263157894737,55 494.5263157894737,65 500.5263157894737,55 506.5263157894737,65 512.5263157894738,55 518.5263157894738,65 524.5263157894738,55 530.5263157894738,65 536.5263157894738,55 542.5263157894738,65 548.5263157894738,55 554.5263157894738,65 560.5263157894738,55 566.5263157894738,65 572.5263157894738,55 578.5263157894738,65 584.5263157894738,55 590.5263157894738,65 596.5263157894738,55 602.5263157894738,65 605.2631578947369,60"></polyline>
-    <path d="M605.2631578947369,60 V137"></path>
-    <path d="M178.05263157894737,150 H592.2631578947369" marker-end="url(#arrow-4-22)"></path>
-    <path d="M398.15789473684214,240 H605.2631578947369 V163" marker-end="url(#arrow-4-22)"></path>
-    <path d="M618.2631578947369,150 H739" marker-end="url(#arrow-4-22)"></path>
-    <path d="M165.05263157894737,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-22)"></path>
-    <path d="M165.05263157894737,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="165.05263157894737,278 171.05263157894737,273 177.05263157894737,283 183.05263157894737,273 189.05263157894737,283 195.05263157894737,273 201.05263157894737,283 207.05263157894737,273 213.05263157894737,283 219.05263157894737,273 225.05263157894737,283 231.05263157894737,273 237.05263157894737,283 243.05263157894737,273 249.05263157894737,283 255.05263157894737,273 261.0526315789474,283 267.0526315789474,273 273.0526315789474,283 279.0526315789474,273 285.0526315789474,283 291.0526315789474,273 297.0526315789474,283 303.0526315789474,273 309.0526315789474,283 315.0526315789474,273 321.0526315789474,283 327.0526315789474,273 333.0526315789474,283 339.0526315789474,273 345.0526315789474,283 351.0526315789474,273 357.0526315789474,283 363.0526315789474,273 369.0526315789474,283 372.15789473684214,278" stroke-dasharray="5 4"></polyline>
-    <path d="M385.15789473684214,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-22)"></path>
+    <line x1="56" y1="36" x2="492.99999999999994" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="79.0" y1="30" x2="79.0" y2="36"/>
+    <line x1="125.0" y1="30" x2="125.0" y2="36"/>
+    <line x1="171.0" y1="30" x2="171.0" y2="36"/>
+    <line x1="217.0" y1="30" x2="217.0" y2="36"/>
+    <line x1="263.0" y1="30" x2="263.0" y2="36"/>
+    <line x1="309.0" y1="30" x2="309.0" y2="36"/>
+    <line x1="355.0" y1="30" x2="355.0" y2="36"/>
+    <line x1="401.0" y1="30" x2="401.0" y2="36"/>
+    <line x1="447.0" y1="30" x2="447.0" y2="36"/>
+    <line x1="493.0" y1="30" x2="493.0" y2="36"/>
+    <path d="M56,36 V140 L50,145 L62,151 L56,156 V244"/>
+    <line x1="56" y1="80" x2="148" y2="80"/>
+    <line x1="56" y1="152" x2="158" y2="152" marker-end="url(#arrow-4-22)"/>
+    <line x1="56" y1="224" x2="89" y2="224" marker-end="url(#arrow-4-22)"/>
+    <line x1="115" y1="224" x2="250" y2="224" marker-end="url(#arrow-4-22)"/>
+    <line x1="184" y1="80" x2="286" y2="80"/>
+    <line x1="184" y1="152" x2="388" y2="152" marker-end="url(#arrow-4-22)"/>
+    <path d="M276,224 H401 V165" marker-end="url(#arrow-4-22)"/>
+    <line x1="414" y1="152" x2="479.99999999999994" y2="152" marker-end="url(#arrow-4-22)"/>
+    <line x1="171" y1="139" x2="171" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-22)"/>
+    <line x1="171" y1="165" x2="171" y2="194" stroke-dasharray="4 3"/>
+    <line x1="263" y1="194" x2="263" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-22)"/>
+    <path d="M148,80 L150.5,76 L153.0,80 L158,80" marker-end="url(#arrow-4-22)"/>
+    <path d="M286,80 L288.5,76 L291.0,80 L293.5,84 L296.0,80 L298.5,76 L301.0,80 L303.5,84 L306.0,80 L308.5,76 L311.0,80 L313.5,84 L316.0,80 L318.5,76 L321.0,80 L323.5,84 L326.0,80 L328.5,76 L331.0,80 L333.5,84 L336.0,80 L338.5,76 L341.0,80 L343.5,84 L346.0,80 L348.5,76 L351.0,80 L353.5,84 L356.0,80 L358.5,76 L361.0,80 L363.5,84 L366.0,80 L368.5,76 L371.0,80 L373.5,84 L376.0,80 L378.5,76 L381.0,80 L383.5,84 L386.0,80 L388.5,76 L391.0,80 L393.5,84 L396.0,80 L401,80 V139" marker-end="url(#arrow-4-22)"/>
+    <path d="M171,194 L173.5,190 L176.0,194 L178.5,198 L181.0,194 L183.5,190 L186.0,194 L188.5,198 L191.0,194 L193.5,190 L196.0,194 L198.5,198 L201.0,194 L203.5,190 L206.0,194 L208.5,198 L211.0,194 L213.5,190 L216.0,194 L218.5,198 L221.0,194 L223.5,190 L226.0,194 L228.5,198 L231.0,194 L233.5,190 L236.0,194 L238.5,198 L241.0,194 L243.5,190 L246.0,194 L248.5,198 L251.0,194 L253.5,190 L256.0,194 L258.5,198 L261.0,194 L263,194"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="55" y="20" font-size="13">35</text>
-    <text x="128.36842105263156" y="20" font-size="13">45</text>
-    <text x="201.73684210526315" y="20" font-size="13">55</text>
-    <text x="275.10526315789474" y="20" font-size="13">65</text>
-    <text x="348.4736842105263" y="20" font-size="13">75</text>
-    <text x="421.8421052631579" y="20" font-size="13">85</text>
-    <text x="495.2105263157895" y="20" font-size="13">95</text>
-    <text x="568.578947368421" y="20" font-size="13">105</text>
-    <text x="641.9473684210526" y="20" font-size="13">115</text>
-    <text x="715.3157894736843" y="20" font-size="13">125</text>
-    <text x="778" y="20" font-size="14">（天）</text>
-    <text x="91.68421052631578" y="240" font-size="13">4</text>
-    <text x="165.05263157894737" y="150" font-size="13">5</text>
-    <text x="385.15789473684214" y="240" font-size="13">6</text>
-    <text x="165.05263157894737" y="60" font-size="13">7</text>
-    <text x="605.2631578947369" y="150" font-size="13">8</text>
-    <text x="752" y="150" font-size="13">9</text>
-    <text x="106.3578947368421" y="132" font-size="14">E</text>
-    <text x="106.3578947368421" y="42" font-size="14">D</text>
-    <text x="69.67368421052632" y="222" font-size="14">C</text>
-    <text x="238.42105263157896" y="222" font-size="14">F</text>
-    <text x="311.7894736842105" y="42" font-size="14">G</text>
-    <text x="385.15789473684214" y="132" font-size="14">I</text>
-    <text x="495.2105263157895" y="222" font-size="14">H</text>
-    <text x="678.6315789473684" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="102.0" cy="224" r="13"/>
+    <circle cx="171.0" cy="152" r="13"/>
+    <circle cx="263.0" cy="224" r="13"/>
+    <circle cx="171.0" cy="80" r="13"/>
+    <circle cx="401.0" cy="152" r="13"/>
+    <circle cx="493.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="102.0" y="224">4</text>
+    <text x="171.0" y="152">5</text>
+    <text x="263.0" y="224">6</text>
+    <text x="171.0" y="80">7</text>
+    <text x="401.0" y="152">8</text>
+    <text x="493.0" y="152">9</text>
+    <text x="56.0" y="19">35</text>
+    <text x="79.0" y="19">40</text>
+    <text x="125.0" y="19">50</text>
+    <text x="171.0" y="19">60</text>
+    <text x="217.0" y="19">70</text>
+    <text x="263.0" y="19">80</text>
+    <text x="309.0" y="19">90</text>
+    <text x="355.0" y="19">100</text>
+    <text x="401.0" y="19">110</text>
+    <text x="447.0" y="19">120</text>
+    <text x="493.0" y="19">130</text>
+    <text x="529.0" y="19">（天）</text>
+    <text x="102.0" y="66">D</text>
+    <text x="111.2" y="138">E</text>
+    <text x="79.0" y="210">C</text>
+    <text x="180.2" y="210">F</text>
+    <text x="235.4" y="66">G</text>
+    <text x="286.0" y="138">I</text>
+    <text x="332.0" y="210">H</text>
+    <text x="447.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
@@ -380,74 +399,79 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 如果后续工作不允许拖延或拖延的时间有限制时，需要根据限制条件对网络计划进行调整，寻求最优方案。例如在本例中，如果工作 G 的开始时间不允许超过第 60 天，则只能将其紧前工作 D 的持续时间压缩为 25 天，调整后的网络计划如图 4-23 所示。如果在工作 D、G 之间还有多项工作，则可以利用工期优化的原理确定应压缩的工作，得到满足 G 工作限制条件的最优调整方案。
 
 <FigureZoom caption="图 4-23 后续工作拖延时间有限制时的网络计划">
-<svg viewBox="0 0 779 340" role="img" aria-label="图 4-23 后续工作拖延时间有限制时的网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 575 264" role="img" aria-label="图 4-23 后续工作拖延时间有限制时的网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-23" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-23" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="55" y1="34" x2="754" y2="34"></line>
-    <line x1="55" y1="30" x2="55" y2="38"></line>
-    <line x1="128.57894736842104" y1="30" x2="128.57894736842104" y2="38"></line>
-    <line x1="202.1578947368421" y1="30" x2="202.1578947368421" y2="38"></line>
-    <line x1="275.7368421052632" y1="30" x2="275.7368421052632" y2="38"></line>
-    <line x1="349.3157894736842" y1="30" x2="349.3157894736842" y2="38"></line>
-    <line x1="422.89473684210526" y1="30" x2="422.89473684210526" y2="38"></line>
-    <line x1="496.47368421052636" y1="30" x2="496.47368421052636" y2="38"></line>
-    <line x1="570.0526315789474" y1="30" x2="570.0526315789474" y2="38"></line>
-    <line x1="643.6315789473684" y1="30" x2="643.6315789473684" y2="38"></line>
-    <line x1="717.2105263157895" y1="30" x2="717.2105263157895" y2="38"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="91.78947368421052" cy="240" r="13"></circle>
-    <circle cx="165.3684210526316" cy="150" r="13"></circle>
-    <circle cx="386.10526315789474" cy="240" r="13"></circle>
-    <circle cx="165.3684210526316" cy="60" r="13"></circle>
-    <circle cx="606.8421052631579" cy="150" r="13"></circle>
-    <circle cx="754" cy="150" r="13"></circle>
-    <path d="M55,40 V330"></path>
-    <path d="M55,240 H78.78947368421052" marker-end="url(#arrow-4-23)"></path>
-    <path d="M55,150 H152.3684210526316" marker-end="url(#arrow-4-23)"></path>
-    <path d="M55,60 H152.3684210526316" marker-end="url(#arrow-4-23)"></path>
-    <path d="M104.78947368421052,240 H373.10526315789474" marker-end="url(#arrow-4-23)"></path>
-    <path d="M178.3684210526316,60 H459.6842105263158" marker-end="url(#arrow-4-23)"></path>
-    <polyline points="459.6842105263158,60 465.6842105263158,55 471.6842105263158,65 477.6842105263158,55 483.6842105263158,65 489.6842105263158,55 495.6842105263158,65 501.6842105263158,55 507.6842105263158,65 513.6842105263158,55 519.6842105263158,65 525.6842105263158,55 531.6842105263158,65 537.6842105263158,55 543.6842105263158,65 549.6842105263158,55 555.6842105263158,65 561.6842105263158,55 567.6842105263158,65 573.6842105263158,55 579.6842105263158,65 585.6842105263158,55 591.6842105263158,65 597.6842105263158,55 603.6842105263158,65 606.8421052631579,60"></polyline>
-    <path d="M606.8421052631579,60 V137"></path>
-    <path d="M178.3684210526316,150 H593.8421052631579" marker-end="url(#arrow-4-23)"></path>
-    <path d="M399.10526315789474,240 H606.8421052631579 V163" marker-end="url(#arrow-4-23)"></path>
-    <path d="M619.8421052631579,150 H741" marker-end="url(#arrow-4-23)"></path>
-    <path d="M165.3684210526316,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-23)"></path>
-    <path d="M165.3684210526316,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="165.3684210526316,278 171.3684210526316,273 177.3684210526316,283 183.3684210526316,273 189.3684210526316,283 195.3684210526316,273 201.3684210526316,283 207.3684210526316,273 213.3684210526316,283 219.3684210526316,273 225.3684210526316,283 231.3684210526316,273 237.3684210526316,283 243.3684210526316,273 249.3684210526316,283 255.3684210526316,273 261.36842105263156,283 267.36842105263156,273 273.36842105263156,283 279.36842105263156,273 285.36842105263156,283 291.36842105263156,273 297.36842105263156,283 303.36842105263156,273 309.36842105263156,283 315.36842105263156,273 321.36842105263156,283 327.36842105263156,273 333.36842105263156,283 339.36842105263156,273 345.36842105263156,283 351.36842105263156,273 357.36842105263156,283 363.36842105263156,273 369.36842105263156,283 373.10526315789474,278" stroke-dasharray="5 4"></polyline>
-    <path d="M386.10526315789474,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-23)"></path>
-    <rect x="121.22105263157894" y="22" width="24" height="18"></rect>
-    <text x="133.22105263157894" y="31.0" font-size="13">25</text>
+    <line x1="56" y1="36" x2="492.99999999999994" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="79.0" y1="30" x2="79.0" y2="36"/>
+    <line x1="125.0" y1="30" x2="125.0" y2="36"/>
+    <line x1="171.0" y1="30" x2="171.0" y2="36"/>
+    <line x1="217.0" y1="30" x2="217.0" y2="36"/>
+    <line x1="263.0" y1="30" x2="263.0" y2="36"/>
+    <line x1="309.0" y1="30" x2="309.0" y2="36"/>
+    <line x1="355.0" y1="30" x2="355.0" y2="36"/>
+    <line x1="401.0" y1="30" x2="401.0" y2="36"/>
+    <line x1="447.0" y1="30" x2="447.0" y2="36"/>
+    <line x1="493.0" y1="30" x2="493.0" y2="36"/>
+    <path d="M56,36 V140 L50,145 L62,151 L56,156 V244"/>
+    <line x1="56" y1="80" x2="148" y2="80"/>
+    <line x1="56" y1="152" x2="158" y2="152" marker-end="url(#arrow-4-23)"/>
+    <line x1="56" y1="224" x2="89" y2="224" marker-end="url(#arrow-4-23)"/>
+    <line x1="115" y1="224" x2="250" y2="224" marker-end="url(#arrow-4-23)"/>
+    <line x1="184" y1="80" x2="286" y2="80"/>
+    <line x1="184" y1="152" x2="378" y2="152"/>
+    <path d="M276,224 H401 V165" marker-end="url(#arrow-4-23)"/>
+    <line x1="414" y1="152" x2="479.99999999999994" y2="152" marker-end="url(#arrow-4-23)"/>
+    <line x1="171" y1="139" x2="171" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-23)"/>
+    <line x1="171" y1="165" x2="171" y2="194" stroke-dasharray="4 3"/>
+    <line x1="263" y1="194" x2="263" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-23)"/>
+    <path d="M148,80 L150.5,76 L153.0,80 L158,80" marker-end="url(#arrow-4-23)"/>
+    <path d="M286,80 L288.5,76 L291.0,80 L293.5,84 L296.0,80 L298.5,76 L301.0,80 L303.5,84 L306.0,80 L308.5,76 L311.0,80 L313.5,84 L316.0,80 L318.5,76 L321.0,80 L323.5,84 L326.0,80 L328.5,76 L331.0,80 L333.5,84 L336.0,80 L338.5,76 L341.0,80 L343.5,84 L346.0,80 L348.5,76 L351.0,80 L353.5,84 L356.0,80 L358.5,76 L361.0,80 L363.5,84 L366.0,80 L368.5,76 L371.0,80 L373.5,84 L376.0,80 L378.5,76 L381.0,80 L383.5,84 L386.0,80 L388.5,76 L391.0,80 L393.5,84 L396.0,80 L401,80 V139" marker-end="url(#arrow-4-23)"/>
+    <path d="M171,194 L173.5,190 L176.0,194 L178.5,198 L181.0,194 L183.5,190 L186.0,194 L188.5,198 L191.0,194 L193.5,190 L196.0,194 L198.5,198 L201.0,194 L203.5,190 L206.0,194 L208.5,198 L211.0,194 L213.5,190 L216.0,194 L218.5,198 L221.0,194 L223.5,190 L226.0,194 L228.5,198 L231.0,194 L233.5,190 L236.0,194 L238.5,198 L241.0,194 L243.5,190 L246.0,194 L248.5,198 L251.0,194 L253.5,190 L256.0,194 L258.5,198 L261.0,194 L263,194"/>
+    <path d="M378,152 L380.5,148 L383.0,152 L388,152" marker-end="url(#arrow-4-23)"/>
+    <rect x="90" y="94" width="24" height="20" stroke-width="1.2"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="55" y="20" font-size="13">35</text>
-    <text x="128.57894736842104" y="20" font-size="13">45</text>
-    <text x="202.1578947368421" y="20" font-size="13">55</text>
-    <text x="275.7368421052632" y="20" font-size="13">65</text>
-    <text x="349.3157894736842" y="20" font-size="13">75</text>
-    <text x="422.89473684210526" y="20" font-size="13">85</text>
-    <text x="496.47368421052636" y="20" font-size="13">95</text>
-    <text x="570.0526315789474" y="20" font-size="13">105</text>
-    <text x="643.6315789473684" y="20" font-size="13">115</text>
-    <text x="717.2105263157895" y="20" font-size="13">125</text>
-    <text x="780" y="20" font-size="14">（天）</text>
-    <text x="91.78947368421052" y="240" font-size="13">4</text>
-    <text x="165.3684210526316" y="150" font-size="13">5</text>
-    <text x="386.10526315789474" y="240" font-size="13">6</text>
-    <text x="165.3684210526316" y="60" font-size="13">7</text>
-    <text x="606.8421052631579" y="150" font-size="13">8</text>
-    <text x="754" y="150" font-size="13">9</text>
-    <text x="106.50526315789475" y="132" font-size="14">E</text>
-    <text x="106.50526315789475" y="42" font-size="14">D</text>
-    <text x="69.71578947368421" y="222" font-size="14">C</text>
-    <text x="238.94736842105263" y="222" font-size="14">F</text>
-    <text x="312.5263157894737" y="42" font-size="14">G</text>
-    <text x="386.10526315789474" y="132" font-size="14">I</text>
-    <text x="496.47368421052636" y="222" font-size="14">H</text>
-    <text x="680.421052631579" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="102.0" cy="224" r="13"/>
+    <circle cx="171.0" cy="152" r="13"/>
+    <circle cx="263.0" cy="224" r="13"/>
+    <circle cx="171.0" cy="80" r="13"/>
+    <circle cx="401.0" cy="152" r="13"/>
+    <circle cx="493.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="102.0" y="224">4</text>
+    <text x="171.0" y="152">5</text>
+    <text x="263.0" y="224">6</text>
+    <text x="171.0" y="80">7</text>
+    <text x="401.0" y="152">8</text>
+    <text x="493.0" y="152">9</text>
+    <text x="56.0" y="19">35</text>
+    <text x="79.0" y="19">40</text>
+    <text x="125.0" y="19">50</text>
+    <text x="171.0" y="19">60</text>
+    <text x="217.0" y="19">70</text>
+    <text x="263.0" y="19">80</text>
+    <text x="309.0" y="19">90</text>
+    <text x="355.0" y="19">100</text>
+    <text x="401.0" y="19">110</text>
+    <text x="447.0" y="19">120</text>
+    <text x="493.0" y="19">130</text>
+    <text x="529.0" y="19">（天）</text>
+    <text x="102" y="104">25</text>
+    <text x="102.0" y="66">D</text>
+    <text x="111.2" y="138">E</text>
+    <text x="79.0" y="210">C</text>
+    <text x="180.2" y="210">F</text>
+    <text x="235.4" y="66">G</text>
+    <text x="286.0" y="138">I</text>
+    <text x="332.0" y="210">H</text>
+    <text x="447.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
@@ -469,121 +493,122 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 2）工作 E 实际进度正常，既不影响后续工作，也不影响总工期；
 
 <FigureZoom caption="图 4-24 某工程实际进度前锋线">
-<svg viewBox="0 0 776 364" role="img" aria-label="图 4-24 某工程实际进度前锋线" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 736 320" role="img" aria-label="图 4-24 某工程实际进度前锋线" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-24" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-24" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="50" y1="34" x2="739" y2="34"></line>
-    <line x1="50" y1="336" x2="739" y2="336"></line>
-    <line x1="50" y1="30" x2="50" y2="38"></line>
-    <line x1="103" y1="30" x2="103" y2="38"></line>
-    <line x1="156" y1="30" x2="156" y2="38"></line>
-    <line x1="209" y1="30" x2="209" y2="38"></line>
-    <line x1="262" y1="30" x2="262" y2="38"></line>
-    <line x1="315" y1="30" x2="315" y2="38"></line>
-    <line x1="368" y1="30" x2="368" y2="38"></line>
-    <line x1="421" y1="30" x2="421" y2="38"></line>
-    <line x1="474" y1="30" x2="474" y2="38"></line>
-    <line x1="527" y1="30" x2="527" y2="38"></line>
-    <line x1="580" y1="30" x2="580" y2="38"></line>
-    <line x1="633" y1="30" x2="633" y2="38"></line>
-    <line x1="686" y1="30" x2="686" y2="38"></line>
-    <line x1="739" y1="30" x2="739" y2="38"></line>
-    <line x1="50" y1="332" x2="50" y2="340"></line>
-    <line x1="103" y1="332" x2="103" y2="340"></line>
-    <line x1="156" y1="332" x2="156" y2="340"></line>
-    <line x1="209" y1="332" x2="209" y2="340"></line>
-    <line x1="262" y1="332" x2="262" y2="340"></line>
-    <line x1="315" y1="332" x2="315" y2="340"></line>
-    <line x1="368" y1="332" x2="368" y2="340"></line>
-    <line x1="421" y1="332" x2="421" y2="340"></line>
-    <line x1="474" y1="332" x2="474" y2="340"></line>
-    <line x1="527" y1="332" x2="527" y2="340"></line>
-    <line x1="580" y1="332" x2="580" y2="340"></line>
-    <line x1="633" y1="332" x2="633" y2="340"></line>
-    <line x1="686" y1="332" x2="686" y2="340"></line>
-    <line x1="739" y1="332" x2="739" y2="340"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="50" cy="150" r="13"></circle>
-    <circle cx="209" cy="150" r="13"></circle>
-    <circle cx="156" cy="60" r="13"></circle>
-    <circle cx="262" cy="240" r="13"></circle>
-    <circle cx="315" cy="150" r="13"></circle>
-    <circle cx="474" cy="240" r="13"></circle>
-    <circle cx="315" cy="60" r="13"></circle>
-    <circle cx="633" cy="150" r="13"></circle>
-    <circle cx="739" cy="150" r="13"></circle>
-    <path d="M50,137 V60 H143" marker-end="url(#arrow-4-24)"></path>
-    <path d="M63,150 H196" marker-end="url(#arrow-4-24)"></path>
-    <path d="M50,163 V240 H249" marker-end="url(#arrow-4-24)"></path>
-    <path d="M169,60 H262" marker-end="url(#arrow-4-24)"></path>
-    <polyline points="262,60 268,55 274,65 280,55 286,65 292,55 298,65 302,60"></polyline>
-    <path d="M222,150 H302" marker-end="url(#arrow-4-24)"></path>
-    <path d="M275,240 H461" marker-end="url(#arrow-4-24)"></path>
-    <path d="M328,150 H620" marker-end="url(#arrow-4-24)"></path>
-    <path d="M328,60 H527" marker-end="url(#arrow-4-24)"></path>
-    <polyline points="527,60 533,55 539,65 545,55 551,65 557,55 563,65 569,55 575,65 581,55 587,65 593,55 599,65 605,55 611,65 617,55 623,65 629,55 633,60"></polyline>
-    <path d="M633,60 V137"></path>
-    <path d="M487,240 H633 V163" marker-end="url(#arrow-4-24)"></path>
-    <path d="M646,150 H726" marker-end="url(#arrow-4-24)"></path>
-    <path d="M315,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-24)"></path>
-    <path d="M315,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="315,278 321,273 327,283 333,273 339,283 345,273 351,283 357,273 363,283 369,273 375,283 381,273 387,283 393,273 399,283 405,273 411,283 417,273 423,283 429,273 435,283 441,273 447,283 453,273 459,283 461,278" stroke-dasharray="5 4"></polyline>
-    <path d="M474,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-24)"></path>
-    <polyline points="262,30 209,60 262,150 209,240 262,336" stroke-dasharray="12 4 2 4" stroke-width="1.6"></polyline>
+    <line x1="56" y1="36" x2="654" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="102.0" y1="30" x2="102.0" y2="36"/>
+    <line x1="148.0" y1="30" x2="148.0" y2="36"/>
+    <line x1="194.0" y1="30" x2="194.0" y2="36"/>
+    <line x1="240.0" y1="30" x2="240.0" y2="36"/>
+    <line x1="286.0" y1="30" x2="286.0" y2="36"/>
+    <line x1="332.0" y1="30" x2="332.0" y2="36"/>
+    <line x1="378.0" y1="30" x2="378.0" y2="36"/>
+    <line x1="424.0" y1="30" x2="424.0" y2="36"/>
+    <line x1="470.0" y1="30" x2="470.0" y2="36"/>
+    <line x1="516.0" y1="30" x2="516.0" y2="36"/>
+    <line x1="562.0" y1="30" x2="562.0" y2="36"/>
+    <line x1="608.0" y1="30" x2="608.0" y2="36"/>
+    <line x1="654.0" y1="30" x2="654.0" y2="36"/>
+    <line x1="56" y1="286" x2="654" y2="286"/>
+    <line x1="56.0" y1="286" x2="56.0" y2="292"/>
+    <line x1="102.0" y1="286" x2="102.0" y2="292"/>
+    <line x1="148.0" y1="286" x2="148.0" y2="292"/>
+    <line x1="194.0" y1="286" x2="194.0" y2="292"/>
+    <line x1="240.0" y1="286" x2="240.0" y2="292"/>
+    <line x1="286.0" y1="286" x2="286.0" y2="292"/>
+    <line x1="332.0" y1="286" x2="332.0" y2="292"/>
+    <line x1="378.0" y1="286" x2="378.0" y2="292"/>
+    <line x1="424.0" y1="286" x2="424.0" y2="292"/>
+    <line x1="470.0" y1="286" x2="470.0" y2="292"/>
+    <line x1="516.0" y1="286" x2="516.0" y2="292"/>
+    <line x1="562.0" y1="286" x2="562.0" y2="292"/>
+    <line x1="608.0" y1="286" x2="608.0" y2="292"/>
+    <line x1="654.0" y1="286" x2="654.0" y2="292"/>
+    <path d="M56,139 V80 H135" marker-end="url(#arrow-4-24)"/>
+    <line x1="69" y1="152" x2="158" y2="152" marker-end="url(#arrow-4-24)"/>
+    <path d="M56,165 V224 H227" marker-end="url(#arrow-4-24)"/>
+    <line x1="161" y1="80" x2="263" y2="80"/>
+    <line x1="184" y1="152" x2="319" y2="152" marker-end="url(#arrow-4-24)"/>
+    <line x1="253" y1="224" x2="411" y2="224" marker-end="url(#arrow-4-24)"/>
+    <line x1="345" y1="80" x2="446.99999999999994" y2="80"/>
+    <line x1="345" y1="152" x2="549" y2="152" marker-end="url(#arrow-4-24)"/>
+    <path d="M437,224 H562 V165" marker-end="url(#arrow-4-24)"/>
+    <line x1="575" y1="152" x2="641" y2="152" marker-end="url(#arrow-4-24)"/>
+    <line x1="332" y1="139" x2="332" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-24)"/>
+    <line x1="332" y1="165" x2="332" y2="194" stroke-dasharray="4 3"/>
+    <line x1="424" y1="194" x2="424" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-24)"/>
+    <path d="M263,80 L265.5,76 L268.0,80 L270.5,84 L273.0,80 L275.5,76 L278.0,80 L280.5,84 L283.0,80 L285.5,76 L288.0,80 L290.5,84 L293.0,80 L295.5,76 L298.0,80 L300.5,84 L303.0,80 L305.5,76 L308.0,80 L313,80 L319,80" marker-end="url(#arrow-4-24)"/>
+    <path d="M446.99999999999994,80 L449.5,76 L452.0,80 L454.5,84 L457.0,80 L459.5,76 L462.0,80 L464.5,84 L467.0,80 L469.5,76 L472.0,80 L474.5,84 L477.0,80 L479.5,76 L482.0,80 L484.5,84 L487.0,80 L489.5,76 L492.0,80 L494.5,84 L497.0,80 L499.5,76 L502.0,80 L504.5,84 L507.0,80 L509.5,76 L512.0,80 L514.5,84 L517.0,80 L519.5,76 L522.0,80 L524.5,84 L527.0,80 L529.5,76 L532.0,80 L534.5,84 L537.0,80 L539.5,76 L542.0,80 L544.5,84 L547.0,80 L549.5,76 L552.0,80 L554.5,84 L557.0,80 L562,80 V139" marker-end="url(#arrow-4-24)"/>
+    <path d="M332,194 L334.5,190 L337.0,194 L339.5,198 L342.0,194 L344.5,190 L347.0,194 L349.5,198 L352.0,194 L354.5,190 L357.0,194 L359.5,198 L362.0,194 L364.5,190 L367.0,194 L369.5,198 L372.0,194 L374.5,190 L377.0,194 L379.5,198 L382.0,194 L384.5,190 L387.0,194 L389.5,198 L392.0,194 L394.5,190 L397.0,194 L399.5,198 L402.0,194 L404.5,190 L407.0,194 L409.5,198 L412.0,194 L414.5,190 L417.0,194 L419.5,198 L422.0,194 L424,194"/>
+    <path d="M240.0,36 L194.0,80 L240.0,152 L194.0,224 L240.0,286" stroke-dasharray="10 4 2 4" stroke-width="1.4"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="50" y="20" font-size="13">0</text>
-    <text x="103" y="20" font-size="13">10</text>
-    <text x="156" y="20" font-size="13">20</text>
-    <text x="209" y="20" font-size="13">30</text>
-    <text x="262" y="20" font-size="13">40</text>
-    <text x="315" y="20" font-size="13">50</text>
-    <text x="368" y="20" font-size="13">60</text>
-    <text x="421" y="20" font-size="13">70</text>
-    <text x="474" y="20" font-size="13">80</text>
-    <text x="527" y="20" font-size="13">90</text>
-    <text x="580" y="20" font-size="13">100</text>
-    <text x="633" y="20" font-size="13">110</text>
-    <text x="686" y="20" font-size="13">120</text>
-    <text x="739" y="20" font-size="13">130</text>
-    <text x="50" y="352" font-size="13">0</text>
-    <text x="103" y="352" font-size="13">10</text>
-    <text x="156" y="352" font-size="13">20</text>
-    <text x="209" y="352" font-size="13">30</text>
-    <text x="262" y="352" font-size="13">40</text>
-    <text x="315" y="352" font-size="13">50</text>
-    <text x="368" y="352" font-size="13">60</text>
-    <text x="421" y="352" font-size="13">70</text>
-    <text x="474" y="352" font-size="13">80</text>
-    <text x="527" y="352" font-size="13">90</text>
-    <text x="580" y="352" font-size="13">100</text>
-    <text x="633" y="352" font-size="13">110</text>
-    <text x="686" y="352" font-size="13">120</text>
-    <text x="739" y="352" font-size="13">130</text>
-    <text x="765" y="20" font-size="14">（天）</text>
-    <text x="765" y="352" font-size="14">（天）</text>
-    <text x="50" y="150" font-size="13">1</text>
-    <text x="209" y="150" font-size="13">2</text>
-    <text x="156" y="60" font-size="13">3</text>
-    <text x="262" y="240" font-size="13">4</text>
-    <text x="315" y="150" font-size="13">5</text>
-    <text x="474" y="240" font-size="13">6</text>
-    <text x="315" y="60" font-size="13">7</text>
-    <text x="633" y="150" font-size="13">8</text>
-    <text x="739" y="150" font-size="13">9</text>
-    <text x="103" y="42" font-size="14">A</text>
-    <text x="129.5" y="132" font-size="14">B</text>
-    <text x="156" y="222" font-size="14">C</text>
-    <text x="209" y="42" font-size="14">D</text>
-    <text x="262" y="132" font-size="14">E</text>
-    <text x="368" y="222" font-size="14">F</text>
-    <text x="474" y="132" font-size="14">I</text>
-    <text x="421" y="42" font-size="14">G</text>
-    <text x="553.5" y="222" font-size="14">H</text>
-    <text x="686" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="56.0" cy="152" r="13"/>
+    <circle cx="171.0" cy="152" r="13"/>
+    <circle cx="148.0" cy="80" r="13"/>
+    <circle cx="240.0" cy="224" r="13"/>
+    <circle cx="332.0" cy="152" r="13"/>
+    <circle cx="424.0" cy="224" r="13"/>
+    <circle cx="332.0" cy="80" r="13"/>
+    <circle cx="562.0" cy="152" r="13"/>
+    <circle cx="654.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="56.0" y="152">1</text>
+    <text x="171.0" y="152">2</text>
+    <text x="148.0" y="80">3</text>
+    <text x="240.0" y="224">4</text>
+    <text x="332.0" y="152">5</text>
+    <text x="424.0" y="224">6</text>
+    <text x="332.0" y="80">7</text>
+    <text x="562.0" y="152">8</text>
+    <text x="654.0" y="152">9</text>
+    <text x="56.0" y="19">0</text>
+    <text x="56.0" y="303">0</text>
+    <text x="102.0" y="19">10</text>
+    <text x="102.0" y="303">10</text>
+    <text x="148.0" y="19">20</text>
+    <text x="148.0" y="303">20</text>
+    <text x="194.0" y="19">30</text>
+    <text x="194.0" y="303">30</text>
+    <text x="240.0" y="19">40</text>
+    <text x="240.0" y="303">40</text>
+    <text x="286.0" y="19">50</text>
+    <text x="286.0" y="303">50</text>
+    <text x="332.0" y="19">60</text>
+    <text x="332.0" y="303">60</text>
+    <text x="378.0" y="19">70</text>
+    <text x="378.0" y="303">70</text>
+    <text x="424.0" y="19">80</text>
+    <text x="424.0" y="303">80</text>
+    <text x="470.0" y="19">90</text>
+    <text x="470.0" y="303">90</text>
+    <text x="516.0" y="19">100</text>
+    <text x="516.0" y="303">100</text>
+    <text x="562.0" y="19">110</text>
+    <text x="562.0" y="303">110</text>
+    <text x="608.0" y="19">120</text>
+    <text x="608.0" y="303">120</text>
+    <text x="654.0" y="19">130</text>
+    <text x="654.0" y="303">130</text>
+    <text x="690.0" y="19">（天）</text>
+    <text x="690.0" y="303">（天）</text>
+    <text x="102.0" y="66">A</text>
+    <text x="111.2" y="138">B</text>
+    <text x="148.0" y="210">C</text>
+    <text x="240.0" y="66">D</text>
+    <text x="249.2" y="138">E</text>
+    <text x="332.0" y="210">F</text>
+    <text x="396.4" y="66">G</text>
+    <text x="447.0" y="138">I</text>
+    <text x="493.0" y="210">H</text>
+    <text x="608.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
@@ -595,74 +620,75 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 如果该工程项目总工期不允许拖延，则为了保证其按原计划工期130天完成，必须采用工期优化的方法，缩短关键线路上后续工作的持续时间。现假设工作C的后续工作F、H和J均可以压缩10天，通过比较，压缩工作H的持续时间所需付出的代价最小，故将工作H的持续时间由30天缩短为20天。调整后的网络计划如图4-25所示。
 
 <FigureZoom caption="图 4-25 调整后工期不拖延的网络计划">
-<svg viewBox="0 0 565 342" role="img" aria-label="图 4-25 调整后工期不拖延的网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 552 264" role="img" aria-label="图 4-25 调整后工期不拖延的网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-25" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-25" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="55" y1="34" x2="540" y2="34"></line>
-    <line x1="55" y1="30" x2="55" y2="38"></line>
-    <line x1="108.88888888888889" y1="30" x2="108.88888888888889" y2="38"></line>
-    <line x1="162.77777777777777" y1="30" x2="162.77777777777777" y2="38"></line>
-    <line x1="216.66666666666669" y1="30" x2="216.66666666666669" y2="38"></line>
-    <line x1="270.55555555555554" y1="30" x2="270.55555555555554" y2="38"></line>
-    <line x1="324.44444444444446" y1="30" x2="324.44444444444446" y2="38"></line>
-    <line x1="378.33333333333337" y1="30" x2="378.33333333333337" y2="38"></line>
-    <line x1="432.22222222222223" y1="30" x2="432.22222222222223" y2="38"></line>
-    <line x1="486.11111111111114" y1="30" x2="486.11111111111114" y2="38"></line>
-    <line x1="540" y1="30" x2="540" y2="38"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="55" cy="240" r="13"></circle>
-    <circle cx="108.88888888888889" cy="150" r="13"></circle>
-    <circle cx="270.55555555555554" cy="240" r="13"></circle>
-    <circle cx="108.88888888888889" cy="60" r="13"></circle>
-    <circle cx="432.22222222222223" cy="150" r="13"></circle>
-    <circle cx="540" cy="150" r="13"></circle>
-    <path d="M55,40 V330"></path>
-    <path d="M55,240 H42" marker-end="url(#arrow-4-25)"></path>
-    <path d="M55,150 H95.88888888888889" marker-end="url(#arrow-4-25)"></path>
-    <path d="M55,60 H95.88888888888889" marker-end="url(#arrow-4-25)"></path>
-    <path d="M68,240 H257.55555555555554" marker-end="url(#arrow-4-25)"></path>
-    <path d="M121.88888888888889,60 H324.44444444444446" marker-end="url(#arrow-4-25)"></path>
-    <polyline points="324.44444444444446,60 330.44444444444446,55 336.44444444444446,65 342.44444444444446,55 348.44444444444446,65 354.44444444444446,55 360.44444444444446,65 366.44444444444446,55 372.44444444444446,65 378.44444444444446,55 384.44444444444446,65 390.44444444444446,55 396.44444444444446,65 402.44444444444446,55 408.44444444444446,65 414.44444444444446,55 420.44444444444446,65 426.44444444444446,55 432.22222222222223,60"></polyline>
-    <path d="M432.22222222222223,60 V137"></path>
-    <path d="M121.88888888888889,150 H419.22222222222223" marker-end="url(#arrow-4-25)"></path>
-    <path d="M283.55555555555554,240 H432.22222222222223 V163" marker-end="url(#arrow-4-25)"></path>
-    <path d="M445.22222222222223,150 H527" marker-end="url(#arrow-4-25)"></path>
-    <path d="M108.88888888888889,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-25)"></path>
-    <path d="M108.88888888888889,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="108.88888888888889,278 114.88888888888889,273 120.88888888888889,283 126.88888888888889,273 132.88888888888889,283 138.88888888888889,273 144.88888888888889,283 150.88888888888889,273 156.88888888888889,283 162.88888888888889,273 168.88888888888889,283 174.88888888888889,273 180.88888888888889,283 186.88888888888889,273 192.88888888888889,283 198.88888888888889,273 204.88888888888889,283 210.88888888888889,273 216.88888888888889,283 222.88888888888889,273 228.88888888888889,283 234.88888888888889,273 240.88888888888889,283 246.88888888888889,273 252.88888888888889,283 257.55555555555554,278" stroke-dasharray="5 4"></polyline>
-    <path d="M270.55555555555554,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-25)"></path>
-    <rect x="399.8888888888889" y="222" width="24" height="18"></rect>
-    <text x="411.8888888888889" y="231.0" font-size="13">20</text>
+    <line x1="56" y1="36" x2="469.99999999999994" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="102.0" y1="30" x2="102.0" y2="36"/>
+    <line x1="148.0" y1="30" x2="148.0" y2="36"/>
+    <line x1="194.0" y1="30" x2="194.0" y2="36"/>
+    <line x1="240.0" y1="30" x2="240.0" y2="36"/>
+    <line x1="286.0" y1="30" x2="286.0" y2="36"/>
+    <line x1="332.0" y1="30" x2="332.0" y2="36"/>
+    <line x1="378.0" y1="30" x2="378.0" y2="36"/>
+    <line x1="424.0" y1="30" x2="424.0" y2="36"/>
+    <line x1="470.0" y1="30" x2="470.0" y2="36"/>
+    <path d="M56,36 V140 L50,145 L62,151 L56,156 V244"/>
+    <line x1="56" y1="80" x2="135" y2="80" marker-end="url(#arrow-4-25)"/>
+    <line x1="56" y1="152" x2="135" y2="152" marker-end="url(#arrow-4-25)"/>
+    <line x1="56" y1="224" x2="89" y2="224" marker-end="url(#arrow-4-25)"/>
+    <line x1="115" y1="224" x2="273" y2="224" marker-end="url(#arrow-4-25)"/>
+    <line x1="161" y1="80" x2="263" y2="80"/>
+    <line x1="161" y1="152" x2="365" y2="152" marker-end="url(#arrow-4-25)"/>
+    <path d="M299,224 H378 V165" marker-end="url(#arrow-4-25)"/>
+    <line x1="391" y1="152" x2="456.99999999999994" y2="152" marker-end="url(#arrow-4-25)"/>
+    <line x1="148" y1="139" x2="148" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-25)"/>
+    <line x1="148" y1="165" x2="148" y2="194" stroke-dasharray="4 3"/>
+    <line x1="286" y1="194" x2="286" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-25)"/>
+    <path d="M263,80 L265.5,76 L268.0,80 L270.5,84 L273.0,80 L275.5,76 L278.0,80 L280.5,84 L283.0,80 L285.5,76 L288.0,80 L290.5,84 L293.0,80 L295.5,76 L298.0,80 L300.5,84 L303.0,80 L305.5,76 L308.0,80 L310.5,84 L313.0,80 L315.5,76 L318.0,80 L320.5,84 L323.0,80 L325.5,76 L328.0,80 L330.5,84 L333.0,80 L335.5,76 L338.0,80 L340.5,84 L343.0,80 L345.5,76 L348.0,80 L350.5,84 L353.0,80 L355.5,76 L358.0,80 L360.5,84 L363.0,80 L365.5,76 L368.0,80 L370.5,84 L373.0,80 L378,80 V139" marker-end="url(#arrow-4-25)"/>
+    <path d="M148,194 L150.5,190 L153.0,194 L155.5,198 L158.0,194 L160.5,190 L163.0,194 L165.5,198 L168.0,194 L170.5,190 L173.0,194 L175.5,198 L178.0,194 L180.5,190 L183.0,194 L185.5,198 L188.0,194 L190.5,190 L193.0,194 L195.5,198 L198.0,194 L200.5,190 L203.0,194 L205.5,198 L208.0,194 L210.5,190 L213.0,194 L215.5,198 L218.0,194 L220.5,190 L223.0,194 L225.5,198 L228.0,194 L230.5,190 L233.0,194 L235.5,198 L238.0,194 L240.5,190 L243.0,194 L245.5,198 L248.0,194 L250.5,190 L253.0,194 L255.5,198 L258.0,194 L260.5,190 L263.0,194 L265.5,198 L268.0,194 L270.5,190 L273.0,194 L275.5,198 L278.0,194 L280.5,190 L283.0,194 L286,194"/>
+    <rect x="320" y="234" width="24" height="20" stroke-width="1.2"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="55" y="20" font-size="13">40</text>
-    <text x="108.88888888888889" y="20" font-size="13">50</text>
-    <text x="162.77777777777777" y="20" font-size="13">60</text>
-    <text x="216.66666666666669" y="20" font-size="13">70</text>
-    <text x="270.55555555555554" y="20" font-size="13">80</text>
-    <text x="324.44444444444446" y="20" font-size="13">90</text>
-    <text x="378.33333333333337" y="20" font-size="13">100</text>
-    <text x="432.22222222222223" y="20" font-size="13">110</text>
-    <text x="486.11111111111114" y="20" font-size="13">120</text>
-    <text x="540" y="20" font-size="13">130</text>
-    <text x="566" y="20" font-size="14">（天）</text>
-    <text x="55" y="240" font-size="13">4</text>
-    <text x="108.88888888888889" y="150" font-size="13">5</text>
-    <text x="270.55555555555554" y="240" font-size="13">6</text>
-    <text x="108.88888888888889" y="60" font-size="13">7</text>
-    <text x="432.22222222222223" y="150" font-size="13">8</text>
-    <text x="540" y="150" font-size="13">9</text>
-    <text x="65.77777777777777" y="132" font-size="14">E</text>
-    <text x="65.77777777777777" y="42" font-size="14">D</text>
-    <text x="38.83333333333333" y="222" font-size="14">C</text>
-    <text x="162.77777777777777" y="222" font-size="14">F</text>
-    <text x="216.66666666666669" y="42" font-size="14">G</text>
-    <text x="270.55555555555554" y="132" font-size="14">I</text>
-    <text x="351.3888888888889" y="222" font-size="14">H</text>
-    <text x="486.11111111111114" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="102.0" cy="224" r="13"/>
+    <circle cx="148.0" cy="152" r="13"/>
+    <circle cx="286.0" cy="224" r="13"/>
+    <circle cx="148.0" cy="80" r="13"/>
+    <circle cx="378.0" cy="152" r="13"/>
+    <circle cx="470.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="102.0" y="224">4</text>
+    <text x="148.0" y="152">5</text>
+    <text x="286.0" y="224">6</text>
+    <text x="148.0" y="80">7</text>
+    <text x="378.0" y="152">8</text>
+    <text x="470.0" y="152">9</text>
+    <text x="56.0" y="19">40</text>
+    <text x="102.0" y="19">50</text>
+    <text x="148.0" y="19">60</text>
+    <text x="194.0" y="19">70</text>
+    <text x="240.0" y="19">80</text>
+    <text x="286.0" y="19">90</text>
+    <text x="332.0" y="19">100</text>
+    <text x="378.0" y="19">110</text>
+    <text x="424.0" y="19">120</text>
+    <text x="470.0" y="19">130</text>
+    <text x="506.0" y="19">（天）</text>
+    <text x="332" y="244">20</text>
+    <text x="102.0" y="66">D</text>
+    <text x="102.0" y="138">E</text>
+    <text x="79.0" y="210">C</text>
+    <text x="194.0" y="210">F</text>
+    <text x="212.4" y="66">G</text>
+    <text x="263.0" y="138">I</text>
+    <text x="332.0" y="210">H</text>
+    <text x="424.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
@@ -676,74 +702,76 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 【例 4-9】以图 4-24 所示前锋线为例，如果项目总工期允许拖延，此时只需以检查日期第 40 天为起点，用其后各项工作尚需作业时间取代相应的原计划数据，绘制出网络计划如图 4-26 所示。方案调整后，项目总工期为 140 天。
 
 <FigureZoom caption="图 4-26 调整后拖延工期的网络计划">
-<svg viewBox="0 0 603 292" role="img" aria-label="图 4-26 调整后拖延工期的网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 598 264" role="img" aria-label="图 4-26 调整后拖延工期的网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-26" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-26" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="55" y1="34" x2="578" y2="34"></line>
-    <line x1="55" y1="30" x2="55" y2="38"></line>
-    <line x1="107.30000000000001" y1="30" x2="107.30000000000001" y2="38"></line>
-    <line x1="159.60000000000002" y1="30" x2="159.60000000000002" y2="38"></line>
-    <line x1="211.9" y1="30" x2="211.9" y2="38"></line>
-    <line x1="264.20000000000005" y1="30" x2="264.20000000000005" y2="38"></line>
-    <line x1="316.5" y1="30" x2="316.5" y2="38"></line>
-    <line x1="368.8" y1="30" x2="368.8" y2="38"></line>
-    <line x1="421.1" y1="30" x2="421.1" y2="38"></line>
-    <line x1="473.40000000000003" y1="30" x2="473.40000000000003" y2="38"></line>
-    <line x1="525.7" y1="30" x2="525.7" y2="38"></line>
-    <line x1="578" y1="30" x2="578" y2="38"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="55" cy="240" r="13"></circle>
-    <circle cx="107.30000000000001" cy="150" r="13"></circle>
-    <circle cx="264.20000000000005" cy="240" r="13"></circle>
-    <circle cx="107.30000000000001" cy="60" r="13"></circle>
-    <circle cx="421.1" cy="150" r="13"></circle>
-    <circle cx="578" cy="150" r="13"></circle>
-    <path d="M55,40 V330"></path>
-    <path d="M55,240 H42" marker-end="url(#arrow-4-26)"></path>
-    <path d="M55,150 H94.30000000000001" marker-end="url(#arrow-4-26)"></path>
-    <path d="M55,60 H94.30000000000001" marker-end="url(#arrow-4-26)"></path>
-    <path d="M68,240 H251.20000000000005" marker-end="url(#arrow-4-26)"></path>
-    <path d="M120.30000000000001,60 H316.5" marker-end="url(#arrow-4-26)"></path>
-    <polyline points="316.5,60 322.5,55 328.5,65 334.5,55 340.5,65 346.5,55 352.5,65 358.5,55 364.5,65 370.5,55 376.5,65 382.5,55 388.5,65 394.5,55 400.5,65 406.5,55 412.5,65 418.5,55 421.1,60"></polyline>
-    <path d="M421.1,60 V137"></path>
-    <path d="M120.30000000000001,150 H408.1" marker-end="url(#arrow-4-26)"></path>
-    <path d="M277.20000000000005,240 H421.1 V163" marker-end="url(#arrow-4-26)"></path>
-    <path d="M434.1,150 H565" marker-end="url(#arrow-4-26)"></path>
-    <path d="M107.30000000000001,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-26)"></path>
-    <path d="M107.30000000000001,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="107.30000000000001,278 113.30000000000001,273 119.30000000000001,283 125.30000000000001,273 131.3,283 137.3,273 143.3,283 149.3,273 155.3,283 161.3,273 167.3,283 173.3,273 179.3,283 185.3,273 191.3,283 197.3,273 203.3,283 209.3,273 215.3,283 221.3,273 227.3,283 233.3,273 239.3,283 245.3,273 251.20000000000005,278" stroke-dasharray="5 4"></polyline>
-    <path d="M264.20000000000005,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-26)"></path>
+    <line x1="56" y1="36" x2="516" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="102.0" y1="30" x2="102.0" y2="36"/>
+    <line x1="148.0" y1="30" x2="148.0" y2="36"/>
+    <line x1="194.0" y1="30" x2="194.0" y2="36"/>
+    <line x1="240.0" y1="30" x2="240.0" y2="36"/>
+    <line x1="286.0" y1="30" x2="286.0" y2="36"/>
+    <line x1="332.0" y1="30" x2="332.0" y2="36"/>
+    <line x1="378.0" y1="30" x2="378.0" y2="36"/>
+    <line x1="424.0" y1="30" x2="424.0" y2="36"/>
+    <line x1="470.0" y1="30" x2="470.0" y2="36"/>
+    <line x1="516.0" y1="30" x2="516.0" y2="36"/>
+    <path d="M56,36 V140 L50,145 L62,151 L56,156 V244"/>
+    <line x1="56" y1="80" x2="135" y2="80" marker-end="url(#arrow-4-26)"/>
+    <line x1="56" y1="152" x2="135" y2="152" marker-end="url(#arrow-4-26)"/>
+    <line x1="56" y1="224" x2="89" y2="224" marker-end="url(#arrow-4-26)"/>
+    <line x1="115" y1="224" x2="273" y2="224" marker-end="url(#arrow-4-26)"/>
+    <line x1="161" y1="80" x2="263" y2="80"/>
+    <line x1="161" y1="152" x2="378" y2="152"/>
+    <path d="M299,224 H424 V165" marker-end="url(#arrow-4-26)"/>
+    <line x1="437" y1="152" x2="503" y2="152" marker-end="url(#arrow-4-26)"/>
+    <line x1="148" y1="139" x2="148" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-26)"/>
+    <line x1="148" y1="165" x2="148" y2="194" stroke-dasharray="4 3"/>
+    <line x1="286" y1="194" x2="286" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-26)"/>
+    <path d="M263,80 L265.5,76 L268.0,80 L270.5,84 L273.0,80 L275.5,76 L278.0,80 L280.5,84 L283.0,80 L285.5,76 L288.0,80 L290.5,84 L293.0,80 L295.5,76 L298.0,80 L300.5,84 L303.0,80 L305.5,76 L308.0,80 L310.5,84 L313.0,80 L315.5,76 L318.0,80 L320.5,84 L323.0,80 L325.5,76 L328.0,80 L330.5,84 L333.0,80 L335.5,76 L338.0,80 L340.5,84 L343.0,80 L345.5,76 L348.0,80 L350.5,84 L353.0,80 L355.5,76 L358.0,80 L360.5,84 L363.0,80 L365.5,76 L368.0,80 L370.5,84 L373.0,80 L375.5,76 L378.0,80 L380.5,84 L383.0,80 L385.5,76 L388.0,80 L390.5,84 L393.0,80 L395.5,76 L398.0,80 L400.5,84 L403.0,80 L405.5,76 L408.0,80 L410.5,84 L413.0,80 L415.5,76 L418.0,80 L420.5,84 L423.0,80 L424,80 V139" marker-end="url(#arrow-4-26)"/>
+    <path d="M148,194 L150.5,190 L153.0,194 L155.5,198 L158.0,194 L160.5,190 L163.0,194 L165.5,198 L168.0,194 L170.5,190 L173.0,194 L175.5,198 L178.0,194 L180.5,190 L183.0,194 L185.5,198 L188.0,194 L190.5,190 L193.0,194 L195.5,198 L198.0,194 L200.5,190 L203.0,194 L205.5,198 L208.0,194 L210.5,190 L213.0,194 L215.5,198 L218.0,194 L220.5,190 L223.0,194 L225.5,198 L228.0,194 L230.5,190 L233.0,194 L235.5,198 L238.0,194 L240.5,190 L243.0,194 L245.5,198 L248.0,194 L250.5,190 L253.0,194 L255.5,198 L258.0,194 L260.5,190 L263.0,194 L265.5,198 L268.0,194 L270.5,190 L273.0,194 L275.5,198 L278.0,194 L280.5,190 L283.0,194 L286,194"/>
+    <path d="M378,152 L380.5,148 L383.0,152 L385.5,156 L388.0,152 L390.5,148 L393.0,152 L395.5,156 L398.0,152 L400.5,148 L403.0,152 L405.5,156 L408.0,152 L411,152" marker-end="url(#arrow-4-26)"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="55" y="20" font-size="13">40</text>
-    <text x="107.30000000000001" y="20" font-size="13">50</text>
-    <text x="159.60000000000002" y="20" font-size="13">60</text>
-    <text x="211.9" y="20" font-size="13">70</text>
-    <text x="264.20000000000005" y="20" font-size="13">80</text>
-    <text x="316.5" y="20" font-size="13">90</text>
-    <text x="368.8" y="20" font-size="13">100</text>
-    <text x="421.1" y="20" font-size="13">110</text>
-    <text x="473.40000000000003" y="20" font-size="13">120</text>
-    <text x="525.7" y="20" font-size="13">130</text>
-    <text x="578" y="20" font-size="13">140</text>
-    <text x="604" y="20" font-size="14">（天）</text>
-    <text x="55" y="240" font-size="13">4</text>
-    <text x="107.30000000000001" y="150" font-size="13">5</text>
-    <text x="264.20000000000005" y="240" font-size="13">6</text>
-    <text x="107.30000000000001" y="60" font-size="13">7</text>
-    <text x="421.1" y="150" font-size="13">8</text>
-    <text x="578" y="150" font-size="13">9</text>
-    <text x="65.46000000000001" y="132" font-size="14">E</text>
-    <text x="65.46000000000001" y="42" font-size="14">D</text>
-    <text x="39.31" y="222" font-size="14">C</text>
-    <text x="159.60000000000002" y="222" font-size="14">F</text>
-    <text x="211.9" y="42" font-size="14">G</text>
-    <text x="264.20000000000005" y="132" font-size="14">I</text>
-    <text x="342.65000000000003" y="222" font-size="14">H</text>
-    <text x="499.55" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="102.0" cy="224" r="13"/>
+    <circle cx="148.0" cy="152" r="13"/>
+    <circle cx="286.0" cy="224" r="13"/>
+    <circle cx="148.0" cy="80" r="13"/>
+    <circle cx="424.0" cy="152" r="13"/>
+    <circle cx="516.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="102.0" y="224">4</text>
+    <text x="148.0" y="152">5</text>
+    <text x="286.0" y="224">6</text>
+    <text x="148.0" y="80">7</text>
+    <text x="424.0" y="152">8</text>
+    <text x="516.0" y="152">9</text>
+    <text x="56.0" y="19">40</text>
+    <text x="102.0" y="19">50</text>
+    <text x="148.0" y="19">60</text>
+    <text x="194.0" y="19">70</text>
+    <text x="240.0" y="19">80</text>
+    <text x="286.0" y="19">90</text>
+    <text x="332.0" y="19">100</text>
+    <text x="378.0" y="19">110</text>
+    <text x="424.0" y="19">120</text>
+    <text x="470.0" y="19">130</text>
+    <text x="516.0" y="19">140</text>
+    <text x="552.0" y="19">（天）</text>
+    <text x="102.0" y="66">D</text>
+    <text x="102.0" y="138">E</text>
+    <text x="79.0" y="210">C</text>
+    <text x="194.0" y="210">F</text>
+    <text x="212.4" y="66">G</text>
+    <text x="263.0" y="138">I</text>
+    <text x="332.0" y="210">H</text>
+    <text x="470.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
@@ -765,74 +793,78 @@ sectionTitle: 第三节 进度偏差分析及计划调整方法
 3）对网络计划进行工期优化。从图4-26中可以看出，此时关键线路上的工作为C、F、H和J。现假设通过比较，压缩关键工作H的持续时间所需付出的代价最小，故将其持续时间由原来的30天压缩为25天，调整后的网络计划如图4-27所示。
 
 <FigureZoom caption="图 4-27 总工期拖延时间有限时的网络计划">
-<svg viewBox="0 0 607 322" role="img" aria-label="图 4-27 总工期拖延时间有限时的网络计划" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 575 264" role="img" aria-label="图 4-27 总工期拖延时间有限时的网络计划" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow-4-27" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path></marker>
+    <marker id="arrow-4-27" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="10" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 z" fill="currentColor" stroke="none"/>
+    </marker>
   </defs>
-  <g fill="none" stroke="currentColor" stroke-width="1.3">
-    <line x1="55" y1="34" x2="582" y2="34"></line>
-    <line x1="55" y1="30" x2="55" y2="38"></line>
-    <line x1="110.47368421052632" y1="30" x2="110.47368421052632" y2="38"></line>
-    <line x1="165.94736842105263" y1="30" x2="165.94736842105263" y2="38"></line>
-    <line x1="221.42105263157896" y1="30" x2="221.42105263157896" y2="38"></line>
-    <line x1="276.89473684210526" y1="30" x2="276.89473684210526" y2="38"></line>
-    <line x1="332.36842105263156" y1="30" x2="332.36842105263156" y2="38"></line>
-    <line x1="387.8421052631579" y1="30" x2="387.8421052631579" y2="38"></line>
-    <line x1="443.3157894736842" y1="30" x2="443.3157894736842" y2="38"></line>
-    <line x1="498.7894736842105" y1="30" x2="498.7894736842105" y2="38"></line>
-    <line x1="554.2631578947369" y1="30" x2="554.2631578947369" y2="38"></line>
-  </g>
   <g fill="none" stroke="currentColor" stroke-width="1.5">
-    <circle cx="55" cy="240" r="13"></circle>
-    <circle cx="110.47368421052632" cy="150" r="13"></circle>
-    <circle cx="276.89473684210526" cy="240" r="13"></circle>
-    <circle cx="110.47368421052632" cy="60" r="13"></circle>
-    <circle cx="443.3157894736842" cy="150" r="13"></circle>
-    <circle cx="582" cy="150" r="13"></circle>
-    <path d="M55,40 V330"></path>
-    <path d="M55,240 H42" marker-end="url(#arrow-4-27)"></path>
-    <path d="M55,150 H97.47368421052632" marker-end="url(#arrow-4-27)"></path>
-    <path d="M55,60 H97.47368421052632" marker-end="url(#arrow-4-27)"></path>
-    <path d="M68,240 H263.89473684210526" marker-end="url(#arrow-4-27)"></path>
-    <path d="M123.47368421052632,60 H332.36842105263156" marker-end="url(#arrow-4-27)"></path>
-    <polyline points="332.36842105263156,60 338.36842105263156,55 344.36842105263156,65 350.36842105263156,55 356.36842105263156,65 362.36842105263156,55 368.36842105263156,65 374.36842105263156,55 380.36842105263156,65 386.36842105263156,55 392.36842105263156,65 398.36842105263156,55 404.36842105263156,65 410.36842105263156,55 416.36842105263156,65 422.36842105263156,55 428.36842105263156,65 434.36842105263156,55 440.36842105263156,65 443.3157894736842,60"></polyline>
-    <path d="M443.3157894736842,60 V137"></path>
-    <path d="M123.47368421052632,150 H430.3157894736842" marker-end="url(#arrow-4-27)"></path>
-    <path d="M289.89473684210526,240 H443.3157894736842 V163" marker-end="url(#arrow-4-27)"></path>
-    <path d="M456.3157894736842,150 H569" marker-end="url(#arrow-4-27)"></path>
-    <path d="M110.47368421052632,137 V73" stroke-dasharray="5 4" marker-end="url(#arrow-4-27)"></path>
-    <path d="M110.47368421052632,163 V278" stroke-dasharray="5 4"></path>
-    <polyline points="110.47368421052632,278 116.47368421052632,273 122.47368421052632,283 128.4736842105263,273 134.4736842105263,283 140.4736842105263,273 146.4736842105263,283 152.4736842105263,273 158.4736842105263,283 164.4736842105263,273 170.4736842105263,283 176.4736842105263,273 182.4736842105263,283 188.4736842105263,273 194.4736842105263,283 200.4736842105263,273 206.4736842105263,283 212.4736842105263,273 218.4736842105263,283 224.4736842105263,273 230.4736842105263,283 236.4736842105263,273 242.4736842105263,283 248.4736842105263,273 254.4736842105263,283 260.4736842105263,273 263.89473684210526,278" stroke-dasharray="5 4"></polyline>
-    <path d="M276.89473684210526,278 V253" stroke-dasharray="5 4" marker-end="url(#arrow-4-27)"></path>
-    <rect x="421.12631578947367" y="222" width="24" height="18"></rect>
-    <text x="433.12631578947367" y="231.0" font-size="13">25</text>
+    <line x1="56" y1="36" x2="492.99999999999994" y2="36"/>
+    <line x1="56.0" y1="30" x2="56.0" y2="36"/>
+    <line x1="102.0" y1="30" x2="102.0" y2="36"/>
+    <line x1="148.0" y1="30" x2="148.0" y2="36"/>
+    <line x1="194.0" y1="30" x2="194.0" y2="36"/>
+    <line x1="240.0" y1="30" x2="240.0" y2="36"/>
+    <line x1="286.0" y1="30" x2="286.0" y2="36"/>
+    <line x1="332.0" y1="30" x2="332.0" y2="36"/>
+    <line x1="378.0" y1="30" x2="378.0" y2="36"/>
+    <line x1="424.0" y1="30" x2="424.0" y2="36"/>
+    <line x1="470.0" y1="30" x2="470.0" y2="36"/>
+    <line x1="493.0" y1="30" x2="493.0" y2="36"/>
+    <path d="M56,36 V140 L50,145 L62,151 L56,156 V244"/>
+    <line x1="56" y1="80" x2="135" y2="80" marker-end="url(#arrow-4-27)"/>
+    <line x1="56" y1="152" x2="135" y2="152" marker-end="url(#arrow-4-27)"/>
+    <line x1="56" y1="224" x2="89" y2="224" marker-end="url(#arrow-4-27)"/>
+    <line x1="115" y1="224" x2="273" y2="224" marker-end="url(#arrow-4-27)"/>
+    <line x1="161" y1="80" x2="263" y2="80"/>
+    <line x1="161" y1="152" x2="378" y2="152"/>
+    <path d="M299,224 H401 V165" marker-end="url(#arrow-4-27)"/>
+    <line x1="414" y1="152" x2="479.99999999999994" y2="152" marker-end="url(#arrow-4-27)"/>
+    <line x1="148" y1="139" x2="148" y2="93" stroke-dasharray="4 3" marker-end="url(#arrow-4-27)"/>
+    <line x1="148" y1="165" x2="148" y2="194" stroke-dasharray="4 3"/>
+    <line x1="286" y1="194" x2="286" y2="211" stroke-dasharray="4 3" marker-end="url(#arrow-4-27)"/>
+    <path d="M263,80 L265.5,76 L268.0,80 L270.5,84 L273.0,80 L275.5,76 L278.0,80 L280.5,84 L283.0,80 L285.5,76 L288.0,80 L290.5,84 L293.0,80 L295.5,76 L298.0,80 L300.5,84 L303.0,80 L305.5,76 L308.0,80 L310.5,84 L313.0,80 L315.5,76 L318.0,80 L320.5,84 L323.0,80 L325.5,76 L328.0,80 L330.5,84 L333.0,80 L335.5,76 L338.0,80 L340.5,84 L343.0,80 L345.5,76 L348.0,80 L350.5,84 L353.0,80 L355.5,76 L358.0,80 L360.5,84 L363.0,80 L365.5,76 L368.0,80 L370.5,84 L373.0,80 L375.5,76 L378.0,80 L380.5,84 L383.0,80 L385.5,76 L388.0,80 L390.5,84 L393.0,80 L395.5,76 L398.0,80 L401,80 V139" marker-end="url(#arrow-4-27)"/>
+    <path d="M148,194 L150.5,190 L153.0,194 L155.5,198 L158.0,194 L160.5,190 L163.0,194 L165.5,198 L168.0,194 L170.5,190 L173.0,194 L175.5,198 L178.0,194 L180.5,190 L183.0,194 L185.5,198 L188.0,194 L190.5,190 L193.0,194 L195.5,198 L198.0,194 L200.5,190 L203.0,194 L205.5,198 L208.0,194 L210.5,190 L213.0,194 L215.5,198 L218.0,194 L220.5,190 L223.0,194 L225.5,198 L228.0,194 L230.5,190 L233.0,194 L235.5,198 L238.0,194 L240.5,190 L243.0,194 L245.5,198 L248.0,194 L250.5,190 L253.0,194 L255.5,198 L258.0,194 L260.5,190 L263.0,194 L265.5,198 L268.0,194 L270.5,190 L273.0,194 L275.5,198 L278.0,194 L280.5,190 L283.0,194 L286,194"/>
+    <path d="M378,152 L380.5,148 L383.0,152 L388,152" marker-end="url(#arrow-4-27)"/>
+    <rect x="332" y="234" width="24" height="20" stroke-width="1.2"/>
   </g>
-  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
-    <text x="55" y="20" font-size="13">40</text>
-    <text x="110.47368421052632" y="20" font-size="13">50</text>
-    <text x="165.94736842105263" y="20" font-size="13">60</text>
-    <text x="221.42105263157896" y="20" font-size="13">70</text>
-    <text x="276.89473684210526" y="20" font-size="13">80</text>
-    <text x="332.36842105263156" y="20" font-size="13">90</text>
-    <text x="387.8421052631579" y="20" font-size="13">100</text>
-    <text x="443.3157894736842" y="20" font-size="13">110</text>
-    <text x="498.7894736842105" y="20" font-size="13">120</text>
-    <text x="554.2631578947369" y="20" font-size="13">130</text>
-    <text x="608" y="20" font-size="14">（天）</text>
-    <text x="55" y="240" font-size="13">4</text>
-    <text x="110.47368421052632" y="150" font-size="13">5</text>
-    <text x="276.89473684210526" y="240" font-size="13">6</text>
-    <text x="110.47368421052632" y="60" font-size="13">7</text>
-    <text x="443.3157894736842" y="150" font-size="13">8</text>
-    <text x="582" y="150" font-size="13">9</text>
-    <text x="66.09473684210526" y="132" font-size="14">E</text>
-    <text x="66.09473684210526" y="42" font-size="14">D</text>
-    <text x="38.357894736842105" y="222" font-size="14">C</text>
-    <text x="165.94736842105263" y="222" font-size="14">F</text>
-    <text x="221.42105263157896" y="42" font-size="14">G</text>
-    <text x="276.89473684210526" y="132" font-size="14">I</text>
-    <text x="360.10526315789474" y="222" font-size="14">H</text>
-    <text x="512.6578947368421" y="132" font-size="14">J</text>
+  <g fill="var(--hd-card, #fff)" stroke="currentColor" stroke-width="1.5">
+    <circle cx="102.0" cy="224" r="13"/>
+    <circle cx="148.0" cy="152" r="13"/>
+    <circle cx="286.0" cy="224" r="13"/>
+    <circle cx="148.0" cy="80" r="13"/>
+    <circle cx="401.0" cy="152" r="13"/>
+    <circle cx="493.0" cy="152" r="13"/>
+  </g>
+  <g fill="currentColor" font-size="13" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+    <text x="102.0" y="224">4</text>
+    <text x="148.0" y="152">5</text>
+    <text x="286.0" y="224">6</text>
+    <text x="148.0" y="80">7</text>
+    <text x="401.0" y="152">8</text>
+    <text x="493.0" y="152">9</text>
+    <text x="56.0" y="19">40</text>
+    <text x="102.0" y="19">50</text>
+    <text x="148.0" y="19">60</text>
+    <text x="194.0" y="19">70</text>
+    <text x="240.0" y="19">80</text>
+    <text x="286.0" y="19">90</text>
+    <text x="332.0" y="19">100</text>
+    <text x="378.0" y="19">110</text>
+    <text x="424.0" y="19">120</text>
+    <text x="470.0" y="19">130</text>
+    <text x="498.0" y="19">135</text>
+    <text x="529.0" y="19">（天）</text>
+    <text x="344" y="244">25</text>
+    <text x="102.0" y="66">D</text>
+    <text x="102.0" y="138">E</text>
+    <text x="79.0" y="210">C</text>
+    <text x="194.0" y="210">F</text>
+    <text x="212.4" y="66">G</text>
+    <text x="263.0" y="138">I</text>
+    <text x="332.0" y="210">H</text>
+    <text x="447.0" y="138">J</text>
   </g>
 </svg>
 </FigureZoom>
