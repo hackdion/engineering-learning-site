@@ -212,7 +212,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))
         <h4>{{ photoOf(current.id)!.title }}</h4>
         <FigureZoom
           :caption="photoOf(current.id)!.title"
-          :src="withBase(photoOf(current.id)!.file)"
+          :src="photoOf(current.id)!.file"
           :alt="photoOf(current.id)!.alt"
           :width="photoOf(current.id)!.width"
           :height="photoOf(current.id)!.height"
@@ -268,7 +268,7 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))
         <h4>{{ photoOf(current.id)!.title }}</h4>
         <FigureZoom
           :caption="photoOf(current.id)!.title"
-          :src="withBase(photoOf(current.id)!.file)"
+          :src="photoOf(current.id)!.file"
           :alt="photoOf(current.id)!.alt"
           :width="photoOf(current.id)!.width"
           :height="photoOf(current.id)!.height"
