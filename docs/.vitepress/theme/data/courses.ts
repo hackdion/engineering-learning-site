@@ -204,6 +204,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0 样板：横道图、S 曲线、香蕉曲线、前锋线与列表比较法，配 S 曲线滑块沙盘、多视图切换、闪卡、情景推演和 8 道自测题。'
   },
   {
+    id: 'ppt-jd-1-1', book: 'jindu', section: '1.1', title: '工程进度影响因素及控制目标',
+    date: '2026-11-16', deck: '/courses/ppt-jd-1-1',
+    summary: '互动 PPT 2.0：影响进度的八大因素、总进度目标论证与总进度纲要、论证八步骤，配八大因素切换、步进、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-1-2', book: 'jindu', section: '1.2', title: '工程进度计划体系及计划表示方法',
+    date: '2026-11-16', deck: '/courses/ppt-jd-1-2',
+    summary: '互动 PPT 2.0：建设单位、监理单位、设计单位、施工单位四大计划系统，横道图与网络计划对照，配计划系统切换、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-1-3', book: 'jindu', section: '1.3', title: '工程进度控制任务和措施',
+    date: '2026-11-16', deck: '/courses/ppt-jd-1-3',
+    summary: '互动 PPT 2.0：进度控制目标与三大阶段任务、组织/技术/经济/合同四大措施，配措施切换、任务步进、闪卡与措施归属推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-2-1', book: 'jindu', section: '2.1', title: '流水施工参数及组织方式',
+    date: '2026-11-16', deck: '/courses/ppt-jd-2-1',
+    summary: '互动 PPT 2.0：依次/平行/流水三种组织方式、工艺/空间/时间三大类参数、施工段划分五原则，配组织方式切换、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-2-2', book: 'jindu', section: '2.2', title: '有节奏流水施工',
+    date: '2026-11-16', deck: '/courses/ppt-jd-2-2',
+    summary: '互动 PPT 2.0：固定节拍、一般成倍与加快成倍节拍流水施工的公式与特点、加快成倍三步计算，配节奏切换、算例推演与闪卡、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-2-3', book: 'jindu', section: '2.3', title: '非节奏流水施工',
+    date: '2026-11-16', deck: '/courses/ppt-jd-2-3',
+    summary: '互动 PPT 2.0：累加数列错位相减取大差法（潘特考夫斯基法）求流水步距与工期，配三步步进、实战算例与闪卡、8 道自测题。'
+  },
+  {
     id: 'ppt-jd-3-3', book: 'jindu', section: '3.3', title: '网络计划时间参数计算',
     date: '2026-11-16', deck: '/courses/ppt-jd-3-3',
     summary: '互动 PPT 2.0：三种工期、六个时间参数、双代号四种计算法、单代号 LAG 与 PERT 估算，配多视图切换、闪卡、情景推演与 8 道自测题。'
