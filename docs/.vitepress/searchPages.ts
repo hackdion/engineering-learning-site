@@ -5,6 +5,7 @@ import { COURSES } from './theme/data/courses'
 import { stages } from './theme/data/engineeringStages'
 import { roleDirectory } from './theme/data/engineeringRoles'
 import { mapScenes, scenePages, stagePages, unitPages } from './theme/data/engineeringMapPages'
+import { TERMS, TERM_GROUPS } from './theme/data/engineeringTerms'
 
 const bookNames = BOOKS.map((b) => `《${b.fullName}》`).join('、')
 const courseLines = COURSES.map((c) => `- ${c.title}：${c.summary}`).join('\n')
@@ -15,6 +16,7 @@ const unitLines = Object.values(roleDirectory as any)
   .map((unit: any) => `- ${unit.name}：${unit.note}`)
   .join('\n')
 const sceneLines = mapScenes.map((x) => `- ${x.name}（${x.stage}）`).join('\n')
+const termLines = TERMS.map((t) => `- ${t.id} ${t.term}（现场叫法：${t.slang.join('、')}）`).join('\n')
 
 export const SEARCH_PAGES: Record<string, string> = {
   'index.md': `
@@ -76,13 +78,19 @@ ${unitLines}
 ## 按场景 {#scenes}
 
 ${sceneLines}
+
+## 工程术语 {#terms}
+
+20 张词卡按「脚手架与模板」「暖通与管道」两组，看图认构件，正式叫法、现场叫法、易混词与规范表述对照。
+
+${termLines}
 `
 }
 
 // 动态路由由 VitePress 渲染，但本地搜索只读取磁盘上的 Markdown。
 export function engineeringMapSearchRecords(base: string) {
   const groups = { stage: stagePages(), unit: unitPages(), scene: scenePages() }
-  return Object.entries(groups).flatMap(([kind, pages]) => pages.flatMap(({ params, content }) => {
+  const mapRecords = Object.entries(groups).flatMap(([kind, pages]) => pages.flatMap(({ params, content }) => {
     const [firstLine, ...body] = content.split('\n')
     const title = firstLine.replace(/^# /, '')
     const id = `${base}engineering-map/${kind}/${params.id}`
@@ -100,4 +108,20 @@ export function engineeringMapSearchRecords(base: string) {
     }))
     return [page, ...items]
   }))
+
+  // 工程术语 20 词：每张词卡一条记录，标题锚点对应 /engineering-map/#term-XX。
+  const termRecords = TERMS.map((t) => ({
+    id: `${base}engineering-map/#term-${t.id}`,
+    title: `${t.id} ${t.term}`,
+    titles: ['工程地图', '工程术语', TERM_GROUPS[t.group]],
+    text: [
+      t.plain,
+      `现场叫法：${t.slang.join('、')}`,
+      t.confuse.length ? `易混：${t.confuse.map((c) => c.word).join('、')}` : '',
+      t.look ?? '',
+      t.say
+    ].filter(Boolean).join(' ')
+  }))
+
+  return [...mapRecords, ...termRecords]
 }

@@ -1,8 +1,14 @@
 <script setup lang="ts">
-// 工程地图总图：九站线路 + 单位泳道矩阵 + 三个入口。节点正文在各自的页面里。
-import { onMounted } from 'vue'
+// 工程地图总图：三个顶层视图（看工程全流程 / 查单位与岗位 / 查工程术语），由 URL hash 驱动。
+// 九站线路 + 单位泳道矩阵在「全流程」视图；节点正文在各自的页面里。
+import { nextTick, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import { mapStages, mapUnits, mapCells, mapScenes, unitOf } from '../data/engineeringMapPages'
+import EngineeringTerms from './EngineeringTerms.vue'
+
+type ViewId = 'flow' | 'units' | 'terms'
+// 服务端渲染与水合时保持默认视图，挂载后再按 hash 切换，避免水合不一致。
+const view = ref<ViewId>('flow')
 
 const groups = [...new Set(mapStages.map((s) => s.group))]
 const stageUrl = (id: string, anchor = '') => withBase(`/engineering-map/stage/${id}${anchor ? `#${anchor}` : ''}`)
@@ -27,6 +33,24 @@ const pics = [
   'M36 30V8h30v22M48 30v-8h6v8M42 14h6M54 14h6M78 30v-10M72 20a6 6 0 1 1 12 0z'
 ]
 
+const isTermHash = (hash: string) => hash === 'terms' || /^term-[AB]\d+$/.test(hash)
+
+const applyHash = async () => {
+  const hash = decodeURIComponent(location.hash.slice(1))
+  if (isTermHash(hash)) view.value = 'terms'
+  else if (hash === 'units') view.value = 'units'
+  else view.value = 'flow'
+  await nextTick()
+  const el = document.getElementById(hash)
+  if (el && el.offsetParent !== null) el.scrollIntoView()
+  else if (view.value === 'terms') document.getElementById('terms')?.scrollIntoView()
+}
+
+// 切换视图即改 hash：刷新与分享后仍落在同一视图；#term-A1～#term-B10 由 EngineeringTerms 打开对应词卡。
+const switchView = (v: ViewId) => {
+  location.hash = v === 'flow' ? '#stages' : v === 'units' ? '#units' : '#terms'
+}
+
 // 第一版的旧锚点：#roles、#role-岗位、#example-示例，跳到新地址
 onMounted(() => {
   const hash = decodeURIComponent(location.hash.slice(1))
@@ -36,6 +60,8 @@ onMounted(() => {
     const unit = unitOf(job)
     if (unit) location.replace(unitUrl(unit, job))
   } else if (hash.startsWith('example-')) location.replace(sceneUrl(`handover-${hash.slice(8)}`))
+  void applyHash()
+  window.addEventListener('hashchange', applyHash)
 })
 </script>
 
@@ -45,14 +71,20 @@ onMounted(() => {
       <p class="em__kicker">ENGINEERING MAP · 01—09</p>
       <h1 id="map-title">工程地图</h1>
       <p class="em__lede">一个房建工程从立项到运维，谁在什么时候做什么、交什么、凭什么。先看全国口径，属地差异另按项目所在地核对。</p>
-      <nav class="em__entries" aria-label="三种查法">
+      <nav class="em__entries" aria-label="四种查法">
         <a href="#stages"><b>按阶段</b><span>九个阶段，每阶段的事项和文件交接</span></a>
         <a href="#units"><b>按单位与岗位</b><span>{{ mapUnits.length }} 类单位、{{ mapUnits.reduce((n, u) => n + u.jobs.length, 0) }} 个岗位各管什么</span></a>
         <a href="#scenes"><b>按场景</b><span>验槽、主体验收、消防验收，一件事从头到尾</span></a>
+        <a href="#terms"><b>按工程术语</b><span>脚手架与模板、暖通与管道 20 张词卡，看图认构件</span></a>
+      </nav>
+      <nav class="em__switch" aria-label="工程地图视图">
+        <button type="button" :class="{ 'is-on': view === 'flow' }" @click="switchView('flow')">看工程全流程</button>
+        <button type="button" :class="{ 'is-on': view === 'units' }" @click="switchView('units')">查单位与岗位</button>
+        <button type="button" :class="{ 'is-on': view === 'terms' }" @click="switchView('terms')">查工程术语（20）</button>
       </nav>
     </header>
 
-    <section id="stages" class="em__sec">
+    <section v-show="view === 'flow'" id="stages" class="em__sec">
       <h2>按阶段</h2>
       <p class="em__hint">九个阶段里各有哪些单位出场、办什么事。点阶段看全部事项，点单位看岗位。</p>
 
@@ -102,7 +134,7 @@ onMounted(() => {
       <p class="em__legend">斜纹格表示这个单位在该阶段没有列出经办或配合的事项。政府投资和企业投资的不同做法，在阶段页的事项上分别标注。</p>
     </section>
 
-    <section id="units" class="em__sec">
+    <section v-show="view === 'units'" id="units" class="em__sec">
       <h2>按单位与岗位</h2>
       <p class="em__hint">先选单位，再看岗位的职责、经手文件、协作对象和易混点。</p>
       <div class="em__units">
@@ -114,7 +146,7 @@ onMounted(() => {
       </div>
     </section>
 
-    <section id="scenes" class="em__sec">
+    <section v-show="view === 'flow'" id="scenes" class="em__sec">
       <h2>按场景</h2>
       <template v-for="g in sceneGroups" :key="g.kind">
         <h3 class="em__sub">{{ g.title }}</h3>
@@ -126,6 +158,10 @@ onMounted(() => {
         </div>
       </template>
     </section>
+
+    <section v-show="view === 'terms'" id="terms" class="em__sec">
+      <EngineeringTerms />
+    </section>
   </div>
 </template>
 
@@ -135,8 +171,8 @@ onMounted(() => {
 .em__kicker { margin: 0; font: 13px var(--hd-font-mono); letter-spacing: .12em; color: var(--hd-accent); }
 .em h1 { margin: 4px 0 8px; font: 700 52px/1.15 var(--hd-font-serif); }
 .em__lede { margin: 0; max-width: 720px; font-size: 17px; line-height: 1.7; color: var(--hd-ink-2); }
-.em__entries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; }
-/* 三张查法入口卡：2px 墨边 + 5px 硬阴影 + 语义顶条（阶段=绿，普通=蓝），不用红 */
+.em__entries { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
+/* 查法入口卡：2px 墨边 + 5px 硬阴影 + 语义顶条（阶段=绿，普通=蓝），不用红 */
 .em__entries a {
   display: block; padding: 16px; background: var(--hd-card);
   border: 2px solid var(--hd-ink); border-top: 4px solid var(--hd-accent); border-radius: 12px;
@@ -146,6 +182,17 @@ onMounted(() => {
 .em__entries a:hover { transform: translate(-2px, -2px); }
 .em__entries b { display: block; font: 700 19px/1.4 var(--hd-font-serif); }
 .em__entries span { font-size: 14px; color: var(--hd-ink-2); }
+.em__switch { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.em__switch button {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px;
+  border: 2px solid var(--hd-ink); border-radius: 12px; background: var(--hd-card); color: var(--hd-ink);
+  font: 700 14px var(--hd-font-sans); cursor: pointer;
+  transition: transform .12s, box-shadow .12s, background .12s;
+}
+.em__switch button:hover { transform: translate(-1px, -1px); }
+.em__switch button:active { transform: translate(1px, 1px); }
+.em__switch button:focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 2px; }
+.em__switch button.is-on { background: var(--hd-accent); color: #fff; box-shadow: 4px 4px 0 var(--hd-ink); }
 .em__sec { margin-top: 56px; scroll-margin-top: 80px; }
 /* 区块标题：工程蓝菱形章 + 3px 墨线 */
 .em h2 {
@@ -201,6 +248,7 @@ onMounted(() => {
 @media (max-width: 1099px) {
   .em__board { display: none; }
   .em__line { display: block; }
+  .em__entries { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 767px) {
   .em { padding: 24px 16px 56px; }
@@ -209,6 +257,11 @@ onMounted(() => {
   .em__units { grid-template-columns: 1fr; }
   .em__scenes { grid-template-columns: 1fr 1fr; }
   .em__chips a { padding: 5px 10px; }
+  .em__switch button { flex: 1 1 auto; padding: 0 12px; font-size: 13px; }
 }
+<<<<<<< HEAD
 @media (prefers-reduced-motion: reduce) { .em__entries a { transition: none; transform: none; } }
+=======
+@media (prefers-reduced-motion: reduce) { .em__entries a, .em__switch button { transition: none; } .em__switch button:hover, .em__switch button:active { transform: none; } }
+>>>>>>> 56ad3f1 (工程地图接入「查工程术语（20）」第三视图)
 </style>
