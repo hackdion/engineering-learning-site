@@ -201,7 +201,17 @@ export const COURSES: CourseItem[] = [
   {
     id: 'ppt-jd-4-2', book: 'jindu', section: '4.2', title: '实际进度与计划进度的比较方法',
     date: '2026-11-16', deck: '/courses/ppt-jd-4-2',
-    summary: '互动 PPT 2.0 样板：横道图、S 曲线、香蕉曲线、前锋线与列表比较法，配 S 曲线滑块沙盘、多视图切换、闪卡、情景推演和 4 道自测题。'
+    summary: '互动 PPT 2.0 样板：横道图、S 曲线、香蕉曲线、前锋线与列表比较法，配 S 曲线滑块沙盘、多视图切换、闪卡、情景推演和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-3-3', book: 'jindu', section: '3.3', title: '网络计划时间参数计算',
+    date: '2026-11-16', deck: '/courses/ppt-jd-3-3',
+    summary: '互动 PPT 2.0：三种工期、六个时间参数、双代号四种计算法、单代号 LAG 与 PERT 估算，配多视图切换、闪卡、情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-8-8', book: 'touzi', section: '8.8', title: '投资偏差分析（挣值法）',
+    date: '2026-11-16', deck: '/courses/ppt-tz-8-8',
+    summary: '互动 PPT 2.0：挣值法三参数（BCWS/BCWP/ACWP）与四指标（CV/SV/CPI/SPI）、偏差原因与纠偏，配挣值动态沙盘、多视图切换与 8 道自测题。'
   },
   {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
