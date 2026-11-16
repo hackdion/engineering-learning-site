@@ -40,7 +40,60 @@ sectionTitle: 第二节 网络图绘制
 </table>
 </div>
 
-<FigureZoom caption="图 3-4 按表 3-1 绘制的网络图（a）错误画法；（b）正确画法" src="/images/schedule/chapter-03/fig-3-04.png" :width="795" :height="285" />
+<FigureZoom caption="图 3-4 按表 3-1 绘制的网络图（a）错误画法；（b）正确画法">
+<svg viewBox="0 0 795 285" role="img" aria-label="图 3-4 按表 3-1 绘制的网络图（a）错误画法；（b）正确画法" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-3-04" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"></path>
+    </marker>
+  </defs>
+  <g fill="none" stroke="currentColor" stroke-width="1.7">
+    <circle cx="50" cy="40" r="15"></circle>
+    <circle cx="50" cy="140" r="15"></circle>
+    <circle cx="190" cy="140" r="15"></circle>
+    <circle cx="330" cy="140" r="15"></circle>
+    <circle cx="330" cy="240" r="15"></circle>
+    <circle cx="470" cy="40" r="15"></circle>
+    <circle cx="530" cy="140" r="15"></circle>
+    <circle cx="610" cy="140" r="15"></circle>
+    <circle cx="750" cy="240" r="15"></circle>
+    <path d="M65,40 H190 V125" marker-end="url(#arrow-3-04)"></path>
+    <path d="M50,55 V125" stroke-dasharray="5 4"></path>
+    <path d="M65,140 H175" marker-end="url(#arrow-3-04)"></path>
+    <path d="M205,140 H315" marker-end="url(#arrow-3-04)"></path>
+    <path d="M190,155 V240 H315" marker-end="url(#arrow-3-04)"></path>
+    <path d="M330,155 V225" stroke-dasharray="5 4"></path>
+    <path d="M485,40 H610 V125" marker-end="url(#arrow-3-04)"></path>
+    <path d="M470,55 V140 H515" marker-end="url(#arrow-3-04)"></path>
+    <path d="M545,140 H595" stroke-dasharray="5 4"></path>
+    <path d="M625,140 H750 V225" marker-end="url(#arrow-3-04)"></path>
+    <path d="M530,155 V240 H735" marker-end="url(#arrow-3-04)"></path>
+  </g>
+  <g fill="currentColor" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">
+    <text x="50" y="40" font-size="15">1</text>
+    <text x="50" y="140" font-size="15">2</text>
+    <text x="190" y="140" font-size="15">3</text>
+    <text x="330" y="140" font-size="15">4</text>
+    <text x="330" y="240" font-size="15">5</text>
+    <text x="470" y="40" font-size="15">1</text>
+    <text x="530" y="140" font-size="15">2</text>
+    <text x="610" y="140" font-size="15">3</text>
+    <text x="750" y="240" font-size="15">4</text>
+    <text x="127" y="30" font-size="17">A</text>
+    <text x="120" y="130" font-size="17">B</text>
+    <text x="260" y="130" font-size="17">C</text>
+    <text x="252" y="230" font-size="17">D</text>
+    <text x="547" y="30" font-size="17">A</text>
+    <text x="500" y="130" font-size="17">B</text>
+    <text x="680" y="130" font-size="17">C</text>
+    <text x="640" y="230" font-size="17">D</text>
+    <text x="190" y="270" font-size="16">(a)</text>
+    <text x="610" y="270" font-size="16">(b)</text>
+  </g>
+</svg>
+</FigureZoom>
+
+<p class="figure-caption">图 3-4 按表 3-1 绘制的网络图（a）错误画法；（b）正确画法</p>
 
 （2）网络图中严禁出现从一个节点出发，顺箭头方向又回到原出发点的循环回路。如果出现循环回路，会造成逻辑关系混乱，使工作无法按顺序进行。如图 3-5 所示，网络图中存在不允许出现的循环回路 BCGF。当然，此时节点编号也发生错误。
 
