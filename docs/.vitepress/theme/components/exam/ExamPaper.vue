@@ -810,7 +810,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
   height: 5px;
   margin: 0 auto;
   border-radius: 50%;
-  background: var(--hd-stamp);
+  background: var(--hd-orange);
 }
 .ep-sheet__legend {
   display: flex;
@@ -884,8 +884,8 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
   cursor: pointer;
 }
 .ep-mark.is-on {
-  border: 1px solid var(--hd-stamp);
-  color: var(--hd-stamp);
+  border: 1px solid var(--hd-orange);
+  color: var(--hd-orange);
 }
 .ep-question__note {
   margin: 12px 0 0;
