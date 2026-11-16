@@ -4,6 +4,7 @@
 import { nextTick, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import { mapStages, mapUnits, mapCells, mapScenes, unitOf } from '../data/engineeringMapPages'
+import EngineeringSiteGrowth from './EngineeringSiteGrowth.vue'
 import EngineeringTerms from './EngineeringTerms.vue'
 
 type ViewId = 'flow' | 'units' | 'terms'
@@ -87,6 +88,8 @@ onMounted(() => {
     <section v-show="view === 'flow'" id="stages" class="em__sec">
       <h2>按阶段</h2>
       <p class="em__hint">九个阶段里各有哪些单位出场、办什么事。点阶段看全部事项，点单位看岗位。</p>
+
+      <EngineeringSiteGrowth />
 
       <!-- 桌面：泳道矩阵 -->
       <div class="em__board">
