@@ -259,9 +259,5 @@ onMounted(() => {
   .em__chips a { padding: 5px 10px; }
   .em__switch button { flex: 1 1 auto; padding: 0 12px; font-size: 13px; }
 }
-<<<<<<< HEAD
-@media (prefers-reduced-motion: reduce) { .em__entries a { transition: none; transform: none; } }
-=======
-@media (prefers-reduced-motion: reduce) { .em__entries a, .em__switch button { transition: none; } .em__switch button:hover, .em__switch button:active { transform: none; } }
->>>>>>> 56ad3f1 (工程地图接入「查工程术语（20）」第三视图)
+@media (prefers-reduced-motion: reduce) { .em__entries a, .em__switch button { transition: none; transform: none; } .em__switch button:hover, .em__switch button:active { transform: none; } }
 </style>
