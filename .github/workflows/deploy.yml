@@ -33,6 +33,7 @@ jobs:
       - name: 构建工程学习站
         env:
           VITEPRESS_BASE: /${{ github.event.repository.name }}/
+          NODE_OPTIONS: --max-old-space-size=6144
         run: npm run build
 
       - name: 发布边界检查

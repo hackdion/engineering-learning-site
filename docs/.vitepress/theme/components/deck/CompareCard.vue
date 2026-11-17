@@ -1,8 +1,12 @@
 <script setup lang="ts">
 // 对比卡：几个容易混的概念按同一组问题并排对照。打开「遮住自测」后格子先盖住，点一格翻开一格。
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
-defineProps<{ cols: string[]; rows: { k: string; v: string[] }[]; title?: string }>()
+const props = defineProps<{ cols: string[]; rows: { k: string; v: string[] }[]; title?: string }>()
+const colCount = computed(() => Math.max(0, ...props.rows.map((r) => r.v.length)))
+const hasLeadCol = computed(() => props.cols.length === colCount.value + 1)
+const leadHeader = computed(() => (hasLeadCol.value ? props.cols[0] : ''))
+const bodyCols = computed(() => (hasLeadCol.value ? props.cols.slice(1) : props.cols))
 const quiz = ref(false)
 const opened = ref(new Set<string>())
 const key = (r: number, c: number) => `${r}-${c}`
@@ -27,7 +31,7 @@ function flip(r: number, c: number) {
     <div class="cp-scroll">
       <table class="cp-table">
         <thead>
-          <tr><th scope="col"></th><th v-for="c in cols" :key="c" scope="col">{{ c }}</th></tr>
+          <tr><th scope="col">{{ leadHeader }}</th><th v-for="c in bodyCols" :key="c" scope="col">{{ c }}</th></tr>
         </thead>
         <tbody>
           <tr v-for="(row, r) in rows" :key="row.k">
@@ -37,7 +41,7 @@ function flip(r: number, c: number) {
                 v-if="quiz && !opened.has(key(r, c))"
                 type="button"
                 class="cp-cover"
-                :aria-label="`翻开：${cols[c]} · ${row.k}`"
+                :aria-label="`翻开：${bodyCols[c] || ''} · ${row.k}`"
                 @click="flip(r, c)"
               >点开</button>
               <span v-else :class="{ 'cp-open': quiz }" @click="flip(r, c)">{{ v }}</span>
