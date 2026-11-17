@@ -559,6 +559,26 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：开始/完成/提前/暂停设计的时点节点、设计文件一式八份与 14 天审查、周期延误三分类与错误责任、施工配合与合理化建议，配对比、步进、闪卡与情景推演、8 道自测题。'
   },
   {
+    id: 'ppt-ht-3-1', book: 'hetong', section: '3.1', title: '工程施工招标管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-3-1',
+    summary: '互动 PPT 2.0：标准与简明招标文件、招标准备四步、资格审查八步与预审后审对照、开标程序、最低评标价法例题与综合评估法，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-3-2', book: 'hetong', section: '3.2', title: '施工合同订立',
+    date: '2026-11-17', deck: '/courses/ppt-ht-3-2',
+    summary: '互动 PPT 2.0：合同文件九项与优先解释顺序、通用条款 24 条 131 款、履约与预付款担保、三方职责、基准日期与公式法调价、保险安排，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-3-3', book: 'hetong', section: '3.3', title: '施工合同履行管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-3-3',
+    summary: '互动 PPT 2.0：四个时间期限、工期顺延、质量与隐蔽工程、价格四概念、质保金 3% 上限、计量支付、变更、不可抗力、竣工验收与索赔时限，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-3-4', book: 'hetong', section: '3.4', title: '工程施工分包管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-3-4',
+    summary: '互动 PPT 2.0：专业分包合同文件与双方义务、分包时限群、计量支付与变更索赔、竣工验收结算，以及劳务分包的报酬、实名制、安全与不可抗力分担，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
