@@ -419,6 +419,46 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：盈亏平衡点两个口径、敏感性分析五步与例 5-8 排序、风险识别估计评价与四类对策，配 8 道自测题。'
   },
   {
+    id: 'ppt-tz-6-1', book: 'touzi', section: '6.1', title: '限额设计管理',
+    date: '2026-11-17', deck: '/courses/ppt-tz-6-1',
+    summary: '互动 PPT 2.0：限额设计三项核心原则与五项主要内容、三阶段目标分解与动态控制流程、价值工程提高途径与功能指数法演算，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-6-2', book: 'touzi', section: '6.2', title: '设计方案比选内容和方法',
+    date: '2026-11-17', deck: '/courses/ppt-tz-6-2',
+    summary: '互动 PPT 2.0：方案比选基本原则与指标体系、综合评分法/价值指数法/寿命周期成本法三套比选计算，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-6-3', book: 'touzi', section: '6.3', title: '设计概算编制与审查',
+    date: '2026-11-17', deck: '/courses/ppt-tz-6-3',
+    summary: '互动 PPT 2.0：三级概算编制体系、单位建筑工程概算定额/概算指标/类似工程预算法及例题演算、设备及安装工程概算与三级审查方法，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-6-4', book: 'touzi', section: '6.4', title: '施工图预算编制和审查',
+    date: '2026-11-17', deck: '/courses/ppt-tz-6-4',
+    summary: '互动 PPT 2.0：三级预算体系、工料单价法/实物量法/综合单价法对比与施工图预算逐项/重点/对比等审查方法，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-7-1', book: 'touzi', section: '7.1', title: '招标工程量清单编制',
+    date: '2026-11-17', deck: '/courses/ppt-tz-7-1',
+    summary: '互动 PPT 2.0：招标工程量清单五大组成、分部分项工程量清单五要件（编码/名称/特征/单位/工程量）、措施项目与其他项目清单，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-7-2', book: 'touzi', section: '7.2', title: '工程合同计价方式及选择',
+    date: '2026-11-17', deck: '/courses/ppt-tz-7-2',
+    summary: '互动 PPT 2.0：单价合同/总价合同/成本加酬金合同适用条件与风险分配、四种成本加酬金形式激励对比，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-7-3', book: 'touzi', section: '7.3', title: '最高投标限价编制',
+    date: '2026-11-17', deck: '/courses/ppt-tz-7-3',
+    summary: '互动 PPT 2.0：最高投标限价编制“四不得”红线、综合单价与材料暂估价处理、5 天投诉期与 ±3% 复查改正阈值，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-7-4', book: 'touzi', section: '7.4', title: '投标报价编制及审核',
+    date: '2026-11-17', deck: '/courses/ppt-tz-7-4',
+    summary: '互动 PPT 2.0：投标报价两条底线与三个不变、不平衡报价调价方向、算术错误修正优先级与异常低价澄清程序，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
