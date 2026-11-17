@@ -2,10 +2,14 @@
 // 互动 PPT：电脑上 16:9 一页一页演示，手机上按卡片往下读。
 // 每页用 <Slide> 包住 Markdown，标题写成 ## 标题，因此能被站内搜索，搜索结果点进来会翻到那一页。
 // 翻到第几页、讲稿开关、练习作答记在读者本机（localStorage），不上传。
-import { onBeforeUnmount, onMounted, provide, reactive, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, provide, reactive, ref, watch } from 'vue'
+import { useRoute } from 'vitepress'
+import { COURSES } from '../../data/courses'
+import { readAlongAt } from '../../data/readalong'
 import { deckKey, type DeckStore } from './deck'
 
 const props = defineProps<{ id: string; title: string }>()
+const route = useRoute()
 
 const total = ref(0)
 const active = ref(0)
@@ -16,6 +20,96 @@ const notes = ref(false)
 const recording = ref(false)
 const root = ref<HTMLElement | null>(null)
 const answers = reactive<Record<string, unknown>>({})
+
+// TTS 朗读本页讲稿 + 自动连播
+const ttsPlaying = ref(false)
+const ttsRate = ref<1 | 1.25 | 1.5>(1)
+const ttsAutoNext = ref(true)
+const ttsSupported = ref(false)
+
+// B 站本节伴读迷你浮窗
+const biliOpen = ref(false)
+const biliMini = ref(false)
+const biliInfo = computed(() => {
+  const path = decodeURI(route.path).replace(/\.html$/, '')
+  const hit = COURSES.find((c) => c.deck && path.endsWith(c.deck))
+  if (!hit) return null
+  const ra = readAlongAt(hit.book, hit.section)
+  if (!ra?.bvid || !ra.parts.length) return null
+  const p = ra.parts[0].p
+  return {
+    bvid: ra.bvid,
+    page: p,
+    title: `${hit.section} ${hit.title}`,
+    src: `https://player.bilibili.com/player.html?bvid=${ra.bvid}&page=${p}&autoplay=0`
+  }
+})
+
+function stopTts() {
+  ttsPlaying.value = false
+  if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+    window.speechSynthesis.cancel()
+  }
+}
+
+function getSlideNoteText(idx: number) {
+  const slideEl = root.value?.querySelector<HTMLElement>(`[data-slide="${idx}"]`)
+  if (!slideEl) return ''
+  const noteEl = slideEl.querySelector<HTMLElement>('.dk-notes')
+  if (noteEl) {
+    const clone = noteEl.cloneNode(true) as HTMLElement
+    clone.querySelector('b')?.remove()
+    const txt = (clone.textContent || '').replace(/\s+/g, ' ').trim()
+    if (txt) return txt
+  }
+  const bodyEl = slideEl.querySelector<HTMLElement>('.dk-body')
+  return (bodyEl?.textContent || '').replace(/\s+/g, ' ').trim()
+}
+
+function speakSlide(idx: number) {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
+  window.speechSynthesis.cancel()
+  const text = getSlideNoteText(idx)
+  if (!text) {
+    ttsPlaying.value = false
+    return
+  }
+  const utter = new SpeechSynthesisUtterance(text)
+  utter.lang = 'zh-CN'
+  utter.rate = ttsRate.value
+  const voices = window.speechSynthesis.getVoices()
+  const zh = voices.find((v) => /zh[-_]?CN/i.test(v.lang) && /natural|ting|xiaoxiao|yunxi|siri|tingting/i.test(v.name))
+    || voices.find((v) => /^zh/i.test(v.lang))
+  if (zh) utter.voice = zh
+  utter.onend = () => {
+    if (!ttsPlaying.value) return
+    if (ttsAutoNext.value && active.value < total.value - 1) {
+      go(active.value + 1)
+    } else {
+      ttsPlaying.value = false
+    }
+  }
+  utter.onerror = () => {
+    ttsPlaying.value = false
+  }
+  window.speechSynthesis.speak(utter)
+}
+
+function toggleTts() {
+  if (!ttsSupported.value) return
+  if (ttsPlaying.value) {
+    stopTts()
+    return
+  }
+  ttsPlaying.value = true
+  speakSlide(active.value)
+}
+
+function cycleTtsRate() {
+  const rates: (1 | 1.25 | 1.5)[] = [1, 1.25, 1.5]
+  ttsRate.value = rates[(rates.indexOf(ttsRate.value) + 1) % rates.length]
+  if (ttsPlaying.value) speakSlide(active.value)
+}
 
 const storeKey = `hd:deck:${props.id}`
 function read() {
@@ -50,14 +144,19 @@ function go(i: number, align = true) {
 const next = () => go(active.value + 1)
 const prev = () => go(active.value - 1)
 
-// 换页后：记进度；地址栏换成该页标题锚点，便于分享和从搜索结果直达
+// 换页后：记进度；地址栏换成该页标题锚点，便于分享和从搜索结果直达；若正在朗读则自动切换下一页讲稿
 watch(active, (i) => {
   write()
+  if (ttsPlaying.value) speakSlide(i)
   if (mode.value !== 'present') return
   const h = root.value?.querySelector<HTMLElement>(`[data-slide="${i}"] [id]`)
   if (h) history.replaceState(history.state, '', `#${encodeURIComponent(h.id)}`)
 })
 watch(notes, write)
+watch(() => route.path, () => {
+  stopTts()
+  biliOpen.value = false
+})
 
 // 地址栏带锚点（来自搜索结果或分享）时翻到锚点所在那一页
 function fromHash() {
@@ -109,6 +208,7 @@ const narrow = typeof window !== 'undefined' ? window.matchMedia('(max-width: 76
 function onNarrow() { setMode(narrow?.matches ? 'cards' : 'present') }
 
 onMounted(() => {
+  ttsSupported.value = typeof window !== 'undefined' && 'speechSynthesis' in window
   const saved = read()
   notes.value = !!saved.notes
   Object.assign(answers, saved.answers || {})
@@ -121,6 +221,7 @@ onMounted(() => {
   narrow?.addEventListener('change', onNarrow)
 })
 onBeforeUnmount(() => {
+  stopTts()
   window.removeEventListener('keydown', onKey)
   window.removeEventListener('hashchange', fromHash)
   narrow?.removeEventListener('change', onNarrow)
@@ -150,6 +251,10 @@ onBeforeUnmount(() => {
         <span class="dk-count" aria-live="polite">{{ ready ? `${active + 1} / ${total}` : '' }}</span>
         <button type="button" class="dk-btn dk-btn--main" :disabled="active === total - 1" @click="next">下一页 ›</button>
         <span class="dk-sep"></span>
+        <button v-if="ttsSupported" type="button" class="dk-btn" :aria-pressed="ttsPlaying" @click="toggleTts">{{ ttsPlaying ? '⏹ 停止朗读' : '🔊 听讲稿' }}</button>
+        <button v-if="ttsSupported" type="button" class="dk-btn dk-btn--ghost" @click="cycleTtsRate">{{ ttsRate }}x</button>
+        <button v-if="ttsSupported" type="button" class="dk-btn dk-btn--ghost" :aria-pressed="ttsAutoNext" @click="ttsAutoNext = !ttsAutoNext">{{ ttsAutoNext ? '连播开' : '连播关' }}</button>
+        <button v-if="biliInfo" type="button" class="dk-btn" :aria-pressed="biliOpen" @click="biliOpen = !biliOpen; biliMini = false">📺 B 站伴读</button>
         <button type="button" class="dk-btn" :aria-pressed="notes" @click="notes = !notes">{{ notes ? '收起讲稿' : '显示讲稿' }}</button>
         <button type="button" class="dk-btn" @click="fullscreen">全屏</button>
         <button type="button" class="dk-btn" @click="setRecording(true)">录制模式</button>
@@ -157,10 +262,31 @@ onBeforeUnmount(() => {
       </template>
       <template v-else>
         <span class="dk-count">{{ ready ? `共 ${total} 页` : '' }}</span>
+        <button v-if="ttsSupported" type="button" class="dk-btn" :aria-pressed="ttsPlaying" @click="toggleTts">{{ ttsPlaying ? '⏹ 停止朗读' : '🔊 听讲稿' }}</button>
+        <button v-if="ttsSupported" type="button" class="dk-btn dk-btn--ghost" @click="cycleTtsRate">{{ ttsRate }}x</button>
+        <button v-if="biliInfo" type="button" class="dk-btn" :aria-pressed="biliOpen" @click="biliOpen = !biliOpen; biliMini = false">📺 B 站伴读</button>
         <button type="button" class="dk-btn" :aria-pressed="notes" @click="notes = !notes">{{ notes ? '收起讲稿' : '显示讲稿' }}</button>
         <button type="button" class="dk-btn dk-btn--ghost dk-only-wide" @click="setMode('present')">回到演示</button>
       </template>
     </div>
+
+    <aside v-if="biliOpen && biliInfo" class="dk-bili-float" :class="{ 'is-mini': biliMini }" aria-label="B 站伴读小窗">
+      <div class="dk-bili-float__head">
+        <b>📺 {{ biliInfo.title }}（第 {{ biliInfo.page }} 集）</b>
+        <div class="dk-bili-float__ops">
+          <button type="button" @click="biliMini = !biliMini">{{ biliMini ? '展开' : '折叠' }}</button>
+          <button type="button" aria-label="关闭 B 站伴读小窗" @click="biliOpen = false">✕</button>
+        </div>
+      </div>
+      <iframe
+        v-show="!biliMini"
+        class="dk-bili-float__frame"
+        :src="biliInfo.src"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </aside>
 
     <p v-if="recording" class="dk-rec-hint">录制模式：←/→ 翻页，Esc 退出</p>
   </div>
@@ -218,6 +344,25 @@ onBeforeUnmount(() => {
 }
 @keyframes dk-fade { 0%, 70% { opacity: 1; } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .dk-progress span { transition: none; } }
+
+/* B 站伴读迷你浮窗 */
+.dk-bili-float {
+  position: fixed; right: 16px; bottom: 16px; z-index: 60; width: min(360px, calc(100vw - 32px));
+  background: var(--hd-card); border: 2px solid var(--hd-ink); border-radius: 12px;
+  box-shadow: var(--hd-shadow-card); overflow: hidden;
+}
+.dk-bili-float.is-mini { width: min(300px, calc(100vw - 32px)); }
+.dk-bili-float__head {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 8px 12px; background: var(--hd-night); color: #fff; font-size: 12px;
+}
+.dk-bili-float__head b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dk-bili-float__ops { display: flex; gap: 6px; flex: none; }
+.dk-bili-float__ops button {
+  padding: 2px 8px; border: 1px solid rgba(255,255,255,.35); border-radius: 6px;
+  background: transparent; color: #fff; font-size: 12px; cursor: pointer;
+}
+.dk-bili-float__frame { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000; }
 </style>
 
 <style>

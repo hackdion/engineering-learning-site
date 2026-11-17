@@ -14,7 +14,7 @@ const on = computed(() => deck.mode.value === 'cards' || deck.active.value === i
     <div class="dk-body">
       <slot />
     </div>
-    <aside v-if="deck.notes.value && $slots.notes" class="dk-notes" aria-label="讲稿">
+    <aside v-show="deck.notes.value && $slots.notes" class="dk-notes" aria-label="讲稿">
       <b>讲稿</b>
       <slot name="notes" />
     </aside>

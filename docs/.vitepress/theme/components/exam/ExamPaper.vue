@@ -5,6 +5,7 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { inBrowser, withBase } from 'vitepress'
 import ExamCase from './ExamCase.vue'
+import { COURSES } from '../../data/courses'
 import {
   answerText,
   clearState,
@@ -144,6 +145,23 @@ function start(force = false) {
 
 function persist() {
   if (state.value) saveState(state.value)
+}
+
+function deckUrlForRef(ref?: { path?: string }) {
+  if (!ref?.path) return null
+  const m = ref.path.match(/^\/textbook\/(?:(schedule|investment|contract-management|quality|case-analysis)\/)?chapter-(\d+)\/section-(\d+)/)
+  if (!m) return null
+  const slugMap: Record<string, string> = {
+    schedule: 'jindu',
+    investment: 'touzi',
+    'contract-management': 'hetong',
+    quality: 'zhiliang',
+    'case-analysis': 'anli'
+  }
+  const book = m[1] ? slugMap[m[1]] : 'gailun'
+  const sec = `${parseInt(m[2], 10)}.${parseInt(m[3], 10)}`
+  const hit = COURSES.find((c) => c.book === book && c.deck && (c.section === sec || c.section.startsWith(`${sec}.`)))
+  return hit?.deck ? withBase(hit.deck) : null
 }
 
 function recordWrongImmediately(q: ExamQuestion) {
@@ -534,8 +552,9 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               <span class="ep-study-box__ans">参考答案：{{ current.answer.join('、') }}</span>
             </div>
             <p v-if="current.analysis" class="ep-study-box__analysis">{{ current.analysis }}</p>
-            <div v-if="current.ref && studyUrl(current.ref)" class="ep-study-box__links">
-              <a class="hd-ruler" :href="studyUrl(current.ref)!">回教材原文 →</a>
+            <div v-if="(current.ref && studyUrl(current.ref)) || deckUrlForRef(current.ref)" class="ep-study-box__links">
+              <a v-if="current.ref && studyUrl(current.ref)" class="hd-ruler" :href="studyUrl(current.ref)!">回教材原文 →</a>
+              <a v-if="deckUrlForRef(current.ref)" class="hd-ruler" :href="deckUrlForRef(current.ref)!">练本节互动 PPT →</a>
             </div>
           </section>
 
@@ -652,6 +671,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
 
             <p v-if="item.q.ref" class="ep-review__ref">
               <a :href="studyUrl(item.q.ref)">回到教材：{{ item.q.ref.book || '教材' }}</a>
+              <a v-if="deckUrlForRef(item.q.ref)" :href="deckUrlForRef(item.q.ref)!">练本节互动 PPT →</a>
               <span v-if="item.q.ref.anchor">依据：{{ item.q.ref.anchor }}</span>
             </p>
           </li>
@@ -1154,6 +1174,9 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
   color: var(--hd-ink-2);
 }
 .ep-study-box__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   margin-top: 8px;
   font-size: 13px;
 }

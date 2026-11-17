@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // 新首页：首屏署名与两个入口 → 备考面板 → 最新发布 → 六册书架 → 四种学法 → 关注横幅 → 页脚。
 // 所有数字来自构建时统计与真实课程数据；没有官方考试日期时只展示可读节数。
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import BookShelf from './BookShelf.vue'
 import { BOOKS } from '../data/books'
@@ -51,6 +51,50 @@ const panelForms = [
   { label: '工程全景地图', note: '九阶段、九类岗位、工程术语与工地沙盘', count: '53 项 · 39 岗位 · 20 词', href: withBase('/engineering-map/') },
   { label: '现场实务专题', note: '高频现场监理争议与法规判定专题', count: '6 篇专题', href: withBase('/knowledge/') }
 ]
+
+const studyDash = ref({
+  ready: false,
+  stamped: 0,
+  decks: 0,
+  papers: 0,
+  wrongTotal: 0,
+  wrongPaperId: ''
+})
+
+onMounted(() => {
+  try {
+    let stamped = 0
+    let decks = 0
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i) || ''
+      if (k.startsWith('hd:learned:') && localStorage.getItem(k) === '1') stamped++
+      else if (k.startsWith('hd:deck:')) {
+        try {
+          const d = JSON.parse(localStorage.getItem(k) || '{}')
+          if ((d.slide ?? 0) > 0 || (d.answers && Object.keys(d.answers).length > 0)) decks++
+        } catch { /* ignore */ }
+      }
+    }
+    let papers = 0
+    let wrongTotal = 0
+    let wrongPaperId = ''
+    try {
+      const rec = JSON.parse(localStorage.getItem('hd-exam-v1:records') || '{}')
+      const map = rec?.papers && typeof rec.papers === 'object' ? rec.papers : {}
+      const list = Object.values(map) as { id?: string; wrong?: string[]; at?: number }[]
+      papers = list.length
+      list.sort((a, b) => (b.at ?? 0) - (a.at ?? 0))
+      for (const item of list) {
+        const wc = Array.isArray(item.wrong) ? item.wrong.length : 0
+        wrongTotal += wc
+        if (!wrongPaperId && wc > 0 && item.id) wrongPaperId = item.id
+      }
+    } catch { /* ignore */ }
+    studyDash.value = { ready: true, stamped, decks, papers, wrongTotal, wrongPaperId }
+  } catch {
+    studyDash.value = { ready: true, stamped: 0, decks: 0, papers: 0, wrongTotal: 0, wrongPaperId: '' }
+  }
+})
 function openFollow(e: MouseEvent) {
   window.dispatchEvent(new CustomEvent('hd:follow', { detail: e.currentTarget }))
 }
@@ -125,6 +169,23 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
               <span>{{ f.label }} · {{ f.note }}</span>
             </a>
             <p class="home__stats-note">{{ LISTEN_SECTIONS }} 个教材小节有朗读入口；分集与合集口径见课程中心。</p>
+          </div>
+          <div v-if="studyDash.ready" class="home__dash" aria-label="本机学习仪表盘">
+            <span class="home__dash-label">本机备考进度</span>
+            <div class="home__dash-items">
+              <a :href="withBase('/textbook/')">教材盖章 <b>{{ studyDash.stamped }}</b> / {{ totalSections }} 节</a>
+              <a :href="withBase('/courses/')">互动 PPT <b>{{ studyDash.decks }}</b> / {{ DECK_COUNT }} 份</a>
+              <a :href="withBase('/exams/')">已做试卷 <b>{{ studyDash.papers }}</b> 套 · 错题 <b>{{ studyDash.wrongTotal }}</b> 道</a>
+            </div>
+            <div class="home__dash-actions">
+              <a
+                v-if="studyDash.wrongTotal > 0 && studyDash.wrongPaperId"
+                class="hd-ruler home__dash-go"
+                :href="withBase(`/exams/paper?id=${studyDash.wrongPaperId}&redo=wrong`)"
+              >去清错题（{{ studyDash.wrongTotal }}）→</a>
+              <a v-else class="hd-ruler home__dash-go" :href="withBase('/exams/')">去刷题 →</a>
+              <a class="hd-ruler home__dash-go" :href="withBase('/courses/')">练互动课件 →</a>
+            </div>
           </div>
         </div>
       </aside>
@@ -346,6 +407,20 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__form span { font-size: 14px; color: var(--hd-ink-2); }
 .home__form:hover span { text-decoration: underline; }
 .home__stats-note { margin: 10px 0 0; font-size: 12px; color: var(--hd-ink-3); line-height: 1.7; }
+.home__dash {
+  margin-top: 4px; padding-top: 12px; border-top: 1px dashed var(--hd-line);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; font-size: 13px;
+}
+.home__dash-label {
+  padding: 2px 8px; border-radius: 4px; background: var(--hd-accent-soft);
+  color: var(--hd-accent); font-weight: 700; font-size: 12px;
+}
+.home__dash-items { display: flex; flex-wrap: wrap; gap: 8px 16px; flex: 1 1 280px; }
+.home__dash-items a { color: var(--hd-ink-2); text-decoration: none; }
+.home__dash-items a:hover { color: var(--hd-accent); text-decoration: underline; }
+.home__dash-items b { font-family: var(--hd-font-mono); color: var(--hd-ink); }
+.home__dash-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.home__dash-go { font-size: 13px; font-weight: 700; }
 
 /* 工程地图入口：备考面板与最新发布之间的一条路线带 */
 .home__map { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; padding-top: 18px; padding-bottom: 18px; border-top: 2px solid var(--hd-accent); border-bottom: 1px solid var(--hd-line); }
