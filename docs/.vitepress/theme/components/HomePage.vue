@@ -46,7 +46,10 @@ const panelForms = [
   { label: '教材正文', note: '六册按原书章节整理', count: `${BOOKS.length} 册 · ${totalSections} 节`, href: withBase('/textbook/') },
   { label: '互动课件', note: `集中在${deckBooks}`, count: `${DECK_COUNT} 份 · ${DECK_SECTIONS} 节`, href: withBase('/courses/') },
   { label: '精讲视频', note: '按 BV 号去重，首发 B 站', count: `${VIDEO_COUNT} 条`, href: withBase('/courses/') },
-  { label: '全文朗读', note: `按「BV 号 + 分集号」去重`, count: `${EPISODE_COUNT} 集 · ${SERIES_COUNT} 个合集`, href: withBase('/courses/') }
+  { label: '全文朗读', note: `按「BV 号 + 分集号」去重`, count: `${EPISODE_COUNT} 集 · ${SERIES_COUNT} 个合集`, href: withBase('/courses/') },
+  { label: '模拟与真题试卷', note: '含真题、平行模拟与 14 套监理员取证题库', count: '26 套 · 2,164 题', href: withBase('/exams/') },
+  { label: '工程全景地图', note: '九阶段、九类岗位、工程术语与工地沙盘', count: '53 项 · 39 岗位 · 20 词', href: withBase('/engineering-map/') },
+  { label: '现场实务专题', note: '高频现场监理争议与法规判定专题', count: '6 篇专题', href: withBase('/knowledge/') }
 ]
 function openFollow(e: MouseEvent) {
   window.dispatchEvent(new CustomEvent('hd:follow', { detail: e.currentTarget }))

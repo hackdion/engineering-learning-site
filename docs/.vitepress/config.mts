@@ -22,6 +22,8 @@ function searchPageLabel(file: string) {
   const norm = file.replace(/\\/g, '/')
   if (/(^|\/)law\//.test(norm)) return '法规 · 条文'
   if (/(^|\/)model-contracts\//.test(norm)) return '示范文本'
+  if (/(^|\/)courses\/ppt-/.test(norm)) return '互动 · 课件'
+  if (/(^|\/)knowledge\//.test(norm)) return '实务 · 专题'
   const at = norm.indexOf('/textbook/')
   if (at === -1) return ''
   const rel = norm.slice(at + '/textbook/'.length)

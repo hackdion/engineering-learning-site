@@ -38,6 +38,9 @@ const confirmSubmit = ref(false)
 const paused = ref(false)
 const sheetOpen = ref(false)
 const redoIds = ref<string[]>([])
+const practiceMode = ref<'exam' | 'study'>('exam')
+const peekAll = ref(false)
+const checkedIds = ref<Set<string>>(new Set())
 
 let ticker: number | undefined
 
@@ -143,6 +146,65 @@ function persist() {
   if (state.value) saveState(state.value)
 }
 
+function recordWrongImmediately(q: ExamQuestion) {
+  const s = state.value
+  const paper = meta.value
+  if (!s || !paper) return
+  const picked = s.answers[q.id] ?? []
+  const full = q.type === 'single' ? paper.scoring.single : paper.scoring.multi
+  const sc = questionScore(q, picked, paper.scoring)
+  if (sc < full) {
+    const rec = loadRecords().papers[paper.id]
+    const prev = rec?.wrong ?? []
+    if (!prev.includes(q.id)) {
+      if (rec) updateWrong(paper.id, [...prev, q.id])
+      else {
+        saveRecord({
+          id: paper.id,
+          title: paper.title,
+          subject: paper.subject,
+          subjectKey: paper.subjectKey,
+          score: 0,
+          detail: '刷题模式错题记录',
+          at: Date.now(),
+          wrong: [q.id]
+        })
+      }
+    }
+  }
+}
+
+function checkCurrentStudy() {
+  const q = current.value
+  if (!q) return
+  const next = new Set(checkedIds.value)
+  next.add(q.id)
+  checkedIds.value = next
+  recordWrongImmediately(q)
+}
+
+function togglePracticeMode() {
+  practiceMode.value = practiceMode.value === 'exam' ? 'study' : 'exam'
+  if (practiceMode.value === 'exam') peekAll.value = false
+}
+
+const showStudyFeedback = computed(() => {
+  const q = current.value
+  if (!q || practiceMode.value !== 'study') return false
+  return peekAll.value || checkedIds.value.has(q.id)
+})
+
+const currentStudyScore = computed(() => {
+  const q = current.value
+  const paper = meta.value
+  if (!q || !paper) return { score: 0, full: 1, status: 'unanswered' as const }
+  const picked = state.value?.answers[q.id] ?? []
+  const full = q.type === 'single' ? paper.scoring.single : paper.scoring.multi
+  if (picked.length === 0) return { score: 0, full, status: 'unanswered' as const }
+  const sc = questionScore(q, picked, paper.scoring)
+  return { score: sc, full, status: sc === full ? 'correct' as const : sc > 0 ? 'partial' as const : 'wrong' as const }
+})
+
 function choose(letter: string) {
   const q = current.value
   const s = state.value
@@ -150,6 +212,12 @@ function choose(letter: string) {
   const picked = s.answers[q.id] ?? []
   if (q.type === 'single') {
     s.answers[q.id] = [letter]
+    if (practiceMode.value === 'study') {
+      const next = new Set(checkedIds.value)
+      next.add(q.id)
+      checkedIds.value = next
+      recordWrongImmediately(q)
+    }
   } else {
     s.answers[q.id] = picked.includes(letter) ? picked.filter((l) => l !== letter) : [...picked, letter]
     if (s.answers[q.id].length === 0) delete s.answers[q.id]
@@ -348,6 +416,19 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
           <span class="ep-bar__timer-label">{{ paused ? '已暂停' : '剩余' }}</span>
         </div>
         <div class="ep-bar__actions">
+          <button
+            type="button"
+            class="ep-mini ep-mode-btn"
+            :class="{ 'is-study': practiceMode === 'study' }"
+            @click="togglePracticeMode"
+          >{{ practiceMode === 'study' ? '刷题模式' : '考场模式' }}</button>
+          <button
+            v-if="practiceMode === 'study'"
+            type="button"
+            class="ep-mini ep-peek-btn"
+            :class="{ 'is-on': peekAll }"
+            @click="peekAll = !peekAll"
+          >{{ peekAll ? '关闭背题' : '背题看答案' }}</button>
           <button type="button" class="ep-mini" @click="togglePause">{{ paused ? '继续作答' : '暂停离开' }}</button>
           <button type="button" class="ep-submit" @click="confirmSubmit = true">交卷</button>
         </div>
@@ -416,7 +497,11 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               <button
                 type="button"
                 class="ep-option"
-                :class="{ 'is-picked': isPicked(String(letter)) }"
+                :class="{
+                  'is-picked': isPicked(String(letter)),
+                  'is-right': showStudyFeedback && current.answer.includes(String(letter)),
+                  'is-wrong': showStudyFeedback && isPicked(String(letter)) && !current.answer.includes(String(letter))
+                }"
                 :aria-pressed="isPicked(String(letter))"
                 @click="choose(String(letter))"
               >
@@ -425,6 +510,34 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               </button>
             </li>
           </ul>
+
+          <div v-if="practiceMode === 'study' && current.type === 'multi' && !showStudyFeedback" class="ep-study-check">
+            <button
+              type="button"
+              class="hd-btn hd-btn--paper"
+              :disabled="(state?.answers[current.id]?.length ?? 0) === 0"
+              @click="checkCurrentStudy"
+            >核对本题</button>
+          </div>
+
+          <section
+            v-if="showStudyFeedback"
+            class="ep-study-box"
+            :class="`is-${currentStudyScore.status}`"
+            aria-live="polite"
+          >
+            <div class="ep-study-box__head">
+              <strong v-if="currentStudyScore.status === 'correct'">答对了（+{{ currentStudyScore.score }} 分）</strong>
+              <strong v-else-if="currentStudyScore.status === 'partial'">少选得 {{ currentStudyScore.score }} 分</strong>
+              <strong v-else-if="currentStudyScore.status === 'wrong'">答错了（已记入本机错题本）</strong>
+              <strong v-else>背题参考答案</strong>
+              <span class="ep-study-box__ans">参考答案：{{ current.answer.join('、') }}</span>
+            </div>
+            <p v-if="current.analysis" class="ep-study-box__analysis">{{ current.analysis }}</p>
+            <div v-if="current.ref && studyUrl(current.ref)" class="ep-study-box__links">
+              <a class="hd-ruler" :href="studyUrl(current.ref)!">回教材原文 →</a>
+            </div>
+          </section>
 
           <div class="ep-question__foot">
             <button type="button" class="ep-mini" :disabled="(state?.index ?? 0) === 0" @click="go((state?.index ?? 0) - 1)">上一题</button>
@@ -981,6 +1094,68 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
   border-color: var(--hd-accent);
   background: var(--hd-accent);
   color: #fff;
+}
+.ep-option.is-right {
+  border-color: var(--hd-green);
+  background: #EAF4EE;
+}
+.ep-option.is-right .ep-option__letter {
+  border-color: var(--hd-green);
+  background: var(--hd-green);
+  color: #fff;
+}
+.ep-option.is-wrong {
+  border-color: var(--hd-danger);
+  background: #FCECE9;
+}
+.ep-option.is-wrong .ep-option__letter {
+  border-color: var(--hd-danger);
+  background: var(--hd-danger);
+  color: #fff;
+}
+.ep-mode-btn.is-study,
+.ep-peek-btn.is-on {
+  border-color: var(--hd-ink);
+  background: var(--hd-helmet);
+  color: var(--hd-ink);
+  font-weight: 700;
+}
+.ep-study-check {
+  margin-top: 14px;
+}
+.ep-study-box {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 2px solid var(--hd-ink);
+  border-left-width: 6px;
+  border-radius: 10px;
+  background: var(--hd-paper);
+}
+.ep-study-box.is-correct { border-left-color: var(--hd-green); }
+.ep-study-box.is-partial { border-left-color: var(--hd-orange); }
+.ep-study-box.is-wrong { border-left-color: var(--hd-danger); }
+.ep-study-box.is-unanswered { border-left-color: var(--hd-teal); }
+.ep-study-box__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.ep-study-box__ans {
+  font-family: var(--hd-font-mono);
+  font-weight: 700;
+}
+.ep-study-box__analysis {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--hd-ink-2);
+}
+.ep-study-box__links {
+  margin-top: 8px;
+  font-size: 13px;
 }
 .ep-question__foot {
   display: flex;
