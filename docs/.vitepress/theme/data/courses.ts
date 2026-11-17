@@ -579,6 +579,26 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：专业分包合同文件与双方义务、分包时限群、计量支付与变更索赔、竣工验收结算，以及劳务分包的报酬、实名制、安全与不可抗力分担，配 8 道自测题。'
   },
   {
+    id: 'ppt-ht-4-1', book: 'hetong', section: '4.1', title: '工程总承包招标',
+    date: '2026-11-17', deck: '/courses/ppt-ht-4-1',
+    summary: '互动 PPT 2.0：总承包方式的四个优点与两个不利因素、三卷七章标准文本、招标文件八项与价格清单八项、资格审查和评标办法的设计新增，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-4-2', book: 'hetong', section: '4.2', title: '工程总承包合同订立',
+    date: '2026-11-17', deck: '/courses/ppt-ht-4-2',
+    summary: '互动 PPT 2.0：九项合同文件与优先解释顺序、发包人要求 11 个方面、三方责任与分包五条、六处二选一条款、履约担保与保险，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-4-3', book: 'hetong', section: '4.3', title: '工程总承包合同履行管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-4-3',
+    summary: '互动 PPT 2.0：进度计划与 7 天/90 天、设计审查 21 天、变更三条通道、支付 7-7-14-28 时限链、竣工试验三阶段、缺陷责任期与索赔 28 天链，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-4-4', book: 'hetong', section: '4.4', title: '工程总承包分包管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-4-4',
+    summary: '互动 PPT 2.0：四类分包合同与连带责任、暂估价招标、五条禁止性规定、谈判签订、指令唯一通道、质量安全责任、变更四步与收尾，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
