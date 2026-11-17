@@ -919,6 +919,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：费用索赔八项工作与两份文书、工期索赔五项工作与临时最终延期、批准工程延期三个条件、费用与工期关联时的综合处理，配 8 道自测题。'
   },
   {
+    id: 'ppt-al-4-1', book: 'anli', section: '4.1', title: '第一节 工程监理组织、工作内容与相关法规',
+    date: '2026-11-17', deck: '/courses/ppt-al-4-1',
+    summary: '互动 PPT 2.0：按机构、人员、职责、规划细则、协调归档、法规责任六条线梳理 15 个案例，配组织形式切换、职责对比、归档排序、授权情景推演和 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-4-2', book: 'anli', section: '4.2', title: '第二节 工程质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-al-4-2',
+    summary: '互动 PPT 2.0：质量事故五步处理、异常直方图与因果排列图、三道验收主体、事故四级分类与强度不足处置，配工具切换、缺陷排序、见证取样情景和 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-4-3', book: 'anli', section: '4.3', title: '第三节 工程进度控制',
+    date: '2026-11-17', deck: '/courses/ppt-al-4-3',
+    summary: '互动 PPT 2.0：网络计划时差判断、前锋线分析、赶工优化、流水施工取大差法、风险量与索赔五步审查，配视图切换、排序、责任划分和 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-4-4', book: 'anli', section: '4.4', title: '第四节 工程投资控制',
+    date: '2026-11-17', deck: '/courses/ppt-al-4-4',
+    summary: '互动 PPT 2.0：方案比选与资金成本、建设期利息与偿债备付率、计量支付四关、挣值法四指标、因素分析法与综合单价取费顺序，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-4-5', book: 'anli', section: '4.5', title: '第五节 工程招标投标与合同管理',
+    date: '2026-11-17', deck: '/courses/ppt-al-4-5',
+    summary: '互动 PPT 2.0：监理招标八项工作、否决投标与评标委员会、文物事件处置、试车责任、索赔路径与废标情形，配发包模式对比、索赔程序、招标情景推演和 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
