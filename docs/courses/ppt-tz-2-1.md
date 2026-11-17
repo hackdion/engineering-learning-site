@@ -264,6 +264,8 @@ $$
   '将所有现金流量统一折算到同一比较时点并求解'
 ]" />
 
+继续学：[读本节教材原文](/textbook/investment/chapter-02/section-01) · [听本节全文朗读（B 站第 3 集）](https://www.bilibili.com/video/BV1g6xd6CE5L/?p=3) · [课程中心](/courses/)
+
 <template #notes>
 
 以后只要遇到资金时间价值或财务评价计算题，严格按这五步走：画现金流量图→看周期→换算有效利率→套公式→统一时点汇总，基本可以做到零失误。
@@ -282,6 +284,12 @@ $$
 
 <Quiz id="tz21-q3" q="下列因素中，决定资金等值的因素有（ ）。" :options="['资金数额的多少', '资金发生的时间长短', '利率（或折现率）的大小', '项目建设规模的大小', '施工单位的资质等级']" :answer="[0, 1, 2]" explain="影响资金等值的因素有三个：资金数额的多少、资金发生的时间长短、利率（或折现率）的大小。" cite="/textbook/investment/chapter-02/section-01" />
 
+<template #notes>
+
+本页为「自测（一）：单利复利与现金流量图」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -294,6 +302,12 @@ $$
 
 <Quiz id="tz21-q6" q="某人每年年末存入银行 10 万元，连续存 5 年，年利率 5%（复利），计算第 5 年末本利和应选用的系数是（ ）。" :options="['(F/P, 5%, 5)', '(P/A, 5%, 5)', '(F/A, 5%, 5)', '(A/F, 5%, 5)']" :answer="2" explain="已知每期年末等额现金流 A = 10 万元，求第 5 年末终值 F，应选用等额支付终值系数 (F/A, 5%, 5)。" cite="/textbook/investment/chapter-02/section-01" />
 
+<template #notes>
+
+本页为「自测（二）：名义利率与有效利率换算」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -303,6 +317,12 @@ $$
 <Quiz id="tz21-q7" q="某项目从第 2 年年末开始，连续 4 年每年年末获得净收益 50 万元，折现率为 i，则这些收益折算到第 0 年的现值表达式为（ ）。" :options="['50 × (P/A, i, 4)', '50 × (P/A, i, 4) × (P/F, i, 1)', '50 × (P/A, i, 4) × (P/F, i, 2)', '50 × (F/A, i, 4) × (P/F, i, 5)']" :answer="1" explain="A 从第 2 年末开始连续发生 4 年，(P/A, i, 4) 先把 4 个 A 折算到第 1 年末，再乘以 (P/F, i, 1) 折算到第 0 年。" cite="/textbook/investment/chapter-02/section-01" />
 
 <Quiz id="tz21-q8" q="下列关于资金等值计算系数关系的表述，正确的有（ ）。" :options="['(F/P, i, n) 与 (P/F, i, n) 互为倒数', '(F/A, i, n) 与 (A/F, i, n) 互为倒数', '(P/A, i, n) 与 (A/P, i, n) 互为倒数', '(A/P, i, n) = (A/F, i, n) + i', '(F/A, i, n) = (P/A, i, n) × (P/F, i, n)']" :answer="[0, 1, 2, 3]" explain="前四项均为教材核心系数恒等关系；(F/A, i, n) 应等于 (P/A, i, n) × (F/P, i, n)，而非乘以 (P/F, i, n)。" cite="/textbook/investment/chapter-02/section-01" />
+
+<template #notes>
+
+本页为「自测（三）：等值计算与系数组合」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
 
 </Slide>
 

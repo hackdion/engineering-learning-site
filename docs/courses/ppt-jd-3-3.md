@@ -395,6 +395,12 @@ $$\sigma = \frac{b - a}{6}, \quad \sigma^2 = \left(\frac{b - a}{6}\right)^2$$
 
 <Quiz id="jd33-q4" q="某工作总时差为 5 天，自由时差为 2 天。若该工作实际进度拖后 4 天，则对工程进度的影响是（ ）。" :options="['使总工期延长 2 天', '不影响总工期，也不影响紧后工作', '不影响总工期，但使紧后工作最早开始时间推迟 2 天', '使总工期延长 4 天']" :answer="2" explain="拖后 4 天未超过总时差 5 天，故不影响总工期；但超过自由时差 2 天，使紧后工作最早开始时间推迟 4 − 2 = 2 天。" cite="/textbook/schedule/chapter-03/section-03" />
 
+<template #notes>
+
+本页为「自测（一）：基本概念与双代号计算」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -408,6 +414,12 @@ $$\sigma = \frac{b - a}{6}, \quad \sigma^2 = \left(\frac{b - a}{6}\right)^2$$
 <Quiz id="jd33-q7" q="在网络计划执行过程中，如果利用某项工作的总时差，则有可能使该工作后续工作的总时差减小。" :options="['正确', '错误']" :answer="0" explain="教材原文：如果利用某项工作的总时差，则有可能使该工作后续工作的总时差减小；而利用自由时差不会影响紧后工作的机动时间。" cite="/textbook/schedule/chapter-03/section-03" />
 
 <Quiz id="jd33-q8" q="某工作在 PERT 估算中的乐观时间为 4 天，最可能时间为 7 天，悲观时间为 16 天，则该工作的持续时间期望值为（ ）天。" :options="['7', '8', '9', '10']" :answer="1" explain="期望值 D = (a + 4m + b) / 6 = (4 + 4×7 + 16) / 6 = 48 / 6 = 8 天。" cite="/textbook/schedule/chapter-03/section-03" />
+
+<template #notes>
+
+本页为「自测（二）：单代号、节点法与 PERT」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
 
 </Slide>
 

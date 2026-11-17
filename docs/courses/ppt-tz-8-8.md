@@ -361,6 +361,12 @@ edition: 2026 年版（中国建设监理协会组织编写）
 
 <Quiz id="tz88-q4" q="某工程施工至某月末，已完工作预算投资 BCWP = 38000 元，计划工作预算投资 BCWS = 42000 元，已完工作实际投资 ACWP = 48000 元，则进度绩效指数 SPI 为（ ）。" :options="['0.79', '0.90', '1.11', '1.26']" :answer="1" explain="SPI = BCWP / BCWS = 38000 / 42000 ≈ 0.90 < 1，表示进度延误。" cite="/textbook/investment/chapter-08/section-08" />
 
+<template #notes>
+
+本页为「自测（一）：三参数与四个评价指标」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -374,6 +380,12 @@ edition: 2026 年版（中国建设监理协会组织编写）
 <Quiz id="tz88-q7" q="在投资偏差分析中，下列属于项目监理机构纠偏主要对象的是（ ）。" :options="['施工方案不当引起的偏差', '自然因素引起的偏差', '发包人原因和设计原因造成的偏差', '材料涨价引起的偏差']" :answer="2" explain="教材明确：纠偏的主要对象是发包人原因和设计原因造成的投资偏差。" cite="/textbook/investment/chapter-08/section-08" />
 
 <Quiz id="tz88-q8" q="在投资偏差原因分类中，「未及时提供场地」属于设计原因，「图纸提供不及时」属于业主原因。" :options="['正确', '错误']" :answer="1" explain="恰恰相反！按教材图 8-12，「图纸提供不及时」属于设计原因，「未及时提供场地」属于业主原因。" cite="/textbook/investment/chapter-08/section-08" />
+
+<template #notes>
+
+本页为「自测（二）：表达方法、预测与纠偏」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
 
 </Slide>
 

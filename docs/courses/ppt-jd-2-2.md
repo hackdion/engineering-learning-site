@@ -317,6 +317,12 @@ n=3、n′=6、m=6、K=1，无间歇无提前插入。$T=(6+6-1)\times 1=11$（�
 
 <Quiz id="jd22-q3" q="在工期公式中，提前插入时间 C 是作为加项计入总工期的。" :options="['正确', '错误']" :answer="1" explain="提前插入时间 C 是减项，即 T=(m+n−1)t+ΣG+ΣZ−ΣC，可缩短工期。" cite="/textbook/schedule/chapter-02/section-02" />
 
+<template #notes>
+
+本页为「自测（一）：固定节拍」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -329,6 +335,12 @@ n=3、n′=6、m=6、K=1，无间歇无提前插入。$T=(6+6-1)\times 1=11$（�
 
 <Quiz id="jd22-q6" q="某工程 3 个施工过程流水节拍分别为 4、6、2 天，则组织加快的成倍节拍流水施工的流水步距 K 为（ ）天。" :options="['1', '2', '4', '6']" :answer="1" explain="K 等于各节拍 4、6、2 的最大公约数，即 K=2 天。" cite="/textbook/schedule/chapter-02/section-02" />
 
+<template #notes>
+
+本页为「自测（二）：加快成倍节拍」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -338,6 +350,12 @@ n=3、n′=6、m=6、K=1，无间歇无提前插入。$T=(6+6-1)\times 1=11$（�
 <Quiz id="jd22-q7" q="某工程 3 个施工过程流水节拍分别为 4、6、2 天，划分为 4 个施工段组织加快的成倍节拍流水施工，无间歇、无提前插入，则总工期为（ ）天。" :options="['18', '12', '24', '20']" :answer="0" explain="K=2；b₁=4/2=2、b₂=6/2=3、b₃=2/2=1，n′=2+3+1=6；T=(m+n′−1)K=(4+6−1)×2=18 天。" cite="/textbook/schedule/chapter-02/section-02" />
 
 <Quiz id="jd22-q8" q="加快的成倍节拍流水施工的工期公式中，使用的是专业工作队总数 n′，而不是施工过程数 n。" :options="['正确', '错误']" :answer="0" explain="加快的成倍节拍流水施工工期 T=(m+n′−1)K+ΣG+ΣZ−ΣC，其中 n′ 为专业工作队总数。" cite="/textbook/schedule/chapter-02/section-02" />
+
+<template #notes>
+
+本页为「自测（三）：综合计算」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
 
 </Slide>
 

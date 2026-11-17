@@ -364,6 +364,12 @@ $$V=\sum_{i=1}^{X} R_i \cdot S_i \tag{2-1}$$
 
 <Quiz id="jd21-q3" q="流水施工的垂直图表示法中，纵坐标表示（ ）。" :options="['施工过程的名称或编号', '施工段的编号（空间位置）', '流水施工的持续时间', '资源需要量']" :answer="1" explain="垂直图表示法纵坐标表示施工段的编号（空间位置），横坐标表示流水施工的持续时间；横道图纵坐标才是施工过程名称或编号。" cite="/textbook/schedule/chapter-02/section-01" />
 
+<template #notes>
+
+本页为「自测（一）：组织方式」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -376,6 +382,12 @@ $$V=\sum_{i=1}^{X} R_i \cdot S_i \tag{2-1}$$
 
 <Quiz id="jd21-q6" q="某施工过程投入 2 种资源，第 1 种资源投入 3 台机械、产量定额为每台班 40 m³，第 2 种资源投入 10 名工人、产量定额为每人每班 2 m³，则该施工过程的流水强度为（ ）m³/班。" :options="['120', '140', '100', '20']" :answer="1" explain="V = Σ(Ri·Si) = 3×40 + 10×2 = 120 + 20 = 140 m³/班。" cite="/textbook/schedule/chapter-02/section-01" />
 
+<template #notes>
+
+本页为「自测（二）：三大类参数」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -385,6 +397,12 @@ $$V=\sum_{i=1}^{X} R_i \cdot S_i \tag{2-1}$$
 <Quiz id="jd21-q7" q="划分施工段时，同一专业工作队在各个施工段上的劳动量应大致相等，相差幅度不宜超过（ ）。" :options="['5%～10%', '10%～15%', '15%～20%', '20%～25%']" :answer="1" explain="教材原文：同一专业工作队在各个施工段上的劳动量应大致相等，相差幅度不宜超过 10%～15%。" cite="/textbook/schedule/chapter-02/section-01" />
 
 <Quiz id="jd21-q8" q="如果施工过程数为 n 个，则流水步距的总数为（ ）。" :options="['n 个', 'n−1 个', 'n+1 个', '2n 个']" :answer="1" explain="教材原文：如果施工过程数为 n 个，则流水步距的总数为 n−1 个。" cite="/textbook/schedule/chapter-02/section-01" />
+
+<template #notes>
+
+本页为「自测（三）：施工段与时间参数」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
 
 </Slide>
 

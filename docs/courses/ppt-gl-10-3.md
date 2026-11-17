@@ -306,6 +306,12 @@ Project Controlling 一般面向大型和特大型工程，因为这类工程的
 
 <Quiz id="ppt-gl-10-3-q4" q="哪些情形尤其能体现 CM 模式的优点？" :options="['设计变更可能性较大的工程', '时间因素最为重要的工程', '总范围和规模不确定、难以准确确定造价的工程', '已有丰富施工经验的高水平 CM 单位并非必要']" :answer="[0, 1, 2]" explain="教材列出设计变更可能性较大、时间因素最重要、总范围和规模不确定三类情形；应用 CM 的关键和前提是具备丰富施工经验的高水平 CM 单位。" cite="/textbook/chapter-10/section-03" />
 
+<template #notes>
+
+本页为「自测（一）：CM 与 Partnering」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -319,6 +325,12 @@ Project Controlling 一般面向大型和特大型工程，因为这类工程的
 <Quiz id="ppt-gl-10-3-q7" q="Project Controlling 咨询单位的核心工作是什么？" :options="['收集、分析和处理信息，向业主提供决策支持', '直接向施工单位下达开工令和工程变更令', '代替业主决定建设工程的重大问题', '只负责现场施工组织和质量验收']" :answer="0" explain="Project Controlling 方是业主决策支持机构，核心工作是收集与工程目标有关的信息、分析处理并形成报告，供业主管理人员决策；它不直接参与实施管理或行使指令权。" cite="/textbook/chapter-10/section-03" />
 
 <Quiz id="ppt-gl-10-3-q8" q="应用 Project Controlling 模式时，哪些说法符合教材？" :options="['一般适用于大型和特大型建设工程', '不能作为独立存在的模式', '不能取代工程项目管理服务', '需要工程参建各方配合提供及时、准确、全面的信息', 'Project Controlling 咨询单位对参建单位有指令权']" :answer="[0, 1, 2, 3]" explain="教材指出，Project Controlling 一般适用于大型和特大型工程，不能独立存在或取代项目管理服务，并需要参建各方配合提供信息；其对其他参建单位没有指令权。" cite="/textbook/chapter-10/section-03" />
+
+<template #notes>
+
+本页为「自测（二）：Partnering 与 Project Controlling」，请先独立完成作答再点击核对答案与解析，错题可回到对应教材小节复盘。
+
+</template>
 
 </Slide>
 
