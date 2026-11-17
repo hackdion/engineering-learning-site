@@ -339,9 +339,39 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：V=F/C 与寿命周期成本、提高价值五种途径、功能分析与 Vi/ΔC 改进对象优选，配情景推演与 8 道自测题。'
   },
   {
+    id: 'ppt-tz-3-1', book: 'touzi', section: '3.1', title: '工程项目总投资构成',
+    date: '2026-11-17', deck: '/courses/ppt-tz-3-1',
+    summary: '互动 PPT 2.0：建设项目总投资构成、静态与动态投资划分、建安设三块与工程总承包费用构成，配视图切换、排序、闪卡与 8 道自测题。'
+  },
+  {
     id: 'ppt-tz-3-2', book: 'touzi', section: '3.2', title: '建筑安装工程费构成及计算',
     date: '2026-11-16', deck: '/courses/ppt-tz-3-2',
     summary: '互动 PPT 2.0：要素 7 项 vs 造价形成 5 项、机械台班 7 项、检验试验费易混归属、安规税不可竞争与 9% 增值税，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-3-3', book: 'touzi', section: '3.3', title: '设备购置费构成及计算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-3-3',
+    summary: '互动 PPT 2.0：国产标准/非标准设备原价、FOB/CFR/CIF 交货方式、进口设备抵岸价八项计算基数与运杂费，配视图切换、对比卡、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-3-4', book: 'touzi', section: '3.4', title: '工程建设其他费构成及计算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-3-4',
+    summary: '互动 PPT 2.0：三大类 15 项工程建设其他费、研究试验费与检验试验费对比、联合试运转净支出与生产准备费边界，配视图切换、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-3-5', book: 'touzi', section: '3.5', title: '预备费计算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-3-5',
+    summary: '互动 PPT 2.0：基本预备费基数、涨价预备费三指数拆解与例 3-3 逐年算例、常见扣分陷阱，配对比卡、排序、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-3-6', book: 'touzi', section: '3.6', title: '增值税计算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-3-6',
+    summary: '互动 PPT 2.0：增值税四档税率、一般计税（9%）与简易计税（3%）三大适用情形、不得抵扣进项税额六类，配视图切换、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-3-7', book: 'touzi', section: '3.7', title: '建设期利息与流动资金计算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-3-7',
+    summary: '互动 PPT 2.0：建设期利息年中支用与复利公式、例 3-4 演算、铺底流动资金 30% 口径及分项详细估算法，配步进、对比卡、闪卡与 8 道自测题。'
   },
   {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
