@@ -314,6 +314,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：五项供应目标、六类计划、需求与供需平衡计算、动态检查调整及监理职责，配切换、闪卡和供应推演、8 道自测题。'
   },
   {
+    id: 'ppt-tz-8-1', book: 'touzi', section: '8.1', title: '资金使用计划编制',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-1',
+    summary: '互动 PPT 2.0：投资控制目标三种分解方式、资金使用计划表六项内容、时间—投资累计曲线（S 形曲线）与香蕉图，配多视图切换、对比卡、闪卡、情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-8-2', book: 'touzi', section: '8.2', title: '工程计量',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-2',
+    summary: '互动 PPT 2.0：工程计量基本要求、不予计量四类情形、单价与总价合同计量区别、计日工十种情形、返工与新增工程计量，配流程步进、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-8-3', book: 'touzi', section: '8.3', title: '合同价款调整',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-3',
+    summary: '互动 PPT 2.0：合同价款调整十一类事项、工程量清单缺陷 15% 规则、暂列金额与暂估价、物价变化两种调差法与增值税调整，配对比、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-8-4', book: 'touzi', section: '8.4', title: '工程变更价款确定',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-4',
+    summary: '互动 PPT 2.0：工程变更管理工作、已标价清单数量变化调整、综合单价确定四种情形、措施项目与新增工程价款及例 8-7 计算，配切换、闪卡与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-8-5', book: 'touzi', section: '8.5', title: '费用索赔管理',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-5',
+    summary: '互动 PPT 2.0：监理费用索赔八项工作、承包人五类索赔、不可抗力损失承担、索赔费用组成与三种计算方法，配对比、闪卡与 8 道自测题。'
+  },
+  {
     id: 'ppt-tz-8-6', book: 'touzi', section: '8.6', title: '合同价款期中支付',
     date: '2026-11-17', deck: '/courses/ppt-tz-8-6',
     summary: '互动 PPT 2.0：期中支付四块内容、式 8-13 四个减项、预付款与安全生产措施费对比、进度款计量规则与例 8-14 全流程，配 8 道自测题。'
