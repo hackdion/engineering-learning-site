@@ -509,6 +509,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：投标报价两条底线与三个不变、不平衡报价调价方向、算术错误修正优先级与异常低价澄清程序，配 8 道自测题。'
   },
   {
+    id: 'ppt-ht-1-1', book: 'hetong', section: '1.1', title: '工程交易方式及合同体系',
+    date: '2026-11-17', deck: '/courses/ppt-ht-1-1',
+    video: { bvid: 'BV1wZx96WEuj', url: 'https://www.bilibili.com/video/BV1wZx96WEuj/' },
+    summary: '互动 PPT 2.0：招标五大特点与七步流程、公开招标与邀请招标对照、必须招标的三类项目与 400/200/100 万金额线、四种非招标采购方式、四组合同分类与十余种工程合同，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-1-2', book: 'hetong', section: '1.2', title: '工程合同管理任务和方法',
+    date: '2026-11-17', deck: '/courses/ppt-ht-1-2',
+    video: { bvid: 'BV1wZx96WEuj', url: 'https://www.bilibili.com/video/BV1wZx96WEuj/' },
+    summary: '互动 PPT 2.0：招标采购、合同订立、合同履行三阶段任务，总体策划与合同界面、标准文本作用、三种计价方式、评审五项、交底五项、PDCA 纠偏、变更四条件与索赔要求，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-1-3', book: 'hetong', section: '1.3', title: '工程合同管理相关法律基础',
+    date: '2026-11-17', deck: '/courses/ppt-ht-1-3',
+    video: { bvid: 'BV1wZx96WEuj', url: 'https://www.bilibili.com/video/BV1wZx96WEuj/' },
+    summary: '互动 PPT 2.0：合同关系三要素与法律事实、委托代理四特征与无权代理、代理终止五原因、民事责任十一方式与五原则、违约责任与缔约过失、刑事责任刑种与工程领域罪名，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-1-4', book: 'hetong', section: '1.4', title: '工程合同担保',
+    date: '2026-11-17', deck: '/courses/ppt-ht-1-4',
+    video: { bvid: 'BV1wZx96WEuj', url: 'https://www.bilibili.com/video/BV1wZx96WEuj/' },
+    summary: '互动 PPT 2.0：保证、抵押、质押、留置、定金五种担保方式的设立与责任，工程保证担保五类，投标 2%、履约 10%、质量保证金 3% 与清偿顺序，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-1-5', book: 'hetong', section: '1.5', title: '工程保险',
+    date: '2026-11-17', deck: '/courses/ppt-ht-1-5',
+    video: { bvid: 'BV1wZx96WEuj', url: 'https://www.bilibili.com/video/BV1wZx96WEuj/' },
+    summary: '互动 PPT 2.0：建筑工程一切险与安装工程一切险、第三者责任险、工伤保险与意外伤害保险，合同订立三步、履行五步、定损时限与诉讼时效，配 8 道自测题。'
+  },
+  {
     id: 'ppt-ht-2-1', book: 'hetong', section: '2.1', title: '工程勘察设计招标与设计方案竞赛',
     date: '2026-11-17', deck: '/courses/ppt-ht-2-1',
     summary: '互动 PPT 2.0：勘察设计招标的智力成果属性与 9 大特点、一次性/分阶段与设计总包、设计方案与设计团队招标、评标两阶段与资质类别、设计方案竞赛四阶段，配对比、步进、闪卡、情景推演与 8 道自测题。'
