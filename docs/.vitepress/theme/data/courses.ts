@@ -374,6 +374,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：建设期利息年中支用与复利公式、例 3-4 演算、铺底流动资金 30% 口径及分项详细估算法，配步进、对比卡、闪卡与 8 道自测题。'
   },
   {
+    id: 'ppt-tz-5-1', book: 'touzi', section: '5.1', title: '工程项目可行性研究报告编制和评估',
+    date: '2026-11-17', deck: '/courses/ppt-tz-5-1',
+    summary: '互动 PPT 2.0：审批制/资金申请/核准制三条通道、三大目标七个维度、报告十项内容、财务可持续性与评估要点，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-5-2', book: 'touzi', section: '5.2', title: '工程项目投资估算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-5-2',
+    summary: '互动 PPT 2.0：两阶段估算与 10% 红线、生产能力指数法等四种方法、例 5-1 计算、建设投资分项与 30% 铺底流动资金，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-5-3', book: 'touzi', section: '5.3', title: '工程项目财务分析',
+    date: '2026-11-17', deck: '/courses/ppt-tz-5-3',
+    summary: '互动 PPT 2.0：经营成本口径、NPV/IRR/NAV/NPVR/回收期/收益率、三项偿债指标与互斥方案增量比选，含四道教材例题，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-5-4', book: 'touzi', section: '5.4', title: '工程项目经济分析',
+    date: '2026-11-17', deck: '/courses/ppt-tz-5-4',
+    summary: '互动 PPT 2.0：财务与经济分析五处不同、影子价格与影子汇率、转移支付剔除、ENPV/EIRR/RBC 与费用效果分析，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-5-5', book: 'touzi', section: '5.5', title: '不确定性分析与风险分析',
+    date: '2026-11-17', deck: '/courses/ppt-tz-5-5',
+    summary: '互动 PPT 2.0：盈亏平衡点两个口径、敏感性分析五步与例 5-8 排序、风险识别估计评价与四类对策，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
