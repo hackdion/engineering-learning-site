@@ -509,6 +509,26 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：投标报价两条底线与三个不变、不平衡报价调价方向、算术错误修正优先级与异常低价澄清程序，配 8 道自测题。'
   },
   {
+    id: 'ppt-ht-2-1', book: 'hetong', section: '2.1', title: '工程勘察设计招标与设计方案竞赛',
+    date: '2026-11-17', deck: '/courses/ppt-ht-2-1',
+    summary: '互动 PPT 2.0：勘察设计招标的智力成果属性与 9 大特点、一次性/分阶段与设计总包、设计方案与设计团队招标、评标两阶段与资质类别、设计方案竞赛四阶段，配对比、步进、闪卡、情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-2-2', book: 'hetong', section: '2.2', title: '工程勘察设计合同订立',
+    date: '2026-11-17', deck: '/courses/ppt-ht-2-2',
+    summary: '互动 PPT 2.0：通用/专用条款与附件三层文本、合同文件九项解释优先顺序、项目负责人终身责任制、责任保险与支付三个 28 天、双方违约情形，配排序、对比卡、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-2-3', book: 'hetong', section: '2.3', title: '工程勘察合同履行管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-2-3',
+    summary: '互动 PPT 2.0：发包人代表与项目负责人职责时点、测绘勘探取样试验要求、封孔与 CMA 认证、勘察设备临时占地安全环保，配对比、步进、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-2-4', book: 'hetong', section: '2.4', title: '工程设计合同履行管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-2-4',
+    summary: '互动 PPT 2.0：开始/完成/提前/暂停设计的时点节点、设计文件一式八份与 14 天审查、周期延误三分类与错误责任、施工配合与合理化建议，配对比、步进、闪卡与情景推演、8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
