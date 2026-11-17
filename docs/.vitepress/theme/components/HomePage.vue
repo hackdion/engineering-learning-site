@@ -473,13 +473,13 @@ const banner = PLATFORMS.filter((p) => p.key === 'bili' || p.key === 'xhs')
 .home__series-head span { font-size: 13px; color: var(--hd-ink-3); }
 .home__series-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 28px; }
 .home__series-item {
-  display: grid; grid-template-columns: 8px 1fr auto auto; align-items: center; gap: 4px 10px; padding: 9px 0;
+  display: grid; grid-template-columns: 8px 1fr auto; align-items: center; gap: 4px 10px; padding: 10px 0;
   border-top: 1px dashed var(--hd-line); color: var(--hd-ink) !important; text-decoration: none; font-size: 14px;
 }
-.home__series-item b { font-weight: 600; }
+.home__series-item b { font-weight: 600; grid-column: 2 / 4; }
 .home__series-dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
-.home__series-num { font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
-.home__series-go { font-size: 12px; color: var(--hd-accent); }
+.home__series-num { grid-column: 2; font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
+.home__series-go { grid-column: 3; justify-self: end; white-space: nowrap; font-size: 12px; color: var(--hd-accent); }
 .home__series-item:hover b { text-decoration: underline; }
 
 .home__ways { padding-top: 48px; padding-bottom: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
