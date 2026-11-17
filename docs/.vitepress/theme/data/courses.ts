@@ -794,6 +794,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：事故四级划分与就高认定、单位 1 小时与逐级 2 小时报告、调查主体与 60 日报告期限、15/30 日批复、单位与个人罚款尺度及 5 年禁任，配 8 道自测题。'
   },
   {
+    id: 'ppt-al-3-1', book: 'anli', section: '3.1', title: '工程监理招标投标与合同管理',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-1',
+    summary: '互动 PPT 2.0：两种招标方式与六段程序、五项评标内容、初步评审一票否决与同分排序、监理大纲四项与六条投标策略、通用条款 12 条与九项优先解释顺序、临时指示 24 小时，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-2', book: 'anli', section: '3.2', title: '工程监理组织',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-2',
+    summary: '互动 PPT 2.0：DBB 与工程总承包、平行/联合体/合作体三种承包关系、PPP 五种方式与 40 年期限、可以/宜/应三档委托方式、四步设立与四种组织形式、人员配备四因素，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-3', book: 'anli', section: '3.3', title: '监理规划与监理实施细则',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-3',
+    summary: '互动 PPT 2.0：规划十项内容与七项依据、四条编制要求、总监组织编制与单位审批的双层报审、细则四项内容与三项依据、相应分部分项工程开始前的编制时点，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-4', book: 'anli', section: '3.4', title: '工程监理工作内容和主要方式',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-4',
+    summary: '互动 PPT 2.0：三控两管一协调一履行、三大目标关系与四类措施、合同管理四类事项、信息管理六环节、安全隐患三级处置，以及审查核验、巡视、平行检验、旁站、见证五种方式与数智化，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-5', book: 'anli', section: '3.5', title: '工程监理文件资料管理',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-5',
+    summary: '互动 PPT 2.0：A 类 8 个、B 类 14 个、C 类 3 个基本表式，四类签章规则，十八类主要文件资料，日志、月报、评估报告与总结的编制签认，六环节管理流程，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-6', book: 'anli', section: '3.6', title: '工程风险管理',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-6',
+    summary: '互动 PPT 2.0：识别六种方法与风险清单、分析与评价五项任务、VL/L/M/H/VH 五级风险量与可接受性、回避/损失控制/转移/自留四类对策、三项损失控制计划与风险监控，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
