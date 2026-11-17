@@ -669,6 +669,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：建设单位安全监督手续与拆除 15 日备案、勘察设计风险说明、监理五项安全行为与两类人员证书、施工十二条、第三方监测方案与 1～3 万元罚则，配步进、对比、排序、情景推演与 8 道自测题。'
   },
   {
+    id: 'ppt-zl-2-1', book: 'zhiliang', section: '2.1', title: '工程勘察质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-2-1',
+    summary: '互动 PPT 2.0：勘察质量控制「任务书—资质—纲要—巡视—成果」五环节、勘察三阶段与资质分级、详勘关键数字与成果报告，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-2-2', book: 'zhiliang', section: '2.2', title: '设计方案竞赛组织与方案设计质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-2-2',
+    summary: '互动 PPT 2.0：设计方案竞赛四阶段与报名硬规则、设计任务书九项内容、方案设计审查与形式合规合理三审，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-2-3', book: 'zhiliang', section: '2.3', title: '初步设计质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-2-3',
+    summary: '互动 PPT 2.0：设计资质四级分类与六个丙级行业、初步设计文件五块与总概算 ±10%、评审清单五方面，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-2-4', book: 'zhiliang', section: '2.4', title: '施工图设计质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-2-4',
+    summary: '互动 PPT 2.0：四新审查、设计校对审核审定、施工图文件组成与送审、抗震设防四类及消防混凝土关键数字，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-1', book: 'zhiliang', section: '3.1', title: '施工质量控制基本要求和工作内容',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-1',
+    summary: '互动 PPT 2.0：GB 55032 四项基本要求与 GB/T 50319 十项工作内容、开工令四条件、见证取样 100%、旁站巡视平行检验与质量问题分级处理，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-2', book: 'zhiliang', section: '3.2', title: '地基基础工程施工质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-2',
+    summary: '互动 PPT 2.0：天然地基、基坑、边坡、基础、填方五分部施工控制与验收检验、验槽与先撑后挖、压实系数与回填数字，配 8 道自测题。'
+  },
+  {
     id: 'ppt-zl-3-3', book: 'zhiliang', section: '3.3', title: '现浇混凝土结构工程施工质量控制',
     date: '2026-11-17', deck: '/courses/ppt-zl-3-3',
     summary: '互动 PPT 2.0：水泥与骨料限值、钢筋接头三级与重量偏差、模板起拱、预应力张拉与灌浆、底模拆除 50%/75%/100%、强度统计与非统计评定，配 8 道自测题。'
