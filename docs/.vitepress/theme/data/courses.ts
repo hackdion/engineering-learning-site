@@ -314,9 +314,34 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：五项供应目标、六类计划、需求与供需平衡计算、动态检查调整及监理职责，配切换、闪卡和供应推演、8 道自测题。'
   },
   {
+    id: 'ppt-tz-8-6', book: 'touzi', section: '8.6', title: '合同价款期中支付',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-6',
+    summary: '互动 PPT 2.0：期中支付四块内容、式 8-13 四个减项、预付款与安全生产措施费对比、进度款计量规则与例 8-14 全流程，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-8-7', book: 'touzi', section: '8.7', title: '工程结算与支付',
+    date: '2026-11-17', deck: '/courses/ppt-tz-8-7',
+    summary: '互动 PPT 2.0：施工过程结算 80% 底线、竣工结算十三项、质量保证金 3% 上限与保修最终结清，含例 8-15 贯通演算与 8 道自测题。'
+  },
+  {
     id: 'ppt-tz-8-8', book: 'touzi', section: '8.8', title: '投资偏差分析（挣值法）',
     date: '2026-11-16', deck: '/courses/ppt-tz-8-8',
     summary: '互动 PPT 2.0：挣值法三参数（BCWS/BCWP/ACWP）与四指标（CV/SV/CPI/SPI）、偏差原因与纠偏，配挣值动态沙盘、多视图切换与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-9-1', book: 'touzi', section: '9.1', title: 'BIM在工程投资控制中的应用',
+    date: '2026-11-17', deck: '/courses/ppt-tz-9-1',
+    summary: '互动 PPT 2.0：BIM 定义与四个概念层、五大特点、软件三层次、标准体系与四阶段应用，含施工图预算 BIM 七步流程与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-9-2', book: 'touzi', section: '9.2', title: '大数据在工程投资控制中的应用',
+    date: '2026-11-17', deck: '/courses/ppt-tz-9-2',
+    summary: '互动 PPT 2.0：工程四类数据、4V 与价值性、六步应用流程、五大数据库与四阶段应用，配流程排序、情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-9-3', book: 'touzi', section: '9.3', title: '人工智能在工程投资控制中的应用',
+    date: '2026-11-17', deck: '/courses/ppt-tz-9-3',
+    summary: '互动 PPT 2.0：AI 三大类与四要素、产业链四层、四阶段智能应用，以及 BIM、大数据、AI 的分工与边界，配排序、闪卡与 8 道自测题。'
   },
   {
     id: 'ppt-tz-1-1', book: 'touzi', section: '1.1', title: '工程项目投资特点和控制原理',
