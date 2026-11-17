@@ -599,6 +599,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：四类分包合同与连带责任、暂估价招标、五条禁止性规定、谈判签订、指令唯一通道、质量安全责任、变更四步与收尾，配 8 道自测题。'
   },
   {
+    id: 'ppt-ht-6-1', book: 'hetong', section: '6.1', title: 'FIDIC施工合同条件',
+    date: '2026-11-17', deck: '/courses/ppt-ht-6-1',
+    summary: '互动 PPT 2.0：九种彩色皮书与三方职责、基准日期与开工时限、质量检验与缺陷修补、计量支付、不可预见物质条件索赔与 DAAB 争端处理，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-6-2', book: 'hetong', section: '6.2', title: 'FIDIC设计采购施工(EPC)/交钥匙工程合同条件',
+    date: '2026-11-17', deck: '/courses/ppt-ht-6-2',
+    summary: '互动 PPT 2.0：银皮书的交钥匙定位与业主选择理由、业主代表与承包商代表、八项合同文件、业主要求与数据风险、不可预见困难不调价、工期索赔三类与支付时限，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-6-3', book: 'hetong', section: '6.3', title: 'FIDIC设计施工和运营合同条件',
+    date: '2026-11-17', deck: '/courses/ppt-ht-6-3',
+    summary: '互动 PPT 2.0：DBO 一体化与 20 年运营期、试运行证书与独立合规审计、运营延误与产量违约、合同完成前试验、资产更换资金与 A/B 专用条件，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-6-4', book: 'hetong', section: '6.4', title: 'NEC施工合同(ECC)及合作伙伴管理',
+    date: '2026-11-17', deck: '/courses/ppt-ht-6-4',
+    summary: '互动 PPT 2.0：NEC 四类合同与 ECC 六模块、核心 9 条与 A～F 六种计价、三种争议程序、合作伙伴/早期警告/补偿事件三大机制及计价原则，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-ht-6-5', book: 'hetong', section: '6.5', title: 'AIA系列合同及CM 和IPD 合同模式',
+    date: '2026-11-17', deck: '/courses/ppt-ht-6-5',
+    summary: '互动 PPT 2.0：AIA 七系列与建筑师四项权力、代理型与风险型 CM、GMP 与成本加酬金、IPD 八阶段与 C191 多方合同、三种模式对比，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
