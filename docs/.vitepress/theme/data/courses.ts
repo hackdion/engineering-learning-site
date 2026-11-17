@@ -234,9 +234,34 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：累加数列错位相减取大差法（潘特考夫斯基法）求流水步距与工期，配三步步进、实战算例与闪卡、8 道自测题。'
   },
   {
+    id: 'ppt-jd-3-1', book: 'jindu', section: '3.1', title: '基本原理',
+    date: '2026-11-17', deck: '/courses/ppt-jd-3-1',
+    summary: '互动 PPT 2.0：双代号与单代号网络图表示方法、工艺与组织逻辑关系、虚工作与紧前紧后，配视图切换、对比卡、闪卡、情景推演和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-3-2', book: 'jindu', section: '3.2', title: '网络图绘制',
+    date: '2026-11-17', deck: '/courses/ppt-jd-3-2',
+    summary: '互动 PPT 2.0：双代号与单代号绘图八大红线、虚箭线切断多余联系、节点编号规则，配查错切换、闪卡、情景推演和 8 道自测题。'
+  },
+  {
     id: 'ppt-jd-3-3', book: 'jindu', section: '3.3', title: '网络计划时间参数计算',
     date: '2026-11-16', deck: '/courses/ppt-jd-3-3',
     summary: '互动 PPT 2.0：三种工期、六个时间参数、双代号四种计算法、单代号 LAG 与 PERT 估算，配多视图切换、闪卡、情景推演与 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-3-4', book: 'jindu', section: '3.4', title: '双代号时标网络计划',
+    date: '2026-11-17', deck: '/courses/ppt-jd-3-4',
+    summary: '互动 PPT 2.0：直接与间接绘制法、波形线判定 FF/TF/关键线路及三种坐标体系，配视图切换、对比卡、闪卡、情景推演和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-3-5', book: 'jindu', section: '3.5', title: '网络计划优化',
+    date: '2026-11-17', deck: '/courses/ppt-jd-3-5',
+    summary: '互动 PPT 2.0：工期优化三原则、费用优化直接费率对比、资源优化两类方法及关键链法三类缓冲，配视图切换、闪卡、情景推演和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-3-6', book: 'jindu', section: '3.6', title: '单代号搭接网络计划和多级网络计划系统',
+    date: '2026-11-17', deck: '/courses/ppt-jd-3-6',
+    summary: '互动 PPT 2.0：FTS/STS/FTF/STF 四种搭接计算、负 ES 与超终点兜底、LAG 与多级网络系统，配视图切换、对比卡、闪卡、情景推演和 8 道自测题。'
   },
   {
     id: 'ppt-tz-8-8', book: 'touzi', section: '8.8', title: '投资偏差分析（挣值法）',

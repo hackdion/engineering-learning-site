@@ -460,6 +460,11 @@ const nextStage = () => {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+@media (max-width: 480px) {
+  .esg__pills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .esg__pill {
     transition: none;
