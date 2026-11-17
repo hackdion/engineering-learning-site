@@ -264,6 +264,26 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：FTS/STS/FTF/STF 四种搭接计算、负 ES 与超终点兜底、LAG 与多级网络系统，配视图切换、对比卡、闪卡、情景推演和 8 道自测题。'
   },
   {
+    id: 'ppt-jd-4-1', book: 'jindu', section: '4.1', title: '实际进度监测与调整系统过程',
+    date: '2026-11-17', deck: '/courses/ppt-jd-4-1',
+    summary: '互动 PPT 2.0：进度监测六步与调整五步构成闭环，跟踪检查三方面工作、检查间隔、数据加工与对比分析，配两大系统切换、流程排序、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-4-3', book: 'jindu', section: '4.3', title: '进度偏差分析及计划调整方法',
+    date: '2026-11-17', deck: '/courses/ppt-jd-4-3',
+    summary: '互动 PPT 2.0：偏差三步判断（关键工作→总时差→自由时差）、改变逻辑关系与压缩持续时间两种调整方法、流水 63 变 35 实例，配三步切换、排序、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-5-1', book: 'jindu', section: '5.1', title: '设计进度影响因素及控制目标体系',
+    date: '2026-11-17', deck: '/courses/ppt-jd-5-1',
+    summary: '互动 PPT 2.0：设计进度五大影响因素、最终目标与四条依据、分阶段与分专业目标体系、规划设计条件确定程序，配因素切换、排序、闪卡与情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-5-2', book: 'jindu', section: '5.2', title: '设计进度控制工作程序和内容',
+    date: '2026-11-17', deck: '/courses/ppt-jd-5-2',
+    summary: '互动 PPT 2.0：出图控制主线、三阶段设计流程、设计单位七项工作与监理单位三项监控、CM 快速路径三大优势，配流程步进、对比、闪卡与情景推演、8 道自测题。'
+  },
+  {
     id: 'ppt-tz-8-8', book: 'touzi', section: '8.8', title: '投资偏差分析（挣值法）',
     date: '2026-11-16', deck: '/courses/ppt-tz-8-8',
     summary: '互动 PPT 2.0：挣值法三参数（BCWS/BCWP/ACWP）与四指标（CV/SV/CPI/SPI）、偏差原因与纠偏，配挣值动态沙盘、多视图切换与 8 道自测题。'
