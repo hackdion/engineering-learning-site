@@ -729,6 +729,31 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：见证取样四类与特殊地质每日巡视、交桩六项、冬期三条禁令、路基六项偏差与软土九种处理、石灰土 7d 强度与混凝土 0.5% 蜂窝麻面，配 8 道自测题。'
   },
   {
+    id: 'ppt-zl-4-1', book: 'zhiliang', section: '4.1', title: '设备驻厂监造',
+    date: '2026-11-17', deck: '/courses/ppt-zl-4-1',
+    summary: '互动 PPT 2.0：体系检查六块与文件四层、生产计划六类与检验计划六点、过程监督五项、整机电气机械检测、交接四步与监造资料，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-4-2', book: 'zhiliang', section: '4.2', title: '部品部件驻厂监造',
+    date: '2026-11-17', deck: '/courses/ppt-zl-4-2',
+    summary: '互动 PPT 2.0：检验批扩大一倍的规则、水泥 200/500t 与锚具 2000 套、脱模 15MPa 与放张 75%、套筒 1000 抽 3、叠放 6 层与吊索 45/60°，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-5-1', book: 'zhiliang', section: '5.1', title: '抽样检验及质量数据统计分析方法',
+    date: '2026-11-17', deck: '/courses/ppt-zl-5-1',
+    summary: '互动 PPT 2.0：五个特征值与四种随机抽样、一次与二次抽样方案、α 弃真与 β 存伪、排列图 ABC、直方图五种异常、控制图 25/7/3-2 判据，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-5-2', book: 'zhiliang', section: '5.2', title: '常用工程材料性能检验方法',
+    date: '2026-11-17', deck: '/courses/ppt-zl-5-2',
+    summary: '互动 PPT 2.0：抗震钢筋 1.25/1.30/9%、标距 50/100/200、钢丝 60t 与钢绞线 100t、水泥安定性 5.0mm、混凝土 150mm 与加荷三档、砂浆 1.35 与 1.10 倍，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-5-3', book: 'zhiliang', section: '5.3', title: '工程实体质量检测方法',
+    date: '2026-11-17', deck: '/courses/ppt-zl-5-3',
+    summary: '互动 PPT 2.0：地基 8 级 2 倍与桩基 1%/5%、回弹 30% 与钻芯半破损、焊缝 100%/20% 与 2%/5%/3%、高强螺栓 1h～48h、防水 2h/24h 与室内环境七项，配 8 道自测题。'
+  },
+  {
     id: 'ppt-zl-8-1', book: 'zhiliang', section: '8.1', title: '安全风险管理',
     date: '2026-11-17', deck: '/courses/ppt-zl-8-1',
     summary: '互动 PPT 2.0：海因里希 1:29:300 与瑞士奶酪四层防御、能量释放与脆弱性、PHA/ETA/FTA 三种方法、两类危险源与重大事故隐患判定、六类重大危险源现场控制，配 8 道自测题。'
