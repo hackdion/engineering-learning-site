@@ -284,6 +284,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：出图控制主线、三阶段设计流程、设计单位七项工作与监理单位三项监控、CM 快速路径三大优势，配流程步进、对比、闪卡与情景推演、8 道自测题。'
   },
   {
+    id: 'ppt-jd-6-1', book: 'jindu', section: '6.1', title: '施工进度控制目标体系及确定',
+    date: '2026-11-17', deck: '/courses/ppt-jd-6-1',
+    summary: '互动 PPT 2.0：施工进度目标的四种分解、上下级目标关系、三类确定依据与六项落地条件，配切换、排序、闪卡和情景推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-6-2', book: 'jindu', section: '6.2', title: '施工进度控制工作流程和内容',
+    date: '2026-11-17', deck: '/courses/ppt-jd-6-2',
+    summary: '互动 PPT 2.0：施工进度控制十四项工作、细则八项内容、计划审核与责任边界、开工协调和 188 天案例，配流程、闪卡和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-6-3', book: 'jindu', section: '6.3', title: '施工进度计划编制与审查',
+    date: '2026-11-17', deck: '/courses/ppt-jd-6-3',
+    summary: '互动 PPT 2.0：施工总进度计划五步、单位工程计划九步、资源与持续时间公式、计划检查及监理审查，配排序、计算推演和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-6-4', book: 'jindu', section: '6.4', title: '施工进度计划实施中的检查与调整',
+    date: '2026-11-17', deck: '/courses/ppt-jd-6-4',
+    summary: '互动 PPT 2.0：七类影响因素、三种动态检查方式、两类调整方法与组织技术经济配套措施，配切换、闪卡和赶工推演、8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-6-5', book: 'jindu', section: '6.5', title: '工程延期和工期延误的处理',
+    date: '2026-11-17', deck: '/courses/ppt-jd-6-5',
+    summary: '互动 PPT 2.0：延期申报条件、审批程序与三原则、持续性事件处理、0.5 个月案例及延误三种处理，配排序、闪卡和 8 道自测题。'
+  },
+  {
+    id: 'ppt-jd-6-6', book: 'jindu', section: '6.6', title: '物资供应进度控制',
+    date: '2026-11-17', deck: '/courses/ppt-jd-6-6',
+    summary: '互动 PPT 2.0：五项供应目标、六类计划、需求与供需平衡计算、动态检查调整及监理职责，配切换、闪卡和供应推演、8 道自测题。'
+  },
+  {
     id: 'ppt-tz-8-8', book: 'touzi', section: '8.8', title: '投资偏差分析（挣值法）',
     date: '2026-11-16', deck: '/courses/ppt-tz-8-8',
     summary: '互动 PPT 2.0：挣值法三参数（BCWS/BCWP/ACWP）与四指标（CV/SV/CPI/SPI）、偏差原因与纠偏，配挣值动态沙盘、多视图切换与 8 道自测题。'
