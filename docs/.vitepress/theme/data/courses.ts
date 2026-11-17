@@ -644,6 +644,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：AIA 七系列与建筑师四项权力、代理型与风险型 CM、GMP 与成本加酬金、IPD 八阶段与 C191 多方合同、三种模式对比，配 8 道自测题。'
   },
   {
+    id: 'ppt-zl-3-3', book: 'zhiliang', section: '3.3', title: '现浇混凝土结构工程施工质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-3',
+    summary: '互动 PPT 2.0：水泥与骨料限值、钢筋接头三级与重量偏差、模板起拱、预应力张拉与灌浆、底模拆除 50%/75%/100%、强度统计与非统计评定，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-4', book: 'zhiliang', section: '3.4', title: '装配式建筑工程质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-4',
+    summary: '互动 PPT 2.0：钢结构吊装三审查、焊接工艺评定、高强螺栓 1h/48h 与 5%、预拼装 85%/100%，装配式套筒灌浆 3mm、临时支撑 2 道与后浇混凝土验收，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-5', book: 'zhiliang', section: '3.5', title: '砌体与装饰装修工程施工质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-5',
+    summary: '互动 PPT 2.0：砌体咬槎与马牙槎、砂浆试配与计量、砌体验收六项，装饰装修五条纪律、抹灰 M20/2m/50mm、门窗 10/15/20、吊顶 300/1500/2500 与隐蔽八项，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-6', book: 'zhiliang', section: '3.6', title: '安装工程施工质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-6',
+    summary: '互动 PPT 2.0：管道四色标识与阀门 1.5/1.1 倍试验、套管 20/50mm、热水试压 0.3MPa、风管不得焊接、电压区段划分、智能建筑 120h 与 10kg 灯具 5 倍荷载，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-7', book: 'zhiliang', section: '3.7', title: '防水与节能工程施工质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-7',
+    summary: '互动 PPT 2.0：防水混凝土 C25 与抗渗提高 0.2MPa、卷材搭接与明挖暗挖节点、屋面 30% 防滑与道桥 80% 强度、节能五件套复验与三项同报告、监测控制 120h，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-3-8', book: 'zhiliang', section: '3.8', title: '城市道路工程施工质量控制',
+    date: '2026-11-17', deck: '/courses/ppt-zl-3-8',
+    summary: '互动 PPT 2.0：见证取样四类与特殊地质每日巡视、交桩六项、冬期三条禁令、路基六项偏差与软土九种处理、石灰土 7d 强度与混凝土 0.5% 蜂窝麻面，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
