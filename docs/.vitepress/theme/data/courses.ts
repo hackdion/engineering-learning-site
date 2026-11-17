@@ -374,6 +374,26 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：建设期利息年中支用与复利公式、例 3-4 演算、铺底流动资金 30% 口径及分项详细估算法，配步进、对比卡、闪卡与 8 道自测题。'
   },
   {
+    id: 'ppt-tz-4-1', book: 'touzi', section: '4.1', title: '项目资本金制度',
+    date: '2026-11-17', deck: '/courses/ppt-tz-4-1',
+    summary: '互动 PPT 2.0：资本金性质（非债/不抽/后偿）、出资方式与 20% 上限、不得认定资本金三条红线、表 4-1 最低比例与管理要点，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-4-2', book: 'touzi', section: '4.2', title: '项目资金筹措渠道和方式',
+    date: '2026-11-17', deck: '/courses/ppt-tz-4-2',
+    summary: '互动 PPT 2.0：筹资四原则、既有/新设法人资本金筹措、经营净现金流量公式、债务资金三大渠道与绿色金融、转型金融，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-4-3', book: 'touzi', section: '4.3', title: '资金成本计算',
+    date: '2026-11-17', deck: '/courses/ppt-tz-4-3',
+    summary: '互动 PPT 2.0：资金成本构成与三种作用、资金成本率公式 4-5/4-6、个别与综合资金成本计算（例 4-1、4-2），配 8 道自测题。'
+  },
+  {
+    id: 'ppt-tz-4-4', book: 'touzi', section: '4.4', title: '项目融资特点、程序和主要方式',
+    date: '2026-11-17', deck: '/courses/ppt-tz-4-4',
+    summary: '互动 PPT 2.0：项目融资七大特点、五阶段程序、PPP 各实施方式、资产证券化与 REITs 三大新型方式，配 8 道自测题。'
+  },
+  {
     id: 'ppt-tz-5-1', book: 'touzi', section: '5.1', title: '工程项目可行性研究报告编制和评估',
     date: '2026-11-17', deck: '/courses/ppt-tz-5-1',
     summary: '互动 PPT 2.0：审批制/资金申请/核准制三条通道、三大目标七个维度、报告十项内容、财务可持续性与评估要点，配 8 道自测题。'
