@@ -50,7 +50,7 @@ function flip(r: number, c: number) {
 </template>
 
 <style scoped>
-.cp { margin: .4em 0 .6em; }
+.cp { margin: .4em 0 .6em; min-width: 0; max-width: 100%; }
 .cp-head { display: flex; align-items: center; justify-content: space-between; gap: .6em; margin-bottom: .4em; }
 .cp-btn {
   min-height: 36px; padding: 0 .9em; border: 2px solid var(--hd-ink); border-radius: 8px; background: var(--hd-card);
@@ -58,11 +58,14 @@ function flip(r: number, c: number) {
 }
 .cp-btn[aria-pressed="true"] { background: var(--hd-helmet); }
 .cp-btn:focus-visible, .cp-cover:focus-visible { outline: 3px solid var(--hd-accent); outline-offset: 2px; }
-.cp-scroll { overflow-x: auto; }
+.cp-scroll { max-width: 100%; overflow-x: auto; }
 .cp-table { display: table; width: 100%; margin: 0; border-collapse: collapse; font-size: .9em; }
 .cp-table th, .cp-table td { padding: .45em .6em; border: 1px solid var(--hd-line); vertical-align: top; text-align: left; background: var(--hd-card); }
 .cp-table thead th { background: var(--hd-accent); color: #fff; font-weight: 700; }
 .cp-table tbody th { width: 7em; background: var(--hd-paper-2); color: var(--hd-ink-2); font-weight: 700; white-space: nowrap; }
+@media (max-width: 640px) {
+  .cp-table tbody th { width: 5.5em; white-space: normal; }
+}
 .cp-table tr { border: 0; }
 .cp-cover {
   width: 100%; min-height: 36px; border: 1px dashed var(--hd-ink-3); border-radius: 6px; background: var(--hd-paper);

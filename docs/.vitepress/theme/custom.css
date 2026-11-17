@@ -41,7 +41,8 @@
    断点与整块公式一致（1279px）：只约束 ≤768px 时，769–1279px 区间行内公式
    仍是 display:inline，overflow 对其无效，长公式按自然宽度撑出横向滚动。 */
 @media (max-width: 1279px) {
-  .vp-doc mjx-container:not([display]) {
+  .vp-doc mjx-container:not([display]),
+  .deck-page mjx-container:not([display]) {
     display: inline-block;
     max-width: 100%;
     overflow-x: auto;
@@ -54,7 +55,8 @@
    约束时，769px 到右侧目录出现（1280px）前的宽度仍会把整页撑出横向滚动。
    统一到 1279px 以下在自身容器内横滚；≥1280px（含 1440）保持原有显示。 */
 @media (max-width: 1279px) {
-  .vp-doc mjx-container[display="true"] {
+  .vp-doc mjx-container[display="true"],
+  .deck-page mjx-container[display="true"] {
     display: block !important;
     min-width: 0 !important;
     max-width: 100%;
