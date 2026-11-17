@@ -10,7 +10,7 @@ edition: 2026 年版（中国建设监理协会组织编写）
 
 # 基本原理 · 互动 PPT
 
-<p class="deck-page__meta">《建设工程进度控制》第三章第一节 · 13 页 · 约 14 分钟 · 8 道自测题 · 互动 PPT 2.0</p>
+<p class="deck-page__meta">《建设工程进度控制》第三章第一节 · 12 页 · 约 14 分钟 · 8 道自测题 · 互动 PPT 2.0</p>
 
 电脑上按 ←/→ 键或下方按钮翻页，手机上按卡片往下读。内容逐条对照[本节教材正文](/textbook/schedule/chapter-03/section-01)整理，包含双代号与单代号对比、逻辑关系辨析、闪卡与情景推演。
 
@@ -218,6 +218,12 @@ edition: 2026 年版（中国建设监理协会组织编写）
 
 <Quiz id="jd31-q3" q="在单代号网络图中，箭线用来表示（ ）。" :options="['一项具体工作', '工作之间的逻辑关系', '工作的持续时间', '资源的消耗量']" :answer="1" explain="单代号网络图以节点及其编号表示工作，箭线表示工作之间的逻辑关系。" cite="/textbook/schedule/chapter-03/section-01" />
 
+<template #notes>
+
+前三道自测题考的是最基本的概念辨析：虚工作、只耗时间不耗资源的养护/干燥工作、单代号箭线含义。
+
+</template>
+
 </Slide>
 
 <Slide>
@@ -227,6 +233,12 @@ edition: 2026 年版（中国建设监理协会组织编写）
 <Quiz id="jd31-q4" q="生产性工作之间由工艺过程决定的先后顺序关系称为（ ）。" :options="['组织关系', '工艺关系', '平行关系', '搭接关系']" :answer="1" explain="生产性工作之间由工艺过程决定的、非生产性工作之间由工作程序决定的先后顺序关系称为工艺关系。" cite="/textbook/schedule/chapter-03/section-01" />
 
 <Quiz id="jd31-q5" q="某工作双代号网络图中，工作 A 与工作 B 之间仅有一条虚箭线相连（由 A 指向 B），则工作 A 是工作 B 的（ ）。" :options="['紧前工作', '平行工作', '紧后工作', '后续工作']" :answer="0" explain="在双代号网络图中，工作与其紧前工作之间可能有虚工作存在，中间无其他实工作时仍互为紧前、紧后工作。" cite="/textbook/schedule/chapter-03/section-01" />
+
+<template #notes>
+
+这两题考工艺关系与中间隔虚箭线的紧前工作判定，做题时记住虚工作不算实工作。
+
+</template>
 
 </Slide>
 
@@ -239,6 +251,12 @@ edition: 2026 年版（中国建设监理协会组织编写）
 <Quiz id="jd31-q7" q="在网络计划中，总持续时间（ ）的线路称为关键线路。" :options="['最短', '最长', '箭线数量最多', '节点数量最少']" :answer="1" explain="从起点到终点的通路中，总持续时间最长的线路称为关键线路。" cite="/textbook/schedule/chapter-03/section-01" />
 
 <Quiz id="jd31-q8" q="工作之间由于组织安排需要或资源调配需要而规定的先后顺序关系称为（ ）。" :options="['工艺关系', '组织关系', '技术关系', '强制关系']" :answer="1" explain="组织安排或劳动力、材料、机具等资源调配需要规定的先后顺序称为组织关系。" cite="/textbook/schedule/chapter-03/section-01" />
+
+<template #notes>
+
+最后三题巩固节点编号规则（i < j）、关键线路定义和组织关系，全部答对就可以进入第二节了。
+
+</template>
 
 </Slide>
 
