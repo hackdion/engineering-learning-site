@@ -824,6 +824,36 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：识别六种方法与风险清单、分析与评价五项任务、VL/L/M/H/VH 五级风险量与可接受性、回避/损失控制/转移/自留四类对策、三项损失控制计划与风险监控，配 8 道自测题。'
   },
   {
+    id: 'ppt-al-3-13', book: 'anli', section: '3.13', title: '建筑安装工程费用项目组成和计算',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-13',
+    summary: '互动 PPT 2.0：按构成要素七项与按造价形成五项两套口径、人工费五项与材料费四项、进口设备抵岸价八项构成、工程建设其他费十五类、基本与涨价预备费、增值税四档税率与建设期利息，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-14', book: 'anli', section: '3.14', title: '施工阶段投资控制',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-14',
+    summary: '互动 PPT 2.0：投资目标三种分解与三种计划形式、六类工程计量、清单缺陷 15% 与暂列金额暂估价、物价两法与法规变化调增调减、安措费 28 天 50% 与过程结算 80%、挣值法三参数四指标，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-15', book: 'anli', section: '3.15', title: '流水施工计划方法',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-15',
+    summary: '互动 PPT 2.0：依次平行流水三种组织方式、工艺空间时间三类参数、固定节拍与加快成倍节拍的特点和工期公式、非节奏流水的累加数列错位相减取大差法，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-16', book: 'anli', section: '3.16', title: '工程网络计划技术',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-16',
+    summary: '互动 PPT 2.0：双代号与单代号、工艺关系与组织关系、关键线路、六个时间参数与三类工期、双代号三法与单代号七步、PERT 三点估计、时标网络、四类优化与五种搭接关系，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-17', book: 'anli', section: '3.17', title: '进度计划调整方法',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-17',
+    summary: '互动 PPT 2.0：横道图与 S 曲线及香蕉曲线和前锋线四种比较方法、关键工作与总时差和自由时差三步判断、改变逻辑关系与缩短持续时间两种调整方法，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-al-3-18', book: 'anli', section: '3.18', title: '费用与工期索赔管理',
+    date: '2026-11-17', deck: '/courses/ppt-al-3-18',
+    summary: '互动 PPT 2.0：费用索赔八项工作与两份文书、工期索赔五项工作与临时最终延期、批准工程延期三个条件、费用与工期关联时的综合处理，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
