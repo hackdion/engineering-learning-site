@@ -729,6 +729,21 @@ export const COURSES: CourseItem[] = [
     summary: '互动 PPT 2.0：见证取样四类与特殊地质每日巡视、交桩六项、冬期三条禁令、路基六项偏差与软土九种处理、石灰土 7d 强度与混凝土 0.5% 蜂窝麻面，配 8 道自测题。'
   },
   {
+    id: 'ppt-zl-8-1', book: 'zhiliang', section: '8.1', title: '安全风险管理',
+    date: '2026-11-17', deck: '/courses/ppt-zl-8-1',
+    summary: '互动 PPT 2.0：海因里希 1:29:300 与瑞士奶酪四层防御、能量释放与脆弱性、PHA/ETA/FTA 三种方法、两类危险源与重大事故隐患判定、六类重大危险源现场控制，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-8-2', book: 'zhiliang', section: '8.2', title: '危险性较大的分部分项工程施工安全管理',
+    date: '2026-11-17', deck: '/courses/ppt-zl-8-2',
+    summary: '互动 PPT 2.0：七类危大工程两档范围与数字门槛、专项方案九项内容与双层签章、严重缺陷一票否决、专家论证 5 名专家与三种结论、监理巡视与验收双签字，配 8 道自测题。'
+  },
+  {
+    id: 'ppt-zl-8-3', book: 'zhiliang', section: '8.3', title: '生产安全事故报告与调查处理',
+    date: '2026-11-17', deck: '/courses/ppt-zl-8-3',
+    summary: '互动 PPT 2.0：事故四级划分与就高认定、单位 1 小时与逐级 2 小时报告、调查主体与 60 日报告期限、15/30 日批复、单位与个人罚款尺度及 5 年禁任，配 8 道自测题。'
+  },
+  {
     id: 'gl-series', book: 'gailun', section: '1.1', title: '建设工程监理概论 · 教材全文朗读',
     date: '2026-09-30',
     series: { bvid: 'BV1Zoap65EKb', url: 'https://www.bilibili.com/video/BV1Zoap65EKb/', count: 37, hours: 15 },
