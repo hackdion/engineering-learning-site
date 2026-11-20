@@ -139,8 +139,19 @@ function start(force = false) {
   confirmSubmit.value = false
   paused.value = false
   onlyWrong.value = false
+  peekAll.value = false
+  checkedIds.value = new Set()
   phase.value = 'doing'
   persist()
+}
+
+function startRedoWrong() {
+  const paper = meta.value
+  if (!paper || !wrongResults.value.length) return
+  redoIds.value = wrongResults.value.map((r) => r.q.id)
+  if (inBrowser) history.replaceState(history.state, '', paperUrl(paper.id, true))
+  start(true)
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 function persist() {
@@ -617,7 +628,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
           <button type="button" class="ep-toggle" :class="{ 'is-on': onlyWrong }" @click="onlyWrong = !onlyWrong">
             {{ onlyWrong ? '显示全部题目' : `只看错题（${wrongResults.length}）` }}
           </button>
-          <a v-if="!state?.redoIds.length && wrongResults.length" class="hd-btn hd-btn--helmet ep-result__redo" :href="paperUrl(meta.id, true)">重做错题</a>
+          <button v-if="!state?.redoIds.length && wrongResults.length" type="button" class="hd-btn hd-btn--helmet ep-result__redo" @click="startRedoWrong">重做错题</button>
           <button type="button" class="ep-mini" @click="retake">重考本卷</button>
           <a class="ep-result__back" :href="withBase('/exams/')">返回试卷总览</a>
         </div>
