@@ -8,6 +8,7 @@ export interface ExamRef {
   anchor: string
   hash: string
   anchorFound: boolean
+  excerpt?: string
 }
 
 export interface CaseQuestion {

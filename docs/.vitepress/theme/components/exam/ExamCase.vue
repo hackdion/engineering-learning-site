@@ -311,6 +311,11 @@ onBeforeUnmount(() => {
                 <p v-for="(line, i) in q.analysis.split('\n')" :key="i" class="ecs-review__text">{{ line }}</p>
               </div>
 
+              <div v-if="q.ref?.excerpt" class="ecs-review__excerpt">
+                <h4>最新原文依据 · {{ q.ref.book || '教材' }}<template v-if="q.ref.anchor">（{{ q.ref.anchor }}）</template></h4>
+                <p v-for="(para, i) in q.ref.excerpt.split('\n')" :key="i" class="ecs-review__text">{{ para }}</p>
+              </div>
+
               <div class="ecs-review__foot">
                 <label :for="`score-${paper.id}-${q.qno}`" class="ecs-review__label">自评得分（0–{{ SELF_SCORE_MAX }}）</label>
                 <input
@@ -693,6 +698,19 @@ onBeforeUnmount(() => {
   line-height: 1.85;
   color: var(--hd-ink-2);
   white-space: pre-wrap;
+}
+.ecs-review__excerpt {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--hd-teal);
+  border-radius: 8px;
+  background: var(--hd-paper);
+}
+.ecs-review__excerpt h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hd-teal);
 }
 .ecs-review__foot {
   display: flex;
