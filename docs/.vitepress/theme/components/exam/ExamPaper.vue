@@ -563,6 +563,12 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               <span class="ep-study-box__ans">参考答案：{{ current.answer.join('、') }}</span>
             </div>
             <p v-if="current.analysis" class="ep-study-box__analysis">{{ current.analysis }}</p>
+            <div v-if="current.ref?.excerpt" class="ep-study-box__excerpt">
+              <div class="ep-study-box__excerpt-label">
+                最新原文依据 · {{ current.ref.book || '教材' }}<template v-if="current.ref.anchor">（{{ current.ref.anchor }}）</template>
+              </div>
+              <p v-for="(para, idx) in current.ref.excerpt.split('\n')" :key="idx">{{ para }}</p>
+            </div>
             <div v-if="(current.ref && studyUrl(current.ref)) || deckUrlForRef(current.ref)" class="ep-study-box__links">
               <a v-if="current.ref && studyUrl(current.ref)" class="hd-ruler" :href="studyUrl(current.ref)!">回教材原文 →</a>
               <a v-if="deckUrlForRef(current.ref)" class="hd-ruler" :href="deckUrlForRef(current.ref)!">练本节互动 PPT →</a>
@@ -678,6 +684,11 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               <h4>解析</h4>
               <div v-if="item.q.analysisHtml" v-html="item.q.analysisHtml"></div>
               <p v-else>{{ item.q.analysis }}</p>
+            </div>
+
+            <div v-if="item.q.ref?.excerpt" class="ep-review__excerpt">
+              <h4>最新原文依据 · {{ item.q.ref.book || '教材' }}<template v-if="item.q.ref.anchor">（{{ item.q.ref.anchor }}）</template></h4>
+              <p v-for="(para, idx) in item.q.ref.excerpt.split('\n')" :key="idx">{{ para }}</p>
             </div>
 
             <p v-if="item.q.ref" class="ep-review__ref">
@@ -1184,6 +1195,28 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
   line-height: 1.65;
   color: var(--hd-ink-2);
 }
+.ep-study-box__excerpt {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--hd-teal);
+  border-radius: 6px;
+  background: var(--hd-card);
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--hd-ink-2);
+}
+.ep-study-box__excerpt-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hd-teal);
+}
+.ep-study-box__excerpt p {
+  margin: 0;
+}
+.ep-study-box__excerpt p + p {
+  margin-top: 4px;
+}
 .ep-study-box__links {
   display: flex;
   flex-wrap: wrap;
@@ -1510,6 +1543,28 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
   font-size: 14px;
   line-height: 1.85;
   color: var(--hd-ink-2);
+}
+.ep-review__excerpt {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--hd-teal);
+  border-radius: 8px;
+  background: var(--hd-paper);
+}
+.ep-review__excerpt h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--hd-teal);
+  font-weight: 600;
+}
+.ep-review__excerpt p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: var(--hd-ink-2);
+}
+.ep-review__excerpt p + p {
+  margin-top: 4px;
 }
 .ep-review__ref {
   display: flex;
