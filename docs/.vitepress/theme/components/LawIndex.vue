@@ -46,11 +46,20 @@ const contractGroups = computed(() => {
 })
 
 const lawMeta = (law: LawEntry) => {
+  if (law.structure === 'sections' || law.structure === 'clauses') {
+    return `${law.sectionCount || 0} 章`
+  }
   if (law.excerpt) {
     const arts = law.articles.map((article) => articleLabel(article.art)).join('、')
     return arts ? `样例 · ${arts}` : '样例页'
   }
   return `${law.articles.length} 条`
+}
+
+const lawFootLabel = (law: LawEntry) => {
+  if (law.structure === 'sections') return '指南页'
+  if (law.structure === 'clauses') return '标准页'
+  return law.sample ? '骨架样例' : '条文页'
 }
 
 const contractMeta = (contract: ContractEntry) => contract.code || '编号待接入'
@@ -120,7 +129,7 @@ const total = computed(() => (props.mode === 'contracts' ? lawIndex.contracts.le
             <span class="law-card__full">{{ law.title }}</span>
             <span class="law-card__meta">{{ law.docNo || '文号待接入' }}</span>
             <span class="law-card__foot">
-              <span>{{ law.sample ? '骨架样例' : '条文页' }}</span>
+              <span>{{ lawFootLabel(law) }}</span>
               <span>{{ lawMeta(law) }}</span>
             </span>
           </a>

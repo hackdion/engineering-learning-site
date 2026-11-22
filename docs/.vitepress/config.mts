@@ -234,9 +234,17 @@ export default defineConfig({
     sidebar: {
       '/knowledge/': [
         {
-          text: '知识库',
+          text: '现场监理实务专题',
           items: [
-            { text: '文章目录', link: '/knowledge/' }
+            { text: '专题总览', link: '/knowledge/' },
+            { text: '1. 分包工程安全责任划分', link: '/knowledge/subcontract-safety-liability' },
+            { text: '2. 专项施工方案编制与审批', link: '/knowledge/special-construction-plan-approval' },
+            { text: '3. 质量缺陷与直方图判断', link: '/knowledge/quality-defect-and-histogram' },
+            { text: '4. 隐蔽工程未报验处理', link: '/knowledge/concealed-work-uninspected-handling' },
+            { text: '5. 保证合同方式与保证期间', link: '/knowledge/surety-contract-mode-and-period' },
+            { text: '6. 工程延期审批与费用索赔', link: '/knowledge/delay-extension-and-claim' },
+            { text: '7. 脚手架巡视要点与高频考点', link: '/knowledge/scaffolding-safety-inspection' },
+            { text: '8. 监理职责差异与现场防踩坑', link: '/knowledge/supervision-duty-and-site-pitfalls' }
           ]
         }
       ],
@@ -268,18 +276,24 @@ export default defineConfig({
               text: '部门规章',
               collapsed: false,
               items: [
-                { text: '必须招标的工程项目规定', link: '/law/bixu-zhaobiao-gongcheng' }
+                { text: '必须招标的工程项目规定', link: '/law/bixu-zhaobiao-gongcheng' },
+                { text: '危大工程安全管理规定（37号令）', link: '/law/weida-guiding' }
               ]
             },
             {
               text: '规范性文件',
-              collapsed: true,
-              items: [{ text: '整理中，待接入', link: '/law/#laws' }]
+              collapsed: false,
+              items: [
+                { text: '危大工程专项方案编制指南（48号文）', link: '/law/weida-bianzhi-zhinan' }
+              ]
             },
             {
               text: '标准',
-              collapsed: true,
-              items: [{ text: '整理中，待接入', link: '/law/#laws' }]
+              collapsed: false,
+              items: [
+                { text: '建设工程监理工作规程（XJJ 088—2018）', link: '/law/xjj088-2018-jianli-guicheng' },
+                { text: '危大工程安全管理规程（XJJ 133—2021）', link: '/law/xjj133-2021-weida-guicheng' }
+              ]
             }
           ]
         }

@@ -158,6 +158,20 @@ function persist() {
   if (state.value) saveState(state.value)
 }
 
+function studyBackCta(ref?: { path?: string }): string {
+  const p = ref?.path || ''
+  if (p.startsWith('/law/')) return '查法规/标准原文 →'
+  if (p.startsWith('/knowledge/')) return '查现场实务专题 →'
+  return '回教材原文 →'
+}
+
+function reviewBackPrefix(ref?: { path?: string }): string {
+  const p = ref?.path || ''
+  if (p.startsWith('/law/')) return '回到法规/标准：'
+  if (p.startsWith('/knowledge/')) return '查看实务专题：'
+  return '回到教材：'
+}
+
 function deckUrlForRef(ref?: { path?: string }) {
   if (!ref?.path) return null
   const m = ref.path.match(/^\/textbook\/(?:(schedule|investment|contract-management|quality|case-analysis)\/)?chapter-(\d+)\/section-(\d+)/)
@@ -570,7 +584,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               <p v-for="(para, idx) in current.ref.excerpt.split('\n')" :key="idx">{{ para }}</p>
             </div>
             <div v-if="(current.ref && studyUrl(current.ref)) || deckUrlForRef(current.ref)" class="ep-study-box__links">
-              <a v-if="current.ref && studyUrl(current.ref)" class="hd-ruler" :href="studyUrl(current.ref)!">回教材原文 →</a>
+              <a v-if="current.ref && studyUrl(current.ref)" class="hd-ruler" :href="studyUrl(current.ref)!">{{ studyBackCta(current.ref) }}</a>
               <a v-if="deckUrlForRef(current.ref)" class="hd-ruler" :href="deckUrlForRef(current.ref)!">练本节互动 PPT →</a>
             </div>
           </section>
@@ -692,7 +706,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
             </div>
 
             <p v-if="item.q.ref" class="ep-review__ref">
-              <a :href="studyUrl(item.q.ref)">回到教材：{{ item.q.ref.book || '教材' }}</a>
+              <a v-if="studyUrl(item.q.ref)" :href="studyUrl(item.q.ref)">{{ reviewBackPrefix(item.q.ref) }}{{ item.q.ref.book || '原文' }}</a>
               <a v-if="deckUrlForRef(item.q.ref)" :href="deckUrlForRef(item.q.ref)!">练本节互动 PPT →</a>
               <span v-if="item.q.ref.anchor">依据：{{ item.q.ref.anchor }}</span>
             </p>

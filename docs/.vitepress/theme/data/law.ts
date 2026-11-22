@@ -37,6 +37,10 @@ export interface LawEntry {
   source: string
   sourceLabel?: string
   summary?: string
+  /** 正文结构：按条编号（articles）、分章指南（sections）或工程标准（clauses）。 */
+  structure?: 'articles' | 'sections' | 'clauses'
+  /** sections / clauses 结构的章数。 */
+  sectionCount?: number
   /** 骨架样例页：只收录少量条文，不是正式全文页。 */
   sample?: boolean
   /** 摘录页：条号不要求从第一条连续。 */

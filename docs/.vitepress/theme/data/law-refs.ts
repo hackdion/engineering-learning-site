@@ -30,7 +30,27 @@ export const LAW_REFS: LawRefLink[] = [
   { id: 'jianzhufa', art: 32, book: 'zhiliang', section: '2.4' },
   { id: 'zhiliang-tiaoli', art: 37, book: 'zhiliang', section: '3.1' },
   // 投资控制：合同价款期中支付
-  { id: 'zhiliang-tiaoli', art: 37, book: 'touzi', section: '8.6' }
+  { id: 'zhiliang-tiaoli', art: 37, book: 'touzi', section: '8.6' },
+  // 危大工程规定（住建部令第37号，2019修正）
+  { id: 'weida-guiding', art: 10, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 11, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 12, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 15, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 16, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 18, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 19, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 21, book: 'zhiliang', section: '8.2' },
+  { id: 'weida-guiding', art: 11, book: 'zhiliang', section: '1.3' },
+  { id: 'weida-guiding', art: 12, book: 'zhiliang', section: '1.3' },
+  { id: 'weida-guiding', art: 11, book: 'anli', section: '3.12' },
+  { id: 'weida-guiding', art: 12, book: 'anli', section: '3.12' },
+  { id: 'weida-guiding', art: 18, book: 'anli', section: '3.12' },
+  { id: 'weida-guiding', art: 19, book: 'anli', section: '3.12' },
+  { id: 'weida-guiding', art: 11, book: 'gailun', section: '7.1' },
+  { id: 'weida-guiding', art: 16, book: 'gailun', section: '7.1' },
+  { id: 'weida-guiding', art: 18, book: 'gailun', section: '7.1' },
+  { id: 'weida-guiding', art: 19, book: 'gailun', section: '7.1' },
+  { id: 'weida-guiding', art: 18, book: 'gailun', section: '2.1' }
 ]
 
 export function lawRefsAt(book: string, section: string): LawRefLink[] {

@@ -30,6 +30,7 @@ const LAW_DIR = path.join(REPO_ROOT, 'docs', 'law')
 const CONTRACT_DIR = path.join(REPO_ROOT, 'docs', 'model-contracts')
 
 const LEVELS = new Set(['法律', '行政法规', '部门规章', '规范性文件', '标准'])
+const LAW_STRUCTURES = new Set(['articles', 'sections', 'clauses'])
 const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际', '专项方案编写范例'])
 const LAW_REQUIRED = ['title', 'shortName', 'slug', 'level', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
 const CONTRACT_REQUIRED = ['title', 'shortName', 'slug', 'type', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
@@ -157,12 +158,37 @@ function checkInternal(file, keys) {
   if (bad.length) addProblem(file, `公开 frontmatter 含内部字段：${bad.join(', ')}`)
 }
 
+function parseSectionAnchors(body) {
+  const lines = body.split(/\r?\n/)
+  const anchors = []
+  const h2Anchors = []
+  const badAnchors = []
+  for (const line of lines) {
+    const rawMatch = line.match(/^(#{2,4})\s+(.+?)\s*\{#([^}]+)\}\s*$/)
+    if (!rawMatch) continue
+    const level = rawMatch[1].length
+    const anchor = rawMatch[3]
+    if (!/^[A-Za-z0-9_-]+$/.test(anchor)) {
+      badAnchors.push(anchor)
+      continue
+    }
+    anchors.push({ level, label: rawMatch[2].trim(), anchor })
+    if (level === 2) h2Anchors.push(anchor)
+  }
+  return { anchors, h2Anchors, badAnchors }
+}
+
 function checkLaw(file) {
   const content = fs.readFileSync(file, 'utf8')
   const { values, keys, body } = parseFrontmatter(content)
   if (!values.level) return
   scanned.laws += 1
   if (values.sample === true) scanned.samples += 1
+
+  const structure = values.structure ? String(values.structure) : 'articles'
+  if (!LAW_STRUCTURES.has(structure)) {
+    addProblem(file, `structure 不在允许值内：${structure}`)
+  }
 
   for (const field of LAW_REQUIRED) {
     if (!hasValue(values[field])) addProblem(file, `版本卡字段缺失或为空：${field}`)
@@ -182,45 +208,62 @@ function checkLaw(file) {
     addProblem(file, 'sample: true 的样例页必须同时写 excerpt: true，避免半页内容被当作全文')
   }
 
-  const articles = parseArticles(body)
-  if (articles.length === 0) {
-    addProblem(file, '未找到 `#### 第X条 {#aN}` 形式的条文标题')
-  }
-
-  const seen = new Set()
-  for (const article of articles) {
-    if (seen.has(article.num)) addProblem(file, `条号重复：${article.label}`)
-    seen.add(article.num)
-    if (article.anchor !== `a${article.num}`) {
-      addProblem(file, `${article.label} 的锚点是 #${article.anchor}，应为 #a${article.num}`)
+  if (structure === 'articles') {
+    const articles = parseArticles(body)
+    if (articles.length === 0) {
+      addProblem(file, '未找到 `#### 第X条 {#aN}` 形式的条文标题')
     }
-  }
 
-  if (articles.length > 0) {
-    const first = articles[0].num
-    const last = articles[articles.length - 1].num
-    if (values.excerpt === true) {
-      for (let i = 1; i < articles.length; i += 1) {
-        if (articles[i].num <= articles[i - 1].num) {
-          addProblem(file, `摘录页条号未严格递增：${articles[i - 1].label} → ${articles[i].label}`)
+    const seen = new Set()
+    for (const article of articles) {
+      if (seen.has(article.num)) addProblem(file, `条号重复：${article.label}`)
+      seen.add(article.num)
+      if (article.anchor !== `a${article.num}`) {
+        addProblem(file, `${article.label} 的锚点是 #${article.anchor}，应为 #a${article.num}`)
+      }
+    }
+
+    if (articles.length > 0) {
+      const first = articles[0].num
+      const last = articles[articles.length - 1].num
+      if (values.excerpt === true) {
+        for (let i = 1; i < articles.length; i += 1) {
+          if (articles[i].num <= articles[i - 1].num) {
+            addProblem(file, `摘录页条号未严格递增：${articles[i - 1].label} → ${articles[i].label}`)
+          }
+        }
+        if (hasValue(values.articleRange)) {
+          const range = String(values.articleRange).trim()
+          const match = range.match(/^(\d+)-(\d+)$/)
+          if (!match) addProblem(file, `articleRange 格式错误：${range}（应为「起-止」，如 37-37）`)
+          else if (Number(match[1]) !== first || Number(match[2]) !== last) {
+            addProblem(file, `articleRange ${range} 与实际首尾条号 ${first}-${last} 不一致`)
+          }
+        }
+      } else if (first !== 1) {
+        addProblem(file, `全文页条号应从第一条开始，实际首条为 ${first}`)
+      } else {
+        for (let i = 1; i < articles.length; i += 1) {
+          if (articles[i].num !== articles[i - 1].num + 1) {
+            addProblem(file, `全文页条号不连续：${articles[i - 1].label} 之后是 ${articles[i].label}`)
+          }
         }
       }
-      if (hasValue(values.articleRange)) {
-        const range = String(values.articleRange).trim()
-        const match = range.match(/^(\d+)-(\d+)$/)
-        if (!match) addProblem(file, `articleRange 格式错误：${range}（应为「起-止」，如 37-37）`)
-        else if (Number(match[1]) !== first || Number(match[2]) !== last) {
-          addProblem(file, `articleRange ${range} 与实际首尾条号 ${first}-${last} 不一致`)
-        }
+    }
+  } else {
+    const { anchors, h2Anchors, badAnchors } = parseSectionAnchors(body)
+    for (const bad of badAnchors) {
+      addProblem(file, `章节锚点格式不合法（仅允许 [A-Za-z0-9_-]+）：#${bad}`)
+    }
+    if (h2Anchors.length === 0) {
+      addProblem(file, '未找到 `## 章标题 {#anchor}` 形式的章级锚点')
+    }
+    const seenAnchors = new Set()
+    for (const item of anchors) {
+      if (seenAnchors.has(item.anchor)) {
+        addProblem(file, `章节锚点重复：#${item.anchor}（${item.label}）`)
       }
-    } else if (first !== 1) {
-      addProblem(file, `全文页条号应从第一条开始，实际首条为 ${first}`)
-    } else {
-      for (let i = 1; i < articles.length; i += 1) {
-        if (articles[i].num !== articles[i - 1].num + 1) {
-          addProblem(file, `全文页条号不连续：${articles[i - 1].label} 之后是 ${articles[i].label}`)
-        }
-      }
+      seenAnchors.add(item.anchor)
     }
   }
 

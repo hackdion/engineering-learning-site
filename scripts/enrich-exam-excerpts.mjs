@@ -23,7 +23,12 @@ const BOOK_BY_PREFIX = {
   '/law/anquan-tiaoli': '建设工程安全生产管理条例',
   '/law/zhaobiao-toubiao-fa': '中华人民共和国招标投标法',
   '/law/zhaobiao-toubiao-shishi-tiaoli': '中华人民共和国招标投标法实施条例',
-  '/law/bixu-zhaobiao-gongcheng': '必须招标的工程项目规定'
+  '/law/bixu-zhaobiao-gongcheng': '必须招标的工程项目规定',
+  '/law/weida-guiding': '危大工程安全管理规定（住建部令第37号）',
+  '/law/weida-bianzhi-zhinan': '危大工程专项施工方案编制指南（建办质〔2021〕48号）',
+  '/law/xjj133-2021-weida-guicheng': '危大工程安全管理规程（XJJ 133—2021）',
+  '/law/xjj088-2018-jianli-guicheng': '建设工程监理工作规程（XJJ 088—2018）',
+  '/knowledge/': '现场监理实务专题'
 }
 
 function bookNameForPath(p) {
@@ -115,6 +120,9 @@ function splitParagraphs(lines) {
       flush()
       continue
     }
+    if (/^(?:\d+\.\s+|-\s+)/.test(t) && buf.length) {
+      flush()
+    }
     buf.push(t)
   }
   flush()
@@ -125,16 +133,25 @@ function parseMarkdownFile(filePath, webPath) {
   const raw = fs.readFileSync(filePath, 'utf8')
   const lines = raw.split(/\r?\n/)
   let i = 0
+  let fmTitle = ''
   if (lines[0]?.trim() === '---') {
     i = 1
-    while (i < lines.length && lines[i].trim() !== '---') i++
+    while (i < lines.length && lines[i].trim() !== '---') {
+      const tm = lines[i].match(/^title:\s*(.+?)\s*$/)
+      if (tm) fmTitle = tm[1].replace(/^['"]|['"]$/g, '').trim()
+      i++
+    }
     i++
   }
+
+  const bookName = webPath.startsWith('/knowledge/')
+    ? (fmTitle ? `现场实务·${fmTitle}` : '现场监理实务专题')
+    : bookNameForPath(webPath)
 
   const sections = []
   let current = {
     path: webPath,
-    book: bookNameForPath(webPath),
+    book: bookName,
     level: 1,
     anchor: '',
     hash: '',
@@ -154,7 +171,7 @@ function parseMarkdownFile(filePath, webPath) {
       const hash = customIdMatch ? customIdMatch[1] : slugifyHeading(anchor)
       current = {
         path: webPath,
-        book: bookNameForPath(webPath),
+        book: bookName,
         level,
         anchor,
         hash,
@@ -193,18 +210,22 @@ function extractBigrams(text) {
   return set
 }
 
-function scoreOverlap(queryText, candidateText) {
-  const qSet = extractBigrams(queryText)
-  if (qSet.size === 0) return 0
-  const cSet = extractBigrams(candidateText)
+function scoreCandidate(qBi, candidateText, cBi = null, minHits = 6) {
+  if (qBi.size === 0 || !candidateText) return 0
+  const cSet = cBi || extractBigrams(candidateText)
   let hit = 0
-  for (const bg of qSet) {
+  for (const bg of qBi) {
     if (cSet.has(bg)) hit++
   }
-  // 兼顾召回率与长度归一化，避免超长段落靠字数取胜
-  const recall = hit / qSet.size
-  const density = hit / Math.sqrt(Math.max(cSet.size, 20))
-  return recall * 0.7 + density * 0.3
+  if (hit < minHits) return 0
+  const recall = hit / qBi.size
+  const density = hit / Math.sqrt(Math.max(candidateText.length, 30))
+  return recall * 0.72 + density * 0.28
+}
+
+function scoreOverlap(queryText, candidateText) {
+  const qSet = extractBigrams(queryText)
+  return scoreCandidate(qSet, candidateText, null, 1)
 }
 
 function buildExcerptFromSection(sections, idx, queryText) {
@@ -245,11 +266,22 @@ function buildExcerptFromSection(sections, idx, queryText) {
   return chosen.map((i) => pool[i]).join('\n')
 }
 
-// 1. 加载全部教材与法规
+// 1. 加载全部教材、法规与现场实务专题
 const mdFiles = [
   ...collectMarkdownFiles(path.join(DOCS_DIR, 'textbook'), '/textbook'),
-  ...collectMarkdownFiles(path.join(DOCS_DIR, 'law'), '/law')
+  ...collectMarkdownFiles(path.join(DOCS_DIR, 'law'), '/law'),
+  ...collectMarkdownFiles(path.join(DOCS_DIR, 'knowledge'), '/knowledge')
 ]
+
+const SKIP_LAW_HASHES = new Set([
+  'standards',
+  'terms-note',
+  'foreword',
+  'preface',
+  'revision',
+  'revision-note',
+  'notice'
+])
 
 const sectionsByPath = new Map()
 const allParagraphItems = []
@@ -258,6 +290,9 @@ for (const { filePath, webPath } of mdFiles) {
   sectionsByPath.set(webPath, secs)
   for (let sIdx = 0; sIdx < secs.length; sIdx++) {
     const s = secs[sIdx]
+    // 实务专题末尾「自测题」及标准前言/用词说明/引用标准名录不作为题库原文依据
+    if (webPath.startsWith('/knowledge/') && s.anchor === '自测题') continue
+    if (webPath.startsWith('/law/') && SKIP_LAW_HASHES.has(s.hash)) continue
     for (let pIdx = 0; pIdx < s.paras.length; pIdx++) {
       const p = s.paras[pIdx]
       if (p.length < 25) continue
@@ -278,14 +313,8 @@ function findGlobalBestMatch(queryText, preferTextbook = true) {
   let best = null
   let bestScore = 0
   for (const item of allParagraphItems) {
-    let hit = 0
-    for (const bg of qBi) {
-      if (item.bigrams.has(bg)) hit++
-    }
-    if (hit < 6) continue
-    const recall = hit / qBi.size
-    const density = hit / Math.sqrt(Math.max(item.p.length, 30))
-    let score = recall * 0.72 + density * 0.28
+    let score = scoreCandidate(qBi, item.p, item.bigrams, 6)
+    if (score === 0) continue
     if (preferTextbook && item.sec.path.startsWith('/textbook/')) score += 0.03
     if (score > bestScore) {
       bestScore = score
@@ -329,6 +358,7 @@ const examFiles = fs
 
 let totalQ = 0
 let enrichedExistingRef = 0
+let repairedRef = 0
 let newlyMatchedRef = 0
 let unmatchedJly = 0
 
@@ -340,6 +370,7 @@ for (const file of examFiles) {
   const processItem = (q) => {
     totalQ++
     const qText = queryTextForQuestion(q)
+    const qBi = extractBigrams(qText)
 
     if (q.ref && q.ref.path && sectionsByPath.has(q.ref.path)) {
       const secs = sectionsByPath.get(q.ref.path)
@@ -347,6 +378,24 @@ for (const file of examFiles) {
       if (sIdx !== -1) {
         const excerpt = buildExcerptFromSection(secs, sIdx, qText)
         if (excerpt) {
+          const curScore = scoreCandidate(qBi, excerpt, null, 1)
+          if (curScore < 0.30) {
+            const match = findGlobalBestMatch(qText, true)
+            if (match && match.score >= 0.50 && match.score - curScore >= 0.15) {
+              const mSecs = sectionsByPath.get(match.sec.path)
+              const mExcerpt = buildExcerptFromSection(mSecs, match.sIdx, qText) || match.p
+              q.ref = {
+                book: match.sec.book,
+                path: match.sec.path,
+                anchor: match.sec.anchor,
+                hash: match.sec.hash,
+                anchorFound: true,
+                excerpt: mExcerpt
+              }
+              repairedRef++
+              return
+            }
+          }
           q.ref.excerpt = excerpt
           enrichedExistingRef++
           return
@@ -354,9 +403,9 @@ for (const file of examFiles) {
       }
     }
 
-    // 无 ref 或原 ref 未取到正文：全局检索最新教材/法规
-    // 对 jly-* 提高门槛，避免把标准外题目强行挂到无关教材段落
-    const minScore = isJly ? 0.56 : 0.35
+    // 无 ref 或原 ref 未取到正文：全局检索最新教材/法规/现场实务专题
+    // 对 jly-* 保持 0.50 门槛，避免把标准外题目强行挂到无关段落
+    const minScore = isJly ? 0.50 : 0.35
     const match = findGlobalBestMatch(qText, true)
     if (match && match.score >= minScore) {
       const secs = sectionsByPath.get(match.sec.path)
@@ -386,4 +435,4 @@ for (const file of examFiles) {
   fs.writeFileSync(fullPath, JSON.stringify(data))
 }
 
-console.log(JSON.stringify({ totalQ, enrichedExistingRef, newlyMatchedRef, unmatchedJly }, null, 2))
+console.log(JSON.stringify({ totalQ, enrichedExistingRef, repairedRef, newlyMatchedRef, unmatchedJly }, null, 2))

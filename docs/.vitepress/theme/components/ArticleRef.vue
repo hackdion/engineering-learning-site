@@ -48,6 +48,7 @@ const excerpt = computed(() => {
   cursor: help;
 }
 .article-ref__tip {
+  display: none;
   position: absolute;
   left: 50%;
   bottom: calc(100% + 8px);
@@ -65,17 +66,12 @@ const excerpt = computed(() => {
   text-align: left;
   text-decoration: none;
   white-space: normal;
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, 4px);
-  transition: opacity .12s ease, transform .12s ease;
+  transform: translate(-50%, 0);
   pointer-events: none;
 }
 .article-ref:hover .article-ref__tip,
 .article-ref:focus-visible .article-ref__tip {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, 0);
+  display: block;
 }
 .article-ref:focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 3px; border-radius: 3px; }
 @media (prefers-reduced-motion: reduce) {

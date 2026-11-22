@@ -119,6 +119,14 @@ function pageUrl(dir: string, file: string): string {
   return slug
 }
 
+function countSections(body: string): number {
+  let count = 0
+  for (const line of body.split(/\r?\n/)) {
+    if (/^##\s+.+?\{#[A-Za-z0-9_-]+\}\s*$/.test(line)) count += 1
+  }
+  return count
+}
+
 function loadLaws(): LawEntry[] {
   const dir = path.join(docsRoot, 'law')
   const laws: LawEntry[] = []
@@ -128,7 +136,9 @@ function loadLaws(): LawEntry[] {
     const source = fs.readFileSync(file, 'utf8')
     const { fm, body } = parseFrontmatter(source)
     if (!fm.level || !fm.title) continue
+    const structure = (fm.structure ? String(fm.structure) : 'articles') as 'articles' | 'sections' | 'clauses'
     const articles = parseArticles(body)
+    const sectionCount = structure === 'articles' ? 0 : countSections(body)
     laws.push({
       slug: String(fm.slug || slug),
       title: String(fm.title),
@@ -143,6 +153,8 @@ function loadLaws(): LawEntry[] {
       source: String(fm.source || ''),
       sourceLabel: fm.sourceLabel ? String(fm.sourceLabel) : '',
       summary: fm.summary ? String(fm.summary) : '',
+      structure,
+      sectionCount,
       sample: fm.sample === true,
       excerpt: fm.excerpt === true,
       articles
