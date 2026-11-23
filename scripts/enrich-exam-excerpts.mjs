@@ -26,6 +26,7 @@ const BOOK_BY_PREFIX = {
   '/law/bixu-zhaobiao-gongcheng': '必须招标的工程项目规定',
   '/law/weida-guiding': '危大工程安全管理规定（住建部令第37号）',
   '/law/weida-bianzhi-zhinan': '危大工程专项施工方案编制指南（建办质〔2021〕48号）',
+  '/law/gb55034-2022-anquan-weisheng': '施工现场安全卫生与职业健康通用规范（GB 55034—2022）',
   '/law/xjj133-2021-weida-guicheng': '危大工程安全管理规程（XJJ 133—2021）',
   '/law/xjj088-2018-jianli-guicheng': '建设工程监理工作规程（XJJ 088—2018）',
   '/knowledge/': '现场监理实务专题'

@@ -244,7 +244,9 @@ export default defineConfig({
             { text: '5. 保证合同方式与保证期间', link: '/knowledge/surety-contract-mode-and-period' },
             { text: '6. 工程延期审批与费用索赔', link: '/knowledge/delay-extension-and-claim' },
             { text: '7. 脚手架巡视要点与高频考点', link: '/knowledge/scaffolding-safety-inspection' },
-            { text: '8. 监理职责差异与现场防踩坑', link: '/knowledge/supervision-duty-and-site-pitfalls' }
+            { text: '8. 监理职责差异与现场防踩坑', link: '/knowledge/supervision-duty-and-site-pitfalls' },
+            { text: '9. 施工现场安全卫生与职业健康（GB 55034）', link: '/knowledge/site-safety-health-gb55034' },
+            { text: '10. 防水、装配式与混凝土/钢结构实务', link: '/knowledge/waterproofing-and-concrete-site-control' }
           ]
         }
       ],
@@ -291,6 +293,7 @@ export default defineConfig({
               text: '标准',
               collapsed: false,
               items: [
+                { text: '施工现场安全卫生通用规范（GB 55034—2022）', link: '/law/gb55034-2022-anquan-weisheng' },
                 { text: '建设工程监理工作规程（XJJ 088—2018）', link: '/law/xjj088-2018-jianli-guicheng' },
                 { text: '危大工程安全管理规程（XJJ 133—2021）', link: '/law/xjj133-2021-weida-guicheng' }
               ]
