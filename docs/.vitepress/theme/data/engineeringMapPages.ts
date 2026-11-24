@@ -4,6 +4,7 @@ import { stages, stageSources, stageGroups, projectTypes, siteFacilities } from 
 import { roleDirectory, roleCards, ownerModels } from './engineeringRoles'
 import { handoverExamples } from './engineeringHandovers'
 import { scenes } from './engineeringScenes'
+import { topicsForStage } from './knowledge-graph'
 
 const S = stages as any[]
 const RD = roleDirectory as Record<string, any>
@@ -88,6 +89,7 @@ function stagePage(s: any, i: number) {
     ].join('\n\n')
   })
   const related = mapScenes.filter((x) => x.stage === stageLabel(s.id))
+  const relatedTopics = topicsForStage(s.id)
   const prev = S[i - 1]
   const next = S[i + 1]
   const body = [
@@ -101,6 +103,7 @@ function stagePage(s: any, i: number) {
     ...steps,
     s.media?.drawing === 'prep' ? `## 施工现场的设施 {#site}\n\n${list((siteFacilities as any[]).map((f) => `**${f.name}**（${f.tag}）：${f.description}`))}` : '',
     related.length ? `## 这个阶段的场景 {#scenes}\n\n${list(related.map((x) => `[${x.name}](${sceneUrl(x.id)})`))}` : '',
+    relatedTopics.length ? `## 本阶段配套实务专题 {#topics}\n\n${list(relatedTopics.map((t) => `[${t.title}](/knowledge/${t.slug}) — ${t.summary}`))}` : '',
     `## 前后阶段 {#nearby}`,
     list([prev ? `上一阶段：[${no(i - 1)} ${prev.name}](${stageUrl(prev.id)})` : '', next ? `下一阶段：[${no(i + 1)} ${next.name}](${stageUrl(next.id)})` : '', '[回到总图](/engineering-map/)'].filter(Boolean)),
     `先看全国房建口径，各地办理细节按项目所在地规定核对。 {.em-note}`

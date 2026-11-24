@@ -13,6 +13,8 @@ import {
 } from '../data/courseStats'
 import { AUTHOR, PLATFORMS } from '../data/author'
 import { data as textbook } from '../data/textbook.data'
+import { data as lawIndex } from '../data/law.data'
+import { KNOWLEDGE_TOPICS } from '../data/knowledge-graph'
 
 const totalSections = BOOKS.reduce((n, b) => n + textbook[b.key].sectionCount, 0)
 const totalChapters = BOOKS.reduce((n, b) => n + textbook[b.key].chapters.length, 0)
@@ -47,9 +49,10 @@ const panelForms = [
   { label: '互动课件', note: `集中在${deckBooks}`, count: `${DECK_COUNT} 份 · ${DECK_SECTIONS} 节`, href: withBase('/courses/') },
   { label: '精讲视频', note: '按 BV 号去重，首发 B 站', count: `${VIDEO_COUNT} 条`, href: withBase('/courses/') },
   { label: '全文朗读', note: `按「BV 号 + 分集号」去重`, count: `${EPISODE_COUNT} 集 · ${SERIES_COUNT} 个合集`, href: withBase('/courses/') },
-  { label: '模拟与真题试卷', note: '含真题、平行模拟与 14 套监理员取证题库', count: '26 套 · 2,164 题', href: withBase('/exams/') },
+  { label: '模拟与真题试卷', note: '含真题、平行模拟与 14 套监理员取证题库', count: '26 套 · 2,183 题', href: withBase('/exams/') },
+  { label: '法规与强制标准', note: '法律、条例、部令与全文强制通用规范', count: `${lawIndex.laws.length} 部全文`, href: withBase('/law/') },
   { label: '工程全景地图', note: '九阶段、九类岗位、工程术语与工地沙盘', count: '53 项 · 39 岗位 · 20 词', href: withBase('/engineering-map/') },
-  { label: '现场实务专题', note: '高频现场监理争议与法规判定专题', count: '6 篇专题', href: withBase('/knowledge/') }
+  { label: '现场实务专题', note: '高频现场监理争议与法规判定专题（教材伴读）', count: `${KNOWLEDGE_TOPICS.length} 篇专题`, href: withBase('/textbook/#practice-topics') }
 ]
 
 const studyDash = ref({

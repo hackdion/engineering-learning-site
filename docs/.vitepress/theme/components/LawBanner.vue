@@ -7,6 +7,7 @@ import { useData, withBase } from 'vitepress'
 import { asList, formatDate } from '../data/law'
 import { data as lawIndex } from '../data/law.data'
 import { bookShortName, lawTextbookRefsAt, textbookSectionLink } from '../data/law-refs'
+import { examsForLaw, topicsForLaw } from '../data/knowledge-graph'
 
 const { frontmatter } = useData()
 
@@ -19,6 +20,8 @@ const effective = computed(() => formatDate(fm.value.effective))
 const asOf = computed(() => formatDate(fm.value.asOf))
 
 const law = computed(() => lawIndex.laws.find((item) => item.slug === String(fm.value.slug || '')))
+const knowledgeRefs = computed(() => (law.value ? topicsForLaw(law.value.slug) : []))
+const examRefs = computed(() => (law.value ? examsForLaw(law.value.slug) : []))
 
 const textbookRefs = computed(() => {
   if (!law.value) return []
@@ -85,6 +88,18 @@ const sourceText = computed(() => String(fm.value.sourceLabel || '官方出处')
         <dt>教材里怎么讲</dt>
         <dd class="law-banner__links">
           <a v-for="ref in textbookRefs" :key="ref.key" :href="withBase(ref.link)">{{ ref.label }}</a>
+        </dd>
+      </div>
+      <div v-if="knowledgeRefs.length" class="law-banner__row">
+        <dt>配套实务专题</dt>
+        <dd class="law-banner__links">
+          <a v-for="t in knowledgeRefs" :key="t.slug" :href="withBase(`/knowledge/${t.slug}`)">{{ t.shortTitle }}</a>
+        </dd>
+      </div>
+      <div v-if="examRefs.length" class="law-banner__row">
+        <dt>高频刷题卷</dt>
+        <dd class="law-banner__links">
+          <a v-for="ex in examRefs" :key="ex.id" :href="withBase(`/exams/paper?id=${ex.id}`)">{{ ex.label }}</a>
         </dd>
       </div>
     </dl>

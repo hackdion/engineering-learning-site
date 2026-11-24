@@ -6,6 +6,7 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { inBrowser, withBase } from 'vitepress'
 import ExamCase from './ExamCase.vue'
 import { COURSES } from '../../data/courses'
+import { topicsForExamRef } from '../../data/knowledge-graph'
 import {
   answerText,
   clearState,
@@ -583,9 +584,15 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
               </div>
               <p v-for="(para, idx) in current.ref.excerpt.split('\n')" :key="idx">{{ para }}</p>
             </div>
-            <div v-if="(current.ref && studyUrl(current.ref)) || deckUrlForRef(current.ref)" class="ep-study-box__links">
+            <div v-if="(current.ref && studyUrl(current.ref)) || deckUrlForRef(current.ref) || topicsForExamRef(current.ref?.path).length" class="ep-study-box__links">
               <a v-if="current.ref && studyUrl(current.ref)" class="hd-ruler" :href="studyUrl(current.ref)!">{{ studyBackCta(current.ref) }}</a>
               <a v-if="deckUrlForRef(current.ref)" class="hd-ruler" :href="deckUrlForRef(current.ref)!">练本节互动 PPT →</a>
+              <a
+                v-for="t in topicsForExamRef(current.ref?.path).slice(0, 2)"
+                :key="t.slug"
+                class="hd-ruler"
+                :href="withBase(`/knowledge/${t.slug}`)"
+              >看实务拆解：{{ t.shortTitle }} →</a>
             </div>
           </section>
 
@@ -708,6 +715,11 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
             <p v-if="item.q.ref" class="ep-review__ref">
               <a v-if="studyUrl(item.q.ref)" :href="studyUrl(item.q.ref)">{{ reviewBackPrefix(item.q.ref) }}{{ item.q.ref.book || '原文' }}</a>
               <a v-if="deckUrlForRef(item.q.ref)" :href="deckUrlForRef(item.q.ref)!">练本节互动 PPT →</a>
+              <a
+                v-for="t in topicsForExamRef(item.q.ref?.path).slice(0, 2)"
+                :key="t.slug"
+                :href="withBase(`/knowledge/${t.slug}`)"
+              >看实务拆解：{{ t.shortTitle }} →</a>
               <span v-if="item.q.ref.anchor">依据：{{ item.q.ref.anchor }}</span>
             </p>
           </li>

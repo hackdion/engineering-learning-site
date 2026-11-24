@@ -13,6 +13,8 @@ import EngineeringMapRefs from './components/EngineeringMapRefs.vue'
 import ContractCopy from './components/ContractCopy.vue'
 import ContractFileMap from './components/ContractFileMap.vue'
 import SectionLaw from './components/SectionLaw.vue'
+import SectionKnowledge from './components/SectionKnowledge.vue'
+import KnowledgeLinks from './components/KnowledgeLinks.vue'
 import CraneTop from './components/CraneTop.vue'
 import SearchWarmup from './components/SearchWarmup.vue'
 import SiteFooter from './components/SiteFooter.vue'
@@ -52,6 +54,10 @@ watch(() => route.path, apply, { immediate: true })
 
 // 只在教材的「节」页面末尾放学完盖章
 const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?\/?$/.test(relPath(route.path)))
+const isKnowledgeTopic = computed(() => {
+  const rel = relPath(route.path).replace(/\.html$/, '').replace(/\/+$/, '')
+  return /^\/knowledge\/[^/]+$/.test(rel) && !rel.endsWith('/contract-law-basics')
+})
 </script>
 
 <template>
@@ -60,7 +66,7 @@ const isSection = computed(() => /\/textbook\/.*section-\d+(\.html)?\/?$/.test(r
     <template #doc-before><ContractCopy /><SectionCourse v-if="isSection" /><EngineeringMapRefs v-if="isSection" /></template>
     <template #nav-bar-content-after><FollowButton /></template>
     <template #nav-screen-content-after><FollowButton block /></template>
-    <template #doc-after><SectionLaw v-if="isSection" /></template>
+    <template #doc-after><SectionLaw v-if="isSection" /><SectionKnowledge v-if="isSection" /><KnowledgeLinks v-if="isKnowledgeTopic" /></template>
     <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
     <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /><SearchWarmup /><OutlineFollow /><ContractFileMap /></template>
   </DefaultTheme.Layout>

@@ -3,6 +3,7 @@ import FigureZoom from './FigureZoom.vue'
 import Layout from './Layout.vue'
 import SourceNote from './SourceNote.vue'
 import BookShelf from './components/BookShelf.vue'
+import TextbookKnowledge from './components/TextbookKnowledge.vue'
 import CourseCenter from './components/CourseCenter.vue'
 import HomePage from './components/HomePage.vue'
 import EngineeringMapHome from './components/EngineeringMapHome.vue'
@@ -35,6 +36,7 @@ export default {
     app.component('FigureZoom', FigureZoom)
     app.component('SourceNote', SourceNote)
     app.component('BookShelf', BookShelf)
+    app.component('TextbookKnowledge', TextbookKnowledge)
     app.component('CourseCenter', CourseCenter)
     app.component('HomePage', HomePage)
     app.component('EngineeringMapHome', EngineeringMapHome)
