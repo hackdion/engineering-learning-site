@@ -246,11 +246,13 @@ export default defineConfig({
             { text: '7. 脚手架巡视要点与高频考点', link: '/knowledge/scaffolding-safety-inspection' },
             { text: '8. 监理职责差异与现场防踩坑', link: '/knowledge/supervision-duty-and-site-pitfalls' },
             { text: '9. 施工现场安全卫生与职业健康（GB 55034）', link: '/knowledge/site-safety-health-gb55034' },
-            { text: '10. 防水、装配式与混凝土/钢结构实务', link: '/knowledge/waterproofing-and-concrete-site-control' }
+            { text: '10. 防水、装配式与混凝土/钢结构实务', link: '/knowledge/waterproofing-and-concrete-site-control' },
+            { text: '11. 施工质量控制与第三方检测（GB 55032+57号令）', link: '/knowledge/quality-control-and-testing-gb55032' },
+            { text: '12. 建筑防火与施工消防安全（GB 55037）', link: '/knowledge/building-fire-protection-gb55037' }
           ]
         }
       ],
-      // 法规文本按层级分组。已接入六部法规全文，其余层级保留分组并指向总览。
+      // 法规文本按层级分组。
       '/law/': [
         {
           text: '法规文本',
@@ -279,7 +281,8 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '必须招标的工程项目规定', link: '/law/bixu-zhaobiao-gongcheng' },
-                { text: '危大工程安全管理规定（37号令）', link: '/law/weida-guiding' }
+                { text: '危大工程安全管理规定（37号令）', link: '/law/weida-guiding' },
+                { text: '质量检测管理办法（57号令）', link: '/law/zhiliang-jiance-banfa' }
               ]
             },
             {
@@ -293,7 +296,12 @@ export default defineConfig({
               text: '标准',
               collapsed: false,
               items: [
+                { text: '混凝土结构通用规范（GB 55008—2021）', link: '/law/gb55008-2021-hunningtu' },
+                { text: '施工脚手架通用规范（GB 55023—2022）', link: '/law/gb55023-2022-jiaoshoujia' },
+                { text: '工程防水通用规范（GB 55030—2022）', link: '/law/gb55030-2022-fangshui' },
+                { text: '施工质量控制通用规范（GB 55032—2022）', link: '/law/gb55032-2022-zhiliang-kongzhi' },
                 { text: '施工现场安全卫生通用规范（GB 55034—2022）', link: '/law/gb55034-2022-anquan-weisheng' },
+                { text: '建筑防火通用规范（GB 55037—2022）', link: '/law/gb55037-2022-jianzhu-fanghuo' },
                 { text: '建设工程监理工作规程（XJJ 088—2018）', link: '/law/xjj088-2018-jianli-guicheng' },
                 { text: '危大工程安全管理规程（XJJ 133—2021）', link: '/law/xjj133-2021-weida-guicheng' }
               ]
