@@ -2,8 +2,8 @@
 // 法规/示范文本页首版本卡。
 // 只显示规划 4.1 允许公开的字段；核对人、核对记录、来源路径、授权记录等内部字段
 // 即使写进 frontmatter 也不会被渲染，`npm run check` 另有结构检查。
-import { computed } from 'vue'
-import { useData, withBase } from 'vitepress'
+import { computed, onBeforeUnmount, ref, watch } from 'vue'
+import { inBrowser, useData, useRoute, withBase } from 'vitepress'
 import { asList, formatDate } from '../data/law'
 import { data as lawIndex } from '../data/law.data'
 import { bookShortName, lawTextbookRefsAt, textbookSectionLink } from '../data/law-refs'
@@ -60,6 +60,100 @@ const rows = computed(() => {
 })
 
 const sourceText = computed(() => String(fm.value.sourceLabel || '官方出处'))
+
+/* ---------- 页内条文关键词定位与过滤（仅浏览器端 DOM 类名切换，不影响 SSR 水合） ---------- */
+const route = useRoute()
+const query = ref('')
+const onlyMatches = ref(false)
+const matchCount = ref(0)
+const activeIdx = ref(-1)
+let matchedEls: HTMLElement[] = []
+
+function clearDomHighlights() {
+  if (!inBrowser) return
+  document.querySelectorAll('.is-law-match, .is-law-match-active, .is-law-keep').forEach((el) => {
+    el.classList.remove('is-law-match', 'is-law-match-active', 'is-law-keep')
+  })
+  document.querySelector('.vp-doc')?.classList.remove('law-filter-only')
+  matchedEls = []
+  matchCount.value = 0
+  activeIdx.value = -1
+}
+
+function applyFilterMode() {
+  if (!inBrowser) return
+  const doc = document.querySelector('.vp-doc')
+  if (!doc) return
+  if (onlyMatches.value && query.value.trim()) doc.classList.add('law-filter-only')
+  else doc.classList.remove('law-filter-only')
+}
+
+function focusMatch(idx: number) {
+  if (!matchedEls.length) return
+  matchedEls.forEach((el) => el.classList.remove('is-law-match-active'))
+  const safe = ((idx % matchedEls.length) + matchedEls.length) % matchedEls.length
+  activeIdx.value = safe
+  const target = matchedEls[safe]
+  target.classList.add('is-law-match-active')
+  target.scrollIntoView({ behavior: 'smooth', block: 'center' })
+}
+
+function runSearch() {
+  clearDomHighlights()
+  const q = query.value.trim().toLowerCase()
+  if (!inBrowser || !q) {
+    onlyMatches.value = false
+    return
+  }
+  const container = document.querySelector('.vp-doc > div')
+  if (!container) return
+  const blocks = container.querySelectorAll<HTMLElement>('h2, h3, h4, p, li, tr, blockquote')
+  const hits: HTMLElement[] = []
+  for (const el of blocks) {
+    if (el.closest('.law-banner, .source-note, .learned-stamp, .VPDocFooter')) continue
+    // 若外层 tr 或 li 已有子 p 命中，避免同一行重复计数：跳过含子块级 p 的 li/tr
+    if ((el.tagName === 'LI' || el.tagName === 'TR') && el.querySelector('p')) {
+      // 仅当自身文本命中且子 p 不全部涵盖时才算，简化为优先匹配最内层文本块
+      const hasInnerMatch = Array.from(el.querySelectorAll('p')).some((p) =>
+        (p.textContent || '').toLowerCase().includes(q)
+      )
+      if (hasInnerMatch) continue
+    }
+    const text = (el.textContent || '').toLowerCase()
+    if (!text.includes(q)) continue
+    el.classList.add('is-law-match')
+    hits.push(el)
+    let top: HTMLElement | null = el
+    while (top && top.parentElement && top.parentElement !== container) {
+      top = top.parentElement
+    }
+    if (top && top.parentElement === container) top.classList.add('is-law-keep')
+  }
+  matchedEls = hits
+  matchCount.value = hits.length
+  applyFilterMode()
+  if (hits.length > 0) focusMatch(0)
+}
+
+function stepMatch(delta: number) {
+  if (!matchedEls.length) return
+  focusMatch(activeIdx.value + delta)
+}
+
+function toggleOnlyMatches() {
+  onlyMatches.value = !onlyMatches.value
+  applyFilterMode()
+}
+
+function clearSearch() {
+  query.value = ''
+  onlyMatches.value = false
+  clearDomHighlights()
+}
+
+watch(query, () => runSearch())
+watch(() => route.path, () => clearSearch())
+onBeforeUnmount(() => clearDomHighlights())
 </script>
 
 <template>
@@ -104,6 +198,37 @@ const sourceText = computed(() => String(fm.value.sourceLabel || '官方出处')
       </div>
     </dl>
 
+    <div v-if="!fm.sample" class="law-banner__search" role="search" aria-label="页内查条文">
+      <div class="law-banner__search-row">
+        <input
+          v-model.trim="query"
+          type="search"
+          class="law-banner__input"
+          placeholder="页内查条文：输入关键词或条号（如 5.0.1、消防车道、签字）…"
+          aria-label="页内查条文关键词"
+          @keydown.enter.exact.prevent="stepMatch(1)"
+          @keydown.shift.enter.prevent="stepMatch(-1)"
+          @keydown.esc="clearSearch"
+        >
+        <div v-if="query" class="law-banner__search-actions">
+          <span class="law-banner__match-info">
+            {{ matchCount ? `${activeIdx + 1} / ${matchCount} 处` : '无匹配' }}
+          </span>
+          <button type="button" class="law-banner__sbtn" :disabled="!matchCount" @click="stepMatch(-1)">上一处</button>
+          <button type="button" class="law-banner__sbtn" :disabled="!matchCount" @click="stepMatch(1)">下一处</button>
+          <button
+            type="button"
+            class="law-banner__sbtn"
+            :class="{ 'is-on': onlyMatches }"
+            :disabled="!matchCount"
+            :aria-pressed="onlyMatches"
+            @click="toggleOnlyMatches"
+          >仅看匹配</button>
+          <button type="button" class="law-banner__sbtn" @click="clearSearch">清空</button>
+        </div>
+      </div>
+    </div>
+
     <p v-if="fm.sample" class="law-banner__note">
       本页为骨架样例，只收录少量已整理的条文，用于验证版本卡、条号锚点与教材互链；完整条文由后续整理接入。
     </p>
@@ -146,5 +271,83 @@ const sourceText = computed(() => String(fm.value.sourceLabel || '官方出处')
   .law-banner { padding: 16px 14px; }
   .law-banner__row { grid-template-columns: 1fr; gap: 2px; }
   .law-banner__name { font-size: 20px; }
+}
+
+.law-banner__search {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--hd-line);
+}
+.law-banner__search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.law-banner__input {
+  flex: 1 1 240px;
+  min-width: 0;
+  min-height: 40px;
+  padding: 6px 12px;
+  border: 1.5px solid var(--hd-ink);
+  border-radius: 8px;
+  background: var(--hd-paper);
+  color: var(--hd-ink);
+  font-size: 14px;
+}
+.law-banner__input:focus {
+  outline: 2px solid var(--hd-accent);
+  outline-offset: 1px;
+  background: #fff;
+}
+.law-banner__search-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.law-banner__match-info {
+  font-family: var(--hd-font-mono);
+  font-size: 13px;
+  color: var(--hd-ink-2);
+  padding: 0 4px;
+}
+.law-banner__sbtn {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1.5px solid var(--hd-ink);
+  border-radius: 8px;
+  background: var(--hd-paper);
+  color: var(--hd-ink);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.law-banner__sbtn:hover:not(:disabled) { background: var(--hd-accent-soft); }
+.law-banner__sbtn:disabled { opacity: 0.45; cursor: not-allowed; }
+.law-banner__sbtn.is-on { background: var(--hd-accent); color: #fff; }
+
+:global(.vp-doc .is-law-match) {
+  background: rgba(255, 199, 44, 0.24);
+  border-left: 3px solid var(--hd-accent);
+  padding-left: 10px;
+  border-radius: 4px;
+  scroll-margin-top: 88px;
+}
+:global(.vp-doc tr.is-law-match) {
+  border-left: 0;
+  padding-left: 0;
+  outline: 2px solid var(--hd-accent);
+}
+:global(.vp-doc .is-law-match-active) {
+  background: rgba(255, 199, 44, 0.42);
+  outline: 2px solid var(--hd-accent);
+}
+:global(.vp-doc.law-filter-only > div > :not(.law-banner):not(.is-law-keep):not(.VPDocFooter)) {
+  display: none;
+}
+:global(.vp-doc.law-filter-only .is-law-keep li:not(.is-law-match):not(:has(.is-law-match))),
+:global(.vp-doc.law-filter-only .is-law-keep tbody tr:not(.is-law-match)) {
+  display: none;
 }
 </style>

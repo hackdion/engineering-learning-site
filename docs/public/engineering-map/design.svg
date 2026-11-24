@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="勘察设计阶段地勘柱状图、多专业协同出图与消防审查蓝图">
+<defs>
+  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D9D1BC" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="bp-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#8A6A2F" stroke-width="1.2" opacity="0.35"/>
+  </pattern>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E5A9E"/>
+  </marker>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#14212E"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #14212E; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .title { font-size: 16px; font-weight: 700; }
+  .sub { font-size: 11.5px; fill: #334452; }
+  .lbl { font-size: 12px; font-weight: 600; }
+  .sm { font-size: 10.5px; fill: #334452; }
+  .blue { fill: #0E5A9E; }
+  .teal { fill: #0E7C86; }
+  .green { fill: #2E7A4F; }
+  .danger { fill: #D63B22; }
+  .white { fill: #FFFFFF; }
+  .ink-line { stroke: #14212E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .blue-line { stroke: #0E5A9E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .teal-line { stroke: #0E7C86; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .danger-line { stroke: #D63B22; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 5 4; }
+</style>
+<rect width="800" height="480" fill="#FAF6EB"/>
+<rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="42" fill="#142231"/>
+<text x="28" y="40" class="title white">阶段 03 · 勘察设计与施工图审查蓝图</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-03 · 先勘察后设计/图审/消防设计审查</text>
+
+  <!-- 左：初勘 -> 详勘 -->
+  <rect x="30" y="70" width="210" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="46" y="96" class="lbl teal">一、先勘察（初勘 → 详勘）</text>
+  <rect x="50" y="114" width="170" height="72" rx="6" fill="#EFE9D9" stroke="#0E7C86" stroke-width="1.5"/>
+  <text x="135" y="138" text-anchor="middle" class="lbl">初步勘察</text>
+  <text x="135" y="158" text-anchor="middle" class="sm">评价稳定性与基础初步方案</text>
+  <text x="135" y="175" text-anchor="middle" class="sm">服务初步设计与概算</text>
+  <line x1="135" y1="186" x2="135" y2="212" class="teal-line" marker-end="url(#arr-ink)"/>
+  <rect x="50" y="216" width="170" height="184" rx="6" fill="#DCEBFA" stroke="#0E5A9E" stroke-width="1.5"/>
+  <text x="135" y="240" text-anchor="middle" class="lbl blue">详细勘察报告</text>
+  <text x="135" y="262" text-anchor="middle" class="sm">岩土承载力 / 桩端阻力参数</text>
+  <text x="135" y="282" text-anchor="middle" class="sm">抗浮水位与不良地质评价</text>
+  <rect x="74" y="300" width="122" height="80" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <line x1="74" y1="326" x2="196" y2="326" stroke="#14212E" stroke-width="1"/>
+  <line x1="74" y1="354" x2="196" y2="354" stroke="#14212E" stroke-width="1"/>
+  <text x="135" y="317" text-anchor="middle" class="sm">地勘柱状图 · 钻探</text>
+  <text x="135" y="344" text-anchor="middle" class="sm">原位测试 · 标贯/触探</text>
+  <text x="135" y="371" text-anchor="middle" class="sm">室内土工试验报告</text>
+
+  <line x1="240" y1="245" x2="262" y2="245" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <!-- 中：初步设计 -> 施工图多专业出图 -->
+  <rect x="266" y="70" width="268" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="282" y="96" class="lbl blue">二、后设计（多专业协同）</text>
+  <rect x="284" y="114" width="232" height="58" rx="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+  <text x="400" y="138" text-anchor="middle" class="lbl">初步设计及工程概算</text>
+  <text x="400" y="158" text-anchor="middle" class="sm">政府投资项目按规定报批或核定概算</text>
+  <line x1="400" y1="172" x2="400" y2="198" class="blue-line" marker-end="url(#arr-blue)"/>
+  <rect x="284" y="202" width="232" height="198" rx="6" fill="#EFE9D9" stroke="#0E5A9E" stroke-width="1.6"/>
+  <text x="400" y="226" text-anchor="middle" class="lbl blue">施工图设计文件</text>
+  <!-- 6专业网格 -->
+  <rect x="298" y="242" width="96" height="32" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="346" y="262" text-anchor="middle" class="sm">建筑专业</text>
+  <rect x="406" y="242" width="96" height="32" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="454" y="262" text-anchor="middle" class="sm">结构 / 钢结构</text>
+  <rect x="298" y="284" width="96" height="32" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="346" y="304" text-anchor="middle" class="sm">给水排水</text>
+  <rect x="406" y="284" width="96" height="32" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="454" y="304" text-anchor="middle" class="sm">暖通空调</text>
+  <rect x="298" y="326" width="96" height="32" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="346" y="346" text-anchor="middle" class="sm">强电 / 照明</text>
+  <rect x="406" y="326" width="96" height="32" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="454" y="346" text-anchor="middle" class="sm">弱电 / 智能化</text>
+  <text x="400" y="384" text-anchor="middle" class="sm">钢结构深化图须依据审查合格施工图</text>
+
+  <line x1="534" y1="245" x2="556" y2="245" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <!-- 右：图审与消防审查 -->
+  <rect x="560" y="70" width="210" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="576" y="96" class="lbl green">三、审查合格方可使用</text>
+  <rect x="578" y="120" width="174" height="114" rx="6" fill="#E8F5EE" stroke="#2E7A4F" stroke-width="1.6"/>
+  <text x="665" y="148" text-anchor="middle" class="lbl green">施工图审查合格书</text>
+  <text x="665" y="172" text-anchor="middle" class="sm">审查工程建设强制性标准</text>
+  <text x="665" y="192" text-anchor="middle" class="sm">（GB 550xx 全文强制规范）</text>
+  <text x="665" y="214" text-anchor="middle" class="sm">未经审查合格不得使用</text>
+
+  <rect x="578" y="256" width="174" height="144" rx="6" fill="#FDECE9" stroke="#D63B22" stroke-width="1.8"/>
+  <text x="665" y="284" text-anchor="middle" class="lbl danger">消防设计审查（GB 55037）</text>
+  <text x="665" y="310" text-anchor="middle" class="sm">特殊建设工程：须向主管</text>
+  <text x="665" y="328" text-anchor="middle" class="sm">部门申请消防设计审查</text>
+  <text x="665" y="352" text-anchor="middle" class="sm">其他工程：办理施工许可时</text>
+  <text x="665" y="370" text-anchor="middle" class="sm">一并提交消防设计图纸资料</text>
+
+<rect x="14" y="436" width="772" height="30" fill="#EFE9D9" stroke="#14212E" stroke-width="1.5"/>
+<rect x="26" y="446" width="12" height="12" rx="2" fill="#0E7C86" stroke="#14212E" stroke-width="1"/><text x="44" y="456" class="sm">工程勘察</text><rect x="106" y="446" width="12" height="12" rx="2" fill="#0E5A9E" stroke="#14212E" stroke-width="1"/><text x="124" y="456" class="sm">施工图设计</text><rect x="197" y="446" width="12" height="12" rx="2" fill="#2E7A4F" stroke="#14212E" stroke-width="1"/><text x="215" y="456" class="sm">图审合格</text><rect x="277" y="446" width="12" height="12" rx="2" fill="#D63B22" stroke="#14212E" stroke-width="1"/><text x="295" y="456" class="sm">消防强制底线</text>
+<text x="772" y="455" text-anchor="end" class="mono sm">DWG EM-03</text>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="运维阶段投用巡检、法定最低保修期标尺、设计使用年限到期鉴定与项目后评价蓝图">
+<defs>
+  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D9D1BC" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="bp-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#8A6A2F" stroke-width="1.2" opacity="0.35"/>
+  </pattern>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E5A9E"/>
+  </marker>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#14212E"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #14212E; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .title { font-size: 16px; font-weight: 700; }
+  .sub { font-size: 11.5px; fill: #334452; }
+  .lbl { font-size: 12px; font-weight: 600; }
+  .sm { font-size: 10.5px; fill: #334452; }
+  .blue { fill: #0E5A9E; }
+  .teal { fill: #0E7C86; }
+  .green { fill: #2E7A4F; }
+  .danger { fill: #D63B22; }
+  .white { fill: #FFFFFF; }
+  .ink-line { stroke: #14212E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .blue-line { stroke: #0E5A9E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .teal-line { stroke: #0E7C86; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .danger-line { stroke: #D63B22; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 5 4; }
+</style>
+<rect width="800" height="480" fill="#FAF6EB"/>
+<rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="42" fill="#142231"/>
+<text x="28" y="40" class="title white">阶段 09 · 运维巡检、保修期与到期鉴定蓝图</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-09 · 质量条例/GB 55030/GB 55032 第5.0.2-5.0.4条</text>
+
+  <!-- 左：投用建筑与日常禁止拆改 -->
+  <rect x="30" y="70" width="230" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="46" y="96" class="lbl green">一、亮灯投用与合规运维</text>
+  <rect x="65" y="118" width="160" height="146" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="60" y="110" width="170" height="10" fill="#142231"/>
+  <g fill="#FEF08A" stroke="#14212E" stroke-width="1.2">
+    <rect x="82" y="136" width="28" height="22"/><rect x="131" y="136" width="28" height="22"/><rect x="180" y="136" width="28" height="22"/>
+    <rect x="82" y="176" width="28" height="22"/><rect x="131" y="176" width="28" height="22"/><rect x="180" y="176" width="28" height="22"/>
+  </g>
+  <rect x="128" y="220" width="34" height="44" fill="#0E5A9E" stroke="#14212E" stroke-width="1.4"/>
+  <text x="145" y="292" text-anchor="middle" class="sm" style="font-weight:700">按《工程使用说明书》运维</text>
+  <text x="145" y="314" text-anchor="middle" class="sm danger">严禁擅自拆改承重结构</text>
+  <text x="145" y="334" text-anchor="middle" class="sm danger">严禁超设计荷载违规改造</text>
+  <text x="145" y="366" text-anchor="middle" class="sm">建立设备台账与定期巡检</text>
+
+  <!-- 中：法定最低保修期标尺 -->
+  <rect x="276" y="70" width="256" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="292" y="96" class="lbl blue">二、法定最低保修期（验收合格日起算）</text>
+
+  <rect x="294" y="116" width="220" height="58" rx="6" fill="#DCEBFA" stroke="#0E5A9E" stroke-width="1.5"/>
+  <text x="306" y="138" class="lbl blue">设计文件规定合理使用年限</text>
+  <text x="306" y="158" class="sm">基础设施、地基基础和主体结构</text>
+
+  <rect x="294" y="186" width="220" height="66" rx="6" fill="#E8F5EE" stroke="#2E7A4F" stroke-width="1.5"/>
+  <text x="306" y="208" class="lbl green">5 年（GB 55030 另定工作年限）</text>
+  <text x="306" y="227" class="sm">屋面防水、有防水要求卫生间/外墙防渗漏</text>
+  <text x="306" y="243" class="sm">注：屋面防水设计工作年限≥20年</text>
+
+  <rect x="294" y="264" width="220" height="56" rx="6" fill="#FFF8DC" stroke="#14212E" stroke-width="1.4"/>
+  <text x="306" y="286" class="lbl">2 个采暖期、供冷期</text>
+  <text x="306" y="305" class="sm">供热与供冷系统</text>
+
+  <rect x="294" y="332" width="220" height="64" rx="6" fill="#EFE9D9" stroke="#14212E" stroke-width="1.4"/>
+  <text x="306" y="354" class="lbl">2 年</text>
+  <text x="306" y="373" class="sm">电气管线、给排水管道、设备安装及装修</text>
+
+  <!-- 右：到期鉴定与后评价 -->
+  <rect x="548" y="70" width="222" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="564" y="96" class="lbl teal">三、到期鉴定与后评价</text>
+
+  <rect x="564" y="116" width="190" height="162" rx="6" fill="#FDECE9" stroke="#D63B22" stroke-width="1.6"/>
+  <text x="659" y="140" text-anchor="middle" class="sm danger" style="font-weight:700">设计使用年限到期后处置</text>
+  <text x="659" y="160" text-anchor="middle" class="sm">GB 55032—2022 5.0.2～5.0.4</text>
+  <text x="659" y="184" text-anchor="middle" class="sm">委托有资质机构进行</text>
+  <text x="659" y="202" text-anchor="middle" class="sm">安全性与抗震可靠性鉴定</text>
+  <rect x="578" y="216" width="162" height="48" rx="4" fill="#FFFFFF" stroke="#14212E" stroke-width="1.2"/>
+  <text x="659" y="235" text-anchor="middle" class="sm">分级处置：继续使用 /</text>
+  <text x="659" y="253" text-anchor="middle" class="sm">加固修缮 / 停用拆除</text>
+
+  <rect x="564" y="294" width="190" height="102" rx="6" fill="#DCEBFA" stroke="#0E5A9E" stroke-width="1.5"/>
+  <text x="659" y="320" text-anchor="middle" class="lbl blue">重大项目后评价</text>
+  <text x="659" y="344" text-anchor="middle" class="sm">对照建设目标与实际运行效果</text>
+  <text x="659" y="364" text-anchor="middle" class="sm">形成自我总结、后评价报告</text>
+  <text x="659" y="382" text-anchor="middle" class="sm">及经验改进反馈</text>
+
+<rect x="14" y="436" width="772" height="30" fill="#EFE9D9" stroke="#14212E" stroke-width="1.5"/>
+<rect x="26" y="446" width="12" height="12" rx="2" fill="#2E7A4F" stroke="#14212E" stroke-width="1"/><text x="44" y="456" class="sm">亮灯投用/5年防水</text><rect x="161" y="446" width="12" height="12" rx="2" fill="#0E5A9E" stroke="#14212E" stroke-width="1"/><text x="179" y="456" class="sm">主体保修/后评价</text><rect x="285" y="446" width="12" height="12" rx="2" fill="#FFC72C" stroke="#14212E" stroke-width="1"/><text x="303" y="456" class="sm">暖通2期/使用说明</text><rect x="420" y="446" width="12" height="12" rx="2" fill="#D63B22" stroke="#14212E" stroke-width="1"/><text x="438" y="456" class="sm">禁拆改/到期鉴定</text>
+<text x="772" y="455" text-anchor="end" class="mono sm">DWG EM-09</text>
+</svg>

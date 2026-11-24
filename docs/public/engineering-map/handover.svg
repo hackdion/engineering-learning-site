@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="移交阶段实体钥匙、工程使用说明书、城建档案移交与竣工结算闭环蓝图">
+<defs>
+  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D9D1BC" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="bp-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#8A6A2F" stroke-width="1.2" opacity="0.35"/>
+  </pattern>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E5A9E"/>
+  </marker>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#14212E"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #14212E; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .title { font-size: 16px; font-weight: 700; }
+  .sub { font-size: 11.5px; fill: #334452; }
+  .lbl { font-size: 12px; font-weight: 600; }
+  .sm { font-size: 10.5px; fill: #334452; }
+  .blue { fill: #0E5A9E; }
+  .teal { fill: #0E7C86; }
+  .green { fill: #2E7A4F; }
+  .danger { fill: #D63B22; }
+  .white { fill: #FFFFFF; }
+  .ink-line { stroke: #14212E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .blue-line { stroke: #0E5A9E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .teal-line { stroke: #0E7C86; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .danger-line { stroke: #D63B22; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 5 4; }
+</style>
+<rect width="800" height="480" fill="#FAF6EB"/>
+<rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="42" fill="#142231"/>
+<text x="28" y="40" class="title white">阶段 08 · 移交、使用说明书与结算蓝图</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-08 · GB 55032 第5.0.1条/城建档案管理规定</text>
+
+  <rect x="30" y="76" width="224" height="334" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="30" y="76" width="224" height="36" rx="6" fill="#0E5A9E"/>
+  <text x="142" y="100" text-anchor="middle" class="lbl white">01 实体与《使用说明书》</text>
+  <rect x="52" y="132" width="180" height="72" rx="6" fill="#FFF8DC" stroke="#14212E" stroke-width="1.4"/>
+  <text x="142" y="156" text-anchor="middle" class="lbl">《工程使用说明书》</text>
+  <text x="142" y="176" text-anchor="middle" class="sm">GB 55032—2022 第 5.0.1 条</text>
+  <text x="142" y="193" text-anchor="middle" class="sm">交付使用时必须同时交付</text>
+  <text x="52" y="232" class="sm">• 明示使用功能与设计使用年限</text>
+  <text x="52" y="254" class="sm">• 明确结构使用荷载限值</text>
+  <text x="52" y="276" class="sm">• 设备操作维护手册与培训</text>
+  <text x="52" y="298" class="sm">• 钥匙、设备清册与移交签收</text>
+  <rect x="52" y="330" width="180" height="58" rx="6" fill="#E8F5EE" stroke="#2E7A4F" stroke-width="1.4"/>
+  <text x="142" y="355" text-anchor="middle" class="sm green" style="font-weight:700">移交日期 ≠ 结算日期</text>
+  <text x="142" y="374" text-anchor="middle" class="sm">各自独立推进与计算</text>
+
+  <line x1="254" y1="243" x2="282" y2="243" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <rect x="288" y="76" width="224" height="334" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="288" y="76" width="224" height="36" rx="6" fill="#0E7C86"/>
+  <text x="400" y="100" text-anchor="middle" class="lbl white">02 建设项目档案归卷移交</text>
+  <rect x="312" y="134" width="176" height="72" rx="6" fill="#EFE9D9" stroke="#0E7C86" stroke-width="1.4"/>
+  <text x="400" y="158" text-anchor="middle" class="lbl teal">城建档案馆接收</text>
+  <text x="400" y="178" text-anchor="middle" class="sm">建设单位汇总各参建方立卷</text>
+  <text x="400" y="195" text-anchor="middle" class="sm">验收合格后按期报送</text>
+  <text x="310" y="232" class="sm">• 施工技术档案与竣工图</text>
+  <text x="310" y="254" class="sm">• 监理文件档案（GB/T 50319）</text>
+  <text x="310" y="276" class="sm">• 缺漏资料实体检验报告</text>
+  <text x="310" y="298" class="sm">• 电子档案与纸质移交清单</text>
+
+  <line x1="512" y1="243" x2="540" y2="243" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <rect x="546" y="76" width="224" height="334" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="546" y="76" width="224" height="36" rx="6" fill="#2E7A4F"/>
+  <text x="658" y="100" text-anchor="middle" class="lbl white">03 竣工结算审核闭环</text>
+  <rect x="570" y="134" width="176" height="72" rx="6" fill="#DCEBFA" stroke="#0E5A9E" stroke-width="1.4"/>
+  <text x="658" y="158" text-anchor="middle" class="lbl blue">竣工结算审核</text>
+  <text x="658" y="178" text-anchor="middle" class="sm">施工提交 → 监理审核 → 业主批</text>
+  <text x="658" y="195" text-anchor="middle" class="sm">核对工程量、变更签证、索赔</text>
+  <text x="568" y="232" class="sm">• 核减既往已付预付款/进度款</text>
+  <text x="568" y="254" class="sm">• 扣留质量保证金（按合同）</text>
+  <text x="568" y="276" class="sm">• 签发竣工结算支付证书</text>
+  <text x="568" y="298" class="sm">• 保修期自验收合格日计算</text>
+
+<rect x="14" y="436" width="772" height="30" fill="#EFE9D9" stroke="#14212E" stroke-width="1.5"/>
+<rect x="26" y="446" width="12" height="12" rx="2" fill="#0E5A9E" stroke="#14212E" stroke-width="1"/><text x="44" y="456" class="sm">使用说明书/结算</text><rect x="150" y="446" width="12" height="12" rx="2" fill="#0E7C86" stroke="#14212E" stroke-width="1"/><text x="168" y="456" class="sm">城建档案移交</text><rect x="252" y="446" width="12" height="12" rx="2" fill="#2E7A4F" stroke="#14212E" stroke-width="1"/><text x="270" y="456" class="sm">实体与结算闭环</text><rect x="365" y="446" width="12" height="12" rx="2" fill="#FFC72C" stroke="#14212E" stroke-width="1"/><text x="383" y="456" class="sm">GB 55032 5.0.1</text>
+<text x="772" y="455" text-anchor="end" class="mono sm">DWG EM-08</text>
+</svg>

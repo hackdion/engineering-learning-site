@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="策划立项阶段红线桩、用地坐标与政府企业投资分流蓝图">
+<defs>
+  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D9D1BC" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="bp-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#8A6A2F" stroke-width="1.2" opacity="0.35"/>
+  </pattern>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E5A9E"/>
+  </marker>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#14212E"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #14212E; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .title { font-size: 16px; font-weight: 700; }
+  .sub { font-size: 11.5px; fill: #334452; }
+  .lbl { font-size: 12px; font-weight: 600; }
+  .sm { font-size: 10.5px; fill: #334452; }
+  .blue { fill: #0E5A9E; }
+  .teal { fill: #0E7C86; }
+  .green { fill: #2E7A4F; }
+  .danger { fill: #D63B22; }
+  .white { fill: #FFFFFF; }
+  .ink-line { stroke: #14212E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .blue-line { stroke: #0E5A9E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .teal-line { stroke: #0E7C86; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .danger-line { stroke: #D63B22; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 5 4; }
+</style>
+<rect width="800" height="480" fill="#FAF6EB"/>
+<rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="42" fill="#142231"/>
+<text x="28" y="40" class="title white">阶段 01 · 策划立项与用地选址蓝图</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-01 · GB/政府投资条例/自然资发〔2026〕38号</text>
+
+  <!-- 左侧：拟选场址地形与红线坐标 -->
+  <rect x="30" y="70" width="410" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="46" y="94" class="lbl blue">一、拟选场址红线与市政接口核查</text>
+  <polygon points="75,260 155,135 375,150 405,285 250,350" fill="#DCEBFA" fill-opacity="0.45" stroke="#0E5A9E" stroke-width="2" stroke-dasharray="7 4"/>
+  <!-- 地形等高线 -->
+  <path d="M 55 215 Q 165 180 265 210 T 415 195" fill="none" stroke="#8A6A2F" stroke-width="1.1" opacity="0.5"/>
+  <path d="M 55 295 Q 185 265 285 290 T 415 275" fill="none" stroke="#8A6A2F" stroke-width="1.1" opacity="0.5"/>
+  <!-- 红线界桩 -->
+  <g>
+    <circle cx="75" cy="260" r="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+    <circle cx="155" cy="135" r="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+    <circle cx="375" cy="150" r="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+    <circle cx="405" cy="285" r="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+    <circle cx="250" cy="350" r="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+  </g>
+  <text x="238" y="232" text-anchor="middle" class="lbl">拟建用地红线范围</text>
+  <text x="238" y="252" text-anchor="middle" class="sm">控制坐标 · 一张图落图落位核验</text>
+  <!-- 市政道路与管网接口 -->
+  <rect x="46" y="370" width="378" height="24" rx="4" fill="#E4DBC4" stroke="#14212E" stroke-width="1.3"/>
+  <line x1="60" y1="382" x2="410" y2="382" stroke="#14212E" stroke-width="1" stroke-dasharray="8 5"/>
+  <text x="235" y="386" text-anchor="middle" class="sm">城市规划道路 / 给排水与供电市政接口</text>
+  <line x1="250" y1="350" x2="250" y2="370" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <!-- 右侧：两类投资管理路径分流 -->
+  <rect x="458" y="70" width="312" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="474" y="94" class="lbl blue">二、投资路径与用地手续分流</text>
+  <rect x="480" y="112" width="268" height="44" rx="6" fill="#FFC72C" stroke="#14212E" stroke-width="1.5"/>
+  <text x="614" y="139" text-anchor="middle" class="lbl">01 提出建设需求（规模/场址/匡算）</text>
+
+  <path d="M 555 156 L 555 186" class="ink-line" marker-end="url(#arr-ink)"/>
+  <path d="M 675 156 L 675 186" class="ink-line" marker-end="url(#arr-ink)"/>
+
+  <rect x="476" y="190" width="132" height="92" rx="6" fill="#DCEBFA" stroke="#0E5A9E" stroke-width="1.6"/>
+  <text x="542" y="212" text-anchor="middle" class="lbl blue">政府投资</text>
+  <text x="542" y="232" text-anchor="middle" class="sm">编报项目建议书</text>
+  <text x="542" y="250" text-anchor="middle" class="sm">审批建设必要性</text>
+  <text x="542" y="268" text-anchor="middle" class="sm">《政府投资条例》</text>
+
+  <rect x="622" y="190" width="132" height="92" rx="6" fill="#E8F5EE" stroke="#2E7A4F" stroke-width="1.6"/>
+  <text x="688" y="212" text-anchor="middle" class="lbl green">企业投资</text>
+  <text x="688" y="232" text-anchor="middle" class="sm">对照政府核准目录</text>
+  <text x="688" y="250" text-anchor="middle" class="sm">判别「核准」或</text>
+  <text x="688" y="268" text-anchor="middle" class="sm">开工前在线「备案」</text>
+
+  <path d="M 542 282 L 542 312 L 614 312" class="ink-line"/>
+  <path d="M 688 282 L 688 312 L 614 312 L 614 328" class="ink-line" marker-end="url(#arr-ink)"/>
+
+  <rect x="476" y="332" width="278" height="72" rx="6" fill="#EFE9D9" stroke="#0E7C86" stroke-width="1.6"/>
+  <text x="615" y="354" text-anchor="middle" class="lbl teal">合并办理用地预审与规划选址</text>
+  <text x="615" y="374" text-anchor="middle" class="sm">自然资函〔2024〕709号合并办理</text>
+  <text x="615" y="392" text-anchor="middle" class="sm">联网清单落图项目按自然资发〔2026〕38号</text>
+
+<rect x="14" y="436" width="772" height="30" fill="#EFE9D9" stroke="#14212E" stroke-width="1.5"/>
+<rect x="26" y="446" width="12" height="12" rx="2" fill="#FFC72C" stroke="#14212E" stroke-width="1"/><text x="44" y="456" class="sm">红线界桩/起点</text><rect x="139" y="446" width="12" height="12" rx="2" fill="#0E5A9E" stroke="#14212E" stroke-width="1"/><text x="157" y="456" class="sm">政府投资审批</text><rect x="241" y="446" width="12" height="12" rx="2" fill="#2E7A4F" stroke="#14212E" stroke-width="1"/><text x="259" y="456" class="sm">企业核准备案</text><rect x="343" y="446" width="12" height="12" rx="2" fill="#0E7C86" stroke="#14212E" stroke-width="1"/><text x="361" y="456" class="sm">用地规划手续</text>
+<text x="772" y="455" text-anchor="end" class="mono sm">DWG EM-01</text>
+</svg>

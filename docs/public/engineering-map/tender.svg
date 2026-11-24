@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="招标阶段必须招标门槛判断、开评标定标与中标签约蓝图">
+<defs>
+  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D9D1BC" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="bp-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#8A6A2F" stroke-width="1.2" opacity="0.35"/>
+  </pattern>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E5A9E"/>
+  </marker>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#14212E"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #14212E; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .title { font-size: 16px; font-weight: 700; }
+  .sub { font-size: 11.5px; fill: #334452; }
+  .lbl { font-size: 12px; font-weight: 600; }
+  .sm { font-size: 10.5px; fill: #334452; }
+  .blue { fill: #0E5A9E; }
+  .teal { fill: #0E7C86; }
+  .green { fill: #2E7A4F; }
+  .danger { fill: #D63B22; }
+  .white { fill: #FFFFFF; }
+  .ink-line { stroke: #14212E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .blue-line { stroke: #0E5A9E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .teal-line { stroke: #0E7C86; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .danger-line { stroke: #D63B22; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 5 4; }
+</style>
+<rect width="800" height="480" fill="#FAF6EB"/>
+<rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="42" fill="#142231"/>
+<text x="28" y="40" class="title white">阶段 04 · 招标发包与合同交接蓝图</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-04 · 必须招标规定/招标投标法</text>
+
+  <!-- 顶部门槛条 -->
+  <rect x="30" y="70" width="740" height="68" rx="8" fill="#FFC72C" stroke="#14212E" stroke-width="1.8"/>
+  <text x="48" y="96" class="lbl">《必须招标的工程项目规定》第五条：同时满足「范围」＋「估算价门槛」依法必须招标</text>
+  <text x="48" y="120" class="sm">施工单项合同估算价 ≥ 400 万元 ｜ 重要设备、材料等货物 ≥ 200 万元 ｜ 勘察、设计、监理等服务 ≥ 100 万元</text>
+
+  <!-- 四步流程 -->
+  <rect x="30" y="160" width="165" height="250" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="30" y="160" width="165" height="32" rx="6" fill="#0E5A9E"/>
+  <text x="112" y="181" text-anchor="middle" class="lbl white">01 确定发包方式</text>
+  <text x="112" y="216" text-anchor="middle" class="sm">公开招标 / 邀请招标</text>
+  <text x="112" y="238" text-anchor="middle" class="sm">或非招标采购方式</text>
+  <text x="112" y="272" text-anchor="middle" class="sm">可分批对勘察设计、</text>
+  <text x="112" y="292" text-anchor="middle" class="sm">监理、施工、材料设备</text>
+  <text x="112" y="312" text-anchor="middle" class="sm">分别发包</text>
+  <text x="112" y="370" text-anchor="middle" class="sm blue">禁止肢解发包规避招标</text>
+
+  <line x1="195" y1="285" x2="215" y2="285" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <rect x="219" y="160" width="165" height="250" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="219" y="160" width="165" height="32" rx="6" fill="#0E5A9E"/>
+  <text x="301" y="181" text-anchor="middle" class="lbl white">02 编制招标文件</text>
+  <text x="301" y="216" text-anchor="middle" class="sm">资格条件 · 工程量清单</text>
+  <text x="301" y="238" text-anchor="middle" class="sm">技术标准 · 评标办法</text>
+  <text x="301" y="260" text-anchor="middle" class="sm">合同主要条款与保证</text>
+  <text x="301" y="310" text-anchor="middle" class="sm">《民法典》未约定或</text>
+  <text x="301" y="330" text-anchor="middle" class="sm">约定不明推定一般保证</text>
+  <text x="301" y="370" text-anchor="middle" class="sm blue">公开答疑澄清按规定时限</text>
+
+  <line x1="384" y1="285" x2="404" y2="285" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <rect x="408" y="160" width="165" height="250" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <rect x="408" y="160" width="165" height="32" rx="6" fill="#0E7C86"/>
+  <text x="490" y="181" text-anchor="middle" class="lbl white">03 开标评标定标</text>
+  <text x="490" y="216" text-anchor="middle" class="sm">投标文件按时密封递交</text>
+  <text x="490" y="238" text-anchor="middle" class="sm">评标委员会独立评审</text>
+  <text x="490" y="260" text-anchor="middle" class="sm">推荐中标候选人并公示</text>
+  <text x="490" y="310" text-anchor="middle" class="sm">确定中标人</text>
+  <text x="490" y="370" text-anchor="middle" class="sm teal">评标标准在招标文件写明</text>
+
+  <line x1="573" y1="285" x2="593" y2="285" class="blue-line" marker-end="url(#arr-blue)"/>
+
+  <rect x="597" y="160" width="173" height="250" rx="8" fill="#E8F5EE" stroke="#2E7A4F" stroke-width="1.8"/>
+  <rect x="597" y="160" width="173" height="32" rx="6" fill="#2E7A4F"/>
+  <text x="683" y="181" text-anchor="middle" class="lbl white">04 中标与签约交接</text>
+  <text x="683" y="216" text-anchor="middle" class="sm">发出中标通知书</text>
+  <text x="683" y="238" text-anchor="middle" class="sm">30日内订立书面合同</text>
+  <text x="683" y="270" text-anchor="middle" class="sm">GF-2017-0201 施工合同</text>
+  <text x="683" y="292" text-anchor="middle" class="sm">GF-2012-0202 监理合同</text>
+  <text x="683" y="340" text-anchor="middle" class="sm green">交接给项目监理机构</text>
+  <text x="683" y="362" text-anchor="middle" class="sm green">与施工项目部执行</text>
+
+<rect x="14" y="436" width="772" height="30" fill="#EFE9D9" stroke="#14212E" stroke-width="1.5"/>
+<rect x="26" y="446" width="12" height="12" rx="2" fill="#FFC72C" stroke="#14212E" stroke-width="1"/><text x="44" y="456" class="sm">必招金额门槛</text><rect x="128" y="446" width="12" height="12" rx="2" fill="#0E5A9E" stroke="#14212E" stroke-width="1"/><text x="146" y="456" class="sm">发包与招标</text><rect x="219" y="446" width="12" height="12" rx="2" fill="#0E7C86" stroke="#14212E" stroke-width="1"/><text x="237" y="456" class="sm">开评标评审</text><rect x="310" y="446" width="12" height="12" rx="2" fill="#2E7A4F" stroke="#14212E" stroke-width="1"/><text x="328" y="456" class="sm">中标与合同交接</text>
+<text x="772" y="455" text-anchor="end" class="mono sm">DWG EM-04</text>
+</svg>

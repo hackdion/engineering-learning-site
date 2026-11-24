@@ -18,8 +18,8 @@ export interface HandoverExample {
 }
 
 const KANCHA = 'https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_7aebb685f7b94720bfdccf8ac71541c9.html'
-const JIANCE = 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2024/art_17337_770018.html'
-const XIAOFANG = 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2022/art_17337_763780.html'
+const JIANCE = '/law/zhiliang-jiance-banfa'
+const XIAOFANG = '/law/gb55037-2022-jianzhu-fanghuo'
 const TEZHONG = 'https://www.gov.cn/flfg/2013-06/30/content_2437160.htm'
 
 export const handoverExamples: HandoverExample[] = [

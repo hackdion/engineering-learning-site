@@ -1,9 +1,10 @@
 <script setup lang="ts">
 // 工程地图总图：三个顶层视图（看工程全流程 / 查单位与岗位 / 查工程术语），由 URL hash 驱动。
 // 九站线路 + 单位泳道矩阵在「全流程」视图；节点正文在各自的页面里。
-import { nextTick, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import { mapStages, mapUnits, mapCells, mapScenes, unitOf } from '../data/engineeringMapPages'
+import { TERMS } from '../data/engineeringTerms'
 import EngineeringSiteGrowth from './EngineeringSiteGrowth.vue'
 import EngineeringTerms from './EngineeringTerms.vue'
 
@@ -34,7 +35,116 @@ const pics = [
   'M36 30V8h30v22M48 30v-8h6v8M42 14h6M54 14h6M78 30v-10M72 20a6 6 0 1 1 12 0z'
 ]
 
-const isTermHash = (hash: string) => hash === 'terms' || /^term-[AB]\d+$/.test(hash)
+const isTermHash = (hash: string) => hash === 'terms' || /^term-[A-E]\d{1,2}$/.test(hash)
+
+interface QuickScenario {
+  id: string
+  label: string
+  stages: string[]
+  danger?: boolean
+  summary: string
+  links: { label: string; href: string }[]
+}
+
+const quickScenarios: QuickScenario[] = [
+  {
+    id: 'pit',
+    label: '基坑与验槽',
+    stages: ['design', 'construction'],
+    summary: '垫层前五方实地验槽；开挖 ≥5m 深基坑须编审超危大专项方案并 5 名专家论证。',
+    links: [
+      { label: '场景：基坑验槽', href: '/engineering-map/scene/foundation-pit-check' },
+      { label: '阶段 06 施工', href: '/engineering-map/stage/construction' },
+      { label: '37 号令危大规定', href: '/law/weida-guiding' }
+    ]
+  },
+  {
+    id: 'scaffold',
+    label: '脚手架与支模',
+    stages: ['preparation', 'construction'],
+    danger: true,
+    summary: '核验连墙件、扫地杆、剪刀撑与拆模强度（悬臂构件 100%），严防建质规〔2024〕5号重大隐患。',
+    links: [
+      { label: '场景：脚手架与高支模验收', href: '/engineering-map/scene/scaffold-formwork-acceptance' },
+      { label: 'GB 55023 施工脚手架', href: '/law/gb55023-2022-jiaoshoujia' },
+      { label: '巡视卡 A1～A10', href: '/engineering-map/#term-A1' }
+    ]
+  },
+  {
+    id: 'concrete',
+    label: '混凝土与试块',
+    stages: ['construction'],
+    summary: '严禁运输浇筑加水（GB 55008）；区分标养 28d 与同条件 600℃·d；检查抗震钢筋强屈比 ≥1.25。',
+    links: [
+      { label: '场景：混凝土浇筑旁站', href: '/engineering-map/scene/concrete-side-station' },
+      { label: 'GB 55008 混凝土通用规范', href: '/law/gb55008-2021-hunningtu' },
+      { label: '巡视卡 C2～C9', href: '/engineering-map/#term-C3' }
+    ]
+  },
+  {
+    id: 'waterproof',
+    label: '防水与蓄水',
+    stages: ['construction', 'operation'],
+    summary: '屋面/室内蓄水 ≥24h、坡屋面淋水 ≥2h、外墙淋水 ≥30min；地下防水混凝土 ≥P6。',
+    links: [
+      { label: '场景：防水蓄水与淋水试验', href: '/engineering-map/scene/waterproofing-flood-test' },
+      { label: 'GB 55030 工程防水规范', href: '/law/gb55030-2022-fangshui' },
+      { label: '巡视卡 D1～D6', href: '/engineering-map/#term-D2' }
+    ]
+  },
+  {
+    id: 'testing',
+    label: '第三方检测',
+    stages: ['construction', 'acceptance'],
+    summary: '住建部令 57 号：检测机构由建设单位委托、费用单列；监理到场见证封样与影像留存。',
+    links: [
+      { label: '场景：材料进场报验与见证', href: '/engineering-map/scene/material-inspection' },
+      { label: '住建部令第 57 号', href: '/law/zhiliang-jiance-banfa' },
+      { label: '实务：质量控制与检测', href: '/knowledge/quality-control-and-testing-gb55032' }
+    ]
+  },
+  {
+    id: 'fire',
+    label: '消防与动火',
+    stages: ['design', 'construction', 'acceptance'],
+    danger: true,
+    summary: '动火审批与 30 分钟看火留守；有限空间先通风再检测后作业并配持证监护工（应急〔2026〕45号）。',
+    links: [
+      { label: '场景：动火与有限空间管控', href: '/engineering-map/scene/hotwork-and-confined-space' },
+      { label: 'GB 55037 建筑防火', href: '/law/gb55037-2022-jianzhu-fanghuo' },
+      { label: 'GB 55034 安全卫生', href: '/law/gb55034-2022-anquan-weisheng' }
+    ]
+  },
+  {
+    id: 'weida',
+    label: '危大与重大隐患',
+    stages: ['preparation', 'construction'],
+    danger: true,
+    summary: '施工技术负责人审核＋总监审查＋建办质〔2024〕63号严重缺陷排查＋超危大 5 名专家论证。',
+    links: [
+      { label: '场景：危大工程专项方案审查', href: '/engineering-map/scene/hazardous-plan-review' },
+      { label: '场景：质量缺陷与暂停令', href: '/engineering-map/scene/quality-defect-suspension' },
+      { label: '专题：专项方案审批', href: '/knowledge/special-construction-plan-approval' }
+    ]
+  },
+  {
+    id: 'acceptance',
+    label: '竣工与保修',
+    stages: ['acceptance', 'handover', 'operation'],
+    summary: '四方报告区分、15 日内竣工备案、永久性责任标牌、交付《使用说明书》及到期可靠性鉴定。',
+    links: [
+      { label: '场景：竣工预验收与竣工验收', href: '/engineering-map/scene/completion-acceptance' },
+      { label: '阶段 07 验收', href: '/engineering-map/stage/acceptance' },
+      { label: 'GB 55032 施工质量控制', href: '/law/gb55032-2022-zhiliang-kongzhi' }
+    ]
+  }
+]
+
+const activeScenarioId = ref<string>('')
+const activeScenario = computed(() => quickScenarios.find((s) => s.id === activeScenarioId.value) ?? null)
+const toggleScenario = (id: string) => {
+  activeScenarioId.value = activeScenarioId.value === id ? '' : id
+}
 
 const applyHash = async () => {
   const hash = decodeURIComponent(location.hash.slice(1))
@@ -76,20 +186,82 @@ onMounted(() => {
         <a href="#stages"><b>按阶段</b><span>九个阶段，每阶段的事项和文件交接</span></a>
         <a href="#units"><b>按单位与岗位</b><span>{{ mapUnits.length }} 类单位、{{ mapUnits.reduce((n, u) => n + u.jobs.length, 0) }} 个岗位各管什么</span></a>
         <a href="#scenes"><b>按场景</b><span>验槽、主体验收、消防验收，一件事从头到尾</span></a>
-        <a href="#terms"><b>按工程术语</b><span>脚手架与模板、暖通与管道 20 张词卡，看图认构件</span></a>
+        <a href="#terms"><b>按工程术语</b><span>{{ TERMS.length }} 张词卡与巡视实战卡，看图认构件、查限值</span></a>
       </nav>
       <nav class="em__switch" aria-label="工程地图视图">
         <button type="button" :class="{ 'is-on': view === 'flow' }" @click="switchView('flow')">看工程全流程</button>
         <button type="button" :class="{ 'is-on': view === 'units' }" @click="switchView('units')">查单位与岗位</button>
-        <button type="button" :class="{ 'is-on': view === 'terms' }" @click="switchView('terms')">查工程术语（20）</button>
+        <button type="button" :class="{ 'is-on': view === 'terms' }" @click="switchView('terms')">查工程术语与巡视卡（{{ TERMS.length }}）</button>
       </nav>
     </header>
 
     <section v-show="view === 'flow'" id="stages" class="em__sec">
       <h2>按阶段</h2>
-      <p class="em__hint">九个阶段里各有哪些单位出场、办什么事。点阶段看全部事项，点单位看岗位。</p>
+      <p class="em__hint">九个阶段全量对齐现行国标与 2024–2026 规章。点下方「现场问题速查」可一秒高亮对应阶段与直达依据。</p>
+
+      <div class="em__quick" aria-label="现场问题速查">
+        <div class="em__quick-pills">
+          <span class="em__quick-label">现场问题速查：</span>
+          <button
+            v-for="sc in quickScenarios"
+            :key="sc.id"
+            type="button"
+            class="em__qpill"
+            :class="{ 'is-on': activeScenarioId === sc.id, 'is-danger': sc.danger }"
+            @click="toggleScenario(sc.id)"
+          >{{ sc.label }}</button>
+          <button v-if="activeScenarioId" type="button" class="em__qpill em__qpill--clear" @click="activeScenarioId = ''">重置</button>
+        </div>
+        <div v-if="activeScenario" class="em__quick-box" :class="{ 'is-danger': activeScenario.danger }">
+          <p class="em__quick-sum">{{ activeScenario.summary }}</p>
+          <div class="em__quick-links">
+            <a v-for="lk in activeScenario.links" :key="lk.href" :href="withBase(lk.href)">{{ lk.label }} →</a>
+          </div>
+        </div>
+      </div>
 
       <EngineeringSiteGrowth />
+
+      <!-- 九阶段蓝图卡片网格 -->
+      <div class="em__stage-grid" aria-label="九阶段蓝图入口">
+        <a
+          v-for="s in mapStages"
+          :key="s.id"
+          :href="stageUrl(s.id)"
+          class="em__stage-card"
+          :class="{
+            'is-highlighted': activeScenario ? activeScenario.stages.includes(s.id) : false,
+            'is-dimmed': activeScenario ? !activeScenario.stages.includes(s.id) : false
+          }"
+        >
+          <div class="em__stage-thumb">
+            <img
+              v-if="s.drawing"
+              :src="withBase(`/engineering-map/${s.drawing}.svg`)"
+              :alt="`${s.no} ${s.name}蓝图缩略图`"
+              width="800"
+              height="480"
+              loading="lazy"
+            >
+          </div>
+          <div class="em__stage-body">
+            <div class="em__stage-top">
+              <span class="em__stage-no">阶段 {{ s.no }}</span>
+              <span class="em__stage-group">{{ s.group }}</span>
+            </div>
+            <h3>{{ s.name }}</h3>
+            <p class="em__stage-intro">{{ s.intro }}</p>
+            <div v-if="s.standards.length" class="em__stage-tags">
+              <span v-for="st in s.standards.slice(0, 3)" :key="st">{{ st }}</span>
+            </div>
+            <p class="em__stage-meta">
+              <span>{{ s.stepCount }} 步流程</span>
+              <span v-if="s.topicCount">· {{ s.topicCount }} 篇专题</span>
+              <span v-if="s.sceneCount">· {{ s.sceneCount }} 个场景</span>
+            </p>
+          </div>
+        </a>
+      </div>
 
       <!-- 桌面：泳道矩阵 -->
       <div class="em__board">
@@ -263,4 +435,84 @@ onMounted(() => {
   .em__switch button { flex: 1 1 auto; padding: 0 12px; font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) { .em__entries a, .em__switch button { transition: none; transform: none; } .em__switch button:hover, .em__switch button:active { transform: none; } }
+
+.em__quick {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border: 2px solid var(--hd-ink);
+  border-radius: 12px;
+  background: var(--hd-card);
+}
+.em__quick-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.em__quick-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--hd-ink);
+}
+.em__qpill {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1.5px solid var(--hd-ink);
+  border-radius: 999px;
+  background: var(--hd-paper);
+  color: var(--hd-ink);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.em__qpill:hover { background: var(--hd-accent-soft); }
+.em__qpill.is-on { background: var(--hd-accent); color: #fff; }
+.em__qpill.is-danger.is-on { background: var(--hd-danger); color: #fff; }
+.em__qpill--clear { border-style: dashed; background: var(--hd-card); color: var(--hd-ink-3); }
+.em__quick-box {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--hd-accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--hd-paper);
+}
+.em__quick-box.is-danger { border-left-color: var(--hd-danger); }
+.em__quick-sum { margin: 0 0 8px; font-size: 14px; line-height: 1.65; color: var(--hd-ink); }
+.em__quick-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.em__quick-links a { font-size: 13px; font-weight: 700; color: var(--hd-accent); text-decoration: underline; text-underline-offset: 2px; }
+
+.em__stage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 14px;
+  margin: 18px 0 24px;
+}
+.em__stage-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--hd-ink);
+  border-top: 4px solid var(--hd-green);
+  border-radius: 12px;
+  background: var(--hd-card);
+  overflow: hidden;
+  box-shadow: var(--hd-shadow-card);
+  transition: transform .12s, opacity .15s, border-color .15s;
+}
+.em__stage-card:hover { transform: translate(-2px, -2px); border-top-color: var(--hd-accent); }
+.em__stage-card.is-highlighted { border-color: var(--hd-accent); border-top-color: var(--hd-helmet); outline: 2px solid var(--hd-accent); }
+.em__stage-card.is-dimmed { opacity: 0.45; }
+.em__stage-thumb { background: #FAF6EB; border-bottom: 1px solid var(--hd-line); }
+.em__stage-thumb img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 3; object-fit: cover; }
+.em__stage-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.em__stage-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.em__stage-no { font: 700 12px var(--hd-font-mono); color: var(--hd-accent); }
+.em__stage-group { font-size: 11.5px; color: var(--hd-ink-3); }
+.em__stage-body h3 { margin: 0; font: 700 18px/1.35 var(--hd-font-serif); }
+.em__stage-intro { margin: 0; font-size: 13px; line-height: 1.55; color: var(--hd-ink-2); }
+.em__stage-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+.em__stage-tags span { padding: 1px 6px; border: 1px solid var(--hd-line); border-radius: 4px; background: var(--hd-paper); font: 11px var(--hd-font-mono); color: var(--hd-teal); }
+.em__stage-meta { margin: auto 0 0; padding-top: 4px; font: 12px var(--hd-font-mono); color: var(--hd-ink-3); }
+@media (max-width: 767px) {
+  .em__stage-grid { grid-template-columns: 1fr; }
+}
 </style>

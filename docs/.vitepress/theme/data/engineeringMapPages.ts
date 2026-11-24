@@ -21,10 +21,10 @@ const stageIndex = (id: string) => S.findIndex((s) => s.id === id)
 const stageLabel = (id: string) => `阶段 ${no(stageIndex(id))} ${S[stageIndex(id)].name}`
 const link = (label: string, url?: string) => (url ? `[${label}](${url})` : label)
 
-// 危险作业依据（危大工程：《危险性较大的分部分项工程安全管理规定》37 号令 / 建办质〔2018〕31 号）。
+// 危险作业依据（危大工程：37号令 / 建办质〔2018〕31号 / 建质规〔2024〕5号 / 建办质〔2024〕63号）。
 // 按 GB 2894 工程安全色语义，这是全站少数允许使用红色（.is-danger）的真实危险场景。
-const DANGER_LABEL = /危险性较大的分部分项工程|危大工程管理规定|建办质〔2018〕31/
-const DANGER_URL = /content_5294422/
+const DANGER_LABEL = /危险性较大的分部分项工程|危大工程管理规定|建办质〔2018〕31|建质规〔2024〕5号|建办质〔2024〕63号/
+const DANGER_URL = /content_5294422|\/law\/weida-guiding|subcontract-safety-liability|special-construction-plan-approval/
 const dangerRef = (label: string, url?: string) =>
   DANGER_LABEL.test(label) || DANGER_URL.test(url || '')
     ? `<span class="is-danger">危险作业依据 · ${link(label, url)}</span>`
@@ -41,7 +41,18 @@ const HANDOVER_STAGE: Record<string, string> = { survey: 'design', design: 'desi
 
 /* ---------- 总图用的索引 ---------- */
 
-export const mapStages = S.map((s, i) => ({ id: s.id, no: no(i), name: s.name, intro: s.intro, group: (stageGroups as string[])[Math.floor(i / 3)] }))
+export const mapStages = S.map((s, i) => ({
+  id: s.id,
+  no: no(i),
+  name: s.name,
+  intro: s.intro,
+  group: (stageGroups as string[])[Math.floor(i / 3)],
+  drawing: (s.media?.drawing as string) || '',
+  standards: (s.standards as string[]) || [],
+  stepCount: (s.steps as any[]).length,
+  topicCount: topicsForStage(s.id).length,
+  sceneCount: scenes.filter((sc) => sc.stage === s.id).length + Object.values(HANDOVER_STAGE).filter((st) => st === s.id).length
+}))
 
 export const mapUnits = Object.entries(RD).map(([id, u]) => ({
   id,
@@ -70,9 +81,15 @@ export const mapScenes = [
 /* ---------- 阶段页 ---------- */
 
 const DRAWINGS: Record<string, string> = {
-  prep: '图 1 施工准备场地示例：项目部、围挡、车行入口、人员门禁与保安室',
-  build: '图 2 主体施工示例：塔吊、临边防护与基础剖切',
-  finish: '图 3 竣工验收示例：外立面、主入口与室外道路'
+  planning: '图 1 策划立项与用地选址蓝图：红线坐标、市政接口与政府/企业投资分流',
+  decision: '图 2 可研决策与选址勘察蓝图：地质钻孔分层水位与投资决策流程',
+  design: '图 3 勘察设计与施工图审查蓝图：初勘详勘、六专业出图与图审消防审查',
+  tender: '图 4 招标发包与合同交接蓝图：必招规模门槛、开评标定标与合约交接',
+  prep: '图 5 施工准备与场地分区蓝图：01～09 全设施分区与开工令签发闭环',
+  build: '图 6 施工过程控制与危大管控蓝图：验槽、外架连墙件、混凝土旁站、防水蓄水与动火管控',
+  finish: '图 7 竣工验收与消防备案蓝图：四方质量报告区分、永久性责任标牌与双备案流程',
+  handover: '图 8 移交、使用说明书与结算蓝图：《工程使用说明书》、城建档案移交与结算闭环',
+  operation: '图 9 运维巡检、保修期与到期鉴定蓝图：法定最低保修期标尺与到期分级处置'
 }
 
 function stagePage(s: any, i: number) {
@@ -98,7 +115,7 @@ function stagePage(s: any, i: number) {
     `${s.intro} {.em-answer}`,
     list([`**前置条件**：${s.inputs}`, `**参与单位**：${s.parties}`, `**主要产出**：${s.outputs}`]),
     s.note ? `${s.note} {.em-note}` : '',
-    s.media?.drawing ? `<FigureZoom src="/engineering-map/${s.media.drawing}.svg" caption="${DRAWINGS[s.media.drawing]}" alt="${s.media.alt || ''}" width="400" height="264" />` : '',
+    s.media?.drawing ? `<FigureZoom src="/engineering-map/${s.media.drawing}.svg" caption="${DRAWINGS[s.media.drawing]}" alt="${s.media.alt || ''}" width="800" height="480" />` : '',
     `## 关键事项与文件交接 {#steps}`,
     ...steps,
     s.media?.drawing === 'prep' ? `## 施工现场的设施 {#site}\n\n${list((siteFacilities as any[]).map((f) => `**${f.name}**（${f.tag}）：${f.description}`))}` : '',

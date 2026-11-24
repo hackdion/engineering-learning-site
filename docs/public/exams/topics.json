@@ -1,0 +1,3639 @@
+{
+  "generated": "2026-11-24",
+  "buckets": [
+    {
+      "id": "gb55032",
+      "kind": "law",
+      "title": "GB 55032—2022 施工质量控制",
+      "desc": "质量责任追溯、样板示范、三检制、检验批/分项/分部/单位划分与竣工验收组织。",
+      "relatedLink": "/law/gb55032-2022-zhiliang-kongzhi",
+      "count": 30,
+      "refs": [
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-S17",
+            "MK01-MK-M83",
+            "MK01-MK-M111"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-080",
+            "JLY-DANXUAN-07-081",
+            "JLY-DANXUAN-07-082",
+            "JLY-DANXUAN-07-089",
+            "JLY-DANXUAN-07-092"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-010",
+            "JLY-DANXUAN-08-011",
+            "JLY-DANXUAN-08-015",
+            "JLY-DANXUAN-08-018",
+            "JLY-DANXUAN-08-020",
+            "JLY-DANXUAN-08-021",
+            "JLY-DANXUAN-08-028",
+            "JLY-DANXUAN-08-030",
+            "JLY-DANXUAN-08-031",
+            "JLY-DANXUAN-08-033",
+            "JLY-DANXUAN-08-036",
+            "JLY-DANXUAN-08-057",
+            "JLY-DANXUAN-08-058"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-038",
+            "JLY-DUOXUAN-03-044",
+            "JLY-DUOXUAN-03-054",
+            "JLY-DUOXUAN-03-062"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-007",
+            "JLY-PANDUAN-03-008",
+            "JLY-PANDUAN-03-009",
+            "JLY-PANDUAN-03-017",
+            "JLY-PANDUAN-03-020"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb55030",
+      "kind": "law",
+      "title": "GB 55030—2022 工程防水通用规范",
+      "desc": "防水设计工作年限、设防等级、屋面/地下/外墙/室内防水与蓄水淋水试验。",
+      "relatedLink": "/law/gb55030-2022-fangshui",
+      "count": 72,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-051",
+            "JLY-DANXUAN-03-052",
+            "JLY-DANXUAN-03-053",
+            "JLY-DANXUAN-03-070",
+            "JLY-DANXUAN-03-071",
+            "JLY-DANXUAN-03-072",
+            "JLY-DANXUAN-03-073",
+            "JLY-DANXUAN-03-074",
+            "JLY-DANXUAN-03-075",
+            "JLY-DANXUAN-03-076",
+            "JLY-DANXUAN-03-078",
+            "JLY-DANXUAN-03-079",
+            "JLY-DANXUAN-03-080"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-049"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-020",
+            "JLY-DANXUAN-07-024",
+            "JLY-DANXUAN-07-025",
+            "JLY-DANXUAN-07-026",
+            "JLY-DANXUAN-07-027",
+            "JLY-DANXUAN-07-033",
+            "JLY-DANXUAN-07-036",
+            "JLY-DANXUAN-07-039",
+            "JLY-DANXUAN-07-044",
+            "JLY-DANXUAN-07-045",
+            "JLY-DANXUAN-07-046",
+            "JLY-DANXUAN-07-047",
+            "JLY-DANXUAN-07-050",
+            "JLY-DANXUAN-07-052",
+            "JLY-DANXUAN-07-053",
+            "JLY-DANXUAN-07-058",
+            "JLY-DANXUAN-07-059",
+            "JLY-DANXUAN-07-060",
+            "JLY-DANXUAN-07-062",
+            "JLY-DANXUAN-07-063",
+            "JLY-DANXUAN-07-066",
+            "JLY-DANXUAN-07-067",
+            "JLY-DANXUAN-07-071",
+            "JLY-DANXUAN-07-073",
+            "JLY-DANXUAN-07-076",
+            "JLY-DANXUAN-07-079"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-016"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-080",
+            "JLY-DUOXUAN-01-091",
+            "JLY-DUOXUAN-01-092",
+            "JLY-DUOXUAN-01-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-001",
+            "JLY-DUOXUAN-02-002",
+            "JLY-DUOXUAN-02-004",
+            "JLY-DUOXUAN-02-005"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-018",
+            "JLY-DUOXUAN-03-019",
+            "JLY-DUOXUAN-03-026",
+            "JLY-DUOXUAN-03-027",
+            "JLY-DUOXUAN-03-028",
+            "JLY-DUOXUAN-03-031",
+            "JLY-DUOXUAN-03-033",
+            "JLY-DUOXUAN-03-035",
+            "JLY-DUOXUAN-03-036"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-064",
+            "JLY-PANDUAN-01-072",
+            "JLY-PANDUAN-01-074",
+            "JLY-PANDUAN-01-075"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-094",
+            "JLY-PANDUAN-02-095",
+            "JLY-PANDUAN-02-096",
+            "JLY-PANDUAN-02-098",
+            "JLY-PANDUAN-02-099"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-001",
+            "JLY-PANDUAN-03-003",
+            "JLY-PANDUAN-03-004",
+            "JLY-PANDUAN-03-005",
+            "JLY-PANDUAN-03-006"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb55008",
+      "kind": "law",
+      "title": "GB 55008—2021 混凝土结构通用规范",
+      "desc": "抗震钢筋强屈比、预拌混凝土进场、浇筑严禁加水、同条件试块与底模拆除强度。",
+      "relatedLink": "/law/gb55008-2021-hunningtu",
+      "count": 68,
+      "refs": [
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-M09"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-M89"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-050",
+            "JLY-DANXUAN-05-059",
+            "JLY-DANXUAN-05-061",
+            "JLY-DANXUAN-05-064"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-040",
+            "JLY-DANXUAN-06-044",
+            "JLY-DANXUAN-06-045",
+            "JLY-DANXUAN-06-052",
+            "JLY-DANXUAN-06-056",
+            "JLY-DANXUAN-06-057",
+            "JLY-DANXUAN-06-058",
+            "JLY-DANXUAN-06-059",
+            "JLY-DANXUAN-06-060",
+            "JLY-DANXUAN-06-061",
+            "JLY-DANXUAN-06-063",
+            "JLY-DANXUAN-06-064",
+            "JLY-DANXUAN-06-065",
+            "JLY-DANXUAN-06-067",
+            "JLY-DANXUAN-06-072",
+            "JLY-DANXUAN-06-073",
+            "JLY-DANXUAN-06-074",
+            "JLY-DANXUAN-06-076",
+            "JLY-DANXUAN-06-077",
+            "JLY-DANXUAN-06-078",
+            "JLY-DANXUAN-06-080",
+            "JLY-DANXUAN-06-081",
+            "JLY-DANXUAN-06-082",
+            "JLY-DANXUAN-06-083",
+            "JLY-DANXUAN-06-084",
+            "JLY-DANXUAN-06-085",
+            "JLY-DANXUAN-06-087",
+            "JLY-DANXUAN-06-088",
+            "JLY-DANXUAN-06-091",
+            "JLY-DANXUAN-06-092",
+            "JLY-DANXUAN-06-095",
+            "JLY-DANXUAN-06-097",
+            "JLY-DANXUAN-06-099",
+            "JLY-DANXUAN-06-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-007",
+            "JLY-DANXUAN-07-008",
+            "JLY-DANXUAN-07-011",
+            "JLY-DANXUAN-07-012",
+            "JLY-DANXUAN-07-015",
+            "JLY-DANXUAN-07-017",
+            "JLY-DANXUAN-07-019"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-063",
+            "JLY-DUOXUAN-02-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-001",
+            "JLY-DUOXUAN-03-002",
+            "JLY-DUOXUAN-03-003",
+            "JLY-DUOXUAN-03-006",
+            "JLY-DUOXUAN-03-009",
+            "JLY-DUOXUAN-03-012",
+            "JLY-DUOXUAN-03-014",
+            "JLY-DUOXUAN-03-016"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-032",
+            "JLY-PANDUAN-02-062",
+            "JLY-PANDUAN-02-069",
+            "JLY-PANDUAN-02-070",
+            "JLY-PANDUAN-02-075",
+            "JLY-PANDUAN-02-078",
+            "JLY-PANDUAN-02-080",
+            "JLY-PANDUAN-02-082",
+            "JLY-PANDUAN-02-083",
+            "JLY-PANDUAN-02-084",
+            "JLY-PANDUAN-02-085"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb55023",
+      "kind": "law",
+      "title": "GB 55023—2022 施工脚手架通用规范",
+      "desc": "脚手架立杆基础、连墙件、剪刀撑、盘扣式构造、荷载限值与搭设拆除验收。",
+      "relatedLink": "/law/gb55023-2022-jiaoshoujia",
+      "count": 58,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-003",
+            "JLY-DANXUAN-01-004",
+            "JLY-DANXUAN-01-005",
+            "JLY-DANXUAN-01-006",
+            "JLY-DANXUAN-01-007",
+            "JLY-DANXUAN-01-008",
+            "JLY-DANXUAN-01-012",
+            "JLY-DANXUAN-01-013",
+            "JLY-DANXUAN-01-015",
+            "JLY-DANXUAN-01-017",
+            "JLY-DANXUAN-01-018",
+            "JLY-DANXUAN-01-020",
+            "JLY-DANXUAN-01-022",
+            "JLY-DANXUAN-01-023",
+            "JLY-DANXUAN-01-024",
+            "JLY-DANXUAN-01-026",
+            "JLY-DANXUAN-01-033",
+            "JLY-DANXUAN-01-035",
+            "JLY-DANXUAN-01-038",
+            "JLY-DANXUAN-01-041",
+            "JLY-DANXUAN-01-042",
+            "JLY-DANXUAN-01-044",
+            "JLY-DANXUAN-01-045",
+            "JLY-DANXUAN-01-046",
+            "JLY-DANXUAN-01-047",
+            "JLY-DANXUAN-01-049",
+            "JLY-DANXUAN-01-051",
+            "JLY-DANXUAN-01-053",
+            "JLY-DANXUAN-01-056",
+            "JLY-DANXUAN-01-057",
+            "JLY-DANXUAN-01-059",
+            "JLY-DANXUAN-01-061",
+            "JLY-DANXUAN-01-062",
+            "JLY-DANXUAN-01-065",
+            "JLY-DANXUAN-01-067",
+            "JLY-DANXUAN-01-068",
+            "JLY-DANXUAN-01-075",
+            "JLY-DANXUAN-01-076",
+            "JLY-DANXUAN-01-077",
+            "JLY-DANXUAN-01-079"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-003",
+            "JLY-DUOXUAN-01-005",
+            "JLY-DUOXUAN-01-006",
+            "JLY-DUOXUAN-01-007",
+            "JLY-DUOXUAN-01-008",
+            "JLY-DUOXUAN-01-015",
+            "JLY-DUOXUAN-01-021",
+            "JLY-DUOXUAN-01-022",
+            "JLY-DUOXUAN-01-024"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-002",
+            "JLY-PANDUAN-01-006",
+            "JLY-PANDUAN-01-010",
+            "JLY-PANDUAN-01-011",
+            "JLY-PANDUAN-01-012",
+            "JLY-PANDUAN-01-013",
+            "JLY-PANDUAN-01-022",
+            "JLY-PANDUAN-01-023",
+            "JLY-PANDUAN-01-024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb55034",
+      "kind": "law",
+      "title": "GB 55034—2022 安全卫生与职业健康",
+      "desc": "封闭管理、宿舍生活区隔离、安全电压 36/24/12V、有限空间作业监护与个体防护。",
+      "relatedLink": "/law/gb55034-2022-anquan-weisheng",
+      "count": 92,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-014",
+            "JLY-DANXUAN-01-040",
+            "JLY-DANXUAN-01-063",
+            "JLY-DANXUAN-01-074"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-070",
+            "JLY-DANXUAN-04-071",
+            "JLY-DANXUAN-04-074",
+            "JLY-DANXUAN-04-075",
+            "JLY-DANXUAN-04-078",
+            "JLY-DANXUAN-04-080",
+            "JLY-DANXUAN-04-081",
+            "JLY-DANXUAN-04-084",
+            "JLY-DANXUAN-04-085",
+            "JLY-DANXUAN-04-086",
+            "JLY-DANXUAN-04-087",
+            "JLY-DANXUAN-04-088",
+            "JLY-DANXUAN-04-091",
+            "JLY-DANXUAN-04-092",
+            "JLY-DANXUAN-04-094",
+            "JLY-DANXUAN-04-097",
+            "JLY-DANXUAN-04-099"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-001",
+            "JLY-DANXUAN-05-002",
+            "JLY-DANXUAN-05-003",
+            "JLY-DANXUAN-05-004",
+            "JLY-DANXUAN-05-005",
+            "JLY-DANXUAN-05-006",
+            "JLY-DANXUAN-05-007",
+            "JLY-DANXUAN-05-008",
+            "JLY-DANXUAN-05-009",
+            "JLY-DANXUAN-05-010",
+            "JLY-DANXUAN-05-014",
+            "JLY-DANXUAN-05-015",
+            "JLY-DANXUAN-05-018",
+            "JLY-DANXUAN-05-019",
+            "JLY-DANXUAN-05-020",
+            "JLY-DANXUAN-05-021",
+            "JLY-DANXUAN-05-022",
+            "JLY-DANXUAN-05-025",
+            "JLY-DANXUAN-05-026",
+            "JLY-DANXUAN-05-027",
+            "JLY-DANXUAN-05-028",
+            "JLY-DANXUAN-05-029",
+            "JLY-DANXUAN-05-033",
+            "JLY-DANXUAN-05-035",
+            "JLY-DANXUAN-05-036",
+            "JLY-DANXUAN-05-037",
+            "JLY-DANXUAN-05-038",
+            "JLY-DANXUAN-05-039",
+            "JLY-DANXUAN-05-040",
+            "JLY-DANXUAN-05-041",
+            "JLY-DANXUAN-05-043",
+            "JLY-DANXUAN-05-044",
+            "JLY-DANXUAN-05-047",
+            "JLY-DANXUAN-05-060"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-073",
+            "JLY-DANXUAN-06-074",
+            "JLY-DANXUAN-06-076",
+            "JLY-DANXUAN-06-077",
+            "JLY-DANXUAN-06-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-009",
+            "JLY-DUOXUAN-01-011"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-039",
+            "JLY-DUOXUAN-02-041",
+            "JLY-DUOXUAN-02-042",
+            "JLY-DUOXUAN-02-046",
+            "JLY-DUOXUAN-02-048",
+            "JLY-DUOXUAN-02-049",
+            "JLY-DUOXUAN-02-050",
+            "JLY-DUOXUAN-02-051",
+            "JLY-DUOXUAN-02-052",
+            "JLY-DUOXUAN-02-053",
+            "JLY-DUOXUAN-02-054",
+            "JLY-DUOXUAN-02-055",
+            "JLY-DUOXUAN-02-057",
+            "JLY-DUOXUAN-02-059",
+            "JLY-DUOXUAN-02-062"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-016"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-007"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-007",
+            "JLY-PANDUAN-02-009",
+            "JLY-PANDUAN-02-013",
+            "JLY-PANDUAN-02-014",
+            "JLY-PANDUAN-02-017",
+            "JLY-PANDUAN-02-020",
+            "JLY-PANDUAN-02-021",
+            "JLY-PANDUAN-02-022",
+            "JLY-PANDUAN-02-023",
+            "JLY-PANDUAN-02-026",
+            "JLY-PANDUAN-02-027",
+            "JLY-PANDUAN-02-029",
+            "JLY-PANDUAN-02-030"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb55037",
+      "kind": "law",
+      "title": "GB 55037—2022 建筑防火通用规范",
+      "desc": "耐火等级、防火间距、消防车道、救援口、安全疏散与施工消防防火要求。",
+      "relatedLink": "/law/gb55037-2022-jianzhu-fanghuo",
+      "count": 174,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-082",
+            "JLY-DANXUAN-03-085",
+            "JLY-DANXUAN-03-087",
+            "JLY-DANXUAN-03-088",
+            "JLY-DANXUAN-03-089",
+            "JLY-DANXUAN-03-090",
+            "JLY-DANXUAN-03-091",
+            "JLY-DANXUAN-03-092",
+            "JLY-DANXUAN-03-094",
+            "JLY-DANXUAN-03-095",
+            "JLY-DANXUAN-03-096",
+            "JLY-DANXUAN-03-097",
+            "JLY-DANXUAN-03-098",
+            "JLY-DANXUAN-03-099"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-001",
+            "JLY-DANXUAN-04-002",
+            "JLY-DANXUAN-04-003",
+            "JLY-DANXUAN-04-005",
+            "JLY-DANXUAN-04-006",
+            "JLY-DANXUAN-04-007",
+            "JLY-DANXUAN-04-008",
+            "JLY-DANXUAN-04-010",
+            "JLY-DANXUAN-04-011",
+            "JLY-DANXUAN-04-012",
+            "JLY-DANXUAN-04-013",
+            "JLY-DANXUAN-04-014",
+            "JLY-DANXUAN-04-015",
+            "JLY-DANXUAN-04-016",
+            "JLY-DANXUAN-04-019",
+            "JLY-DANXUAN-04-021",
+            "JLY-DANXUAN-04-023",
+            "JLY-DANXUAN-04-024",
+            "JLY-DANXUAN-04-025",
+            "JLY-DANXUAN-04-026",
+            "JLY-DANXUAN-04-027",
+            "JLY-DANXUAN-04-028",
+            "JLY-DANXUAN-04-029",
+            "JLY-DANXUAN-04-030",
+            "JLY-DANXUAN-04-031",
+            "JLY-DANXUAN-04-032",
+            "JLY-DANXUAN-04-033",
+            "JLY-DANXUAN-04-034",
+            "JLY-DANXUAN-04-037",
+            "JLY-DANXUAN-04-038",
+            "JLY-DANXUAN-04-039",
+            "JLY-DANXUAN-04-040",
+            "JLY-DANXUAN-04-041",
+            "JLY-DANXUAN-04-042",
+            "JLY-DANXUAN-04-043",
+            "JLY-DANXUAN-04-044",
+            "JLY-DANXUAN-04-045",
+            "JLY-DANXUAN-04-046",
+            "JLY-DANXUAN-04-047",
+            "JLY-DANXUAN-04-051",
+            "JLY-DANXUAN-04-052",
+            "JLY-DANXUAN-04-058",
+            "JLY-DANXUAN-04-059",
+            "JLY-DANXUAN-04-060",
+            "JLY-DANXUAN-04-061",
+            "JLY-DANXUAN-04-062",
+            "JLY-DANXUAN-04-063",
+            "JLY-DANXUAN-04-065",
+            "JLY-DANXUAN-04-066",
+            "JLY-DANXUAN-04-067",
+            "JLY-DANXUAN-04-068"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-050",
+            "JLY-DANXUAN-05-051",
+            "JLY-DANXUAN-05-052",
+            "JLY-DANXUAN-05-053",
+            "JLY-DANXUAN-05-054",
+            "JLY-DANXUAN-05-055",
+            "JLY-DANXUAN-05-057",
+            "JLY-DANXUAN-05-059",
+            "JLY-DANXUAN-05-060",
+            "JLY-DANXUAN-05-061",
+            "JLY-DANXUAN-05-062",
+            "JLY-DANXUAN-05-064",
+            "JLY-DANXUAN-05-065",
+            "JLY-DANXUAN-05-066",
+            "JLY-DANXUAN-05-069",
+            "JLY-DANXUAN-05-070",
+            "JLY-DANXUAN-05-077",
+            "JLY-DANXUAN-05-078",
+            "JLY-DANXUAN-05-081",
+            "JLY-DANXUAN-05-092",
+            "JLY-DANXUAN-05-093",
+            "JLY-DANXUAN-05-094",
+            "JLY-DANXUAN-05-096",
+            "JLY-DANXUAN-05-097",
+            "JLY-DANXUAN-05-098",
+            "JLY-DANXUAN-05-099"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-001",
+            "JLY-DANXUAN-06-003",
+            "JLY-DANXUAN-06-005",
+            "JLY-DANXUAN-06-012",
+            "JLY-DANXUAN-06-013",
+            "JLY-DANXUAN-06-015",
+            "JLY-DANXUAN-06-016",
+            "JLY-DANXUAN-06-018",
+            "JLY-DANXUAN-06-022",
+            "JLY-DANXUAN-06-023",
+            "JLY-DANXUAN-06-024",
+            "JLY-DANXUAN-06-027",
+            "JLY-DANXUAN-06-028",
+            "JLY-DANXUAN-06-031",
+            "JLY-DANXUAN-06-033",
+            "JLY-DANXUAN-06-036",
+            "JLY-DANXUAN-06-038"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-007",
+            "JLY-DUOXUAN-02-008",
+            "JLY-DUOXUAN-02-010",
+            "JLY-DUOXUAN-02-013",
+            "JLY-DUOXUAN-02-014",
+            "JLY-DUOXUAN-02-015",
+            "JLY-DUOXUAN-02-016",
+            "JLY-DUOXUAN-02-017",
+            "JLY-DUOXUAN-02-018",
+            "JLY-DUOXUAN-02-021",
+            "JLY-DUOXUAN-02-022",
+            "JLY-DUOXUAN-02-023",
+            "JLY-DUOXUAN-02-025",
+            "JLY-DUOXUAN-02-026",
+            "JLY-DUOXUAN-02-027",
+            "JLY-DUOXUAN-02-028",
+            "JLY-DUOXUAN-02-029",
+            "JLY-DUOXUAN-02-031",
+            "JLY-DUOXUAN-02-033",
+            "JLY-DUOXUAN-02-063",
+            "JLY-DUOXUAN-02-064",
+            "JLY-DUOXUAN-02-065",
+            "JLY-DUOXUAN-02-066",
+            "JLY-DUOXUAN-02-068",
+            "JLY-DUOXUAN-02-073",
+            "JLY-DUOXUAN-02-083",
+            "JLY-DUOXUAN-02-084",
+            "JLY-DUOXUAN-02-088",
+            "JLY-DUOXUAN-02-089",
+            "JLY-DUOXUAN-02-090",
+            "JLY-DUOXUAN-02-092"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-076",
+            "JLY-PANDUAN-01-077",
+            "JLY-PANDUAN-01-078",
+            "JLY-PANDUAN-01-083",
+            "JLY-PANDUAN-01-084",
+            "JLY-PANDUAN-01-086",
+            "JLY-PANDUAN-01-087",
+            "JLY-PANDUAN-01-088",
+            "JLY-PANDUAN-01-089",
+            "JLY-PANDUAN-01-090",
+            "JLY-PANDUAN-01-093",
+            "JLY-PANDUAN-01-095",
+            "JLY-PANDUAN-01-096",
+            "JLY-PANDUAN-01-097",
+            "JLY-PANDUAN-01-098",
+            "JLY-PANDUAN-01-100"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-002",
+            "JLY-PANDUAN-02-004",
+            "JLY-PANDUAN-02-005",
+            "JLY-PANDUAN-02-006",
+            "JLY-PANDUAN-02-032",
+            "JLY-PANDUAN-02-033",
+            "JLY-PANDUAN-02-034",
+            "JLY-PANDUAN-02-035",
+            "JLY-PANDUAN-02-038",
+            "JLY-PANDUAN-02-040",
+            "JLY-PANDUAN-02-043",
+            "JLY-PANDUAN-02-046",
+            "JLY-PANDUAN-02-053",
+            "JLY-PANDUAN-02-054",
+            "JLY-PANDUAN-02-055",
+            "JLY-PANDUAN-02-056",
+            "JLY-PANDUAN-02-057",
+            "JLY-PANDUAN-02-059",
+            "JLY-PANDUAN-02-060"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weida",
+      "kind": "law",
+      "title": "危大工程（37号令 / 48号指南 / XJJ 133）",
+      "desc": "危大与超危大范围判定、专项方案编审、专家论证、巡视旁站与验收管理。",
+      "relatedLink": "/law/weida-guiding",
+      "count": 66,
+      "refs": [
+        {
+          "paperId": "2022-lf",
+          "ids": [
+            "2022-LF-S30",
+            "2022-LF-S31",
+            "2022-LF-S40",
+            "2022-LF-M54",
+            "2022-LF-M70",
+            "2022-LF-M74"
+          ]
+        },
+        {
+          "paperId": "2023-lf",
+          "ids": [
+            "2023-LF-S10",
+            "2023-LF-S28",
+            "2023-LF-S47",
+            "2023-LF-M68",
+            "2023-LF-M75"
+          ]
+        },
+        {
+          "paperId": "2024-lf",
+          "ids": [
+            "2024-LF-S21",
+            "2024-LF-S39",
+            "2024-LF-S41",
+            "2024-LF-M57",
+            "2024-LF-M65",
+            "2024-LF-M78"
+          ]
+        },
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S11",
+            "2024-MK-S42",
+            "2024-MK-M02"
+          ]
+        },
+        {
+          "paperId": "mk01-lf",
+          "ids": [
+            "MK01-LF-S06",
+            "MK01-LF-S22",
+            "MK01-LF-S23",
+            "MK01-LF-M57",
+            "MK01-LF-M78"
+          ]
+        },
+        {
+          "paperId": "mk02-lf",
+          "ids": [
+            "MK02-LF-S06",
+            "MK02-LF-S41",
+            "MK02-LF-M65",
+            "MK02-LF-M77"
+          ]
+        },
+        {
+          "paperId": "mk01-ht",
+          "ids": [
+            "MK01-HT-M77"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-M117"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-001",
+            "JLY-DANXUAN-01-002",
+            "JLY-DANXUAN-01-003",
+            "JLY-DANXUAN-01-020",
+            "JLY-DANXUAN-01-025",
+            "JLY-DANXUAN-01-050",
+            "JLY-DANXUAN-01-055",
+            "JLY-DANXUAN-01-065",
+            "JLY-DANXUAN-01-080"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-020",
+            "JLY-DANXUAN-02-024",
+            "JLY-DANXUAN-02-026",
+            "JLY-DANXUAN-02-031",
+            "JLY-DANXUAN-02-037",
+            "JLY-DANXUAN-02-048",
+            "JLY-DANXUAN-02-050",
+            "JLY-DANXUAN-02-051",
+            "JLY-DANXUAN-02-052",
+            "JLY-DANXUAN-02-056"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-001"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-096"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-030",
+            "JLY-DANXUAN-05-046"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-019"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-001",
+            "JLY-DUOXUAN-01-019",
+            "JLY-DUOXUAN-01-040",
+            "JLY-DUOXUAN-01-047",
+            "JLY-DUOXUAN-01-050",
+            "JLY-DUOXUAN-01-060"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-006",
+            "JLY-DUOXUAN-02-044"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-002",
+            "JLY-PANDUAN-01-003",
+            "JLY-PANDUAN-01-037"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jianli",
+      "kind": "law",
+      "title": "监理规范与履职（GB/T 50319 / XJJ 088）",
+      "desc": "项目监理机构职责、总监不得委托事项、监理规划与细则、巡视旁站与基本表式。",
+      "relatedLink": "/law/gbt50319-2013-jianli-guifan",
+      "count": 337,
+      "refs": [
+        {
+          "paperId": "2022-lf",
+          "ids": [
+            "2022-LF-S06",
+            "2022-LF-S07",
+            "2022-LF-S19",
+            "2022-LF-S22",
+            "2022-LF-S23",
+            "2022-LF-S24",
+            "2022-LF-S25",
+            "2022-LF-S27",
+            "2022-LF-S28",
+            "2022-LF-S29",
+            "2022-LF-S30",
+            "2022-LF-S31",
+            "2022-LF-S32",
+            "2022-LF-S33",
+            "2022-LF-S34",
+            "2022-LF-S35",
+            "2022-LF-S36",
+            "2022-LF-S37",
+            "2022-LF-S38",
+            "2022-LF-S39",
+            "2022-LF-S40",
+            "2022-LF-S41",
+            "2022-LF-S42",
+            "2022-LF-S43",
+            "2022-LF-M51",
+            "2022-LF-M54",
+            "2022-LF-M59",
+            "2022-LF-M63",
+            "2022-LF-M64",
+            "2022-LF-M65",
+            "2022-LF-M66",
+            "2022-LF-M67",
+            "2022-LF-M68",
+            "2022-LF-M69",
+            "2022-LF-M70",
+            "2022-LF-M71",
+            "2022-LF-M72",
+            "2022-LF-M73",
+            "2022-LF-M74",
+            "2022-LF-M75"
+          ]
+        },
+        {
+          "paperId": "2023-lf",
+          "ids": [
+            "2023-LF-S01",
+            "2023-LF-S04",
+            "2023-LF-S06",
+            "2023-LF-S10",
+            "2023-LF-S14",
+            "2023-LF-S24",
+            "2023-LF-S27",
+            "2023-LF-S28",
+            "2023-LF-S29",
+            "2023-LF-S39",
+            "2023-LF-S40",
+            "2023-LF-S41",
+            "2023-LF-S43",
+            "2023-LF-S44",
+            "2023-LF-S47",
+            "2023-LF-S50",
+            "2023-LF-M52",
+            "2023-LF-M58",
+            "2023-LF-M60",
+            "2023-LF-M69",
+            "2023-LF-M73",
+            "2023-LF-M75",
+            "2023-LF-M76",
+            "2023-LF-M77",
+            "2023-LF-M78",
+            "2023-LF-M79",
+            "2023-LF-M80"
+          ]
+        },
+        {
+          "paperId": "2024-lf",
+          "ids": [
+            "2024-LF-S06",
+            "2024-LF-S07",
+            "2024-LF-S10",
+            "2024-LF-S13",
+            "2024-LF-S14",
+            "2024-LF-S18",
+            "2024-LF-S21",
+            "2024-LF-S22",
+            "2024-LF-S23",
+            "2024-LF-S24",
+            "2024-LF-S28",
+            "2024-LF-S29",
+            "2024-LF-S30",
+            "2024-LF-S31",
+            "2024-LF-S33",
+            "2024-LF-S34",
+            "2024-LF-S35",
+            "2024-LF-S37",
+            "2024-LF-S38",
+            "2024-LF-S39",
+            "2024-LF-S40",
+            "2024-LF-M53",
+            "2024-LF-M54",
+            "2024-LF-M55",
+            "2024-LF-M56",
+            "2024-LF-M58",
+            "2024-LF-M59",
+            "2024-LF-M60",
+            "2024-LF-M65",
+            "2024-LF-M71",
+            "2024-LF-M75",
+            "2024-LF-M76",
+            "2024-LF-M77",
+            "2024-LF-M78",
+            "2024-LF-M79"
+          ]
+        },
+        {
+          "paperId": "2024-ht",
+          "ids": [
+            "2024-HT-S41",
+            "2024-HT-M63"
+          ]
+        },
+        {
+          "paperId": "2025-ht",
+          "ids": [
+            "2025-HT-S39",
+            "2025-HT-M56"
+          ]
+        },
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S08",
+            "2024-MK-S11",
+            "2024-MK-S42",
+            "2024-MK-S51",
+            "2024-MK-S62",
+            "2024-MK-M02",
+            "2024-MK-M07",
+            "2024-MK-M19"
+          ]
+        },
+        {
+          "paperId": "mk01-lf",
+          "ids": [
+            "MK01-LF-S06",
+            "MK01-LF-S07",
+            "MK01-LF-S08",
+            "MK01-LF-S10",
+            "MK01-LF-S13",
+            "MK01-LF-S14",
+            "MK01-LF-S18",
+            "MK01-LF-S21",
+            "MK01-LF-S22",
+            "MK01-LF-S23",
+            "MK01-LF-S24",
+            "MK01-LF-S28",
+            "MK01-LF-S29",
+            "MK01-LF-S30",
+            "MK01-LF-S31",
+            "MK01-LF-S33",
+            "MK01-LF-S34",
+            "MK01-LF-S35",
+            "MK01-LF-S37",
+            "MK01-LF-S38",
+            "MK01-LF-S39",
+            "MK01-LF-S40",
+            "MK01-LF-M53",
+            "MK01-LF-M54",
+            "MK01-LF-M55",
+            "MK01-LF-M56",
+            "MK01-LF-M59",
+            "MK01-LF-M60",
+            "MK01-LF-M71",
+            "MK01-LF-M75",
+            "MK01-LF-M76",
+            "MK01-LF-M77",
+            "MK01-LF-M78",
+            "MK01-LF-M79"
+          ]
+        },
+        {
+          "paperId": "mk02-lf",
+          "ids": [
+            "MK02-LF-S06",
+            "MK02-LF-S07",
+            "MK02-LF-S10",
+            "MK02-LF-S13",
+            "MK02-LF-S14",
+            "MK02-LF-S18",
+            "MK02-LF-S19",
+            "MK02-LF-S21",
+            "MK02-LF-S22",
+            "MK02-LF-S23",
+            "MK02-LF-S24",
+            "MK02-LF-S28",
+            "MK02-LF-S29",
+            "MK02-LF-S30",
+            "MK02-LF-S31",
+            "MK02-LF-S33",
+            "MK02-LF-S34",
+            "MK02-LF-S35",
+            "MK02-LF-S37",
+            "MK02-LF-S38",
+            "MK02-LF-S39",
+            "MK02-LF-S40",
+            "MK02-LF-M53",
+            "MK02-LF-M54",
+            "MK02-LF-M55",
+            "MK02-LF-M56",
+            "MK02-LF-M60",
+            "MK02-LF-M65",
+            "MK02-LF-M71",
+            "MK02-LF-M74",
+            "MK02-LF-M75",
+            "MK02-LF-M76",
+            "MK02-LF-M77",
+            "MK02-LF-M78",
+            "MK02-LF-M79"
+          ]
+        },
+        {
+          "paperId": "mk01-ht",
+          "ids": [
+            "MK01-HT-S39",
+            "MK01-HT-S41",
+            "MK01-HT-S44",
+            "MK01-HT-M63"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-S08",
+            "MK01-MK-S25",
+            "MK01-MK-S51",
+            "MK01-MK-S62",
+            "MK01-MK-S79",
+            "MK01-MK-M112",
+            "MK01-MK-M113",
+            "MK01-MK-M117",
+            "MK01-MK-M120"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-055",
+            "JLY-DANXUAN-01-081",
+            "JLY-DANXUAN-01-084",
+            "JLY-DANXUAN-01-085",
+            "JLY-DANXUAN-01-086",
+            "JLY-DANXUAN-01-087",
+            "JLY-DANXUAN-01-092",
+            "JLY-DANXUAN-01-093",
+            "JLY-DANXUAN-01-094",
+            "JLY-DANXUAN-01-095",
+            "JLY-DANXUAN-01-097",
+            "JLY-DANXUAN-01-098",
+            "JLY-DANXUAN-01-099",
+            "JLY-DANXUAN-01-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-001",
+            "JLY-DANXUAN-02-002",
+            "JLY-DANXUAN-02-003",
+            "JLY-DANXUAN-02-004",
+            "JLY-DANXUAN-02-005",
+            "JLY-DANXUAN-02-006",
+            "JLY-DANXUAN-02-007",
+            "JLY-DANXUAN-02-008",
+            "JLY-DANXUAN-02-009",
+            "JLY-DANXUAN-02-010",
+            "JLY-DANXUAN-02-011",
+            "JLY-DANXUAN-02-012",
+            "JLY-DANXUAN-02-013",
+            "JLY-DANXUAN-02-014",
+            "JLY-DANXUAN-02-016",
+            "JLY-DANXUAN-02-017",
+            "JLY-DANXUAN-02-018",
+            "JLY-DANXUAN-02-019",
+            "JLY-DANXUAN-02-020",
+            "JLY-DANXUAN-02-021",
+            "JLY-DANXUAN-02-022",
+            "JLY-DANXUAN-02-023",
+            "JLY-DANXUAN-02-024",
+            "JLY-DANXUAN-02-025",
+            "JLY-DANXUAN-02-026",
+            "JLY-DANXUAN-02-027",
+            "JLY-DANXUAN-02-028",
+            "JLY-DANXUAN-02-029",
+            "JLY-DANXUAN-02-030",
+            "JLY-DANXUAN-02-031",
+            "JLY-DANXUAN-02-032",
+            "JLY-DANXUAN-02-034",
+            "JLY-DANXUAN-02-035",
+            "JLY-DANXUAN-02-036",
+            "JLY-DANXUAN-02-037",
+            "JLY-DANXUAN-02-042",
+            "JLY-DANXUAN-02-043",
+            "JLY-DANXUAN-02-044",
+            "JLY-DANXUAN-02-045",
+            "JLY-DANXUAN-02-046",
+            "JLY-DANXUAN-02-048",
+            "JLY-DANXUAN-02-049",
+            "JLY-DANXUAN-02-050",
+            "JLY-DANXUAN-02-051",
+            "JLY-DANXUAN-02-056",
+            "JLY-DANXUAN-02-058",
+            "JLY-DANXUAN-02-059",
+            "JLY-DANXUAN-02-060",
+            "JLY-DANXUAN-02-061",
+            "JLY-DANXUAN-02-062",
+            "JLY-DANXUAN-02-063",
+            "JLY-DANXUAN-02-064",
+            "JLY-DANXUAN-02-065",
+            "JLY-DANXUAN-02-066",
+            "JLY-DANXUAN-02-067",
+            "JLY-DANXUAN-02-073",
+            "JLY-DANXUAN-02-074",
+            "JLY-DANXUAN-02-084",
+            "JLY-DANXUAN-02-085",
+            "JLY-DANXUAN-02-086",
+            "JLY-DANXUAN-02-088",
+            "JLY-DANXUAN-02-094"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-032"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-087",
+            "JLY-DANXUAN-07-092"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-005",
+            "JLY-DANXUAN-08-034",
+            "JLY-DANXUAN-08-035",
+            "JLY-DANXUAN-08-038",
+            "JLY-DANXUAN-08-044",
+            "JLY-DANXUAN-08-049",
+            "JLY-DANXUAN-08-050",
+            "JLY-DANXUAN-08-051",
+            "JLY-DANXUAN-08-054",
+            "JLY-DANXUAN-08-055"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-026",
+            "JLY-DUOXUAN-01-027",
+            "JLY-DUOXUAN-01-030",
+            "JLY-DUOXUAN-01-031",
+            "JLY-DUOXUAN-01-033",
+            "JLY-DUOXUAN-01-034",
+            "JLY-DUOXUAN-01-035",
+            "JLY-DUOXUAN-01-036",
+            "JLY-DUOXUAN-01-037",
+            "JLY-DUOXUAN-01-038",
+            "JLY-DUOXUAN-01-039",
+            "JLY-DUOXUAN-01-040",
+            "JLY-DUOXUAN-01-041",
+            "JLY-DUOXUAN-01-042",
+            "JLY-DUOXUAN-01-043",
+            "JLY-DUOXUAN-01-044",
+            "JLY-DUOXUAN-01-045",
+            "JLY-DUOXUAN-01-046",
+            "JLY-DUOXUAN-01-047",
+            "JLY-DUOXUAN-01-048",
+            "JLY-DUOXUAN-01-049",
+            "JLY-DUOXUAN-01-052",
+            "JLY-DUOXUAN-01-053",
+            "JLY-DUOXUAN-01-054",
+            "JLY-DUOXUAN-01-055",
+            "JLY-DUOXUAN-01-058",
+            "JLY-DUOXUAN-01-059",
+            "JLY-DUOXUAN-01-060"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-041",
+            "JLY-DUOXUAN-03-047"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-027",
+            "JLY-PANDUAN-01-028",
+            "JLY-PANDUAN-01-029",
+            "JLY-PANDUAN-01-030",
+            "JLY-PANDUAN-01-031",
+            "JLY-PANDUAN-01-032",
+            "JLY-PANDUAN-01-033",
+            "JLY-PANDUAN-01-034",
+            "JLY-PANDUAN-01-036",
+            "JLY-PANDUAN-01-037",
+            "JLY-PANDUAN-01-038",
+            "JLY-PANDUAN-01-039",
+            "JLY-PANDUAN-01-040",
+            "JLY-PANDUAN-01-043",
+            "JLY-PANDUAN-01-044",
+            "JLY-PANDUAN-01-047",
+            "JLY-PANDUAN-01-049",
+            "JLY-PANDUAN-01-050",
+            "JLY-PANDUAN-01-051",
+            "JLY-PANDUAN-01-055"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-020",
+            "JLY-PANDUAN-03-024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-building-fire-protection-gb55037",
+      "kind": "topic",
+      "title": "建筑防火与施工消防",
+      "desc": "适用除外边界（不含民爆）、消防车道与救援口、液化气红线、防火分隔与施工动火安全。",
+      "relatedLink": "/knowledge/building-fire-protection-gb55037",
+      "count": 320,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-001",
+            "JLY-DANXUAN-01-002",
+            "JLY-DANXUAN-01-010",
+            "JLY-DANXUAN-01-011",
+            "JLY-DANXUAN-01-014",
+            "JLY-DANXUAN-01-019",
+            "JLY-DANXUAN-01-021",
+            "JLY-DANXUAN-01-027",
+            "JLY-DANXUAN-01-028",
+            "JLY-DANXUAN-01-029",
+            "JLY-DANXUAN-01-030",
+            "JLY-DANXUAN-01-031",
+            "JLY-DANXUAN-01-034",
+            "JLY-DANXUAN-01-037",
+            "JLY-DANXUAN-01-039",
+            "JLY-DANXUAN-01-040",
+            "JLY-DANXUAN-01-043",
+            "JLY-DANXUAN-01-050",
+            "JLY-DANXUAN-01-052",
+            "JLY-DANXUAN-01-054",
+            "JLY-DANXUAN-01-058",
+            "JLY-DANXUAN-01-063",
+            "JLY-DANXUAN-01-064",
+            "JLY-DANXUAN-01-066",
+            "JLY-DANXUAN-01-069",
+            "JLY-DANXUAN-01-073",
+            "JLY-DANXUAN-01-074",
+            "JLY-DANXUAN-01-078",
+            "JLY-DANXUAN-01-080"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-082",
+            "JLY-DANXUAN-03-085",
+            "JLY-DANXUAN-03-087",
+            "JLY-DANXUAN-03-088",
+            "JLY-DANXUAN-03-089",
+            "JLY-DANXUAN-03-090",
+            "JLY-DANXUAN-03-091",
+            "JLY-DANXUAN-03-092",
+            "JLY-DANXUAN-03-094",
+            "JLY-DANXUAN-03-095",
+            "JLY-DANXUAN-03-096",
+            "JLY-DANXUAN-03-097",
+            "JLY-DANXUAN-03-098",
+            "JLY-DANXUAN-03-099"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-001",
+            "JLY-DANXUAN-04-002",
+            "JLY-DANXUAN-04-003",
+            "JLY-DANXUAN-04-005",
+            "JLY-DANXUAN-04-006",
+            "JLY-DANXUAN-04-007",
+            "JLY-DANXUAN-04-008",
+            "JLY-DANXUAN-04-010",
+            "JLY-DANXUAN-04-011",
+            "JLY-DANXUAN-04-012",
+            "JLY-DANXUAN-04-013",
+            "JLY-DANXUAN-04-014",
+            "JLY-DANXUAN-04-015",
+            "JLY-DANXUAN-04-016",
+            "JLY-DANXUAN-04-019",
+            "JLY-DANXUAN-04-021",
+            "JLY-DANXUAN-04-023",
+            "JLY-DANXUAN-04-024",
+            "JLY-DANXUAN-04-025",
+            "JLY-DANXUAN-04-026",
+            "JLY-DANXUAN-04-027",
+            "JLY-DANXUAN-04-028",
+            "JLY-DANXUAN-04-029",
+            "JLY-DANXUAN-04-030",
+            "JLY-DANXUAN-04-031",
+            "JLY-DANXUAN-04-032",
+            "JLY-DANXUAN-04-033",
+            "JLY-DANXUAN-04-034",
+            "JLY-DANXUAN-04-037",
+            "JLY-DANXUAN-04-038",
+            "JLY-DANXUAN-04-039",
+            "JLY-DANXUAN-04-040",
+            "JLY-DANXUAN-04-041",
+            "JLY-DANXUAN-04-042",
+            "JLY-DANXUAN-04-043",
+            "JLY-DANXUAN-04-044",
+            "JLY-DANXUAN-04-045",
+            "JLY-DANXUAN-04-046",
+            "JLY-DANXUAN-04-047",
+            "JLY-DANXUAN-04-051",
+            "JLY-DANXUAN-04-052",
+            "JLY-DANXUAN-04-058",
+            "JLY-DANXUAN-04-059",
+            "JLY-DANXUAN-04-060",
+            "JLY-DANXUAN-04-061",
+            "JLY-DANXUAN-04-062",
+            "JLY-DANXUAN-04-063",
+            "JLY-DANXUAN-04-065",
+            "JLY-DANXUAN-04-066",
+            "JLY-DANXUAN-04-067",
+            "JLY-DANXUAN-04-068",
+            "JLY-DANXUAN-04-070",
+            "JLY-DANXUAN-04-072",
+            "JLY-DANXUAN-04-073",
+            "JLY-DANXUAN-04-075",
+            "JLY-DANXUAN-04-076",
+            "JLY-DANXUAN-04-077",
+            "JLY-DANXUAN-04-078",
+            "JLY-DANXUAN-04-080",
+            "JLY-DANXUAN-04-081",
+            "JLY-DANXUAN-04-082",
+            "JLY-DANXUAN-04-084",
+            "JLY-DANXUAN-04-085",
+            "JLY-DANXUAN-04-086",
+            "JLY-DANXUAN-04-087",
+            "JLY-DANXUAN-04-088",
+            "JLY-DANXUAN-04-090",
+            "JLY-DANXUAN-04-091",
+            "JLY-DANXUAN-04-092",
+            "JLY-DANXUAN-04-093",
+            "JLY-DANXUAN-04-094",
+            "JLY-DANXUAN-04-095",
+            "JLY-DANXUAN-04-097",
+            "JLY-DANXUAN-04-098",
+            "JLY-DANXUAN-04-099",
+            "JLY-DANXUAN-04-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-001",
+            "JLY-DANXUAN-05-002",
+            "JLY-DANXUAN-05-003",
+            "JLY-DANXUAN-05-004",
+            "JLY-DANXUAN-05-005",
+            "JLY-DANXUAN-05-006",
+            "JLY-DANXUAN-05-007",
+            "JLY-DANXUAN-05-008",
+            "JLY-DANXUAN-05-009",
+            "JLY-DANXUAN-05-010",
+            "JLY-DANXUAN-05-011",
+            "JLY-DANXUAN-05-012",
+            "JLY-DANXUAN-05-013",
+            "JLY-DANXUAN-05-014",
+            "JLY-DANXUAN-05-015",
+            "JLY-DANXUAN-05-016",
+            "JLY-DANXUAN-05-018",
+            "JLY-DANXUAN-05-019",
+            "JLY-DANXUAN-05-020",
+            "JLY-DANXUAN-05-022",
+            "JLY-DANXUAN-05-023",
+            "JLY-DANXUAN-05-024",
+            "JLY-DANXUAN-05-025",
+            "JLY-DANXUAN-05-026",
+            "JLY-DANXUAN-05-027",
+            "JLY-DANXUAN-05-028",
+            "JLY-DANXUAN-05-029",
+            "JLY-DANXUAN-05-031",
+            "JLY-DANXUAN-05-033",
+            "JLY-DANXUAN-05-035",
+            "JLY-DANXUAN-05-036",
+            "JLY-DANXUAN-05-037",
+            "JLY-DANXUAN-05-038",
+            "JLY-DANXUAN-05-039",
+            "JLY-DANXUAN-05-040",
+            "JLY-DANXUAN-05-041",
+            "JLY-DANXUAN-05-043",
+            "JLY-DANXUAN-05-044",
+            "JLY-DANXUAN-05-045",
+            "JLY-DANXUAN-05-047",
+            "JLY-DANXUAN-05-051",
+            "JLY-DANXUAN-05-052",
+            "JLY-DANXUAN-05-053",
+            "JLY-DANXUAN-05-054",
+            "JLY-DANXUAN-05-055",
+            "JLY-DANXUAN-05-057",
+            "JLY-DANXUAN-05-062",
+            "JLY-DANXUAN-05-066",
+            "JLY-DANXUAN-05-069",
+            "JLY-DANXUAN-05-070",
+            "JLY-DANXUAN-05-077",
+            "JLY-DANXUAN-05-078",
+            "JLY-DANXUAN-05-081",
+            "JLY-DANXUAN-05-092",
+            "JLY-DANXUAN-05-093",
+            "JLY-DANXUAN-05-094",
+            "JLY-DANXUAN-05-096",
+            "JLY-DANXUAN-05-097",
+            "JLY-DANXUAN-05-098",
+            "JLY-DANXUAN-05-099"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-001",
+            "JLY-DANXUAN-06-003",
+            "JLY-DANXUAN-06-005",
+            "JLY-DANXUAN-06-012",
+            "JLY-DANXUAN-06-013",
+            "JLY-DANXUAN-06-015",
+            "JLY-DANXUAN-06-016",
+            "JLY-DANXUAN-06-018",
+            "JLY-DANXUAN-06-022",
+            "JLY-DANXUAN-06-023",
+            "JLY-DANXUAN-06-024",
+            "JLY-DANXUAN-06-027",
+            "JLY-DANXUAN-06-028",
+            "JLY-DANXUAN-06-031",
+            "JLY-DANXUAN-06-033",
+            "JLY-DANXUAN-06-036",
+            "JLY-DANXUAN-06-038",
+            "JLY-DANXUAN-06-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-001",
+            "JLY-DUOXUAN-01-002",
+            "JLY-DUOXUAN-01-009",
+            "JLY-DUOXUAN-01-010",
+            "JLY-DUOXUAN-01-011",
+            "JLY-DUOXUAN-01-013",
+            "JLY-DUOXUAN-01-014",
+            "JLY-DUOXUAN-01-016",
+            "JLY-DUOXUAN-01-017",
+            "JLY-DUOXUAN-01-020",
+            "JLY-DUOXUAN-01-021",
+            "JLY-DUOXUAN-01-079"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-007",
+            "JLY-DUOXUAN-02-010",
+            "JLY-DUOXUAN-02-013",
+            "JLY-DUOXUAN-02-014",
+            "JLY-DUOXUAN-02-015",
+            "JLY-DUOXUAN-02-016",
+            "JLY-DUOXUAN-02-017",
+            "JLY-DUOXUAN-02-018",
+            "JLY-DUOXUAN-02-021",
+            "JLY-DUOXUAN-02-022",
+            "JLY-DUOXUAN-02-023",
+            "JLY-DUOXUAN-02-025",
+            "JLY-DUOXUAN-02-026",
+            "JLY-DUOXUAN-02-027",
+            "JLY-DUOXUAN-02-028",
+            "JLY-DUOXUAN-02-029",
+            "JLY-DUOXUAN-02-031",
+            "JLY-DUOXUAN-02-033",
+            "JLY-DUOXUAN-02-039",
+            "JLY-DUOXUAN-02-040",
+            "JLY-DUOXUAN-02-041",
+            "JLY-DUOXUAN-02-042",
+            "JLY-DUOXUAN-02-043",
+            "JLY-DUOXUAN-02-045",
+            "JLY-DUOXUAN-02-046",
+            "JLY-DUOXUAN-02-047",
+            "JLY-DUOXUAN-02-048",
+            "JLY-DUOXUAN-02-049",
+            "JLY-DUOXUAN-02-050",
+            "JLY-DUOXUAN-02-051",
+            "JLY-DUOXUAN-02-052",
+            "JLY-DUOXUAN-02-053",
+            "JLY-DUOXUAN-02-054",
+            "JLY-DUOXUAN-02-055",
+            "JLY-DUOXUAN-02-056",
+            "JLY-DUOXUAN-02-057",
+            "JLY-DUOXUAN-02-058",
+            "JLY-DUOXUAN-02-059",
+            "JLY-DUOXUAN-02-061",
+            "JLY-DUOXUAN-02-062",
+            "JLY-DUOXUAN-02-064",
+            "JLY-DUOXUAN-02-065",
+            "JLY-DUOXUAN-02-066",
+            "JLY-DUOXUAN-02-073",
+            "JLY-DUOXUAN-02-083",
+            "JLY-DUOXUAN-02-084",
+            "JLY-DUOXUAN-02-088",
+            "JLY-DUOXUAN-02-089",
+            "JLY-DUOXUAN-02-090",
+            "JLY-DUOXUAN-02-092"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-011",
+            "JLY-DUOXUAN-03-017"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-003",
+            "JLY-PANDUAN-01-004",
+            "JLY-PANDUAN-01-005",
+            "JLY-PANDUAN-01-015",
+            "JLY-PANDUAN-01-016",
+            "JLY-PANDUAN-01-018",
+            "JLY-PANDUAN-01-020",
+            "JLY-PANDUAN-01-021",
+            "JLY-PANDUAN-01-076",
+            "JLY-PANDUAN-01-077",
+            "JLY-PANDUAN-01-078",
+            "JLY-PANDUAN-01-083",
+            "JLY-PANDUAN-01-084",
+            "JLY-PANDUAN-01-086",
+            "JLY-PANDUAN-01-087",
+            "JLY-PANDUAN-01-088",
+            "JLY-PANDUAN-01-089",
+            "JLY-PANDUAN-01-090",
+            "JLY-PANDUAN-01-093",
+            "JLY-PANDUAN-01-095",
+            "JLY-PANDUAN-01-096",
+            "JLY-PANDUAN-01-097",
+            "JLY-PANDUAN-01-098",
+            "JLY-PANDUAN-01-100"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-002",
+            "JLY-PANDUAN-02-004",
+            "JLY-PANDUAN-02-005",
+            "JLY-PANDUAN-02-006",
+            "JLY-PANDUAN-02-008",
+            "JLY-PANDUAN-02-010",
+            "JLY-PANDUAN-02-012",
+            "JLY-PANDUAN-02-014",
+            "JLY-PANDUAN-02-016",
+            "JLY-PANDUAN-02-017",
+            "JLY-PANDUAN-02-020",
+            "JLY-PANDUAN-02-021",
+            "JLY-PANDUAN-02-022",
+            "JLY-PANDUAN-02-023",
+            "JLY-PANDUAN-02-024",
+            "JLY-PANDUAN-02-025",
+            "JLY-PANDUAN-02-026",
+            "JLY-PANDUAN-02-027",
+            "JLY-PANDUAN-02-028",
+            "JLY-PANDUAN-02-029",
+            "JLY-PANDUAN-02-030",
+            "JLY-PANDUAN-02-031",
+            "JLY-PANDUAN-02-033",
+            "JLY-PANDUAN-02-034",
+            "JLY-PANDUAN-02-038",
+            "JLY-PANDUAN-02-040",
+            "JLY-PANDUAN-02-043",
+            "JLY-PANDUAN-02-046",
+            "JLY-PANDUAN-02-053",
+            "JLY-PANDUAN-02-054",
+            "JLY-PANDUAN-02-055",
+            "JLY-PANDUAN-02-056",
+            "JLY-PANDUAN-02-057",
+            "JLY-PANDUAN-02-059",
+            "JLY-PANDUAN-02-060"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-waterproofing-and-concrete-site-control",
+      "kind": "topic",
+      "title": "防水与混凝土结构实务",
+      "desc": "GB 55030 防水年限与淋水蓄水、后浇带、装配式灌浆、预应力与 GB 55008 抗震钢筋/拆除分析。",
+      "relatedLink": "/knowledge/waterproofing-and-concrete-site-control",
+      "count": 253,
+      "refs": [
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-M03"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-001",
+            "JLY-DANXUAN-03-002",
+            "JLY-DANXUAN-03-003",
+            "JLY-DANXUAN-03-004",
+            "JLY-DANXUAN-03-005",
+            "JLY-DANXUAN-03-006",
+            "JLY-DANXUAN-03-008",
+            "JLY-DANXUAN-03-009",
+            "JLY-DANXUAN-03-010",
+            "JLY-DANXUAN-03-011",
+            "JLY-DANXUAN-03-013",
+            "JLY-DANXUAN-03-014",
+            "JLY-DANXUAN-03-015",
+            "JLY-DANXUAN-03-016",
+            "JLY-DANXUAN-03-017",
+            "JLY-DANXUAN-03-018",
+            "JLY-DANXUAN-03-021",
+            "JLY-DANXUAN-03-022",
+            "JLY-DANXUAN-03-023",
+            "JLY-DANXUAN-03-025",
+            "JLY-DANXUAN-03-028",
+            "JLY-DANXUAN-03-030",
+            "JLY-DANXUAN-03-031",
+            "JLY-DANXUAN-03-032",
+            "JLY-DANXUAN-03-033",
+            "JLY-DANXUAN-03-034",
+            "JLY-DANXUAN-03-035",
+            "JLY-DANXUAN-03-036",
+            "JLY-DANXUAN-03-037",
+            "JLY-DANXUAN-03-038",
+            "JLY-DANXUAN-03-039",
+            "JLY-DANXUAN-03-040",
+            "JLY-DANXUAN-03-041",
+            "JLY-DANXUAN-03-042",
+            "JLY-DANXUAN-03-043",
+            "JLY-DANXUAN-03-044",
+            "JLY-DANXUAN-03-045",
+            "JLY-DANXUAN-03-046",
+            "JLY-DANXUAN-03-047",
+            "JLY-DANXUAN-03-048",
+            "JLY-DANXUAN-03-049",
+            "JLY-DANXUAN-03-050",
+            "JLY-DANXUAN-03-051",
+            "JLY-DANXUAN-03-052",
+            "JLY-DANXUAN-03-055",
+            "JLY-DANXUAN-03-056",
+            "JLY-DANXUAN-03-057",
+            "JLY-DANXUAN-03-058",
+            "JLY-DANXUAN-03-059",
+            "JLY-DANXUAN-03-060",
+            "JLY-DANXUAN-03-061",
+            "JLY-DANXUAN-03-062",
+            "JLY-DANXUAN-03-063",
+            "JLY-DANXUAN-03-064",
+            "JLY-DANXUAN-03-065",
+            "JLY-DANXUAN-03-069",
+            "JLY-DANXUAN-03-078",
+            "JLY-DANXUAN-03-079",
+            "JLY-DANXUAN-03-080"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-035"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-017",
+            "JLY-DANXUAN-05-042"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-040",
+            "JLY-DANXUAN-06-044",
+            "JLY-DANXUAN-06-045",
+            "JLY-DANXUAN-06-052",
+            "JLY-DANXUAN-06-053",
+            "JLY-DANXUAN-06-055",
+            "JLY-DANXUAN-06-056",
+            "JLY-DANXUAN-06-057",
+            "JLY-DANXUAN-06-058",
+            "JLY-DANXUAN-06-059",
+            "JLY-DANXUAN-06-060",
+            "JLY-DANXUAN-06-061",
+            "JLY-DANXUAN-06-063",
+            "JLY-DANXUAN-06-064",
+            "JLY-DANXUAN-06-065",
+            "JLY-DANXUAN-06-068",
+            "JLY-DANXUAN-06-078",
+            "JLY-DANXUAN-06-080",
+            "JLY-DANXUAN-06-081",
+            "JLY-DANXUAN-06-082",
+            "JLY-DANXUAN-06-083",
+            "JLY-DANXUAN-06-084",
+            "JLY-DANXUAN-06-085",
+            "JLY-DANXUAN-06-087",
+            "JLY-DANXUAN-06-088",
+            "JLY-DANXUAN-06-091",
+            "JLY-DANXUAN-06-092",
+            "JLY-DANXUAN-06-095",
+            "JLY-DANXUAN-06-096",
+            "JLY-DANXUAN-06-097",
+            "JLY-DANXUAN-06-099",
+            "JLY-DANXUAN-06-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-001",
+            "JLY-DANXUAN-07-002",
+            "JLY-DANXUAN-07-003",
+            "JLY-DANXUAN-07-007",
+            "JLY-DANXUAN-07-008",
+            "JLY-DANXUAN-07-011",
+            "JLY-DANXUAN-07-012",
+            "JLY-DANXUAN-07-015",
+            "JLY-DANXUAN-07-017",
+            "JLY-DANXUAN-07-019",
+            "JLY-DANXUAN-07-020",
+            "JLY-DANXUAN-07-024",
+            "JLY-DANXUAN-07-025",
+            "JLY-DANXUAN-07-026",
+            "JLY-DANXUAN-07-027",
+            "JLY-DANXUAN-07-028",
+            "JLY-DANXUAN-07-029",
+            "JLY-DANXUAN-07-030",
+            "JLY-DANXUAN-07-031",
+            "JLY-DANXUAN-07-033",
+            "JLY-DANXUAN-07-034",
+            "JLY-DANXUAN-07-035",
+            "JLY-DANXUAN-07-036",
+            "JLY-DANXUAN-07-037",
+            "JLY-DANXUAN-07-038",
+            "JLY-DANXUAN-07-039",
+            "JLY-DANXUAN-07-040",
+            "JLY-DANXUAN-07-042",
+            "JLY-DANXUAN-07-044",
+            "JLY-DANXUAN-07-048",
+            "JLY-DANXUAN-07-049",
+            "JLY-DANXUAN-07-050",
+            "JLY-DANXUAN-07-051",
+            "JLY-DANXUAN-07-052",
+            "JLY-DANXUAN-07-053",
+            "JLY-DANXUAN-07-055",
+            "JLY-DANXUAN-07-056",
+            "JLY-DANXUAN-07-057",
+            "JLY-DANXUAN-07-058",
+            "JLY-DANXUAN-07-059",
+            "JLY-DANXUAN-07-060",
+            "JLY-DANXUAN-07-063",
+            "JLY-DANXUAN-07-064",
+            "JLY-DANXUAN-07-066",
+            "JLY-DANXUAN-07-067",
+            "JLY-DANXUAN-07-068",
+            "JLY-DANXUAN-07-070",
+            "JLY-DANXUAN-07-073",
+            "JLY-DANXUAN-07-074",
+            "JLY-DANXUAN-07-075",
+            "JLY-DANXUAN-07-076",
+            "JLY-DANXUAN-07-077",
+            "JLY-DANXUAN-07-078",
+            "JLY-DANXUAN-07-079",
+            "JLY-DANXUAN-07-080",
+            "JLY-DANXUAN-07-081"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-008",
+            "JLY-DANXUAN-08-014",
+            "JLY-DANXUAN-08-016"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-066",
+            "JLY-DUOXUAN-01-067",
+            "JLY-DUOXUAN-01-068",
+            "JLY-DUOXUAN-01-069",
+            "JLY-DUOXUAN-01-070",
+            "JLY-DUOXUAN-01-071",
+            "JLY-DUOXUAN-01-072",
+            "JLY-DUOXUAN-01-073",
+            "JLY-DUOXUAN-01-074",
+            "JLY-DUOXUAN-01-075",
+            "JLY-DUOXUAN-01-076",
+            "JLY-DUOXUAN-01-077",
+            "JLY-DUOXUAN-01-080",
+            "JLY-DUOXUAN-01-081",
+            "JLY-DUOXUAN-01-082",
+            "JLY-DUOXUAN-01-083",
+            "JLY-DUOXUAN-01-084",
+            "JLY-DUOXUAN-01-085",
+            "JLY-DUOXUAN-01-086",
+            "JLY-DUOXUAN-01-087",
+            "JLY-DUOXUAN-01-088",
+            "JLY-DUOXUAN-01-089",
+            "JLY-DUOXUAN-01-090",
+            "JLY-DUOXUAN-01-091",
+            "JLY-DUOXUAN-01-092",
+            "JLY-DUOXUAN-01-093",
+            "JLY-DUOXUAN-01-094",
+            "JLY-DUOXUAN-01-095",
+            "JLY-DUOXUAN-01-096",
+            "JLY-DUOXUAN-01-097",
+            "JLY-DUOXUAN-01-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-004",
+            "JLY-DUOXUAN-02-005",
+            "JLY-DUOXUAN-02-035",
+            "JLY-DUOXUAN-02-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-001",
+            "JLY-DUOXUAN-03-002",
+            "JLY-DUOXUAN-03-003",
+            "JLY-DUOXUAN-03-009",
+            "JLY-DUOXUAN-03-012",
+            "JLY-DUOXUAN-03-013",
+            "JLY-DUOXUAN-03-014",
+            "JLY-DUOXUAN-03-018",
+            "JLY-DUOXUAN-03-019",
+            "JLY-DUOXUAN-03-021",
+            "JLY-DUOXUAN-03-022",
+            "JLY-DUOXUAN-03-024",
+            "JLY-DUOXUAN-03-026",
+            "JLY-DUOXUAN-03-027",
+            "JLY-DUOXUAN-03-028",
+            "JLY-DUOXUAN-03-031",
+            "JLY-DUOXUAN-03-033",
+            "JLY-DUOXUAN-03-035",
+            "JLY-DUOXUAN-03-036",
+            "JLY-DUOXUAN-03-037"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-056",
+            "JLY-PANDUAN-01-059",
+            "JLY-PANDUAN-01-061",
+            "JLY-PANDUAN-01-062",
+            "JLY-PANDUAN-01-063",
+            "JLY-PANDUAN-01-064",
+            "JLY-PANDUAN-01-065",
+            "JLY-PANDUAN-01-067",
+            "JLY-PANDUAN-01-068",
+            "JLY-PANDUAN-01-070",
+            "JLY-PANDUAN-01-071",
+            "JLY-PANDUAN-01-072",
+            "JLY-PANDUAN-01-073",
+            "JLY-PANDUAN-01-074",
+            "JLY-PANDUAN-01-075"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-062",
+            "JLY-PANDUAN-02-066",
+            "JLY-PANDUAN-02-069",
+            "JLY-PANDUAN-02-070",
+            "JLY-PANDUAN-02-075",
+            "JLY-PANDUAN-02-078",
+            "JLY-PANDUAN-02-080",
+            "JLY-PANDUAN-02-082",
+            "JLY-PANDUAN-02-083",
+            "JLY-PANDUAN-02-084",
+            "JLY-PANDUAN-02-085",
+            "JLY-PANDUAN-02-090",
+            "JLY-PANDUAN-02-091",
+            "JLY-PANDUAN-02-092",
+            "JLY-PANDUAN-02-093",
+            "JLY-PANDUAN-02-094",
+            "JLY-PANDUAN-02-095",
+            "JLY-PANDUAN-02-096",
+            "JLY-PANDUAN-02-098",
+            "JLY-PANDUAN-02-099",
+            "JLY-PANDUAN-02-100"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-001",
+            "JLY-PANDUAN-03-002",
+            "JLY-PANDUAN-03-003",
+            "JLY-PANDUAN-03-004",
+            "JLY-PANDUAN-03-005",
+            "JLY-PANDUAN-03-007",
+            "JLY-PANDUAN-03-008",
+            "JLY-PANDUAN-03-009"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-quality-control-and-testing-gb55032",
+      "kind": "topic",
+      "title": "质量控制与第三方检测",
+      "desc": "质量责任追溯、PDCA、三检制与影像留存、四层次划分、观感质量、三种竣工合格日与检测费用单列。",
+      "relatedLink": "/knowledge/quality-control-and-testing-gb55032",
+      "count": 227,
+      "refs": [
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S17",
+            "2024-MK-S25",
+            "2024-MK-S50",
+            "2024-MK-S51",
+            "2024-MK-S69",
+            "2024-MK-M01",
+            "2024-MK-M02",
+            "2024-MK-M03"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-S04",
+            "MK01-MK-S17",
+            "MK01-MK-S25",
+            "MK01-MK-S50",
+            "MK01-MK-S51",
+            "MK01-MK-M81",
+            "MK01-MK-M82",
+            "MK01-MK-M83",
+            "MK01-MK-M85",
+            "MK01-MK-M101",
+            "MK01-MK-M111",
+            "MK01-MK-M112",
+            "MK01-MK-M113",
+            "MK01-MK-M114",
+            "MK01-MK-M120"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-032",
+            "JLY-DANXUAN-02-037",
+            "JLY-DANXUAN-02-038",
+            "JLY-DANXUAN-02-039",
+            "JLY-DANXUAN-02-040",
+            "JLY-DANXUAN-02-043",
+            "JLY-DANXUAN-02-052",
+            "JLY-DANXUAN-02-058"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-006",
+            "JLY-DANXUAN-03-063",
+            "JLY-DANXUAN-03-066",
+            "JLY-DANXUAN-03-077",
+            "JLY-DANXUAN-03-081",
+            "JLY-DANXUAN-03-083",
+            "JLY-DANXUAN-03-084",
+            "JLY-DANXUAN-03-086",
+            "JLY-DANXUAN-03-093",
+            "JLY-DANXUAN-03-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-017",
+            "JLY-DANXUAN-04-018",
+            "JLY-DANXUAN-04-020",
+            "JLY-DANXUAN-04-022",
+            "JLY-DANXUAN-04-048",
+            "JLY-DANXUAN-04-050",
+            "JLY-DANXUAN-04-053",
+            "JLY-DANXUAN-04-054",
+            "JLY-DANXUAN-04-055",
+            "JLY-DANXUAN-04-056",
+            "JLY-DANXUAN-04-057",
+            "JLY-DANXUAN-04-069",
+            "JLY-DANXUAN-04-074"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-017",
+            "JLY-DANXUAN-05-021",
+            "JLY-DANXUAN-05-042",
+            "JLY-DANXUAN-05-067",
+            "JLY-DANXUAN-05-068",
+            "JLY-DANXUAN-05-071",
+            "JLY-DANXUAN-05-072",
+            "JLY-DANXUAN-05-073",
+            "JLY-DANXUAN-05-079",
+            "JLY-DANXUAN-05-083",
+            "JLY-DANXUAN-05-084",
+            "JLY-DANXUAN-05-085",
+            "JLY-DANXUAN-05-086",
+            "JLY-DANXUAN-05-087",
+            "JLY-DANXUAN-05-088",
+            "JLY-DANXUAN-05-089",
+            "JLY-DANXUAN-05-090"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-002",
+            "JLY-DANXUAN-06-006",
+            "JLY-DANXUAN-06-014",
+            "JLY-DANXUAN-06-019",
+            "JLY-DANXUAN-06-040",
+            "JLY-DANXUAN-06-041",
+            "JLY-DANXUAN-06-042",
+            "JLY-DANXUAN-06-043",
+            "JLY-DANXUAN-06-046",
+            "JLY-DANXUAN-06-054",
+            "JLY-DANXUAN-06-062",
+            "JLY-DANXUAN-06-068",
+            "JLY-DANXUAN-06-086",
+            "JLY-DANXUAN-06-089",
+            "JLY-DANXUAN-06-090",
+            "JLY-DANXUAN-06-096"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-001",
+            "JLY-DANXUAN-07-002",
+            "JLY-DANXUAN-07-003",
+            "JLY-DANXUAN-07-012",
+            "JLY-DANXUAN-07-014",
+            "JLY-DANXUAN-07-016",
+            "JLY-DANXUAN-07-019",
+            "JLY-DANXUAN-07-021",
+            "JLY-DANXUAN-07-022",
+            "JLY-DANXUAN-07-023",
+            "JLY-DANXUAN-07-028",
+            "JLY-DANXUAN-07-029",
+            "JLY-DANXUAN-07-041",
+            "JLY-DANXUAN-07-054",
+            "JLY-DANXUAN-07-074",
+            "JLY-DANXUAN-07-080",
+            "JLY-DANXUAN-07-081",
+            "JLY-DANXUAN-07-082",
+            "JLY-DANXUAN-07-086",
+            "JLY-DANXUAN-07-087",
+            "JLY-DANXUAN-07-089",
+            "JLY-DANXUAN-07-091",
+            "JLY-DANXUAN-07-092",
+            "JLY-DANXUAN-07-094",
+            "JLY-DANXUAN-07-095",
+            "JLY-DANXUAN-07-096",
+            "JLY-DANXUAN-07-097",
+            "JLY-DANXUAN-07-099",
+            "JLY-DANXUAN-07-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-001",
+            "JLY-DANXUAN-08-002",
+            "JLY-DANXUAN-08-003",
+            "JLY-DANXUAN-08-004",
+            "JLY-DANXUAN-08-005",
+            "JLY-DANXUAN-08-006",
+            "JLY-DANXUAN-08-008",
+            "JLY-DANXUAN-08-010",
+            "JLY-DANXUAN-08-011",
+            "JLY-DANXUAN-08-015",
+            "JLY-DANXUAN-08-018",
+            "JLY-DANXUAN-08-020",
+            "JLY-DANXUAN-08-021",
+            "JLY-DANXUAN-08-022",
+            "JLY-DANXUAN-08-023",
+            "JLY-DANXUAN-08-024",
+            "JLY-DANXUAN-08-025",
+            "JLY-DANXUAN-08-027",
+            "JLY-DANXUAN-08-031",
+            "JLY-DANXUAN-08-033",
+            "JLY-DANXUAN-08-036",
+            "JLY-DANXUAN-08-039",
+            "JLY-DANXUAN-08-044",
+            "JLY-DANXUAN-08-055",
+            "JLY-DANXUAN-08-057",
+            "JLY-DANXUAN-08-058"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-061",
+            "JLY-DUOXUAN-01-067",
+            "JLY-DUOXUAN-01-073",
+            "JLY-DUOXUAN-01-097"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-003",
+            "JLY-DUOXUAN-02-009",
+            "JLY-DUOXUAN-02-011",
+            "JLY-DUOXUAN-02-012",
+            "JLY-DUOXUAN-02-019",
+            "JLY-DUOXUAN-02-024",
+            "JLY-DUOXUAN-02-030",
+            "JLY-DUOXUAN-02-032",
+            "JLY-DUOXUAN-02-034",
+            "JLY-DUOXUAN-02-036",
+            "JLY-DUOXUAN-02-037",
+            "JLY-DUOXUAN-02-069",
+            "JLY-DUOXUAN-02-070",
+            "JLY-DUOXUAN-02-074",
+            "JLY-DUOXUAN-02-075",
+            "JLY-DUOXUAN-02-076",
+            "JLY-DUOXUAN-02-077",
+            "JLY-DUOXUAN-02-078",
+            "JLY-DUOXUAN-02-079",
+            "JLY-DUOXUAN-02-080",
+            "JLY-DUOXUAN-02-085",
+            "JLY-DUOXUAN-02-087",
+            "JLY-DUOXUAN-02-093",
+            "JLY-DUOXUAN-02-094",
+            "JLY-DUOXUAN-02-095"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-010",
+            "JLY-DUOXUAN-03-013",
+            "JLY-DUOXUAN-03-015",
+            "JLY-DUOXUAN-03-025",
+            "JLY-DUOXUAN-03-029",
+            "JLY-DUOXUAN-03-039",
+            "JLY-DUOXUAN-03-044",
+            "JLY-DUOXUAN-03-046",
+            "JLY-DUOXUAN-03-049",
+            "JLY-DUOXUAN-03-050",
+            "JLY-DUOXUAN-03-051",
+            "JLY-DUOXUAN-03-054",
+            "JLY-DUOXUAN-03-055",
+            "JLY-DUOXUAN-03-060",
+            "JLY-DUOXUAN-03-062"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-040",
+            "JLY-PANDUAN-01-042",
+            "JLY-PANDUAN-01-082",
+            "JLY-PANDUAN-01-091",
+            "JLY-PANDUAN-01-099"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-001",
+            "JLY-PANDUAN-02-003",
+            "JLY-PANDUAN-02-007",
+            "JLY-PANDUAN-02-013",
+            "JLY-PANDUAN-02-036",
+            "JLY-PANDUAN-02-039",
+            "JLY-PANDUAN-02-041",
+            "JLY-PANDUAN-02-042",
+            "JLY-PANDUAN-02-044",
+            "JLY-PANDUAN-02-047",
+            "JLY-PANDUAN-02-048",
+            "JLY-PANDUAN-02-049",
+            "JLY-PANDUAN-02-062",
+            "JLY-PANDUAN-02-064",
+            "JLY-PANDUAN-02-065",
+            "JLY-PANDUAN-02-066",
+            "JLY-PANDUAN-02-079",
+            "JLY-PANDUAN-02-086",
+            "JLY-PANDUAN-02-087",
+            "JLY-PANDUAN-02-089",
+            "JLY-PANDUAN-02-091",
+            "JLY-PANDUAN-02-092"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-007",
+            "JLY-PANDUAN-03-008",
+            "JLY-PANDUAN-03-009",
+            "JLY-PANDUAN-03-010",
+            "JLY-PANDUAN-03-014",
+            "JLY-PANDUAN-03-015",
+            "JLY-PANDUAN-03-017",
+            "JLY-PANDUAN-03-019",
+            "JLY-PANDUAN-03-020",
+            "JLY-PANDUAN-03-021",
+            "JLY-PANDUAN-03-023",
+            "JLY-PANDUAN-03-024",
+            "JLY-PANDUAN-03-025",
+            "JLY-PANDUAN-03-027"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-site-safety-health-gb55034",
+      "kind": "topic",
+      "title": "现场安全卫生 GB 55034",
+      "desc": "生活区封闭、13类安全防控、36/24/12V 安全电压、有限空间持证监护与全工种劳保速查。",
+      "relatedLink": "/knowledge/site-safety-health-gb55034",
+      "count": 159,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-001",
+            "JLY-DANXUAN-01-002",
+            "JLY-DANXUAN-01-010",
+            "JLY-DANXUAN-01-011",
+            "JLY-DANXUAN-01-014",
+            "JLY-DANXUAN-01-019",
+            "JLY-DANXUAN-01-021",
+            "JLY-DANXUAN-01-027",
+            "JLY-DANXUAN-01-028",
+            "JLY-DANXUAN-01-029",
+            "JLY-DANXUAN-01-030",
+            "JLY-DANXUAN-01-031",
+            "JLY-DANXUAN-01-034",
+            "JLY-DANXUAN-01-037",
+            "JLY-DANXUAN-01-039",
+            "JLY-DANXUAN-01-040",
+            "JLY-DANXUAN-01-043",
+            "JLY-DANXUAN-01-050",
+            "JLY-DANXUAN-01-052",
+            "JLY-DANXUAN-01-054",
+            "JLY-DANXUAN-01-058",
+            "JLY-DANXUAN-01-063",
+            "JLY-DANXUAN-01-064",
+            "JLY-DANXUAN-01-066",
+            "JLY-DANXUAN-01-069",
+            "JLY-DANXUAN-01-073",
+            "JLY-DANXUAN-01-074",
+            "JLY-DANXUAN-01-078",
+            "JLY-DANXUAN-01-080"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-070",
+            "JLY-DANXUAN-04-072",
+            "JLY-DANXUAN-04-073",
+            "JLY-DANXUAN-04-075",
+            "JLY-DANXUAN-04-076",
+            "JLY-DANXUAN-04-077",
+            "JLY-DANXUAN-04-078",
+            "JLY-DANXUAN-04-080",
+            "JLY-DANXUAN-04-081",
+            "JLY-DANXUAN-04-082",
+            "JLY-DANXUAN-04-084",
+            "JLY-DANXUAN-04-085",
+            "JLY-DANXUAN-04-086",
+            "JLY-DANXUAN-04-087",
+            "JLY-DANXUAN-04-088",
+            "JLY-DANXUAN-04-090",
+            "JLY-DANXUAN-04-091",
+            "JLY-DANXUAN-04-092",
+            "JLY-DANXUAN-04-093",
+            "JLY-DANXUAN-04-094",
+            "JLY-DANXUAN-04-095",
+            "JLY-DANXUAN-04-097",
+            "JLY-DANXUAN-04-098",
+            "JLY-DANXUAN-04-099",
+            "JLY-DANXUAN-04-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-001",
+            "JLY-DANXUAN-05-002",
+            "JLY-DANXUAN-05-003",
+            "JLY-DANXUAN-05-004",
+            "JLY-DANXUAN-05-005",
+            "JLY-DANXUAN-05-006",
+            "JLY-DANXUAN-05-007",
+            "JLY-DANXUAN-05-008",
+            "JLY-DANXUAN-05-009",
+            "JLY-DANXUAN-05-010",
+            "JLY-DANXUAN-05-011",
+            "JLY-DANXUAN-05-012",
+            "JLY-DANXUAN-05-013",
+            "JLY-DANXUAN-05-014",
+            "JLY-DANXUAN-05-015",
+            "JLY-DANXUAN-05-016",
+            "JLY-DANXUAN-05-018",
+            "JLY-DANXUAN-05-019",
+            "JLY-DANXUAN-05-020",
+            "JLY-DANXUAN-05-022",
+            "JLY-DANXUAN-05-023",
+            "JLY-DANXUAN-05-024",
+            "JLY-DANXUAN-05-025",
+            "JLY-DANXUAN-05-026",
+            "JLY-DANXUAN-05-027",
+            "JLY-DANXUAN-05-028",
+            "JLY-DANXUAN-05-029",
+            "JLY-DANXUAN-05-031",
+            "JLY-DANXUAN-05-033",
+            "JLY-DANXUAN-05-035",
+            "JLY-DANXUAN-05-036",
+            "JLY-DANXUAN-05-037",
+            "JLY-DANXUAN-05-038",
+            "JLY-DANXUAN-05-039",
+            "JLY-DANXUAN-05-040",
+            "JLY-DANXUAN-05-041",
+            "JLY-DANXUAN-05-043",
+            "JLY-DANXUAN-05-044",
+            "JLY-DANXUAN-05-045",
+            "JLY-DANXUAN-05-047"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-098"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-001",
+            "JLY-DUOXUAN-01-002",
+            "JLY-DUOXUAN-01-009",
+            "JLY-DUOXUAN-01-010",
+            "JLY-DUOXUAN-01-011",
+            "JLY-DUOXUAN-01-013",
+            "JLY-DUOXUAN-01-014",
+            "JLY-DUOXUAN-01-016",
+            "JLY-DUOXUAN-01-017",
+            "JLY-DUOXUAN-01-020",
+            "JLY-DUOXUAN-01-021",
+            "JLY-DUOXUAN-01-050",
+            "JLY-DUOXUAN-01-079"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-039",
+            "JLY-DUOXUAN-02-040",
+            "JLY-DUOXUAN-02-041",
+            "JLY-DUOXUAN-02-042",
+            "JLY-DUOXUAN-02-043",
+            "JLY-DUOXUAN-02-045",
+            "JLY-DUOXUAN-02-046",
+            "JLY-DUOXUAN-02-047",
+            "JLY-DUOXUAN-02-048",
+            "JLY-DUOXUAN-02-049",
+            "JLY-DUOXUAN-02-050",
+            "JLY-DUOXUAN-02-051",
+            "JLY-DUOXUAN-02-052",
+            "JLY-DUOXUAN-02-053",
+            "JLY-DUOXUAN-02-054",
+            "JLY-DUOXUAN-02-055",
+            "JLY-DUOXUAN-02-056",
+            "JLY-DUOXUAN-02-057",
+            "JLY-DUOXUAN-02-058",
+            "JLY-DUOXUAN-02-059",
+            "JLY-DUOXUAN-02-061",
+            "JLY-DUOXUAN-02-062"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-011",
+            "JLY-DUOXUAN-03-017"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-003",
+            "JLY-PANDUAN-01-004",
+            "JLY-PANDUAN-01-005",
+            "JLY-PANDUAN-01-015",
+            "JLY-PANDUAN-01-016",
+            "JLY-PANDUAN-01-018",
+            "JLY-PANDUAN-01-020",
+            "JLY-PANDUAN-01-021"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-008",
+            "JLY-PANDUAN-02-010",
+            "JLY-PANDUAN-02-012",
+            "JLY-PANDUAN-02-014",
+            "JLY-PANDUAN-02-016",
+            "JLY-PANDUAN-02-017",
+            "JLY-PANDUAN-02-018",
+            "JLY-PANDUAN-02-020",
+            "JLY-PANDUAN-02-021",
+            "JLY-PANDUAN-02-022",
+            "JLY-PANDUAN-02-023",
+            "JLY-PANDUAN-02-024",
+            "JLY-PANDUAN-02-025",
+            "JLY-PANDUAN-02-026",
+            "JLY-PANDUAN-02-027",
+            "JLY-PANDUAN-02-028",
+            "JLY-PANDUAN-02-029",
+            "JLY-PANDUAN-02-030",
+            "JLY-PANDUAN-02-031"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-concealed-work-uninspected-handling",
+      "kind": "topic",
+      "title": "隐蔽工程未报验处理",
+      "desc": "未通知私自覆盖 vs 监理未按时检查的费用工期归属，含 GB 55032 隐蔽影像留存与缺失资料补检。",
+      "relatedLink": "/knowledge/concealed-work-uninspected-handling",
+      "count": 126,
+      "refs": [
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S17",
+            "2024-MK-S25",
+            "2024-MK-S51",
+            "2024-MK-S69",
+            "2024-MK-M01",
+            "2024-MK-M02",
+            "2024-MK-M03"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-S04",
+            "MK01-MK-S17",
+            "MK01-MK-S25",
+            "MK01-MK-S51",
+            "MK01-MK-M81",
+            "MK01-MK-M82",
+            "MK01-MK-M83",
+            "MK01-MK-M85",
+            "MK01-MK-M101",
+            "MK01-MK-M111",
+            "MK01-MK-M112",
+            "MK01-MK-M113",
+            "MK01-MK-M114",
+            "MK01-MK-M120"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-032",
+            "JLY-DANXUAN-02-037",
+            "JLY-DANXUAN-02-038",
+            "JLY-DANXUAN-02-039",
+            "JLY-DANXUAN-02-040",
+            "JLY-DANXUAN-02-043",
+            "JLY-DANXUAN-02-052",
+            "JLY-DANXUAN-02-058"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-03",
+          "ids": [
+            "JLY-DANXUAN-03-006",
+            "JLY-DANXUAN-03-063",
+            "JLY-DANXUAN-03-066"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-074"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-017",
+            "JLY-DANXUAN-05-021",
+            "JLY-DANXUAN-05-042"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-06",
+          "ids": [
+            "JLY-DANXUAN-06-040",
+            "JLY-DANXUAN-06-068",
+            "JLY-DANXUAN-06-096"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-001",
+            "JLY-DANXUAN-07-002",
+            "JLY-DANXUAN-07-003",
+            "JLY-DANXUAN-07-012",
+            "JLY-DANXUAN-07-019",
+            "JLY-DANXUAN-07-028",
+            "JLY-DANXUAN-07-029",
+            "JLY-DANXUAN-07-074",
+            "JLY-DANXUAN-07-080",
+            "JLY-DANXUAN-07-081",
+            "JLY-DANXUAN-07-082",
+            "JLY-DANXUAN-07-086",
+            "JLY-DANXUAN-07-087",
+            "JLY-DANXUAN-07-089",
+            "JLY-DANXUAN-07-091",
+            "JLY-DANXUAN-07-092",
+            "JLY-DANXUAN-07-094",
+            "JLY-DANXUAN-07-095",
+            "JLY-DANXUAN-07-096",
+            "JLY-DANXUAN-07-097",
+            "JLY-DANXUAN-07-099",
+            "JLY-DANXUAN-07-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-001",
+            "JLY-DANXUAN-08-002",
+            "JLY-DANXUAN-08-003",
+            "JLY-DANXUAN-08-004",
+            "JLY-DANXUAN-08-005",
+            "JLY-DANXUAN-08-006",
+            "JLY-DANXUAN-08-008",
+            "JLY-DANXUAN-08-010",
+            "JLY-DANXUAN-08-011",
+            "JLY-DANXUAN-08-015",
+            "JLY-DANXUAN-08-018",
+            "JLY-DANXUAN-08-020",
+            "JLY-DANXUAN-08-021",
+            "JLY-DANXUAN-08-022",
+            "JLY-DANXUAN-08-023",
+            "JLY-DANXUAN-08-024",
+            "JLY-DANXUAN-08-025",
+            "JLY-DANXUAN-08-027",
+            "JLY-DANXUAN-08-031",
+            "JLY-DANXUAN-08-033",
+            "JLY-DANXUAN-08-036",
+            "JLY-DANXUAN-08-039",
+            "JLY-DANXUAN-08-044",
+            "JLY-DANXUAN-08-055",
+            "JLY-DANXUAN-08-057",
+            "JLY-DANXUAN-08-058"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-061",
+            "JLY-DUOXUAN-01-067",
+            "JLY-DUOXUAN-01-073",
+            "JLY-DUOXUAN-01-097"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-093"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-013",
+            "JLY-DUOXUAN-03-039",
+            "JLY-DUOXUAN-03-044",
+            "JLY-DUOXUAN-03-046",
+            "JLY-DUOXUAN-03-049",
+            "JLY-DUOXUAN-03-050",
+            "JLY-DUOXUAN-03-051",
+            "JLY-DUOXUAN-03-054",
+            "JLY-DUOXUAN-03-055",
+            "JLY-DUOXUAN-03-060",
+            "JLY-DUOXUAN-03-062"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-040",
+            "JLY-PANDUAN-01-042"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-007",
+            "JLY-PANDUAN-02-013",
+            "JLY-PANDUAN-02-062",
+            "JLY-PANDUAN-02-066",
+            "JLY-PANDUAN-02-089",
+            "JLY-PANDUAN-02-091",
+            "JLY-PANDUAN-02-092"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-007",
+            "JLY-PANDUAN-03-008",
+            "JLY-PANDUAN-03-009",
+            "JLY-PANDUAN-03-010",
+            "JLY-PANDUAN-03-014",
+            "JLY-PANDUAN-03-015",
+            "JLY-PANDUAN-03-017",
+            "JLY-PANDUAN-03-019",
+            "JLY-PANDUAN-03-020",
+            "JLY-PANDUAN-03-021",
+            "JLY-PANDUAN-03-023",
+            "JLY-PANDUAN-03-024",
+            "JLY-PANDUAN-03-025",
+            "JLY-PANDUAN-03-027"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-special-construction-plan-approval",
+      "kind": "topic",
+      "title": "专项施工方案审批",
+      "desc": "住建部 37 号令危大/超危大范围速查对照、5 名以上专家论证与建办质〔2024〕63号严重缺陷清单。",
+      "relatedLink": "/knowledge/special-construction-plan-approval",
+      "count": 111,
+      "refs": [
+        {
+          "paperId": "2022-lf",
+          "ids": [
+            "2022-LF-S32",
+            "2022-LF-S33",
+            "2022-LF-S34",
+            "2022-LF-S35",
+            "2022-LF-S36",
+            "2022-LF-M68",
+            "2022-LF-M69",
+            "2022-LF-M70",
+            "2022-LF-M71"
+          ]
+        },
+        {
+          "paperId": "2023-lf",
+          "ids": [
+            "2023-LF-S04",
+            "2023-LF-S43",
+            "2023-LF-S47",
+            "2023-LF-M58",
+            "2023-LF-M73",
+            "2023-LF-M80"
+          ]
+        },
+        {
+          "paperId": "2024-lf",
+          "ids": [
+            "2024-LF-S06",
+            "2024-LF-S13",
+            "2024-LF-S14",
+            "2024-LF-S24",
+            "2024-LF-S28",
+            "2024-LF-M78"
+          ]
+        },
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S42"
+          ]
+        },
+        {
+          "paperId": "mk01-lf",
+          "ids": [
+            "MK01-LF-S06",
+            "MK01-LF-S13",
+            "MK01-LF-S14",
+            "MK01-LF-S24",
+            "MK01-LF-S28"
+          ]
+        },
+        {
+          "paperId": "mk02-lf",
+          "ids": [
+            "MK02-LF-S06",
+            "MK02-LF-S13",
+            "MK02-LF-S14",
+            "MK02-LF-S24",
+            "MK02-LF-S28",
+            "MK02-LF-M78"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-003",
+            "JLY-DANXUAN-01-004",
+            "JLY-DANXUAN-01-005",
+            "JLY-DANXUAN-01-006",
+            "JLY-DANXUAN-01-007",
+            "JLY-DANXUAN-01-008",
+            "JLY-DANXUAN-01-012",
+            "JLY-DANXUAN-01-013",
+            "JLY-DANXUAN-01-017",
+            "JLY-DANXUAN-01-018",
+            "JLY-DANXUAN-01-020",
+            "JLY-DANXUAN-01-022",
+            "JLY-DANXUAN-01-023",
+            "JLY-DANXUAN-01-024",
+            "JLY-DANXUAN-01-025",
+            "JLY-DANXUAN-01-026",
+            "JLY-DANXUAN-01-032",
+            "JLY-DANXUAN-01-033",
+            "JLY-DANXUAN-01-035",
+            "JLY-DANXUAN-01-038",
+            "JLY-DANXUAN-01-041",
+            "JLY-DANXUAN-01-042",
+            "JLY-DANXUAN-01-044",
+            "JLY-DANXUAN-01-045",
+            "JLY-DANXUAN-01-046",
+            "JLY-DANXUAN-01-047",
+            "JLY-DANXUAN-01-049",
+            "JLY-DANXUAN-01-051",
+            "JLY-DANXUAN-01-053",
+            "JLY-DANXUAN-01-056",
+            "JLY-DANXUAN-01-057",
+            "JLY-DANXUAN-01-059",
+            "JLY-DANXUAN-01-061",
+            "JLY-DANXUAN-01-062",
+            "JLY-DANXUAN-01-065",
+            "JLY-DANXUAN-01-068",
+            "JLY-DANXUAN-01-075",
+            "JLY-DANXUAN-01-076",
+            "JLY-DANXUAN-01-077",
+            "JLY-DANXUAN-01-079"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-030",
+            "JLY-DANXUAN-02-031",
+            "JLY-DANXUAN-02-050",
+            "JLY-DANXUAN-02-051",
+            "JLY-DANXUAN-02-056",
+            "JLY-DANXUAN-02-063",
+            "JLY-DANXUAN-02-064",
+            "JLY-DANXUAN-02-066",
+            "JLY-DANXUAN-02-067",
+            "JLY-DANXUAN-02-074"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-030"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-019"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-003",
+            "JLY-DUOXUAN-01-005",
+            "JLY-DUOXUAN-01-006",
+            "JLY-DUOXUAN-01-007",
+            "JLY-DUOXUAN-01-008",
+            "JLY-DUOXUAN-01-015",
+            "JLY-DUOXUAN-01-019",
+            "JLY-DUOXUAN-01-022",
+            "JLY-DUOXUAN-01-023",
+            "JLY-DUOXUAN-01-024",
+            "JLY-DUOXUAN-01-043",
+            "JLY-DUOXUAN-01-053",
+            "JLY-DUOXUAN-01-054",
+            "JLY-DUOXUAN-01-058"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-006",
+            "JLY-DUOXUAN-02-044"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-002",
+            "JLY-PANDUAN-01-006",
+            "JLY-PANDUAN-01-010",
+            "JLY-PANDUAN-01-011",
+            "JLY-PANDUAN-01-012",
+            "JLY-PANDUAN-01-013",
+            "JLY-PANDUAN-01-022",
+            "JLY-PANDUAN-01-023",
+            "JLY-PANDUAN-01-024",
+            "JLY-PANDUAN-01-025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-subcontract-safety-liability",
+      "kind": "topic",
+      "title": "分包安全责任划分",
+      "desc": "总包连带、分包主责与监理四步履职判定，对照建质规〔2024〕5号与应急〔2026〕45号重大隐患边界。",
+      "relatedLink": "/knowledge/subcontract-safety-liability",
+      "count": 96,
+      "refs": [
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-001",
+            "JLY-DANXUAN-01-002",
+            "JLY-DANXUAN-01-010",
+            "JLY-DANXUAN-01-011",
+            "JLY-DANXUAN-01-014",
+            "JLY-DANXUAN-01-019",
+            "JLY-DANXUAN-01-021",
+            "JLY-DANXUAN-01-027",
+            "JLY-DANXUAN-01-028",
+            "JLY-DANXUAN-01-029",
+            "JLY-DANXUAN-01-030",
+            "JLY-DANXUAN-01-031",
+            "JLY-DANXUAN-01-034",
+            "JLY-DANXUAN-01-037",
+            "JLY-DANXUAN-01-039",
+            "JLY-DANXUAN-01-040",
+            "JLY-DANXUAN-01-043",
+            "JLY-DANXUAN-01-050",
+            "JLY-DANXUAN-01-052",
+            "JLY-DANXUAN-01-054",
+            "JLY-DANXUAN-01-058",
+            "JLY-DANXUAN-01-063",
+            "JLY-DANXUAN-01-064",
+            "JLY-DANXUAN-01-066",
+            "JLY-DANXUAN-01-069",
+            "JLY-DANXUAN-01-073",
+            "JLY-DANXUAN-01-074",
+            "JLY-DANXUAN-01-078",
+            "JLY-DANXUAN-01-080"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-04",
+          "ids": [
+            "JLY-DANXUAN-04-070",
+            "JLY-DANXUAN-04-072",
+            "JLY-DANXUAN-04-073",
+            "JLY-DANXUAN-04-076",
+            "JLY-DANXUAN-04-077",
+            "JLY-DANXUAN-04-081",
+            "JLY-DANXUAN-04-082",
+            "JLY-DANXUAN-04-086",
+            "JLY-DANXUAN-04-090",
+            "JLY-DANXUAN-04-093",
+            "JLY-DANXUAN-04-095",
+            "JLY-DANXUAN-04-098",
+            "JLY-DANXUAN-04-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-001",
+            "JLY-DANXUAN-05-005",
+            "JLY-DANXUAN-05-011",
+            "JLY-DANXUAN-05-012",
+            "JLY-DANXUAN-05-013",
+            "JLY-DANXUAN-05-016",
+            "JLY-DANXUAN-05-023",
+            "JLY-DANXUAN-05-024",
+            "JLY-DANXUAN-05-031",
+            "JLY-DANXUAN-05-044",
+            "JLY-DANXUAN-05-045"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-019"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-001",
+            "JLY-DUOXUAN-01-002",
+            "JLY-DUOXUAN-01-010",
+            "JLY-DUOXUAN-01-011",
+            "JLY-DUOXUAN-01-013",
+            "JLY-DUOXUAN-01-014",
+            "JLY-DUOXUAN-01-016",
+            "JLY-DUOXUAN-01-017",
+            "JLY-DUOXUAN-01-020",
+            "JLY-DUOXUAN-01-021",
+            "JLY-DUOXUAN-01-050",
+            "JLY-DUOXUAN-01-079"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-039",
+            "JLY-DUOXUAN-02-040",
+            "JLY-DUOXUAN-02-043",
+            "JLY-DUOXUAN-02-045",
+            "JLY-DUOXUAN-02-047",
+            "JLY-DUOXUAN-02-050",
+            "JLY-DUOXUAN-02-056",
+            "JLY-DUOXUAN-02-058",
+            "JLY-DUOXUAN-02-059",
+            "JLY-DUOXUAN-02-061"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-011",
+            "JLY-DUOXUAN-03-017"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-003",
+            "JLY-PANDUAN-01-004",
+            "JLY-PANDUAN-01-005",
+            "JLY-PANDUAN-01-015",
+            "JLY-PANDUAN-01-016",
+            "JLY-PANDUAN-01-018",
+            "JLY-PANDUAN-01-020",
+            "JLY-PANDUAN-01-021"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-008",
+            "JLY-PANDUAN-02-010",
+            "JLY-PANDUAN-02-012",
+            "JLY-PANDUAN-02-016",
+            "JLY-PANDUAN-02-018",
+            "JLY-PANDUAN-02-021",
+            "JLY-PANDUAN-02-024",
+            "JLY-PANDUAN-02-025",
+            "JLY-PANDUAN-02-028",
+            "JLY-PANDUAN-02-031"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-supervision-duty-and-site-pitfalls",
+      "kind": "topic",
+      "title": "监理职责与特种作业",
+      "desc": "总监委托边界、规划/细则区别、10类19项特种作业（应急〔2026〕45号）与第三方检测留痕闭环。",
+      "relatedLink": "/knowledge/supervision-duty-and-site-pitfalls",
+      "count": 75,
+      "refs": [
+        {
+          "paperId": "2022-lf",
+          "ids": [
+            "2022-LF-S25",
+            "2022-LF-S27",
+            "2022-LF-S28",
+            "2022-LF-S30",
+            "2022-LF-S31",
+            "2022-LF-S40",
+            "2022-LF-S41",
+            "2022-LF-S42",
+            "2022-LF-M64",
+            "2022-LF-M67",
+            "2022-LF-M74"
+          ]
+        },
+        {
+          "paperId": "2023-lf",
+          "ids": [
+            "2023-LF-S27",
+            "2023-LF-S29",
+            "2023-LF-S40",
+            "2023-LF-S41",
+            "2023-LF-S44",
+            "2023-LF-M60",
+            "2023-LF-M75",
+            "2023-LF-M78"
+          ]
+        },
+        {
+          "paperId": "2024-lf",
+          "ids": [
+            "2024-LF-S21",
+            "2024-LF-S23",
+            "2024-LF-S31",
+            "2024-LF-S33",
+            "2024-LF-S34",
+            "2024-LF-S35",
+            "2024-LF-S38",
+            "2024-LF-S39",
+            "2024-LF-M77",
+            "2024-LF-M79"
+          ]
+        },
+        {
+          "paperId": "mk01-lf",
+          "ids": [
+            "MK01-LF-S21",
+            "MK01-LF-S23",
+            "MK01-LF-S31",
+            "MK01-LF-S33",
+            "MK01-LF-S34",
+            "MK01-LF-S38",
+            "MK01-LF-S39",
+            "MK01-LF-M77",
+            "MK01-LF-M79"
+          ]
+        },
+        {
+          "paperId": "mk02-lf",
+          "ids": [
+            "MK02-LF-S18",
+            "MK02-LF-S21",
+            "MK02-LF-S31",
+            "MK02-LF-S33",
+            "MK02-LF-S34",
+            "MK02-LF-S35",
+            "MK02-LF-S38",
+            "MK02-LF-S39",
+            "MK02-LF-M77",
+            "MK02-LF-M79"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-003",
+            "JLY-DANXUAN-02-004",
+            "JLY-DANXUAN-02-007",
+            "JLY-DANXUAN-02-009",
+            "JLY-DANXUAN-02-011",
+            "JLY-DANXUAN-02-013",
+            "JLY-DANXUAN-02-020",
+            "JLY-DANXUAN-02-023",
+            "JLY-DANXUAN-02-026",
+            "JLY-DANXUAN-02-027",
+            "JLY-DANXUAN-02-048",
+            "JLY-DANXUAN-02-057",
+            "JLY-DANXUAN-02-084",
+            "JLY-DANXUAN-02-085",
+            "JLY-DANXUAN-02-086"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-033",
+            "JLY-DUOXUAN-01-036",
+            "JLY-DUOXUAN-01-037",
+            "JLY-DUOXUAN-01-040",
+            "JLY-DUOXUAN-01-041",
+            "JLY-DUOXUAN-01-045",
+            "JLY-DUOXUAN-01-050",
+            "JLY-DUOXUAN-01-060"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-032",
+            "JLY-PANDUAN-01-037",
+            "JLY-PANDUAN-01-050"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-018"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-scaffolding-safety-inspection",
+      "kind": "topic",
+      "title": "脚手架巡视与考点",
+      "desc": "地基排水、剪刀撑与连墙件限值、盘扣与轮扣区别及现场挑错清单。",
+      "relatedLink": "/knowledge/scaffolding-safety-inspection",
+      "count": 65,
+      "refs": [
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S42"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-003",
+            "JLY-DANXUAN-01-004",
+            "JLY-DANXUAN-01-005",
+            "JLY-DANXUAN-01-006",
+            "JLY-DANXUAN-01-007",
+            "JLY-DANXUAN-01-008",
+            "JLY-DANXUAN-01-012",
+            "JLY-DANXUAN-01-013",
+            "JLY-DANXUAN-01-017",
+            "JLY-DANXUAN-01-018",
+            "JLY-DANXUAN-01-020",
+            "JLY-DANXUAN-01-022",
+            "JLY-DANXUAN-01-023",
+            "JLY-DANXUAN-01-024",
+            "JLY-DANXUAN-01-025",
+            "JLY-DANXUAN-01-026",
+            "JLY-DANXUAN-01-032",
+            "JLY-DANXUAN-01-033",
+            "JLY-DANXUAN-01-035",
+            "JLY-DANXUAN-01-038",
+            "JLY-DANXUAN-01-041",
+            "JLY-DANXUAN-01-042",
+            "JLY-DANXUAN-01-044",
+            "JLY-DANXUAN-01-045",
+            "JLY-DANXUAN-01-046",
+            "JLY-DANXUAN-01-047",
+            "JLY-DANXUAN-01-049",
+            "JLY-DANXUAN-01-051",
+            "JLY-DANXUAN-01-053",
+            "JLY-DANXUAN-01-056",
+            "JLY-DANXUAN-01-057",
+            "JLY-DANXUAN-01-059",
+            "JLY-DANXUAN-01-061",
+            "JLY-DANXUAN-01-062",
+            "JLY-DANXUAN-01-065",
+            "JLY-DANXUAN-01-068",
+            "JLY-DANXUAN-01-075",
+            "JLY-DANXUAN-01-076",
+            "JLY-DANXUAN-01-077",
+            "JLY-DANXUAN-01-079"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-05",
+          "ids": [
+            "JLY-DANXUAN-05-030"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-019"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-003",
+            "JLY-DUOXUAN-01-005",
+            "JLY-DUOXUAN-01-006",
+            "JLY-DUOXUAN-01-007",
+            "JLY-DUOXUAN-01-008",
+            "JLY-DUOXUAN-01-015",
+            "JLY-DUOXUAN-01-019",
+            "JLY-DUOXUAN-01-022",
+            "JLY-DUOXUAN-01-023",
+            "JLY-DUOXUAN-01-024"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-02",
+          "ids": [
+            "JLY-DUOXUAN-02-006",
+            "JLY-DUOXUAN-02-044"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-002",
+            "JLY-PANDUAN-01-006",
+            "JLY-PANDUAN-01-010",
+            "JLY-PANDUAN-01-011",
+            "JLY-PANDUAN-01-012",
+            "JLY-PANDUAN-01-013",
+            "JLY-PANDUAN-01-022",
+            "JLY-PANDUAN-01-023",
+            "JLY-PANDUAN-01-024",
+            "JLY-PANDUAN-01-025"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-quality-defect-and-histogram",
+      "kind": "topic",
+      "title": "质量缺陷与直方图",
+      "desc": "缺陷六步/事故五步程序、六种异常直方图成因及 GB 55032 返修加固验收依据。",
+      "relatedLink": "/knowledge/quality-defect-and-histogram",
+      "count": 52,
+      "refs": [
+        {
+          "paperId": "2022-lf",
+          "ids": [
+            "2022-LF-S09"
+          ]
+        },
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S07",
+            "2024-MK-S08",
+            "2024-MK-S09",
+            "2024-MK-S41"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-S07",
+            "MK01-MK-S08",
+            "MK01-MK-S09",
+            "MK01-MK-S69",
+            "MK01-MK-S79",
+            "MK01-MK-S80",
+            "MK01-MK-M98",
+            "MK01-MK-M116"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-042"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-089"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-010",
+            "JLY-DANXUAN-08-011",
+            "JLY-DANXUAN-08-015",
+            "JLY-DANXUAN-08-018",
+            "JLY-DANXUAN-08-020",
+            "JLY-DANXUAN-08-021",
+            "JLY-DANXUAN-08-028",
+            "JLY-DANXUAN-08-030",
+            "JLY-DANXUAN-08-031",
+            "JLY-DANXUAN-08-032",
+            "JLY-DANXUAN-08-034",
+            "JLY-DANXUAN-08-036",
+            "JLY-DANXUAN-08-040",
+            "JLY-DANXUAN-08-042",
+            "JLY-DANXUAN-08-043",
+            "JLY-DANXUAN-08-045",
+            "JLY-DANXUAN-08-047",
+            "JLY-DANXUAN-08-048",
+            "JLY-DANXUAN-08-050",
+            "JLY-DANXUAN-08-051",
+            "JLY-DANXUAN-08-052",
+            "JLY-DANXUAN-08-053",
+            "JLY-DANXUAN-08-054",
+            "JLY-DANXUAN-08-057",
+            "JLY-DANXUAN-08-058"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-100"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-038",
+            "JLY-DUOXUAN-03-044",
+            "JLY-DUOXUAN-03-045",
+            "JLY-DUOXUAN-03-054",
+            "JLY-DUOXUAN-03-058",
+            "JLY-DUOXUAN-03-059",
+            "JLY-DUOXUAN-03-061",
+            "JLY-DUOXUAN-03-062"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-043"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-017",
+            "JLY-PANDUAN-03-030"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-delay-extension-and-claim",
+      "kind": "topic",
+      "title": "工程延期与费用索赔",
+      "desc": "场外道路、不可抗力、新工艺与甲供设备试车（含竣工后联调联试）索赔传导逻辑。",
+      "relatedLink": "/knowledge/delay-extension-and-claim",
+      "count": 31,
+      "refs": [
+        {
+          "paperId": "2023-ht",
+          "ids": [
+            "2023-HT-S23",
+            "2023-HT-S34",
+            "2023-HT-M56",
+            "2023-HT-M64",
+            "2023-HT-M78"
+          ]
+        },
+        {
+          "paperId": "2024-ht",
+          "ids": [
+            "2024-HT-S05",
+            "2024-HT-S42"
+          ]
+        },
+        {
+          "paperId": "2025-ht",
+          "ids": [
+            "2025-HT-S46",
+            "2025-HT-M65",
+            "2025-HT-M75"
+          ]
+        },
+        {
+          "paperId": "mk01-ht",
+          "ids": [
+            "MK01-HT-S05",
+            "MK01-HT-S42"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-060"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-077"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-07",
+          "ids": [
+            "JLY-DANXUAN-07-089"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-009",
+            "JLY-DANXUAN-08-010",
+            "JLY-DANXUAN-08-011",
+            "JLY-DANXUAN-08-015",
+            "JLY-DANXUAN-08-018",
+            "JLY-DANXUAN-08-020",
+            "JLY-DANXUAN-08-021",
+            "JLY-DANXUAN-08-031",
+            "JLY-DANXUAN-08-036",
+            "JLY-DANXUAN-08-057",
+            "JLY-DANXUAN-08-058"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-057"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-03",
+          "ids": [
+            "JLY-DUOXUAN-03-044",
+            "JLY-DUOXUAN-03-054",
+            "JLY-DUOXUAN-03-062"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-017"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-surety-contract-mode-and-period",
+      "kind": "topic",
+      "title": "保证方式与保证期间",
+      "desc": "《民法典》一般保证默认认定、先诉抗辩权与六个月保证期间实战计算。",
+      "relatedLink": "/knowledge/surety-contract-mode-and-period",
+      "count": 7,
+      "refs": [
+        {
+          "paperId": "2023-ht",
+          "ids": [
+            "2023-HT-S02"
+          ]
+        },
+        {
+          "paperId": "2024-ht",
+          "ids": [
+            "2024-HT-M55",
+            "2024-HT-M56"
+          ]
+        },
+        {
+          "paperId": "2025-ht",
+          "ids": [
+            "2025-HT-S04",
+            "2025-HT-M63"
+          ]
+        },
+        {
+          "paperId": "mk01-ht",
+          "ids": [
+            "MK01-HT-M55",
+            "MK01-HT-M56"
+          ]
+        }
+      ]
+    }
+  ]
+}

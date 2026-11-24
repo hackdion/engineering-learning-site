@@ -79,9 +79,9 @@ ${unitLines}
 
 ${sceneLines}
 
-## 工程术语 {#terms}
+## 工程术语与巡视实战卡 {#terms}
 
-20 张词卡按「脚手架与模板」「暖通与管道」两组，看图认构件，正式叫法、现场叫法、易混词与规范表述对照。
+${TERMS.length} 张词卡按「脚手架与模板」「暖通与管道」「结构与混凝土」「防水与围护」「监理实务与安全」五组，看图认构件，正式叫法、现场叫法、巡视限值红线与规范表述对照。
 
 ${termLines}
 `
@@ -109,7 +109,7 @@ export function engineeringMapSearchRecords(base: string) {
     return [page, ...items]
   }))
 
-  // 工程术语 20 词：每张词卡一条记录，标题锚点对应 /engineering-map/#term-XX。
+  // 工程术语 45 词：每张词卡一条记录，标题锚点对应 /engineering-map/#term-XX。
   const termRecords = TERMS.map((t) => ({
     id: `${base}engineering-map/#term-${t.id}`,
     title: `${t.id} ${t.term}`,
@@ -119,6 +119,7 @@ export function engineeringMapSearchRecords(base: string) {
       `现场叫法：${t.slang.join('、')}`,
       t.confuse.length ? `易混：${t.confuse.map((c) => c.word).join('、')}` : '',
       t.look ?? '',
+      t.inspect ? [...t.inspect.limits, t.inspect.redline, t.inspect.action].join(' ') : '',
       t.say
     ].filter(Boolean).join(' ')
   }))

@@ -18,6 +18,7 @@ import {
   loadPaper,
   loadRecords,
   loadStateFor,
+  loadTopics,
   paperUrl,
   questionScore,
   saveRecord,
@@ -40,6 +41,7 @@ const confirmSubmit = ref(false)
 const paused = ref(false)
 const sheetOpen = ref(false)
 const redoIds = ref<string[]>([])
+const topicRelatedLink = ref('')
 const practiceMode = ref<'exam' | 'study'>('exam')
 const peekAll = ref(false)
 const checkedIds = ref<Set<string>>(new Set())
@@ -357,25 +359,76 @@ const tick = () => {
 onMounted(async () => {
   const params = new URLSearchParams(window.location.search)
   const id = params.get('id') || ''
-  if (!id) {
+  const topicId = params.get('topic') || ''
+  if (!id && !topicId) {
     error.value = '没有指定要做的卷，请从试卷总览里选一卷。'
     loading.value = false
     return
   }
   try {
     const index = await loadIndex()
-    const found = index.papers.find((p) => p.id === id)
-    if (!found) throw new Error('找不到这份卷')
-    meta.value = found
-    all.value = await loadPaper(id)
-    loading.value = false
-    if (found.selfScore) {
-      caseMode.value = true
-      return
+    let paperId = id
+    if (topicId) {
+      const topicsIdx = await loadTopics()
+      const bucket = topicsIdx.buckets.find((b) => b.id === topicId)
+      if (!bucket) throw new Error('找不到这个专项刷题包')
+      topicRelatedLink.value = bucket.relatedLink || ''
+      const loadedPapers = await Promise.all(
+        bucket.refs.map(async (r) => ({ paperId: r.paperId, ids: new Set(r.ids), qs: await loadPaper(r.paperId) }))
+      )
+      const picked: ExamQuestion[] = []
+      let seq = 1
+      for (const item of loadedPapers) {
+        for (const q of item.qs) {
+          if (!item.ids.has(q.id)) continue
+          picked.push({ ...q, id: `${item.paperId}:${q.id}`, no: seq++ })
+        }
+      }
+      if (!picked.length) throw new Error('该专项暂未匹配到客观题')
+      const singleCount = picked.filter((q) => q.type === 'single').length
+      const multiCount = picked.filter((q) => q.type === 'multi').length
+      const fullScore = Math.round((singleCount * index.scoring.single + multiCount * index.scoring.multi) * 10) / 10
+      paperId = `topic-${bucket.id}`
+      meta.value = {
+        id: paperId,
+        title: bucket.title,
+        year: null,
+        kind: 'mock',
+        subject: bucket.kind === 'law' ? '规范专项' : '实务专题专项',
+        subjectKey: 'topic',
+        subjectName: bucket.desc,
+        durationMinutes: Math.max(15, Math.ceil(picked.length * 0.8)),
+        selfScore: false,
+        strictCount: picked.length,
+        expectedSingle: singleCount,
+        expectedMulti: multiCount,
+        expectedCases: 0,
+        collected: picked.length,
+        singleCount,
+        multiCount,
+        caseCount: 0,
+        excludedCount: 0,
+        missingCount: 0,
+        complete: true,
+        fullScore,
+        scoring: index.scoring
+      }
+      all.value = picked
+      practiceMode.value = 'study'
+    } else {
+      const found = index.papers.find((p) => p.id === id)
+      if (!found) throw new Error('找不到这份卷')
+      meta.value = found
+      all.value = await loadPaper(id)
+      loading.value = false
+      if (found.selfScore) {
+        caseMode.value = true
+        return
+      }
     }
 
     if (params.get('redo') === 'wrong') {
-      const record = loadRecords().papers[id]
+      const record = loadRecords().papers[paperId]
       redoIds.value = record?.wrong ?? []
       if (redoIds.value.length === 0) {
         error.value = '这份卷在本机没有错题记录。'
@@ -384,7 +437,7 @@ onMounted(async () => {
       }
     }
 
-    const saved = loadStateFor(id, all.value)
+    const saved = loadStateFor(paperId, all.value)
     // 上次的正常作答与本轮错题重做不通用，模式不同就回到开始前
     const savedRedo = saved?.redoIds ?? []
     const sameMode = savedRedo.length === redoIds.value.length && savedRedo.every((qid, i) => qid === redoIds.value[i])
@@ -443,6 +496,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
       <p v-if="state && state.submittedAt && !redoIds.length" class="ep-intro__resume">本机留着上一次的成绩，可以直接重考一次。</p>
       <div class="ep-intro__actions">
         <button type="button" class="hd-btn" @click="start(true)">{{ redoIds.length ? '开始重做' : state && state.submittedAt ? '再考一次' : '开始作答' }}</button>
+        <a v-if="topicRelatedLink" class="hd-btn hd-btn--paper" :href="withBase(topicRelatedLink)">先看配套规范/专题 →</a>
         <a class="ep-intro__back" :href="withBase('/exams/')">返回试卷总览</a>
       </div>
     </div>

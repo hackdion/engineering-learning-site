@@ -302,6 +302,7 @@ export default defineConfig({
                 { text: '施工质量控制通用规范（GB 55032—2022）', link: '/law/gb55032-2022-zhiliang-kongzhi' },
                 { text: '施工现场安全卫生通用规范（GB 55034—2022）', link: '/law/gb55034-2022-anquan-weisheng' },
                 { text: '建筑防火通用规范（GB 55037—2022）', link: '/law/gb55037-2022-jianzhu-fanghuo' },
+                { text: '建设工程监理规范（GB/T 50319—2013）', link: '/law/gbt50319-2013-jianli-guifan' },
                 { text: '建设工程监理工作规程（XJJ 088—2018）', link: '/law/xjj088-2018-jianli-guicheng' },
                 { text: '危大工程安全管理规程（XJJ 133—2021）', link: '/law/xjj133-2021-weida-guicheng' }
               ]

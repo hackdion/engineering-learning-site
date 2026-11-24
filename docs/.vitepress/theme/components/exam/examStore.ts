@@ -91,6 +91,21 @@ export interface ExamIndex {
   papers: PaperMeta[]
 }
 
+export interface ExamTopicBucket {
+  id: string
+  kind: 'law' | 'topic'
+  title: string
+  desc: string
+  relatedLink: string
+  count: number
+  refs: { paperId: string; ids: string[] }[]
+}
+
+export interface ExamTopicsIndex {
+  generated: string
+  buckets: ExamTopicBucket[]
+}
+
 /** 本机保存的一次作答（未交卷或已交卷）。 */
 export interface ExamState {
   v: 1
@@ -224,10 +239,12 @@ export async function fetchJson<T>(url: string): Promise<T> {
 }
 
 export const loadIndex = () => fetchJson<ExamIndex>('/exams/index.json')
+export const loadTopics = () => fetchJson<ExamTopicsIndex>('/exams/topics.json')
 export const loadPaper = (id: string) => fetchJson<ExamQuestion[]>(`/exams/${id}.json`)
 
 export const figureUrl = (name: string) => withBase(`/exams/figures/${name}`)
 export const paperUrl = (id: string, redo = false) => withBase(`/exams/paper?id=${id}${redo ? '&redo=wrong' : ''}`)
+export const topicPaperUrl = (topicId: string) => withBase(`/exams/paper?topic=${encodeURIComponent(topicId)}`)
 
 /** 单选题得分：答对得满分，答错或未答 0 分。 */
 export function singleScore(selected: string[] | undefined, answer: string[], scoring: Scoring): number {

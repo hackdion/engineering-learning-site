@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="可研决策阶段钻孔勘察、地层水位剖面与投资决策蓝图">
+<defs>
+  <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#D9D1BC" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="bp-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <line x1="0" y1="0" x2="0" y2="10" stroke="#8A6A2F" stroke-width="1.2" opacity="0.35"/>
+  </pattern>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E5A9E"/>
+  </marker>
+  <marker id="arr-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#14212E"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #14212E; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .title { font-size: 16px; font-weight: 700; }
+  .sub { font-size: 11.5px; fill: #334452; }
+  .lbl { font-size: 12px; font-weight: 600; }
+  .sm { font-size: 10.5px; fill: #334452; }
+  .blue { fill: #0E5A9E; }
+  .teal { fill: #0E7C86; }
+  .green { fill: #2E7A4F; }
+  .danger { fill: #D63B22; }
+  .white { fill: #FFFFFF; }
+  .ink-line { stroke: #14212E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .blue-line { stroke: #0E5A9E; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .teal-line { stroke: #0E7C86; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .danger-line { stroke: #D63B22; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .dash { stroke-dasharray: 5 4; }
+</style>
+<rect width="800" height="480" fill="#FAF6EB"/>
+<rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
+<rect x="14" y="14" width="772" height="42" fill="#142231"/>
+<text x="28" y="40" class="title white">阶段 02 · 可研决策与选址勘察蓝图</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-02 · 选址勘察/可研批复/核准备案</text>
+
+  <!-- 上方：选址勘察剖面 -->
+  <rect x="30" y="70" width="740" height="216" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="46" y="94" class="lbl blue">一、选址勘察与场地地质条件探明</text>
+  <!-- 地层 -->
+  <rect x="52" y="170" width="696" height="28" fill="#EFE9D9" stroke="#14212E" stroke-width="1.2"/>
+  <rect x="52" y="198" width="696" height="36" fill="#DCEBFA" stroke="#0E7C86" stroke-width="1.2"/>
+  <rect x="52" y="234" width="696" height="38" fill="url(#bp-hatch)" stroke="#14212E" stroke-width="1.4"/>
+  <text x="66" y="188" class="sm">① 素填土 / 粉质黏土层</text>
+  <text x="66" y="220" class="sm teal">② 稳定地下水位线与卵石透水层</text>
+  <text x="66" y="257" class="sm">③ 中风化基岩（持力层评价）</text>
+  <!-- 勘察钻机与钻孔 -->
+  <polygon points="215,170 232,110 249,170" fill="none" stroke="#14212E" stroke-width="2"/>
+  <rect x="223" y="152" width="18" height="18" fill="#FFC72C" stroke="#14212E" stroke-width="1.3"/>
+  <rect x="229" y="170" width="6" height="94" fill="#0E7C86"/>
+  <text x="232" y="103" text-anchor="middle" class="sm teal">选址钻孔 ZK1</text>
+
+  <polygon points="525,170 542,110 559,170" fill="none" stroke="#14212E" stroke-width="2"/>
+  <rect x="533" y="152" width="18" height="18" fill="#FFC72C" stroke="#14212E" stroke-width="1.3"/>
+  <rect x="539" y="170" width="6" height="94" fill="#0E7C86"/>
+  <text x="542" y="103" text-anchor="middle" class="sm teal">比选钻孔 ZK2</text>
+
+  <rect x="315" y="114" width="150" height="44" rx="6" fill="#EFE9D9" stroke="#14212E" stroke-width="1.3"/>
+  <text x="390" y="133" text-anchor="middle" class="sm">场址稳定性与适宜性评价</text>
+  <text x="390" y="149" text-anchor="middle" class="sm">钻探 + 测量 + 土工试验</text>
+
+  <!-- 下方：决策与对外手续 -->
+  <rect x="30" y="298" width="236" height="122" rx="8" fill="#DCEBFA" stroke="#0E5A9E" stroke-width="1.8"/>
+  <text x="148" y="324" text-anchor="middle" class="lbl blue">政府投资 · 可研批复</text>
+  <text x="148" y="348" text-anchor="middle" class="sm">论证技术经济可行性与资金</text>
+  <text x="148" y="368" text-anchor="middle" class="sm">报发展改革等部门审批</text>
+  <text x="148" y="394" text-anchor="middle" class="sm blue">产出：可研报告及批复文件</text>
+
+  <rect x="282" y="298" width="236" height="122" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>
+  <text x="400" y="324" text-anchor="middle" class="lbl">企业内部投资决策</text>
+  <text x="400" y="348" text-anchor="middle" class="sm">收益风险与投资估算论证</text>
+  <text x="400" y="368" text-anchor="middle" class="sm">企业治理决策与对外审批分开</text>
+  <text x="400" y="394" text-anchor="middle" class="sm">产出：内部决策决议</text>
+
+  <rect x="534" y="298" width="236" height="122" rx="8" fill="#E8F5EE" stroke="#2E7A4F" stroke-width="1.8"/>
+  <text x="652" y="324" text-anchor="middle" class="lbl green">企业对外 · 核准 / 备案</text>
+  <text x="652" y="348" text-anchor="middle" class="sm">核准类：提交项目申请书</text>
+  <text x="652" y="368" text-anchor="middle" class="sm">备案类：开工前在线告知信息</text>
+  <text x="652" y="394" text-anchor="middle" class="sm green">产出：核准文件或备案证明</text>
+
+<rect x="14" y="436" width="772" height="30" fill="#EFE9D9" stroke="#14212E" stroke-width="1.5"/>
+<rect x="26" y="446" width="12" height="12" rx="2" fill="#0E7C86" stroke="#14212E" stroke-width="1"/><text x="44" y="456" class="sm">地质钻孔/水位</text><rect x="139" y="446" width="12" height="12" rx="2" fill="#FFC72C" stroke="#14212E" stroke-width="1"/><text x="157" y="456" class="sm">勘察钻机</text><rect x="219" y="446" width="12" height="12" rx="2" fill="#0E5A9E" stroke="#14212E" stroke-width="1"/><text x="237" y="456" class="sm">政府可研审批</text><rect x="321" y="446" width="12" height="12" rx="2" fill="#2E7A4F" stroke="#14212E" stroke-width="1"/><text x="339" y="456" class="sm">企业核准备案</text>
+<text x="772" y="455" text-anchor="end" class="mono sm">DWG EM-02</text>
+</svg>

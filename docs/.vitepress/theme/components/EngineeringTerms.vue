@@ -4,17 +4,20 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import FigureZoom from '../FigureZoom.vue'
-import { TERMS, TERM_GROUPS, termPhotos, type TermCard, type TermPhoto } from '../data/engineeringTerms'
+import { TERMS, TERM_GROUPS, termPhotos, type TermCard, type TermGroupId, type TermPhoto } from '../data/engineeringTerms'
 
-type FilterId = 'all' | 'scaffold' | 'hvac' | 'photo'
+type FilterId = 'all' | TermGroupId | 'inspect' | 'photo'
 
 const byId: Record<string, TermCard> = {}
 TERMS.forEach((t) => { byId[t.id] = t })
 
+const groupOrder = Object.keys(TERM_GROUPS) as TermGroupId[]
+const inspectCount = TERMS.filter((t) => Boolean(t.inspect)).length
+
 const filters: { id: FilterId; label: string }[] = [
   { id: 'all', label: `全部（${TERMS.length}）` },
-  { id: 'scaffold', label: `脚手架与模板（${TERMS.filter((t) => t.group === 'scaffold').length}）` },
-  { id: 'hvac', label: `暖通与管道（${TERMS.filter((t) => t.group === 'hvac').length}）` },
+  ...groupOrder.map((g) => ({ id: g as FilterId, label: `${TERM_GROUPS[g]}（${TERMS.filter((t) => t.group === g).length}）` })),
+  { id: 'inspect', label: `巡视实战卡（${inspectCount}）` },
   { id: 'photo', label: `含实拍对照（${Object.keys(termPhotos).length}）` }
 ]
 
@@ -24,7 +27,7 @@ const query = ref('')
 const openId = ref<string | null>(null)
 
 const current = computed(() => (openId.value ? byId[openId.value] ?? null : null))
-const groupName = (g: string) => g === 'scaffold' || g === 'hvac' ? TERM_GROUPS[g] : g
+const groupName = (g: string) => (g in TERM_GROUPS ? TERM_GROUPS[g as TermGroupId] : g === 'inspect' ? '巡视实战卡' : g === 'photo' ? '含实拍对照' : g)
 const photoOf = (id: string): TermPhoto | undefined => termPhotos[id]
 
 // 易混词若对应另一张词卡，直接给出互跳链接（按正式名包含关系判断）。
@@ -34,10 +37,23 @@ const confuseTarget = (card: TermCard, word: string): TermCard | null => {
 }
 
 const matches = (t: TermCard) => {
-  if (filter.value === 'photo' ? !termPhotos[t.id] : filter.value !== 'all' && t.group !== filter.value) return false
+  if (filter.value === 'photo' && !termPhotos[t.id]) return false
+  else if (filter.value === 'inspect' && !t.inspect) return false
+  else if (filter.value !== 'all' && filter.value !== 'photo' && filter.value !== 'inspect' && t.group !== filter.value) return false
   const q = query.value.toLowerCase()
   if (!q) return true
-  const hay = [t.term, t.plain, t.say, t.basis, t.figure, t.id, t.look ?? '', t.listTitle ?? '', t.question ?? '']
+  const hay = [
+    t.term,
+    t.plain,
+    t.say,
+    t.basis,
+    t.figure,
+    t.id,
+    t.look ?? '',
+    t.listTitle ?? '',
+    t.question ?? '',
+    ...(t.inspect ? [...t.inspect.limits, t.inspect.redline, t.inspect.action] : [])
+  ]
     .concat(t.slang)
     .concat(t.confuse.flatMap((c) => [c.word, c.diff]))
     .concat(t.links.map((id) => byId[id]?.term ?? ''))
@@ -48,14 +64,14 @@ const matches = (t: TermCard) => {
 
 const shown = computed(() => TERMS.filter(matches))
 const groupedList = computed(() =>
-  (Object.keys(TERM_GROUPS) as ('scaffold' | 'hvac')[])
+  groupOrder
     .map((g) => ({ g, terms: shown.value.filter((t) => t.group === g) }))
     .filter((x) => x.terms.length > 0)
 )
 const countText = computed(() => {
   let s = `共 ${shown.value.length} 张词卡`
   if (query.value) s += `（搜索「${query.value}」）`
-  if (filter.value !== 'all') s += `（${groupName(filter.value === 'photo' ? 'photo' : (filter.value as 'scaffold' | 'hvac'))}）`
+  if (filter.value !== 'all') s += `（${groupName(filter.value)}）`
   return s
 })
 
@@ -68,7 +84,7 @@ const openCard = (id: string) => {
 const closeCard = () => { location.hash = '#terms' }
 
 const onHashChange = () => {
-  const m = /^#term-([AB]\d{1,2})$/.exec(decodeURIComponent(location.hash))
+  const m = /^#term-([A-E]\d{1,2})$/.exec(decodeURIComponent(location.hash))
   openId.value = m && byId[m[1]] ? m[1] : null
 }
 onMounted(() => {
@@ -83,9 +99,9 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))
     <!-- 词表 -->
     <template v-if="!current">
       <header class="et__head">
-        <h2>工程术语</h2>
-        <p class="et__lede">看图认构件，先找它的位置，再记它的名字。点「含实拍对照」看带照片的词卡。</p>
-        <p class="et__meta">20 张词卡 · 脚手架与模板（A1～A10）· 暖通与管道（B1～B10）· 现场俗称按具体场景使用</p>
+        <h2>工程术语与巡视实战卡</h2>
+        <p class="et__lede">看图认构件，手机端随手核对限值与红线。点「巡视实战卡」直达高频施工与检测要点。</p>
+        <p class="et__meta">{{ TERMS.length }} 张词卡 · 脚手架与模板（A1～A10）· 暖通与管道（B1～B10）· 结构与混凝土（C1～C9）· 防水与围护（D1～D8）· 监理实务与安全（E1～E8）</p>
       </header>
 
       <div class="et__toolbar">
@@ -182,11 +198,12 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))
                 </span>
                 <span v-else class="et__figure" aria-hidden="true" v-html="t.svg" />
                 <span v-if="!t.listTitle" class="et__card-t">{{ cardTitle(t) }}</span>
+                <span v-if="t.inspect" class="et__inspect-pill">巡视卡 · {{ t.inspect.limits[0] }}</span>
                 <span v-if="t.look" class="et__hint">{{ t.look }}</span>
               </button>
             </div>
           </section>
-          <p v-if="!shown.length" class="et__empty">没有匹配的词卡。换个关键词，或点「全部（20）」。</p>
+          <p v-if="!shown.length" class="et__empty">没有匹配的词卡。换个关键词，或点「全部（{{ TERMS.length }}）」。</p>
         </template>
       </main>
     </template>
@@ -198,6 +215,15 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))
         <span class="et__badge">{{ current.id }} · {{ groupName(current.group) }}</span>
       </div>
       <h3 class="et__detail-title">{{ current.term }}</h3>
+
+      <section v-if="current.inspect" class="et__inspect-card" aria-label="现场巡视实战卡">
+        <h4>现场巡视实战卡</h4>
+        <ul class="et__inspect-limits">
+          <li v-for="lim in current.inspect.limits" :key="lim">{{ lim }}</li>
+        </ul>
+        <p class="et__inspect-redline"><strong class="is-danger">红线禁忌：</strong>{{ current.inspect.redline }}</p>
+        <p class="et__inspect-action"><strong>监理处置：</strong>{{ current.inspect.action }}</p>
+      </section>
 
       <section v-if="current.nodeCompare" class="et__sec">
         <h4>在节点上找什么</h4>
@@ -389,6 +415,19 @@ onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))
 .et__figure--photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 .et__card--comparison .et__figure--photo img { width: auto; max-width: 100%; max-height: 250px; aspect-ratio: auto; }
 .et__empty { grid-column: 1 / -1; padding: 24px; background: var(--hd-card); border: 2px solid var(--hd-line); border-radius: 12px; color: var(--hd-ink-2); }
+.et__inspect-pill {
+  display: inline-block; align-self: flex-start; padding: 2px 8px; border-radius: 4px;
+  background: var(--hd-accent-soft); color: var(--hd-accent); font-size: 12px; font-weight: 700;
+}
+.et__inspect-card {
+  margin: 14px 0 18px; padding: 14px 16px;
+  border: 2px solid var(--hd-ink); border-top: 4px solid var(--hd-accent); border-radius: 10px;
+  background: var(--hd-paper);
+}
+.et__inspect-card h4 { margin: 0 0 8px; font-size: 16px; color: var(--hd-accent); }
+.et__inspect-limits { margin: 0 0 8px; padding-left: 18px; font-size: 14px; line-height: 1.65; }
+.et__inspect-redline { margin: 6px 0; font-size: 14px; line-height: 1.6; }
+.et__inspect-action { margin: 6px 0 0; font-size: 14px; line-height: 1.6; color: var(--hd-ink-2); }
 
 .et__detail { padding: 24px; background: var(--hd-card); border: 2px solid var(--hd-line); border-radius: 12px; }
 .et__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }

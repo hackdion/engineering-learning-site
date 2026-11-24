@@ -21,8 +21,8 @@ export const monitoringSources = [
   ['《建设工程监理概论》第五章第三节', '/textbook/chapter-05/section-03'],
   ['互动课件 · 项目监理机构', '/courses/ppt-gl-5-3']
 ];
-const qualityLaw = 'https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_e42ecef60e9146af83cf9846821fac6c.html';
-const testingLaw = 'https://www.mohurd.gov.cn/gongkai/zhengce/gzk/art/2024/art_17337_770018.html';
+const qualityLaw = '/law/zhiliang-tiaoli';
+const testingLaw = '/law/zhiliang-jiance-banfa';
 const practice = '常见分工 · 示例';
 const textbook = '教材职责';
 const legal = '法定责任';

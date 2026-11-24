@@ -115,7 +115,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'quality',
     summary: '未通知私自覆盖 vs 监理未按时检查的费用工期归属，含 GB 55032 隐蔽影像留存与缺失资料补检。',
     tags: ['GB 55032', 'XJJ 088', '质量条例'],
-    laws: ['zhiliang-tiaoli', 'gb55032-2022-zhiliang-kongzhi', 'xjj088-2018-jianli-guicheng'],
+    laws: ['zhiliang-tiaoli', 'gb55032-2022-zhiliang-kongzhi', 'gbt50319-2013-jianli-guifan', 'xjj088-2018-jianli-guicheng'],
     sections: [
       { book: 'anli', section: '3.9' },
       { book: 'zhiliang', section: '3.1' }
@@ -144,7 +144,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'duty',
     summary: '场外道路、不可抗力、新工艺与甲供设备试车（含竣工后联调联试）索赔传导逻辑。',
     tags: ['GF-2017-0201', '建筑法'],
-    laws: ['jianzhufa', 'gb55032-2022-zhiliang-kongzhi'],
+    laws: ['jianzhufa', 'gb55032-2022-zhiliang-kongzhi', 'gbt50319-2013-jianli-guifan'],
     sections: [
       { book: 'anli', section: '3.18' },
       { book: 'hetong', section: '5.4' }
@@ -176,7 +176,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'duty',
     summary: '总监委托边界、规划/细则区别、10类19项特种作业（应急〔2026〕45号）与第三方检测留痕闭环。',
     tags: ['XJJ 088', '57号令', '应急〔2026〕45号'],
-    laws: ['xjj088-2018-jianli-guicheng', 'zhiliang-jiance-banfa', 'anquan-tiaoli'],
+    laws: ['gbt50319-2013-jianli-guifan', 'xjj088-2018-jianli-guicheng', 'zhiliang-jiance-banfa', 'anquan-tiaoli'],
     sections: [
       { book: 'gailun', section: '5.3' },
       { book: 'gailun', section: '6.2' },
@@ -229,7 +229,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'quality',
     summary: '质量责任追溯、PDCA、三检制与影像留存、四层次划分、观感质量、三种竣工合格日与检测费用单列。',
     tags: ['GB 55032', '57号令', '质量条例'],
-    laws: ['gb55032-2022-zhiliang-kongzhi', 'zhiliang-jiance-banfa', 'zhiliang-tiaoli'],
+    laws: ['gb55032-2022-zhiliang-kongzhi', 'gbt50319-2013-jianli-guifan', 'zhiliang-jiance-banfa', 'zhiliang-tiaoli'],
     sections: [
       { book: 'zhiliang', section: '2.4' },
       { book: 'zhiliang', section: '3.1' },

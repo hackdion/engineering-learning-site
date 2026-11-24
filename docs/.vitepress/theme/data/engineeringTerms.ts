@@ -2,7 +2,13 @@
 // 文案与三级依据标签沿用 2026-11-16 收口的内部样张版本；现场俗称注明「现场俗称，各地不同」；
 // 示意图均为原创线稿 SVG，实拍图均标注作者与 CC 许可（图片在 docs/public/images/terms/）。
 
-export type TermGroupId = 'scaffold' | 'hvac'
+export type TermGroupId = 'scaffold' | 'hvac' | 'structure' | 'waterproof' | 'supervision'
+
+export interface TermInspectCard {
+  limits: string[]
+  redline: string
+  action: string
+}
 
 export interface TermConfuse {
   word: string
@@ -62,11 +68,16 @@ export interface TermCard {
   look?: string
   /** A1 节点对照说明 */
   nodeCompare?: { name: string; hint: string }[]
+  /** 现场巡视实战卡（硬指标限值 / 红线 / 监理处置动作） */
+  inspect?: TermInspectCard
 }
 
 export const TERM_GROUPS: Record<TermGroupId, string> = {
   scaffold: '脚手架与模板',
-  hvac: '暖通与管道'
+  hvac: '暖通与管道',
+  structure: '结构与混凝土',
+  waterproof: '防水与围护',
+  supervision: '监理实务与安全'
 }
 
 export const termPhotos: Record<string, TermPhoto> = {
@@ -823,5 +834,580 @@ export const TERMS: TermCard[] = [
       { href: '/engineering-map/#units', label: '工程地图 · 单位与岗位' }
     ],
     look: 'DN 是管件上的规格标记，读作「D N 一百」，和用尺量出的直径是两回事。'
+  },
+  {
+    id: 'C1',
+    group: 'structure',
+    term: '马牙槎与构造柱',
+    plain: '砌体填充墙与混凝土构造柱交接处留设的凹凸齿形接槎。砌筑时必须「先退后进」，使后浇构造柱混凝土与墙体咬合拉结，增强整体抗震性能。',
+    slang: ['咬槎', '锯齿槎', '退进槎'],
+    slangNote: '现场俗称，各地不同',
+    confuse: [{ word: '直槎', diff: '砌体墙交接处严禁留设无法咬合的直槎，抗震设防区必须留斜槎或按规定留马牙槎并设拉结筋。' }],
+    links: ['C4'],
+    say: '构造柱马牙槎按「先退后进」留设，进退尺寸不少于 60mm、高度不超过 300mm，沿墙高每 500mm 设 2Φ6 拉结筋。',
+    figure: '图 C1　马牙槎「先退后进」咬合构造柱示意',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='马牙槎先退后进与构造柱咬合示意'><text x='8' y='14' font-size='11'>先退后进 · 进退≥60mm · 高≤300mm</text><rect x='40' y='30' width='90' height='124'/><path d='M130 30 h22 v24 h-22 v24 h22 v24 h-22 v24 h22 v28 h-22'/><rect x='152' y='30' width='48' height='124'/><text x='176' y='96' font-size='11' text-anchor='middle'>构造柱</text><text x='85' y='96' font-size='11' text-anchor='middle'>砌体墙</text><text x='212' y='62' font-size='10'>退 60mm</text><text x='212' y='88' font-size='10'>进 60mm</text><text x='212' y='118' font-size='10'>每500设2Φ6拉结筋</text></svg>",
+    basis: 'GB 50203—2011《砌体结构工程施工质量验收规范》及 22G614-1 构造做法。',
+    basisSource: '教材与标准',
+    evidence: '仅转录',
+    related: [{ href: '/textbook/quality/chapter-03/section-04', label: '质量控制 3.4 砌体结构' }],
+    look: '先看砌体边缘是不是一退一进的锯齿，再看底部有没有清理落地灰、顶部有没有预留浇筑口。',
+    inspect: {
+      limits: ['马牙槎进退尺寸 ≥60mm，高度 ≤300mm（宜5皮砖）', '拉结筋沿墙高间距 ≤500mm，伸入墙内 ≥700mm（抗震按图）'],
+      redline: '严禁「先进后退」或留成直槎；严禁先砌墙后不支模、不振捣直接抹灰掩盖。',
+      action: '隐蔽前核对拉结筋植筋/预埋与马牙槎清底，浇筑顶部设喇叭口并振捣密实。'
+    }
+  },
+  {
+    id: 'C2',
+    group: 'structure',
+    term: '强屈比与超屈比（抗震钢筋）',
+    plain: '抗震设防结构中带「E」抗震钢筋的两项关键力学性能指标：强屈比是实测抗拉强度与实测屈服强度之比；超屈比是实测屈服强度与屈服强度标准值之比。',
+    slang: ['带E钢筋复验指标', '抗拉屈服比'],
+    slangNote: '检测报告常见简称',
+    confuse: [{ word: '伸长率', diff: '强屈比、超屈比看的是强度比例，最大力下总伸长率 A_gt ≥9% 看的是延性变形能力。' }],
+    links: ['E2', 'E3'],
+    say: '抗震等级为一、二、三级的框架和斜撑构件，纵向受力钢筋强屈比不应小于 1.25，超屈比不应大于 1.30，最大力下总伸长率不应小于 9%。',
+    figure: '图 C2　抗震钢筋强屈比与超屈比判别线',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='抗震钢筋强屈比与超屈比指标示意'><text x='8' y='14' font-size='11'>GB 55008—2021 抗震钢筋三项硬指标</text><rect x='24' y='34' width='272' height='34' rx='4'/><text x='36' y='55' font-size='11'>1. 强屈比 Rm⁰ / ReL⁰ ≥ 1.25（延性储备）</text><rect x='24' y='78' width='272' height='34' rx='4'/><text x='36' y='99' font-size='11'>2. 超屈比 ReL⁰ / ReL ≤ 1.30（防先脆断）</text><rect x='24' y='122' width='272' height='34' rx='4'/><text x='36' y='143' font-size='11'>3. 最大力下总伸长率 Agt ≥ 9%</text></svg>",
+    basis: '《混凝土结构通用规范》GB 55008—2021；《混凝土结构工程施工质量验收规范》GB 50204—2015 第 5.2.2 条。',
+    basisSource: '站内 GB 55008 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55008-2021-hunningtu', label: 'GB 55008—2021 混凝土结构通用规范' }],
+    look: '进场复验报告拿到手，先核对牌号是否带「E」（如 HRB400E），再算两个比值。',
+    inspect: {
+      limits: ['强屈比 ≥1.25', '超屈比 ≤1.30', '最大力下总伸长率 ≥9%'],
+      redline: '一、二、三级抗震框架梁柱纵筋不得用普通不带 E 钢筋替代，且超屈比＞1.30 不得用于抗震构件。',
+      action: '核查 B.0.6 复验报告逐项计算比值，不合格批次立即封存退场。'
+    }
+  },
+  {
+    id: 'C3',
+    group: 'structure',
+    term: '同条件养护试块与标准养护试块',
+    plain: '标准养护试块在温度 20±2℃、相对湿度 ≥95% 标养室养护 28 天，用来评定混凝土出厂/浇筑设计强度；同条件养护试块留在浇筑部位旁与结构同等温湿度养护，用来判定拆模时机和结构实体强度检验（等效养护龄期累计温度一般按 600℃·d，0℃ 及以下不计入）。',
+    slang: ['标养块', '同养块', '600度天试块'],
+    slangNote: '现场俗称，各地不同',
+    confuse: [{ word: '拆模试块 vs 实体检验试块', diff: '同条件试块按用途分「拆模/张拉试块」和「结构实体检验试块（累计 600℃·d）」，组数不能混用。' }],
+    links: ['C6', 'C8'],
+    say: '标养试块用于强度评定，同条件养护试块留置于结构旁专门铁笼中并按日测温累计 600℃·d。',
+    figure: '图 C3　标养试块与同条件试块留置位置对照',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='标养试块与同条件试块对照'><rect x='20' y='30' width='125' height='118' rx='4'/><text x='82' y='54' font-size='12' text-anchor='middle'>标养试块</text><text x='82' y='80' font-size='10' text-anchor='middle'>20±2℃ · RH≥95%</text><text x='82' y='100' font-size='10' text-anchor='middle'>标养室 28 天</text><text x='82' y='124' font-size='10' text-anchor='middle'>评定强度等级</text><rect x='175' y='30' width='125' height='118' rx='4'/><text x='237' y='54' font-size='12' text-anchor='middle'>同条件试块</text><text x='237' y='80' font-size='10' text-anchor='middle'>浇筑部位旁铁笼</text><text x='237' y='100' font-size='10' text-anchor='middle'>累计 600℃·d（14~60d）</text><text x='237' y='124' font-size='10' text-anchor='middle'>实体检验 / 拆模依据</text></svg>",
+    basis: 'GB 50204—2015 第 10.1 节及附录 C；GB 55008—2021。',
+    basisSource: '站内 GB 55008 与教材',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55008-2021-hunningtu', label: 'GB 55008—2021' }, { href: '/knowledge/waterproofing-and-concrete-site-control', label: '防水与混凝土现场实务' }],
+    look: '巡视时看楼层柱/梁旁有没有带锁铁笼里的同条件试块，有没有被工地私自拿去标养室。',
+    inspect: {
+      limits: ['标养：20±2℃、湿度 ≥95%、龄期 28d', '同条件实体：日平均温度逐日累计 600℃·d（不少于 14d、不宜大于 60d）'],
+      redline: '严禁把同条件试块偷偷放进标养室养护充数。',
+      action: '旁站核对取样组数与唯一芯片/二维码标识，定期检查现场测温台账与铁笼锁闭。'
+    }
+  },
+  {
+    id: 'C4',
+    group: 'structure',
+    term: '施工缝与后浇带',
+    plain: '施工缝是因施工组织需要预先留设、在先浇混凝土硬化后再接续浇筑的临时接缝；后浇带是为防止现浇钢筋混凝土结构因温度、收缩或沉降不均产生裂缝，按设计预留一定宽度并在后续规定时间用高一等级微膨胀混凝土浇筑封闭的变形缝。',
+    slang: ['冷缝（误称）', '沉降后浇带', '伸缩后浇带'],
+    slangNote: '注意区分施工缝与质量事故「冷缝」',
+    confuse: [{ word: '冷缝', diff: '施工缝是按设计/规范允许位置有计划留设；冷缝是浇筑间隔超时未振捣形成的非计划薄弱面。' }],
+    links: ['D5'],
+    say: '后浇带两侧采用钢丝网或快易收口网支模，保留独立支撑不得提前拆除，封堵前凿毛清理并采用比两侧高一强度等级的无收缩混凝土浇筑。',
+    figure: '图 C4　后浇带独立支撑与微膨胀封堵示意',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='后浇带独立支撑与封堵示意'><rect x='20' y='44' width='105' height='28'/><rect x='195' y='44' width='105' height='28'/><rect x='125' y='44' width='70' height='28' stroke-dasharray='4 3'/><line x1='140' y1='72' x2='140' y2='146'/><line x1='180' y1='72' x2='180' y2='146'/><text x='160' y='34' font-size='11' text-anchor='middle'>后浇带（高一等级微膨胀砼）</text><text x='160' y='115' font-size='10' text-anchor='middle'>独立支撑保留</text><text x='160' y='132' font-size='10' text-anchor='middle'>严禁先拆后回顶</text></svg>",
+    basis: 'GB 55008—2021；GB 55030—2022（地下室后浇带遇水膨胀止水条/止水钢板）。',
+    basisSource: '站内 GB 55008 / GB 55030',
+    evidence: '含已核原页',
+    related: [{ href: '/knowledge/waterproofing-and-concrete-site-control', label: '防水与混凝土现场实务' }],
+    look: '看后浇带下面是不是独立支撑体系，看两侧模板拆没拆、里面垃圾钢筋锈蚀清理了没有。',
+    inspect: {
+      limits: ['沉降后浇带须待主体封顶或沉降稳定后封堵', '封闭混凝土强度比两侧提高一级，养护不少于 14d（防水部位 ≥28d）'],
+      redline: '严禁未保留独立支撑而拆模后再「回顶」；严禁未凿毛除锈直接浇筑封堵。',
+      action: '地下室后浇带封堵前旁站核查止水钢板焊缝、凿毛冲洗与微膨胀配合比。'
+    }
+  },
+  {
+    id: 'C5',
+    group: 'structure',
+    term: '钢筋保护层厚度',
+    plain: '从混凝土外表面到最外层钢筋（包括箍筋、分布筋、主筋中规定对象）外边缘的最小距离，用于防止钢筋锈蚀并保证混凝土对钢筋的握裹力。',
+    slang: ['保护层', '垫块厚度'],
+    slangNote: '现场常用水泥砂浆或塑料垫块控制',
+    confuse: [{ word: '梁柱保护层 vs 板保护层', diff: '柱、梁受力环境严酷且含箍筋，保护层设计值通常大于楼板；检测验收允许偏差也有区别。' }],
+    links: ['C2', 'C9'],
+    say: '板类构件纵向受力钢筋保护层厚度允许偏差为 +8mm、-5mm，梁类构件为 +10mm、-7mm。',
+    figure: '图 C5　钢筋保护层厚度与垫块支撑示意',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='钢筋保护层厚度与垫块示意'><rect x='30' y='30' width='260' height='110'/><circle cx='90' cy='110' r='10'/><circle cx='160' cy='110' r='10'/><circle cx='230' cy='110' r='10'/><rect x='82' y='120' width='16' height='20'/><rect x='222' y='120' width='16' height='20'/><text x='160' y='60' font-size='11' text-anchor='middle'>混凝土断面</text><text x='160' y='158' font-size='10' text-anchor='middle'>保护层厚度 c：垫块支撑到位，严禁直接露筋</text></svg>",
+    basis: 'GB 50204—2015 第 5.5.2 条及附录 E（结构实体钢筋保护层厚度检验）。',
+    basisSource: '教材与标准',
+    evidence: '仅转录',
+    related: [{ href: '/engineering-map/scene/rebar-concealed-acceptance', label: '场景 · 钢筋隐蔽工程验收' }],
+    look: '看梁底、板底有没有按梅花形放垫块，板面负筋有没有被工人踩趴下去。',
+    inspect: {
+      limits: ['实体检测偏差：梁类 +10mm/-7mm，板类 +8mm/-5mm，合格点率 ≥90%'],
+      redline: '严禁采用碎石子、钢筋头或木块替代专用垫块；严禁踩踏负弯矩筋导致保护层超厚。',
+      action: '隐蔽验收时检查马凳筋与垫块间距，浇筑混凝土时安排专人护筋。'
+    }
+  },
+  {
+    id: 'C6',
+    group: 'structure',
+    term: '混凝土坍落度与严禁加水',
+    plain: '用标准坍落度筒测量新拌混凝土在自重作用下向下坍落的高度（mm），用以表征拌合物的流动性与和易性。预拌混凝土进场后，严禁在运输、输送、浇筑过程中向拌合物中加水。',
+    slang: ['塌落度', '加减水剂 vs 加水'],
+    slangNote: '现场常误写为「塌落度」',
+    confuse: [{ word: '现场加水 vs 掺减水剂', diff: '加水会直接增大水胶比、大幅降低混凝土强度并引起开裂；坍落度损失过大只能按技术方案由搅拌站技术人员掺加同品种减水剂调整。' }],
+    links: ['C3', 'C9'],
+    say: '预拌混凝土进场核查发货单并逐车目测，按批测坍落度；严禁向罐车或泵斗内加水。',
+    figure: '图 C6　坍落度筒量测与严禁加水红线',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='混凝土坍落度测定示意'><line x1='30' y1='140' x2='290' y2='140'/><polygon points='70,140 85,50 115,50 130,140' stroke-dasharray='4 3'/><path d='M70 140 Q100 66 130 140'/><line x1='100' y1='50' x2='100' y2='76'/><text x='145' y='68' font-size='11'>坍落度值 h (mm)</text><text x='145' y='96' font-size='11'>严禁运输/浇筑时加水</text><text x='145' y='118' font-size='10'>GB 55008—2021 强制规定</text></svg>",
+    basis: '《混凝土结构通用规范》GB 55008—2021；《质量控制》3.3 节。',
+    basisSource: '站内 GB 55008 与教材',
+    evidence: '含已核原页',
+    related: [{ href: '/engineering-map/scene/concrete-side-station', label: '场景 · 混凝土浇筑旁站' }],
+    look: '旁站时重点盯罐车卸料口、泵车料斗旁有没有接水管！',
+    inspect: {
+      limits: ['进场坍落度偏差一般控制 ±30mm（以配合比与设计要求为准）'],
+      redline: '运输、输送、浇筑过程中严禁向混凝土拌合物中加水（GB 55008 强制条文）。',
+      action: '发现私自加水立即叫停该车退场，并在 A.0.6 旁站记录中如实留痕。'
+    }
+  },
+  {
+    id: 'C7',
+    group: 'structure',
+    term: '植筋拉拔与机械连接（直螺纹套筒）',
+    plain: '植筋是通过化学胶粘剂将带肋钢筋锚固在既有混凝土基材中，须进行抗拔承载力现场检验；机械连接（如剥肋滚压直螺纹套筒）是通过套筒与钢筋丝头咬合传力，须核查工艺检验与现场抽检。',
+    slang: ['套筒连接', '化学植筋', '拉拔试验'],
+    slangNote: '现场俗称，各地不同',
+    confuse: [{ word: '丝头外露长度', diff: '直螺纹接头拧紧后外露完整丝扣不得超过 2P（2 个螺距），不能误以为露得越多越安全。' }],
+    links: ['C2'],
+    say: '直螺纹套筒连接应采用力矩扳手按规定力矩拧紧，外露有效丝扣不超过 2P，同一连接区段接头面积百分率 ≤50%。',
+    figure: '图 C7　直螺纹套筒拧紧与外露丝扣≤2P示意',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='直螺纹套筒连接示意'><line x1='24' y1='86' x2='120' y2='86' stroke-width='6'/><line x1='200' y1='86' x2='296' y2='86' stroke-width='6'/><rect x='115' y='72' width='90' height='28' rx='3'/><text x='160' y='90' font-size='11' text-anchor='middle'>直螺纹套筒</text><text x='160' y='52' font-size='11' text-anchor='middle'>力矩扳手拧紧 · 外露有效丝扣 ≤2P</text><text x='160' y='132' font-size='10' text-anchor='middle'>同区段接头百分率 ≤50% · 按500个/批取样送检</text></svg>",
+    basis: 'JGJ 107—2016《钢筋机械连接技术规程》；GB 50204—2015 第 5.4 节。',
+    basisSource: '教材与标准',
+    evidence: '仅转录',
+    related: [{ href: '/engineering-map/scene/rebar-concealed-acceptance', label: '场景 · 钢筋隐蔽工程验收' }],
+    look: '看套筒两端钢筋有没有标记拧紧画线、有没有露出一长截光秃秃的丝扣。',
+    inspect: {
+      limits: ['直螺纹外露有效丝扣 ≤2P', '受拉区同一连接区段接头面积百分率 ≤50%'],
+      redline: '未经工艺检验或现场抽检不合格的接头批次不得隐蔽浇筑混凝土。',
+      action: '用专用力矩扳手抽查拧紧力矩并做油漆标记，核对每 500 个接头送检 3 根试件。'
+    }
+  },
+  {
+    id: 'C8',
+    group: 'structure',
+    term: '拆模强度与悬臂构件底模',
+    plain: '现浇混凝土底模及支架拆除时，混凝土强度必须达到设计强度标准值的规定百分率（依据同条件养护试块抗压强度报告判定），其中悬臂构件必须达到 100% 才能拆除底模。',
+    slang: ['拆底模', '挑檐/阳台拆模'],
+    slangNote: '现场常忽略悬臂构件 100% 要求',
+    confuse: [{ word: '侧模 vs 底模', diff: '侧模在混凝土强度能保证其表面及棱角不受损伤时即可拆除；承重底模必须等拆模申请审批且同条件试块达标。' }],
+    links: ['C3'],
+    say: '跨度＞8m 的梁板及所有悬臂构件，必须待同条件养护试块强度达到 100% 并经审批后方可拆除底模。',
+    figure: '图 C8　不同跨度板梁与悬臂构件拆模强度门槛',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='底模拆除强度百分率对照'><text x='8' y='16' font-size='11'>GB 50204 底模拆除最低强度要求</text><rect x='20' y='32' width='280' height='28' rx='4'/><text x='32' y='50' font-size='11'>板 ≤2m：≥50% ｜ 2m＜板≤8m、梁≤8m：≥75%</text><rect x='20' y='72' width='280' height='28' rx='4'/><text x='32' y='90' font-size='11'>板＞8m、梁＞8m：≥100%</text><rect x='20' y='112' width='280' height='36' rx='4'/><text x='32' y='134' font-size='11'>悬臂构件（任意跨度挑梁/阳台）：必须 ≥100%</text></svg>",
+    basis: 'GB 50204—2015 第 4.3.1 条；GB 55008—2021。',
+    basisSource: '站内 GB 55008 与教材',
+    evidence: '含已核原页',
+    related: [{ href: '/knowledge/waterproofing-and-concrete-site-control', label: '防水与混凝土实务' }],
+    look: '看到工人在拆阳台、雨篷或大跨度客厅梁底模时，立刻问：拆模令签了吗？同条件试块报告呢？',
+    inspect: {
+      limits: ['板 ≤2m ≥50%；2~8m 板及 ≤8m 梁 ≥75%', '＞8m 梁板及所有悬臂构件 ≥100%'],
+      redline: '严禁未取得同条件试块达标报告和拆模审批擅自早拆底模，严禁「先拆后回顶」。',
+      action: '未达标擅自拆模的立即签发监理通知单或暂停令，核查结构有无裂缝挠度。'
+    }
+  },
+  {
+    id: 'C9',
+    group: 'structure',
+    term: '蜂窝、麻面、露筋与孔洞（外观缺陷）',
+    plain: '拆模后混凝土表面常见的四类外观缺陷：麻面是表面局部缺浆粗糙；蜂窝是骨料间缺少水泥砂浆形成蜂窝状孔隙；露筋是主筋/箍筋未被混凝土包裹而外露；孔洞是混凝土内部有尺寸较大的空隙，局部无混凝土或蜂窝特别大。',
+    slang: ['烂根', '狗洞（孔洞）', '跑浆'],
+    slangNote: '现场俗称，按严重程度分级处置',
+    confuse: [{ word: '一般缺陷 vs 严重缺陷', diff: '露筋、孔洞、夹渣及影响结构性能或使用功能的蜂窝属于严重缺陷，严禁施工方私自用水泥砂浆「刷白抹平」掩盖。' }],
+    links: ['C5', 'E1'],
+    say: '拆模后发现露筋或孔洞等严重缺陷，应保留现场原貌，由施工单位提出经设计或专家认可的技术处理方案，经监理批准处理并重新检查验收。',
+    figure: '图 C9　外观缺陷分级与监理处置边界',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='混凝土外观缺陷分级处置'><rect x='20' y='30' width='132' height='118' rx='4'/><text x='86' y='52' font-size='11' text-anchor='middle'>一般缺陷（麻面/轻微蜂窝）</text><text x='86' y='82' font-size='10' text-anchor='middle'>施工方按技术处理方案</text><text x='86' y='100' font-size='10' text-anchor='middle'>修整并重新验收</text><rect x='168' y='30' width='132' height='118' rx='4'/><text x='234' y='52' font-size='11' text-anchor='middle'>严重缺陷（露筋/孔洞）</text><text x='234' y='82' font-size='10' text-anchor='middle'>严禁私自抹灰掩盖！</text><text x='234' y='100' font-size='10' text-anchor='middle'>须经设计确认方案</text><text x='234' y='118' font-size='10' text-anchor='middle'>高一级微膨胀砼修补</text></svg>",
+    basis: 'GB 50204—2015 第 8.1.2、8.2 节；GB 55032—2022。',
+    basisSource: '站内 GB 55032 与教材',
+    evidence: '含已核原页',
+    related: [{ href: '/knowledge/quality-defect-and-histogram', label: '实务专题 · 质量缺陷处理程序' }],
+    look: '柱子刚拆模最容易出现「烂根」和孔洞，先拍照再看有没有工人偷偷拿砂浆去糊。',
+    inspect: {
+      limits: ['严重缺陷（主筋露筋、深孔洞、贯穿裂缝）须制定专项修补方案并经设计认可'],
+      redline: '严禁拆模后未经监理查验私自用普通砂浆涂抹掩盖缺陷。',
+      action: '第一时间拍照留证，签发监理通知单（严重时下发暂停令），复查修补及必要无损检测。'
+    }
+  },
+  {
+    id: 'D1',
+    group: 'waterproof',
+    term: '抗渗等级 P6 / P8 / P10',
+    plain: '抗渗混凝土按标准试件在 28 天龄期所能承受的最大水压（MPa×10）划分的等级，如 P6 表示能抵抗 0.6MPa 水压而不渗水。地下工程防水混凝土抗渗等级不应低于 P6。',
+    slang: ['抗渗砼', 'S6/S8（旧符号）'],
+    slangNote: '旧规范用 S 表示，现行统一用 P',
+    confuse: [{ word: '强度等级 C vs 抗渗等级 P', diff: 'C30 看抗压强度，P6/P8 看抗水压渗透能力；地下室底板外墙通常同时标为 C35P8。' }],
+    links: ['D5', 'D2'],
+    say: '地下室结构防水混凝土抗渗等级不得低于 P6，施工现场每 500m³ 应留置不少于 1 组抗渗试件（每组 6 个）。',
+    figure: '图 D1　抗渗等级含义与地下工程留样批量',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='抗渗等级P6/P8/P10示意'><text x='8' y='16' font-size='11'>GB 55030—2022 地下防水混凝土底线</text><rect x='22' y='34' width='276' height='36' rx='4'/><text x='34' y='56' font-size='11'>P6 = 抵抗 0.6MPa 水压（地下防水最低门槛）</text><rect x='22' y='80' width='276' height='36' rx='4'/><text x='34' y='102' font-size='11'>P8 = 0.8MPa ｜ P10 = 1.0MPa（高水头深地下室）</text><text x='22' y='146' font-size='10'>连续浇筑每 500m³ 留 1 组抗渗试块（且每单位工程不少于 2 组）</text></svg>",
+    basis: '《建筑与市政工程防水通用规范》GB 55030—2022；GB 50208。',
+    basisSource: '站内 GB 55030 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55030-2022-fangshui', label: 'GB 55030—2022 工程防水通用规范' }],
+    look: '地下室底板外墙浇筑时，核对发货单上有没有带「P6/P8」标识，有没有另外做抗渗圆台形试块。',
+    inspect: {
+      limits: ['地下防水混凝土最低 P6', '连续浇筑每 500m³ 至少 1 组（6 个圆台试件），每次浇筑均需留置'],
+      redline: '严禁使用普通非抗渗混凝土代替防水混凝土浇筑地下室底板、外墙及顶板。',
+      action: '旁站核对商混配合比与抗渗等级，现场见证制作抗渗试块并送检。'
+    }
+  },
+  {
+    id: 'D2',
+    group: 'waterproof',
+    term: '蓄水试验与淋水试验（防水检验）',
+    plain: '防水层施工完成后检查是否渗漏的两类现场实测方法：蓄水试验是在屋面、卫生间等封闭区域蓄水一定深度并保持规定时间；淋水试验是对坡屋面或外墙持续喷水模拟降雨。',
+    slang: ['闭水试验', '灌水试验（易与管道混淆）'],
+    slangNote: '注意「灌水试验」通常指排水管道，防水面层叫「蓄水试验」',
+    confuse: [{ word: '管道灌水/通水试验 vs 地面蓄水试验', diff: '管道隐蔽前做灌水/水压试验，防水层做蓄水（≥24h）/淋水（≥2h）试验，二者不能相互替代。' }],
+    links: ['D1', 'D3'],
+    say: '有防水要求的房间和屋面须做 24h 蓄水试验（最浅处 ≥20mm），坡屋面持续淋水 ≥2h，外墙淋水 ≥30min，合格后方可施工保护层。',
+    figure: '图 D2　屋面、厨卫与外墙防水试验时长对比',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='蓄水与淋水试验时长对照'><rect x='20' y='28' width='280' height='36' rx='4'/><text x='32' y='50' font-size='11'>厨卫/平屋面蓄水试验：水深 ≥20mm，持续 ≥24h</text><rect x='20' y='74' width='280' height='36' rx='4'/><text x='32' y='96' font-size='11'>坡屋面淋水试验：持续淋水 ≥2h（或雨后观察）</text><rect x='20' y='120' width='280' height='36' rx='4'/><text x='32' y='142' font-size='11'>外墙防水淋水试验：持续淋水 ≥30min</text></svg>",
+    basis: '《建筑与市政工程防水通用规范》GB 55030—2022；《工程质量控制》3.7 节。',
+    basisSource: '站内 GB 55030 与专题',
+    evidence: '含已核原页',
+    related: [{ href: '/engineering-map/scene/waterproofing-flood-test', label: '场景 · 防水蓄水与淋水试验' }, { href: '/knowledge/waterproofing-and-concrete-site-control', label: '防水与混凝土实务' }],
+    look: '别只看楼上蓄水水面，一定要到下一层楼板底、管根周围、烟道边摸一摸有没有潮印。',
+    inspect: {
+      limits: ['室内及平屋面蓄水 ≥24h（最浅处 ≥20mm）', '坡屋面淋水 ≥2h，外墙淋水 ≥30min'],
+      redline: '未做蓄水/淋水试验或楼下发现渗漏未整改，严禁隐蔽施工保护层或贴砖。',
+      action: '旁站核实水位标高、起始时间与次日复查结果，留存楼下顶板干燥对比照片。'
+    }
+  },
+  {
+    id: 'D3',
+    group: 'waterproof',
+    term: '防水附加层与阴阳角圆弧',
+    plain: '阴阳角、穿墙管根、地漏、变形缝等最易应力集中和渗漏的薄弱部位，在铺设大面防水层前，先把基层阴阳角做成圆弧（或钝角），并预先增铺的一道增强防水层。',
+    slang: ['加强层', 'R角抹弧'],
+    slangNote: '现场俗称',
+    confuse: [{ word: '附加层 vs 多道设防', diff: '附加层是局部薄弱节点的加强，不能抵扣设计规定的大面防水设防道数。' }],
+    links: ['D2', 'D6'],
+    say: '屋面、地下及室内防水阴阳角应抹成圆弧，并增设不少于 500mm 宽（每侧 ≥250mm）的防水附加层。',
+    figure: '图 D3　阴阳角圆弧与≥500mm防水附加层节点',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='阴阳角圆弧与防水附加层示意'><path d='M60 30 v85 q0 15 15 15 h175' stroke-width='2'/><path d='M64 60 v55 q0 11 11 11 h80' stroke-width='3' stroke-dasharray='4 2'/><text x='165' y='72' font-size='11'>阴阳角抹圆弧 R≥50mm</text><text x='165' y='94' font-size='11'>先铺附加层（每侧≥250mm）</text><text x='165' y='116' font-size='10'>再铺大面防水层（不得抵扣设防道数）</text></svg>",
+    basis: 'GB 55030—2022；GB 50208—2011。',
+    basisSource: '站内 GB 55030 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55030-2022-fangshui', label: 'GB 55030—2022' }],
+    look: '大面卷材铺之前，先去墙角和管根看一眼，直角没抹弧、没铺附加层的一律叫停。',
+    inspect: {
+      limits: ['卷材防水阴阳角圆弧半径宜 ≥50mm（涂膜宜 ≥20mm）', '附加层宽度 ≥500mm（管根、阴角每侧 ≥250mm）'],
+      redline: '严禁基层潮湿起砂或直角未抹弧直接强行铺贴卷材导致空鼓折裂。',
+      action: '大面防水施工前先验收基层与节点附加层隐蔽记录。'
+    }
+  },
+  {
+    id: 'D4',
+    group: 'waterproof',
+    term: '滴水线与鹰嘴（外墙防倒灌）',
+    plain: '设置在阳台底面、雨篷板底、窗楣及外凸线条外缘下方的凹槽（滴水线）或尖角凸起（鹰嘴），迫使顺流雨水在边缘滴落而不向墙面内侧倒爬渗水。',
+    slang: ['滴水槽', '流水线'],
+    slangNote: '现场俗称',
+    confuse: [{ word: '外窗台坡度', diff: '窗台顶面要求「内高外低」找坡，窗楣上方底面要求做滴水线/鹰嘴，一上一下协同防雨水倒灌。' }],
+    links: ['D6'],
+    say: '外窗楣、阳台及雨篷底面距外缘 20～30mm 处应设置连续顺直的滴水线（槽），宽度和深度均不宜小于 10mm。',
+    figure: '图 D4　外窗楣滴水线（槽）与窗台坡向示意',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='外窗楣滴水线与窗台找坡示意'><rect x='40' y='30' width='45' height='120'/><rect x='85' y='30' width='120' height='26'/><path d='M185 56 v6 h8 v-6'/><text x='145' y='78' font-size='11'>窗楣滴水线（宽深≥10mm）</text><polygon points='85,120 195,128 195,138 85,138'/><text x='145' y='154' font-size='10'>窗台外低内高找坡，防雨水倒灌</text></svg>",
+    basis: 'GB 50210—2018《建筑装饰装修工程质量验收标准》；GB 55030—2022。',
+    basisSource: '标准与教材',
+    evidence: '仅转录',
+    related: [{ href: '/law/gb55030-2022-fangshui', label: 'GB 55030—2022' }],
+    look: '外墙脚手架拆架前最后一遍巡视，摸一下阳台底边、窗楣底下有没有做出清晰的滴水槽。',
+    inspect: {
+      limits: ['滴水槽宽 ≥10mm、深 ≥10mm，距外缘 20～30mm，顺直连续、两端不出头'],
+      redline: '外窗台严禁倒坡（外高内低）或打胶不连续导致雨水倒灌窗框。',
+      action: '结合外墙淋水试验与拆架前分户检查逐层核对。'
+    }
+  },
+  {
+    id: 'D5',
+    group: 'waterproof',
+    term: '止水螺杆与止水钢板（地下室穿墙防水）',
+    plain: '地下室有防水要求的混凝土外墙施工时，模板对拉螺杆中部焊有止水片（止水螺杆）阻断水路；外墙水平施工缝或后浇带中间埋设 3mm 厚、300mm 宽满焊止水钢板，折边朝向迎水面。',
+    slang: ['三段式止水螺杆', '止水片'],
+    slangNote: '现场俗称',
+    confuse: [{ word: '普通穿墙套管螺杆 vs 止水螺杆', diff: '普通螺杆套 PVC 管抽拔后留通孔极易漏水，地下室防水外墙必须用带满焊止水片的止水螺杆（常为三段式）。' }],
+    links: ['D1', 'C4'],
+    say: '地下室防水外墙严禁使用普通穿墙螺杆，必须使用止水螺杆；水平施工缝止水钢板应双面满焊、折边朝向迎水面。',
+    figure: '图 D5　止水螺杆与止水钢板迎水面朝向示意',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='止水螺杆与止水钢板迎水面朝向示意'><rect x='110' y='24' width='80' height='126'/><line x1='70' y1='64' x2='230' y2='64' stroke-width='2'/><line x1='150' y1='50' x2='150' y2='78' stroke-width='3'/><text x='238' y='68' font-size='10'>止水螺杆(带止水片)</text><path d='M132 104 L138 112 H162 L168 104' stroke-width='2.5'/><text x='30' y='112' font-size='10'>迎水面(土侧)</text><text x='202' y='112' font-size='10'>止水钢板开口朝迎水面</text></svg>",
+    basis: 'GB 50208—2011《地下防水工程质量验收规范》；GB 55030—2022。',
+    basisSource: '站内 GB 55030 与规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55030-2022-fangshui', label: 'GB 55030—2022' }],
+    look: '合外墙模板前看两点：止水钢板开口是不是朝外（迎水面）、接头处有没有满焊。',
+    inspect: {
+      limits: ['止水钢板厚度 ≥3mm、宽度 ≥300mm，搭接 ≥20mm 且双面满焊', '折边开口朝向迎水面（外侧）'],
+      redline: '地下室防水外墙严禁采用套 PVC 管普通螺杆；止水钢板严禁点焊替代满焊或装反方向。',
+      action: '合模前隐蔽验收逐段检查焊缝与止水片焊接饱满度，拆模后割除端头并用聚合物防水砂浆封堵。'
+    }
+  },
+  {
+    id: 'D6',
+    group: 'waterproof',
+    term: '泛水高度与女儿墙压顶',
+    plain: '屋面防水层在女儿墙、出屋面烟道/管井墙面等垂直构件上翻收头的构造叫泛水；女儿墙顶部向屋面内侧找坡的钢筋混凝土防雨水倒流构造叫压顶。',
+    slang: ['卷材上翻', '压顶坡度'],
+    slangNote: '现场俗称',
+    confuse: [{ word: '250mm 高度起算点', diff: '泛水高度 ≥250mm 指从「屋面完成面」算起，不是从结构板面算起。' }],
+    links: ['D3', 'D4'],
+    say: '屋面防水卷材在女儿墙及出屋面构筑物立面的泛水收头高度，自屋面完成面起不应小于 250mm，并应固定密封。',
+    figure: '图 D6　泛水高度≥250mm与女儿墙内倾压顶',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='屋面泛水高度与女儿墙压顶示意'><path d='M70 40 L105 32 V132 H260' stroke-width='2'/><path d='M105 72 V130 H255' stroke-width='3' stroke-dasharray='4 2'/><line x1='125' y1='72' x2='125' y2='130'/><text x='136' y='105' font-size='11'>泛水高度 ≥250mm</text><text x='136' y='122' font-size='10'>金属压条固定+密封膏封严</text><text x='125' y='44' font-size='10'>压顶向内找坡 ≥5%</text></svg>",
+    basis: 'GB 55030—2022；GB 50207—2012《屋面工程质量验收规范》。',
+    basisSource: '站内 GB 55030 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55030-2022-fangshui', label: 'GB 55030—2022' }],
+    look: '拿卷尺量一下卷材上翻顶端到屋面地砖面的高度够不够 25cm，收口金属压条打钉打胶了没。',
+    inspect: {
+      limits: ['屋面防水泛水高度（完成面起）≥250mm（卫生间淋浴区 ≥1800mm、非淋浴区 ≥250mm）', '女儿墙压顶内倾坡度 ≥5%'],
+      redline: '严禁防水收头未进凹槽或未用压条密封膏固定直接暴露翘边。',
+      action: '屋面防水验收逐段量测泛水高度及女儿墙压顶滴水处理。'
+    }
+  },
+  {
+    id: 'D7',
+    group: 'waterproof',
+    term: '外墙保温防火隔离带',
+    plain: '当外墙外保温系统采用燃烧性能为 B1 或 B2 级有机保温材料时，按建筑防火要求在每层楼板处水平设置一定高度的 A 级不燃材料（如岩棉）隔离带，阻断火灾沿外立面竖向蔓延。',
+    slang: ['防火隔离带', '岩棉隔离带'],
+    slangNote: '现场俗称',
+    confuse: [{ word: 'A 级保温系统 vs B1/B2 级+隔离带', diff: '整墙全部采用 A 级不燃保温材料时可不另设隔离带；采用 B1/B2 级材料时必须按 GB 55037 设 ≥300mm 高 A 级隔离带。' }],
+    links: ['E6'],
+    say: '外墙采用 B1 级保温材料时，应每层设置高度不小于 300mm 的 A 级不燃材料水平防火隔离带，且与基层墙体全面积粘贴。',
+    figure: '图 D7　外墙 B1/B2 级保温与每层 A 级隔离带',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='外墙保温防火隔离带示意'><rect x='50' y='24' width='40' height='126'/><rect x='90' y='24' width='55' height='46'/><rect x='90' y='70' width='55' height='26' stroke-width='2.5'/><rect x='90' y='96' width='55' height='54'/><text x='160' y='52' font-size='11'>B1 级保温层</text><text x='160' y='87' font-size='11'>A 级防火隔离带（高 ≥300mm）</text><text x='160' y='125' font-size='10'>每层楼板位置通长设置，全面积粘贴</text></svg>",
+    basis: '《建筑防火通用规范》GB 55037—2022；JGJ 144。',
+    basisSource: '站内 GB 55037 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55037-2022-jianzhu-fanghuo', label: 'GB 55037—2022 建筑防火通用规范' }, { href: '/knowledge/building-fire-protection-gb55037', label: '建筑防火与施工消防要点' }],
+    look: '看每层楼板水平线处有没有一圈高度 30cm 以上的岩棉带，窗洞口四边保温层有没有用 A 级或抹面保护严实。',
+    inspect: {
+      limits: ['防火隔离带材料燃烧性能必须为 A 级', '高度 ≥300mm，与基层墙体全面积粘贴'],
+      redline: '严禁使用 B1/B2 级保温材料时漏设隔离带，严禁在建筑外墙保温施工动火无防火隔离。',
+      action: '核查保温材料燃烧性能复验报告，隐蔽前检查隔离带高度、满粘率及锚栓布置。'
+    }
+  },
+  {
+    id: 'D8',
+    group: 'waterproof',
+    term: '水平定向钻与顶管（非开挖铺管）',
+    plain: '城市道路、铁路、河流下方敷设管道的两种非开挖工法：水平定向钻是通过钻机按曲线轨迹钻孔扩孔后拖拉柔性管材（如 PE 管）；顶管是在工作井内用千斤顶将刚性管节（如钢筋混凝土管、钢管）逐节顶进土层并掘进出渣。',
+    slang: ['拉管（水平定向钻）', '顶管施工'],
+    slangNote: '市政管道现场俗称',
+    confuse: [{ word: '管材与深度适用', diff: '水平定向钻一般用于中小管径可挠管，顶管常用于较大管径刚性管且须设工作井与接收井，深工作井属危大/超危大工程。' }],
+    links: ['E5'],
+    say: '穿越市政主干道采用顶管施工时，工作井深度超过 5m 属超危大工程，须编审专项方案并组织专家论证。',
+    figure: '图 D8　水平定向钻（拉管）与顶管工法对照',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='水平定向钻与顶管对照示意'><line x1='20' y1='42' x2='300' y2='42'/><text x='160' y='34' font-size='10' text-anchor='middle'>道路/障碍地面</text><path d='M36 42 Q160 116 284 42' stroke-dasharray='5 3'/><text x='160' y='92' font-size='10' text-anchor='middle'>水平定向钻（曲线轨迹拖拉 PE/钢管）</text><rect x='36' y='108' width='36' height='46'/><rect x='248' y='108' width='36' height='46'/><line x1='72' y1='132' x2='248' y2='132' stroke-width='5'/><text x='160' y='156' font-size='10' text-anchor='middle'>顶管（工作井千斤顶水平顶进管节至接收井）</text></svg>",
+    basis: '住建部令第 37 号及建办质〔2018〕31 号附件（顶管工程属危大范围）。',
+    basisSource: '站内 37 号令与规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/weida-guiding', label: '住建部令第 37 号 危大工程规定' }],
+    look: '遇到顶管或定向钻先查地下管线交底图，再看工作井支护和专项方案论证过了没有。',
+    inspect: {
+      limits: ['顶管/暗挖/开挖深度 ≥5m 工作井属超危大工程，须 5 名以上专家论证'],
+      redline: '严禁未探明周边燃气/高压电缆管线盲目钻进或顶进。',
+      action: '核查地下管线保护方案、工作井支护验收及顶进轴线高程监测记录。'
+    }
+  },
+  {
+    id: 'E1',
+    group: 'supervision',
+    term: '三检制（自检、互检、交接检）',
+    plain: '施工单位在每道工序完成后、报请监理验收前必须执行的内部质量检验制度：作业班组自检、同工种班组互检、上下道专业工种之间交接检，三检合格并留存记录后才可向监理报验。',
+    slang: ['三检记录', '工序交接'],
+    slangNote: '现场质量管理基础制度',
+    confuse: [{ word: '监理检查 ≠ 替代三检', diff: '施工单位必须先完成三检并自检合格，监理再行验收；不能拿监理验收替代施工三检。' }],
+    links: ['E4', 'E7'],
+    say: '每道工序完成后施工单位应完成自检、互检和交接检并保留记录，合格后报送 B.0.7 请监理验收。',
+    figure: '图 E1　施工三检制与监理报验衔接链',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='施工三检制与监理验收衔接'><rect x='16' y='52' width='66' height='46' rx='4'/><text x='49' y='79' font-size='11' text-anchor='middle'>1. 自检</text><rect x='94' y='52' width='66' height='46' rx='4'/><text x='127' y='79' font-size='11' text-anchor='middle'>2. 互检</text><rect x='172' y='52' width='66' height='46' rx='4'/><text x='205' y='79' font-size='11' text-anchor='middle'>3. 交接检</text><rect x='250' y='52' width='56' height='46' rx='4'/><text x='278' y='79' font-size='11' text-anchor='middle'>监理验收</text><text x='160' y='132' font-size='10' text-anchor='middle'>GB 55032 第 3.3.4 条：三检合格留痕后再报验</text></svg>",
+    basis: '《建筑与市政工程施工质量控制通用规范》GB 55032—2022 第 3.3.4 条。',
+    basisSource: '站内 GB 55032 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55032-2022-zhiliang-kongzhi', label: 'GB 55032—2022' }, { href: '/knowledge/quality-control-and-testing-gb55032', label: '质量控制与第三方检测' }],
+    look: '收到 B.0.7 报验单先看后面附没附班组自检和交接检记录，签字日期是不是倒挂。',
+    inspect: {
+      limits: ['上道工序未经交接检验合格，严禁进入下道工序'],
+      redline: '严禁未做三检直接塞空白报验单要求监理「先签字后补资料」。',
+      action: '资料与现场实体同步核验，三检记录缺失的退回整改补齐再验收。'
+    }
+  },
+  {
+    id: 'E2',
+    group: 'supervision',
+    term: '型式检验与进场复验',
+    plain: '型式检验是由生产厂家委托权威机构对产品全部标准指标进行的全面合格性验证（通常在出厂合格证/检测报告中附带）；进场复验是材料运抵工地后，按规定批量在监理见证下抽样送第三方检测机构验证主要性能指标。',
+    slang: ['型检报告', '复试报告'],
+    slangNote: '现场俗称',
+    confuse: [{ word: '不可互相替代', diff: '厂家提供的型式检验报告再全，也不能免除工程法规定的工地进场见证复验（如钢筋、水泥、防水卷材）。' }],
+    links: ['E3', 'C2'],
+    say: '进场材料应同时核验出厂合格证、型式检验报告（适用时）及现场见证取样复验报告，合格后方可使用。',
+    figure: '图 E2　出厂型式检验与工地进场复验分工',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='型式检验与进场复验区别'><rect x='20' y='34' width='128' height='108' rx='4'/><text x='84' y='58' font-size='11' text-anchor='middle'>型式检验（出厂前）</text><text x='84' y='84' font-size='10' text-anchor='middle'>厂家送检全部指标</text><text x='84' y='104' font-size='10' text-anchor='middle'>随批附有效型检报告</text><rect x='172' y='34' width='128' height='108' rx='4'/><text x='236' y='58' font-size='11' text-anchor='middle'>进场复验（到工地后）</text><text x='236' y='84' font-size='10' text-anchor='middle'>建设/监理见证取样</text><text x='236' y='104' font-size='10' text-anchor='middle'>57号令第三方检测机构</text></svg>",
+    basis: '《建设工程质量管理条例》第 29/31 条；住建部令第 57 号；GB 55032 第 3.2.1 条。',
+    basisSource: '站内 57 号令与 GB 55032',
+    evidence: '含已核原页',
+    related: [{ href: '/law/zhiliang-jiance-banfa', label: '住建部令第 57 号 质量检测管理办法' }],
+    look: '看门窗、防火门、防水材料等型检报告有没有过有效期、规格型号和本批进场实物是不是同一款。',
+    inspect: {
+      limits: ['涉及结构安全、节能、环保和主要使用功能的材料必须见证复验'],
+      redline: '严禁用厂家的「出厂检验/型式检验报告」替代工地「进场复验报告」。',
+      action: 'B.0.6 审查双报告齐全且复验合格后再签认准用。'
+    }
+  },
+  {
+    id: 'E3',
+    group: 'supervision',
+    term: '见证取样与平行检验',
+    plain: '见证取样是监理（或建设）见证人员现场监督施工方取样、封样并送检第三方检测机构；平行检验是项目监理机构在施工单位自检基础上，按规定比例独立进行的检查或检测验证活动。',
+    slang: ['见证送检', '监理平行抽检'],
+    slangNote: '监理四大工作方式重要考点',
+    confuse: [{ word: '费用与委托主体', diff: '第三方见证检测由建设单位委托（费用单列，57 号令）；平行检验是监理自身履职行为。' }],
+    links: ['E2', 'E4'],
+    say: '见证取样由建设或监理见证员在现场监督取样并留存影像与唯一标识，平行检验由专监或监理员独立实施。',
+    figure: '图 E3　见证取样与平行检验工作边界',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='见证取样与平行检验边界'><rect x='20' y='34' width='132' height='108' rx='4'/><text x='86' y='56' font-size='11' text-anchor='middle'>见证取样（57号令）</text><text x='86' y='82' font-size='10' text-anchor='middle'>施工取样＋监理见证封样</text><text x='86' y='104' font-size='10' text-anchor='middle'>建设方委托检测机构</text><rect x='168' y='34' width='132' height='108' rx='4'/><text x='234' y='56' font-size='11' text-anchor='middle'>平行检验（GB/T 50319）</text><text x='234' y='82' font-size='10' text-anchor='middle'>施工自检合格后</text><text x='234' y='104' font-size='10' text-anchor='middle'>监理按比例独立复测</text></svg>",
+    basis: 'GB/T 50319—2013 第 5.2 节；住建部令第 57 号。',
+    basisSource: '站内 GB/T 50319 与 57 号令',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gbt50319-2013-jianli-guifan', label: 'GB/T 50319—2013' }, { href: '/law/zhiliang-jiance-banfa', label: '住建部令第 57 号' }],
+    look: '取样封条上要有见证员签字和取样人签字，最好带水印时间地点拍照留存。',
+    inspect: {
+      limits: ['不得由施工单位委托见证检测机构；见证人员不得代替施工方动手取样'],
+      redline: '严禁未到场见证直接在委托单上补签「见证人」；严禁收受检测机构财物或虚假封样。',
+      action: '逐次到场监督取样、贴防伪标识并留存见证台账与影像。'
+    }
+  },
+  {
+    id: 'E4',
+    group: 'supervision',
+    term: '巡视、旁站与验收（监理工作方式）',
+    plain: '监理现场控制的三种核心动作：巡视是定期或不定期到施工现场进行流动检查；旁站是对关键部位、关键工序实施全过程现场跟班监督并填表 A.0.6；验收是按检验批、隐蔽、分项、分部和竣工预验收节点检查签认。',
+    slang: ['盯现场', '跟班旁站'],
+    slangNote: '注意区分监理员与专监签字权限',
+    confuse: [{ word: '监理员 vs 专业监理工程师', diff: '监理员可在专监指导下检查工序并签认「原始记录、旁站记录」；检验批、隐蔽、分项正式验收意见须由专业监理工程师签字。' }],
+    links: ['E1', 'E3'],
+    say: '监理员负责现场旁站并签署 A.0.6 旁站记录，发现问题及时报告专业监理工程师或总监处置。',
+    figure: '图 E4　巡视、旁站、平行检验与验收分工',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='监理巡视旁站与验收分工'><rect x='20' y='30' width='88' height='110' rx='4'/><text x='64' y='54' font-size='11' text-anchor='middle'>巡视</text><text x='64' y='80' font-size='10' text-anchor='middle'>日常流动检查</text><text x='64' y='100' font-size='10' text-anchor='middle'>写监理日志</text><rect x='116' y='30' width='88' height='110' rx='4'/><text x='160' y='54' font-size='11' text-anchor='middle'>旁站</text><text x='160' y='80' font-size='10' text-anchor='middle'>关键工序跟班</text><text x='160' y='100' font-size='10' text-anchor='middle'>填 A.0.6 记录</text><rect x='212' y='30' width='88' height='110' rx='4'/><text x='256' y='54' font-size='11' text-anchor='middle'>验收</text><text x='256' y='80' font-size='10' text-anchor='middle'>专监签 B.0.7</text><text x='256' y='100' font-size='10' text-anchor='middle'>总监签 B.0.8</text></svg>",
+    basis: '《建设工程监理规范》GB/T 50319—2013 第 3.2、5.2 节。',
+    basisSource: '站内 GB/T 50319—2013',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gbt50319-2013-jianli-guifan', label: 'GB/T 50319—2013' }, { href: '/knowledge/supervision-duty-and-site-pitfalls', label: '监理职责与现场防踩坑' }],
+    look: '旁站结束时间不能早于混凝土浇筑结束时间，记录上要有监理和施工质检员双方签字。',
+    inspect: {
+      limits: ['旁站范围按监理规划/旁站方案确定（含基坑支护、土方回填、防水、大体积砼等）'],
+      redline: '监理员不得越权代替总监签发开工令、暂停令、复工令、支付证书及工程质量评估报告。',
+      action: '如实记录开始结束时间、试块留置及异常处置，发现重大问题立即停工报告。'
+    }
+  },
+  {
+    id: 'E5',
+    group: 'supervision',
+    term: '有限空间作业与持证监护工',
+    plain: '进入污水井、蓄水池、化粪池、地下封闭管沟等存在中毒窒息风险的有限空间作业时，必须执行「先通风、再检测、后作业」，并在外部配备经特种作业培训考核持证的专职监护工。',
+    slang: ['下井作业', '有限空间监护'],
+    slangNote: '应急〔2026〕45号新增特种作业强制持证类别',
+    confuse: [{ word: '普通安全员 ≠ 持证监护工', diff: '应急〔2026〕45号（2026-06-01 施行）已将「有限空间作业与监护」正式纳入特种作业目录，监护人员必须专项持证。' }],
+    links: ['E6', 'D8'],
+    say: '有限空间作业必须坚持「先通风、再检测、后作业」，外部设置持证监护工并配备气体检测仪、三脚架及正压式呼吸器。',
+    figure: '图 E5　有限空间「先通风、再检测、后作业」闭环',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='有限空间作业闭环示意'><rect x='20' y='34' width='85' height='46' rx='4'/><text x='62' y='61' font-size='11' text-anchor='middle'>1. 机械通风</text><rect x='117' y='34' width='85' height='46' rx='4'/><text x='159' y='61' font-size='11' text-anchor='middle'>2. 气体检测</text><rect x='214' y='34' width='86' height='46' rx='4'/><text x='257' y='61' font-size='11' text-anchor='middle'>3. 审批作业</text><rect x='20' y='98' width='280' height='48' rx='4'/><text x='160' y='118' font-size='11' text-anchor='middle'>外部设持证监护工（应急〔2026〕45号）</text><text x='160' y='136' font-size='10' text-anchor='middle'>严禁盲目下井施救！井内照明电压 ≤12V/24V</text></svg>",
+    basis: '《特种作业人员安全技术培训考核管理规定》（应急〔2026〕45号）；GB 55034—2022。',
+    basisSource: '站内 GB 55034 与最新规章',
+    evidence: '含已核原页',
+    related: [{ href: '/engineering-map/scene/hotwork-and-confined-space', label: '场景 · 动火与有限空间管控' }, { href: '/knowledge/site-safety-health-gb55034', label: '现场安全卫生 GB 55034' }],
+    look: '看到有人要下井或进地下室密闭夹层，先看井口有没有风机、有没有气体检测仪、外头站着的人有没有监护证。',
+    inspect: {
+      limits: ['氧含量 19.5%～21%（或按标准限值），可燃及有毒气体合格后方可进入', '金属容器或特别潮湿处照明电压 ≤12V'],
+      redline: '未通风检测严禁下井；无持证监护工严禁作业；发生险情严禁无防护盲目施救。',
+      action: '立即制止违规下井，核查审批表、气体检测记录、监护工证件及应急装备。'
+    }
+  },
+  {
+    id: 'E6',
+    group: 'supervision',
+    term: '临时用电 TN-S 系统与三级配电两级保护',
+    plain: '建筑施工现场临时用电强制采用 TN-S 接零保护系统（工作零线 N 与专用保护零线 PE 严格分开，PE 线为绿黄双色线），配电遵循「总配电箱—分配电箱—开关箱」三级配电，并在总箱和开关箱设两级漏电保护，严格执行「一机、一闸、一漏、一箱」。',
+    slang: ['三相五线制', '一机一闸一漏一箱'],
+    slangNote: '现场俗称',
+    confuse: [{ word: 'N 线与 PE 线混接', diff: 'PE 保护零线必须专设黄绿双色线并在规定处重复接地，严禁与 N 线混接或串联连接。' }],
+    links: ['E5', 'D7'],
+    say: '现场临时用电应采用 TN-S 系统，严格执行三级配电两级漏电保护与一机一闸一漏一箱制。',
+    figure: '图 E6　TN-S 三级配电两级漏电保护架构',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='施工临电TN-S三级配电两级保护'><rect x='16' y='44' width='80' height='54' rx='4'/><text x='56' y='68' font-size='11' text-anchor='middle'>总配电箱</text><text x='56' y='86' font-size='9' text-anchor='middle'>第一级漏保</text><rect x='120' y='44' width='80' height='54' rx='4'/><text x='160' y='68' font-size='11' text-anchor='middle'>分配电箱</text><text x='160' y='86' font-size='9' text-anchor='middle'>重复接地</text><rect x='224' y='44' width='80' height='54' rx='4'/><text x='264' y='68' font-size='11' text-anchor='middle'>开关箱</text><text x='264' y='86' font-size='9' text-anchor='middle'>第二级漏保</text><text x='160' y='130' font-size='10' text-anchor='middle'>N线与PE线（黄绿双色）分开 · 一机一闸一漏一箱</text></svg>",
+    basis: 'GB 55034—2022；JGJ 46—2005（及配套强制规定）。',
+    basisSource: '站内 GB 55034 与标准',
+    evidence: '含已核原页',
+    related: [{ href: '/knowledge/site-safety-health-gb55034', label: '现场安全卫生 GB 55034' }],
+    look: '打开开关箱看两眼：有没有「一台箱子接两台电焊机/切割机」，有没有装漏电保护器、PE 线有没有接壳。',
+    inspect: {
+      limits: ['开关箱漏电动作电流 ≤30mA（潮湿环境 ≤15mA），动作时间 ≤0.1s', '安全电压：一般场所 ≤36V，潮湿 ≤24V，金属容器内 ≤12V'],
+      redline: '严禁一闸多机；严禁用铜丝/铁丝代替熔断器；严禁电线直接挂在脚手架钢管上。',
+      action: '发现一闸多机或漏保失效立即断电整改并下发监理通知单。'
+    }
+  },
+  {
+    id: 'E7',
+    group: 'supervision',
+    term: '检验批、分项、分部与单位工程划分',
+    plain: '建筑与市政工程施工质量验收的四个基本层次：检验批（最小验收单元，专监验收）→ 分项工程（由若干检验批汇总，专监验收）→ 分部工程（按专业/部位划分，总监组织验收）→ 单位工程（具备独立使用功能，建设单位组织竣工验收）。',
+    slang: ['四级验收划分', '观感检查边界'],
+    slangNote: '高频必考易混点',
+    confuse: [{ word: '观感质量检查范围', diff: 'GB 55032—2022 明确：观感质量检查仅针对「分部工程」和「单位工程」，检验批和分项工程不做观感评定。' }],
+    links: ['E1', 'E8'],
+    say: '单位工程由建设单位组织验收，分部由总监组织，分项与检验批由专监组织；观感质量检查仅在分部和单位工程验收时进行。',
+    figure: '图 E7　工程验收四层次组织者与观感检查边界',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='工程验收四层次划分示意'><rect x='20' y='26' width='280' height='26' rx='4'/><text x='32' y='43' font-size='10.5'>检验批（最小单元）→ 专业监理工程师组织</text><rect x='20' y='58' width='280' height='26' rx='4'/><text x='32' y='75' font-size='10.5'>分项工程 → 专业监理工程师组织</text><rect x='20' y='90' width='280' height='26' rx='4'/><text x='32' y='107' font-size='10.5'>分部工程 → 总监理工程师组织（含观感检查）</text><rect x='20' y='122' width='280' height='32' rx='4'/><text x='32' y='142' font-size='10.5'>单位工程 → 建设单位组织正式竣工验收（含观感）</text></svg>",
+    basis: '《建筑与市政工程施工质量控制通用规范》GB 55032—2022 第 4 章；GB 50300—2013。',
+    basisSource: '站内 GB 55032 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/law/gb55032-2022-zhiliang-kongzhi', label: 'GB 55032—2022' }, { href: '/knowledge/quality-control-and-testing-gb55032', label: '质量控制与第三方检测' }],
+    look: '分清谁签字：检验批/分项找专监，分部/预验收找总监，正式竣工找建设单位。',
+    inspect: {
+      limits: ['检验批按楼层、施工段或变形缝划分', '分部、单位工程验收必须包含安全和功能抽检及观感质量检查'],
+      redline: '未划分检验批方案直接施工或未经上一级验收擅自进入下一级验收。',
+      action: '施工前审查检验批及分部分项划分方案，按层级严格把关签认。'
+    }
+  },
+  {
+    id: 'E8',
+    group: 'supervision',
+    term: '永久性质量责任标牌与工程使用说明书',
+    plain: '建筑工程竣工验收合格后须在建筑物明显部位设置永久性质量责任标牌（载明五方责任主体单位名称与项目负责人姓名）；交付使用时，建设/施工方应向使用方同时交付《工程使用说明书》（明示设计使用年限、使用功能及荷载限值）。',
+    slang: ['终身责任牌', '建筑使用说明书'],
+    slangNote: 'GB 55032—2022 第 5.0.1 条明确强制要求',
+    confuse: [{ word: '质量保修书 vs 工程使用说明书', diff: '《质量保修书》解决保修范围与期限（竣工报告时出具）；《工程使用说明书》解决后期合规使用、荷载与维护要求（交付使用时交付）。' }],
+    links: ['E7'],
+    say: '竣工验收后在明显部位镶嵌五方永久性质量责任标牌，交付时按 GB 55032 第 5.0.1 条同步交付工程使用说明书。',
+    figure: '图 E8　永久性责任标牌与工程使用说明书要点',
+    svg: "<svg viewBox='0 0 320 172' role='img' aria-label='永久性责任标牌与工程使用说明书示意'><rect x='20' y='34' width='132' height='108' rx='4'/><text x='86' y='56' font-size='11' text-anchor='middle'>永久性质量责任标牌</text><text x='86' y='82' font-size='10' text-anchor='middle'>建设/勘察/设计/</text><text x='86' y='100' font-size='10' text-anchor='middle'>施工/监理五方单位</text><text x='86' y='118' font-size='10' text-anchor='middle'>及项目负责人姓名</text><rect x='168' y='34' width='132' height='108' rx='4'/><text x='234' y='56' font-size='11' text-anchor='middle'>工程使用说明书</text><text x='234' y='82' font-size='10' text-anchor='middle'>GB 55032 第 5.0.1 条</text><text x='234' y='100' font-size='10' text-anchor='middle'>明示设计使用年限</text><text x='234' y='118' font-size='10' text-anchor='middle'>使用荷载限值与维护</text></svg>",
+    basis: '《建筑与市政工程施工质量控制通用规范》GB 55032—2022 第 5.0.1 条；《质量管理条例》。',
+    basisSource: '站内 GB 55032 强制规范',
+    evidence: '含已核原页',
+    related: [{ href: '/engineering-map/stage/acceptance', label: '阶段 07 验收' }, { href: '/engineering-map/stage/handover', label: '阶段 08 移交' }],
+    look: '竣工预验收时核查大厅外墙显著部位标牌刻字是否齐全、项目负责人姓名是否与任命文件一致。',
+    inspect: {
+      limits: ['五方主体单位名称及项目负责人姓名缺一不可', '交付使用时同步移交《工程使用说明书》'],
+      redline: '严禁标牌人员信息与实际签字备案的项目负责人不一致，严禁漏设标牌直接交付。',
+      action: '预验收阶段将责任标牌镶嵌及使用说明书编制列入整改清单核验销项。'
+    }
   }
 ]

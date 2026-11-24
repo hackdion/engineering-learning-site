@@ -7,20 +7,29 @@ import {
   formatDate,
   loadIndex,
   loadRecords,
+  loadTopics,
   paperUrl,
+  topicPaperUrl,
   type ExamIndex,
+  type ExamTopicBucket,
   type PaperMeta,
   type Records
 } from './examStore'
 
 const index = ref<ExamIndex | null>(null)
+const topics = ref<ExamTopicBucket[]>([])
+const topicKind = ref<'law' | 'topic'>('law')
+const subjectFilter = ref<string>('all')
+const keyword = ref('')
 const records = ref<Records>({ v: 1, papers: {} })
 const failed = ref('')
 
 onMounted(async () => {
   records.value = loadRecords()
   try {
-    index.value = await loadIndex()
+    const [idx, tp] = await Promise.all([loadIndex(), loadTopics().catch(() => ({ generated: '', buckets: [] }))])
+    index.value = idx
+    topics.value = tp.buckets
   } catch {
     failed.value = '卷目录读取失败，请刷新页面重试。'
   }
@@ -28,13 +37,27 @@ onMounted(async () => {
 
 const metaOf = (id: string) => index.value?.papers.find((p) => p.id === id)
 
+const filteredTopics = computed(() => {
+  const q = keyword.value.trim().toLowerCase()
+  return topics.value.filter(
+    (b) => b.kind === topicKind.value && (!q || `${b.title} ${b.desc}`.toLowerCase().includes(q))
+  )
+})
+
 const groups = computed(() => {
   const data = index.value
   if (!data) return []
-  return data.groups.map((group) => ({
-    ...group,
-    items: group.papers.map(metaOf).filter((p): p is PaperMeta => Boolean(p))
-  }))
+  const q = keyword.value.trim().toLowerCase()
+  return data.groups
+    .filter((g) => subjectFilter.value === 'all' || g.key === subjectFilter.value)
+    .map((group) => ({
+      ...group,
+      items: group.papers
+        .map(metaOf)
+        .filter((p): p is PaperMeta => Boolean(p))
+        .filter((p) => !q || `${p.title} ${p.subjectName} ${group.group}`.toLowerCase().includes(q))
+    }))
+    .filter((g) => g.items.length > 0)
 })
 
 const recordOf = (id: string) => records.value.papers[id]
@@ -97,6 +120,54 @@ function onClear() {
     <section v-if="!index" class="ec__loading" aria-live="polite">正在读取卷目录…</section>
 
     <template v-else>
+      <section v-if="topics.length" class="ec__topics" aria-labelledby="ec-topics-title">
+        <div class="ec__topics-head">
+          <div>
+            <h2 id="ec-topics-title">按规范与实务专题刷题</h2>
+            <p class="ec__topics-hint">从全站题库自动聚合高频客观题，点击直接进入背题/刷题模式。</p>
+          </div>
+          <div class="ec__topics-controls">
+            <div class="ec__tabs" role="tablist" aria-label="专项分类切换">
+              <button
+                type="button"
+                role="tab"
+                :aria-selected="topicKind === 'law'"
+                class="ec__tab"
+                :class="{ 'is-on': topicKind === 'law' }"
+                @click="topicKind = 'law'"
+              >按核心规范</button>
+              <button
+                type="button"
+                role="tab"
+                :aria-selected="topicKind === 'topic'"
+                class="ec__tab"
+                :class="{ 'is-on': topicKind === 'topic' }"
+                @click="topicKind = 'topic'"
+              >按实务专题</button>
+            </div>
+            <input
+              v-model.trim="keyword"
+              type="search"
+              class="ec__search"
+              placeholder="搜规范、专题或试卷名…"
+              aria-label="筛选专项与试卷"
+            >
+          </div>
+        </div>
+        <div v-if="filteredTopics.length" class="ec__topic-grid">
+          <a v-for="b in filteredTopics" :key="b.id" class="ec-topic-card" :href="topicPaperUrl(b.id)">
+            <div class="ec-topic-card__top">
+              <span class="hd-badge">{{ b.kind === 'law' ? '规范专项' : '实务专题' }}</span>
+              <span class="ec-topic-card__count">{{ b.count }} 题</span>
+            </div>
+            <b>{{ b.title }}</b>
+            <small>{{ b.desc }}</small>
+            <span class="ec-topic-card__go">开始专项刷题 →</span>
+          </a>
+        </div>
+        <p v-else class="ec__empty">没有匹配的专项，换个关键词试试。</p>
+      </section>
+
       <section v-if="wrongList.length" class="ec__mistakes" aria-labelledby="ec-mistakes-title">
         <div class="ec__mistakes-head">
           <h2 id="ec-mistakes-title">我的错题</h2>
@@ -111,6 +182,23 @@ function onClear() {
           </li>
         </ul>
       </section>
+
+      <div v-if="index.groups.length > 1" class="ec__subfilters" role="group" aria-label="按科目筛选试卷">
+        <button
+          type="button"
+          class="ec__tab"
+          :class="{ 'is-on': subjectFilter === 'all' }"
+          @click="subjectFilter = 'all'"
+        >全部科目</button>
+        <button
+          v-for="g in index.groups"
+          :key="g.key"
+          type="button"
+          class="ec__tab"
+          :class="{ 'is-on': subjectFilter === g.key }"
+          @click="subjectFilter = g.key"
+        >{{ g.group }}</button>
+      </div>
 
       <section v-for="group in groups" :key="group.key" class="ec__group" :aria-labelledby="`ec-${group.key}`">
         <div class="ec__group-head">
@@ -407,6 +495,141 @@ function onClear() {
   .ec__mistakes-go {
     grid-column: 2;
     text-align: right;
+  }
+}
+
+.ec__topics {
+  margin-bottom: 28px;
+  padding: 20px;
+  border: 2px solid var(--hd-ink);
+  border-top: 4px solid var(--hd-accent);
+  border-radius: 12px;
+  background: var(--hd-card);
+  box-shadow: var(--hd-shadow-card);
+}
+.ec__topics-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px 16px;
+  margin-bottom: 14px;
+}
+.ec__topics-head h2 {
+  margin: 0 0 4px;
+  padding: 0;
+  border: 0;
+  font-family: var(--hd-font-serif);
+  font-size: 22px;
+}
+.ec__topics-hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--hd-ink-2);
+}
+.ec__topics-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.ec__tabs,
+.ec__subfilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ec__subfilters {
+  margin-bottom: 20px;
+}
+.ec__tab {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1.5px solid var(--hd-ink);
+  border-radius: 999px;
+  background: var(--hd-paper);
+  color: var(--hd-ink);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ec__tab.is-on {
+  background: var(--hd-accent);
+  color: #fff;
+}
+.ec__search {
+  min-height: 36px;
+  min-width: 190px;
+  padding: 4px 12px;
+  border: 1.5px solid var(--hd-ink);
+  border-radius: 8px;
+  background: var(--hd-paper);
+  color: var(--hd-ink);
+  font-size: 13px;
+}
+.ec__topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+}
+.ec-topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  border: 1.5px solid var(--hd-line);
+  border-radius: 10px;
+  background: var(--hd-paper);
+  color: var(--hd-ink);
+  text-decoration: none;
+  transition: transform 0.12s, border-color 0.12s;
+}
+.ec-topic-card:hover {
+  transform: translate(-1px, -1px);
+  border-color: var(--hd-accent);
+}
+.ec-topic-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.ec-topic-card__count {
+  font-family: var(--hd-font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hd-accent);
+}
+.ec-topic-card b {
+  font-size: 15px;
+  line-height: 1.4;
+}
+.ec-topic-card small {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--hd-ink-2);
+}
+.ec-topic-card__go {
+  margin-top: auto;
+  padding-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--hd-accent);
+}
+.ec__empty {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--hd-ink-3);
+}
+@media (max-width: 720px) {
+  .ec__topics {
+    padding: 16px 14px;
+  }
+  .ec__search {
+    width: 100%;
+  }
+  .ec__topic-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
