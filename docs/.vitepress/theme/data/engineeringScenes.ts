@@ -336,7 +336,7 @@ export const scenes: Scene[] = [
     basis: [
       ['《施工脚手架通用规范》GB 55023—2022（全文强制）', GB55023, '法定'],
       ['《危险性较大的分部分项工程安全管理规定》（37 号令）第二十一条', `${WEIDA}#a21`, '法定'],
-      ['《房屋市政工程生产安全重大事故隐患判定标准（2024版）》（建质规〔2024〕5号）', '/knowledge/subcontract-safety-liability', '法定'],
+      ['《房屋市政工程生产安全重大事故隐患判定标准（2024版）》（建质规〔2024〕5号）', '/law/zhongda-yinhuan-2024', '法定'],
       ['工程术语 · 脚手架与模板词卡 A1～A10', '/engineering-map/#term-A1', '标准']
     ],
     learn: [['实务专题 · 脚手架工程现场巡视要点', '/knowledge/scaffolding-safety-inspection'], ['实务专题 · 专项施工方案审批', '/knowledge/special-construction-plan-approval']]
@@ -381,11 +381,12 @@ export const scenes: Scene[] = [
     look: ['动火点下方及周边 10m 内有无易燃物（如挤塑板、聚氨酯、木模板）及火花飞溅防护', '灭火器压力表与有效期、消防水带水压是否正常', '有限空间作业点外是否有持证监护工专人值守、通讯与安全绳/三脚架是否到位', '潮湿环境或金属容器内照明电源电压是否不大于 24V / 12V（GB 55034）'],
     result: ['条件不满足一律严禁动火或下井作业', '作业结束后看火人须留守观察不少于 30 分钟，确认无遗留火种方可撤离'],
     basis: [
+      ['《有限空间作业安全技术规范》GB 46768—2025（2026-05-01 施行）', '/law/gb46768-2025-youxian-kongjian', '法定'],
       ['《建筑与市政施工现场安全卫生与职业健康通用规范》GB 55034—2022', GB55034, '法定'],
       ['《建筑防火通用规范》GB 55037—2022', FIRE, '法定'],
       ['《特种作业人员安全技术培训考核管理规定》（应急〔2026〕45号，10类19项）', '/knowledge/supervision-duty-and-site-pitfalls', '法定']
     ],
-    learn: [['实务专题 · 建筑防火与施工消防', '/knowledge/building-fire-protection-gb55037'], ['实务专题 · 现场安全卫生 GB 55034', '/knowledge/site-safety-health-gb55034']]
+    learn: [['实务专题 · 重大隐患、有限空间与高处新标', '/knowledge/major-hazards-confined-space-and-heights'], ['实务专题 · 建筑防火与施工消防', '/knowledge/building-fire-protection-gb55037'], ['实务专题 · 现场安全卫生 GB 55034', '/knowledge/site-safety-health-gb55034']]
   },
   {
     id: 'quality-defect-suspension',

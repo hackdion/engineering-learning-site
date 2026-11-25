@@ -248,7 +248,8 @@ export default defineConfig({
             { text: '9. 施工现场安全卫生与职业健康（GB 55034）', link: '/knowledge/site-safety-health-gb55034' },
             { text: '10. 防水、装配式与混凝土/钢结构实务', link: '/knowledge/waterproofing-and-concrete-site-control' },
             { text: '11. 施工质量控制与第三方检测（GB 55032+57号令）', link: '/knowledge/quality-control-and-testing-gb55032' },
-            { text: '12. 建筑防火与施工消防安全（GB 55037）', link: '/knowledge/building-fire-protection-gb55037' }
+            { text: '12. 建筑防火与施工消防安全（GB 55037）', link: '/knowledge/building-fire-protection-gb55037' },
+            { text: '13. 重大隐患、有限空间与高处新标及淘汰目录', link: '/knowledge/major-hazards-confined-space-and-heights' }
           ]
         }
       ],
@@ -289,13 +290,18 @@ export default defineConfig({
               text: '规范性文件',
               collapsed: false,
               items: [
-                { text: '危大工程专项方案编制指南（48号文）', link: '/law/weida-bianzhi-zhinan' }
+                { text: '危大工程专项方案编制指南（48号文）', link: '/law/weida-bianzhi-zhinan' },
+                { text: '重大事故隐患判定标准（2024版）', link: '/law/zhongda-yinhuan-2024' },
+                { text: '危大专项方案严重缺陷清单（63号文）', link: '/law/weida-yanzhong-quexian-2024' },
+                { text: '淘汰、禁止和限制使用技术目录（第一/二批）', link: '/law/taotai-jinzhi-mulu' }
               ]
             },
             {
               text: '标准',
               collapsed: false,
               items: [
+                { text: '高处作业分级（GB 3608—2025）', link: '/law/gb3608-2025-gaochu-zuoye' },
+                { text: '有限空间作业安全技术规范（GB 46768—2025）', link: '/law/gb46768-2025-youxian-kongjian' },
                 { text: '混凝土结构通用规范（GB 55008—2021）', link: '/law/gb55008-2021-hunningtu' },
                 { text: '施工脚手架通用规范（GB 55023—2022）', link: '/law/gb55023-2022-jiaoshoujia' },
                 { text: '工程防水通用规范（GB 55030—2022）', link: '/law/gb55030-2022-fangshui' },

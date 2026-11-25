@@ -1330,10 +1330,10 @@ export const TERMS: TermCard[] = [
     say: '有限空间作业必须坚持「先通风、再检测、后作业」，外部设置持证监护工并配备气体检测仪、三脚架及正压式呼吸器。',
     figure: '图 E5　有限空间「先通风、再检测、后作业」闭环',
     svg: "<svg viewBox='0 0 320 172' role='img' aria-label='有限空间作业闭环示意'><rect x='20' y='34' width='85' height='46' rx='4'/><text x='62' y='61' font-size='11' text-anchor='middle'>1. 机械通风</text><rect x='117' y='34' width='85' height='46' rx='4'/><text x='159' y='61' font-size='11' text-anchor='middle'>2. 气体检测</text><rect x='214' y='34' width='86' height='46' rx='4'/><text x='257' y='61' font-size='11' text-anchor='middle'>3. 审批作业</text><rect x='20' y='98' width='280' height='48' rx='4'/><text x='160' y='118' font-size='11' text-anchor='middle'>外部设持证监护工（应急〔2026〕45号）</text><text x='160' y='136' font-size='10' text-anchor='middle'>严禁盲目下井施救！井内照明电压 ≤12V/24V</text></svg>",
-    basis: '《特种作业人员安全技术培训考核管理规定》（应急〔2026〕45号）；GB 55034—2022。',
-    basisSource: '站内 GB 55034 与最新规章',
+    basis: '《有限空间作业安全技术规范》GB 46768—2025；《特种作业人员安全技术培训考核管理规定》（应急〔2026〕45号）；GB 55034—2022。',
+    basisSource: '站内 GB 46768 / GB 55034 与最新规章',
     evidence: '含已核原页',
-    related: [{ href: '/engineering-map/scene/hotwork-and-confined-space', label: '场景 · 动火与有限空间管控' }, { href: '/knowledge/site-safety-health-gb55034', label: '现场安全卫生 GB 55034' }],
+    related: [{ href: '/law/gb46768-2025-youxian-kongjian', label: 'GB 46768—2025' }, { href: '/knowledge/major-hazards-confined-space-and-heights', label: '重大隐患与有限空间实务' }, { href: '/engineering-map/scene/hotwork-and-confined-space', label: '场景 · 动火与有限空间管控' }],
     look: '看到有人要下井或进地下室密闭夹层，先看井口有没有风机、有没有气体检测仪、外头站着的人有没有监护证。',
     inspect: {
       limits: ['氧含量 19.5%～21%（或按标准限值），可燃及有毒气体合格后方可进入', '金属容器或特别潮湿处照明电压 ≤12V'],

@@ -94,11 +94,14 @@ const LAW_RULES = [
   },
   {
     id: 'weida',
-    title: '危大工程（37号令 / 48号指南 / XJJ 133）',
-    desc: '危大与超危大范围判定、专项方案编审、专家论证、巡视旁站与验收管理。',
+    title: '危大工程与重大隐患（37号令 / 2024重大隐患 / 63号严重缺陷）',
+    desc: '危大与超危大范围判定、专项方案编审与严重缺陷清单、重大事故隐患判定、巡视旁站与验收管理。',
     relatedLink: '/law/weida-guiding',
     match: (p, txt) =>
-      p.includes('weida-') || p.includes('xjj133') || /危大工程|37号令|专家论证|专项施工方案/.test(txt)
+      p.includes('weida-') ||
+      p.includes('zhongda-yinhuan') ||
+      p.includes('xjj133') ||
+      /危大工程|37号令|专家论证|专项施工方案|重大事故隐患|严重缺陷清单/.test(txt)
   },
   {
     id: 'jianli',

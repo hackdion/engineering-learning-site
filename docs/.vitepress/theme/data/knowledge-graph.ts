@@ -63,7 +63,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'safety',
     summary: '总包连带、分包主责与监理四步履职判定，对照建质规〔2024〕5号与应急〔2026〕45号重大隐患边界。',
     tags: ['安全条例', '37号令', '建质规〔2024〕5号'],
-    laws: ['anquan-tiaoli', 'weida-guiding'],
+    laws: ['anquan-tiaoli', 'weida-guiding', 'zhongda-yinhuan-2024'],
     sections: [
       { book: 'anli', section: '3.12' },
       { book: 'zhiliang', section: '8.1' }
@@ -79,7 +79,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'safety',
     summary: '住建部 37 号令危大/超危大范围速查对照、5 名以上专家论证与建办质〔2024〕63号严重缺陷清单。',
     tags: ['37号令', '48号指南', '建办质〔2024〕63号', 'XJJ 133'],
-    laws: ['weida-guiding', 'weida-bianzhi-zhinan', 'xjj133-2021-weida-guicheng', 'gb55023-2022-jiaoshoujia'],
+    laws: ['weida-guiding', 'weida-bianzhi-zhinan', 'weida-yanzhong-quexian-2024', 'xjj133-2021-weida-guicheng', 'gb55023-2022-jiaoshoujia'],
     sections: [
       { book: 'zhiliang', section: '8.2' },
       { book: 'anli', section: '3.12' },
@@ -192,8 +192,8 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     shortTitle: '现场安全卫生 GB 55034',
     group: 'safety',
     summary: '生活区封闭、13类安全防控、36/24/12V 安全电压、有限空间持证监护与全工种劳保速查。',
-    tags: ['GB 55034', '安全条例'],
-    laws: ['gb55034-2022-anquan-weisheng', 'anquan-tiaoli'],
+    tags: ['GB 55034', 'GB 46768', '安全条例'],
+    laws: ['gb55034-2022-anquan-weisheng', 'gb46768-2025-youxian-kongjian', 'anquan-tiaoli'],
     sections: [{ book: 'zhiliang', section: '8.1' }],
     stages: ['preparation', 'construction'],
     exams: [
@@ -256,6 +256,32 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     exams: [
       { id: 'jly-danxuan-04', label: '监理员单选 04' },
       { id: 'jly-duoxuan-02', label: '监理员多选 02' }
+    ]
+  },
+  {
+    slug: 'major-hazards-confined-space-and-heights',
+    no: 13,
+    title: '重大隐患判定、危大严重缺陷、有限空间与高处新标及淘汰目录实务',
+    shortTitle: '重大隐患·有限空间·高处·淘汰目录',
+    group: 'safety',
+    summary: '建质规〔2024〕5号重大隐患、建办质〔2024〕63号严重缺陷、GB 46768/3608—2025、一二批淘汰目录与刑法危险作业罪底线。',
+    tags: ['建质规〔2024〕5号', '建办质〔2024〕63号', 'GB 46768', 'GB 3608', '淘汰目录'],
+    laws: [
+      'zhongda-yinhuan-2024',
+      'weida-yanzhong-quexian-2024',
+      'gb46768-2025-youxian-kongjian',
+      'gb3608-2025-gaochu-zuoye',
+      'taotai-jinzhi-mulu'
+    ],
+    sections: [
+      { book: 'zhiliang', section: '8.1' },
+      { book: 'zhiliang', section: '8.2' }
+    ],
+    stages: ['preparation', 'construction'],
+    exams: [
+      { id: 'jly-danxuan-01', label: '监理员单选 01' },
+      { id: 'jly-danxuan-05', label: '监理员单选 05' },
+      { id: 'jly-duoxuan-01', label: '监理员多选 01' }
     ]
   }
 ]
