@@ -262,6 +262,18 @@ function figurePath(figure) {
   return name
 }
 
+const RECALL_PATCHES = {
+  '2024-MK-M09': {
+    stem: '根据《工程质量安全手册(试行)》，设计模板工程支撑体系中的悬挑支撑结构应遵循的原则有()。',
+    options: { A: '少拆多支撑' },
+    inferred: true
+  },
+  '2024-MK-S10': {
+    options: { D: '工程交付使用之日' },
+    inferred: true
+  }
+}
+
 function cleanQuestion(q, paper) {
   if (seenIds.has(q.id)) {
     errors.push(`id 重复：${q.id}（${seenIds.get(q.id)} 与 ${paper.id}）`)
@@ -271,7 +283,9 @@ function cleanQuestion(q, paper) {
   if (q.figure === '缺图') return { skip: 'figure-missing' }
   if (q.figure && !figurePath(q.figure)) return { skip: 'figure-error' }
 
-  const options = q.options || {}
+  const patch = RECALL_PATCHES[q.id]
+  const stem = patch?.stem ?? q.stem
+  const options = patch?.options ? { ...(q.options || {}), ...patch.options } : (q.options || {})
   const answer = Array.isArray(q.answer) ? q.answer : []
   if (q.type !== 'case') {
     if (answer.length === 0) errors.push(`${paper.id} ${q.id}：没有答案`)
@@ -292,18 +306,18 @@ function cleanQuestion(q, paper) {
     subject: q.subject,
     type: q.type,
     no: q.no,
-    stem: q.stem,
+    stem,
     options,
     answer,
     analysis: q.analysis || '',
     point: q.point || ''
   }
-  if (hasMarkdown(q.stem)) out.stemHtml = toHtml(q.stem)
+  if (hasMarkdown(stem)) out.stemHtml = toHtml(stem)
   if (hasMarkdown(out.analysis)) out.analysisHtml = toHtml(out.analysis)
   const ref = cleanRef(q.ref, q.id, paper.id)
   if (ref) out.ref = ref
   if (q.figure) out.figure = path.basename(q.figure)
-  if (typeof q.doubt === 'string' && q.doubt.includes('推断补全')) out.inferred = true
+  if (patch?.inferred || (typeof q.doubt === 'string' && q.doubt.includes('推断补全'))) out.inferred = true
   return { question: out }
 }
 
