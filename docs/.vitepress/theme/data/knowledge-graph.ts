@@ -2,7 +2,13 @@
 // 单一事实源：新增实务专题或规范时只需在此增补条目，全站教材、法规、工程地图与刷题解析自动双向联动。
 import { sectionAtPath } from './law-refs'
 
-export type KnowledgeGroup = 'safety' | 'quality' | 'duty'
+export type KnowledgeGroup =
+  | 'safety'
+  | 'quality'
+  | 'duty'
+  | 'case-course'
+  | 'intro-course'
+  | 'contract-course'
 
 export interface KnowledgeGroupMeta {
   id: KnowledgeGroup
@@ -39,6 +45,21 @@ export const KNOWLEDGE_GROUPS: KnowledgeGroupMeta[] = [
     id: 'duty',
     title: '监理履职与合同索赔',
     hint: '监理机构职责与特种作业防踩坑、工程延期索赔与合同担保实务'
+  },
+  {
+    id: 'case-course',
+    title: '案例分析长专题',
+    hint: '紧扣 2026 版《案例分析》与《目标控制》，系统拆解网络计算、前锋线、质量事故与结算索赔'
+  },
+  {
+    id: 'intro-course',
+    title: '监理概论长专题',
+    hint: '紧扣 2026 版《建设工程监理概论》，打通监理制度、建设程序、招投标与数智化核心考点'
+  },
+  {
+    id: 'contract-course',
+    title: '合同管理长专题',
+    hint: '对照《民法典》与 2026 版《合同管理》，厘清法律关系、代理效力、违约责任与示范文本'
   }
 ]
 
@@ -283,6 +304,62 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
       { id: 'jly-danxuan-05', label: '监理员单选 05' },
       { id: 'jly-duoxuan-01', label: '监理员多选 01' }
     ]
+  },
+  {
+    slug: 'case-network-plan-and-frontline',
+    no: 14,
+    title: '双代号时标网络计划、时间参数计算与实际进度前锋线实战',
+    shortTitle: '时标网络与前锋线',
+    group: 'case-course',
+    summary: '六大时间参数与标号法、时标网络波形线传导、实际进度前锋线三步判断及工期优化实战。',
+    tags: ['网络计划', '前锋线', '工期优化'],
+    laws: ['gbt50319-2013-jianli-guifan'],
+    sections: [
+      { book: 'anli', section: '3.16' },
+      { book: 'anli', section: '3.17' },
+      { book: 'anli', section: '4.3' },
+      { book: 'jindu', section: '3.3' },
+      { book: 'jindu', section: '3.4' }
+    ],
+    stages: ['construction'],
+    exams: [
+      { id: '2024-al', label: '2024 案例分析真题' },
+      { id: '2024-mk', label: '2024 目标控制真题' }
+    ]
+  },
+  {
+    slug: 'intro-supervision-system-and-procedure',
+    no: 15,
+    title: '工程监理的性质、法律地位、建设程序与相关制度精讲',
+    shortTitle: '监理制度与建设程序',
+    group: 'intro-course',
+    summary: '监理涵义与四大性质、三控两管一协调+安全法定职责、强制监理阈值、施工许可时限、四项制度与项目资本金比例。',
+    tags: ['建筑法', '质量条例', '安全条例', '项目资本金'],
+    laws: ['jianzhufa', 'zhiliang-tiaoli', 'anquan-tiaoli', 'gbt50319-2013-jianli-guifan'],
+    sections: [
+      { book: 'gailun', section: '1.1' },
+      { book: 'gailun', section: '1.2' },
+      { book: 'gailun', section: '1.3' }
+    ],
+    stages: ['planning', 'decision', 'preparation'],
+    exams: [{ id: '2024-lf', label: '2024 理论和法规真题' }]
+  },
+  {
+    slug: 'contract-law-basics',
+    no: 16,
+    title: '工程合同管理任务、法律关系、代理与违约责任精讲',
+    shortTitle: '合同管理法律基础',
+    group: 'contract-course',
+    summary: '对照《民法典》与 2026 教材，梳理合同管理闭环、法律关系三要素、表见代理判定、违约与发包人过错责任。',
+    tags: ['民法典', '表见代理', '违约责任'],
+    laws: ['jianzhufa', 'zhiliang-tiaoli'],
+    sections: [
+      { book: 'hetong', section: '1.1' },
+      { book: 'hetong', section: '1.2' },
+      { book: 'hetong', section: '1.3' }
+    ],
+    stages: ['tender', 'construction'],
+    exams: [{ id: '2025-ht', label: '2025 合同管理真题' }]
   }
 ]
 

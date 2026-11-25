@@ -58,6 +58,9 @@ const byGroup = (g: KnowledgeGroup) => KNOWLEDGE_TOPICS.filter((t) => t.group ==
 .tk-card--safety { border-top-color: var(--hd-orange); }
 .tk-card--quality { border-top-color: var(--hd-accent); }
 .tk-card--duty { border-top-color: var(--hd-teal); }
+.tk-card--case-course { border-top-color: var(--hd-orange); }
+.tk-card--intro-course { border-top-color: var(--hd-accent); }
+.tk-card--contract-course { border-top-color: var(--hd-green); }
 .tk-card__top { display: flex; justify-content: space-between; align-items: center; font-family: var(--hd-font-mono); font-size: 12px; color: var(--hd-ink-3); }
 .tk-card__title { font-family: var(--hd-font-serif); font-size: 15px; line-height: 1.4; color: var(--hd-ink); }
 .tk-card__desc { margin: 0; font-size: 13px; line-height: 1.6; color: var(--hd-ink-2); }

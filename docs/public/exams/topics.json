@@ -3570,6 +3570,126 @@
       ]
     },
     {
+      "id": "topic-intro-supervision-system-and-procedure",
+      "kind": "topic",
+      "title": "监理制度与建设程序",
+      "desc": "监理涵义与四大性质、三控两管一协调+安全法定职责、强制监理阈值、施工许可时限、四项制度与项目资本金比例。",
+      "relatedLink": "/knowledge/intro-supervision-system-and-procedure",
+      "count": 55,
+      "refs": [
+        {
+          "paperId": "2022-lf",
+          "ids": [
+            "2022-LF-S01",
+            "2022-LF-S03",
+            "2022-LF-S04",
+            "2022-LF-S05",
+            "2022-LF-S06",
+            "2022-LF-M51",
+            "2022-LF-M52",
+            "2022-LF-M53",
+            "2022-LF-M57"
+          ]
+        },
+        {
+          "paperId": "2023-lf",
+          "ids": [
+            "2023-LF-S05",
+            "2023-LF-S07",
+            "2023-LF-S12",
+            "2023-LF-S16",
+            "2023-LF-S22",
+            "2023-LF-S35",
+            "2023-LF-M53"
+          ]
+        },
+        {
+          "paperId": "2024-lf",
+          "ids": [
+            "2024-LF-S01",
+            "2024-LF-S02",
+            "2024-LF-S03",
+            "2024-LF-S05",
+            "2024-LF-S16",
+            "2024-LF-S42",
+            "2024-LF-S43",
+            "2024-LF-M62"
+          ]
+        },
+        {
+          "paperId": "mk01-lf",
+          "ids": [
+            "MK01-LF-S01",
+            "MK01-LF-S02",
+            "MK01-LF-S03",
+            "MK01-LF-S05",
+            "MK01-LF-S16",
+            "MK01-LF-S32",
+            "MK01-LF-S42",
+            "MK01-LF-S43",
+            "MK01-LF-M62"
+          ]
+        },
+        {
+          "paperId": "mk02-lf",
+          "ids": [
+            "MK02-LF-S01",
+            "MK02-LF-S02",
+            "MK02-LF-S03",
+            "MK02-LF-S05",
+            "MK02-LF-S16",
+            "MK02-LF-S42",
+            "MK02-LF-S43",
+            "MK02-LF-M62"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-060",
+            "JLY-DANXUAN-01-086",
+            "JLY-DANXUAN-01-090",
+            "JLY-DANXUAN-01-091"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-009"
+          ]
+        },
+        {
+          "paperId": "jly-duoxuan-01",
+          "ids": [
+            "JLY-DUOXUAN-01-026",
+            "JLY-DUOXUAN-01-027",
+            "JLY-DUOXUAN-01-028",
+            "JLY-DUOXUAN-01-029",
+            "JLY-DUOXUAN-01-050"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-026",
+            "JLY-PANDUAN-01-027"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-02",
+          "ids": [
+            "JLY-PANDUAN-02-018"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-03",
+          "ids": [
+            "JLY-PANDUAN-03-013"
+          ]
+        }
+      ]
+    },
+    {
       "id": "topic-quality-defect-and-histogram",
       "kind": "topic",
       "title": "质量缺陷与直方图",
@@ -3773,6 +3893,119 @@
           "paperId": "jly-panduan-03",
           "ids": [
             "JLY-PANDUAN-03-017"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-contract-law-basics",
+      "kind": "topic",
+      "title": "合同管理法律基础",
+      "desc": "对照《民法典》与 2026 教材，梳理合同管理闭环、法律关系三要素、表见代理判定、违约与发包人过错责任。",
+      "relatedLink": "/knowledge/contract-law-basics",
+      "count": 23,
+      "refs": [
+        {
+          "paperId": "2023-ht",
+          "ids": [
+            "2023-HT-S01",
+            "2023-HT-S44",
+            "2023-HT-M65"
+          ]
+        },
+        {
+          "paperId": "2024-ht",
+          "ids": [
+            "2024-HT-S22",
+            "2024-HT-S29",
+            "2024-HT-S34",
+            "2024-HT-M52",
+            "2024-HT-M53",
+            "2024-HT-M60"
+          ]
+        },
+        {
+          "paperId": "2025-ht",
+          "ids": [
+            "2025-HT-S01",
+            "2025-HT-S02",
+            "2025-HT-S03",
+            "2025-HT-M51",
+            "2025-HT-M52"
+          ]
+        },
+        {
+          "paperId": "mk01-ht",
+          "ids": [
+            "MK01-HT-S15",
+            "MK01-HT-S22",
+            "MK01-HT-S29",
+            "MK01-HT-S34",
+            "MK01-HT-M52",
+            "MK01-HT-M53",
+            "MK01-HT-M60"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-060"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-08",
+          "ids": [
+            "JLY-DANXUAN-08-009"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topic-case-network-plan-and-frontline",
+      "kind": "topic",
+      "title": "时标网络与前锋线",
+      "desc": "六大时间参数与标号法、时标网络波形线传导、实际进度前锋线三步判断及工期优化实战。",
+      "relatedLink": "/knowledge/case-network-plan-and-frontline",
+      "count": 15,
+      "refs": [
+        {
+          "paperId": "2024-mk",
+          "ids": [
+            "2024-MK-S28",
+            "2024-MK-S59",
+            "2024-MK-S60",
+            "2024-MK-S70",
+            "2024-MK-S73",
+            "2024-MK-M19"
+          ]
+        },
+        {
+          "paperId": "mk01-mk",
+          "ids": [
+            "MK01-MK-S28",
+            "MK01-MK-S59",
+            "MK01-MK-S60",
+            "MK01-MK-S70",
+            "MK01-MK-S73",
+            "MK01-MK-M104"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-01",
+          "ids": [
+            "JLY-DANXUAN-01-100"
+          ]
+        },
+        {
+          "paperId": "jly-danxuan-02",
+          "ids": [
+            "JLY-DANXUAN-02-072"
+          ]
+        },
+        {
+          "paperId": "jly-panduan-01",
+          "ids": [
+            "JLY-PANDUAN-01-048"
           ]
         }
       ]

@@ -251,6 +251,24 @@ export default defineConfig({
             { text: '12. 建筑防火与施工消防安全（GB 55037）', link: '/knowledge/building-fire-protection-gb55037' },
             { text: '13. 重大隐患、有限空间与高处新标及淘汰目录', link: '/knowledge/major-hazards-confined-space-and-heights' }
           ]
+        },
+        {
+          text: '案例分析长专题',
+          items: [
+            { text: '14. 时标网络计划与前锋线实战', link: '/knowledge/case-network-plan-and-frontline' }
+          ]
+        },
+        {
+          text: '监理概论长专题',
+          items: [
+            { text: '15. 监理制度、建设程序与相关制度', link: '/knowledge/intro-supervision-system-and-procedure' }
+          ]
+        },
+        {
+          text: '合同管理长专题',
+          items: [
+            { text: '16. 合同管理法律基础、代理与违约责任', link: '/knowledge/contract-law-basics' }
+          ]
         }
       ],
       // 法规文本按层级分组。
