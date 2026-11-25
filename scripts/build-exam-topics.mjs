@@ -14,7 +14,7 @@ const GRAPH_PATH = path.join(REPO_ROOT, 'docs', '.vitepress', 'theme', 'data', '
 const BOOKS_PATH = path.join(REPO_ROOT, 'docs', '.vitepress', 'theme', 'data', 'books.ts')
 
 const indexData = JSON.parse(fs.readFileSync(path.join(EXAMS_DIR, 'index.json'), 'utf8'))
-const paperOrder = indexData.papers.map((p) => p.id)
+const paperOrder = indexData.papers.map((p) => p.id).filter((id) => id !== 'jly-kaoshi-fanwei')
 
 const booksSrc = fs.readFileSync(BOOKS_PATH, 'utf8')
 const bookDirMap = {}

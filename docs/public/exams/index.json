@@ -72,7 +72,7 @@
     },
     {
       "key": "jly",
-      "name": "龙琪设计院监理员取证题库（1,252 题 · 分 14 套专项刷题卷）",
+      "name": "龙琪设计院监理员取证题库（含考前划重点专卷 + 14 套全库专项卷）",
       "short": "监理员取证",
       "group": "监理员新取证题库",
       "durationMinutes": 60,
@@ -81,6 +81,7 @@
       "multi": 0,
       "cases": 0,
       "papers": [
+        "jly-kaoshi-fanwei",
         "jly-danxuan-01",
         "jly-danxuan-02",
         "jly-danxuan-03",
@@ -821,6 +822,34 @@
       "missingCount": 0,
       "complete": true,
       "fullScore": 31,
+      "scoring": {
+        "single": 1,
+        "multi": 2,
+        "partial": 0.5
+      }
+    },
+    {
+      "id": "jly-kaoshi-fanwei",
+      "title": "考前划重点专卷（单选365+多选262+判断104）",
+      "year": 2026,
+      "kind": "mock",
+      "subject": "监理员取证",
+      "subjectKey": "jly",
+      "subjectName": "2026 监理员取证考前划重点范围（共 731 题）",
+      "durationMinutes": 240,
+      "selfScore": false,
+      "strictCount": 731,
+      "expectedSingle": 469,
+      "expectedMulti": 262,
+      "expectedCases": 0,
+      "collected": 731,
+      "singleCount": 469,
+      "multiCount": 262,
+      "caseCount": 0,
+      "excludedCount": 0,
+      "missingCount": 0,
+      "complete": true,
+      "fullScore": 993,
       "scoring": {
         "single": 1,
         "multi": 2,
