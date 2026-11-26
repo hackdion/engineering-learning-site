@@ -58,7 +58,7 @@ onMounted(async () => {
       <div v-if="failed" class="mermaid-diagram__error" role="alert">
         架构图暂时无法渲染，请刷新页面重试。
       </div>
-      <div v-else ref="container" class="mermaid-diagram__canvas" aria-live="polite">
+      <div v-else ref="container" class="mermaid-diagram__canvas">
         <p class="mermaid-diagram__loading">架构图加载中…</p>
       </div>
     </div>

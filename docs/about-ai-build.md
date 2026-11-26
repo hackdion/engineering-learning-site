@@ -60,7 +60,7 @@ export default defineConfig({
 })
 ```
 
-例如资金时间价值公式可以直接写成可编辑的 LaTeX，而不是截图：
+例如资金时间价值公式直接写成可编辑的 LaTeX 源码：
 
 ```tex
 $$
@@ -111,12 +111,12 @@ npm run check
 | 观察项 | 实测结果 | 统计口径 |
 | --- | ---: | --- |
 | 教材书架 | 6 册 | 现有书目配置 |
-| 教材 Markdown | 228 页 | `docs/textbook/**/*.md` |
+| 教材 Markdown | 230 页 | `docs/textbook/` 下全部 Markdown，含书目首页与附录 |
 | 互动课件 | 182 份 | `docs/courses/ppt-*.md` |
 | 法规目录 | 38 页 | 37 部法规正文与 1 个总览页 |
 | 全站公开 Markdown | 508 页 | 本次发布检查实际扫描数量，包含各类目录页 |
 | 本地运行环境 | Node.js 24.18.1 / npm 11.16.0 | 本次构建机器实际版本 |
-| 首次通过的完整构建 | 70.51 秒 | 本次 `npm run build` 的 VitePress 报告 |
+| 完整构建耗时 | 52～71 秒 | 本机三次实测的 VitePress 报告 |
 | 发布检查 | 0–6b 全部通过 | 本次 `npm run check` 结果 |
 | 运行时后端与 AI 接口 | 0 个 | 静态托管，互动在浏览器执行 |
 
@@ -139,3 +139,5 @@ npm run check
 视频展示实际操作过程，可以和本文的架构图、命令与数据对照查看。
 
 <a class="hd-plat hd-plat--bili" href="https://www.bilibili.com/video/BV1VLyQzFEvb/" target="_blank" rel="noopener">在 B 站观看实测视频 · BV1VLyQzFEvb</a>
+
+回到[关于本站](/about)，可以查看教材、课程入口与纠错方式。
