@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * 根据 2026-11-25 考前划重点录音范围，从 jly-danxuan / jly-duoxuan / jly-panduan
- * 生成独立专卷 docs/public/exams/jly-kaoshi-fanwei.json（731 题）。
+ * 生成独立专卷 docs/public/exams/jly-kaoshi-fanwei.json（593 题）。
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -63,7 +63,26 @@ const SINGLE_RANGES = [
   [726, 759]
 ]
 
-const MULTI_HIGHLIGHT = new Set(expandRanges([[26, 42], [44, 58]]))
+const MULTI_RANGES = [
+  [26, 33],
+  [34, 42],
+  [45, 53],
+  54,
+  [55, 63],
+  [71, 78],
+  94,
+  100,
+  [138, 148],
+  [150, 155],
+  [157, 163],
+  [175, 197],
+  [202, 205],
+  [210, 216],
+  [238, 244],
+  [246, 252],
+  [255, 256],
+  [259, 262]
+]
 
 const JUDGE_RANGES = [
   [1, 16],
@@ -82,6 +101,7 @@ const mxAll = loadCat('jly-duoxuan', 3)
 const pdAll = loadCat('jly-panduan', 3)
 
 const singleIndices = expandRanges(SINGLE_RANGES)
+const multiIndices = expandRanges(MULTI_RANGES)
 const judgeIndices = expandRanges(JUDGE_RANGES)
 
 const out = []
@@ -113,10 +133,10 @@ for (const idx of singleIndices) {
   pushItem(q, `考前划重点 · 原单选第 ${idx} 题`)
 }
 
-for (let i = 0; i < mxAll.length; i += 1) {
-  const idx = i + 1
-  const tag = MULTI_HIGHLIGHT.has(idx) ? '老师已勾重点' : '多选全收'
-  pushItem(mxAll[i], `考前划重点 · 原多选第 ${idx} 题（${tag}）`)
+for (const idx of multiIndices) {
+  const q = mxAll[idx - 1]
+  if (!q) throw new Error(`Multi index out of range: ${idx}`)
+  pushItem(q, `考前划重点 · 原多选第 ${idx} 题（老师已勾重点）`)
 }
 
 for (const idx of judgeIndices) {
@@ -142,12 +162,12 @@ for (const q of out) {
   }
 }
 
-if (out.length !== 731 || singleCount !== 469 || multiCount !== 262) {
+if (out.length !== 593 || singleCount !== 469 || multiCount !== 124) {
   throw new Error(`Count mismatch: total=${out.length}, single=${singleCount}, multi=${multiCount}`)
 }
 
 const outPath = path.join(EXAMS_DIR, 'jly-kaoshi-fanwei.json')
 fs.writeFileSync(outPath, JSON.stringify(out), 'utf8')
 console.log(
-  `Generated ${outPath}: total=${out.length} (单选=${singleIndices.length}, 多选=${mxAll.length}, 判断=${judgeIndices.length}; singleCount=${singleCount}, multiCount=${multiCount})`
+  `Generated ${outPath}: total=${out.length} (单选=${singleIndices.length}, 多选=${multiIndices.length}, 判断=${judgeIndices.length}; singleCount=${singleCount}, multiCount=${multiCount})`
 )
