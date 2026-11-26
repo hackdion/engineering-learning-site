@@ -8,12 +8,12 @@ docNo: GB 55008—2021
 published: 2021-09-08
 effective: 2022-04-01
 revisions:
-  - 2021-09-08 住房和城乡建设部批准发布，自 2022-04-01 起施行（全文强制性国家标准）
+  - 2021-09-08 住房和城乡建设部公告 2021 年第 167 号批准发布，自 2022-04-01 起施行（全文强制性国家标准）
 status: 现行有效
 summary: 全文强制性国家标准，规定混凝土结构工程的材料、设计、施工及验收、维护及拆除等必须执行的底线要求，覆盖混凝土与钢筋性能、保护层、模板与预应力、装配式结构、拆除分析等。
-source: "https://www.mohurd.gov.cn/"
-sourceLabel: 住房和城乡建设部
-asOf: 2026-11-24
+source: "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2021/art_17339_762454.html"
+sourceLabel: 住房和城乡建设部（公告2021年第167号）
+asOf: 2026-11-26
 outline: [2, 3]
 ---
 

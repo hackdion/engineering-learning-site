@@ -82,7 +82,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     title: '分包工程安全事故的责任划分',
     shortTitle: '分包安全责任划分',
     group: 'safety',
-    summary: '总包连带、分包主责与监理四步履职判定，对照建质规〔2024〕5号与应急〔2026〕45号重大隐患边界。',
+    summary: '总包连带、分包主责与监理四步履职判定，对照建质规〔2024〕5号与应急管理部令第19号重大隐患边界。',
     tags: ['安全条例', '37号令', '建质规〔2024〕5号'],
     laws: ['anquan-tiaoli', 'weida-guiding', 'zhongda-yinhuan-2024'],
     sections: [
@@ -181,7 +181,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'safety',
     summary: '地基排水、剪刀撑与连墙件限值、盘扣与轮扣区别及现场挑错清单。',
     tags: ['GB 55023', '37号令', 'XJJ 133'],
-    laws: ['gb55023-2022-jiaoshoujia', 'weida-guiding', 'xjj133-2021-weida-guicheng'],
+    laws: ['gb55023-2022-jiaoshoujia', 'jgjt231-2021-pankou-jiaoshoujia', 'weida-guiding', 'xjj133-2021-weida-guicheng'],
     sections: [{ book: 'zhiliang', section: '8.2' }],
     stages: ['construction'],
     exams: [
@@ -195,9 +195,9 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     title: '监理机构职责划分、地方规程差异与现场防踩坑实务',
     shortTitle: '监理职责与特种作业',
     group: 'duty',
-    summary: '总监委托边界、规划/细则区别、10类19项特种作业（应急〔2026〕45号）与第三方检测留痕闭环。',
-    tags: ['XJJ 088', '57号令', '应急〔2026〕45号'],
-    laws: ['gbt50319-2013-jianli-guifan', 'xjj088-2018-jianli-guicheng', 'zhiliang-jiance-banfa', 'anquan-tiaoli'],
+    summary: '总监委托边界、规划/细则区别、10类19项特种作业（应急管理部令第19号）与第三方检测留痕闭环。',
+    tags: ['XJJ 088', '57号令', '应急管理部令第19号'],
+    laws: ['gbt50319-2013-jianli-guifan', 'xjj088-2018-jianli-guicheng', 'zhiliang-jiance-banfa', 'anquan-tiaoli', 'tezhong-zuoye-guiding'],
     sections: [
       { book: 'gailun', section: '5.3' },
       { book: 'gailun', section: '6.2' },
@@ -214,7 +214,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'safety',
     summary: '生活区封闭、13类安全防控、36/24/12V 安全电压、有限空间持证监护与全工种劳保速查。',
     tags: ['GB 55034', 'GB 46768', '安全条例'],
-    laws: ['gb55034-2022-anquan-weisheng', 'gb46768-2025-youxian-kongjian', 'anquan-tiaoli'],
+    laws: ['gb55034-2022-anquan-weisheng', 'gb46768-2025-youxian-kongjian', 'gb2894-2025-anquan-biaozhi', 'jgj146-2013-huanjing-weisheng', 'jgjt46-2024-linshi-yongdian', 'anquan-tiaoli'],
     sections: [{ book: 'zhiliang', section: '8.1' }],
     stages: ['preparation', 'construction'],
     exams: [
@@ -271,7 +271,7 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     group: 'safety',
     summary: '适用除外边界（不含民爆）、消防车道与救援口、液化气红线、防火分隔与施工动火安全。',
     tags: ['GB 55037', 'GB 55034'],
-    laws: ['gb55037-2022-jianzhu-fanghuo', 'gb55034-2022-anquan-weisheng'],
+    laws: ['gb55037-2022-jianzhu-fanghuo', 'gbt50720-2011-shigong-xiaofang', 'xiaofang-shencha-yanshou', 'gb55034-2022-anquan-weisheng'],
     sections: [{ book: 'zhiliang', section: '8.1' }],
     stages: ['design', 'construction', 'acceptance'],
     exams: [

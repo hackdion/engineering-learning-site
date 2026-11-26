@@ -35,7 +35,7 @@
 <rect x="14" y="14" width="772" height="452" fill="url(#bp-grid)" stroke="#14212E" stroke-width="2"/>
 <rect x="14" y="14" width="772" height="42" fill="#142231"/>
 <text x="28" y="40" class="title white">阶段 05 · 施工准备与场地分区蓝图</text>
-<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-05 · GB 55032/GB 55034/GB 2894—2025/应急〔2026〕45号</text>
+<text x="772" y="39" text-anchor="end" class="mono sm" style="fill:#FFC72C">DWG EM-05 · GB 55032/GB 55034/GB 2894—2025/应急管理部令第19号</text>
 
   <!-- 左侧：工地总平面分区示意 (01~09) -->
   <rect x="30" y="70" width="490" height="350" rx="8" fill="#FFFFFF" stroke="#14212E" stroke-width="1.8"/>

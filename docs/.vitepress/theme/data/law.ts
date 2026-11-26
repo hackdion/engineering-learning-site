@@ -2,10 +2,10 @@
 // 这里不读取页面文件，供组件、配置和构建检查复用；
 // 页面数据由 law.data.ts 在构建时扫描 docs/law、docs/model-contracts 生成。
 
-export type LawLevel = '法律' | '行政法规' | '部门规章' | '规范性文件' | '标准'
+export type LawLevel = '法律' | '行政法规' | '部门规章' | '地方性法规' | '规范性文件' | '标准'
 
 /** 侧边栏与总览页的固定层级顺序。 */
-export const LAW_LEVELS: LawLevel[] = ['法律', '行政法规', '部门规章', '规范性文件', '标准']
+export const LAW_LEVELS: LawLevel[] = ['法律', '行政法规', '部门规章', '地方性法规', '规范性文件', '标准']
 
 export type ContractType = '施工' | '监理' | '总承包' | '咨询' | '勘察设计' | '分包' | '招标文件' | '国际' | '专项方案编写范例'
 

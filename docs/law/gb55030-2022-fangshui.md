@@ -5,15 +5,15 @@ slug: gb55030-2022-fangshui
 level: 标准
 structure: clauses
 docNo: GB 55030—2022
-published: 2022-09-29
+published: 2022-09-27
 effective: 2023-04-01
 revisions:
-  - 2022-09-29 住房和城乡建设部批准发布，自 2023-04-01 起施行（全文强制性国家标准）
+  - 2022-09-27 住房和城乡建设部公告 2022 年第 147 号批准发布，自 2023-04-01 起施行（全文强制性国家标准）
 status: 现行有效
 summary: 全文强制性国家标准，规定建筑与市政工程防水的材料、设计、施工、验收及运行维护要求，确立防水工程按重要性与环境类别分级设防和防水设计工作年限。
 source: "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2022/art_17339_768499.html"
-sourceLabel: 住房和城乡建设部
-asOf: 2026-11-24
+sourceLabel: 住房和城乡建设部（公告2022年第147号）
+asOf: 2026-11-26
 outline: [2, 3]
 ---
 

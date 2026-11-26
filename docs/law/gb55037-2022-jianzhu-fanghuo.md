@@ -8,12 +8,12 @@ docNo: GB 55037—2022
 published: 2022-12-27
 effective: 2023-06-01
 revisions:
-  - 2022-12-27 住房和城乡建设部批准发布，自 2023-06-01 起施行（全文强制性国家标准）
+  - 2022-12-27 住房和城乡建设部公告 2022 年第 189 号批准发布，自 2023-06-01 起施行（全文强制性国家标准）
 status: 现行有效
 summary: 全文强制性国家标准，规定建筑总平面布局、建筑构造与防火分隔、疏散、消防设施及施工与既有建筑改造中的防火要求。
-source: "https://www.mohurd.gov.cn/"
-sourceLabel: 住房和城乡建设部
-asOf: 2026-11-24
+source: "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2024/art_17339_770016.html"
+sourceLabel: 住房和城乡建设部（公告2022年第189号）
+asOf: 2026-11-26
 outline: [2, 3]
 ---
 

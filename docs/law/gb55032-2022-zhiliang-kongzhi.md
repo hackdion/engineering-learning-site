@@ -8,12 +8,12 @@ docNo: GB 55032—2022
 published: 2022-07-15
 effective: 2023-03-01
 revisions:
-  - 2022-07-15 住房和城乡建设部批准发布，自 2023-03-01 起施行（全文强制性国家标准）
+  - 2022-07-15 住房和城乡建设部公告 2022 年第 117 号批准发布，自 2023-03-01 起施行（全文强制性国家标准）
 status: 现行有效
 summary: 全文强制性国家标准，规定建筑与市政工程施工过程质量控制、检验批/分项/分部/单位工程验收组织与要求、质量保修与维护，并附单位工程、分部工程、分项工程划分。
-source: "https://www.mohurd.gov.cn/"
-sourceLabel: 住房和城乡建设部
-asOf: 2026-11-24
+source: "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2024/art_17339_767714.html"
+sourceLabel: 住房和城乡建设部（公告2022年第117号）
+asOf: 2026-11-26
 outline: [2, 3]
 ---
 

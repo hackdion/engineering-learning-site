@@ -294,7 +294,9 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '中华人民共和国建筑法', link: '/law/jianzhufa' },
-                { text: '中华人民共和国招标投标法', link: '/law/zhaobiao-toubiao-fa' }
+                { text: '中华人民共和国招标投标法', link: '/law/zhaobiao-toubiao-fa' },
+                { text: '中华人民共和国安全生产法', link: '/law/anquan-shengchan-fa' },
+                { text: '中华人民共和国特种设备安全法', link: '/law/tezhong-shebei-anquan-fa' }
               ]
             },
             {
@@ -303,7 +305,8 @@ export default defineConfig({
               items: [
                 { text: '建设工程质量管理条例', link: '/law/zhiliang-tiaoli' },
                 { text: '建设工程安全生产管理条例', link: '/law/anquan-tiaoli' },
-                { text: '招标投标法实施条例', link: '/law/zhaobiao-toubiao-shishi-tiaoli' }
+                { text: '招标投标法实施条例', link: '/law/zhaobiao-toubiao-shishi-tiaoli' },
+                { text: '建设工程勘察设计管理条例', link: '/law/kancha-sheji-tiaoli' }
               ]
             },
             {
@@ -312,7 +315,17 @@ export default defineConfig({
               items: [
                 { text: '必须招标的工程项目规定', link: '/law/bixu-zhaobiao-gongcheng' },
                 { text: '危大工程安全管理规定（37号令）', link: '/law/weida-guiding' },
-                { text: '质量检测管理办法（57号令）', link: '/law/zhiliang-jiance-banfa' }
+                { text: '质量检测管理办法（57号令）', link: '/law/zhiliang-jiance-banfa' },
+                { text: '消防设计审查验收规定（51号令）', link: '/law/xiaofang-shencha-yanshou' },
+                { text: '特种作业人员考核规定（应急19号令）', link: '/law/tezhong-zuoye-guiding' },
+                { text: '城市建设档案管理规定（61号令）', link: '/law/chengjian-dangan-guiding' }
+              ]
+            },
+            {
+              text: '地方性法规',
+              collapsed: false,
+              items: [
+                { text: '新疆建筑市场管理条例', link: '/law/xinjiang-jianzhu-shichang-tiaoli' }
               ]
             },
             {
@@ -322,15 +335,22 @@ export default defineConfig({
                 { text: '危大工程专项方案编制指南（48号文）', link: '/law/weida-bianzhi-zhinan' },
                 { text: '重大事故隐患判定标准（2024版）', link: '/law/zhongda-yinhuan-2024' },
                 { text: '危大专项方案严重缺陷清单（63号文）', link: '/law/weida-yanzhong-quexian-2024' },
-                { text: '淘汰、禁止和限制使用技术目录（第一/二批）', link: '/law/taotai-jinzhi-mulu' }
+                { text: '淘汰、禁止和限制使用技术目录（第一/二批）', link: '/law/taotai-jinzhi-mulu' },
+                { text: '发包承包违法认定办法（建市规1号）', link: '/law/fabao-chengbao-weifa' },
+                { text: '房屋市政竣工验收规定（171号文）', link: '/law/jungong-yanshou-guiding' }
               ]
             },
             {
               text: '标准',
               collapsed: false,
               items: [
+                { text: '安全色和安全标志（GB 2894—2025）', link: '/law/gb2894-2025-anquan-biaozhi' },
                 { text: '高处作业分级（GB 3608—2025）', link: '/law/gb3608-2025-gaochu-zuoye' },
                 { text: '有限空间作业安全技术规范（GB 46768—2025）', link: '/law/gb46768-2025-youxian-kongjian' },
+                { text: '施工现场临时用电标准（JGJ/T 46—2024）', link: '/law/jgjt46-2024-linshi-yongdian' },
+                { text: '施工现场消防安全标准（GB/T 50720—2011）', link: '/law/gbt50720-2011-shigong-xiaofang' },
+                { text: '施工现场环境与卫生标准（JGJ 146—2013）', link: '/law/jgj146-2013-huanjing-weisheng' },
+                { text: '盘扣式脚手架安全标准（JGJ/T 231—2021）', link: '/law/jgjt231-2021-pankou-jiaoshoujia' },
                 { text: '混凝土结构通用规范（GB 55008—2021）', link: '/law/gb55008-2021-hunningtu' },
                 { text: '施工脚手架通用规范（GB 55023—2022）', link: '/law/gb55023-2022-jiaoshoujia' },
                 { text: '工程防水通用规范（GB 55030—2022）', link: '/law/gb55030-2022-fangshui' },

@@ -29,7 +29,7 @@ const REPO_ROOT = path.resolve(__dirname, '..')
 const LAW_DIR = path.join(REPO_ROOT, 'docs', 'law')
 const CONTRACT_DIR = path.join(REPO_ROOT, 'docs', 'model-contracts')
 
-const LEVELS = new Set(['法律', '行政法规', '部门规章', '规范性文件', '标准'])
+const LEVELS = new Set(['法律', '行政法规', '部门规章', '地方性法规', '规范性文件', '标准'])
 const LAW_STRUCTURES = new Set(['articles', 'sections', 'clauses'])
 const CONTRACT_TYPES = new Set(['施工', '监理', '总承包', '咨询', '勘察设计', '分包', '招标文件', '国际', '专项方案编写范例'])
 const LAW_REQUIRED = ['title', 'shortName', 'slug', 'level', 'docNo', 'published', 'effective', 'revisions', 'status', 'asOf', 'source']
