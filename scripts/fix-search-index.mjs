@@ -54,3 +54,14 @@ for (const file of walk(dist)) {
 }
 
 console.log(`已重命名 ${indexes.length} 个搜索索引文件并更新引用`)
+
+// 重命名后复核：产物里不应再残留以 @ 开头的索引引用，否则线上搜索会 404。
+const leftovers = walk(dist).filter(
+  (file) => /\.(js|html)$/.test(file) && fs.readFileSync(file, 'utf8').includes('@localSearchIndex')
+)
+if (leftovers.length > 0) {
+  console.error('仍有文件引用 @localSearchIndex，线上搜索会加载失败：')
+  for (const file of leftovers) console.error(`  - ${path.relative(dist, file)}`)
+  process.exit(1)
+}
+console.log('搜索索引引用复核通过：无 @ 前缀残留')

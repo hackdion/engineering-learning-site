@@ -19,6 +19,8 @@ import CraneTop from './components/CraneTop.vue'
 import SearchWarmup from './components/SearchWarmup.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import OutlineFollow from './components/OutlineFollow.vue'
+import ReviewActions from './components/review/ReviewActions.vue'
+import ReviewPanel from './components/review/ReviewPanel.vue'
 
 const { site } = useData()
 const route = useRoute()
@@ -58,6 +60,10 @@ const isKnowledgeTopic = computed(() => {
   const rel = relPath(route.path).replace(/\.html$/, '').replace(/\/+$/, '')
   return /^\/knowledge\/[^/]+$/.test(rel) && !rel.endsWith('/contract-law-basics')
 })
+
+// 复习标记只放在学习类页面：教材、专题、法规、示范文本、用表、工程地图。
+const STUDY_PREFIXES = ['/textbook/', '/knowledge/', '/law/', '/model-contracts/', '/forms/', '/engineering-map/']
+const isStudyPage = computed(() => STUDY_PREFIXES.some((prefix) => relPath(route.path).startsWith(prefix)))
 </script>
 
 <template>
@@ -65,9 +71,10 @@ const isKnowledgeTopic = computed(() => {
     <template #not-found><NotFound /></template>
     <template #doc-before><ContractCopy /><SectionCourse v-if="isSection" /><EngineeringMapRefs v-if="isSection" /></template>
     <template #nav-bar-content-after><FollowButton /></template>
-    <template #nav-screen-content-after><FollowButton block /></template>
+    <template #nav-screen-content-after><FollowButton block /><ReviewPanel mobile /></template>
+    <template #sidebar-nav-after><ReviewPanel /></template>
     <template #doc-after><SectionLaw v-if="isSection" /><SectionKnowledge v-if="isSection" /><KnowledgeLinks v-if="isKnowledgeTopic" /></template>
-    <template #doc-footer-before><LearnedStamp v-if="isSection" /></template>
+    <template #doc-footer-before><ReviewActions v-if="isStudyPage" /><LearnedStamp v-if="isSection" /></template>
     <template #layout-bottom><SiteFooter /><FollowDialog /><CraneTop /><SearchWarmup /><OutlineFollow /><ContractFileMap /></template>
   </DefaultTheme.Layout>
 </template>

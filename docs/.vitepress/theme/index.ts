@@ -27,6 +27,8 @@ import ArticleRef from './components/ArticleRef.vue'
 import LawIndex from './components/LawIndex.vue'
 import ExamCenter from './components/exam/ExamCenter.vue'
 import ExamPaper from './components/exam/ExamPaper.vue'
+import ReviewActions from './components/review/ReviewActions.vue'
+import ReviewPanel from './components/review/ReviewPanel.vue'
 import './hd-theme.css'
 import './custom.css'
 
@@ -54,5 +56,8 @@ export default {
     // 试卷
     app.component('ExamCenter', ExamCenter)
     app.component('ExamPaper', ExamPaper)
+    // 本机复习清单
+    app.component('ReviewActions', ReviewActions)
+    app.component('ReviewPanel', ReviewPanel)
   }
 }
