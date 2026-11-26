@@ -1,16 +1,53 @@
 <script setup lang="ts">
-// 现场实务专题分组卡片网格：供 /textbook/（教材书架伴读）与 /knowledge/（专题总览）复用。
+// 现场实务与三科长专题分组卡片网格：供 /textbook/（教材书架伴读）与 /knowledge/（专题总览）复用。
+import { computed, ref } from 'vue'
 import { withBase } from 'vitepress'
 import { KNOWLEDGE_GROUPS, KNOWLEDGE_TOPICS, type KnowledgeGroup } from '../data/knowledge-graph'
 
 defineProps<{ mode?: 'shelf' | 'full' }>()
 
+type FilterKey = 'all' | 'case-course' | 'intro-course' | 'contract-course' | 'practice'
+const activeFilter = ref<FilterKey>('all')
+
 const byGroup = (g: KnowledgeGroup) => KNOWLEDGE_TOPICS.filter((t) => t.group === g)
+const practiceCount = computed(
+  () => KNOWLEDGE_TOPICS.filter((t) => t.group === 'safety' || t.group === 'quality' || t.group === 'duty').length
+)
+const countOf = (g: KnowledgeGroup) => byGroup(g).length
+
+const filterTabs = computed(() => [
+  { key: 'all' as FilterKey, label: `全部（${KNOWLEDGE_TOPICS.length}）` },
+  { key: 'case-course' as FilterKey, label: `案例分析长专题（${countOf('case-course')}）` },
+  { key: 'intro-course' as FilterKey, label: `监理概论长专题（${countOf('intro-course')}）` },
+  { key: 'contract-course' as FilterKey, label: `合同管理长专题（${countOf('contract-course')}）` },
+  { key: 'practice' as FilterKey, label: `现场实务专题（${practiceCount.value}）` }
+])
+
+const visibleGroups = computed(() => {
+  if (activeFilter.value === 'all') return KNOWLEDGE_GROUPS
+  if (activeFilter.value === 'practice') {
+    return KNOWLEDGE_GROUPS.filter((g) => g.id === 'safety' || g.id === 'quality' || g.id === 'duty')
+  }
+  return KNOWLEDGE_GROUPS.filter((g) => g.id === activeFilter.value)
+})
 </script>
 
 <template>
   <div class="tk-wrap vp-raw">
-    <div v-for="grp in KNOWLEDGE_GROUPS" :key="grp.id" class="tk-group">
+    <div class="tk-filters" role="tablist" aria-label="按科目筛选专题">
+      <button
+        v-for="tab in filterTabs"
+        :key="tab.key"
+        type="button"
+        role="tab"
+        :aria-selected="activeFilter === tab.key"
+        :class="['tk-filter', { 'is-active': activeFilter === tab.key }]"
+        @click="activeFilter = tab.key"
+      >
+        {{ tab.label }}
+      </button>
+    </div>
+    <div v-for="grp in visibleGroups" :key="grp.id" class="tk-group">
       <div class="tk-group__head">
         <h3>{{ grp.title }}</h3>
         <span>{{ grp.hint }}</span>
@@ -44,6 +81,15 @@ const byGroup = (g: KnowledgeGroup) => KNOWLEDGE_TOPICS.filter((t) => t.group ==
 
 <style scoped>
 .tk-wrap { display: flex; flex-direction: column; gap: 24px; margin: 16px 0 8px; font-family: var(--hd-font-sans); }
+.tk-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.tk-filter {
+  padding: 6px 12px; border: 2px solid var(--hd-ink); border-radius: 999px;
+  background: var(--hd-card); color: var(--hd-ink); font-size: 13px; font-weight: 600;
+  cursor: pointer; transition: transform .1s, background-color .1s;
+}
+.tk-filter:hover { transform: translateY(-1px); }
+.tk-filter.is-active { background: var(--hd-accent); color: #fff; box-shadow: 2px 2px 0 var(--hd-ink); }
+.tk-filter:focus-visible { outline: 3px solid var(--hd-helmet); outline-offset: 2px; }
 .tk-group__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin-bottom: 12px; }
 .tk-group__head h3 { margin: 0; font-family: var(--hd-font-serif); font-size: 18px; color: var(--hd-ink); }
 .tk-group__head span { font-size: 13px; color: var(--hd-ink-3); }

@@ -177,6 +177,14 @@ const gailunSidebar: DefaultTheme.SidebarItem[] = [
         items: [
           { text: '参考文献', link: '/textbook/appendix-references' }
         ]
+      },
+      {
+        text: '本册长专题精讲',
+        collapsed: false,
+        items: [
+          { text: '15. 监理制度、建设程序与相关制度', link: '/knowledge/intro-supervision-system-and-procedure' },
+          { text: '19. 核心法律法规体系与监理规范', link: '/knowledge/intro-core-laws-and-gb50319' }
+        ]
       }
     ]
   }
@@ -255,13 +263,16 @@ export default defineConfig({
         {
           text: '案例分析长专题',
           items: [
-            { text: '14. 时标网络计划与前锋线实战', link: '/knowledge/case-network-plan-and-frontline' }
+            { text: '14. 时标网络计划与前锋线实战', link: '/knowledge/case-network-plan-and-frontline' },
+            { text: '17. 设计文件缺陷、验槽与竣工验收', link: '/knowledge/case-completion-acceptance-and-design-change' },
+            { text: '18. 质量事故等级划分与排列图', link: '/knowledge/case-quality-accident-and-pareto' }
           ]
         },
         {
           text: '监理概论长专题',
           items: [
-            { text: '15. 监理制度、建设程序与相关制度', link: '/knowledge/intro-supervision-system-and-procedure' }
+            { text: '15. 监理制度、建设程序与相关制度', link: '/knowledge/intro-supervision-system-and-procedure' },
+            { text: '19. 核心法律法规体系与监理规范', link: '/knowledge/intro-core-laws-and-gb50319' }
           ]
         },
         {
@@ -415,6 +426,7 @@ export default defineConfig({
           text: '教材阅读',
           items: [
             { text: '教材目录', link: '/textbook/' },
+            { text: '教材伴读与三科长专题', link: '/textbook/#practice-topics' },
             { text: '建设工程监理概论', link: '/textbook/#建设工程监理概论' },
             { text: '建设工程进度控制（土木建筑工程）', link: '/textbook/schedule/' },
             { text: '建设工程投资控制（土木建筑工程）', link: '/textbook/investment/' },
@@ -778,7 +790,14 @@ export default defineConfig({
                 { text: '第五节 AIA系列合同及CM 和IPD 合同模式', link: '/textbook/contract-management/chapter-06/section-05' }
               ]
             },
-            { text: '参考文献', link: '/textbook/contract-management/appendix-references' }
+            { text: '参考文献', link: '/textbook/contract-management/appendix-references' },
+            {
+              text: '本册长专题精讲',
+              collapsed: false,
+              items: [
+                { text: '16. 合同管理法律基础、代理与违约责任', link: '/knowledge/contract-law-basics' }
+              ]
+            }
           ]
         }
       ],
@@ -854,6 +873,15 @@ export default defineConfig({
                     { text: '第三节 工程进度控制', link: '/textbook/case-analysis/chapter-04/section-03' },
                     { text: '第四节 工程投资控制', link: '/textbook/case-analysis/chapter-04/section-04' },
                     { text: '第五节 工程招标投标与合同管理', link: '/textbook/case-analysis/chapter-04/section-05' }
+                  ]
+                },
+                {
+                  text: '本册长专题精讲',
+                  collapsed: false,
+                  items: [
+                    { text: '14. 时标网络计划与前锋线实战', link: '/knowledge/case-network-plan-and-frontline' },
+                    { text: '17. 设计文件缺陷、验槽与竣工验收', link: '/knowledge/case-completion-acceptance-and-design-change' },
+                    { text: '18. 质量事故等级划分与排列图', link: '/knowledge/case-quality-accident-and-pareto' }
                   ]
                 }
               ]

@@ -360,6 +360,70 @@ export const KNOWLEDGE_TOPICS: KnowledgeTopic[] = [
     ],
     stages: ['tender', 'construction'],
     exams: [{ id: '2025-ht', label: '2025 合同管理真题' }]
+  },
+  {
+    slug: 'case-completion-acceptance-and-design-change',
+    no: 17,
+    title: '设计文件缺陷处理、基槽验收与工程竣工验收程序精讲',
+    shortTitle: '设计缺陷·验槽·竣工验收',
+    group: 'case-course',
+    summary: '设计差错书面转交建设单位、五方实地验槽、四层次验收组织主体、预验收质量评估报告双签字与 15 日备案。',
+    tags: ['设计变更', '基槽验收', '竣工预验收', 'GB 55032'],
+    laws: ['zhiliang-tiaoli', 'gb55032-2022-zhiliang-kongzhi', 'gbt50319-2013-jianli-guifan'],
+    sections: [
+      { book: 'anli', section: '3.9' },
+      { book: 'anli', section: '4.2' },
+      { book: 'zhiliang', section: '3.1' }
+    ],
+    stages: ['construction', 'acceptance'],
+    exams: [
+      { id: '2024-al', label: '2024 案例分析真题' },
+      { id: 'jly-danxuan-08', label: '监理员单选 08' }
+    ]
+  },
+  {
+    slug: 'case-quality-accident-and-pareto',
+    no: 18,
+    title: '质量事故等级划分、调查处理与排列图/因果分析图应用',
+    shortTitle: '质量事故与排列图',
+    group: 'case-course',
+    summary: '四级量化边界与就高原则、1h/2h 上报与设计方案归属、见证封样与 57 号令检测费，及排列图 ABC 与因果分析图实战。',
+    tags: ['质量事故', '排列图', '因果分析图', '57号令'],
+    laws: ['zhiliang-tiaoli', 'zhiliang-jiance-banfa', 'gbt50319-2013-jianli-guifan'],
+    sections: [
+      { book: 'anli', section: '3.10' },
+      { book: 'anli', section: '3.11' },
+      { book: 'anli', section: '4.2' },
+      { book: 'zhiliang', section: '6.1' }
+    ],
+    stages: ['construction', 'acceptance'],
+    exams: [
+      { id: '2024-al', label: '2024 案例分析真题' },
+      { id: '2024-mk', label: '2024 目标控制真题' }
+    ]
+  },
+  {
+    slug: 'intro-core-laws-and-gb50319',
+    no: 19,
+    title: '工程监理核心法律法规体系与 GB/T 50319—2013 规范精讲',
+    shortTitle: '核心法规与监理规范',
+    group: 'intro-course',
+    summary: '《建筑法》发承包红线、招投标全流程法定天数、质量安全条例与事故报告时限，及监理规范变更索赔支付与相关服务。',
+    tags: ['建筑法', '招投标法', 'GB/T 50319', '事故报告'],
+    laws: [
+      'jianzhufa',
+      'zhaobiao-toubiao-fa',
+      'zhaobiao-toubiao-shishi-tiaoli',
+      'zhiliang-tiaoli',
+      'anquan-tiaoli',
+      'gbt50319-2013-jianli-guifan'
+    ],
+    sections: [
+      { book: 'gailun', section: '2.1' },
+      { book: 'gailun', section: '2.2' }
+    ],
+    stages: ['tender', 'preparation', 'construction'],
+    exams: [{ id: '2024-lf', label: '2024 理论和法规真题' }]
   }
 ]
 
