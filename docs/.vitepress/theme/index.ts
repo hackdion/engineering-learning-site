@@ -8,6 +8,7 @@ import CourseCenter from './components/CourseCenter.vue'
 import HomePage from './components/HomePage.vue'
 import EngineeringMapHome from './components/EngineeringMapHome.vue'
 import AboutPage from './components/AboutPage.vue'
+import MermaidDiagram from './components/MermaidDiagram.vue'
 import SlideDeck from './components/deck/SlideDeck.vue'
 import Slide from './components/deck/Slide.vue'
 import Reveal from './components/deck/Reveal.vue'
@@ -41,6 +42,7 @@ export default {
     app.component('HomePage', HomePage)
     app.component('EngineeringMapHome', EngineeringMapHome)
     app.component('AboutPage', AboutPage)
+    app.component('MermaidDiagram', MermaidDiagram)
     // 互动 PPT
     for (const [name, c] of Object.entries({ SlideDeck, Slide, Reveal, Quiz, Steps, SortSteps, CompareCard, DeckSimChart, DeckViewSwitch, DeckFlashcard, DeckScenario })) app.component(name, c)
     app.component('FormSheet', FormSheet)
