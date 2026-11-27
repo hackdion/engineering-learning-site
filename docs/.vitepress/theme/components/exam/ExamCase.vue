@@ -312,7 +312,7 @@ onBeforeUnmount(() => {
               </div>
 
               <div v-if="q.ref?.excerpt" class="ecs-review__excerpt">
-                <h4>最新原文依据 · {{ q.ref.book || '教材' }}<template v-if="q.ref.anchor">（{{ q.ref.anchor }}）</template></h4>
+                <h4>参考依据 · {{ q.ref.book || '教材' }}<template v-if="q.ref.anchor">（{{ q.ref.anchor }}）</template></h4>
                 <p v-for="(para, i) in q.ref.excerpt.split('\n')" :key="i" class="ecs-review__text">{{ para }}</p>
               </div>
 
@@ -329,7 +329,7 @@ onBeforeUnmount(() => {
                   @input="setScore(`${paper.id}:${q.qno}`, ($event.target as HTMLInputElement).value)"
                 />
                 <a v-if="q.ref" class="ecs-review__ref" :href="studyUrl(q.ref)">
-                  回到教材：{{ q.ref.book || '教材' }}
+                  查看依据：{{ q.ref.book || '教材' }}
                 </a>
               </div>
             </li>

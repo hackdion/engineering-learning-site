@@ -165,6 +165,7 @@ function studyBackCta(ref?: { path?: string }): string {
   const p = ref?.path || ''
   if (p.startsWith('/law/')) return '查法规/标准原文 →'
   if (p.startsWith('/knowledge/')) return '查现场实务专题 →'
+  if (p.startsWith('/courses/')) return '查对应课件依据 →'
   return '回教材原文 →'
 }
 
@@ -172,6 +173,7 @@ function reviewBackPrefix(ref?: { path?: string }): string {
   const p = ref?.path || ''
   if (p.startsWith('/law/')) return '回到法规/标准：'
   if (p.startsWith('/knowledge/')) return '查看实务专题：'
+  if (p.startsWith('/courses/')) return '查看对应课件：'
   return '回到教材：'
 }
 
@@ -634,7 +636,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
             <p v-if="current.analysis" class="ep-study-box__analysis">{{ current.analysis }}</p>
             <div v-if="current.ref?.excerpt" class="ep-study-box__excerpt">
               <div class="ep-study-box__excerpt-label">
-                最新原文依据 · {{ current.ref.book || '教材' }}<template v-if="current.ref.anchor">（{{ current.ref.anchor }}）</template>
+                参考依据 · {{ current.ref.book || '教材' }}<template v-if="current.ref.anchor">（{{ current.ref.anchor }}）</template>
               </div>
               <p v-for="(para, idx) in current.ref.excerpt.split('\n')" :key="idx">{{ para }}</p>
             </div>
@@ -762,7 +764,7 @@ const progressText = computed(() => `${answeredCount.value} / ${questions.value.
             </div>
 
             <div v-if="item.q.ref?.excerpt" class="ep-review__excerpt">
-              <h4>最新原文依据 · {{ item.q.ref.book || '教材' }}<template v-if="item.q.ref.anchor">（{{ item.q.ref.anchor }}）</template></h4>
+              <h4>参考依据 · {{ item.q.ref.book || '教材' }}<template v-if="item.q.ref.anchor">（{{ item.q.ref.anchor }}）</template></h4>
               <p v-for="(para, idx) in item.q.ref.excerpt.split('\n')" :key="idx">{{ para }}</p>
             </div>
 

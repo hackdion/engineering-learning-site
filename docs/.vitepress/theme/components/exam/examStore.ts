@@ -289,7 +289,7 @@ export function formatDate(time: number): string {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
 }
 
-/** 回到教材：带题目所属小节标题的锚点；没有可用锚点时只跳节页。 */
+/** 查看依据：带题目所属小节标题的锚点；没有可用锚点时只跳节页。 */
 export function studyUrl(ref?: ExamRef): string {
   if (!ref || !ref.path) return ''
   const base = withBase(ref.path)

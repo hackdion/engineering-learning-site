@@ -4,6 +4,8 @@
  *
  * 手动运行：node scripts/sync-exams.mjs
  * 来源目录可用环境变量 EXAM_SOURCE_DIR 覆盖，默认指向本机资料库。
+ * 已逐题复核的字段由 scripts/exam-review-patches.json 覆盖；EXAM_WITHOUT_REVIEW=1 仅用于回归对照。
+ * 输出目录可用 EXAM_OUT_DIR 指向临时目录，避免验证同步时删除监理员题库。
  *
  * 产出：
  *   docs/public/exams/<卷id>.json   每卷一文件，页面打开时才请求
@@ -31,7 +33,7 @@ import { fileURLToPath } from 'node:url'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const SOURCE_DIR = process.env.EXAM_SOURCE_DIR || '/Users/hackdion/Documents/资料库/注册监理工程师资料/07-题库与模拟卷'
-const OUT_DIR = path.join(repoRoot, 'docs/public/exams')
+const OUT_DIR = process.env.EXAM_OUT_DIR ? path.resolve(process.env.EXAM_OUT_DIR) : path.join(repoRoot, 'docs/public/exams')
 const FIGURE_DIR = path.join(OUT_DIR, 'figures')
 const DOCS_DIR = path.join(repoRoot, 'docs')
 
@@ -146,6 +148,12 @@ const warnings = []
 const seenIds = new Map()
 
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(SOURCE_DIR, rel), 'utf8'))
+const REVIEW_PATCHES_PATH = process.env.EXAM_REVIEW_PATCHES
+  ? path.resolve(process.env.EXAM_REVIEW_PATCHES)
+  : path.join(repoRoot, 'scripts/exam-review-patches.json')
+const REVIEW_PATCHES = process.env.EXAM_WITHOUT_REVIEW === '1' || !fs.existsSync(REVIEW_PATCHES_PATH)
+  ? {}
+  : JSON.parse(fs.readFileSync(REVIEW_PATCHES_PATH, 'utf8'))
 
 const hasMarkdown = (text) => /(^|\n)\s*\|/.test(text)
 const toHtml = (text) => (hasMarkdown(text) ? renderTables(text) : '')
@@ -161,7 +169,7 @@ const slugify = (text) => String(text)
   .replace(/^(\d)/, '_$1')
   .toLowerCase()
 
-const HEADING_LINE = /^(#{2,4})\s+(.+?)\s*$/
+const HEADING_LINE = /^(#{1,4})\s+(.+?)\s*$/
 // 全角括号、空白不参与比对，用来抹平「（2）」与「(2)」这类排版差异。
 const normalizeAnchor = (text) => String(text)
   .replace(/（/g, '(')
@@ -183,7 +191,12 @@ function resolveAnchor(body, ref) {
   const headings = []
   lines.forEach((line, i) => {
     const m = HEADING_LINE.exec(line)
-    if (m) headings.push({ line: i, text: m[2].replace(/`/g, '').trim() })
+    if (m) {
+      const raw = m[2].replace(/`/g, '').trim()
+      const custom = raw.match(/\{#([^}]+)\}\s*$/)
+      const text = raw.replace(/\{#[^}]+\}\s*$/, '').trim()
+      headings.push({ line: i, text, hash: custom?.[1] || slugify(text) })
+    }
   })
   if (headings.length === 0) return { ok: false, reason: '教材页没有小标题' }
 
@@ -192,14 +205,14 @@ function resolveAnchor(body, ref) {
 
   // 1. 锚点本身就是某个标题（允许全角/半角括号差异）
   const hit = headings.find((h) => normalizeAnchor(h.text).includes(needle))
-  if (hit) return { ok: true, heading: hit.text, kind: 'heading' }
+  if (hit) return { ok: true, heading: hit.text, hash: hit.hash, kind: 'heading' }
 
   // 2. 锚点是正文段落：定位到它所在小节最近的上一级标题
   const at = lines.findIndex((line) => normalizeAnchor(line).includes(needle))
   if (at === -1) return { ok: false, reason: '教材里找不到这句原文' }
   const above = headings.filter((h) => h.line <= at).pop()
   if (!above) return { ok: false, reason: '这段之前没有小标题' }
-  return { ok: true, heading: above.text, kind: 'section' }
+  return { ok: true, heading: above.text, hash: above.hash, kind: 'section' }
 }
 
 /** ref.path 是否对应真实节页；返回 { ok, anchorFound, hash, reason }。 */
@@ -220,7 +233,7 @@ function checkRef(ref) {
     ok: true,
     anchorFound: true,
     anchor: resolved.heading,
-    hash: slugify(resolved.heading),
+    hash: resolved.hash || slugify(resolved.heading),
     kind: resolved.kind
   }
 }
@@ -241,13 +254,15 @@ function cleanRef(ref, qid, paperId) {
       errors.push(`${paperId} ${qid}：锚点「${ref.anchor}」无法定位（${reason}）`)
     }
   }
-  return {
+  const out = {
     book: ref.book || '',
     path: ref.path,
     anchor: res.anchor ?? (ref.anchor || ''),
     hash: res.hash || '',
     anchorFound: res.anchorFound
   }
+  if (ref.excerpt) out.excerpt = ref.excerpt
+  return out
 }
 
 function figurePath(figure) {
@@ -260,6 +275,11 @@ function figurePath(figure) {
   fs.mkdirSync(FIGURE_DIR, { recursive: true })
   fs.copyFileSync(src, path.join(FIGURE_DIR, name))
   return name
+}
+
+function withReviewPatch(item, key = item.id) {
+  const patch = REVIEW_PATCHES[key]
+  return patch ? { ...item, ...patch } : item
 }
 
 const RECALL_PATCHES = {
@@ -275,6 +295,7 @@ const RECALL_PATCHES = {
 }
 
 function cleanQuestion(q, paper) {
+  q = withReviewPatch(q)
   if (seenIds.has(q.id)) {
     errors.push(`id 重复：${q.id}（${seenIds.get(q.id)} 与 ${paper.id}）`)
   }
@@ -322,6 +343,7 @@ function cleanQuestion(q, paper) {
 }
 
 function cleanCase(q, paper) {
+  q = withReviewPatch(q)
   if (seenIds.has(q.id)) errors.push(`id 重复：${q.id}`)
   seenIds.set(q.id, paper.id)
 
@@ -330,6 +352,7 @@ function cleanCase(q, paper) {
   if (q.figure) figure = figurePath(q.figure)
 
   const questions = (q.questions || []).map((item) => {
+    item = withReviewPatch(item, `${q.id}-${item.qno}`)
     const ref = cleanRef(item.ref, `${q.id}-${item.qno}`, paper.id)
     const out = {
       qno: item.qno,

@@ -2,6 +2,7 @@
 /**
  * 为 docs/public/exams/*.json 的每道题补充最新教材/法规原文整段（ref.excerpt）与跳转锚点。
  * 用法：node scripts/enrich-exam-excerpts.mjs
+ * EXAM_OUT_DIR 可指定临时试卷目录；已列入 exam-review-patches.json 的题目不再自动改挂依据。
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -9,7 +10,15 @@ import { fileURLToPath } from 'node:url'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const DOCS_DIR = path.join(repoRoot, 'docs')
-const EXAMS_DIR = path.join(DOCS_DIR, 'public/exams')
+const EXAMS_DIR = process.env.EXAM_OUT_DIR ? path.resolve(process.env.EXAM_OUT_DIR) : path.join(DOCS_DIR, 'public/exams')
+const REVIEW_PATCHES_PATH = process.env.EXAM_REVIEW_PATCHES
+  ? path.resolve(process.env.EXAM_REVIEW_PATCHES)
+  : path.join(repoRoot, 'scripts/exam-review-patches.json')
+const REVIEWED_KEYS = new Set(
+  process.env.EXAM_WITHOUT_REVIEW === '1' || !fs.existsSync(REVIEW_PATCHES_PATH)
+    ? []
+    : Object.keys(JSON.parse(fs.readFileSync(REVIEW_PATCHES_PATH, 'utf8')))
+)
 
 const BOOK_BY_PREFIX = {
   '/textbook/chapter-': '建设工程监理概论',
@@ -46,14 +55,16 @@ function bookNameForPath(p) {
 }
 
 function slugifyHeading(text) {
-  let s = text
+  let s = String(text)
     .replace(/\{#([^}]+)\}\s*$/, '')
     .trim()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036F]/g, '')
+    .replace(/[\u0000-\u001f]/g, '')
+    .replace(/[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g, '-')
+    .replace(/-{2,}/g, '-')
+    .replace(/^-+|-+$/g, '')
     .toLowerCase()
-    .replace(/[\s]+/g, '-')
-    .replace(/[^\p{L}\p{N}_-]+/gu, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '')
   if (/^\d/.test(s)) s = '_' + s
   return s
 }
@@ -277,7 +288,8 @@ function buildExcerptFromSection(sections, idx, queryText) {
 const mdFiles = [
   ...collectMarkdownFiles(path.join(DOCS_DIR, 'textbook'), '/textbook'),
   ...collectMarkdownFiles(path.join(DOCS_DIR, 'law'), '/law'),
-  ...collectMarkdownFiles(path.join(DOCS_DIR, 'knowledge'), '/knowledge')
+  ...collectMarkdownFiles(path.join(DOCS_DIR, 'knowledge'), '/knowledge'),
+  ...collectMarkdownFiles(path.join(DOCS_DIR, 'courses'), '/courses')
 ]
 
 const SKIP_LAW_HASHES = new Set([
@@ -295,6 +307,8 @@ const allParagraphItems = []
 for (const { filePath, webPath } of mdFiles) {
   const secs = parseMarkdownFile(filePath, webPath)
   sectionsByPath.set(webPath, secs)
+  // 课件只承接明确指定的历史/补充依据，不参与全局相似度自动改挂。
+  if (webPath.startsWith('/courses/')) continue
   for (let sIdx = 0; sIdx < secs.length; sIdx++) {
     const s = secs[sIdx]
     // 实务专题末尾「自测题」及标准前言/用词说明/引用标准名录不作为题库原文依据
@@ -360,7 +374,7 @@ function findSectionIndex(secs, ref) {
 // 2. 处理所有试卷 JSON
 const examFiles = fs
   .readdirSync(EXAMS_DIR)
-  .filter((f) => f.endsWith('.json') && f !== 'index.json')
+  .filter((f) => f.endsWith('.json') && f !== 'index.json' && f !== 'topics.json')
   .sort()
 
 let totalQ = 0
@@ -368,14 +382,19 @@ let enrichedExistingRef = 0
 let repairedRef = 0
 let newlyMatchedRef = 0
 let unmatchedJly = 0
+let reviewedSkipped = 0
 
 for (const file of examFiles) {
   const fullPath = path.join(EXAMS_DIR, file)
   const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'))
   const isJly = file.startsWith('jly-')
 
-  const processItem = (q) => {
+  const processItem = (q, key = q.id) => {
     totalQ++
+    if (REVIEWED_KEYS.has(key)) {
+      reviewedSkipped++
+      return
+    }
     const qText = queryTextForQuestion(q)
     const qBi = extractBigrams(qText)
 
@@ -433,13 +452,13 @@ for (const file of examFiles) {
 
   for (const item of data) {
     if (item.type === 'case' && Array.isArray(item.questions)) {
-      for (const sub of item.questions) processItem(sub)
+      for (const sub of item.questions) processItem(sub, `${item.id}-${sub.qno}`)
     } else {
-      processItem(item)
+      processItem(item, item.id)
     }
   }
 
   fs.writeFileSync(fullPath, JSON.stringify(data))
 }
 
-console.log(JSON.stringify({ totalQ, enrichedExistingRef, repairedRef, newlyMatchedRef, unmatchedJly }, null, 2))
+console.log(JSON.stringify({ totalQ, enrichedExistingRef, repairedRef, newlyMatchedRef, unmatchedJly, reviewedSkipped }, null, 2))
